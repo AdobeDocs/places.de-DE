@@ -4,7 +4,7 @@ seo-title: Übersicht über Adobe Places
 description: 'Adobe Places ist ein wichtiger Kontext für das Verständnis der Interaktion von Mobilbenutzern. In diesem Kontext können Entwickler mobiler Apps den App-Entwurf verbessern und ihn zu einem personalisierteren und ansprechenderen Erlebnis machen. '
 seo-description: 'Orte sind ein wichtiger Kontext für das Verständnis der Interaktion von Mobilnutzern. In diesem Kontext können Entwickler mobiler Apps den App-Entwurf verbessern und ihn zu einem personalisierteren und ansprechenderen Erlebnis machen. '
 translation-type: tm+mt
-source-git-commit: ef3d77eba407013e1f701ed001ef9ab7b3818e07
+source-git-commit: fdfeb8c17820c4eb0eae249da39be4eebece22d3
 
 ---
 
@@ -30,13 +30,19 @@ Die folgenden Möglichkeiten stehen Ihnen zur Verwendung von Orten zur Verfügun
 * Segmentieren Sie eine Zielgruppe basierend auf dem Offline-Verhalten, indem Sie Zielgruppenprofile mit dem Standortkontext verwenden.
 * Targeting eines Benutzers mit einem Erlebnis im Geschäft, wenn relevant.
 
+## Hinzufügen eines Platzhalters für das Video "Places intro"von Brandon
+
+## Orte Verwendungsfälle
+
+Verbessern Sie diesen Abschnitt mit
+
 ## Platziert Komponenten
 
 Orte umfassen die folgenden Komponenten:
 
 * **Platzierung des Webdiensts**
 
-   Sie können POIs mithilfe der REST-APIs erstellen und verwalten. Weitere Informationen zu REST-APIs finden Sie unter [Plates-Webdienste](/help/places-rest-apis/api-usage/api-usage.md).
+   Sie können POIs mithilfe der REST-APIs für Orte erstellen und verwalten. Weitere Informationen zu REST-APIs finden Sie unter [Verwalten von Bibliotheken](/help/places-web-service-api/api-usage/manage-libraries/manage-libraries.md) und [Verwalten von POIs](/help/places-web-service-api/api-usage/manage-pois/manage-pois.md).
 
 * **Platzierungs-Benutzeroberfläche**
 
@@ -44,7 +50,7 @@ Orte umfassen die folgenden Komponenten:
 
 * **Platzierungs-SDK**
 
-   Die API-Schnittstelle für mehrere Plattformen, um den Standortkontext in Ihre mobilen Apps zu integrieren. Weitere Informationen zu den SDKs finden Sie unter [Plates Extension](/help/configure-places-in-the-sdk/places-extension/places-extension.md).
+   Die API-Schnittstelle für mehrere Plattformen, um den Standortkontext in Ihre mobilen Apps zu integrieren. Weitere Informationen zu den SDKs finden Sie unter [Plates Extension](/help/places-ext-aep-sdks/places-extension/places-extension.md).
 
 * **Platzierungsregeln**
 
@@ -52,7 +58,7 @@ Orte umfassen die folgenden Komponenten:
 
 * **Orts-Monitor**
 
-   Das mobile Multi-Plattform-SDK, das in Ihre mobile App eingebettet werden kann, um Standortänderungen des Benutzers automatisch zu überwachen und Orte-Regeln auszulösen. Weitere Informationen finden Sie unter [Platzierungs-Monitorerweiterung](/help/configure-places-in-the-sdk/places-monitor-extension/places-monitor-extension.md).
+   Das mobile Multi-Plattform-SDK, das in Ihre mobile App eingebettet werden kann, um Standortänderungen des Benutzers automatisch zu überwachen und Orte-Regeln auszulösen. Weitere Informationen finden Sie unter [Platzierungs-Monitorerweiterung](/help/places-ext-aep-sdks/places-monitor-extension/places-monitor-extension.md).
 
 ## Terminologie
 
@@ -87,23 +93,3 @@ In dieser Dokumentation werden einige allgemeine Begriffe verwendet:
 * The **Experience Cloud ID** service provides a universal, persistent ID that identifies your visitors across all the solutions in the Experience Cloud.
 
    For more information, see [Overview](https://docs.adobe.com/content/help/en/id-service/using/intro/overview.html).
-
-## Die Benutzeroberfläche "Orte"
-
-Um die Benutzeroberfläche "Orte"aufzurufen, wechseln Sie in einem Browser zur Benutzeroberfläche " [Orte"](https://places.adobe.com) und melden Sie sich mit Ihrer Adobe ID an.
-
-Im Folgenden finden Sie einige grundlegende Informationen, die Ihnen dabei helfen, sich mit der Benutzeroberfläche vertraut zu machen:
-
-* In der oberen rechten Ecke befinden sich Schaltflächen, auf die Sie klicken können, um eine Bibliothek zu erstellen, POIs zu erstellen und Ihre Suche zu filtern.
-* In der rechten unteren Ecke des Bildschirms befinden sich Schaltflächen zum Vergrößern und Verkleinern, Zentrieren der aktuellen Position **[!UICONTROL Find Me]** und Wechseln zwischen der Landkartenansicht und der Satellitenansicht.
-* Doppelklicken Sie auf , um die Map zu vergrößern, oder klicken Sie auf und ziehen Sie, um sie erneut einzugeben.
-* Sie können auch mit den Pfeiltasten einen Bildlauf in der Map durchführen.
-
-![](assets/location-services.png)
-
-
-## Der Arbeitsablauf "Orte"
-
-Im Folgenden finden Sie eine allgemeine Übersicht zum Arbeitsablauf "Orte":
-
-![](/help/assets/places-workflow-diagram-lc-1.png)
