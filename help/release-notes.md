@@ -4,7 +4,7 @@ seo-title: Versionshinweise für Adobe Places.
 description: Versionshinweise für Adobe Places.
 seo-description: Versionshinweise für Adobe Places.
 translation-type: tm+mt
-source-git-commit: 60d72318db5f19646bca8870cec33979934593a7
+source-git-commit: a9aacd39be486195159b163b2c5969cb8b82b51b
 
 ---
 
@@ -183,7 +183,7 @@ iOS Places Monitor 1.0.0
 
 Erste Veröffentlichung des Orts-Monitors für iOS.
 
-Der Orts-Monitor verwaltet die Positionierungs-APIs auf Betriebssystemebene und kommuniziert direkt mit der Ortserweiterung. Wenn beide Erweiterungen installiert sind, können Kunden in ihrer Anwendung eine Out-of-the-Box-Regionsüberwachung verwenden. Weitere Informationen zum Platzierungsmonitor finden Sie unter [Platzierungsmonitor-Erweiterung](/help/configure-places-in-the-sdk/places-monitor-extension/places-monitor-extension.md).
+Der Orts-Monitor verwaltet die Positionierungs-APIs auf Betriebssystemebene und kommuniziert direkt mit der Ortserweiterung. Wenn beide Erweiterungen installiert sind, können Kunden in ihrer Anwendung eine Out-of-the-Box-Regionsüberwachung verwenden. Weitere Informationen zum Platzierungsmonitor finden Sie unter [Platzierungsmonitor-Erweiterung](/help/places-ext-aep-sdks/places-monitor-extension/places-monitor-extension.md).
 
 ## 28. Februar 2019
 
@@ -212,7 +212,7 @@ In der Erweiterung Orte:
 * Regelereignisse, die beim Ein- oder Ausstieg des POI ausgelöst werden.
 * Erstellen Sie Datenelemente, die auf den aktuellen POI des Benutzers verweisen.
 
-Weitere Informationen zur Platzierungserweiterung finden Sie unter [Platzierungserweiterung](/help/configure-place-in-the sdk/places-extension/places-extension.md).
+Weitere Informationen zur Platzierungserweiterung finden Sie unter [Platzierungserweiterung](/help/places-ext-aep-sdks/places-extension/places-extension.md).
 
 #### Orts-APIs
 
@@ -224,7 +224,7 @@ Sie können die Orte-APIs wie folgt verwenden:
 
    Ein Python-Dienstprogramm wird mit den APIs bereitgestellt.
 
-Weitere Informationen zu den Places-APIs finden Sie unter [Plates-Webdienste](/help/places-rest-apis/places-web-services.md).
+Weitere Informationen zu den Places-APIs finden Sie unter [Plates-Webdienste](/help/places-web-service-api/places-web-services.md).
 
 ### In Vorbereitung
 
