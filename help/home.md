@@ -4,14 +4,14 @@ seo-title: Adobe Experience Platform-Orte
 description: 'Orte sind ein wichtiger Kontext für das Verständnis der Interaktion von Mobilnutzern. In diesem Kontext können Entwickler mobiler Apps den App-Entwurf verbessern und ihn zu einem personalisierteren und ansprechenderen Erlebnis machen. '
 seo-description: 'Orte sind ein wichtiger Kontext für das Verständnis der Interaktion von Mobilnutzern. In diesem Kontext können Entwickler mobiler Apps den App-Entwurf verbessern und ihn zu einem personalisierteren und ansprechenderen Erlebnis machen. '
 translation-type: tm+mt
-source-git-commit: fd1b37a0f50d93de1efff4cb38fc23253f02d517
+source-git-commit: 9fc484fd44c74ad77255668e4fbd7bc1642932e2
 
 ---
 
 
 # Übersicht {#home}
 
-Adobe Experience Platform Places ist ein wichtiger Kontext für das Verständnis der Interaktion von mobilen Benutzern. In diesem Kontext können Entwickler mobiler Apps den App-Entwurf verbessern und ihn zu einem personalisierteren und ansprechenderen Erlebnis machen. Places ist ein Geolocation-Dienst, der Entwicklern mobiler Apps ermöglicht, den Standortkontext zu verstehen, indem Rich-und einfach zu verwendende SDK-Schnittstellen verwendet werden, die von einer flexiblen Datenbank mit Interessensgebieten (POIs) begleitet werden.
+Adobe Experience Platform Places (Places) ist ein wichtiger Kontext für das Verständnis der Interaktion von mobilen Benutzern. In diesem Kontext können Entwickler mobiler Apps den App-Entwurf verbessern und ihn zu einem personalisierteren und ansprechenderen Erlebnis machen. Places ist ein Geolocation-Dienst, der Entwicklern mobiler Apps ermöglicht, den Standortkontext zu verstehen, indem Rich-und einfach zu verwendende SDK-Schnittstellen verwendet werden, die von einer flexiblen Datenbank mit Interessensgebieten (POIs) begleitet werden.
 
 Orte ermöglichen Ihnen Folgendes:
 
