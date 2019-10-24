@@ -4,7 +4,7 @@ seo-title: Platzierungserweiterung
 description: Mit der Erweiterung "Orte"können Sie je nach Standort Ihrer Benutzer handeln.
 seo-description: Mit der Erweiterung "Orte"können Sie je nach Standort Ihrer Benutzer handeln.
 translation-type: tm+mt
-source-git-commit: ef720c112bc0de386e070094629c5bab69938e76
+source-git-commit: fd1b37a0f50d93de1efff4cb38fc23253f02d517
 
 ---
 
@@ -16,7 +16,7 @@ Mit der Erweiterung "Orte"können Sie je nach Standort Ihrer Benutzer handeln. D
 ## Installieren der Platzierungserweiterung in Adobe Experience Platform Launch
 
 1. Klicken Sie in Experience Platform Launch auf die **[!UICONTROL Extensions]** Registerkarte.
-2. Suchen Sie auf der **[!UICONTROL Catalog]** Registerkarte die **[!UICONTROL Adobe Places]** Erweiterung und klicken Sie auf **[!UICONTROL Install]**.
+2. Suchen Sie auf der **[!UICONTROL Catalog]** Registerkarte die **[!UICONTROL Places]** Erweiterung und klicken Sie auf **[!UICONTROL Install]**.
 3. Wählen Sie die Orte-Bibliotheken aus, die Sie in dieser Eigenschaft verwenden möchten. Dies sind die Bibliotheken, auf die in Ihrer App zugegriffen werden kann.
 4. Klicken Sie auf **[!UICONTROL Save]**.
 
