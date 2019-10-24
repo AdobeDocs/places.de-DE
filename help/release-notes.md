@@ -1,17 +1,17 @@
 ---
-title: Versionshinweise
+title: Versionshinweise zu Adobe Experience Platform-Orten
 seo-title: Versionshinweise zu Adobe Experience Platform-Orten.
 description: Versionshinweise zu Adobe Experience Platform-Orten.
 seo-description: Versionshinweise zu Adobe Experience Platform-Orten.
 translation-type: tm+mt
-source-git-commit: fd1b37a0f50d93de1efff4cb38fc23253f02d517
+source-git-commit: 9fc484fd44c74ad77255668e4fbd7bc1642932e2
 
 ---
 
 
 # Versionshinweise {#release-notes}
 
-Im Folgenden finden Sie die Versionshinweise zu Orten:
+Hier finden Sie die Versionshinweise für Adobe Experience Platform Places (Orte):
 
 ## 9. Oktober 2019
 
