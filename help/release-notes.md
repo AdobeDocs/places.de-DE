@@ -1,10 +1,10 @@
 ---
 title: Versionshinweise
-seo-title: Versionshinweise für Adobe Places.
-description: Versionshinweise für Adobe Places.
-seo-description: Versionshinweise für Adobe Places.
+seo-title: Versionshinweise zu Adobe Experience Platform-Orten.
+description: Versionshinweise zu Adobe Experience Platform-Orten.
+seo-description: Versionshinweise zu Adobe Experience Platform-Orten.
 translation-type: tm+mt
-source-git-commit: a9aacd39be486195159b163b2c5969cb8b82b51b
+source-git-commit: fd1b37a0f50d93de1efff4cb38fc23253f02d517
 
 ---
 
