@@ -4,7 +4,7 @@ seo-title: SDK mit der Ortserweiterung konfigurieren
 description: 'Sie können das SDK mit der Platzierungserweiterung konfigurieren, um Standortbewusstsein in Ihrer mobilen App zu aktivieren. '
 seo-description: 'Sie können das SDK mit der Platzierungserweiterung konfigurieren, um Standortbewusstsein in Ihrer mobilen App zu aktivieren. '
 translation-type: tm+mt
-source-git-commit: ef720c112bc0de386e070094629c5bab69938e76
+source-git-commit: fd1b37a0f50d93de1efff4cb38fc23253f02d517
 
 ---
 
@@ -19,15 +19,15 @@ Konfigurieren der Platzierungserweiterung
 
 1. Konfigurieren Sie die Erweiterung Orte beim Start.
 
-   Weitere Informationen finden Sie unter *Konfigurieren der Platzierungserweiterung in Launch*.
+   Weitere Informationen finden Sie unter *Konfigurieren der Erweiterung "Orte"in "Start* "in der Erweiterung[" ](/help/places-ext-aep-sdks/places-extension/places-extension.md)Orte".
 
 1. Fügen Sie Ihrer mobilen App die Platzierungserweiterung hinzu.
 
-   Weitere Informationen finden Sie unter *Hinzufügen der Platzierungserweiterung zu Ihrer App*.
+   Weitere Informationen finden Sie unter *Hinzufügen der Platzierungserweiterung zu Ihrer App* in der [Platzierungserweiterung](/help/places-ext-aep-sdks/places-extension/places-extension.md).
 
 1. Registrieren Sie Orte mit der Erweiterung Mobile Core.
 
-   Weitere Informationen finden Sie unter *Registrieren von Adobe-Orten mit Mobile-Core*.
+   Weitere Informationen finden Sie unter *Registrieren von Platzierungen mit dem Mobile-Core* in der [Places-Erweiterung](/help/places-ext-aep-sdks/places-extension/places-extension.md).
 
 ## Konfigurieren der Platzierungsmonitor-Erweiterung
 
