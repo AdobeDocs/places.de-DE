@@ -4,7 +4,7 @@ seo-title: POIs in der Benutzeroberfläche "Orte"verwalten
 description: Verwenden Sie die Benutzeroberfläche "Orte", um Ihre POIs zu verwalten.
 seo-description: Verwenden Sie die Benutzeroberfläche "Orte", um Ihre POIs zu verwalten.
 translation-type: tm+mt
-source-git-commit: fdfeb8c17820c4eb0eae249da39be4eebece22d3
+source-git-commit: fd1b37a0f50d93de1efff4cb38fc23253f02d517
 
 ---
 
@@ -37,7 +37,7 @@ Geofences sind ein Typ von POI und werden in der Datenbank anhand der folgenden 
 ## POI bearbeiten
 
 1. Melden Sie sich mit Ihrer Adobe ID bei Orten an.
-1. Melden Sie sich mit Ihrer Adobe ID beim Adobe Places Service an.
+1. Melden Sie sich mit Ihrer Adobe ID beim Orts-Dienst an.
 1. Klicken Sie oben rechts auf das Symbol, das wie eine Liste mit Aufzählungszeichen aussieht.
 1. Suchen Sie den POI, den Sie bearbeiten möchten.
 1. Klicken Sie auf **[!UICONTROL ...]** und wählen Sie **[!UICONTROL View Details]**.
@@ -46,14 +46,14 @@ Geofences sind ein Typ von POI und werden in der Datenbank anhand der folgenden 
 ## Einen POI löschen
 
 1. Melden Sie sich mit Ihrer Adobe ID bei Orten an.
-1. Melden Sie sich mit Ihrer Adobe ID beim Adobe Places Service an.
+1. Melden Sie sich mit Ihrer Adobe ID beim Orts-Dienst an.
 1. Klicken Sie oben rechts auf das Symbol, das wie eine Liste mit Aufzählungszeichen aussieht.
 1. Suchen Sie den POI, den Sie löschen möchten.
 1. Klicken Sie auf **[!UICONTROL ...]** und wählen Sie **[!UICONTROL Delete]**.
 
 ## Filtern von POIs nach Stadt, Bundesland, Land oder Metadaten
 
-1. Melden Sie sich mit Ihrer Adobe ID beim Adobe Places Service an.
+1. Melden Sie sich mit Ihrer Adobe ID beim Orts-Dienst an.
 1. Klicken Sie oben rechts auf das Filtersymbol.
 1. Sie können POIs auf eine der folgenden Arten filtern:
 
