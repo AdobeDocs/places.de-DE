@@ -1,16 +1,16 @@
 ---
-product: Orte
+product: Adobe Experience Platform-Orte
 audience: Endanwender
-user-guide-title: Adobe Places-Hilfe
+user-guide-title: Hilfe zu Adobe Experience Platform Places
 translation-type: tm+mt
-source-git-commit: cc5162bd71a22eec1ca8645a351e11695fd5eb16
+source-git-commit: fd1b37a0f50d93de1efff4cb38fc23253f02d517
 
 ---
 
 
-# Adobe Places-Hilfe {#using}
+# Hilfe zu Adobe Experience Platform Places {#using}
 
-+ [Übersicht über Adobe Places](home.md)
++ [Übersicht über Adobe Experience Platform Places](home.md)
 + [Versionshinweise](release-notes.md)
 + [Erste Schritte](getting-started.md)
 + Point-of-Interest-Verwaltungsoberfläche {#poi-mgmt-ui}
