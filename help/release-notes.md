@@ -1,17 +1,17 @@
 ---
-title: Versionshinweise zu Adobe Experience Platform-Orten
-seo-title: Versionshinweise zu Adobe Experience Platform-Orten.
-description: Versionshinweise zu Adobe Experience Platform-Orten.
-seo-description: Versionshinweise zu Adobe Experience Platform-Orten.
+title: Versionshinweise
+seo-title: Versionshinweise
+description: Versionshinweise für den Adobe Experience Platform Location Service.
+seo-description: Versionshinweise für den Adobe Experience Platform Location Service.
 translation-type: tm+mt
-source-git-commit: 9fc484fd44c74ad77255668e4fbd7bc1642932e2
+source-git-commit: 6ff72eb72ce3ae1abf805b7b542721a7e4915824
 
 ---
 
 
 # Versionshinweise {#release-notes}
 
-Hier finden Sie die Versionshinweise für Adobe Experience Platform Places (Orte):
+Die Versionshinweise lauten wie folgt:
 
 ## 9. Oktober 2019
 
@@ -31,7 +31,7 @@ Hier finden Sie die Versionshinweise für Adobe Experience Platform Places (Orte
 
 Die folgenden Aktualisierungen wurden in dieser Version vorgenommen:
 
-### Platzieren von Aktualisierungen der Benutzeroberfläche
+### UI-Updates
 
 Im Folgenden finden Sie eine Liste der Aktualisierungen der Benutzeroberfläche "Orte":
 
@@ -54,7 +54,7 @@ Im Folgenden finden Sie eine Liste der Aktualisierungen der Benutzeroberfläche 
 
 Die folgenden Aktualisierungen wurden in dieser Version vorgenommen:
 
-### Platzierungsmonitor - Starterweiterung 2.0.0
+### Monitor Launch Extension 2.0.0
 
 * Die Installationsanweisungen für Android und iOS für Places Monitor 2.0 wurden aktualisiert.
 
@@ -72,7 +72,7 @@ Die folgenden Aktualisierungen wurden in dieser Version vorgenommen:
 
    Neue API: `public static void stop (final boolean clearData);`
 
-* Die Verwendung der Places `getNearbyPointsOfInterest` -API wurde aktualisiert, um Fehlerszenarien effektiver zu behandeln.
+* Die Verwendung der `getNearbyPointsOfInterest` API wurde aktualisiert, um Fehlerszenarien effektiver zu behandeln.
 
 ## 25. Juli 2019
 
@@ -195,12 +195,12 @@ Dies ist die erste Version von Places, einem Satz von Tools, mit denen Kunden di
 
 Die wichtigsten Funktionen in dieser Version:
 
-#### Platzierungs-Benutzeroberfläche
+#### Benutzeroberfläche des Location Service
 
 Wir haben eine Verwaltungs-Benutzeroberfläche veröffentlicht, in der Sie Ihre POIs (Points of Interest) anzeigen und verwalten können. Sie können auch Ihre POIs in Bibliotheken organisieren. Zusätzlich zu Standard-Metadaten wie Stadt, Bundesland und Kategorie unterstützen wir auch die Möglichkeit, Ihren POIs benutzerdefinierte Metadaten hinzuzufügen.
 
-* Die Benutzeroberfläche "Orte"finden Sie unter [https://places.adobe.com](https://places.adobe.com).
-* Die ersten Schritte mit der Benutzeroberfläche "Orte"finden Sie unter [Erste Schritte](/help/getting-started.md).
+* Die Benutzeroberfläche finden Sie unter [https://places.adobe.com](https://places.adobe.com).
+* Die ersten Schritte mit der Benutzeroberfläche finden Sie unter [Erste Schritte](/help/getting-started.md).
 
 #### Platzierungserweiterung
 
@@ -224,7 +224,7 @@ Sie können die Orte-APIs wie folgt verwenden:
 
    Ein Python-Dienstprogramm wird mit den APIs bereitgestellt.
 
-Weitere Informationen zu den Places-APIs finden Sie unter [Plates-Webdienste](/help/places-web-service-api/places-web-services.md).
+Weitere Informationen zu den Places-APIs finden Sie unter [Webdienst-API](/help/web-service-api/places-web-services.md).
 
 ### In Vorbereitung
 
