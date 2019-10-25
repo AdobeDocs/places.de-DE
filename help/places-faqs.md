@@ -1,17 +1,17 @@
 ---
-title: Häufig gestellte Fragen zu Orten
-seo-title: Häufig gestellte Fragen zu Orten
-description: Dieses Thema enthält weitere Informationen zu einigen häufig gestellten Fragen zu Orten.
-seo-description: Dieses Thema enthält weitere Informationen zu einigen häufig gestellten Fragen zu Orten.
+title: Häufig gestellte Fragen
+seo-title: Häufig gestellte Fragen
+description: Dieses Thema enthält weitere Informationen zu einigen häufig gestellten Fragen.
+seo-description: Dieses Thema enthält weitere Informationen zu einigen häufig gestellten Fragen.
 translation-type: tm+mt
-source-git-commit: 26b0cab7bdada26a7598b20623095b72f7c8d334
+source-git-commit: 6ae0c8d90cad4c437e1db7f562a0bc9c6b072ce6
 
 ---
 
 
-# Häufig gestellte Fragen zu Orten
+# Häufig gestellte Fragen
 
-Hier finden Sie einige Informationen und häufig gestellte Fragen zu Orten.
+Hier finden Sie einige Informationen und häufig gestellte Fragen zum Location Service.
 
 ## Größe und Zuverlässigkeit
 
@@ -25,7 +25,7 @@ Wenn das Orts Monitor (SDK) eine neue Liste der nahe gelegenen POIs erhält, reg
 
 Wenn das Betriebssystem kein exit-Ereignis bereitstellen kann, wenn das Gerät eine Region verlässt, ist es sicherer, dass das SDK das exit-Ereignis einfach weglässt. Wenn das SDK ein Ausstiegsereignis produziert, ohne dass das Ereignis vom Betriebssystem ausgelöst wird, besteht die Gefahr, dass das Ausstiegsereignis weit über den Zeitraum hinaus verarbeitet wird, in dem sich das Gerät in der Nähe des POI befand.
 
-## Hinzufügen eines Benutzers zu "Orte und Erlebnisplattformstart" {#adding-user-launch-places}
+## Hinzufügen eines Benutzers zum Start des Location Service und der Experience Platform {#adding-user-launch-places}
 
 Damit Benutzer auf die Benutzeroberfläche[des ](https://places.adobe.com)Startdienstes zugreifen können, müssen sie als Benutzer dem Orte-Core-Dienst in der Admin-Konsole hinzugefügt werden. Damit Benutzer Zugriff auf Experience Platform Launch haben, mobile Eigenschaften konfigurieren und Orte mit dem Adobe Experience Platform SDK verwenden können, müssen sie in der Admin-Konsole zum Experience Platform Launch hinzugefügt und die folgenden Berechtigungen für Experience Platform Launch erhalten:
 
@@ -37,15 +37,15 @@ Damit Benutzer auf die Benutzeroberfläche[des ](https://places.adobe.com)Startd
    * Verwalten von Umgebungen
 * Berechtigung "Eigenschaften verwalten"unter "Unternehmensrechte"
 
-Wenn Sie zum ersten Mal einen Benutzer hinzufügen, führen Sie die folgenden Schritte aus, um Benutzer zu Experience Platform Launch and Places hinzuzufügen. Wenn Sie zuvor Benutzer hinzugefügt haben, werden möglicherweise mehrere Profile angezeigt. Wählen Sie daher das richtige Profil aus.
+Wenn Sie zum ersten Mal einen Benutzer hinzufügen, führen Sie die folgenden Schritte aus, um dem Experience Platform Launch- und Location-Dienst Benutzer hinzuzufügen. Wenn Sie zuvor Benutzer hinzugefügt haben, werden möglicherweise mehrere Profile angezeigt. Wählen Sie daher das richtige Profil aus.
 
 >[!IMPORTANT]
 >
 >Nur Organisationsadministratoren können auf die Admin-Konsole zugreifen und die Benutzer hinzufügen.
 
-### 1. Stellen Sie sicher, dass Orte und Erlebnisplattformstarts bereitgestellt wurden.
+### 1. Stellen Sie sicher, dass Location Service und Experience Platform Launch bereitgestellt wurden.
 
-So überprüfen Sie, ob Orte und Erlebnisplattformstarts bereitgestellt wurden:
+So überprüfen Sie, ob Location Service und Experience Platform Launch bereitgestellt wurden:
 
 1. Melden Sie sich bei Ihrer Experience Cloud-Organisation an.
 1. Klicken Sie oben rechts auf den Experience Cloud-Shell-Umschalter.
@@ -70,7 +70,7 @@ So überprüfen Sie, ob Orte und Erlebnisplattformstarts bereitgestellt wurden:
 
    ![](/help/assets/places_provisioned1.png)
 
-   Wenn sie angezeigt werden, wurden Orte und Erlebnisplattformstarts für Ihr Unternehmen bereitgestellt. Wenn sie nicht angezeigt werden, müssen sie für Ihr Unternehmen bereitgestellt werden.
+   Wenn sie angezeigt werden, wurden Location Service und Experience Platform Launch für Ihr Unternehmen bereitgestellt. Wenn sie nicht angezeigt werden, müssen sie für Ihr Unternehmen bereitgestellt werden.
 
    >[!IMPORTANT]
    >
@@ -111,17 +111,17 @@ So richten Sie das Profil ein und fügen die Berechtigungen hinzu:
 
 >[!IMPORTANT]
 >
->Für Orte gibt es ein Standardprofil, Sie müssen jedoch keine Berechtigungen hinzufügen.
+>Für den Location Service gibt es ein Standardprofil, Sie müssen jedoch keine Berechtigungen hinzufügen.
 
 Sie haben dem erstellten Profil erfolgreich Berechtigungen hinzugefügt.
 
-### 3. Benutzer oder Entwickler zu den Startprofilen für Orte und Erlebnisplattformen hinzufügen
+### 3. Benutzer oder Entwickler zu den Profilen "Location Service"und "Experience Platform Launch"hinzufügen
 
-Sie können einen Benutzer und/oder einen Entwickler zu Ihren Startprofilen für Orte und Erlebnisplattformen hinzufügen.
+Sie können einen Benutzer und/oder einen Entwickler zu Ihren Profilen "Location Service"und "Experience Platform Launch"hinzufügen.
 
 ### Einen Benutzer hinzufügen
 
-So fügen Sie einen Benutzer zu den Profilen "Orte und Erlebnis-Plattform-Start"hinzu:
+So fügen Sie einen Benutzer zu Ihren Profilen "Location Service"und "Experience Platform Launch"hinzu:
 
 1. Fügen Sie dem Erlebnis-Plattform-Startprofil einen Benutzer hinzu.
 
@@ -149,7 +149,7 @@ So fügen Sie einen Benutzer zu den Profilen "Orte und Erlebnis-Plattform-Start"
 
    >[!TIP]
    >
-   >Derzeit haben alle Benutzer von Orten dieselben Berechtigungen, sodass Sie die Berechtigungen nicht bearbeiten müssen.
+   >Derzeit haben alle Benutzer des Location Service dieselben Berechtigungen, sodass Sie die Berechtigungen nicht bearbeiten müssen.
 
    a.Überprüfen Sie auf der **[!UICONTROL Places Core Services]** Karte Folgendes:
 
@@ -169,7 +169,7 @@ So fügen Sie einen Benutzer zu den Profilen "Orte und Erlebnis-Plattform-Start"
 
 ### Hinzufügen eines Entwicklers
 
-Für Benutzer, die auch Zugriff auf die Places REST API benötigen, müssen Sie diese als Entwickler hinzufügen.
+Für Benutzer, die auch Zugriff auf die Web Service API benötigen, müssen Sie diese als Entwickler hinzufügen.
 
 So fügen Sie einen Entwickler hinzu:
 
