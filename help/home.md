@@ -1,19 +1,19 @@
 ---
-title: Adobe Experience Platform-Orte
-seo-title: Adobe Experience Platform-Orte
-description: 'Orte sind ein wichtiger Kontext für das Verständnis der Interaktion von Mobilnutzern. In diesem Kontext können Entwickler mobiler Apps den App-Entwurf verbessern und ihn zu einem personalisierteren und ansprechenderen Erlebnis machen. '
-seo-description: 'Orte sind ein wichtiger Kontext für das Verständnis der Interaktion von Mobilnutzern. In diesem Kontext können Entwickler mobiler Apps den App-Entwurf verbessern und ihn zu einem personalisierteren und ansprechenderen Erlebnis machen. '
+title: Adobe Experience Platform Location Service
+seo-title: Adobe Experience Platform Location Service
+description: 'Der Location Service ist ein wichtiger Kontext, um die Interaktion der mobilen Benutzer zu verstehen. In diesem Kontext können Entwickler mobiler Apps den App-Entwurf verbessern und ihn zu einem personalisierteren und ansprechenderen Erlebnis machen. '
+seo-description: 'Der Location Service ist ein wichtiger Kontext, um die Interaktion der mobilen Benutzer zu verstehen. In diesem Kontext können Entwickler mobiler Apps den App-Entwurf verbessern und ihn zu einem personalisierteren und ansprechenderen Erlebnis machen. '
 translation-type: tm+mt
-source-git-commit: 6ff72eb72ce3ae1abf805b7b542721a7e4915824
+source-git-commit: 85ce31329ad155e5c835be286c18e6609b88167b
 
 ---
 
 
 # Übersicht {#home}
 
-Adobe Experience Platform Places (Places) ist ein wichtiger Kontext für das Verständnis der Interaktion von mobilen Benutzern. In diesem Kontext können Entwickler mobiler Apps den App-Entwurf verbessern und ihn zu einem personalisierteren und ansprechenderen Erlebnis machen. Places ist ein Geolocation-Dienst, der Entwicklern mobiler Apps ermöglicht, den Standortkontext zu verstehen, indem Rich-und einfach zu verwendende SDK-Schnittstellen verwendet werden, die von einer flexiblen Datenbank mit Interessensgebieten (POIs) begleitet werden.
+Der Adobe Experience Platform Location Service (Location Service) ist ein wichtiger Kontext für das Verständnis der Interaktion von Mobilbenutzern. In diesem Kontext können Entwickler mobiler Apps den App-Entwurf verbessern und ihn zu einem personalisierteren und ansprechenderen Erlebnis machen. Places ist ein Geolocation-Dienst, der Entwicklern mobiler Apps ermöglicht, den Standortkontext zu verstehen, indem Rich-und einfach zu verwendende SDK-Schnittstellen verwendet werden, die von einer flexiblen Datenbank mit Interessensgebieten (POIs) begleitet werden.
 
-Orte ermöglichen Ihnen Folgendes:
+Mit dem Location Service können Sie Folgendes erreichen:
 
 * Erstellen und verwalten Sie eine Datenbank mit POIs, die mit anderen Adobe Experience Cloud-Lösungen verwendet werden können.
 * Fügen Sie den POIs benutzerspezifische Metadaten hinzu, um sie durch Angabe zusätzlicher Attribute reicher und aussagekräftiger zu gestalten.
@@ -30,21 +30,21 @@ Die folgenden Möglichkeiten stehen Ihnen zur Verwendung von Orten zur Verfügun
 * Segmentieren Sie eine Zielgruppe basierend auf dem Offline-Verhalten, indem Sie Zielgruppenprofile mit dem Standortkontext verwenden.
 * Targeting eines Benutzers mit einem Erlebnis im Geschäft, wenn relevant.
 
-## Hinzufügen eines Platzhalters für das Video "Places intro"von Brandon
+## Hinzufügen eines Platzhalters für das Video "Location Service Intro"von Brandon
 
-## Orte Verwendungsfälle
+## Anwendungsfälle für den Location Service
 
 Verbessern Sie diesen Abschnitt mit
 
-## Platziert Komponenten
+## Komponenten des Location Service
 
-Orte umfassen die folgenden Komponenten:
+Der Location Service umfasst die folgenden Komponenten:
 
 * **Platzierung des Webdiensts**
 
    Sie können POIs mithilfe der REST-APIs für Orte erstellen und verwalten. Weitere Informationen zu REST-APIs finden Sie unter [Verwalten von Bibliotheken](/help/web-service-api/api-usage/manage-libraries/manage-libraries.md) und [Verwalten von POIs](/help/web-service-api/api-usage/manage-pois/manage-pois.md).
 
-* **Platzierungs-Benutzeroberfläche**
+* **Benutzeroberfläche des Location Service**
 
    Visualisieren Sie POIs auf einer Karte, um den räumlichen Kontext zu verstehen und POIs und ihre benutzerspezifischen Metadaten hinzuzufügen/zu bearbeiten.
 
