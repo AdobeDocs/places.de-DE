@@ -4,7 +4,7 @@ seo-title: Adobe Experience Platform-Orte
 description: 'Orte sind ein wichtiger Kontext für das Verständnis der Interaktion von Mobilnutzern. In diesem Kontext können Entwickler mobiler Apps den App-Entwurf verbessern und ihn zu einem personalisierteren und ansprechenderen Erlebnis machen. '
 seo-description: 'Orte sind ein wichtiger Kontext für das Verständnis der Interaktion von Mobilnutzern. In diesem Kontext können Entwickler mobiler Apps den App-Entwurf verbessern und ihn zu einem personalisierteren und ansprechenderen Erlebnis machen. '
 translation-type: tm+mt
-source-git-commit: 9fc484fd44c74ad77255668e4fbd7bc1642932e2
+source-git-commit: 6ff72eb72ce3ae1abf805b7b542721a7e4915824
 
 ---
 
@@ -42,7 +42,7 @@ Orte umfassen die folgenden Komponenten:
 
 * **Platzierung des Webdiensts**
 
-   Sie können POIs mithilfe der REST-APIs für Orte erstellen und verwalten. Weitere Informationen zu REST-APIs finden Sie unter [Verwalten von Bibliotheken](/help/places-web-service-api/api-usage/manage-libraries/manage-libraries.md) und [Verwalten von POIs](/help/places-web-service-api/api-usage/manage-pois/manage-pois.md).
+   Sie können POIs mithilfe der REST-APIs für Orte erstellen und verwalten. Weitere Informationen zu REST-APIs finden Sie unter [Verwalten von Bibliotheken](/help/web-service-api/api-usage/manage-libraries/manage-libraries.md) und [Verwalten von POIs](/help/web-service-api/api-usage/manage-pois/manage-pois.md).
 
 * **Platzierungs-Benutzeroberfläche**
 
