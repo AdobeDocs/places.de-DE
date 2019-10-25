@@ -3,14 +3,14 @@ product: Adobe Experience Platform Location Service
 audience: Endanwender
 user-guide-title: Adobe Experience Platform Location Service
 translation-type: tm+mt
-source-git-commit: 717250d3d6b11badde74df7e85ac5cce8cf0ef80
+source-git-commit: 5cb539b41426b177f17ff1ff44988ff646259d3f
 
 ---
 
 
 # Hilfe zu Adobe Experience Platform Location Service {#using}
 
-+ [Übersicht über Adobe Experience Platform Places](home.md)
++ [Übersicht über den Experience Platform Location Service](home.md)
 + [Versionshinweise](release-notes.md)
 + [Erste Schritte](getting-started.md)
 + Point-of-Interest-Verwaltungsoberfläche {#poi-mgmt-ui}
@@ -64,8 +64,8 @@ source-git-commit: 717250d3d6b11badde74df7e85ac5cce8cf0ef80
    + [Einstiegs- und Ausstiegsregeln erstellen](use-places-launch-workflow/create-rule-places-property.md)
 + Verwenden des Location Service mit anderen Adobe-Lösungen {#use-places-with-other-solutions}
    + Adobe Analytics {#places-adobe-analytics}
-      + [Ortsdaten an Adobe Analytics senden](use-places-with-other-solutions/places-adobe-analytics/use-places-adobe-analytics.md)
-      + [Ausführen von Berichten in Adobe Analytics mit Ortsdaten](use-places-with-other-solutions/places-adobe-analytics/run-reports-aa-places-data.md)
+      + [Standortdienstdaten an Adobe Analytics senden](use-places-with-other-solutions/places-adobe-analytics/use-places-adobe-analytics.md)
+      + [Ausführen von Berichten in Adobe Analytics, die Standortdienstdaten enthalten](use-places-with-other-solutions/places-adobe-analytics/run-reports-aa-places-data.md)
    + Mobile Services für Messaging {#places-mobile-svcs-messaging}
       + [Mobile Services für Messaging](use-places-with-other-solutions/places-mobile-svcs-for-messaging/use-places-mobie-svcs-messaging.md)
       + [Push-Nachrichten](use-places-with-other-solutions/places-mobile-svcs-for-messaging/mobile-svcs-messaging-push.md)
@@ -74,7 +74,7 @@ source-git-commit: 717250d3d6b11badde74df7e85ac5cce8cf0ef80
       + [Push-Benachrichtigungen](use-places-with-other-solutions/places-acs/places-acs-push-notifications.md)
       + [In-App-Nachrichten](use-places-with-other-solutions/places-acs/places-acs-in-app-messages.md)
    + Adobe Target {#places-target}
-      + [Orte mit Adobe Target verwenden](use-places-with-other-solutions/places-target/places-target.md)
+      + [Standortdienst mit Adobe Target verwenden](use-places-with-other-solutions/places-target/places-target.md)
 + Testing and validation {#places-testing-validation}
    + [Orte testen und validieren](places-testing-validation/test-validate-places.md)
 + [Häufig gestellte Fragen](places-faqs.md)
