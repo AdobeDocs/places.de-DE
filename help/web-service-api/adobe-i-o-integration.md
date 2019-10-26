@@ -4,12 +4,32 @@ seo-title: Überblick über die Adobe-E/A-Integration
 description: Informationen zum Erstellen einer Adobe I/O-Integration.
 seo-description: Informationen zum Erstellen einer Adobe-E/A-Integration.
 translation-type: tm+mt
-source-git-commit: 6ff72eb72ce3ae1abf805b7b542721a7e4915824
+source-git-commit: 3a9653dcc7f5d18b717c4bb59424b8cad7104dd7
 
 ---
 
 
-# Überblick über die Adobe-E/A-Integration {#adobeio-integration}
+# Adobe I/O-Integration {#adobeio-integration}
+
+Diese Informationen zeigen Ihnen, wie Sie eine Adobe I/O- und eine Places-Integration erstellen.
+
+## Voraussetzungen für den Benutzerzugriff
+
+Vergewissern Sie sich beim Systemadministrator Ihres Unternehmens, dass die folgenden Aufgaben abgeschlossen wurden:
+
+* Der Orte-Core-Service wird in der Admin-Konsole Ihres Unternehmens angezeigt.
+* Sie wurden der Organisation hinzugefügt.
+* Sie wurden als Benutzer zum Platzierungs-Core-Service in Ihrem Unternehmen hinzugefügt.
+
+   Weitere Informationen finden Sie unter Benutzer oder Entwickler *zu Ihren Profilen* "Location Service"und "Experience Platform Launch"in den [häufig gestellten Fragen](/help/places-faqs.md).
+
+* Sie wurden als Entwickler zum Platzierungs-Core-Service in Ihrem Unternehmen hinzugefügt.
+
+   Weitere Informationen zum Hinzufügen von Entwicklern finden Sie unter Benutzer oder Entwickler *zu Ihren Profilen* "Location Service"und "Experience Platform Launch"in den [häufig gestellten Fragen](/help/places-faqs.md).
+
+   Weitere Informationen zur Rolle "Entwickler"finden Sie unter Entwickler [verwalten](https://helpx.adobe.com/enterprise/using/manage-developers.html).
+
+### REST-API-Anfragen
 
 Für jede Anforderung an die Places REST API sind die folgenden Elemente erforderlich:
 
@@ -19,8 +39,6 @@ Für jede Anforderung an die Places REST API sind die folgenden Elemente erforde
 
 Eine Integration mit Adobe I/O bietet diese Elemente und eine Möglichkeit, das Inhabertoken mithilfe eines JSON-WebTokens (JWT) anzufordern.
 
-## Weitere Informationen
-
 * Weitere Informationen zu JWTs finden Sie unter [Einführung in JSON-WebToken](https://jwt.io/introduction/).
 * Informationen zum Erstellen einer Integration für Orte finden Sie im Abschnitt *Erstellen einer Platzierungsintegration* unten.
 * Informationen zur Integration von API-Schlüsseln, zum Generieren von JWT-Zertifikaten und Zertifikaten öffentlicher Schlüssel finden Sie unter Übersicht über die [Adobe-E/A-Authentifizierung](https://www.adobe.io/apis/cloudplatform/console/authentication/gettingstarted.html).
@@ -29,7 +47,7 @@ Eine Integration mit Adobe I/O bietet diese Elemente und eine Möglichkeit, das 
 >
 >Wenn Sie sich nicht bei der Adobe I/O-Konsole anmelden können oder der Experience Platform Location Service keine Option auf der Seite "Integrationen *erstellen"ist*, finden Sie Informationen zu den *Organisationsanforderungen* in der Übersicht über die [Web-Services-APIs](/help/web-service-api/places-web-services.md).
 
-## Erstellen einer Ortsintegration {#create-places-integration}
+## Erstellen einer Ortsintegration
 
 Führen Sie die folgenden Aufgaben aus, um eine Ortsintegration zu erstellen:
 
@@ -75,7 +93,7 @@ So generieren Sie eigene, selbstsignierte Schlüssel:
 
 Das folgende Video führt Sie durch den Prozess der Generierung des Schlüsselpaars:
 
-![](/help/assets/places_integration_video.gif)
+![Integrationsvideo](/help/assets/places_integration_video.gif)
 
 ### Erstellen einer Ortsintegration in der Adobe I/O-Konsole
 
@@ -125,4 +143,3 @@ So generieren Sie ein JWT-Token:
 >[!IMPORTANT]
 >
 >Adobe-Zugriffstoken sind **nur** 24 Stunden gültig. Speichern Sie daher den CURL-Beispielbefehl (Schritt 5). Wenn das Zugriffstoken nicht mehr gültig ist, müssen Sie das Token erneut generieren.
-
