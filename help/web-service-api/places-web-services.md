@@ -4,7 +4,7 @@ seo-title: 'Übersicht über die Web-Services-API '
 description: Places ist der Satz von Diensten, die es Adobe-Kunden erleichtern, die Adobe Experience Cloud- und Adobe Experience Platform-Lösungen mit Standortdaten und dem richtigen Erlebnis zur richtigen Zeit und am richtigen Ort zu kombinieren.
 seo-description: Places ist der Satz von Diensten, die es Adobe-Kunden erleichtern, die Adobe Experience Cloud- und Adobe Experience Platform-Lösungen mit Standortdaten und dem richtigen Erlebnis zur richtigen Zeit und am richtigen Ort zu kombinieren.
 translation-type: tm+mt
-source-git-commit: e204958ac3acbf5fb45d2347987f35557be70e43
+source-git-commit: e899cde6230353c8b34090c793983dc570e8115e
 
 ---
 
@@ -39,17 +39,3 @@ Weitere Informationen:
 
 * Weitere Informationen zu den verfügbaren APIs und deren Verwendung finden Sie unter [Verwalten von Bibliotheken](/help/web-service-api/api-usage/manage-libraries/manage-libraries.md) und [Verwalten von POIs](/help/web-service-api/api-usage/manage-pois/manage-pois.md).
 * Weitere Informationen zu den Kopfzeilen und Parametern in diesen APIs finden Sie unter [Kopfzeilen und Parameter](/help/web-service-api/api-usage/headers-and-parameters.md).
-
-## Organisatorische Anforderungen {#org-requirements}
-
-Vergewissern Sie sich beim Systemadministrator, dass die folgenden Aufgaben ausgeführt wurden, um auf die Web-Services-REST-APIs zuzugreifen:
-
-* Orte wurden bereitgestellt und erscheinen in der Organisation.
-* Sie wurden der Organisation hinzugefügt.
-* Sie wurden zu "Orte in Ihrer Organisation"hinzugefügt.
-
-   Weitere Informationen finden Sie unter *Hinzufügen eines Benutzers zu "Orte"und "Erlebnisplattformstart* "in den [häufig gestellten Fragen](/help/places-faqs.md).
-
-* Sie wurden als Entwickler für Orte zu Ihrem Unternehmen hinzugefügt.
-
-   Weitere Informationen zur Rolle "Entwickler"finden Sie unter Entwickler [verwalten](https://helpx.adobe.com/enterprise/using/manage-developers.html).
