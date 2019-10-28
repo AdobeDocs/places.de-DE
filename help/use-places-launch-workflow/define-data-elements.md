@@ -4,7 +4,7 @@ seo-title: Definieren von Datenelementen
 description: Dieser Abschnitt enthält Informationen zum Erstellen, Verwenden und Veröffentlichen von Datenelementen in Experience Platform Launch for Places.
 seo-description: 'Dieser Abschnitt enthält Informationen zum Erstellen, Verwenden und Veröffentlichen von Datenelementen in Experience Platform Launch for Places. '
 translation-type: tm+mt
-source-git-commit: fd98249c01fba93250dc7111798c76f3c96c6e20
+source-git-commit: 573f2bb368bd8384f5b465819600a1668b0bdda8
 
 ---
 
@@ -30,10 +30,10 @@ Mit der Erweiterung "Orte"können Sie auf Werte aus den folgenden Zielen verweis
 Jeder POI enthält die folgenden Datenreferenzen:
 
 * **[!UICONTROL Category]**: Kategorie des POI
-* **[!IUICONTROL Ort]**: Ort des POI
+* **[!UICONTROL City]**: Ort des POI
 * **[!UICONTROL Country]**: Land des POI
-* **[UICONTROL-Breite]**: Breitengrad des POI
-* **[UICONTROL-Längengrad]**: Längengrad des POI
+* **[!UICONTROL Latitude]**: Breitengrad des POI
+* **[!UICONTROL Longitude]**: Längengrad des POI
 * **[!UICONTROL Metadata]**: benutzerdefinierte Metadaten des POI
 * **[!UICONTROL Name]**: Region POI
 * **[!UICONTROL Radius]**: Radius der POI
