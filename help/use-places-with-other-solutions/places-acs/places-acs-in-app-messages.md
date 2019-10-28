@@ -4,14 +4,12 @@ seo-title: In-App-Nachrichten mit dem Location Service
 description: Dieser Abschnitt enthält Informationen zur Verwendung von Push-Nachrichten in Campaign Standard mit In-App-Nachrichten in Campaign Standard.
 seo-description: 'Dieser Abschnitt enthält Informationen zur Verwendung von "Push-Nachrichten in Campaign Standard"mit In-App-Nachrichten in Campaign Standard. '
 translation-type: tm+mt
-source-git-commit: 0612e2fb06e45ff25ad580e3336be3eb48bb39b9
+source-git-commit: fd98249c01fba93250dc7111798c76f3c96c6e20
 
 ---
 
 
 # In-App-Nachrichten mit dem Location Service {#in-app-messages-loc-service}
-
-(Video von Ivan.)
 
 Anhand dieser Informationen erhalten Sie einen Einblick, wie Sie mit den Informationen des Adobe Experience Platform Location Service In-App-Nachrichten oder lokale Benachrichtigungen senden können.
 
