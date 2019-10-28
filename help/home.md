@@ -4,7 +4,7 @@ seo-title: Adobe Experience Platform Location Service
 description: 'Der Location Service ist ein wichtiger Kontext, um die Interaktion der mobilen Benutzer zu verstehen. In diesem Kontext können Entwickler mobiler Apps den App-Entwurf verbessern und ihn zu einem personalisierteren und ansprechenderen Erlebnis machen. '
 seo-description: 'Der Location Service ist ein wichtiger Kontext, um die Interaktion der mobilen Benutzer zu verstehen. In diesem Kontext können Entwickler mobiler Apps den App-Entwurf verbessern und ihn zu einem personalisierteren und ansprechenderen Erlebnis machen. '
 translation-type: tm+mt
-source-git-commit: 85ce31329ad155e5c835be286c18e6609b88167b
+source-git-commit: fd98249c01fba93250dc7111798c76f3c96c6e20
 
 ---
 
@@ -29,8 +29,6 @@ Die folgenden Möglichkeiten stehen Ihnen zur Verwendung von Orten zur Verfügun
 * Analysieren Sie den Fußverkehr Ihrer eigenen Läden im Vergleich zu Ihren Konkurrenzgeschäften.
 * Segmentieren Sie eine Zielgruppe basierend auf dem Offline-Verhalten, indem Sie Zielgruppenprofile mit dem Standortkontext verwenden.
 * Targeting eines Benutzers mit einem Erlebnis im Geschäft, wenn relevant.
-
-## Hinzufügen eines Platzhalters für das Video "Location Service Intro"von Brandon
 
 ## Anwendungsfälle für den Location Service
 
