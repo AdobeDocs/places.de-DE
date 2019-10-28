@@ -4,7 +4,7 @@ seo-title: Definieren von Datenelementen
 description: Dieser Abschnitt enthält Informationen zum Erstellen, Verwenden und Veröffentlichen von Datenelementen in Experience Platform Launch for Places.
 seo-description: 'Dieser Abschnitt enthält Informationen zum Erstellen, Verwenden und Veröffentlichen von Datenelementen in Experience Platform Launch for Places. '
 translation-type: tm+mt
-source-git-commit: 573f2bb368bd8384f5b465819600a1668b0bdda8
+source-git-commit: 5d438fdd712c85101d546ed82f8ad155010cfb91
 
 ---
 
@@ -45,8 +45,6 @@ Jeder POI enthält die folgenden Datenreferenzen:
 1. Klicken Sie auf der Seite "Eigenschaft"für Ihre App auf die **[!UICONTROL Data Elements]** Registerkarte.
 
 2. Klicken Sie auf **[!UICONTROL Create New Data Element]**.
-
-   ![Datenelement erstellen](/help/assets/create-de-2-v3.png)
 
 3. Suchen Sie in der Liste der installierten Erweiterungen nach **[!UICONTROL Places]**.
 
