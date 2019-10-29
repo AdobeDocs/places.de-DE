@@ -4,7 +4,7 @@ seo-title: Überblick über die Adobe-E/A-Integration
 description: Informationen zum Erstellen einer Adobe I/O-Integration.
 seo-description: Informationen zum Erstellen einer Adobe-E/A-Integration.
 translation-type: tm+mt
-source-git-commit: 3a9653dcc7f5d18b717c4bb59424b8cad7104dd7
+source-git-commit: f99930325a3d94bcc60595e69306c51d6b81caa6
 
 ---
 
@@ -100,25 +100,31 @@ Das folgende Video führt Sie durch den Prozess der Generierung des Schlüsselpa
 So erstellen Sie eine Ortsintegration:
 
 1. Wechseln Sie zu [https://console.adobe.io](https://console.adobe.io) und melden Sie sich mit Ihrer Adobe ID an.
-2. Wenn Sie Zugriff auf mehr als eine Experience Cloud-Organisation haben, wählen Sie die Organisation aus der Dropdownliste auf der linken Seite aus.
-3. Klicken Sie auf **[!UICONTROL New Integration]**.
-4. Wählen Sie **[!UICONTROL Access an API]** und klicken Sie auf **[!UICONTROL Continue]**.
+2. Klicken Sie im Abschnitt **Kurzanleitung** auf Integration **erstellen**.
+3. Wählen Sie **[!UICONTROL Access an API]** und klicken Sie auf **[!UICONTROL Continue]**.
+
+   **[!UICONTROL Access an API]** ist der Standardspeicherort.
+
+4. Wenn Sie Zugriff auf mehr als eine Experience Cloud-Organisation haben, wählen Sie die Organisation in der Dropdownliste oben rechts aus.
 5. Wählen Sie unter **[!UICONTROL Experience Cloud]** den Adobe-Dienst **[!UICONTROL Places]** aus, in den Sie integrieren möchten, und klicken Sie auf **[!UICONTROL Continue]**.
 6. Wählen Sie **[!UICONTROL New integration]** und klicken Sie auf **[!UICONTROL Continue]**.
-7. Geben Sie im Bildschirm "Neue Integration *erstellen* "einen Namen und eine Beschreibung ein.
+7. Geben Sie im Bildschirm "Neue Integration erstellen"einen Namen und eine Beschreibung ein.
 8. Ziehen Sie die oben erstellte `xxxx_public.crt` Datei in den **[!UICONTROL Public keys certificates]** Ablagebereich.
-9. At the bottom of the page, click **[!UICONTROL Create integration]**.
-10. Überprüfen Sie nach einigen Sekunden im Bildschirm *Integration erstellt* , ob folgende Meldung angezeigt wird:
+9. Wählen Sie ein Produktprofil aus.
+
+   Wenn Sie sich nicht sicher sind, welches Profil Sie auswählen möchten, wenden Sie sich an Ihren Systemadministrator.
+10. At the bottom of the page, click **[!UICONTROL Create integration]**.
+11. Überprüfen Sie nach einigen Sekunden im Bildschirm *Integration erstellt* , ob folgende Meldung angezeigt wird:
 
    `Your integration has been created.`
 
-11. Klicken Sie auf **[!UICONTROL Continue to integration details]**.
+12. Die Seite mit den Integrationsdetails wird oben mit dem Namen der Integration angezeigt.
 
-   Es wird ein Überblick über Ihre Integration mit dem API-Schlüssel, Ihrer Organisations-ID, der technischen Konto-ID und anderen Details zu Ihren Integrationen angezeigt.
+   Die **[!UICONTROL Overview]** Registerkarte wird standardmäßig angezeigt und enthält den API-Schlüssel, Ihre Organisations-ID, die technische Konto-ID und weitere Details zu Ihren Integrationen.
 
 ### Unternehmen-ID und API-Schlüssel aufzeichnen
 
-1. Vergewissern Sie sich, dass auf der **[!UICONTROL Services]** Registerkarte angezeigt **[!UICONTROL Places]** wird.
+1. Klicken Sie auf der Seite mit den Integrationsdetails auf die **[!UICONTROL Services]** Registerkarte und bestätigen Sie, dass diese angezeigt **[!UICONTROL Places]** wird **[!UICONTROL Configured Services]**.
 2. Suchen Sie auf der **[!UICONTROL Overview]** Registerkarte den API-Schlüssel (Client-ID) und die Organisations-ID und zeichnen Sie ihn auf.
 
    Diese IDs werden für jede Places REST API-Anforderung benötigt.
@@ -127,7 +133,7 @@ So erstellen Sie eine Ortsintegration:
 
 ### JWT-Token erstellen
 
-Auf der **[!UICONTROL JWT]** Registerkarte können Sie mit der Adobe-E/A-Konsole Ihre Integration testen, indem Sie eine JWT generieren und die Austausch-URL angeben.
+Klicken Sie auf der Seite mit den Integrationsdetails auf die **[!UICONTROL JWT]** Registerkarte, damit Sie Ihre Integration testen können, indem Sie eine JWT generieren und die Austausch-URL angeben.
 
 So generieren Sie ein JWT-Token:
 
@@ -142,4 +148,4 @@ So generieren Sie ein JWT-Token:
 
 >[!IMPORTANT]
 >
->Adobe-Zugriffstoken sind **nur** 24 Stunden gültig. Speichern Sie daher den CURL-Beispielbefehl (Schritt 5). Wenn das Zugriffstoken nicht mehr gültig ist, müssen Sie das Token erneut generieren.
+>Adobe-Zugriffstoken sind **nur** 24 Stunden gültig. Speichern Sie daher den CURL-Beispielbefehl (Schritt 5). Wenn das Zugriffstoken nicht mehr gültig ist, müssen Sie das Token neu generieren.
