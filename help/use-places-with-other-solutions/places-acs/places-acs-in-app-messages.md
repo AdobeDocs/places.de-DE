@@ -4,7 +4,7 @@ seo-title: In-App-Nachrichten mit dem Location Service
 description: Dieser Abschnitt enthält Informationen zur Verwendung von Push-Nachrichten in Campaign Standard mit In-App-Nachrichten in Campaign Standard.
 seo-description: 'Dieser Abschnitt enthält Informationen zur Verwendung von "Push-Nachrichten in Campaign Standard"mit In-App-Nachrichten in Campaign Standard. '
 translation-type: tm+mt
-source-git-commit: fd98249c01fba93250dc7111798c76f3c96c6e20
+source-git-commit: 95c29df19f61e7854e39b47e39471f7f1e94b736
 
 ---
 
@@ -54,6 +54,4 @@ Anhand dieser Informationen erhalten Sie einen Einblick, wie Sie mit den Informa
 
 Die Verwendung von Location Services mit Adobe Campaign Standard bietet Ihnen ein leistungsfähiges Tool, um Ihre Nachrichten basierend auf Geo-Zaun-Einstiegen und -Ausstiegen zu segmentieren und gezielt an Benutzer auszurichten. Diese einfache Integration öffnet die Tür, um personalisierte und kontextbezogene Anwendungsfälle zu erstellen.
 
-## Erstellen unterschiedlicher Auslöser in Campaign Standard basierend auf Platzierungsmetadaten
-
-(Werden diese Informationen angezeigt?)
+>[!VIDEO](https://www.youtube.com/watch?v=ikiTTQw9c-o)
