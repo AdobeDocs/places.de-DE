@@ -4,12 +4,12 @@ seo-title: Überblick über die Adobe-E/A-Integration
 description: Informationen zum Erstellen einer Adobe I/O-Integration.
 seo-description: Informationen zum Erstellen einer Adobe-E/A-Integration.
 translation-type: tm+mt
-source-git-commit: f99930325a3d94bcc60595e69306c51d6b81caa6
+source-git-commit: 95c29df19f61e7854e39b47e39471f7f1e94b736
 
 ---
 
 
-# Adobe I/O-Integration {#adobeio-integration}
+# Übersicht über die Integration und Voraussetzungen {#integration-prereqs}
 
 Diese Informationen zeigen Ihnen, wie Sie eine Adobe I/O- und eine Places-Integration erstellen.
 
