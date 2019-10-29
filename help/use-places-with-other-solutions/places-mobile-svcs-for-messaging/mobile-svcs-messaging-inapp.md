@@ -1,69 +1,86 @@
 ---
-title: In-App-Nachrichten
-seo-title: In-App-Nachrichten
+title: In-App-Benachrichtigungen
+seo-title: In-App-Benachrichtigungen
 description: Dieser Abschnitt zeigt Ihnen, wie Sie Orte mit In-App-Nachrichten verwenden.
 seo-description: Dieser Abschnitt zeigt Ihnen, wie Sie Orte mit In-App-Nachrichten verwenden.
 translation-type: tm+mt
-source-git-commit: 7985943cef606525401983c4c80862c277f41bf0
+source-git-commit: 95c29df19f61e7854e39b47e39471f7f1e94b736
 
 ---
 
 
 # In-App-Benachrichtigungen (#place-push-messaging)
 
-Konfigurieren von In-App-Nachrichten zum Auslösen von Places-Ereignissen; die Nachrichten müssen sich bei einem Analytics-Treffer befinden.
+Die folgenden Informationen zeigen Ihnen, wie In-App-Nachrichten so konfiguriert werden, dass sie von Places-Ereignissen ausgelöst werden.
+
+>[!IMPORTANT]
+>
+>Die Meldungen müssen sich bei einem Analytics-Treffer befinden.
 
 ## In-App-Nachricht
 
-Mit AMS können Sie Standortdaten, die an Analytics gesendet werden, als Auslösereignis und/oder Bedingung für eine In-App-Nachricht verwenden. In-App-Nachrichten können dem Benutzer in Echtzeit angezeigt werden, sobald der Auslöser aus dem SDK ausgelöst wird und nicht erst abgewartet werden muss, bis die Daten von Analytics verarbeitet werden.
+Mit Mobile Services können Sie Standortdaten, die an Analytics gesendet werden, als Auslösereignis und/oder Bedingung für eine In-App-Nachricht verwenden. Wenn In-App-Nachrichten aus dem SDK ausgelöst werden und nicht warten müssen, bis Daten von Analytics verarbeitet werden, können die Nachrichten in Echtzeit angezeigt werden, sobald der Auslöser eintritt.
 
-Lokale Benachrichtigungen: In-App-Nachrichten haben drei verschiedene Typen:
+### Lokale Benachrichtigungen
+
+Im Folgenden finden Sie eine Liste der verfügbaren In-App-Nachrichtentypen:
 
 * Vollbild
 * Warnhinweis
-* Lokale Benachrichtigungen.
+* Lokale Benachrichtigungen
 
-Diese Typen gelten als In-App-Nachrichten, da sie vom SDK ausgelöst werden. Beachten Sie jedoch, dass lokale Benachrichtigungen wie Push-Benachrichtigungen aussehen und sich anfühlen, während sich die App nicht im Vordergrund befindet. Lokale Benachrichtigungen sind eine großartige Möglichkeit, um Benutzern Echtzeitbenachrichtigungen zu senden, wenn sie Ihre POIs aufrufen oder verlassen, während sich die App im Hintergrund befindet. Informationen zur Standortüberwachung finden Sie in der Dokumentation zur Platzierungsüberwachung (https://placesdocs.com/places-services-by-adobe-documentation/configure-places-in-the-sdk/places-monitor-extension).
+Diese Typen sind In-App-Nachrichten, da sie vom SDK ausgelöst werden. Lokale Benachrichtigungen sehen wie Push-Benachrichtigungen aus, da sie angezeigt werden, wenn sich die App im Hintergrund befindet. Diese Benachrichtigungen stellen auch Benachrichtigungen in Echtzeit bereit, wenn Benutzer Ihre POIs eingeben oder verlassen, während sich die App im Hintergrund befindet. Weitere Informationen finden Sie unter [Platzierungsmonitor-Erweiterung.](/help/places-ext-aep-sdks/places-monitor-extension/places-monitor-extension.md)
 
 ### Voraussetzungen
 
-* Verstehen Sie, wie Sie eine In-App-Nachricht in AMS senden und erstellen und wie Trigger funktionieren.
+Bevor Sie beginnen, erfahren Sie, wie Sie eine In-App-Nachricht in Mobile Services senden und erstellen und wie Auslöser funktionieren. Weitere Informationen finden Sie unter [In-App-Nachricht erstellen.](https://docs.adobe.com/content/help/en/mobile-services/using/messaging-ug/inapp-messages/t-in-app-message.html)
 
-   Weitere Informationen finden Sie unter [In-App-Nachricht erstellen](https://docs.adobe.com/content/help/en/mobile-services/using/messaging-ug/inapp-messages/t-in-app-message.html).
+## Regeln in Experience Platform Launch
 
+Sie können Startregeln erstellen, die die Daten senden, die Sie als Teil Ihrer In-App-Nachrichten-Auslöserregeln für Analytics verwenden möchten. Sie können Daten aus den Platzierungserweiterungen in Ihren Startregeln je nach Anwendungsfall entweder als Ereignisse und/oder Bedingungen verwenden.
 
-## Regel beim Starten der Erlebnisplattform erstellen
+* Verwenden von Positionsdaten als Auslösereignis
 
-Erstellen Sie Startregeln, die die korrekten Daten an Analytics senden, die Sie als Teil Ihrer In-App-Nachrichten-Auslöserregel(n) verwenden möchten. Sie können Daten aus den Platzierungserweiterungen in Ihren Startregeln je nach Anwendungsfall entweder als Ereignisse und/oder Bedingungen verwenden.
+   Sie können beispielsweise Daten an Analytics senden, wenn ein Benutzer einen POI eingibt.
 
-* Verwenden von Positionsdaten als Auslösereignis Wenn Sie beispielsweise Daten an Analytics senden möchten, wenn ein Benutzer einen POI eingibt.
+* Verwenden von Standortdaten als Bedingung für ein auslösendes Ereignis
 
-* Verwenden von Standortdaten als Bedingung für ein auslösendes Ereignis Wenn Sie beispielsweise im Location Service ein benutzerdefiniertes Metadaten-Tag für das Wetter an verschiedenen POIs erstellt haben, können Sie diese Metadaten wie unten gezeigt als Parameter für Ihre Regelbedingung verwenden. Obwohl Sie diese Bedingung für das zuvor beschriebene POI-Eingabeereignis verwenden können, können Sie sie auch als Kontext für jedes Ereignis verwenden.
+   Wenn Sie beispielsweise im Location Service ein benutzerdefiniertes Metadaten-Tag für das Wetter an verschiedenen POIs erstellt haben, können Sie diese Metadaten als Parameter für Ihre Regelbedingung verwenden. Sie können diese Bedingung zwar mit einem zuvor beschriebenen POI-Eingabeereignis verwenden, Sie können die Bedingung aber auch als Kontext für jedes Ereignis verwenden.
 
-Nachdem die Regel mit den richtigen Ereignis- und Bedingungsparametern eingerichtet wurde, beenden Sie die Regelkonfiguration, indem Sie die Aktion zum Senden von Daten an Analytics konfigurieren. Gehen Sie folgendermaßen vor:
+Nachdem die Regel mit den richtigen Ereignis- und Bedingungsparametern eingerichtet wurde, schließen Sie Ihre Regelkonfiguration ab, indem Sie die Aktion zum Senden von Daten an Analytics konfigurieren.
 
-* Adobe Analytics als Erweiterung auswählen
-* Wählen Sie "Track"als Aktionstyp
-* Namen für die Aktion festlegen
-* Legen Sie Kontextdaten fest, die mit dem Ereignis gesendet werden sollen. Verwenden Sie die Benutzeroberfläche "Kontextdaten", um Startdatenelemente den Schlüsselnamen zuzuordnen, die Sie an Analytics senden möchten.
+## Erstellen einer Aktion
 
-Beachten Sie, dass Analytics-Verarbeitungsregeln so eingestellt werden können, dass diese Kontextdaten aufgenommen werden. Siehe Analytics-Verarbeitungsregeln bei Bedarf (https://docs.adobe.com/content/help/en/analytics/implementation/analytics-basics/ref-processing-rules.html) Diese Aktion sendet beispielsweise den Poiname als Kontext, um das POIentry-Ereignis zu beschreiben, das an Analytics gesendet wird.
+Gehen Sie folgendermaßen vor:
+
+1. Wählen Sie die **-Erweiterung aus.[!UICONTROL Adobe Analytics]**
+1. Wählen Sie in der **[!UICONTROL Action type]** Dropdownliste **[!UICONTROL Track.]**
+1. Geben Sie einen Namen für die Aktion ein.
+1. Wählen Sie im rechten Bereich **[!UICONTROL Context Data]** das Schlüssel-Wert-Paar aus, um die Kontextdaten festzulegen, die an Analytics gesendet werden.
+
+Sie können beispielsweise **[!UICONTROL poiname]** als Schlüssel und **[!UICONTROL `{%%Last Entered POI Name}`auswählen.]
+
+>[!TIP]
+>
+>Analytics-Verarbeitungsregeln können so eingestellt werden, dass diese Kontextdaten aufgenommen werden. For more information, see [Processing Rules](https://docs.adobe.com/content/help/en/analytics/implementation/analytics-basics/ref-processing-rules.html). In dem Beispiel unter *Aktion* erstellen sendet die Aktion den `poiname` als Kontext, um das POIentry-Ereignis zu beschreiben, das an Analytics gesendet wird.
 
 ![Erstellen einer Aktion](/help/assets/configure-action.png)
 
-Hier ist ein Beispiel dafür, wie die fertige Regel aussehen könnte.
+Hier ein Beispiel für die vollständige Regel:
 
 ![Abgeschlossene Regel](/help/assets/create-a-rule.png)
 
-## Erstellen einer In-App-Nachricht in AMS:
+## Erstellen einer In-App-Nachricht in AMS
 
-Sie erstellen die Zielgruppe für die Nachricht mit Daten aus dem Location Service als Teil Ihrer Trigger-Parameter.
+Als Teil Ihrer Auslöserparameter können Sie die Zielgruppe für die Nachricht mit Daten aus dem Location Service auf eine der folgenden Arten erstellen:
 
-* Verwenden standortspezifischer Aktionen wie Einstieg oder Ausstieg
-* Verwenden von POI-Metadaten, die als Kontextdaten gesendet werden, um das Ziel Ihrer Zielgruppe einzugrenzen. Dies kann mit einer standortspezifischen Aktion wie "entry"verwendet werden oder als Kontext zu einem anderen Ereignis wie "Launch"oder "button click"verwendet werden.
+* Verwenden Sie standortspezifische Aktionen wie einen Eintrag oder einen Ausstieg.
+* Verwenden von POI-Metadaten, die als Kontextdaten gesendet werden, um das Ziel Ihrer Zielgruppe einzugrenzen.
 
-   Im Folgenden finden Sie ein Beispiel dafür, wie Sie eine In-App-Nachricht einrichten können, um Benutzer aufzunehmen, die einen POI mit "Adobe"im Namen eingeben:
+   Diese Option kann mit einer standortspezifischen Aktion wie "Eintrag"verwendet werden oder als Kontext zu einem anderen Ereignis wie einem Start oder einem Schaltflächenklick verwendet werden.
+
+   Im Folgenden finden Sie ein Beispiel, wie Sie eine In-App-Nachricht konfigurieren, um Benutzer aufzunehmen, die einen POI mit **[!UICONTROL Adobe]** dem Namen eingeben:
 
    ![Parameter auslösen](/help/assets/trigger-parameters.png)
 
-* Parameter, die in den Überschriften "Orte"in AMS-Auslösern und -Eigenschaften gefunden werden, funktionieren nicht mit Daten aus dem Location Service. Diese Parameter sind für die alte Places-Datenbank bestimmt, die in AMS erstellt wurde.
+* Parameter in den Überschriften "Orte"auf der Seite " *Auslöser und Eigenschaften* "in Mobile Services funktionieren nicht mit Daten aus dem Location Service. Diese Parameter gelten nur für die alte Places-Datenbank, die in Mobile Services erstellt wurde.
