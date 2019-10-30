@@ -4,7 +4,7 @@ seo-title: Adobe Experience Platform Location Service
 description: 'Der Location Service ist ein wichtiger Kontext, um die Interaktion der mobilen Benutzer zu verstehen. In diesem Kontext können Entwickler mobiler Apps den App-Entwurf verbessern und ihn zu einem personalisierteren und ansprechenderen Erlebnis machen. '
 seo-description: 'Der Location Service ist ein wichtiger Kontext, um die Interaktion der mobilen Benutzer zu verstehen. In diesem Kontext können Entwickler mobiler Apps den App-Entwurf verbessern und ihn zu einem personalisierteren und ansprechenderen Erlebnis machen. '
 translation-type: tm+mt
-source-git-commit: fd98249c01fba93250dc7111798c76f3c96c6e20
+source-git-commit: a5eee2378475885a2aef9867ff2c38a8881c9bbe
 
 ---
 
@@ -19,7 +19,7 @@ Mit dem Location Service können Sie Folgendes erreichen:
 * Fügen Sie den POIs benutzerspezifische Metadaten hinzu, um sie durch Angabe zusätzlicher Attribute reicher und aussagekräftiger zu gestalten.
 * Visualisieren Sie die POIs auf einer Karte, um den räumlichen Kontext zu verstehen und Metadatenattribute hinzuzufügen/zu bearbeiten.
 * Konfigurieren Sie das SDK in Adobe Experience Platform Launch, um die standortgesteuerten Regeln und metadatenbasierten Bedingungen zu definieren.
-* Verringern Sie den Code, den Sie an den Speicherort des Monitors schreiben müssen, und verwenden Sie den Standortmonitor von Adobe, um die standortspezifischen Regeln automatisch auszulösen.
+* Verringern Sie den Code, den Sie an den Speicherort des Monitorgeräts schreiben müssen, und verwenden Sie die Platzierungserweiterung, um die standortspezifischen Regeln automatisch auszulösen.
 
 Auf diese Weise können Sie in Echtzeit Aktionen aus Standortsignalen ausführen, wann und wo sie wichtig sind. Der richtige Kontext bietet eine umfassendere Interaktion mit Mobilgeräten.
 
@@ -76,7 +76,7 @@ In dieser Dokumentation werden einige allgemeine Begriffe verwendet:
 
 * Eine **Bibliothek** ist eine Sammlung von POIs, die gruppiert sind, um Regeln einfach an einen Satz anstatt an einen POI anzuhängen.
 
-* Eine SDK- **Erweiterung** ist die Experience Platform Launch-Erweiterung, die erforderlich ist, um das Places SDK in Ihre mobilen Apps zu integrieren.
+* Die **Erweiterung** des Places SDK ist die Experience Platform Launch-Erweiterung, die zur Integration des Places SDK in Ihre mobilen Apps erforderlich ist.
 
    Die mit den anderen mobilen SDKs verwendete Erweiterung, um Ihren Erlebnissen Ortskontext hinzuzufügen.
 
