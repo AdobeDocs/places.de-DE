@@ -4,7 +4,7 @@ seo-title: 'Übersicht über die Web-Services-API '
 description: Places ist der Satz von Diensten, die es Adobe-Kunden erleichtern, die Adobe Experience Cloud- und Adobe Experience Platform-Lösungen mit Standortdaten und dem richtigen Erlebnis zur richtigen Zeit und am richtigen Ort zu kombinieren.
 seo-description: Places ist der Satz von Diensten, die es Adobe-Kunden erleichtern, die Adobe Experience Cloud- und Adobe Experience Platform-Lösungen mit Standortdaten und dem richtigen Erlebnis zur richtigen Zeit und am richtigen Ort zu kombinieren.
 translation-type: tm+mt
-source-git-commit: e899cde6230353c8b34090c793983dc570e8115e
+source-git-commit: e2070c629b5a4e4bcf3a364023e0f87b526ed4cb
 
 ---
 
@@ -29,11 +29,11 @@ Bevor Sie die Web-Services-API verwenden können, stellen Sie sicher, dass folge
 
 * Orte werden in Ihrer Organisation bereitgestellt und Sie haben als Benutzer entsprechenden Zugriff.
 
-   Weitere Informationen finden Sie im Abschnitt *Organisationsanforderungen* unten.
+   Weitere Informationen finden Sie unter *Voraussetzungen für den Benutzerzugriff* in der Übersicht über die [Integration und Voraussetzungen](/help/web-service-api/adobe-i-o-integration.md).
 
 * Nachdem Orte in Ihrem Unternehmen bereitgestellt wurden und Sie Zugriff haben, erstellen Sie eine Adobe-Integration für Orte.
 
-   Weitere Informationen finden Sie unter *Erstellen der Ortsintegration* in der Übersicht über die [Adobe-E/A-Integration](/help/web-service-api/adobe-i-o-integration.md).
+   Weitere Informationen finden Sie unter *Erstellen der Ortsintegration* in der Übersicht über die [Integration und Voraussetzungen](/help/web-service-api/adobe-i-o-integration.md).
 
 Weitere Informationen:
 
