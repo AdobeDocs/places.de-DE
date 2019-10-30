@@ -2,15 +2,15 @@
 cloud: experience-cloud
 product: Orte
 solution-title: Lernen und Support
-solution-hub-url: https://helpx.adobe.com/de/support/experience-cloud/core-services.html
+solution-hub-url: https://helpx.adobe.com/de/support/experience-cloud.html
 getting-started-title: Erste Schritte
-getting-started-url: https://www.adobe.com/de
+getting-started-url: https://docs.adobe.com/content/help/en/places/using/getting-started.html
 tutorials-title: Tutorials
-tutorials-url: https://www.adobe.com/de
+tutorials-url: https://experienceleague.adobe.com/
 git-repo: https://git.corp.adobe.com/AdobeDocs/places.en
 index: true
 translation-type: tm+mt
-source-git-commit: 39374c1457d33f4cd4014c78fb8daaaa59e5d62d
+source-git-commit: 35353d02b791bcb234a45b612b0bc481b604afdf
 
 ---
 
