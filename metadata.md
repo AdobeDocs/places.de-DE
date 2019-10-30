@@ -10,7 +10,7 @@ tutorials-url: https://experienceleague.adobe.com/
 git-repo: https://git.corp.adobe.com/AdobeDocs/places.en
 index: true
 translation-type: tm+mt
-source-git-commit: 35353d02b791bcb234a45b612b0bc481b604afdf
+source-git-commit: 8b9b84a12c40e93ecd1aea1cee5d44c37dc439e8
 
 ---
 
@@ -31,7 +31,7 @@ Die Datei metadata.md enthält Metadaten auf Repo-Ebene, die an die TOC.md-Datei
 | tutorials-title | Wird selten verwendet, wenn Übungen nicht geeignet sind |
 | tutorials-url | Link zu Video-Übungen – entweder Helpx-Übungen oder KT-Übungen |
 | mini-toc-levels | Legt fest, wie viele Überschriftenebenen in der rechten Leiste angezeigt werden. Standardwert ist „2“ |
-| git-repo | Gibt den Speicherort des Zusammenarbeits-Repo an. Verwenden Sie den github.com-Spiegel für Dokumente, die für die Öffentlichkeit zugänglich sind |
+| git-repo | https://github.com/AdobeDocs/places.en |
 | Index | set index=no for soft launch |
 
 In der Datei TOC.md
