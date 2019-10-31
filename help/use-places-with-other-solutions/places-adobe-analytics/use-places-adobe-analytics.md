@@ -4,7 +4,7 @@ seo-title: Ortsdaten an Adobe Analytics senden
 description: Dieser Abschnitt enthält Informationen zum Senden von Ortsdaten an Analytics.
 seo-description: 'Dieser Abschnitt enthält Informationen zum Senden von Ortsdaten an Analytics. '
 translation-type: tm+mt
-source-git-commit: fd98249c01fba93250dc7111798c76f3c96c6e20
+source-git-commit: a76e91775efd92ce56f2dc5cbdcc65786855b5c3
 
 ---
 
@@ -14,7 +14,7 @@ source-git-commit: fd98249c01fba93250dc7111798c76f3c96c6e20
 
 >[!IMPORTANT]
 >
->In diesem Dokument wird davon ausgegangen, dass Sie Places in Ihrer Anwendung implementiert haben. Weitere Informationen zur Implementierung von Orten finden Sie unter [Platzierungserweiterungen](/help/places-ext-aep-sdks/places-extension/places-extension.md).
+>In diesem Abschnitt wird davon ausgegangen, dass Sie Places in Ihrer Anwendung implementiert haben. Weitere Informationen zur Implementierung von Places finden Sie unter [Platzierungserweiterungen](/help/places-ext-aep-sdks/places-extension/places-extension.md).
 
 Nachdem Orte die Ein- und Ausstiegsereignisse gesendet haben, können Sie in Experience Platform Launch Regeln erstellen, um Ortsdaten an Adobe Analytics zu senden. Um diesen Regeltyp zu erstellen, wählen Sie Ihre Eigenschaft in Start und führen Sie die folgenden Schritte aus:
 
@@ -24,12 +24,14 @@ Nachdem Orte die Ein- und Ausstiegsereignisse gesendet haben, können Sie in Exp
 
    Beachten Sie die folgenden Informationen:
 
-   * Wenn Sie keine Regeln für diese Eigenschaft haben, befindet sich die Schaltfläche in der Mitte des Bildschirms.
-   * Wenn Ihre Eigenschaft über Regeln verfügt, befindet sich die Schaltfläche oben rechts auf dem Bildschirm.
+   * Wenn Sie keine Regeln für diese Eigenschaft haben, befindet sich die **[!UICONTROL Create New Rule]** Schaltfläche in der Mitte des Bildschirms.
+   * Wenn Ihre Eigenschaft über Regeln verfügt, befindet sich die **[!UICONTROL Create New Rule]** Schaltfläche oben rechts auf dem Bildschirm.
 
 ## 2. Ereignis auswählen
 
-1. Geben Sie Ihrer Regel einen aussagekräftigen Namen, damit sie in Ihrer Regelliste leicht erkennbar ist. In diesem Beispiel heißt die Regel Daten an Analytics **senden**.
+1. Geben Sie einen aussagekräftigen Namen für Ihre Regel ein.
+
+   Auf diese Weise wird die Regel in Ihrer Regelliste leicht erkennbar. In diesem Beispiel wird die Regel benannt **[!UICONTROL Send Data to Analytics]**.
 
 2. In the **[!UICONTROL Events]** section, click **[!UICONTROL Add]**.
 
@@ -46,8 +48,7 @@ Nachdem Orte die Ein- und Ausstiegsereignisse gesendet haben, können Sie in Exp
 
 >[!IMPORTANT]
 >
->Führen Sie diesen Schritt aus, wenn Sie Bedingungen zu Ihrer Regel hinzufügen möchten. Fahren Sie andernfalls mit *Definieren der unten stehenden Aktion* fort.
-
+>Führen Sie diesen Schritt aus, um Ihrer Regel Bedingungen hinzuzufügen. Fahren Sie andernfalls mit *Definieren der unten stehenden Aktion* fort.
 
 In diesem Beispiel wird eine Bedingung erstellt, die bewirkt, dass die Regel nur ausgelöst wird, wenn der Name des aktuellen POI gleich **[!UICONTROL My POI]** ist.
 
@@ -57,7 +58,7 @@ In diesem Beispiel wird eine Bedingung erstellt, die bewirkt, dass die Regel nur
 
 3. Wählen Sie aus der **[!UICONTROL Condition Type]** Dropdownliste **[!UICONTROL Name]**.
 
-4. Geben Sie im Fenster auf der rechten Seite im Textfeld **[!UICONTROL My POI]** ein.
+4. Geben Sie im rechten Bereich im Textfeld **[!UICONTROL My POI]** ein.
 
 5. Klicken Sie auf **[!UICONTROL Keep Changes]**.
 
@@ -72,20 +73,21 @@ In diesem Beispiel wird eine Bedingung erstellt, die bewirkt, dass die Regel nur
 
 3. Wählen Sie aus der **[!UICONTROL Action Type]** Dropdownliste **[!UICONTROL Track]**.
 
-4. Fügen Sie im rechten Bereich die Aktion oder den Status hinzu, die bzw. den Sie an Analytics senden möchten. Sie können auch zusätzliche Kontextdaten zu dieser Anforderung hinzufügen. Denken Sie daran, dass Sie Datenelemente verwenden können, um diese Daten dynamisch aus dem SDK abzurufen.
+4. Fügen Sie im rechten Bereich die Aktion oder den Status hinzu, die bzw. den Sie an Analytics senden möchten.
+
+   Sie können auch zusätzliche Kontextdaten zu dieser Anforderung hinzufügen. Denken Sie daran, dass Sie Datenelemente verwenden können, um diese Daten dynamisch aus dem SDK abzurufen.
 
 5. Klicken Sie auf **[!UICONTROL Keep Changes]**.
 
-Im folgenden Beispiel wird ein `TrackAction` Aufruf an Analytics mit zusätzlichen Kontextdaten von **poi.name** gesendet, die dem Namen des POI entsprechen, der dieses Eingabeereignis ausgelöst hat:
+   Im folgenden Beispiel wird ein `TrackAction` Aufruf an Analytics mit zusätzlichen Kontextdaten gesendet, die dem Namen des POI `poi.name` entsprechen, der dieses Eingabeereignis ausgelöst hat:
 
-!["Aktion festlegen"](/help/assets/pt-setAction.png)
+   !["Aktion festlegen"](/help/assets/pt-setAction.png)
 
 ## 5. Speichern Sie die Regel und erstellen Sie Ihre Eigenschaft neu
 
 Überprüfen Sie nach Abschluss der Konfiguration, ob die Regel wie folgt aussieht:
 
 !["rule is created"](/help/assets/pt-ruleComplete.png)
-
 
 1. Klicken Sie auf **[!UICONTROL Save]**
 
