@@ -4,7 +4,7 @@ seo-title: Ausführen von Berichten in Adobe Analytics mit Ortsdaten
 description: Dieser Abschnitt enthält Informationen zum Ausführen von Berichten in Analytics, die Ortsdaten enthalten.
 seo-description: Dieser Abschnitt enthält Informationen zum Ausführen von Berichten in Analytics, die Ortsdaten enthalten.
 translation-type: tm+mt
-source-git-commit: 0612e2fb06e45ff25ad580e3336be3eb48bb39b9
+source-git-commit: a76e91775efd92ce56f2dc5cbdcc65786855b5c3
 
 ---
 
@@ -22,14 +22,14 @@ Nachdem Orte die Einstiegs- und Ausstiegsereignisse gesendet haben, können Sie 
 1. Klicken Sie auf der **[!UICONTROL Rules]** Registerkarte auf **[!UICONTROL Create New Rule]**.
 
    Beachten Sie die folgenden Informationen:
-   * Wenn Sie keine Regeln für diese Eigenschaft haben, befindet sich die Schaltfläche in der Mitte des Bildschirms.
-   * Wenn Ihre Eigenschaft über Regeln verfügt, befindet sich die Schaltfläche oben rechts auf dem Bildschirm.
+   * Wenn Sie keine Regeln für diese Eigenschaft haben, befindet sich die **[!UICONTROL Create New Rule]** Schaltfläche in der Mitte des Bildschirms.
+   * Wenn Ihre Eigenschaft über Regeln verfügt, befindet sich die **[!UICONTROL Create New Rule]** Schaltfläche oben rechts auf dem Bildschirm.
 
 ## 1. Wählen Sie ein Ereignis
 
 1. Geben Sie Ihrer Regel einen aussagekräftigen Namen, damit sie in Ihrer Regelliste leicht erkennbar ist.
 
-   In diesem Beispiel erhält die Regel den Namen "Platzierungsdaten an Analytics-Verfolgungsaktionsereignisse **anhängen"**.
+   In diesem Beispiel wird die Regel benannt **[!UICONTROL Attach Places Data to Analytics Track Action Events]**.
 
 2. Klicken Sie unter dem **[!UICONTROL Events]** Abschnitt auf **[!UICONTROL Add]**.
 
@@ -46,7 +46,7 @@ Jetzt können Sie die Auslöser festlegen, die Sie für diese Regel einbeziehen 
 
 >[!IMPORTANT]
 >
->Führen Sie diesen Schritt aus, wenn Sie Bedingungen zu Ihrer Regel hinzufügen möchten. Fahren Sie andernfalls mit dem Abschnitt Aktion *definieren* weiter unten fort.
+>Führen Sie dieses Verfahren aus, um Ihrer Regel Bedingungen hinzuzufügen. Fahren Sie andernfalls mit dem Abschnitt Aktion *definieren* weiter unten fort.
 
 In diesem Beispiel wird eine Bedingung erstellt, die bewirkt, dass die Regel nur für AT&amp;T-Kunden ausgelöst wird.
 
@@ -80,7 +80,7 @@ Im folgenden Beispiel werden den Kontextdaten des Analytics-Ereignisses Werte `p
 
 !["Aktion erstellen"](/help/assets/pt-setAction.png)
 
-## 4. Speichern der Regel und Erstellen der Eigenschaft
+## 4. Speichern Sie die Regel und erstellen Sie Ihre Eigenschaft neu
 
 Überprüfen Sie nach Abschluss der Konfiguration, ob die Regel wie folgt aussieht:
 
