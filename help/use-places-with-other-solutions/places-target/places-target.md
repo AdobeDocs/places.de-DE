@@ -4,7 +4,7 @@ seo-title: Adobe Target
 description: Dieser Abschnitt enthält Informationen zur Verwendung des Location Service mit Adobe Target.
 seo-description: 'Dieser Abschnitt enthält Informationen zur Verwendung des Location Service mit Adobe Target. '
 translation-type: tm+mt
-source-git-commit: ba918bfdb989ba4037409b17d799ef596064b676
+source-git-commit: 7ca51580a4cfa9c00431ad3972bd10e2a12dfbd1
 
 ---
 
@@ -38,7 +38,7 @@ Nachdem die Platzierungserweiterung Ereignisse für Einstiege und Ausstiege gese
 
 5. Klicken Sie auf **[!UICONTROL Keep Changes]**.
 
-![Ereignis hinzufügen](/help/assets/ad-addEvent.png)
+![Ereignis hinzufügen](/help/assets/ad-setEvent_target.png)
 
 ## 3. Bedingungen hinzufügen
 
@@ -58,7 +58,7 @@ Im folgenden Beispiel wird eine Bedingung erstellt, die bewirkt, dass die Regel 
 
 5. Klicken Sie auf **[!UICONTROL Keep Changes]**.
 
-![Ereignis hinzufügen](/help/assets/ad-setCondition.png)
+![Ereignis hinzufügen](/help/assets/ad-setCondition_target.png)
 
 ## 4. Definieren der Aktion
 
@@ -82,13 +82,13 @@ Im folgenden Beispiel werden der Anforderung, die im Target-Ereignis verarbeitet
 >
 >Die Notation von `request[*]` kann laut als _für jedes Objekt im `request` Array gelesen werden.
 
-![Ereignis hinzufügen](/help/assets/ad-setAction.png)
+![Ereignis hinzufügen](/help/assets/ad-setCondition_target.png)
 
 ## 5. Speichern der Regel und Erstellen der Eigenschaft
 
 Überprüfen Sie nach Abschluss der Konfiguration, ob die Regel wie folgt aussieht:
 
-![Abgeschlossene Regel](/help/assets/ad-ruleComplete.png)
+![Abgeschlossene Regel](/help/assets/ad-ruleComplete_target.png)
 
 1. Klicken Sie auf **[!UICONTROL Save]**
 
