@@ -4,14 +4,14 @@ seo-title: Erstellen einer Regel für Ihre Places-Eigenschaft
 description: 'Das Places SDK verfolgt den aktuellen Standort, überwacht die konfigurierten POIs um den aktuellen Speicherort und verfolgt die Ein- und Ausstiegsereignisse für diese POIs. '
 seo-description: 'Das Places SDK verfolgt den aktuellen Standort, überwacht die konfigurierten POIs um den aktuellen Speicherort und verfolgt die Ein- und Ausstiegsereignisse für diese POIs. '
 translation-type: tm+mt
-source-git-commit: 9feb88f1ccec83c96d08ac5bd48e43d7d9c247c8
+source-git-commit: 84b23934a6e9f9fd61c068693bae3daca24de253
 
 ---
 
 
 # Einstiegs- und Ausstiegsregeln erstellen {#create-entry-exit-rules}
 
-Wenn die Erweiterungen "Orte und Orte überwachen"in Ihrer mobilen Anwendung installiert sind, können Sie Regeln in Adobe Experience Platform Launch erstellen, die ausgelöst oder konditioniert werden, z. B. Ortseinstiegs- und Ausstiegsereignisse.
+Wenn die Erweiterungen "Orte und Orte überwachen"in Ihrer mobilen Anwendung installiert sind, können Sie Regeln in Adobe Experience Platform Launch erstellen, die ausgelöste oder konditionierte Standortdaten, einschließlich Ortseinstiegs- und Ausstiegsereignissen, sind.
 
 ## Regeln
 
@@ -54,7 +54,7 @@ Aktionen definieren, was die App tun wird, wenn die Bedingung für die Regel fü
 
 >[!CAUTION]
 >
->In diesem Beispiel wird davon ausgegangen, dass Sie eine POI-Bibliothek aller Kaffeehäuser in den USA erstellt haben. Weitere Informationen zum Erstellen von POIs und Bibliotheken finden Sie unter [Erstellen eines POI](https://placesdocs.com/places-services-by-adobe-documentation/places-database-management-1/managing-pois-in-the-places-ui#create-a-poi) und [Erstellen einer Bibliothek](https://placesdocs.com/places-services-by-adobe-documentation/places-database-management-1/manage-libraries#create-a-library).
+>In diesem Beispiel wird davon ausgegangen, dass Sie eine POI-Bibliothek aller Kaffeehäuser in den USA erstellt haben. Weitere Informationen zum Erstellen von POIs und Bibliotheken finden Sie unter [Erstellen eines POI](/help/poi-mgmt-ui/create-a-poi-ui.md) und *Erstellen einer Bibliothek* in [Verwalten mehrerer Bibliotheken](https://docs.adobe.com/content/help/en/places/using/poi-mgmt-ui/manage-libraries-in-the-places-ui.html).
 
 Das folgende Verfahren ist ein Beispiel dafür, wie eine Regel erstellt wird, die einen Beitrag zurück an Slack sendet, wenn Sie in einem Café in San Francisco einsteigen.
 
@@ -128,6 +128,6 @@ So erstellen Sie ein Datenelement beim Start der Experience Platform:
 
 ### Denken über Einstiege und Ausstiege hinaus
 
-Die Verwendung von Orts-Geo-Zaun-Einstiegen und -Ausstiegen zum Auslösen von Regeln in Launch ist unglaublich leistungsstark, aber Sie können auch Standortdaten als Bedingung für andere Ereignisse verwenden, um zu starten. Beispielsweise könnte ein Ereignis für die Verfolgung der Mobilgeräte-Core-Aktion ausgelöst werden, das basierend auf einem bestimmten trackAction-Aufrufereignis in Ihrer App ausgelöst werden kann. Auf der Grundlage dieses Ereignisses können Sie dem Ereignis vor Durchführung einer Aktion zusätzliche Positionsbedingungen hinzufügen. Öffnen Sie beispielsweise eine In-App-Umfrage, wenn ein Kaufereignis `trackAction` eintritt, jedoch **nur** , wenn der aktuelle Speicherort des Benutzers bestimmte Metadaten zum Location Service enthält.
+Die Verwendung von Ortsdienst-Geo-Zauneinträgen und -Ausstiegen zum Auslösen von Regeln in Experience Platform Launch ist unglaublich leistungsstark, aber Sie können auch Standortdaten als Bedingung für das Auslösen anderer Ereignisse verwenden. Beispielsweise könnte ein Ereignis für die Verfolgung der Mobilgeräte-Core-Aktion ausgelöst werden, das basierend auf einem bestimmten trackAction-Aufrufereignis in Ihrer App ausgelöst werden kann. Auf der Grundlage dieses Ereignisses können Sie dem Ereignis vor Durchführung einer Aktion zusätzliche Positionsbedingungen hinzufügen. Öffnen Sie beispielsweise eine In-App-Umfrage, wenn ein Kaufereignis `trackAction` eintritt, jedoch **nur** , wenn der aktuelle Speicherort des Benutzers bestimmte Metadaten zum Location Service enthält.
 
 ![Bedingung erstellen](/help/assets/places-condition.png)
