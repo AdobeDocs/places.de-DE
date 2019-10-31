@@ -4,7 +4,7 @@ seo-title: Ausführen von Berichten in Adobe Analytics mit Ortsdaten
 description: Dieser Abschnitt enthält Informationen zum Ausführen von Berichten in Analytics, die Ortsdaten enthalten.
 seo-description: Dieser Abschnitt enthält Informationen zum Ausführen von Berichten in Analytics, die Ortsdaten enthalten.
 translation-type: tm+mt
-source-git-commit: fc1dd9e36bf45a2e7c17c3d9dbbed66b28cb8b07
+source-git-commit: 7ca51580a4cfa9c00431ad3972bd10e2a12dfbd1
 
 ---
 
@@ -25,7 +25,7 @@ Nachdem Orte die Einstiegs- und Ausstiegsereignisse gesendet haben, können Sie 
    * Wenn Sie keine Regeln für diese Eigenschaft haben, befindet sich die **[!UICONTROL Create New Rule]** Schaltfläche in der Mitte des Bildschirms.
    * Wenn Ihre Eigenschaft über Regeln verfügt, befindet sich die **[!UICONTROL Create New Rule]** Schaltfläche oben rechts auf dem Bildschirm.
 
-## 1. Wählen Sie ein Ereignis
+## 2. Wählen Sie ein Ereignis
 
 1. Geben Sie Ihrer Regel einen aussagekräftigen Namen, damit sie in Ihrer Regelliste leicht erkennbar ist.
 
@@ -42,7 +42,7 @@ Jetzt können Sie die Auslöser festlegen, die Sie für diese Regel einbeziehen 
 !["Ereignis erstellen"](/help/assets/pt-selectEvent.png)
 
 
-## 2. Bedingungen hinzufügen
+## 3. Bedingungen hinzufügen
 
 >[!IMPORTANT]
 >
@@ -62,7 +62,7 @@ In diesem Beispiel wird eine Bedingung erstellt, die bewirkt, dass die Regel nur
 
 !["Bedingung erstellen"](/help/assets/pt-setCondition.png)
 
-## 3. Definieren der Aktion
+## 4. Definieren der Aktion
 
 1. Klicken Sie unter dem **[!UICONTROL Actions]** Abschnitt auf **[!UICONTROL Add]**.
 
@@ -80,7 +80,7 @@ Im folgenden Beispiel werden den Kontextdaten des Analytics-Ereignisses Werte `p
 
 !["Aktion erstellen"](/help/assets/pt-setAction.png)
 
-## 4. Speichern Sie die Regel und erstellen Sie Ihre Eigenschaft neu
+## 5. Speichern Sie die Regel und erstellen Sie Ihre Eigenschaft neu
 
 Überprüfen Sie nach Abschluss der Konfiguration, ob die Regel wie folgt aussieht:
 
