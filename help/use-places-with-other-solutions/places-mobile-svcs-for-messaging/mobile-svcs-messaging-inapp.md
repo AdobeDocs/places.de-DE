@@ -4,7 +4,7 @@ seo-title: In-App-Benachrichtigungen
 description: Dieser Abschnitt zeigt Ihnen, wie Sie Orte mit In-App-Nachrichten verwenden.
 seo-description: Dieser Abschnitt zeigt Ihnen, wie Sie Orte mit In-App-Nachrichten verwenden.
 translation-type: tm+mt
-source-git-commit: 95c29df19f61e7854e39b47e39471f7f1e94b736
+source-git-commit: a76e91775efd92ce56f2dc5cbdcc65786855b5c3
 
 ---
 
@@ -29,7 +29,7 @@ Im Folgenden finden Sie eine Liste der verfügbaren In-App-Nachrichtentypen:
 * Warnhinweis
 * Lokale Benachrichtigungen
 
-Diese Typen sind In-App-Nachrichten, da sie vom SDK ausgelöst werden. Lokale Benachrichtigungen sehen wie Push-Benachrichtigungen aus, da sie angezeigt werden, wenn sich die App im Hintergrund befindet. Diese Benachrichtigungen stellen auch Benachrichtigungen in Echtzeit bereit, wenn Benutzer Ihre POIs eingeben oder verlassen, während sich die App im Hintergrund befindet. Weitere Informationen finden Sie unter [Platzierungsmonitor-Erweiterung.](/help/places-ext-aep-sdks/places-monitor-extension/places-monitor-extension.md)
+Diese Typen sind In-App-Nachrichten, da sie vom SDK ausgelöst werden. Lokale Benachrichtigungen sehen wie Push-Benachrichtigungen aus, da sie angezeigt werden, wenn sich die App im Hintergrund befindet. Diese Benachrichtigungen stellen auch Benachrichtigungen in Echtzeit bereit, wenn Benutzer Ihre POIs eingeben oder verlassen, während sich die App im Hintergrund befindet. Weitere Informationen finden Sie unter [Platzierungsmonitor-Erweiterung](/help/places-ext-aep-sdks/places-monitor-extension/places-monitor-extension.md).
 
 ### Voraussetzungen
 
@@ -51,18 +51,18 @@ Nachdem die Regel mit den richtigen Ereignis- und Bedingungsparametern eingerich
 
 ## Erstellen einer Aktion
 
-Gehen Sie folgendermaßen vor:
+So erstellen Sie eine Aktion:
 
 1. Wählen Sie die **-Erweiterung aus.[!UICONTROL Adobe Analytics]**
 1. Wählen Sie in der **[!UICONTROL Action type]** Dropdownliste **[!UICONTROL Track.]**
 1. Geben Sie einen Namen für die Aktion ein.
 1. Wählen Sie im rechten Bereich **[!UICONTROL Context Data]** das Schlüssel-Wert-Paar aus, um die Kontextdaten festzulegen, die an Analytics gesendet werden.
 
-Sie können beispielsweise **[!UICONTROL poiname]** als Schlüssel und **[!UICONTROL `{%%Last Entered POI Name}`auswählen.]
+Sie können beispielsweise `poiname` als Schlüssel und `{%%Last Entered POI Name}` als Wert auswählen.
 
 >[!TIP]
 >
->Analytics-Verarbeitungsregeln können so eingestellt werden, dass diese Kontextdaten aufgenommen werden. For more information, see [Processing Rules](https://docs.adobe.com/content/help/en/analytics/implementation/analytics-basics/ref-processing-rules.html). In dem Beispiel unter *Aktion* erstellen sendet die Aktion den `poiname` als Kontext, um das POIentry-Ereignis zu beschreiben, das an Analytics gesendet wird.
+>Analytics-Verarbeitungsregeln können so eingestellt werden, dass diese Kontextdaten aufgenommen werden. For more information, see [Processing Rules](https://docs.adobe.com/content/help/en/analytics/implementation/analytics-basics/ref-processing-rules.html). In dem Beispiel unter *Aktion* erstellen sendet die Aktion den `poiname` als Kontext, um das POI-Eingabeereignis zu beschreiben, das an Analytics gesendet wird.
 
 ![Erstellen einer Aktion](/help/assets/configure-action.png)
 
@@ -70,17 +70,19 @@ Hier ein Beispiel für die vollständige Regel:
 
 ![Abgeschlossene Regel](/help/assets/create-a-rule.png)
 
-## Erstellen einer In-App-Nachricht in AMS
+## Erstellen einer In-App-Nachricht in Mobile Services
 
 Als Teil Ihrer Auslöserparameter können Sie die Zielgruppe für die Nachricht mit Daten aus dem Location Service auf eine der folgenden Arten erstellen:
 
-* Verwenden Sie standortspezifische Aktionen wie einen Eintrag oder einen Ausstieg.
+* Verwenden von standortspezifischen Aktionen wie einem Einstieg oder einem Ausstieg.
 * Verwenden von POI-Metadaten, die als Kontextdaten gesendet werden, um das Ziel Ihrer Zielgruppe einzugrenzen.
 
-   Diese Option kann mit einer standortspezifischen Aktion wie "Eintrag"verwendet werden oder als Kontext zu einem anderen Ereignis wie einem Start oder einem Schaltflächenklick verwendet werden.
+   Diese Option kann mit einer standortspezifischen Aktion wie "Eintrag"verwendet werden oder als Kontext zu einem anderen Ereignis wie einem Start- oder Schaltflächenklick verwendet werden.
 
    Im Folgenden finden Sie ein Beispiel, wie Sie eine In-App-Nachricht konfigurieren, um Benutzer aufzunehmen, die einen POI mit **[!UICONTROL Adobe]** dem Namen eingeben:
 
    ![Parameter auslösen](/help/assets/trigger-parameters.png)
 
-* Parameter in den Überschriften "Orte"auf der Seite " *Auslöser und Eigenschaften* "in Mobile Services funktionieren nicht mit Daten aus dem Location Service. Diese Parameter gelten nur für die alte Places-Datenbank, die in Mobile Services erstellt wurde.
+* Parameter in den Überschriften "Orte"auf der Seite " *Auslöser und Eigenschaften* "in Mobile Services funktionieren nicht mit Daten aus dem Location Service.
+
+   Diese Parameter gelten nur für die alte Places-Datenbank, die in Mobile Services erstellt wurde.
