@@ -1,21 +1,23 @@
 ---
-title: 'Orte ohne aktive Regionsüberwachung verwenden '
-seo-title: 'Orte ohne aktive Regionsüberwachung verwenden '
-description: Dieser Abschnitt enthält Informationen dazu, wie Sie Orte ohne aktive Regionsüberwachung verwenden.
-seo-description: Dieser Abschnitt enthält Informationen zum Verwenden von Orten ohne aktive Regionsüberwachung.
+title: 'Standortdienst ohne aktive Regionenüberwachung verwenden '
+seo-title: 'Standortdienst ohne aktive Regionenüberwachung verwenden '
+description: Dieser Abschnitt enthält Informationen zur Verwendung von Location ServicePlaces ohne aktive Regionsüberwachung.
+seo-description: Dieser Abschnitt enthält Informationen zur Verwendung des Location Service ohne aktive Regionsüberwachung.
 translation-type: tm+mt
-source-git-commit: ba918bfdb989ba4037409b17d799ef596064b676
+source-git-commit: 84b23934a6e9f9fd61c068693bae3daca24de253
 
 ---
 
 
-# Orte ohne aktive Regionsüberwachung verwenden {#use-places-without-active-monitoring}
+# Standortdienst ohne aktive Regionenüberwachung verwenden {#use-places-without-active-monitoring}
 
-Anwendungsfälle für Ihre Anwendung erfordern unter Umständen keine aktive Regionsüberwachung. Adobe-Orte können weiterhin verwendet werden, um die Standortdaten Ihrer Benutzer in andere Experience Platform-Produkte zu integrieren.
+Anwendungsfälle für Ihre Anwendung erfordern möglicherweise keine aktive Regionsüberwachung. Adobe-Orte können weiterhin verwendet werden, um die Standortdaten Ihrer Benutzer in andere Experience Platform-Produkte zu integrieren.
 
 In diesem Abschnitt wird erläutert, wie eine POI-Mitgliedschaftsprüfung nur zum Zeitpunkt der Erfassung des Benutzerorts (Breiten- und Längengrad) durchgeführt werden kann.
 
-****Voraussetzung:
+## Voraussetzung
+
+
 Der Entwickler erfasst den Speicherort des Geräts mithilfe der APIs, die vom Betriebssystem der Zielplattform bereitgestellt werden.
 
 >[!TIP]
@@ -81,7 +83,6 @@ public class LocationBroadcastReceiver extends BroadcastReceiver {
     }
 }
 ```
-
 
 ### Objective-C
 
@@ -230,9 +231,11 @@ func handleUpdatedPOIs(_ nearbyPois:[ACPPlacesPoi]) {
 
 ## Vollständige Beispielimplementierung
 
-Die folgenden Codebeispiele zeigen, wie Sie die aktuelle Position des Geräts abrufen, die erforderlichen Ereignisse auslösen und sicherstellen, dass bei einem Besuch nicht mehrere Einträge für dieselbe Position eingehen:
+Die folgenden Codebeispiele zeigen Ihnen, wie Sie die aktuelle Position des Geräts abrufen, die erforderlichen Ereignisse auslösen und sicherstellen, dass Sie bei einem Besuch nicht mehrere Einträge für dieselbe Position erhalten.
 
 >[!IMPORTANT]
+>
+>
 Diese Snippets sind **nur** Beispiele. Entwickler müssen festlegen, wie sie die Funktionalität implementieren möchten. Bei der Entscheidung sollten die vom Zielbetriebssystem empfohlenen Best Practices berücksichtigt werden.
 
 ### Android
