@@ -4,7 +4,7 @@ seo-title: Ausführen von Berichten in Adobe Analytics mit Ortsdaten
 description: Dieser Abschnitt enthält Informationen zum Ausführen von Berichten in Analytics, die Ortsdaten enthalten.
 seo-description: Dieser Abschnitt enthält Informationen zum Ausführen von Berichten in Analytics, die Ortsdaten enthalten.
 translation-type: tm+mt
-source-git-commit: a76e91775efd92ce56f2dc5cbdcc65786855b5c3
+source-git-commit: fc1dd9e36bf45a2e7c17c3d9dbbed66b28cb8b07
 
 ---
 
@@ -39,7 +39,7 @@ Nachdem Orte die Einstiegs- und Ausstiegsereignisse gesendet haben, können Sie 
 
 Jetzt können Sie die Auslöser festlegen, die Sie für diese Regel einbeziehen möchten. In diesem Beispiel basiert der Auslöser auf allen `TrackAction` Aufrufen. Klicken Sie nach der Konfiguration des Ereignisses auf **[!UICONTROL Keep Changes]**.
 
-!["Ereignis erstellen"](/help/assets/ad-setEvent.png)
+!["Ereignis erstellen"](/help/assets/pt-selectEvent.png)
 
 
 ## 2. Bedingungen hinzufügen
@@ -60,7 +60,7 @@ In diesem Beispiel wird eine Bedingung erstellt, die bewirkt, dass die Regel nur
 
 5. Klicken Sie auf **[!UICONTROL Keep Changes]**.
 
-!["Bedingung erstellen"](/help/assets/ad-setCondition.png)
+!["Bedingung erstellen"](/help/assets/pt-setCondition.png)
 
 ## 3. Definieren der Aktion
 
