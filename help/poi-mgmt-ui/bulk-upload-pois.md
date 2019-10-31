@@ -4,7 +4,7 @@ seo-title: Massen-Upload-POIs
 description: Dieser Abschnitt enthält Informationen zum Hochladen von POIs als Massendatei.
 seo-description: Dieser Abschnitt enthält Informationen zum Hochladen von POIs als Massendatei.
 translation-type: tm+mt
-source-git-commit: 31462861efa807583c245963d8496eecdd3cf92e
+source-git-commit: a76e91775efd92ce56f2dc5cbdcc65786855b5c3
 
 ---
 
@@ -13,7 +13,7 @@ source-git-commit: 31462861efa807583c245963d8496eecdd3cf92e
 
 Eine Reihe von Python-Skripten wurden erstellt, um den Stapelimport von POIs aus einer CSV-Datei in eine POI-Datenbank mithilfe der Web Service APIs zu vereinfachen. Diese Skripten können von diesem Open-Source- [Git-Repo](https://github.com/adobe/places-scripts)heruntergeladen werden.
 
-Bevor Sie diese Skripten ausführen, lesen Sie die Informationen zum Zugriff auf die Webdienst-APIs unter *Voraussetzungen für den Benutzerzugriff* in der Übersicht über die [Adobe-E/A-Integration](/help/web-service-api/adobe-i-o-integration.md).
+Bevor Sie diese Skripten ausführen, lesen Sie die Informationen zum Zugriff auf die Webdienst-APIs unter *Voraussetzungen für den Benutzerzugriff* in der Übersicht über die [Integration und Voraussetzungen](/help/web-service-api/adobe-i-o-integration.md).
 
 Im Folgenden finden Sie einige Informationen zu den Skripten:
 
@@ -52,7 +52,7 @@ Im Folgenden finden Sie eine Liste der Spalten und Werte, die Sie verwenden müs
 Die Werte der folgenden Spalten werden in der Benutzeroberfläche des Location Service verwendet:
 
 * Farbe, die als Farbe des Pins verwendet wird, der die Position des POI in der Benutzeroberfläche des Location Service darstellt.
-   * Die gültigen Werte sind "", #3E76D0, #AA99E8, #DC2ABA, #FC685B, #FC962E, #F6C436, #BECE5D, #61B56B und #3DC8DE.
+   * Die gültigen Werte sind "", #3E76D0, #AA99E8, #DC2ABA, #FC685B, #FC962E, #F6C436, #BECE5D, #61B56B und #3DC8DE und "".
    * Wenn der Wert leer gelassen wird, verwendet die Benutzeroberfläche des Location Service Blau als Standardfarbe.
 
       Die Werte entsprechen blau (#3E76D0), violett (#AA99E8), fuschia (#DC2ABA), orange (#FC685B), hellorange (#FC962E), gelb (#F6C436), hellgrün (#BECE5D), grün (#6 1B56B) bzw. hellblau (#3DC8DE).
@@ -60,6 +60,11 @@ Die Werte der folgenden Spalten werden in der Benutzeroberfläche des Location S
 * Symbol, das als Symbol auf dem Pin verwendet wird, das die Position des POI auf der Benutzeroberfläche des Location Service darstellt.
 
    * Die gültigen Werte sind "", Shop, Hotelbett, Auto, Flugzeug, Zug, Schiff, Stadion, amusementpark, Anker, Beaker, Bell, Bid, Buch, Box, Brieftasche, Broschüre, Bürste, Gebäude, Rechner, Kamera, Uhr, Bildung, Taschenlampe, folgen, Spiel, weiblich, männlich, Geschenk, Hammer, Herz, Schlüssel, Start, Glühbirne, Briefkasten, Geld, Posting, Geld, Geld, Posting, Pin Warenkorb, Warenkorb, Stern, Ziel, Teekanne, Daumendown, Daumen, Trap, Trophäe, Schraubenschlüssel.
+
+      Die Symbolwerte werden in der Reihenfolge aufgeführt, in der sie in der folgenden Abbildung angezeigt werden:
+
+      ![Symbole in der Benutzeroberfläche](/help/assets/UI_icons.png)
+
    * Wenn der Wert leer gelassen wird, verwendet die Benutzeroberfläche den Stern als Standardsymbol.
 
 * Spalten, die nicht erwähnt werden, können leer gelassen werden.
@@ -73,19 +78,19 @@ Die Werte der folgenden Spalten werden in der Benutzeroberfläche des Location S
 
    * `csv_file_path`
 
-      Der Pfad zu Ihrer `.csv` Datei.
+      Dies ist der Pfad zu Ihrer `.csv` Datei.
 
    * `access_code`
 
-      Dies ist Ihr Zugriffscode, den Sie beim Aufruf von Adobe IMS erhalten haben. Informationen zum Abrufen dieses Zugriffscodes finden Sie unter [Voraussetzungen für den Benutzerzugriff](/help/web-service-api/adobe-i-o-integration.md) .
+      Dies ist Ihr Zugriffscode, den Sie beim Aufruf von Adobe IMS erhalten haben. Informationen zum Abrufen dieses Zugriffscodes finden Sie unter *Voraussetzungen für den Benutzerzugriff* in der [Integrationsübersicht und Voraussetzungen](/help/web-service-api/adobe-i-o-integration.md).
 
    * `org_id`
 
-      Die Experience Cloud-Organisations-ID, in die die POIs importiert werden sollen. Informationen zum Abrufen der Organisations-ID finden Sie unter [Voraussetzungen für den Benutzerzugriff.](/help/web-service-api/adobe-i-o-integration.md).
+      Die Experience Cloud-Organisations-ID, in die die POIs importiert werden sollen. Informationen zum Abrufen der Organisations-ID finden Sie unter *Voraussetzungen für den Benutzerzugriff* in der Übersicht über die [Integration und Voraussetzungen](/help/web-service-api/adobe-i-o-integration.md).
 
    * `api_key`
 
-      Dies ist der REST-API-Schlüssel für Platzierungen, den Sie aus der Adobe I/O-Platzierungsintegration erhalten haben. Informationen zum Abrufen des API-Schlüssels finden Sie unter [Voraussetzungen für den Benutzerzugriff.](/help/web-service-api/adobe-i-o-integration.md).
+      Dies ist der REST-API-Schlüssel für Platzierungen, den Sie aus der Adobe I/O-Platzierungsintegration erhalten haben. Informationen zum Abrufen des API-Schlüssels finden Sie unter *Voraussetzungen für den Benutzerzugriff* in der Übersicht über die [Integration und Voraussetzungen](/help/web-service-api/adobe-i-o-integration.md).
    b. Speichern Sie Ihre Änderungen.
 
 1. Navigieren Sie in einem Terminalfenster zum `…/places-scripts/import/` Ordner.
