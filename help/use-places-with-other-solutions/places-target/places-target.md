@@ -4,7 +4,7 @@ seo-title: Adobe Target
 description: Dieser Abschnitt enthält Informationen zur Verwendung des Location Service mit Adobe Target.
 seo-description: 'Dieser Abschnitt enthält Informationen zur Verwendung des Location Service mit Adobe Target. '
 translation-type: tm+mt
-source-git-commit: 7ca51580a4cfa9c00431ad3972bd10e2a12dfbd1
+source-git-commit: 84b23934a6e9f9fd61c068693bae3daca24de253
 
 ---
 
@@ -82,7 +82,7 @@ Im folgenden Beispiel werden der Anforderung, die im Target-Ereignis verarbeitet
 >
 >Die Notation von `request[*]` kann laut als _für jedes Objekt im `request` Array gelesen werden.
 
-![Ereignis hinzufügen](/help/assets/ad-setCondition_target.png)
+![Ereignis hinzufügen](/help/assets/ad-setAction_target.png)
 
 ## 5. Speichern der Regel und Erstellen der Eigenschaft
 
