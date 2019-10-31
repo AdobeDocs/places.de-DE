@@ -4,12 +4,12 @@ seo-title: Bibliotheken in der Benutzeroberfläche "Orte"verwalten
 description: Verwalten Sie Ihre Bibliotheken mithilfe der Benutzeroberfläche "Orte".
 seo-description: Verwalten Sie Ihre Bibliotheken mithilfe der Benutzeroberfläche "Orte".
 translation-type: tm+mt
-source-git-commit: fd1b37a0f50d93de1efff4cb38fc23253f02d517
+source-git-commit: 84b23934a6e9f9fd61c068693bae3daca24de253
 
 ---
 
 
-# Bibliotheken in der Benutzeroberfläche "Orte"verwalten {#manage-libraries-places-ui}
+# Manage libraries {#manage-libraries-places-ui}
 
 Eine Bibliothek ist eine Sammlung von POIs. In einer Bibliothek können bis zu 150.000 POI gespeichert werden. Pro Experience Cloud-Organisation können bis zu 100 Bibliotheken vorhanden sein.
 
