@@ -4,14 +4,14 @@ seo-title: Push-Benachrichtigungen
 description: Dieser Abschnitt zeigt Ihnen, wie Sie Orte mit Push-Benachrichtigungen verwenden.
 seo-description: Dieser Abschnitt zeigt Ihnen, wie Sie Orte mit Push-Benachrichtigungen verwenden.
 translation-type: tm+mt
-source-git-commit: 95c29df19f61e7854e39b47e39471f7f1e94b736
+source-git-commit: a76e91775efd92ce56f2dc5cbdcc65786855b5c3
 
 ---
 
 
 # Push-Benachrichtigungen (#place-push-messaging)
 
-Mit Mobile Services können Sie Push-Benachrichtigungen an Adobe Analytics-Segmente senden. Im Location Service können Sie die Zielgruppe für Ihre Push-Nachricht durch ihre historischen Interaktionen mit Ihren POIs segmentieren. Beispielsweise können Sie eine Nachricht an Benutzer senden, die sich in den letzten 30 Tagen in einem Ihrer Läden befanden.
+Mit Mobile Services können Sie Push-Benachrichtigungen an Adobe Analytics-Segmente senden. Im Location Service können Sie die Zielgruppe für Ihre Push-Nachricht mithilfe ihrer historischen Interaktionen mit Ihren POIs segmentieren. Beispielsweise können Sie eine Nachricht an Benutzer senden, die sich in den letzten 30 Tagen in einem Ihrer Läden befanden.
 
 Bevor Sie beginnen, stellen Sie sicher, dass Sie die folgenden Aufgaben abgeschlossen haben:
 
@@ -36,4 +36,3 @@ Auf der **[!UICONTROL Audience]** Registerkarte des Arbeitsablaufs *Push-Benachr
 * Erstellen Sie im **[!UICONTROL Custom Segment]** Abschnitt eine Zielgruppe mithilfe der verfügbaren benutzerdefinierten Segmentparameter.
 
 ![Einrichten einer Push-Nachricht](/help/assets/push-set-up.png)
-
