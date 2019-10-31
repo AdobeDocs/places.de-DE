@@ -4,7 +4,7 @@ seo-title: Ortsdaten an Adobe Analytics senden
 description: Dieser Abschnitt enthält Informationen zum Senden von Ortsdaten an Analytics.
 seo-description: 'Dieser Abschnitt enthält Informationen zum Senden von Ortsdaten an Analytics. '
 translation-type: tm+mt
-source-git-commit: fc1dd9e36bf45a2e7c17c3d9dbbed66b28cb8b07
+source-git-commit: 7ca51580a4cfa9c00431ad3972bd10e2a12dfbd1
 
 ---
 
@@ -41,7 +41,7 @@ Nachdem Orte die Ein- und Ausstiegsereignisse gesendet haben, können Sie in Exp
 
 5. Klicken Sie auf **[!UICONTROL Keep Changes]**.
 
-   !["Ereignis auswählen"](/help/assets/ad-setEvent.png)
+   !["Ereignis auswählen"](/help/assets/ad-setEvent_use-analytics-data.png)
 
 
 ## 3. Bedingungen hinzufügen
@@ -62,7 +62,7 @@ In diesem Beispiel wird eine Bedingung erstellt, die bewirkt, dass die Regel nur
 
 5. Klicken Sie auf **[!UICONTROL Keep Changes]**.
 
-   !["Bedingung festlegen"](/help/assets/ad-setCondition.png)
+   !["Bedingung festlegen"](/help/assets/ad-setCondition_use-analytics-data.png)
 
 
 ## 4. Definieren der Aktion
@@ -81,13 +81,13 @@ In diesem Beispiel wird eine Bedingung erstellt, die bewirkt, dass die Regel nur
 
    Im folgenden Beispiel wird ein `TrackAction` Aufruf an Analytics mit zusätzlichen Kontextdaten gesendet, die dem Namen des POI `poi.name` entsprechen, der dieses Eingabeereignis ausgelöst hat:
 
-   !["Aktion festlegen"](/help/assets/ad-setAction.png)
+   !["Aktion festlegen"](/help/assets/ad-setAction_use-analytics-data.png)
 
 ## 5. Speichern Sie die Regel und erstellen Sie Ihre Eigenschaft neu
 
 Überprüfen Sie nach Abschluss der Konfiguration, ob die Regel wie folgt aussieht:
 
-!["rule is created"](/help/assets/ad-ruleComplete.png)
+!["rule is created"](/help/assets/ad-ruleComplete_use-analytics-data.png)
 
 1. Klicken Sie auf **[!UICONTROL Save]**
 
