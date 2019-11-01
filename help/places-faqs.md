@@ -4,7 +4,7 @@ seo-title: Häufig gestellte Fragen
 description: Dieses Thema enthält weitere Informationen zu einigen häufig gestellten Fragen.
 seo-description: Dieses Thema enthält weitere Informationen zu einigen häufig gestellten Fragen.
 translation-type: tm+mt
-source-git-commit: 6ae0c8d90cad4c437e1db7f562a0bc9c6b072ce6
+source-git-commit: a2e30282789d9834e5c65502e28ddb25f3c55dfa
 
 ---
 
@@ -91,7 +91,7 @@ So richten Sie das Profil ein und fügen die Berechtigungen hinzu:
 
       Wenn Sie zuvor Benutzer zu Experience Platform Launch hinzugefügt haben, werden möglicherweise mehrere Profile aufgelistet.
 
-2. Wählen Sie das richtige Profil aus:
+1. Wählen Sie das richtige Profil aus:
 
    a. Klicken Sie auf den Namen des Standardprofils.
 
@@ -145,7 +145,7 @@ So fügen Sie einen Benutzer zu Ihren Profilen "Location Service"und "Experience
 
    g. Klicken Sie auf **[!UICONTROL Save]**.
 
-2. Fügen Sie einem Benutzer hinzu **[!UICONTROL Places Core Services]**.
+1. Fügen Sie einem Benutzer hinzu **[!UICONTROL Places Core Services]**.
 
    >[!TIP]
    >
