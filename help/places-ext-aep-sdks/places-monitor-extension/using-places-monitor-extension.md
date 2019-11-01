@@ -4,7 +4,7 @@ seo-title: Verwenden der Erweiterung "Orts Monitor"
 description: Informationen zum Installieren, Konfigurieren und Verwenden der Erweiterung "Orts Monitor".
 seo-description: 'Informationen zum Installieren, Konfigurieren und Verwenden der Erweiterung "Orts Monitor". '
 translation-type: tm+mt
-source-git-commit: ef720c112bc0de386e070094629c5bab69938e76
+source-git-commit: a2e30282789d9834e5c65502e28ddb25f3c55dfa
 
 ---
 
@@ -16,9 +16,9 @@ Führen Sie die folgenden Aufgaben aus, um die Erweiterung "Orts-Monitor"zu verw
 ## Installieren der Erweiterung "Platzierungsmonitor"im Experience Platform Launch
 
 1. Klicken Sie in Experience Platform Launch auf die **[!UICONTROL Extensions]** Registerkarte.
-2. Suchen Sie auf der **[!UICONTROL Catalog]** Registerkarte die **[!UICONTROL Places Monitor]** Erweiterung und klicken Sie auf **Installieren**.
-3. Klicken Sie auf **[!UICONTROL Save]**.
-4. Folgen Sie dem Veröffentlichungsprozess, um die SDK-Konfiguration zu aktualisieren.
+1. Suchen Sie auf der **[!UICONTROL Catalog]** Registerkarte die **[!UICONTROL Places Monitor]** Erweiterung und klicken Sie auf **Installieren**.
+1. Klicken Sie auf **[!UICONTROL Save]**.
+1. Folgen Sie dem Veröffentlichungsprozess, um die SDK-Konfiguration zu aktualisieren.
 
 ### Konfigurieren der Platzierungsmonitor-Erweiterung {#configure-places-monitor-extension}
 
@@ -38,7 +38,7 @@ Führen Sie in Android die folgenden Schritte aus:
 
 1. Fügen Sie die Erweiterungen "Orte-Monitor"und "Orte"mithilfe der Dockingdatei Ihrer App zum Projekt hinzu.
 
-2. Schließen Sie auch die neuesten Google-Standorte in der Datei "gradle"ein.
+1. Schließen Sie auch die neuesten Google-Standorte in der Datei "gradle"ein.
 
    ```java
    implementation 'com.adobe.marketing.mobile:places:1.+'
@@ -47,7 +47,7 @@ Führen Sie in Android die folgenden Schritte aus:
    implementation 'com.google.android.gms:play-services-location:16.0.0'
    ```
 
-3. Importieren Sie die Erweiterung "Orts-Monitor"in die Hauptaktivität Ihrer Anwendung.
+1. Importieren Sie die Erweiterung "Orts-Monitor"in die Hauptaktivität Ihrer Anwendung.
 
    ```java
    import com.adobe.marketing.mobile.PlacesMonitor;
@@ -58,7 +58,7 @@ Führen Sie in Android die folgenden Schritte aus:
 Führen Sie unter iOS die folgenden Schritte aus:
 
 1. Fügen Sie die Bibliothek über Ihre Cocoapods zu Ihrem Projekt hinzu, `Podfile` indem Sie sie hinzufügen `pod 'ACPPlacesMonitor'`.
-2. Importieren Sie die Bibliotheken für die Orts- und Orteüberwachung:
+1. Importieren Sie die Bibliotheken für die Orts- und Orteüberwachung:
 
 #### Objective-C
 
