@@ -4,7 +4,7 @@ seo-title: Adobe Target
 description: Dieser Abschnitt enthält Informationen zur Verwendung des Location Service mit Adobe Target.
 seo-description: 'Dieser Abschnitt enthält Informationen zur Verwendung des Location Service mit Adobe Target. '
 translation-type: tm+mt
-source-git-commit: 84b23934a6e9f9fd61c068693bae3daca24de253
+source-git-commit: a2e30282789d9834e5c65502e28ddb25f3c55dfa
 
 ---
 
@@ -30,13 +30,13 @@ Nachdem die Platzierungserweiterung Ereignisse für Einstiege und Ausstiege gese
 
    In diesem Beispiel wird die Regel benannt **[!UICONTROL Attach Places Data to Target Content Requested]**.
 
-2. Klicken Sie unter dem **[!UICONTROL Events]** Abschnitt auf **[!UICONTROL Add]**.
+1. Klicken Sie unter dem **[!UICONTROL Events]** Abschnitt auf **[!UICONTROL Add]**.
 
-3. Wählen Sie aus der **[!UICONTROL Extension]** Dropdownliste **[!UICONTROL Adobe Target]**.
+1. Wählen Sie aus der **[!UICONTROL Extension]** Dropdownliste **[!UICONTROL Adobe Target]**.
 
-4. Wählen Sie aus der **[!UICONTROL Event Type]** Dropdownliste **[!UICONTROL Content Requested]**.
+1. Wählen Sie aus der **[!UICONTROL Event Type]** Dropdownliste **[!UICONTROL Content Requested]**.
 
-5. Klicken Sie auf **[!UICONTROL Keep Changes]**.
+1. Klicken Sie auf **[!UICONTROL Keep Changes]**.
 
 ![Ereignis hinzufügen](/help/assets/ad-setEvent_target.png)
 
@@ -50,13 +50,13 @@ Im folgenden Beispiel wird eine Bedingung erstellt, die bewirkt, dass die Regel 
 
 1. Klicken Sie unter dem **[!UICONTROL Conditions]** Abschnitt auf **[!UICONTROL Add]**.
 
-2. Wählen Sie aus der **[!UICONTROL Extension]** Dropdownliste **[!UICONTROL Mobile Core]**.
+1. Wählen Sie aus der **[!UICONTROL Extension]** Dropdownliste **[!UICONTROL Mobile Core]**.
 
-3. Wählen Sie aus der **[!UICONTROL Condition Type]** Dropdownliste **[!UICONTROL Launches]**.
+1. Wählen Sie aus der **[!UICONTROL Condition Type]** Dropdownliste **[!UICONTROL Launches]**.
 
-4. Ändern Sie im rechten Bereich die Dropdown-Liste und die Nummernsteuerelemente so, dass die Bedingung lautet **[!UICONTROL-Benutzer hat die App gestartet hat, größer oder gleich 5 Mal**.
+1. Ändern Sie im rechten Bereich die Dropdown-Liste und die Nummernsteuerelemente so, dass die Bedingung lautet **[!UICONTROL-Benutzer hat die App gestartet hat, größer oder gleich 5 Mal**.
 
-5. Klicken Sie auf **[!UICONTROL Keep Changes]**.
+1. Klicken Sie auf **[!UICONTROL Keep Changes]**.
 
 ![Ereignis hinzufügen](/help/assets/ad-setCondition_target.png)
 
@@ -64,13 +64,13 @@ Im folgenden Beispiel wird eine Bedingung erstellt, die bewirkt, dass die Regel 
 
 1. Klicken Sie unter dem **[!UICONTROL Actions]** Abschnitt auf **[!UICONTROL Add]**.
 
-2. Wählen Sie aus der **[!UICONTROL Extension]** Dropdownliste **[!UICONTROL Mobile Core]**.
+1. Wählen Sie aus der **[!UICONTROL Extension]** Dropdownliste **[!UICONTROL Mobile Core]**.
 
-3. Wählen Sie aus der **[!UICONTROL Action Type]** Dropdownliste **[!UICONTROL Attach Data]**.
+1. Wählen Sie aus der **[!UICONTROL Action Type]** Dropdownliste **[!UICONTROL Attach Data]**.
 
-4. Geben Sie im rechten Bereich im **[!UICONTROL JSON Payload]** Feld die Daten ein, die diesem Ereignis hinzugefügt werden sollen.
+1. Geben Sie im rechten Bereich im **[!UICONTROL JSON Payload]** Feld die Daten ein, die diesem Ereignis hinzugefügt werden sollen.
 
-5. Klicken Sie auf **[!UICONTROL Keep Changes]**.
+1. Klicken Sie auf **[!UICONTROL Keep Changes]**.
 
 Im rechten Bereich können Sie eine Freiform-JSON-Nutzlast hinzufügen, die Daten zu einem SDK-Ereignis hinzufügt, bevor die Extensions, die auf dieses Ereignis warten, es hören.
 
@@ -92,4 +92,4 @@ Im folgenden Beispiel werden der Anforderung, die im Target-Ereignis verarbeitet
 
 1. Klicken Sie auf **[!UICONTROL Save]**
 
-2. Erstellen Sie Ihre Launch-Eigenschaft neu und stellen Sie sie in der richtigen Umgebung bereit.
+1. Erstellen Sie Ihre Launch-Eigenschaft neu und stellen Sie sie in der richtigen Umgebung bereit.
