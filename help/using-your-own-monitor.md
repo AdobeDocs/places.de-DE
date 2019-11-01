@@ -4,7 +4,7 @@ seo-title: Verwenden Ihres eigenen Monitors
 description: 'Sie können Ihre Überwachungsdienste auch verwenden und mit den Orten integrieren, indem Sie die APIs für die Platzierungserweiterung verwenden. '
 seo-description: 'Sie können Ihre Überwachungsdienste auch verwenden und mit den Orten integrieren, indem Sie die APIs für die Platzierungserweiterung verwenden. '
 translation-type: tm+mt
-source-git-commit: 5d558755d816f4aa05a7a76cad12bab45c1dc282
+source-git-commit: a2e30282789d9834e5c65502e28ddb25f3c55dfa
 
 ---
 
@@ -23,7 +23,7 @@ Führen Sie unter iOS die folgenden Schritte aus:
 
 1. Übergeben Sie die Ortsaktualisierungen, die Sie von den Core-Standortdiensten des iOS erhalten haben, an die Places-Erweiterung.
 
-2. Verwenden Sie die API für die `getNearbyPointsOfInterest` Platzierungserweiterung, um das Array von *n* Objekten um den aktuellen Speicherort abzurufen `ACPPlacesPoi` .
+1. Verwenden Sie die API für die `getNearbyPointsOfInterest` Platzierungserweiterung, um das Array von *n* Objekten um den aktuellen Speicherort abzurufen `ACPPlacesPoi` .
 
    ```objective-c
    - (void) locationManager: (CLLocationManager*) manager didUpdateLocations: (NSArray<CLLocation*>*) locations {
@@ -35,7 +35,7 @@ Führen Sie unter iOS die folgenden Schritte aus:
    }
    ```
 
-3. Extrahieren Sie die Informationen aus den erhaltenen `ACPPlacesPOI` Objekten und beginnen Sie mit der Überwachung dieser POI.
+1. Extrahieren Sie die Informationen aus den erhaltenen `ACPPlacesPOI` Objekten und beginnen Sie mit der Überwachung dieser POI.
 
    ```objective-c
    - (void) startMonitoringGeoFences: (NSArray*) newGeoFences {
@@ -60,7 +60,7 @@ Führen Sie unter iOS die folgenden Schritte aus:
 
 1. Übergeben Sie die Ortsaktualisierungen, die Sie über die Google Play-Dienste oder die Android-Ortsdienste erhalten haben, an die Places-Erweiterung.
 
-2. Verwenden Sie die `getNearbyPointsOfInterest` `PlacesPoi` Places Extension API, um die Liste der n Objekte um den aktuellen Speicherort abzurufen.
+1. Verwenden Sie die `getNearbyPointsOfInterest` `PlacesPoi` Places Extension API, um die Liste der n Objekte um den aktuellen Speicherort abzurufen.
 
    ```java
        LocationCallback callback = new LocationCallback() {
@@ -79,7 +79,7 @@ Führen Sie unter iOS die folgenden Schritte aus:
            };
    ```
 
-3. Extrahieren Sie die Daten aus den erhaltenen `PlacesPOI` Objekten und beginnen Sie mit der Überwachung dieser POI.
+1. Extrahieren Sie die Daten aus den erhaltenen `PlacesPOI` Objekten und beginnen Sie mit der Überwachung dieser POI.
 
    ```java
    private void startMonitoringFences(final List<PlacesPOI> nearByPOIs) {
