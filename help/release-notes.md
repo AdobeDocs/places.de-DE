@@ -4,14 +4,12 @@ seo-title: Versionshinweise
 description: Versionshinweise für den Adobe Experience Platform Location Service.
 seo-description: Versionshinweise für den Adobe Experience Platform Location Service.
 translation-type: tm+mt
-source-git-commit: 6ff72eb72ce3ae1abf805b7b542721a7e4915824
+source-git-commit: a5e5d5792d1a0368936f5f54e86a7ce9726a9122
 
 ---
 
 
 # Versionshinweise {#release-notes}
-
-Die Versionshinweise lauten wie folgt:
 
 ## 9. Oktober 2019
 
@@ -74,7 +72,7 @@ Die folgenden Aktualisierungen wurden in dieser Version vorgenommen:
 
 * Die Verwendung der `getNearbyPointsOfInterest` API wurde aktualisiert, um Fehlerszenarien effektiver zu behandeln.
 
-## 25. Juli 2019
+## 25. Juli 2019
 
 Die folgenden Aktualisierungen wurden in dieser Version vorgenommen:
 
@@ -86,7 +84,7 @@ Die folgenden Aktualisierungen wurden in dieser Version vorgenommen:
 
 * Die Verwendung der ACPPlaces- `getNearbyPointsOfInterest` API wurde aktualisiert, um Fehlerszenarien effektiver zu behandeln.
 
-## 22. Juli 2019
+## 22. Juli 2019
 
 Die folgenden Aktualisierungen wurden in dieser Version vorgenommen:
 
@@ -97,7 +95,7 @@ Die folgenden Aktualisierungen wurden in dieser Version vorgenommen:
 * Es wurde ein Fehler behoben, durch den `getNearbyPointsOfInterest` Rückruf Fehlercode `SERVER_RESPONSE_ERROR instead of CONNECTIVITY_ERROR` im Internet zurückgab.
 * `getNearbyPointsOfInterest` Die API (ohne errorCallback) hat den `successCallback` Aufruf mit leerer POI-Liste, falls Fehler beim Abrufen der nahe gelegenen Zielpunkte auftreten.
 
-## 19. Juli 2019
+## 19. Juli 2019
 
 Die folgenden Aktualisierungen wurden in dieser Version vorgenommen:
 
