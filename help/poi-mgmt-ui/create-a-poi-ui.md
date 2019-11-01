@@ -4,7 +4,7 @@ seo-title: POI erstellen
 description: Erstellen Sie einen POI mithilfe der Benutzeroberfläche "Orte".
 seo-description: Erstellen Sie einen POI mithilfe der Benutzeroberfläche "Orte".
 translation-type: tm+mt
-source-git-commit: 32c670773421406591ba85a628760553ce6ad840
+source-git-commit: a2e30282789d9834e5c65502e28ddb25f3c55dfa
 
 ---
 
@@ -14,16 +14,16 @@ source-git-commit: 32c670773421406591ba85a628760553ce6ad840
 Ein interessanter Punkt \(POI\) ist ein Ort oder ein Punkt auf einer Karte, der für Ihre Organisation oder Ihr Unternehmen von Bedeutung ist. Es kann Orte wie Cafés, Restaurants, Einzelhandelsstandorte, Stadien usw. umfassen. Unternehmen können Interessensgebiete definieren, um das mobile Erlebnis eines Benutzers zu personalisieren, wenn er für einen bestimmten Zielpunkt in eine geo-fenierte Region gelangt ist. Neben personalisierten Erlebnissen können Unternehmen auch Interessensgebiete erstellen, die ihnen helfen, Traffic-Muster an Standorten zu analysieren und besser zu verstehen. Eine große Handelskette kann POIs für alle ihre Speicherorte erstellen, um Analysen zu Benutzern zu erhalten, die über ihre mobile Anwendung verfügen UND einen Speicherort besuchen.
 
 1. Melden Sie sich mit Ihrer Adobe ID beim Location Service an.
-2. Klicken Sie oben rechts auf **[!UICONTROL New]**.
-3. Geben Sie einen Namen für Ihren POI ein.
-4.  Wählen Sie eine Bibliothek aus.
-5. Geben Sie einen Radius ein oder wählen Sie ihn aus.
+1. Klicken Sie oben rechts auf **[!UICONTROL New]**.
+1. Geben Sie einen Namen für Ihren POI ein.
+1.  Wählen Sie eine Bibliothek aus.
+1. Geben Sie einen Radius ein oder wählen Sie ihn aus.
 
    Der Radius ist der Mindestabstand und der empfohlene Wert beträgt 100 Meter.
 
    ![einen POI definieren](/help/assets/define_poi.png)
 
-6. Die folgenden Schritte sind optional:
+1. Die folgenden Schritte sind optional:
 
    a. Wählen Sie ein Symbol für Ihren POI.
 
@@ -31,7 +31,7 @@ Ein interessanter Punkt \(POI\) ist ein Ort oder ein Punkt auf einer Karte, der 
 
    c. Geben Sie eine Kategorie für Ihren POI an.
 
-7. Erweitern Sie den **[!UICONTROL Location]** Abschnitt.
+1. Erweitern Sie den **[!UICONTROL Location]** Abschnitt.
 
    a. Geben Sie eine Adresse ein.
 
@@ -47,7 +47,7 @@ Ein interessanter Punkt \(POI\) ist ein Ort oder ein Punkt auf einer Karte, der 
 
    Wenn Sie den genauen Längen- und Breitengrad nicht kennen, ist es nützlich, einen Pin abzulegen.
 
-8. Erweitern Sie den **[!UICONTROL Metadata]** Abschnitt und klicken Sie auf **[!UICONTROL Add Metadata]**.
+1. Erweitern Sie den **[!UICONTROL Metadata]** Abschnitt und klicken Sie auf **[!UICONTROL Add Metadata]**.
 
    Metadaten unterstützen Sie bei der weiteren Definition eines Standorts und können in anderen Adobe-Lösungsarbeitsabläufen verwendet werden, um Ihre Zielgruppe weiter zu verfeinern.
 
@@ -55,4 +55,4 @@ Ein interessanter Punkt \(POI\) ist ein Ort oder ein Punkt auf einer Karte, der 
 
    b. Geben Sie den Schlüsselwert ein.
 
-9. Klicken Sie auf **[!UICONTROL Confirm]** und dann **[!UICONTROL  Save]**.
+1. Klicken Sie auf **[!UICONTROL Confirm]** und dann **[!UICONTROL  Save]**.
