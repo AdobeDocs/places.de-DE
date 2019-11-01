@@ -4,7 +4,7 @@ seo-title: SDK mit der Ortserweiterung konfigurieren
 description: 'Sie können das SDK mit der Platzierungserweiterung konfigurieren, um Standortbewusstsein in Ihrer mobilen App zu aktivieren. '
 seo-description: 'Sie können das SDK mit der Platzierungserweiterung konfigurieren, um Standortbewusstsein in Ihrer mobilen App zu aktivieren. '
 translation-type: tm+mt
-source-git-commit: fd1b37a0f50d93de1efff4cb38fc23253f02d517
+source-git-commit: a2e30282789d9834e5c65502e28ddb25f3c55dfa
 
 ---
 
@@ -37,14 +37,14 @@ Konfigurieren der Erweiterung "Platzierungsmonitor"beim Start:
 
    Weitere Informationen finden Sie unter *Konfigurieren der Platzierungsüberwachungserweiterung in Launch*.
 
-2. Fügen Sie Ihrer mobilen App die Erweiterung "Orts-Monitor"hinzu.
+1. Fügen Sie Ihrer mobilen App die Erweiterung "Orts-Monitor"hinzu.
 
    Weitere Informationen finden Sie unter *Hinzufügen der Erweiterung "Orts-Monitor"zu Ihrer App*.
 
-3. Registrieren Sie den Places Monitor mit der Erweiterung Mobile Core.
+1. Registrieren Sie den Places Monitor mit der Erweiterung Mobile Core.
 
    Weitere Informationen finden Sie unter Registrieren des *Orts-Monitors mit Mobile Core*.
 
-4. Aktivieren Sie Standortaktualisierungen im Hintergrund.
+1. Aktivieren Sie Standortaktualisierungen im Hintergrund.
 
    Weitere Informationen finden Sie unter *Aktivieren von Standortaktualisierungen im Hintergrund*.
