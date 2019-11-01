@@ -4,7 +4,7 @@ seo-title: Überblick über die Adobe-E/A-Integration
 description: Informationen zum Erstellen einer Adobe I/O-Integration.
 seo-description: Informationen zum Erstellen einer Adobe-E/A-Integration.
 translation-type: tm+mt
-source-git-commit: 95c29df19f61e7854e39b47e39471f7f1e94b736
+source-git-commit: ec2b0f8ba94cecc5709d4d700490913978454ef1
 
 ---
 
@@ -69,7 +69,7 @@ So generieren Sie eigene, selbstsignierte Schlüssel:
    >
    >Es wird empfohlen, die Schlüssel zur einfachen Referenz zu benennen und in einem Ordner zu speichern. Wenn Sie mehrere Integrationen erstellen, können Sie einfach identifizieren und verwalten, welche Schlüssel zu welcher Integration gehören.
 
-2. Geben Sie die von OpenSSL angeforderten Informationen ein:
+1. Geben Sie die von OpenSSL angeforderten Informationen ein:
 
    ```text
    Country Name (2 letter code:  // Example: US
@@ -87,7 +87,7 @@ So generieren Sie eigene, selbstsignierte Schlüssel:
    >
    >Die von Ihnen bereitgestellten Informationen sind in die Schlüssel eingebunden.
 
-3. Navigieren Sie zu dem Ordner, in dem sich die Dateien `.key` und `.crt` Dateien befinden.
+1. Navigieren Sie zu dem Ordner, in dem sich die Dateien `.key` und `.crt` Dateien befinden.
 
    Gehen Sie in iOS beispielsweise zu **[!UICONTROL Macintosh HD]** &gt; **[!UICONTROL users]** &gt; **[!UICONTROL (your user name)]** &gt; **[!UICONTROL Keys]**.
 
@@ -100,32 +100,32 @@ Das folgende Video führt Sie durch den Prozess der Generierung des Schlüsselpa
 So erstellen Sie eine Ortsintegration:
 
 1. Wechseln Sie zu [https://console.adobe.io](https://console.adobe.io) und melden Sie sich mit Ihrer Adobe ID an.
-2. Klicken Sie im Abschnitt **Kurzanleitung** auf Integration **erstellen**.
-3. Wählen Sie **[!UICONTROL Access an API]** und klicken Sie auf **[!UICONTROL Continue]**.
+1. Klicken Sie im Abschnitt **Kurzanleitung** auf Integration **erstellen**.
+1. Wählen Sie **[!UICONTROL Access an API]** und klicken Sie auf **[!UICONTROL Continue]**.
 
    **[!UICONTROL Access an API]** ist der Standardspeicherort.
 
-4. Wenn Sie Zugriff auf mehr als eine Experience Cloud-Organisation haben, wählen Sie die Organisation in der Dropdownliste oben rechts aus.
-5. Wählen Sie unter **[!UICONTROL Experience Cloud]** den Adobe-Dienst **[!UICONTROL Places]** aus, in den Sie integrieren möchten, und klicken Sie auf **[!UICONTROL Continue]**.
-6. Wählen Sie **[!UICONTROL New integration]** und klicken Sie auf **[!UICONTROL Continue]**.
-7. Geben Sie im Bildschirm "Neue Integration erstellen"einen Namen und eine Beschreibung ein.
-8. Ziehen Sie die oben erstellte `xxxx_public.crt` Datei in den **[!UICONTROL Public keys certificates]** Ablagebereich.
-9. Wählen Sie ein Produktprofil aus.
+1. Wenn Sie Zugriff auf mehr als eine Experience Cloud-Organisation haben, wählen Sie die Organisation in der Dropdownliste oben rechts aus.
+1. Wählen Sie unter **[!UICONTROL Experience Cloud]** den Adobe-Dienst **[!UICONTROL Places]** aus, in den Sie integrieren möchten, und klicken Sie auf **[!UICONTROL Continue]**.
+1. Wählen Sie **[!UICONTROL New integration]** und klicken Sie auf **[!UICONTROL Continue]**.
+1. Geben Sie im Bildschirm "Neue Integration erstellen"einen Namen und eine Beschreibung ein.
+1. Ziehen Sie die oben erstellte `xxxx_public.crt` Datei in den **[!UICONTROL Public keys certificates]** Ablagebereich.
+1. Wählen Sie ein Produktprofil aus.
 
    Wenn Sie sich nicht sicher sind, welches Profil Sie auswählen möchten, wenden Sie sich an Ihren Systemadministrator.
-10. At the bottom of the page, click **[!UICONTROL Create integration]**.
-11. Überprüfen Sie nach einigen Sekunden im Bildschirm *Integration erstellt* , ob folgende Meldung angezeigt wird:
+1. At the bottom of the page, click **[!UICONTROL Create integration]**.
+1. Überprüfen Sie nach einigen Sekunden im Bildschirm *Integration erstellt* , ob folgende Meldung angezeigt wird:
 
    `Your integration has been created.`
 
-12. Die Seite mit den Integrationsdetails wird oben mit dem Namen der Integration angezeigt.
+1. Die Seite mit den Integrationsdetails wird oben mit dem Namen der Integration angezeigt.
 
    Die **[!UICONTROL Overview]** Registerkarte wird standardmäßig angezeigt und enthält den API-Schlüssel, Ihre Organisations-ID, die technische Konto-ID und weitere Details zu Ihren Integrationen.
 
 ### Unternehmen-ID und API-Schlüssel aufzeichnen
 
 1. Klicken Sie auf der Seite mit den Integrationsdetails auf die **[!UICONTROL Services]** Registerkarte und bestätigen Sie, dass diese angezeigt **[!UICONTROL Places]** wird **[!UICONTROL Configured Services]**.
-2. Suchen Sie auf der **[!UICONTROL Overview]** Registerkarte den API-Schlüssel (Client-ID) und die Organisations-ID und zeichnen Sie ihn auf.
+1. Suchen Sie auf der **[!UICONTROL Overview]** Registerkarte den API-Schlüssel (Client-ID) und die Organisations-ID und zeichnen Sie ihn auf.
 
    Diese IDs werden für jede Places REST API-Anforderung benötigt.
 
@@ -138,11 +138,11 @@ Klicken Sie auf der Seite mit den Integrationsdetails auf die **[!UICONTROL JWT]
 So generieren Sie ein JWT-Token:
 
 1. Öffnen Sie die oben erstellte `private.key` Datei in einem Texteditor.
-2. Kopieren Sie auf der **[!UICONTROL JWT]** Registerkarte den Inhalt des Schlüssels und fügen Sie ihn in das **[!UICONTROL Paste private key]** Feld ein.
-3. Klicken Sie auf **[!UICONTROL Generate JWT]**.
-4. Klicken Sie im **[!UICONTROL Sample CURL command]** Abschnitt auf den Inhalt **[!UICONTROL Copy]** und fügen Sie ihn an der Eingabeaufforderung oder im Terminalfenster ein.
-5. Führen Sie den Befehl aus, indem Sie **[!UICONTROL Enter]** auf die Tastatur drücken.
-6. Suchen Sie den Wert `"token_type": "bearer"` und den `"access_token"` Wert.
+1. Kopieren Sie auf der **[!UICONTROL JWT]** Registerkarte den Inhalt des Schlüssels und fügen Sie ihn in das **[!UICONTROL Paste private key]** Feld ein.
+1. Klicken Sie auf **[!UICONTROL Generate JWT]**.
+1. Klicken Sie im **[!UICONTROL Sample CURL command]** Abschnitt auf den Inhalt **[!UICONTROL Copy]** und fügen Sie ihn an der Eingabeaufforderung oder im Terminalfenster ein.
+1. Führen Sie den Befehl aus, indem Sie **[!UICONTROL Enter]** auf die Tastatur drücken.
+1. Suchen Sie den Wert `"token_type": "bearer"` und den `"access_token"` Wert.
 
    Der Wert des Benutzerzugriffszeichens ist der Wert, den Sie in Ihren Places API-Anforderungen verwenden werden.
 
