@@ -4,7 +4,7 @@ seo-title: Bibliotheken in der Benutzeroberfläche "Orte"verwalten
 description: Verwalten Sie Ihre Bibliotheken mithilfe der Benutzeroberfläche "Orte".
 seo-description: Verwalten Sie Ihre Bibliotheken mithilfe der Benutzeroberfläche "Orte".
 translation-type: tm+mt
-source-git-commit: 84b23934a6e9f9fd61c068693bae3daca24de253
+source-git-commit: a2e30282789d9834e5c65502e28ddb25f3c55dfa
 
 ---
 
@@ -26,29 +26,29 @@ Bibliotheken werden wie folgt definiert:
 ## Erstellen einer Bibliothek
 
 1. Melden Sie sich mit Ihrer Adobe ID bei Orten an.
-2. Klicken Sie oben rechts auf **[!UICONTROL ...]** &gt; **[!UICONTROL Manage Libraries]**.
-3. Klicken Sie auf **[!UICONTROL New]**.
-4. Geben Sie den Namen ein.
-5. Klicken Sie auf **[!UICONTROL Confirm]**.
+1. Klicken Sie oben rechts auf **[!UICONTROL ...]** &gt; **[!UICONTROL Manage Libraries]**.
+1. Klicken Sie auf **[!UICONTROL New]**.
+1. Geben Sie den Namen ein.
+1. Klicken Sie auf **[!UICONTROL Confirm]**.
 
 ## Ändern des Rangs einer Bibliothek in der Benutzeroberfläche "Orte"
 
 1. Melden Sie sich mit Ihrer Adobe ID bei Places an.
-2. Klicken Sie oben rechts auf **[!UICONTROL ...]** &gt; **[!UICONTROL Manage Libraries]**.
-3. Klicken Sie auf das Symbol links neben dem Bibliotheksnamen und ziehen Sie die Bibliothek in den neuen Rang.
+1. Klicken Sie oben rechts auf **[!UICONTROL ...]** &gt; **[!UICONTROL Manage Libraries]**.
+1. Klicken Sie auf das Symbol links neben dem Bibliotheksnamen und ziehen Sie die Bibliothek in den neuen Rang.
 
 ## Bibliothek umbenennen
 
 1. Melden Sie sich mit Ihrer Adobe ID bei Places an.
-2. Klicken Sie oben rechts auf **[!UICONTROL ...]** &gt; **[!UICONTROL Manage Libraries]**.
-3. Suchen Sie die Bibliothek, die Sie löschen möchten.
-4. Klicken Sie auf **[!UICONTROL ...]** und wählen Sie **[!UICONTROL Rename]**.
-5. Aktualisieren Sie den Namen und klicken Sie auf **[!UICONTROL Save]**.
+1. Klicken Sie oben rechts auf **[!UICONTROL ...]** &gt; **[!UICONTROL Manage Libraries]**.
+1. Suchen Sie die Bibliothek, die Sie löschen möchten.
+1. Klicken Sie auf **[!UICONTROL ...]** und wählen Sie **[!UICONTROL Rename]**.
+1. Aktualisieren Sie den Namen und klicken Sie auf **[!UICONTROL Save]**.
 
 ## Bibliothek löschen
 
 1. Melden Sie sich mit Ihrer Adobe ID bei Places an.
-2. Klicken Sie oben rechts auf **[!UICONTROL ...]** &gt; **[!UICONTROL Manage Libraries]**.
-3. Suchen Sie die Bibliothek, die Sie löschen möchten.
-4. Klicken Sie auf **[!UICONTROL ...]** und wählen Sie **[!UICONTROL Delete]**.
+1. Klicken Sie oben rechts auf **[!UICONTROL ...]** &gt; **[!UICONTROL Manage Libraries]**.
+1. Suchen Sie die Bibliothek, die Sie löschen möchten.
+1. Klicken Sie auf **[!UICONTROL ...]** und wählen Sie **[!UICONTROL Delete]**.
 
