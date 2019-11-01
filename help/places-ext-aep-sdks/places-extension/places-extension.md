@@ -4,7 +4,7 @@ seo-title: Platzierungserweiterung
 description: Mit der Erweiterung "Orte"können Sie je nach Standort Ihrer Benutzer handeln.
 seo-description: Mit der Erweiterung "Orte"können Sie je nach Standort Ihrer Benutzer handeln.
 translation-type: tm+mt
-source-git-commit: fd1b37a0f50d93de1efff4cb38fc23253f02d517
+source-git-commit: a2e30282789d9834e5c65502e28ddb25f3c55dfa
 
 ---
 
@@ -16,13 +16,13 @@ Mit der Erweiterung "Orte"können Sie je nach Standort Ihrer Benutzer handeln. D
 ## Installieren der Platzierungserweiterung in Adobe Experience Platform Launch
 
 1. Klicken Sie in Experience Platform Launch auf die **[!UICONTROL Extensions]** Registerkarte.
-2. Suchen Sie auf der **[!UICONTROL Catalog]** Registerkarte die **[!UICONTROL Places]** Erweiterung und klicken Sie auf **[!UICONTROL Install]**.
-3. Wählen Sie die Orte-Bibliotheken aus, die Sie in dieser Eigenschaft verwenden möchten. Dies sind die Bibliotheken, auf die in Ihrer App zugegriffen werden kann.
-4. Klicken Sie auf **[!UICONTROL Save]**.
+1. Suchen Sie auf der **[!UICONTROL Catalog]** Registerkarte die **[!UICONTROL Places]** Erweiterung und klicken Sie auf **[!UICONTROL Install]**.
+1. Wählen Sie die Orte-Bibliotheken aus, die Sie in dieser Eigenschaft verwenden möchten. Dies sind die Bibliotheken, auf die in Ihrer App zugegriffen werden kann.
+1. Klicken Sie auf **[!UICONTROL Save]**.
 
    Wenn Sie auf klicken **[!UICONTROL Save]**, durchsucht das Experience Platform SDK die Places Services nach POIs in den ausgewählten Bibliotheken. Die POI-Daten werden beim Erstellen der App nicht in den Download der Bibliothek einbezogen, aber eine ortsbasierte Untergruppe von POIs wird zur Laufzeit auf das Gerät des Endbenutzers heruntergeladen und basiert auf den GPS-Koordinaten des Benutzers.
 
-5. Schließen Sie den Veröffentlichungsprozess ab, um die SDK-Konfiguration zu aktualisieren.
+1. Schließen Sie den Veröffentlichungsprozess ab, um die SDK-Konfiguration zu aktualisieren.
 
    Weitere Informationen zur Veröffentlichung in Experience Platform Launch finden Sie unter [Veröffentlichen](https://docs.adobelaunch.com/launch-reference/publishing).
 
@@ -45,7 +45,7 @@ So fügen Sie Ihrer App die Platzierungserweiterung mit Java hinzu:
    implementation 'com.adobe.marketing.mobile:sdk-core:1.+'
    ```
 
-2. Importieren Sie die Erweiterung "Orte"in die Hauptaktivität Ihrer Anwendung.
+1. Importieren Sie die Erweiterung "Orte"in die Hauptaktivität Ihrer Anwendung.
 
    ```java
    import com.adobe.marketing.mobile.Places;
@@ -65,13 +65,13 @@ So fügen Sie Ihrer App die Platzierungserweiterung mit Objective-C oder Swift h
 
    Wenn Sie keine Cocoapods verwenden, können Sie die Bibliotheken für den Mobile Core und Orte auch manuell auf unserer Seite [für](https://github.com/Adobe-Marketing-Cloud/acp-sdks/releases/) Veröffentlichungen auf Github einbinden.
 
-2. Aktualisieren Sie Ihre Cocoapods:
+1. Aktualisieren Sie Ihre Cocoapods:
 
    ```objective-c
    pod update
    ```
 
-3. Öffnen Sie Xcode und importieren Sie in der AppDelegate-Klasse die Header Core und Places:
+1. Öffnen Sie Xcode und importieren Sie in der AppDelegate-Klasse die Header Core und Places:
 
    **Objective-C**
 
