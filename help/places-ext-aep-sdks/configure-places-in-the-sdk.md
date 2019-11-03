@@ -11,7 +11,7 @@ source-git-commit: a2e30282789d9834e5c65502e28ddb25f3c55dfa
 
 # SDK mit der Platzierungserweiterung konfigurieren {#configure-sdk-places-extension}
 
-Um das Standortbewusstsein in Ihrer mobilen App zu aktivieren, konfigurieren Sie das SDK mit den Platzierungserweiterungen und optional mit der Erweiterung "Orts-Überwachung". Weitere Informationen einschließlich der SDK-Konfiguration finden Sie unter [Places (Beta)-Erweiterung](/help/configure-place-in-the sdk/places-extension/places-extension.md).
+Um das Standortbewusstsein in Ihrer mobilen App zu aktivieren, konfigurieren Sie das SDK mit den Platzierungserweiterungen und optional mit der Erweiterung "Orts-Überwachung". Weitere Informationen einschließlich der SDK-Konfiguration finden Sie unter [Places (Beta)-Erweiterung](/help/places-ext-aep-sdks/places-extension/places-extension.md).
 
 ## Konfigurieren der Platzierungserweiterung
 
