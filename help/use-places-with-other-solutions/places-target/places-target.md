@@ -4,7 +4,7 @@ seo-title: Adobe Target
 description: Dieser Abschnitt enthält Informationen zur Verwendung des Location Service mit Adobe Target.
 seo-description: Dieser Abschnitt enthält Informationen zur Verwendung des Location Service mit Adobe Target.
 translation-type: tm+mt
-source-git-commit: 95dd010db8a860ebf489d04c7a70ec9cda8b3fb1
+source-git-commit: d12dae0e30fab8639260c2c55accb4b79096382d
 
 ---
 
@@ -58,7 +58,7 @@ Im folgenden Beispiel wird eine Bedingung erstellt, die bewirkt, dass die Regel 
 
 1. Klicken Sie auf **[!UICONTROL Keep Changes]**.
 
-![Ereignis hinzufügen](/help/assets/ad-setCondition_target.png)
+![Bedingung hinzufügen](/help/assets/ad-setCondition_target.png)
 
 ## 4. Definieren der Aktion
 
@@ -82,7 +82,7 @@ Im folgenden Beispiel werden der Anforderung, die im Target-Ereignis verarbeitet
 >
 >Die Notation von `request[*]` kann laut wie _für jedes Objekt im`request`Array_ gelesen werden.
 
-![Ereignis hinzufügen](/help/assets/ad-setAction_target.png)
+![die Aktion definieren](/help/assets/ad-setAction_target.png)
 
 ## 5. Speichern der Regel und Erstellen der Eigenschaft
 
