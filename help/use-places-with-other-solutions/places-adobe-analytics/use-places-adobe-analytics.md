@@ -2,9 +2,9 @@
 title: Ortsdaten an Adobe Analytics senden
 seo-title: Ortsdaten an Adobe Analytics senden
 description: Dieser Abschnitt enthält Informationen zum Senden von Ortsdaten an Analytics.
-seo-description: 'Dieser Abschnitt enthält Informationen zum Senden von Ortsdaten an Analytics. '
+seo-description: Dieser Abschnitt enthält Informationen zum Senden von Ortsdaten an Analytics.
 translation-type: tm+mt
-source-git-commit: a2e30282789d9834e5c65502e28ddb25f3c55dfa
+source-git-commit: 95dd010db8a860ebf489d04c7a70ec9cda8b3fb1
 
 ---
 
@@ -31,7 +31,7 @@ Nachdem Orte die Ein- und Ausstiegsereignisse gesendet haben, können Sie in Exp
 
 1. Geben Sie einen aussagekräftigen Namen für Ihre Regel ein.
 
-   Auf diese Weise wird die Regel in Ihrer Regelliste leicht erkennbar. In diesem Beispiel wird die Regel benannt **[!UICONTROL Send Data to Analytics]**.
+   Auf diese Weise ist die Regel in Ihrer Regelliste leicht erkennbar. In diesem Beispiel wird die Regel benannt **[!UICONTROL Send Data to Analytics]**.
 
 1. In the **[!UICONTROL Events]** section, click **[!UICONTROL Add]**.
 
@@ -41,7 +41,7 @@ Nachdem Orte die Ein- und Ausstiegsereignisse gesendet haben, können Sie in Exp
 
 1. Klicken Sie auf **[!UICONTROL Keep Changes]**.
 
-   !["Ereignis auswählen"](/help/assets/ad-setEvent_use-analytics-data.png)
+   !["Ereignis auswählen"](/help/assets/pt-selectEvent.png)
 
 
 ## 3. Bedingungen hinzufügen
@@ -62,7 +62,7 @@ In diesem Beispiel wird eine Bedingung erstellt, die bewirkt, dass die Regel nur
 
 1. Klicken Sie auf **[!UICONTROL Keep Changes]**.
 
-   !["Bedingung festlegen"](/help/assets/ad-setCondition_use-analytics-data.png)
+   !["Bedingung festlegen"](/help/assets/pt-setCondition.png)
 
 
 ## 4. Definieren der Aktion
@@ -81,15 +81,14 @@ In diesem Beispiel wird eine Bedingung erstellt, die bewirkt, dass die Regel nur
 
    Im folgenden Beispiel wird ein `TrackAction` Aufruf an Analytics mit zusätzlichen Kontextdaten gesendet, die dem Namen des POI `poi.name` entsprechen, der dieses Eingabeereignis ausgelöst hat:
 
-   !["Aktion festlegen"](/help/assets/ad-setAction_use-analytics-data.png)
+   !["Aktion festlegen"](/help/assets/pt-setAction.png)
 
 ## 5. Speichern Sie die Regel und erstellen Sie Ihre Eigenschaft neu
 
 Überprüfen Sie nach Abschluss der Konfiguration, ob die Regel wie folgt aussieht:
 
-!["rule is created"](/help/assets/ad-ruleComplete_use-analytics-data.png)
+!["rule is created"](/help/assets/pt-ruleComplete.png)
 
 1. Klicken Sie auf **[!UICONTROL Save]**
 
 1. Erstellen Sie Ihre Launch-Eigenschaft neu und stellen Sie sie in der richtigen Umgebung bereit.
-
