@@ -4,7 +4,7 @@ seo-title: Verwenden Ihres eigenen Monitors
 description: Sie können Ihre Überwachungsdienste auch verwenden und mit den Orten integrieren, indem Sie die APIs für die Platzierungserweiterung verwenden.
 seo-description: Sie können Ihre Überwachungsdienste auch verwenden und mit den Orten integrieren, indem Sie die APIs für die Platzierungserweiterung verwenden.
 translation-type: tm+mt
-source-git-commit: 95dd010db8a860ebf489d04c7a70ec9cda8b3fb1
+source-git-commit: d12dae0e30fab8639260c2c55accb4b79096382d
 
 ---
 
@@ -23,16 +23,15 @@ Führen Sie unter iOS die folgenden Schritte aus:
 
 1. Übergeben Sie die Ortsaktualisierungen, die Sie von den Core-Standortdiensten des iOS erhalten haben, an die Places-Erweiterung.
 
-1. Verwenden Sie die API für die `getNearbyPointsOfInterest` Platzierungserweiterung, um das Array von *n* Objekten um den aktuellen Speicherort abzurufen `ACPPlacesPoi` .
+1. Verwenden Sie die API für die `getNearbyPointsOfInterest` Platzierungserweiterung, um das Array von `ACPPlacesPoi` Objekten um den aktuellen Speicherort abzurufen.
 
    ```objective-c
    - (void) locationManager: (CLLocationManager*) manager didUpdateLocations: (NSArray<CLLocation*>*) locations {
        [ACPPlaces getNearbyPointsOfInterest:currentLocation limit:10 callback: ^ (NSArray<ACPPlacesPoi*>* _Nullable nearbyPoi) {
            [self startMonitoringGeoFences:nearbyPoi];
        }];
-   }
-   ```
-
+   }```
+   
 1. Extrahieren Sie die Informationen aus den erhaltenen `ACPPlacesPOI` Objekten und beginnen Sie mit der Überwachung dieser POI.
 
    ```objective-c
