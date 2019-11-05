@@ -4,7 +4,7 @@ seo-title: Ausführen von Berichten in Adobe Analytics mit Ortsdaten
 description: Dieser Abschnitt enthält Informationen zum Ausführen von Berichten in Analytics, die Ortsdaten enthalten.
 seo-description: Dieser Abschnitt enthält Informationen zum Ausführen von Berichten in Analytics, die Ortsdaten enthalten.
 translation-type: tm+mt
-source-git-commit: a2e30282789d9834e5c65502e28ddb25f3c55dfa
+source-git-commit: 95dd010db8a860ebf489d04c7a70ec9cda8b3fb1
 
 ---
 
@@ -39,7 +39,7 @@ Nachdem Orte die Einstiegs- und Ausstiegsereignisse gesendet haben, können Sie 
 
 Jetzt können Sie die Auslöser festlegen, die Sie für diese Regel einbeziehen möchten. In diesem Beispiel basiert der Auslöser auf allen `TrackAction` Aufrufen. Klicken Sie nach der Konfiguration des Ereignisses auf **[!UICONTROL Keep Changes]**.
 
-!["Ereignis erstellen"](/help/assets/pt-selectEvent.png)
+!["Ereignis erstellen"](/help/assets/ad-setEvent_use-analytics-data.png)
 
 
 ## 3. Bedingungen hinzufügen
@@ -60,7 +60,7 @@ In diesem Beispiel wird eine Bedingung erstellt, die bewirkt, dass die Regel nur
 
 1. Klicken Sie auf **[!UICONTROL Keep Changes]**.
 
-!["Bedingung erstellen"](/help/assets/pt-setCondition.png)
+!["Bedingung erstellen"](/help/assets/ad-setCondition_use-analytics-data.png)
 
 ## 4. Definieren der Aktion
 
@@ -78,13 +78,13 @@ Im rechten Bereich können Sie eine Freiform-JSON-Nutzlast hinzufügen, die Date
 
 Im folgenden Beispiel werden den Kontextdaten des Analytics-Ereignisses Werte `poi.city` und `poi.name` Werte hinzugefügt. Die Werte für die neuen Schlüssel werden vom SDK bei der Verarbeitung dieses Ereignisses dynamisch bestimmt.
 
-!["Aktion erstellen"](/help/assets/pt-setAction.png)
+!["Aktion erstellen"](/help/assets/ad-setAction_use-analytics-data.png)
 
 ## 5. Speichern Sie die Regel und erstellen Sie Ihre Eigenschaft neu
 
 Überprüfen Sie nach Abschluss der Konfiguration, ob die Regel wie folgt aussieht:
 
-!["Die Regel ist abgeschlossen."](/help/assets/pt-ruleComplete.png)
+!["Die Regel ist abgeschlossen."](/help/assets/ad-ruleComplete_use-analytics-data.png)
 
 1. Klicken Sie auf **[!UICONTROL Save]**
 
