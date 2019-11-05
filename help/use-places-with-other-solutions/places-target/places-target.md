@@ -2,9 +2,9 @@
 title: Adobe Target
 seo-title: Adobe Target
 description: Dieser Abschnitt enthält Informationen zur Verwendung des Location Service mit Adobe Target.
-seo-description: 'Dieser Abschnitt enthält Informationen zur Verwendung des Location Service mit Adobe Target. '
+seo-description: Dieser Abschnitt enthält Informationen zur Verwendung des Location Service mit Adobe Target.
 translation-type: tm+mt
-source-git-commit: a2e30282789d9834e5c65502e28ddb25f3c55dfa
+source-git-commit: 95dd010db8a860ebf489d04c7a70ec9cda8b3fb1
 
 ---
 
@@ -54,7 +54,7 @@ Im folgenden Beispiel wird eine Bedingung erstellt, die bewirkt, dass die Regel 
 
 1. Wählen Sie aus der **[!UICONTROL Condition Type]** Dropdownliste **[!UICONTROL Launches]**.
 
-1. Ändern Sie im rechten Bereich die Dropdown-Liste und die Nummernsteuerelemente so, dass die Bedingung lautet **[!UICONTROL-Benutzer hat die App gestartet hat, größer oder gleich 5 Mal**.
+1. Ändern Sie im rechten Bereich die Dropdown-Liste und die Nummernsteuerelemente so, dass die Bedingung gelesen wird **[!UICONTROL User has launched the app greater than or equal to 5 times]**.
 
 1. Klicken Sie auf **[!UICONTROL Keep Changes]**.
 
@@ -76,11 +76,11 @@ Im rechten Bereich können Sie eine Freiform-JSON-Nutzlast hinzufügen, die Date
 
 Im folgenden Beispiel werden der Anforderung, die im Target-Ereignis verarbeitet wird, `poiCity` Werte hinzugefügt `poiName`**[!UICONTROL mboxparameters]** . Die Werte für die neuen Schlüssel werden vom SDK zum Zeitpunkt der Verarbeitung dieses Ereignisses dynamisch bestimmt.
 
->[!TIP
->]
+>[!TIP]
+>
 >Diese JSON-Nutzlast verwendet eine spezielle Notation für das `request` Objekt. Im ursprünglichen Ereignis `request` ist ein Array anonymer Objekte. Wenn Daten mit "Daten anhängen"an alle Objekte in einem Array angehängt werden, bewirkt die `[*]` Notation auf einem Schlüssel, der bekanntermaßen ein Array enthält, dass die Nutzlast auf alle Objekte in diesem Array angewendet wird.
 >
->Die Notation von `request[*]` kann laut als _für jedes Objekt im `request` Array gelesen werden.
+>Die Notation von `request[*]` kann laut wie _für jedes Objekt im`request`Array_ gelesen werden.
 
 ![Ereignis hinzufügen](/help/assets/ad-setAction_target.png)
 
