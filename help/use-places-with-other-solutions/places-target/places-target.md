@@ -4,7 +4,7 @@ seo-title: Adobe Target
 description: Dieser Abschnitt enthält Informationen zur Verwendung des Location Service mit Adobe Target.
 seo-description: Dieser Abschnitt enthält Informationen zur Verwendung des Location Service mit Adobe Target.
 translation-type: tm+mt
-source-git-commit: d12dae0e30fab8639260c2c55accb4b79096382d
+source-git-commit: 2169bcdc5957c2542dd11875223ea96c3d10b0bc
 
 ---
 
@@ -88,7 +88,7 @@ Im folgenden Beispiel werden der Anforderung, die im Target-Ereignis verarbeitet
 
 Überprüfen Sie nach Abschluss der Konfiguration, ob die Regel wie folgt aussieht:
 
-![Abgeschlossene Regel](/help/assets/ad-ruleComplete_target.png)
+![Abgeschlossene Regel](/help/assets/ad-ruleComplete-target.png)
 
 1. Klicken Sie auf **[!UICONTROL Save]**
 
