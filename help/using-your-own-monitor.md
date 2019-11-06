@@ -31,7 +31,7 @@ Führen Sie unter iOS die folgenden Schritte aus:
            [self startMonitoringGeoFences:nearbyPoi];
        }];
    }```
-   
+
 1. Extrahieren Sie die Informationen aus den erhaltenen `ACPPlacesPOI` Objekten und beginnen Sie mit der Überwachung dieser POI.
 
    ```objective-c
@@ -99,7 +99,6 @@ Führen Sie unter iOS die folgenden Schritte aus:
            geofencingClient.addGeofences(builder.build(), geoFencePendingIntent)
    }
    ```
-
 
 Der Aufruf der `getNearbyPointsOfInterest` API führt zu einem Netzwerkaufruf, der den Speicherort um den aktuellen Speicherort abruft.
 
