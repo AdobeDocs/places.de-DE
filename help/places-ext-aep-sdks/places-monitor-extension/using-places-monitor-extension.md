@@ -2,9 +2,9 @@
 title: Verwenden der Erweiterung "Orts Monitor"
 seo-title: Verwenden der Erweiterung "Orts Monitor"
 description: Informationen zum Installieren, Konfigurieren und Verwenden der Erweiterung "Orts Monitor".
-seo-description: 'Informationen zum Installieren, Konfigurieren und Verwenden der Erweiterung "Orts Monitor". '
+seo-description: Informationen zum Installieren, Konfigurieren und Verwenden der Erweiterung "Orts Monitor".
 translation-type: tm+mt
-source-git-commit: a2e30282789d9834e5c65502e28ddb25f3c55dfa
+source-git-commit: 419df41a0abeac1ac2a77f32bfa818b4edf3baeb
 
 ---
 
@@ -15,7 +15,7 @@ Führen Sie die folgenden Aufgaben aus, um die Erweiterung "Orts-Monitor"zu verw
 
 ## Installieren der Erweiterung "Platzierungsmonitor"im Experience Platform Launch
 
-1. Klicken Sie in Experience Platform Launch auf die **[!UICONTROL Extensions]** Registerkarte.
+1. In Experience Platform Launch, click the **[!UICONTROL Extensions]** tab.
 1. Suchen Sie auf der **[!UICONTROL Catalog]** Registerkarte die **[!UICONTROL Places Monitor]** Erweiterung und klicken Sie auf **Installieren**.
 1. Klicken Sie auf **[!UICONTROL Save]**.
 1. Folgen Sie dem Veröffentlichungsprozess, um die SDK-Konfiguration zu aktualisieren.
@@ -107,7 +107,9 @@ public class MobileApp extends Application {
 }
 ```
 
-**** Wichtig: Die Orteüberwachung hängt von der Platzierungserweiterung ab. Wenn Sie die Erweiterung "Orts-Monitor"manuell installieren, stellen Sie sicher, dass Sie auch die `places.aar` Bibliothek zu Ihrem Projekt hinzufügen.
+>[!IMPORTANT]
+>
+> Die Orteüberwachung hängt von der Platzierungserweiterung ab. Wenn Sie die Erweiterung „Places Monitor“ manuell installieren, stellen Sie sicher, dass Sie auch die `places.aar`-Bibliothek zu Ihrem Projekt hinzufügen.
 
 ## iOS
 
@@ -125,7 +127,7 @@ Registrieren Sie sich in der`application:didFinishLaunchingWithOptions`iOS-App `
         [ACPPlacesMonitor start];
     }];
 
-    return YES; 
+    return YES;
 }
 ```
 
@@ -140,7 +142,7 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
         // do other initialization required for the SDK
         ACPPlacesMonitor.start()
     })
-    
+
     // Override point for customization after application launch.        
     return true
 }
@@ -148,7 +150,7 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 
 >[!IMPORTANT]
 >
-> Die Orteüberwachung hängt von der Platzierungserweiterung ab. Wenn Sie die Erweiterung "Orts-Monitor"manuell installieren, stellen Sie sicher, dass Sie auch die `libACPPlaces_iOS.a` Bibliothek zu Ihrem Projekt hinzufügen.
+> Die Orteüberwachung hängt von der Platzierungserweiterung ab. When manually installing the Places Monitor extension, ensure that you also add the `libACPPlaces_iOS.a` library to your project.
 
 
 ## Berechtigungen zum Manifest hinzufügen
@@ -163,7 +165,7 @@ Um für alle Versionen von Android anzugeben, dass für Ihre App eine Standortbe
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.adobe.placesapp">
   <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     // Only for Android apps targeting API level 29 and above
-  <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" /> 
+  <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
   <application>        
     ...    
   </application>
@@ -189,4 +191,3 @@ Die folgenden Schlüssel müssen in der `Info.plist` Datei Ihrer App enthalten s
 >Wenn Ihre App iOS 10 und früher unterstützt, ist auch der `NSLocationAlwaysUsageDescription` Schlüssel erforderlich.
 
 ![](/help/assets/using-the-places-monitor_2.png)
-
