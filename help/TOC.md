@@ -3,7 +3,7 @@ product: Adobe Experience Platform Location Service
 audience: Endanwender
 user-guide-title: Adobe Experience Platform Location Service
 translation-type: tm+mt
-source-git-commit: 95c29df19f61e7854e39b47e39471f7f1e94b736
+source-git-commit: 419df41a0abeac1ac2a77f32bfa818b4edf3baeb
 
 ---
 
@@ -48,8 +48,8 @@ source-git-commit: 95c29df19f61e7854e39b47e39471f7f1e94b736
             + [Löschen mehrerer POIs](web-service-api/api-usage/manage-pois/batch-apis/delete-multiple-pois.md)
       + [Abfrage-APIs](web-service-api/api-usage/query-apis.md)
 + Erweiterungen für mobile SDKs {#places-ext-aep-sdks}
-   + Platzierungserweiterung {#places-extension}
-      + [Platzierungserweiterung](places-ext-aep-sdks/places-extension/places-extension.md)
+   + Places-Erweiterung {#places-extension}
+      + [Places-Erweiterung](places-ext-aep-sdks/places-extension/places-extension.md)
       + [Platzierungs-API-Referenz](places-ext-aep-sdks/places-extension/places-api-reference.md)
       + [Ereignisreferenz für Orte](places-ext-aep-sdks/places-extension/places-event-ref.md)
       + [Objekte für benutzerdefinierte Orte](places-ext-aep-sdks/places-extension/cust-places-objects.md)
@@ -64,8 +64,8 @@ source-git-commit: 95c29df19f61e7854e39b47e39471f7f1e94b736
    + [Einstiegs- und Ausstiegsregeln erstellen](use-places-launch-workflow/create-rule-places-property.md)
 + Verwenden des Location Service mit anderen Adobe-Lösungen {#use-places-with-other-solutions}
    + Adobe Analytics {#places-adobe-analytics}
-      + [Standortdienstdaten an Adobe Analytics senden](use-places-with-other-solutions/places-adobe-analytics/use-places-adobe-analytics.md)
-      + [Ausführen von Berichten in Adobe Analytics, die Standortdienstdaten enthalten](use-places-with-other-solutions/places-adobe-analytics/run-reports-aa-places-data.md)
+      + [POI-Einstiegs- und -Ausstiegsdaten an Analytics senden](use-places-with-other-solutions/places-adobe-analytics/use-places-adobe-analytics.md)
+      + [Hinzufügen von Ortskontext zu Analytics-Anforderungen](use-places-with-other-solutions/places-adobe-analytics/run-reports-aa-places-data.md)
    + Adobe Mobile Services {#places-mobile-svcs-messaging}
       + [Adobe Mobile Services](use-places-with-other-solutions/places-mobile-svcs-for-messaging/use-places-mobie-svcs-messaging.md)
       + [Push-Benachrichtigungen](use-places-with-other-solutions/places-mobile-svcs-for-messaging/mobile-svcs-messaging-push.md)
