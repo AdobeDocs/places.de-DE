@@ -30,7 +30,8 @@ Führen Sie unter iOS die folgenden Schritte aus:
        [ACPPlaces getNearbyPointsOfInterest:currentLocation limit:10 callback: ^ (NSArray<ACPPlacesPoi*>* _Nullable nearbyPoi) {
            [self startMonitoringGeoFences:nearbyPoi];
        }];
-   }```
+   }
+   ```
 
 1. Extrahieren Sie die Informationen aus den erhaltenen `ACPPlacesPOI` Objekten und beginnen Sie mit der Überwachung dieser POI.
 
