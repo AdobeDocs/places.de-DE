@@ -1,15 +1,15 @@
 ---
-title: Ortsdaten an Adobe Analytics senden
-seo-title: Ortsdaten an Adobe Analytics senden
-description: Dieser Abschnitt enthält Informationen zum Senden von Ortsdaten an Analytics.
-seo-description: Dieser Abschnitt enthält Informationen zum Senden von Ortsdaten an Analytics.
+title: POI-Einstiegs- und -Ausstiegsdaten an Analytics senden
+seo-title: POI-Einstiegs- und -Ausstiegsdaten an Analytics senden
+description: Dieser Abschnitt enthält Informationen zum Senden von POI-Einstiegs- und -Ausstiegsdaten an Analytics.
+seo-description: Dieser Abschnitt enthält Informationen zum Senden von POI-Einstiegs- und -Ausstiegsdaten an Analytics.
 translation-type: tm+mt
-source-git-commit: 95dd010db8a860ebf489d04c7a70ec9cda8b3fb1
+source-git-commit: 7609711db8b53dfbf0a387632c47133e9b9d0f07
 
 ---
 
 
-# Ortsdaten an Adobe Analytics senden {#places-data-analytics}
+# POI-Einstiegs- und -Ausstiegsdaten an Analytics senden {#places-data-analytics}
 
 
 >[!IMPORTANT]
