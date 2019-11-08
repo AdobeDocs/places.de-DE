@@ -1,15 +1,15 @@
 ---
-title: Ausführen von Berichten in Adobe Analytics mit Ortsdaten
-seo-title: Ausführen von Berichten in Adobe Analytics mit Ortsdaten
-description: Dieser Abschnitt enthält Informationen zum Ausführen von Berichten in Analytics, die Ortsdaten enthalten.
-seo-description: Dieser Abschnitt enthält Informationen zum Ausführen von Berichten in Analytics, die Ortsdaten enthalten.
+title: Hinzufügen von Ortskontext zu Analytics-Anforderungen
+seo-title: Hinzufügen von Ortskontext zu Analytics-Anforderungen
+description: Dieser Abschnitt enthält Informationen zum Hinzufügen von Standortkontext zu Analytics-Anforderungen.
+seo-description: Dieser Abschnitt enthält Informationen zum Hinzufügen von Standortkontext zu Analytics-Anforderungen.
 translation-type: tm+mt
-source-git-commit: 95dd010db8a860ebf489d04c7a70ec9cda8b3fb1
+source-git-commit: 7609711db8b53dfbf0a387632c47133e9b9d0f07
 
 ---
 
 
-# Ausführen von Berichten in Adobe Analytics mit Ortsdaten {#run-reports-aa-locserv-data}
+# Hinzufügen von Ortskontext zu Analytics-Anforderungen {#run-reports-aa-locserv-data}
 
 >[!IMPORTANT]
 >
