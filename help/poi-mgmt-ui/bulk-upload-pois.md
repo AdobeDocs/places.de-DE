@@ -4,7 +4,7 @@ seo-title: Massen-Upload-POIs
 description: Dieser Abschnitt enthält Informationen zum Hochladen von POIs als Massendatei.
 seo-description: Dieser Abschnitt enthält Informationen zum Hochladen von POIs als Massendatei.
 translation-type: tm+mt
-source-git-commit: a76e91775efd92ce56f2dc5cbdcc65786855b5c3
+source-git-commit: 3e2bf2ce011f9770209af08bd0abf0b16f84fbc0
 
 ---
 
@@ -45,7 +45,7 @@ Im Folgenden finden Sie eine Liste der Spalten und Werte, die Sie verwenden müs
 
 * `radius`
 
-   Ein Wert zwischen 10 und 2000.
+   Ein Wert zwischen 10 und 20.000.
 
 ### Spaltenwerte
 
