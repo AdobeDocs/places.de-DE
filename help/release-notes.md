@@ -4,12 +4,21 @@ seo-title: Versionshinweise
 description: Versionshinweise für den Adobe Experience Platform Location Service.
 seo-description: Versionshinweise für den Adobe Experience Platform Location Service.
 translation-type: tm+mt
-source-git-commit: a5e5d5792d1a0368936f5f54e86a7ce9726a9122
+source-git-commit: 7fd44ab0135ec77f4b235cc65b943b40d535717c
 
 ---
 
 
 # Versionshinweise {#release-notes}
+
+## 22. November 2019
+
+* **PlacesMonitor 2.1.1**
+
+   * **Android**
+
+      * Der Monitor erkennt jetzt den Start eines Android-Geräts und registriert bei Bedarf die Geofencing-Daten anhand der aktuellen Position des Geräts erneut beim Betriebssystem.
+      * Es wurde eine Racebedingung behoben, die manchmal dazu führte, dass Einstiegs-/Ausstiegsereignisse verworfen wurden.
 
 ## 9. Oktober 2019
 
@@ -141,7 +150,7 @@ Die folgenden Probleme in der Benutzeroberfläche "Orte"wurden behoben:
 
 Die folgenden Aktualisierungen wurden in dieser Version vorgenommen:
 
-**Android Places 1.2.0**
+**Android Places 1.1.0**
 
 * Es wurde eine neue API zur Verarbeitung einer einzelnen Geometrie hinzugefügt.
 * Fehlerbehebung, um mehrere aufeinander folgende Einstiegsereignisse zu verhindern.
@@ -156,7 +165,7 @@ Weitere Informationen zum Orts-Monitor finden Sie hier.
 
 ## 2. Mai 2019
 
-**Android Places 1.2.0**
+**Android Places 1.1.0**
 
 * Es wurde eine neue API für getNearByPlaces eingeführt, die einen errorCallback enthält und mit einem errorCode aufgerufen wird, der den Grund für den Fehler angibt.
 * Die Platzierungserweiterung stellt die Ereignisse jetzt in eine Warteschlange, bis eine Konfiguration abgerufen wird.
@@ -210,7 +219,7 @@ In der Erweiterung Orte:
 * Regelereignisse, die beim Ein- oder Ausstieg des POI ausgelöst werden.
 * Erstellen Sie Datenelemente, die auf den aktuellen POI des Benutzers verweisen.
 
-Weitere Informationen zur Platzierungserweiterung finden Sie unter [Platzierungserweiterung](/help/places-ext-aep-sdks/places-extension/places-extension.md).
+For more information about the Places extension, see [Places extension](/help/places-ext-aep-sdks/places-extension/places-extension.md).
 
 #### Orts-APIs
 
