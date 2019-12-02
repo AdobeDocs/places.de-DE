@@ -4,16 +4,16 @@ seo-title: Bericht zu Standortdaten in Analytics Workspace
 description: Dieser Abschnitt enthält Informationen zum Erstellen von Berichten zu Standortdaten in Analytics Workspace.
 seo-description: Dieser Abschnitt enthält Informationen zum Erstellen von Berichten zu Standortdaten in Analytics Workspace.
 translation-type: tm+mt
-source-git-commit: 7609711db8b53dfbf0a387632c47133e9b9d0f07
+source-git-commit: 4ee8adb73f6dec15030a160c27edbeca71d3507b
 
 ---
 
 
-# Bericht zu Standortdaten in Analytics Workspace {#places-in-workspace}
+# Bericht zu Standortdaten im Analytics Workspace {#places-in-workspace}
 
-Dieses Dokument zeigt ein Beispiel für die Berichterstellung zu Ihren Standortdaten in Analytics Workspace. Jeder Schritt enthält eine Zusammenfassung auf hoher Ebene mit Details, die über einen Verweis auf andere Seiten der Dokumentation bereitgestellt werden.
+Dieses Dokument zeigt ein Beispiel für die Berichterstellung zu Ihren Standortdaten im Arbeitsbereich für Analytics. Jeder Schritt enthält eine Zusammenfassung auf hoher Ebene mit Details, die durch Verweis auf andere Dokumentationsseiten bereitgestellt werden.
 
-## Voraussetzungen
+## Voraussetzungen 
 
 Dieses Dokument setzt Folgendes voraus:
 
