@@ -4,16 +4,16 @@ seo-title: Push-Benachrichtigungen
 description: Dieser Abschnitt enthält Informationen zur Verwendung von Orten mit Push-Benachrichtigungen in Campaign Standard.
 seo-description: 'Dieser Abschnitt enthält Informationen zur Verwendung von Orten mit Push-Benachrichtigungen in Campaign Standard. '
 translation-type: tm+mt
-source-git-commit: a2e30282789d9834e5c65502e28ddb25f3c55dfa
+source-git-commit: 4ee8adb73f6dec15030a160c27edbeca71d3507b
 
 ---
 
 
-# Push-Benachrichtigungen mit Experience Platform Location Service {#push-notifications}
+# Push-Benachrichtigungen mit dem Location-Dienst {#push-notifications}
 
 In diesem Handbuch werden wir zeigen, wie Sie historische Geo-Positionsinformationen verwenden können, um Push-Benachrichtigungen, die über Adobe Campaign Standard gesendet werden, zielgerichtet durchzuführen.
 
-## Voraussetzungen
+## Voraussetzungen 
 
 Führen Sie zuerst die folgenden Aufgaben aus:
 
@@ -42,7 +42,7 @@ So erstellen Sie ein Datenelement:
 
    !["Push-Nachrichten in Campaign Standard"](/help/assets/ACS_Push1.png)
 
-1. Wiederholen Sie die Schritte 1 bis 4 und erstellen Sie Datenelemente für " *Letzter eingegebener POI-Breitengrad*", " *Zuletzt eingegebene POI-Längengrad*"und " *Zuletzt eingegebener POI-Radius*".
+1. Repeat the steps 1-4 above and create data elements for *Last Entered POI Latitude*, *Last Entered POI Longitude*, and *Last Entered POI Radius*.
 
 Achten Sie neben den Datenelementen für den Location Service darauf, dass Sie Mobile-Core-Datenelemente für die *App-ID* und *Experience Cloud-ID* erstellen.
 
@@ -120,7 +120,7 @@ Nachdem wir nun Ortsdaten in Campaign ausgefüllt haben, können wir POIs als To
 
    Wenn Ihre Zähleraktualisierung nicht angezeigt wird, haben Sie möglicherweise einen POI-Namen eingegeben, für den keine Geräte einen Eintrag ausgelöst haben. In dieser Situation wird es nützlich, den Slack-Web-Haken zu haben, weil Sie eine Liste der POI-Einträge von verschiedenen Testgeräten sehen können.
 1. Sie können weitere POI-Ortsfilter ziehen, um mehrere POIs in Ihre Nachricht einzuschließen.
-1. Klicken Sie auf **[!UICONTROL Next]** , um die Erstellung der Push-Benachrichtigung für die Bereitstellung abzuschließen.
+1. Click **[!UICONTROL Next]** to finish creating the push notification for delivery.
 
    !["Push Messaging 3 in ACS"](/help/assets/ACS_push3.html)
 
