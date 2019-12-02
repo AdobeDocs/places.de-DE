@@ -3,7 +3,7 @@ product: Adobe Experience Platform Location Service
 audience: end-user
 user-guide-title: Adobe Experience Platform Location Service
 translation-type: tm+mt
-source-git-commit: a34c7a43b867b62646a48b457413ccc8fd3672ad
+source-git-commit: 4ee8adb73f6dec15030a160c27edbeca71d3507b
 
 ---
 
@@ -67,6 +67,7 @@ source-git-commit: a34c7a43b867b62646a48b457413ccc8fd3672ad
    + [Einstiegs- und Ausstiegsregeln erstellen](use-places-launch-workflow/create-rule-places-property.md)
 + Verwenden des Location Service mit anderen Adobe-Lösungen {#use-places-with-other-solutions}
    + Adobe Analytics {#places-adobe-analytics}
+      + [Standortdienst mit Adobe Analytics verwenden](use-places-with-other-solutions/places-adobe-analytics/use-places-analytics-overview.md)
       + [POI-Einstiegs- und -Ausstiegsdaten an Analytics senden](use-places-with-other-solutions/places-adobe-analytics/use-places-adobe-analytics.md)
       + [Hinzufügen von Ortskontext zu Analytics-Anforderungen](use-places-with-other-solutions/places-adobe-analytics/run-reports-aa-places-data.md)
       + [Bericht zu Standortdaten in Analytics Workspace](use-places-with-other-solutions/places-adobe-analytics/places-in-workspace.md)
@@ -75,6 +76,7 @@ source-git-commit: a34c7a43b867b62646a48b457413ccc8fd3672ad
       + [Push-Benachrichtigungen](use-places-with-other-solutions/places-mobile-svcs-for-messaging/mobile-svcs-messaging-push.md)
       + [In-App-Benachrichtigungen](use-places-with-other-solutions/places-mobile-svcs-for-messaging/mobile-svcs-messaging-inapp.md)
    + Adobe Campaign Standard {#places-acs}
+      + [Standortdienst mit Adobe Campaign Standard verwenden](use-places-with-other-solutions/places-acs/places-acs-overview.md)
       + [Push-Benachrichtigungen](use-places-with-other-solutions/places-acs/places-acs-push-notifications.md)
       + [In-App-Nachrichten](use-places-with-other-solutions/places-acs/places-acs-in-app-messages.md)
    + Adobe Target {#places-target}
