@@ -4,12 +4,12 @@ seo-title: Adobe Target
 description: Dieser Abschnitt enthält Informationen zur Verwendung des Location Service mit Adobe Target.
 seo-description: Dieser Abschnitt enthält Informationen zur Verwendung des Location Service mit Adobe Target.
 translation-type: tm+mt
-source-git-commit: 27f4e5397caf14e24bcbc4a2d276647e72a6d115
+source-git-commit: 4ee8adb73f6dec15030a160c27edbeca71d3507b
 
 ---
 
 
-# Adobe Target {#places-target}
+# Standortdienst mit Adobe Target verwenden {#places-target}
 
 Bei diesem Dokument wird davon ausgegangen, dass die Plates-Erweiterung in Ihrer Anwendung implementiert ist. Weitere Informationen zum Implementieren der Platzierungserweiterung finden Sie unter [Platzierungserweiterungen](/help/places-ext-aep-sdks/places-extension/places-extension.md).
 
