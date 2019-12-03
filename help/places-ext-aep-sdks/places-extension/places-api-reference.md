@@ -4,7 +4,7 @@ seo-title: Platzierungs-API-Referenz
 description: Informationen zu den API-Referenzen in Places.
 seo-description: Informationen zu den API-Referenzen in Places.
 translation-type: tm+mt
-source-git-commit: 69173bdbd1a69ae1b75ba70e775a4603d1f1b8fc
+source-git-commit: 77bd510506d950348452eb26386cd25fe570fa65
 
 ---
 
@@ -347,4 +347,39 @@ Hier finden Sie ein Code-Beispiel für diese Methode:
 
 ```objectivec
 [ACPPlaces clear];
+```
+
+## Status der Standortautorisierung festlegen
+
+### setAuthorizationStatus (Android)
+
+In Vorbereitung
+
+### setAuthorizationStatus (iOS)
+
+_[Verfügbar ab ACPPlaces v1.3.0]_
+
+Legt den Autorisierungsstatus in der Ortserweiterung fest.
+
+Der angegebene Status wird im Status "Orte freigegeben"gespeichert und dient nur als Referenz.
+Der Aufruf dieser Methode hat keine Auswirkungen auf den tatsächlichen Status der Standortautorisierung für dieses Gerät.
+
+Wenn sich der Status der Geräteautorisierung ändert, wird die `locationManager:didChangeAuthorizationStatus:` Methode des Geräts aufgerufen `CLLocationManagerDelegate` . Von dieser Methode aus sollten Sie den neuen `CLAuthorizationStatus` Wert an die ACPPlaces- `setAuthorizationStatus:` API übergeben.
+
+**Syntax**
+
+Hier finden Sie die Syntax für diese Methode:
+
+```objectivec
++ (void) setAuthorizationStatus: (CLAuthorizationStatus) status;
+```
+
+**Beispiel**
+
+Hier finden Sie ein Code-Beispiel für diese Methode:
+
+```objectivec
+- (void) locationManager: (CLLocationManager*) manager didChangeAuthorizationStatus: (CLAuthorizationStatus) status {    
+    [ACPPlaces setAuthorizationStatus:status];
+}
 ```
