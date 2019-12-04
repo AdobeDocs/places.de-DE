@@ -4,7 +4,7 @@ seo-title: Platzierungs-API-Referenz
 description: Informationen zu den API-Referenzen in Places.
 seo-description: Informationen zu den API-Referenzen in Places.
 translation-type: tm+mt
-source-git-commit: 5d4974a341f6d0009ad93a9eea2f940ac9d8e871
+source-git-commit: 379278f7677d7d3cdc697d78c54693d0a3c62e02
 
 ---
 
@@ -357,7 +357,7 @@ In Vorbereitung
 
 ### setAuthorizationStatus (iOS)
 
-*[Verfügbar ab ACPPlaces v1.3.0]*
+*Verfügbar ab ACPPlaces v1.3.0*
 
 Legt den Autorisierungsstatus in der Ortserweiterung fest.
 
