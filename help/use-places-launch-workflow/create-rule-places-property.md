@@ -1,10 +1,8 @@
 ---
 title: Erstellen einer Regel für Ihre Places-Eigenschaft
-seo-title: Erstellen einer Regel für Ihre Places-Eigenschaft
 description: 'Das Places SDK verfolgt den aktuellen Standort, überwacht die konfigurierten POIs um den aktuellen Speicherort und verfolgt die Ein- und Ausstiegsereignisse für diese POIs. '
-seo-description: 'Das Places SDK verfolgt den aktuellen Standort, überwacht die konfigurierten POIs um den aktuellen Speicherort und verfolgt die Ein- und Ausstiegsereignisse für diese POIs. '
 translation-type: tm+mt
-source-git-commit: a2e30282789d9834e5c65502e28ddb25f3c55dfa
+source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ---
 
@@ -54,14 +52,14 @@ Aktionen definieren, was die App tun wird, wenn die Bedingung für die Regel fü
 
 >[!CAUTION]
 >
->In diesem Beispiel wird davon ausgegangen, dass Sie eine POI-Bibliothek aller Kaffeehäuser in den USA erstellt haben. Weitere Informationen zum Erstellen von POIs und Bibliotheken finden Sie unter [Erstellen eines POI](/help/poi-mgmt-ui/create-a-poi-ui.md) und *Erstellen einer Bibliothek* in [Verwalten mehrerer Bibliotheken](https://docs.adobe.com/content/help/en/places/using/poi-mgmt-ui/manage-libraries-in-the-places-ui.html).
+>In diesem Beispiel wird davon ausgegangen, dass Sie eine POI-Bibliothek aller Cafés in den USA erstellt haben. For more information about creating POIs and libraries, see [Create a POI](/help/poi-mgmt-ui/create-a-poi-ui.md) and *Create a Library* in [Manage multiple libraries](https://docs.adobe.com/content/help/en/places/using/poi-mgmt-ui/manage-libraries-in-the-places-ui.html).
 
 Das folgende Verfahren ist ein Beispiel dafür, wie eine Regel erstellt wird, die einen Beitrag zurück an Slack sendet, wenn Sie in einem Café in San Francisco einsteigen.
 
 Das Ereignis, die Bedingung und die Aktion werden wie folgt definiert:
 
 * **Ereignis**: Platziert das Eintragsereignis.
-* **Bedingung**: Ort für den **aktuellen POI** ist San Francisco
+* **Bedingung**: Die Stadt für den **aktuellen POI** ist San Francisco.
 * **Aktion**: Senden Sie einen Postback an Slack den Namen des Kaffeehauses, das Ihr Kunde eingegeben hat.
 
 ### Voraussetzung
@@ -74,7 +72,7 @@ So erstellen Sie ein Datenelement beim Start der Experience Platform:
 1. Click **Add Data Element**.
 1. Geben Sie einen Namen ein, z. B. " **Aktueller Coffee Shop-Name**".
 1. Wählen Sie in der Dropdownliste **Erweiterung** die Option **Orte - Beta**.
-1. Wählen Sie im **Datenelement**" **Stadt**"aus.
+1. Wählen Sie unter **Datenelement** die Option **Stadt** aus.
 1. Wählen Sie im rechten Bereich die Option **Aktueller POI**.
 1. Klicken Sie auf **Speichern**.
 
@@ -82,7 +80,7 @@ So erstellen Sie ein Datenelement beim Start der Experience Platform:
 
 ![eine Regel erstellen](/help/assets/placesrule.png)
 
-1. Klicken Sie in Experience Platform Launch auf die **[!UICONTROL Rules]** Registerkarte.
+1. In Experience Platform Launch, click the **[!UICONTROL Rules]** tab.
 1. Klicken Sie auf **[!UICONTROL Add Rule]**.
 1. Geben Sie beispielsweise einen Namen für die Regel ein **[!UICONTROL Track entry for coffee shop in SF]**.
 
@@ -97,11 +95,11 @@ So erstellen Sie ein Datenelement beim Start der Experience Platform:
 ### Erstellen einer Bedingung
 
 1. Klicken Sie im Abschnitt Bedingungen auf **[!UICONTROL +Add]**. Die Bedingungen bestimmen, welche Kriterien erfüllt sein müssen, damit die Maßnahme durchgeführt werden kann.
-1. Wählen Sie **[!UICONTROL Logic Type]** Regular, was die Ausführung von Aktionen erlaubt, wenn die Bedingung erfüllt ist.
+1. In **[!UICONTROL Logic Type]**, select Regular, which allows actions to execute if the condition is met.
 1. Wählen Sie in der **[!UICONTROL Extension]** Dropdownliste **[!UICONTROL Places – Beta]**.
 1. Wählen Sie **[!UICONTROL Condition Type]** in **[!UICONTROL City]**.
 1. Type a condition name, for example, **[!UICONTROL Coffee shop in SF]**.
-1. Klicken Sie im rechten Bereich auf **[!UICONTROL Current POI]** und wählen Sie in der Dropdownliste **[!UICONTROL San Francisco]** eine Ihrer Städte aus.
+1. In the right pane, click **[!UICONTROL Current POI]**, and in the drop-down list, select **[!UICONTROL San Francisco]** as one of your cities.
 1. Klicken Sie auf **[!UICONTROL Keep Changes]**.
 
 ### Erstellen einer Aktion
