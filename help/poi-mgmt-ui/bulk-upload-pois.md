@@ -1,10 +1,8 @@
 ---
 title: Massen-Upload-POIs
-seo-title: Massen-Upload-POIs
 description: Dieser Abschnitt enthält Informationen zum Hochladen von POIs als Massendatei.
-seo-description: Dieser Abschnitt enthält Informationen zum Hochladen von POIs als Massendatei.
 translation-type: tm+mt
-source-git-commit: 3e2bf2ce011f9770209af08bd0abf0b16f84fbc0
+source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ---
 
