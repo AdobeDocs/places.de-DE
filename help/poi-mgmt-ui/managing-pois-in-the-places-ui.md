@@ -1,10 +1,8 @@
 ---
 title: Verwalten vorhandener POIs
-seo-title: Verwalten vorhandener POIs
 description: In der Benutzeroberfläche des Location Service können Sie vorhandene POIs bearbeiten, löschen oder filtern.
-seo-description: In der Benutzeroberfläche des Location Service können Sie vorhandene POIs bearbeiten, löschen oder filtern.
 translation-type: tm+mt
-source-git-commit: 8d6b796326c5fbb3f2af996766fc9c05046ec653
+source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ---
 
