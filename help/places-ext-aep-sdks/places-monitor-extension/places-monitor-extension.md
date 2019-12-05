@@ -1,10 +1,8 @@
 ---
 title: Platzierungsmonitor-Erweiterung
-seo-title: Platzierungsmonitor-Erweiterung
 description: Die Erweiterung "Orts Monitor"verarbeitet die Interaktionen mit dem Betriebssystem, um die POIs zu registrieren und zu überwachen, die dem Benutzer am nächsten sind.
-seo-description: 'Die Erweiterung "Orts Monitor"verarbeitet die Interaktionen mit dem Betriebssystem, um die POIs zu registrieren und zu überwachen, die dem Benutzer am nächsten sind. '
 translation-type: tm+mt
-source-git-commit: ef720c112bc0de386e070094629c5bab69938e76
+source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ---
 
