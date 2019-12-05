@@ -4,12 +4,14 @@ seo-title: Adobe Experience Platform Location Service
 description: 'Der Location Service ist ein wichtiger Kontext, um die Interaktion der mobilen Benutzer zu verstehen. In diesem Kontext können Entwickler mobiler Apps den App-Entwurf verbessern und ihn zu einem personalisierteren und ansprechenderen Erlebnis machen. '
 seo-description: 'Der Location Service ist ein wichtiger Kontext, um die Interaktion der mobilen Benutzer zu verstehen. In diesem Kontext können Entwickler mobiler Apps den App-Entwurf verbessern und ihn zu einem personalisierteren und ansprechenderen Erlebnis machen. '
 translation-type: tm+mt
-source-git-commit: 9fd6c1fdd740a021d7612aa33693c392bff53994
+source-git-commit: ecb059400d9203884faab6fd2f627251eeaeea38
 
 ---
 
 
 # Übersicht über den Experience Platform Location Service {#home}
+
+!["Adobe Experience Platform Location Service"](/help/assets/LocationHeader.png)
 
 Der Standort ist ein wichtiger Kontext für das Verständnis und die Interaktion mit mobilen Benutzern. In diesem Kontext können Entwickler mobiler Apps den App-Entwurf verbessern und ihn zu einem personalisierteren und ansprechenderen Erlebnis machen.
 
@@ -44,7 +46,7 @@ Der Location Service umfasst die folgenden Komponenten:
 
    Visualisieren Sie POIs auf einer Karte, um den räumlichen Kontext zu verstehen und POIs und ihre benutzerspezifischen Metadaten hinzuzufügen/zu bearbeiten.
 
-* **Platzierungserweiterung**
+* **Places-Erweiterung**
 
    Die API-Schnittstelle für mehrere Plattformen, um den Standortkontext in Ihre mobilen Apps zu integrieren. Weitere Informationen zu den SDKs finden Sie unter [Plates Extension](/help/places-ext-aep-sdks/places-extension/places-extension.md).
 
@@ -72,17 +74,17 @@ In dieser Dokumentation werden einige allgemeine Begriffe verwendet:
 
    Dieser POI-Typ ist ein physisches Gerät, das einen Standort durch die Ausgabe eines Bluetooth-Signals mit niedriger Leistung darstellt. Beacons-Unterstützung wird in einer zukünftigen Version angeboten.
 
-* Eine **Bibliothek** ist eine Sammlung von POIs, die gruppiert sind, um Regeln einfach an einen Satz anstatt an einen POI anzuhängen.
+* Eine **Bibliothek** ist eine Sammlung von POIs, die gruppiert sind, um Regeln einfach an mehrere statt nur an einen POI anzuhängen.
 
 * Eine **Erweiterung** ist die Experience Platform Launch-Erweiterung, die erforderlich ist, um das Plates SDK in Ihre mobilen Apps zu integrieren.
 
    Die mit den anderen mobilen SDKs verwendete Erweiterung, um Ihren Erlebnissen Ortskontext hinzuzufügen.
 
-* Eine **Organisation** ist die Adobe-Entität, die Ihr Unternehmen in der Adobe Experience Cloud identifiziert.
+* Eine **Organisation** ist die Adobe-Einheit, die Ihr Unternehmen in der Adobe Experience Cloud identifiziert.
 
    Normalerweise ist ein Unternehmen Ihr Firmenname. Ein Unternehmen kann jedoch über mehr als eine Organisation verfügen. Der Organisationsadministrator kann Gruppen und Benutzer konfigurieren und die Single Sign-On-Funktion konfigurieren.
 
-* Die **orgID** ist die ID für Ihr Unternehmen in der gesamten Adobe Experience Platform.
+* Die **orgID** ist die ID für Ihr Unternehmen auf der gesamten Adobe Experience Platform.
 
    Weitere Informationen finden Sie unter [Suchen der Organisations-ID](https://forums.adobe.com/thread/2339895).
 
