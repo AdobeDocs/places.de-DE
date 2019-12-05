@@ -1,10 +1,8 @@
 ---
 title: Verwenden Ihres eigenen Monitors
-seo-title: Verwenden Ihres eigenen Monitors
 description: Sie können Ihre Überwachungsdienste auch verwenden und mit den Orten integrieren, indem Sie die APIs für die Platzierungserweiterung verwenden.
-seo-description: Sie können Ihre Überwachungsdienste auch verwenden und mit den Orten integrieren, indem Sie die APIs für die Platzierungserweiterung verwenden.
 translation-type: tm+mt
-source-git-commit: 419df41a0abeac1ac2a77f32bfa818b4edf3baeb
+source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ---
 
