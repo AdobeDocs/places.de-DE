@@ -1,10 +1,8 @@
 ---
 title: Bibliotheken in der Benutzeroberfläche "Orte"verwalten
-seo-title: Bibliotheken in der Benutzeroberfläche "Orte"verwalten
 description: Verwalten Sie Ihre Bibliotheken mithilfe der Benutzeroberfläche "Orte".
-seo-description: Verwalten Sie Ihre Bibliotheken mithilfe der Benutzeroberfläche "Orte".
 translation-type: tm+mt
-source-git-commit: a2e30282789d9834e5c65502e28ddb25f3c55dfa
+source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ---
 
@@ -21,7 +19,7 @@ Bibliotheken werden wie folgt definiert:
 | :--- | :--- |
 | ID | eine eindeutige ID, die der Bibliothek bei der Erstellung zugewiesen wird |
 | Name | einem benutzerfreundlichen Namen, der einer Bibliothek gegeben wird |
-| Rang | Diese Ranglisten können ignoriert werden, wenn sich die Geodäten in Ihrem Unternehmen nicht überschneiden. Wenn es überlappende POIs gibt, empfehlen wir, dass Sie jede der Geofences in separate Bibliotheken setzen, damit sie relativ zueinander gewichtet werden können. Ein Benutzer kann immer nur in einem Gefecht sein. <br><br>Die höchste Rangfolge der Geofencing-Werte, die ein Benutzer erhält, bestimmt seine aktuelle Geofence-Mitgliedschaft. Wenn es Geofences gibt, die die gleiche Bibliotheksreihenfolge haben, ist die kleinste Häufigkeit die aktuelle Stärke des Benutzers. <br><br>Dem SDK sind auch die *zuletzt eingegebenen* und die *letzten ausgehenden* POIs bekannt, sodass Sie vollständig steuern können, wie Ihre Regeln auf der Grundlage der Benutzerinteraktion mit Ihren POIs ausgelöst werden sollen. |
+| Rang | Diese Ranglisten können ignoriert werden, wenn sich die Geodäten in Ihrem Unternehmen nicht überschneiden. Wenn es sich überschneidende POIs gibt, empfehlen wir, dass Sie jeden Geofence in separate Bibliotheken platzieren, damit sie in Relation zueinander gewichtet werden können. Ein Benutzer kann sich immer nur in einem Geofence befinden. <br><br>Der höchste Rang der Geofences, in denen sich ein Benutzer befindet, bestimmt die aktuelle Geofence-Mitgliedschaft. Wenn Geofences mit dem gleichen Bibliotheksrang vorhanden sind, wird der kleinste aktuelle Geofence des Benutzers verwendet. <br><br>Das SDK erkennt auch die *zuletzt betretenen* und *zuletzt verlassenen* POIs. So haben Sie vollständige Kontrolle darüber, wie Ihre Regeln basierend auf Interaktionen mit Ihren POIs ausgelöst werden sollen. |
 
 ## Erstellen einer Bibliothek
 
