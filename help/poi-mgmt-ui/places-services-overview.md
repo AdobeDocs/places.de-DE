@@ -1,10 +1,8 @@
 ---
 title: Übersicht über den Places Service
-seo-title: Übersicht über den Places Service
 description: 'Dieser Abschnitt enthält Informationen zum Erstellen und Verwenden von POI (Points of Interest). '
-seo-description: 'Dieser Abschnitt enthält Informationen zum Erstellen und Verwenden von POI (Points of Interest).  '
 translation-type: tm+mt
-source-git-commit: f6c92bbd4fb21999f5c96ea0df8ede6919d1bc79
+source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ---
 
