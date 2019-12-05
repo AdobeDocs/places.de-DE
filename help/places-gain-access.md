@@ -1,8 +1,14 @@
 ---
-source-git-commit: 9b5ed11499da580e48ae27affda238ce6d91f435
+title: Zugriff auf den Adobe Experience Platform Location Service
+seo-title: Zugriff auf den Adobe Experience Platform Location Service
+description: Dieser Abschnitt enthält Informationen dazu, wie ein Benutzer zum Location Service und zum Experience Platform Launch hinzugefügt wird, damit der Benutzer auf den Location Service zugreifen kann.
+seo-description: Dieser Abschnitt enthält Informationen dazu, wie ein Benutzer zum Location Service und zum Experience Platform Launch hinzugefügt wird, damit der Benutzer auf den Location Service zugreifen kann.
 translation-type: tm+mt
+source-git-commit: 1b4482c8e4cf825c0182421fe00f8b86b411c11b
 
 ---
+
+
 # Zugriff auf den Adobe Experience Platform Location Service {#adding-user-launch-places}
 
 Sie können auf den Plattformstandortdienst über das Schnellzugriffsmenü in der [Adobe Experience Cloud-Startseite](https://experience.adobe.com)zugreifen.
