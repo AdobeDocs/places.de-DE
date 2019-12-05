@@ -1,10 +1,8 @@
 ---
 title: POI erstellen
-seo-title: POI erstellen
 description: Erstellen Sie einen POI mithilfe der Benutzeroberfläche "Orte".
-seo-description: Erstellen Sie einen POI mithilfe der Benutzeroberfläche "Orte".
 translation-type: tm+mt
-source-git-commit: 58218dac5df3fdb1ff660368af52e43409f99c95
+source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ---
 
@@ -25,16 +23,16 @@ Ein POI (Point of Interest) ist ein Ort oder ein Punkt auf einer Karte, der für
 1. Optionale Schritte:
 1. Die folgenden Schritte sind optional:
 
-   1.  Wählen Sie ein Symbol für Ihren POI.
-   1.  Wählen Sie eine Farbe für das Symbol aus.
-   1.  Geben Sie eine Kategorie für Ihren POI an.
+   1. Wählen Sie ein Symbol für Ihren POI.
+   1. Wählen Sie eine Farbe für das Symbol aus.
+   1. Geben Sie eine Kategorie für Ihren POI an.
 
 1. Erweitern Sie den **[!UICONTROL Location]** Abschnitt.
 
-   1.  Geben Sie eine Adresse ein.
-   1.  Geben Sie die Stadt ein.
-   1.  Geben Sie den Namen des Status ein.
-   1.  Geben Sie den Namen des Landes ein.
+   1. Geben Sie eine Adresse ein.
+   1. Geben Sie die Stadt ein.
+   1. Geben Sie den Namen des Status ein.
+   1. Geben Sie den Namen des Landes ein.
    1. Wählen Sie einen Breiten- oder Längengrad aus oder geben Sie ihn ein (erforderlich).
    1. Klicken Sie auf **[!UICONTROL Drop Pin on Map]**.
    Wenn Sie den genauen Längen- und Breitengrad nicht kennen, ist es nützlich, einen Pin abzulegen.
@@ -43,7 +41,7 @@ Ein POI (Point of Interest) ist ein Ort oder ein Punkt auf einer Karte, der für
 
    Metadaten unterstützen Sie bei der weiteren Definition eines Standorts und können in anderen Adobe-Lösungsarbeitsabläufen verwendet werden, um Ihre Zielgruppe weiter zu verfeinern.
 
-   1.  Geben Sie den Schlüsselnamen ein.
-   1.  Geben Sie den Schlüsselwert ein.
+   1. Geben Sie den Schlüsselnamen ein.
+   1. Geben Sie den Schlüsselwert ein.
 
 1. Klicken Sie auf **[!UICONTROL  Save]**.
