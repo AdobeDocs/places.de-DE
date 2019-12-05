@@ -1,10 +1,8 @@
 ---
 title: Datenelemente zum Starten von Erlebnisplattformen mit Ortsdaten
-seo-title: Datenelemente zum Starten von Erlebnisplattformen mit Ortsdaten
 description: 'Datenelemente sind Bausteine für Ihr Datenwörterbuch (oder Ihre Datenkarte). '
-seo-description: 'Datenelemente sind Bausteine für Ihr Datenwörterbuch (oder Ihre Datenkarte). '
 translation-type: tm+mt
-source-git-commit: ef3d77eba407013e1f701ed001ef9ab7b3818e07
+source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ---
 
