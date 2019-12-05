@@ -1,10 +1,8 @@
 ---
 title: Push-Benachrichtigungen
-seo-title: Push-Benachrichtigungen
 description: Dieser Abschnitt zeigt Ihnen, wie Sie Orte mit Push-Benachrichtigungen verwenden.
-seo-description: Dieser Abschnitt zeigt Ihnen, wie Sie Orte mit Push-Benachrichtigungen verwenden.
 translation-type: tm+mt
-source-git-commit: 60c274c309a2c86b67d6c19ea28ae300a37d723a
+source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ---
 
