@@ -4,7 +4,7 @@ seo-title: Erste Schritte
 description: Erste Schritte mit dem Location Service.
 seo-description: Erste Schritte mit dem Location Service.
 translation-type: tm+mt
-source-git-commit: accfa6ba009ad3419481d9bd3b498143228099fc
+source-git-commit: 66472aa1800bcf36fb1d7f7129da70a573f355ab
 
 ---
 
@@ -27,10 +27,6 @@ Der Produktkontext des Location Service ist für alle Experience Cloud-Organisat
 
    Weitere Informationen finden Sie unter *Hinzufügen eines Benutzers zum Experience Platform Launch and Location Service* in den [häufig gestellten Fragen](/help/places-faqs.md).
 
-* Vergewissern Sie sich, dass die Platzierungserweiterung in der Eigenschaft der mobilen App in Experience Platform Launch installiert ist.
-
-   Um die von Adobe bereitgestellte regionale Überwachung für Ihre Geofenräume zu verwenden, installieren Sie die Erweiterung "Orts Monitor". Weitere Informationen finden Sie unter [Plates monitor extension](/help/places-ext-aep-sdks/places-monitor-extension/places-monitor-extension.md).
-
 
 ### 2. POIs erstellen
 
@@ -49,5 +45,5 @@ POI (Points of Interest, POI) sind Geo-Zäune, die Sie für Ihre Organisationen 
 
 Weitere Informationen zum Konfigurieren der Plates-Erweiterung und der Monitor-Erweiterung finden Sie in den folgenden Informationen:
 
-* [Platzierungserweiterung](/help/places-ext-aep-sdks/places-extension/places-extension.md)
+* [Places-Erweiterung](/help/places-ext-aep-sdks/places-extension/places-extension.md)
 * [Platziert die Monitorerweiterung](/help/places-ext-aep-sdks/places-monitor-extension/places-monitor-extension.md).
