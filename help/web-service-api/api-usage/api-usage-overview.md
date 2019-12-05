@@ -1,10 +1,8 @@
 ---
 title: API-Nutzungsübersicht
-seo-title: API-Nutzungsübersicht
 description: Dieser Abschnitt enthält Informationen zu den REST-APIs, die für den Location Service verfügbar sind.
-seo-description: Dieser Abschnitt enthält Informationen zu den REST-APIs, die für den Location Service verfügbar sind.
 translation-type: tm+mt
-source-git-commit: 885cc8c9b306cf6e25381a355898a0229670a696
+source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ---
 
