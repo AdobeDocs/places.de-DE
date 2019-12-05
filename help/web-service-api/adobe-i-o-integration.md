@@ -1,10 +1,8 @@
 ---
 title: Überblick über die Adobe-E/A-Integration
-seo-title: Überblick über die Adobe-E/A-Integration
 description: Informationen zum Erstellen einer Adobe I/O-Integration.
-seo-description: Informationen zum Erstellen einer Adobe-E/A-Integration.
 translation-type: tm+mt
-source-git-commit: ec2b0f8ba94cecc5709d4d700490913978454ef1
+source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ---
 
@@ -106,7 +104,7 @@ So erstellen Sie eine Ortsintegration:
    **[!UICONTROL Access an API]** ist der Standardspeicherort.
 
 1. Wenn Sie Zugriff auf mehr als eine Experience Cloud-Organisation haben, wählen Sie die Organisation in der Dropdownliste oben rechts aus.
-1. Wählen Sie unter **[!UICONTROL Experience Cloud]** den Adobe-Dienst **[!UICONTROL Places]** aus, in den Sie integrieren möchten, und klicken Sie auf **[!UICONTROL Continue]**.
+1. Under **[!UICONTROL Experience Cloud]**, select **[!UICONTROL Places]** as the Adobe service to which you want to integrate and click **[!UICONTROL Continue]**.
 1. Wählen Sie **[!UICONTROL New integration]** und klicken Sie auf **[!UICONTROL Continue]**.
 1. Geben Sie im Bildschirm "Neue Integration erstellen"einen Namen und eine Beschreibung ein.
 1. Ziehen Sie die oben erstellte `xxxx_public.crt` Datei in den **[!UICONTROL Public keys certificates]** Ablagebereich.
@@ -138,9 +136,9 @@ Klicken Sie auf der Seite mit den Integrationsdetails auf die **[!UICONTROL JWT]
 So generieren Sie ein JWT-Token:
 
 1. Öffnen Sie die oben erstellte `private.key` Datei in einem Texteditor.
-1. Kopieren Sie auf der **[!UICONTROL JWT]** Registerkarte den Inhalt des Schlüssels und fügen Sie ihn in das **[!UICONTROL Paste private key]** Feld ein.
+1. On the **[!UICONTROL JWT]** tab, copy the contents of the key and paste it in the **[!UICONTROL Paste private key]** field.
 1. Klicken Sie auf **[!UICONTROL Generate JWT]**.
-1. Klicken Sie im **[!UICONTROL Sample CURL command]** Abschnitt auf den Inhalt **[!UICONTROL Copy]** und fügen Sie ihn an der Eingabeaufforderung oder im Terminalfenster ein.
+1. In the **[!UICONTROL Sample CURL command]** section, click **[!UICONTROL Copy]** and paste the contents in your command prompt or terminal window.
 1. Führen Sie den Befehl aus, indem Sie **[!UICONTROL Enter]** auf die Tastatur drücken.
 1. Suchen Sie den Wert `"token_type": "bearer"` und den `"access_token"` Wert.
 
