@@ -1,10 +1,8 @@
 ---
 title: In-App-Nachrichten mit dem Location Service
-seo-title: In-App-Nachrichten mit dem Location Service
 description: Dieser Abschnitt enthält Informationen zur Verwendung von Push-Nachrichten in Campaign Standard mit In-App-Nachrichten in Campaign Standard.
-seo-description: 'Dieser Abschnitt enthält Informationen zur Verwendung von "Push-Nachrichten in Campaign Standard"mit In-App-Nachrichten in Campaign Standard. '
 translation-type: tm+mt
-source-git-commit: a2e30282789d9834e5c65502e28ddb25f3c55dfa
+source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ---
 
@@ -13,7 +11,7 @@ source-git-commit: a2e30282789d9834e5c65502e28ddb25f3c55dfa
 
 Anhand dieser Informationen erhalten Sie einen Einblick, wie Sie mit den Informationen des Adobe Experience Platform Location Service In-App-Nachrichten oder lokale Benachrichtigungen senden können.
 
-## Voraussetzungen
+## Voraussetzungen 
 
 Führen Sie zuerst die folgenden Aufgaben aus:
 
@@ -39,7 +37,7 @@ Führen Sie zuerst die folgenden Aufgaben aus:
 
    !["In-App-Nachrichten-Orte-Metadaten"](/help/assets/last-entered-vacation.png)
 
-1. Klicken Sie auf das Symbol, **[!UICONTROL Next]** um die In-App-Nachricht für die Bereitstellung zu erstellen.
+1. Click the **[!UICONTROL Next]** to finish creating the In-app message for delivery.
 
    !["Ereignis erstellen"](/help/assets/prepare-ACS.png)
 
