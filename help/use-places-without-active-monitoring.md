@@ -1,10 +1,8 @@
 ---
 title: Standortdienst ohne aktive Regionenüberwachung verwenden
-seo-title: Standortdienst ohne aktive Regionenüberwachung verwenden
 description: Dieser Abschnitt enthält Informationen zur Verwendung von Location ServicePlaces ohne aktive Regionsüberwachung.
-seo-description: Dieser Abschnitt enthält Informationen zur Verwendung des Location Service ohne aktive Regionsüberwachung.
 translation-type: tm+mt
-source-git-commit: 419df41a0abeac1ac2a77f32bfa818b4edf3baeb
+source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ---
 
@@ -16,7 +14,6 @@ Anwendungsfälle für Ihre Anwendung erfordern möglicherweise keine aktive Regi
 In diesem Abschnitt wird erläutert, wie eine POI-Mitgliedschaftsprüfung nur zum Zeitpunkt der Erfassung des Benutzerorts (Breiten- und Längengrad) durchgeführt werden kann.
 
 ## Voraussetzung
-
 
 Der Entwickler erfasst den Speicherort des Geräts mithilfe der APIs, die vom Betriebssystem der Zielplattform bereitgestellt werden.
 
@@ -236,8 +233,7 @@ Die folgenden Codebeispiele zeigen Ihnen, wie Sie die aktuelle Position des Ger�
 
 >[!IMPORTANT]
 >
->
-Diese Snippets sind **nur** Beispiele. Entwickler müssen festlegen, wie sie die Funktionalität implementieren möchten. Bei der Entscheidung sollten die vom Zielbetriebssystem empfohlenen Best Practices berücksichtigt werden.
+>Diese Snippets sind **nur** Beispiele. Entwickler müssen festlegen, wie sie die Funktionalität implementieren möchten. Bei der Entscheidung sollten die vom Zielbetriebssystem empfohlenen Best Practices berücksichtigt werden.
 
 ### Android
 
