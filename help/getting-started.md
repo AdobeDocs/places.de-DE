@@ -4,7 +4,7 @@ seo-title: Erste Schritte
 description: Erste Schritte mit dem Location Service.
 seo-description: Erste Schritte mit dem Location Service.
 translation-type: tm+mt
-source-git-commit: 66472aa1800bcf36fb1d7f7129da70a573f355ab
+source-git-commit: 1c5a63b6f7eb56be2240756c31d6ca03a0bfb0da
 
 ---
 
@@ -25,7 +25,7 @@ Der Produktkontext des Location Service ist für alle Experience Cloud-Organisat
 
 * Stellen Sie sicher, dass Sie als Benutzer unter den Produktkontexten "Location Service"und "Experience Platform Launch"in der Admin-Konsole aufgeführt sind.
 
-   Weitere Informationen finden Sie unter *Hinzufügen eines Benutzers zum Experience Platform Launch and Location Service* in den [häufig gestellten Fragen](/help/places-faqs.md).
+   Weitere Informationen finden Sie unter *Hinzufügen eines Benutzers zum Experience Platform Launch- und Location-Dienst* unter Zugriff [auf den Location Service](/help/places-gain-access.md)erhalten.
 
 
 ### 2. POIs erstellen
