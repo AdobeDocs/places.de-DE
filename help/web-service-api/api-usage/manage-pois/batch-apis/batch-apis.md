@@ -1,10 +1,8 @@
 ---
 title: Stapel-APIs
-seo-title: Stapel-APIs
 description: Mit Batch-APIs können Sie mehrere POIs erstellen, aktualisieren und löschen.
-seo-description: Mit Batch-APIs können Sie mehrere POIs erstellen, aktualisieren und löschen.
 translation-type: tm+mt
-source-git-commit: 6ff72eb72ce3ae1abf805b7b542721a7e4915824
+source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ---
 
