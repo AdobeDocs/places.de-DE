@@ -1,10 +1,8 @@
 ---
 title: Verwenden des Location Service mit anderen Adobe-Lösungen
-seo-title: Verwenden des Location Service mit anderen Adobe-Lösungen
 description: Dieser Abschnitt zeigt Ihnen, wie Sie den Location Service mit anderen Adobe-Lösungen verwenden.
-seo-description: Dieser Abschnitt zeigt Ihnen, wie Sie den Location Service mit anderen Adobe-Lösungen verwenden.
 translation-type: tm+mt
-source-git-commit: 299afc48c5962c3180578d5352b97096ad0395dc
+source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ---
 
