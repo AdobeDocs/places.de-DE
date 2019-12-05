@@ -1,10 +1,8 @@
 ---
 title: Verwenden von Orten mit Mobile Services für Messaging
-seo-title: Verwenden von Orten mit Mobile Services für Messaging
 description: In diesem Abschnitt wird die Verwendung von Orten mit Mobile Services für Nachrichten erläutert.
-seo-description: In diesem Abschnitt wird die Verwendung von Orten mit Mobile Services für Nachrichten erläutert.
 translation-type: tm+mt
-source-git-commit: accfa6ba009ad3419481d9bd3b498143228099fc
+source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ---
 
@@ -28,7 +26,7 @@ Bevor Sie die Mobile Services-Erweiterung für Nachrichten verwenden können, ü
 
 * Datenelemente zum Starten werden aus den Speicherorte SDK-Erweiterungsdaten erstellt, die in den Regeln verwendet werden. Siehe Dokumentation (https://aep-sdks.gitbook.io/docs/using-mobile-extensions/mobile-core/rules-engine#data-elements)
 
-## Berichterstellung
+## Berichterstellung 
 
 Bevor Sie die Berichterstellung verwenden können, müssen Sie die folgenden Voraussetzungen erfüllen:
 
