@@ -1,21 +1,19 @@
 ---
-title: Platzierungserweiterung
-seo-title: Platzierungserweiterung
+title: Places-Erweiterung
 description: Mit der Erweiterung "Orte"können Sie je nach Standort Ihrer Benutzer handeln.
-seo-description: Mit der Erweiterung "Orte"können Sie je nach Standort Ihrer Benutzer handeln.
 translation-type: tm+mt
-source-git-commit: a2e30282789d9834e5c65502e28ddb25f3c55dfa
+source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ---
 
 
-# Platzierungserweiterung {#places-extension}
+# Places-Erweiterung {#places-extension}
 
 Mit der Erweiterung "Orte"können Sie je nach Standort Ihrer Benutzer handeln. Diese Erweiterung ist die Schnittstelle zu den APIs für die Abfrage von Orten. Durch Listening auf Ereignisse, die GPS-Koordinaten und Ereignisse für Geofenregionen enthalten, löst diese Erweiterung neue Ereignisse aus, die von der Rules Engine verarbeitet werden. Die Plates-Erweiterung ruft außerdem eine Liste des nächstgelegenen POI für die App-Daten ab, die von den APIs abgerufen werden. Die von den APIs zurückgegebenen Regionen werden im Cache und in der Persistenz gespeichert, was eine begrenzte Offlineverarbeitung ermöglicht.
 
 ## Installieren der Platzierungserweiterung in Adobe Experience Platform Launch
 
-1. Klicken Sie in Experience Platform Launch auf die **[!UICONTROL Extensions]** Registerkarte.
+1. In Experience Platform Launch, click the **[!UICONTROL Extensions]** tab.
 1. Suchen Sie auf der **[!UICONTROL Catalog]** Registerkarte die **[!UICONTROL Places]** Erweiterung und klicken Sie auf **[!UICONTROL Install]**.
 1. Wählen Sie die Orte-Bibliotheken aus, die Sie in dieser Eigenschaft verwenden möchten. Dies sind die Bibliotheken, auf die in Ihrer App zugegriffen werden kann.
 1. Klicken Sie auf **[!UICONTROL Save]**.
