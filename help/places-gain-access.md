@@ -1,10 +1,8 @@
 ---
 title: Zugriff auf den Adobe Experience Platform Location Service
-seo-title: Zugriff auf den Adobe Experience Platform Location Service
 description: Dieser Abschnitt enthält Informationen dazu, wie ein Benutzer zum Location Service und zum Experience Platform Launch hinzugefügt wird, damit der Benutzer auf den Location Service zugreifen kann.
-seo-description: Dieser Abschnitt enthält Informationen dazu, wie ein Benutzer zum Location Service und zum Experience Platform Launch hinzugefügt wird, damit der Benutzer auf den Location Service zugreifen kann.
 translation-type: tm+mt
-source-git-commit: 1b4482c8e4cf825c0182421fe00f8b86b411c11b
+source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ---
 
