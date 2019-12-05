@@ -1,10 +1,8 @@
 ---
 title: In-App-Benachrichtigungen
-seo-title: In-App-Benachrichtigungen
 description: Dieser Abschnitt zeigt Ihnen, wie Sie Orte mit In-App-Nachrichten verwenden.
-seo-description: Dieser Abschnitt zeigt Ihnen, wie Sie Orte mit In-App-Nachrichten verwenden.
 translation-type: tm+mt
-source-git-commit: a76e91775efd92ce56f2dc5cbdcc65786855b5c3
+source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ---
 
@@ -31,7 +29,7 @@ Im Folgenden finden Sie eine Liste der verfügbaren In-App-Nachrichtentypen:
 
 Diese Typen sind In-App-Nachrichten, da sie vom SDK ausgelöst werden. Lokale Benachrichtigungen sehen wie Push-Benachrichtigungen aus, da sie angezeigt werden, wenn sich die App im Hintergrund befindet. Diese Benachrichtigungen stellen auch Benachrichtigungen in Echtzeit bereit, wenn Benutzer Ihre POIs eingeben oder verlassen, während sich die App im Hintergrund befindet. Weitere Informationen finden Sie unter [Platzierungsmonitor-Erweiterung](/help/places-ext-aep-sdks/places-monitor-extension/places-monitor-extension.md).
 
-### Voraussetzungen
+### Voraussetzungen 
 
 Bevor Sie beginnen, erfahren Sie, wie Sie eine In-App-Nachricht in Mobile Services senden und erstellen und wie Auslöser funktionieren. Weitere Informationen finden Sie unter [In-App-Nachricht erstellen.](https://docs.adobe.com/content/help/en/mobile-services/using/messaging-ug/inapp-messages/t-in-app-message.html)
 
@@ -62,7 +60,7 @@ Sie können beispielsweise `poiname` als Schlüssel und `{%%Last Entered POI Nam
 
 >[!TIP]
 >
->Analytics-Verarbeitungsregeln können so eingestellt werden, dass diese Kontextdaten aufgenommen werden. For more information, see [Processing Rules](https://docs.adobe.com/content/help/en/analytics/implementation/analytics-basics/ref-processing-rules.html). In dem Beispiel unter *Aktion* erstellen sendet die Aktion den `poiname` als Kontext, um das POI-Eingabeereignis zu beschreiben, das an Analytics gesendet wird.
+>Analytics-Verarbeitungsregeln können so eingestellt werden, dass diese Kontextdaten aufgenommen werden. Weitere Informationen finden Sie unter [Regeln](https://docs.adobe.com/content/help/en/analytics/implementation/analytics-basics/ref-processing-rules.html). In dem Beispiel unter *Aktion* erstellen sendet die Aktion den `poiname` als Kontext, um das POI-Eingabeereignis zu beschreiben, das an Analytics gesendet wird.
 
 ![Erstellen einer Aktion](/help/assets/configure-action.png)
 
