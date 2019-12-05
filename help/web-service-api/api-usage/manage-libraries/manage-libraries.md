@@ -1,10 +1,8 @@
 ---
 title: Bibliotheken verwalten
-seo-title: Bibliotheken verwalten
 description: Verwalten der REST-API-Bibliotheken für Orte.
-seo-description: Verwalten der REST-API-Bibliotheken für Orte.
 translation-type: tm+mt
-source-git-commit: 6ff72eb72ce3ae1abf805b7b542721a7e4915824
+source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ---
 
