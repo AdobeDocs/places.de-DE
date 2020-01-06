@@ -17,7 +17,7 @@ Datenelemente sind die Bausteine für das Datenwörterbuch der Anwendung und wer
 
 Ein Datenelement ist eine Variable, bei der der Wert einer Besucher-ID, einem Betreibernamen, einer Anzeigen-ID, einer Push-ID usw. zugeordnet werden kann. In Experience Platform Launch können Sie auf diesen Wert anhand seines Variablennamen verweisen. Diese Sammlung von Datenelementen wird zum Wörterbuch definierter Daten, die Sie zum Erstellen Ihrer Regeln (Ereignisse, Bedingungen und Aktionen) verwenden können. Dieses Wörterbuch wird über Experience Platform Launch freigegeben, wo es mit jeder Erweiterung in Ihrer Eigenschaft verwendet werden kann.
 
-Mit der Erweiterung "Orte"können Sie auf Werte aus den folgenden Zielen verweisen:
+Mit der Erweiterung &quot;Orte&quot;können Sie auf Werte aus den folgenden Zielen verweisen:
 
 * Aktueller POI, der den POI bezeichnet, in dem sich Ihr Kunde derzeit befindet.
 
@@ -40,13 +40,13 @@ Jeder POI enthält die folgenden Datenreferenzen:
 
 ### Datenelement erstellen
 
-1. Klicken Sie auf der Seite "Eigenschaft"für Ihre App auf die **[!UICONTROL Data Elements]** Registerkarte.
+1. Klicken Sie auf der Seite &quot;Eigenschaft&quot;für Ihre App auf die **[!UICONTROL Data Elements]**Registerkarte.
 
 1. Klicken Sie auf **[!UICONTROL Create New Data Element]**.
 
 1. Suchen Sie in der Liste der installierten Erweiterungen nach **[!UICONTROL Places]**.
 
-1. Wählen Sie in der **[!UICONTROL Data Element Type]** Dropdownliste einen Datenverweis für dieses Datenelement aus.
+1. Wählen Sie in der **[!UICONTROL Data Element Type]**Dropdownliste einen Datenverweis für dieses Datenelement aus.
 
 1. Wählen Sie ein POI-Ziel.
 
@@ -63,8 +63,8 @@ Nachdem ein Datenelement erstellt wurde, können Sie das Datenelement aus einer 
 
 ![Datenelement verwenden](/help/assets/use-de-v2.png)
 
-Wenn die Regelkomponente keine Datenelementauswahl enthält, können Sie das Datenelement verwenden, indem Sie den Datenelementnamen mit den **[!UICONTROL %%]** Token einschließen.
-Wenn der Name des Datenelements beispielsweise **[!UICONTROL Last POI City]** lautet, können Sie **[!UICONTROL LAST POI City]** der Texteingabe hinzufügen.
+Wenn die Regelkomponente keine Datenelementauswahl enthält, können Sie das Datenelement verwenden, indem Sie den Datenelementnamen mit den **[!UICONTROL %%]**Token einschließen.
+Wenn der Name des Datenelements beispielsweise**[!UICONTROL Last POI City]** lautet, können Sie **[!UICONTROL LAST POI City]**der Texteingabe hinzufügen.
 
 
 ## Datenelemente veröffentlichen
