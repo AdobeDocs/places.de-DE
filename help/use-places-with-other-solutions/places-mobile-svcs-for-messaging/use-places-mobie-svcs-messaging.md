@@ -11,7 +11,7 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 Bevor Sie die Mobile Services-Erweiterung für Nachrichten verwenden können, überprüfen Sie die folgenden Voraussetzungen:
 
-* Im Location Service wurden Zielpunkte erstellt. Siehe Dokumentation bei Bedarf. (Link zum Erstellen eines POI)Hinweis: Der Location Service umfasst eine neue und verbesserte Point-of-Interest-Datenbank für Ihr Unternehmen, die außerhalb der alten AMS-Schnittstelle existiert. Alle POIs, die in der AMS-Navigation "Orte verwalten"gefunden werden, funktionieren nur für Version 4 des SDK.
+* Im Location Service wurden Zielpunkte erstellt. Siehe Dokumentation bei Bedarf. (Link zum Erstellen eines POI)Hinweis: Der Location Service umfasst eine neue und verbesserte Point-of-Interest-Datenbank für Ihr Unternehmen, die außerhalb der alten AMS-Schnittstelle existiert. Alle POIs, die in der AMS-Navigation &quot;Orte verwalten&quot;gefunden werden, funktionieren nur für Version 4 des SDK.
    * Die veraltete Places POI-Verwaltungsoberfläche in AMS für ältere SDK-Versionen:
 
       ![Alte Benutzeroberfläche](/help/assets/legacy-location-v4-ui.png)
