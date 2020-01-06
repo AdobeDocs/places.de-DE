@@ -58,7 +58,7 @@ source-git-commit: c88c8f8e7e3bb9ea3af85948e682e75e894ad782
       + [Objekte für benutzerdefinierte Orte](places-ext-aep-sdks/places-extension/cust-places-objects.md)
    + Platzierungsmonitor-Erweiterung {#places-monitor-extension}
       + [Platzierungsmonitor-Erweiterung](places-ext-aep-sdks/places-monitor-extension/places-monitor-extension.md)
-      + [Verwenden der Erweiterung "Orts Monitor"](places-ext-aep-sdks/places-monitor-extension/using-places-monitor-extension.md)
+      + [Verwenden der Erweiterung &quot;Orts Monitor&quot;](places-ext-aep-sdks/places-monitor-extension/using-places-monitor-extension.md)
       + [Platzierungs-Monitor-API-Referenz](places-ext-aep-sdks/places-monitor-extension/places-monitor-api-reference.md)
 + [Verwenden Sie den Location Service mit Ihrer eigenen Überwachungslösung](using-your-own-monitor.md)
 + [Standortdienst ohne aktive Regionenüberwachung verwenden](use-places-without-active-monitoring.md)
