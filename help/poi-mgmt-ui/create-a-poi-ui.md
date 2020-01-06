@@ -27,7 +27,7 @@ Ein POI (Point of Interest) ist ein Ort oder ein Punkt auf einer Karte, der für
    1. Wählen Sie eine Farbe für das Symbol aus.
    1. Geben Sie eine Kategorie für Ihren POI an.
 
-1. Erweitern Sie den **[!UICONTROL Location]** Abschnitt.
+1. Expand the **[!UICONTROL Location]**section.
 
    1. Geben Sie eine Adresse ein.
    1. Geben Sie die Stadt ein.
@@ -37,7 +37,7 @@ Ein POI (Point of Interest) ist ein Ort oder ein Punkt auf einer Karte, der für
    1. Klicken Sie auf **[!UICONTROL Drop Pin on Map]**.
    Wenn Sie den genauen Längen- und Breitengrad nicht kennen, ist es nützlich, einen Pin abzulegen.
 
-1. Erweitern Sie den **[!UICONTROL Metadata]** Abschnitt und klicken Sie auf **[!UICONTROL Add Metadata]**.
+1. Erweitern Sie den **[!UICONTROL Metadata]**Abschnitt und klicken Sie auf**[!UICONTROL Add Metadata]**.
 
    Metadaten unterstützen Sie bei der weiteren Definition eines Standorts und können in anderen Adobe-Lösungsarbeitsabläufen verwendet werden, um Ihre Zielgruppe weiter zu verfeinern.
 
