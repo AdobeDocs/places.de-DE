@@ -15,7 +15,7 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
    * **iOS**
 
-      * Es wurde eine neue API hinzugefügt, `setAuthorizationStatus`um den Status der Geräteautorisierung für Standortdienste festzulegen. Der Wert wird gespeichert und im Status "Orte freigegeben"verwendet.
+      * Es wurde eine neue API hinzugefügt, `setAuthorizationStatus`um den Status der Geräteautorisierung für Standortdienste festzulegen. Der Wert wird gespeichert und im Status &quot;Orte freigegeben&quot;verwendet.
 
 ## 22. November 2019
 
@@ -46,7 +46,7 @@ Die folgenden Aktualisierungen wurden in dieser Version vorgenommen:
 
 ### UI-Updates
 
-Im Folgenden finden Sie eine Liste der Aktualisierungen der Benutzeroberfläche "Orte":
+Im Folgenden finden Sie eine Liste der Aktualisierungen der Benutzeroberfläche &quot;Orte&quot;:
 
 #### Neue Funktionen
 
@@ -106,7 +106,7 @@ Die folgenden Aktualisierungen wurden in dieser Version vorgenommen:
 ### Android Places 1.3.0
 
 * Es wurde eine neue API hinzugefügt, mit der alle Ortsdaten aus dem Freigabestand, dem In-App-Speicher und der freigegebenen Voreinstellung gelöscht werden.
-* Es wurde ein Problem behoben, bei dem der Status "Freigegeben"beim Anwendungsstart nicht aktualisiert wurde.
+* Es wurde ein Problem behoben, bei dem der Status &quot;Freigegeben&quot;beim Anwendungsstart nicht aktualisiert wurde.
 * Es wurde ein Fehler behoben, durch den `getNearbyPointsOfInterest` Rückruf Fehlercode `SERVER_RESPONSE_ERROR instead of CONNECTIVITY_ERROR` im Internet zurückgab.
 * `getNearbyPointsOfInterest` Die API (ohne errorCallback) hat den `successCallback` Aufruf mit leerer POI-Liste, falls Fehler beim Abrufen der nahe gelegenen Zielpunkte auftreten.
 
@@ -133,7 +133,7 @@ Die folgenden Aktualisierungen wurden in dieser Version vorgenommen:
 **iOS Places 1.1.0**
 
 * Es wurde eine neue API hinzugefügt, um einen Fehlercode zurückzugeben, wenn das Abrufen nahegelegener Orte fehlschlägt.
-* Wenn sich der Datenschutzstatus in "Opt-out"ändert, werden alle mit Orten zusammenhängenden Daten jetzt vom Gerät gelöscht.
+* Wenn sich der Datenschutzstatus in &quot;Opt-out&quot;ändert, werden alle mit Orten zusammenhängenden Daten jetzt vom Gerät gelöscht.
 * Es wurde ein Problem behoben, das nach einem ersten Start manchmal dazu führte, dass Places-Ereignisse aufgrund falscher Netzwerkbedingungen verloren gingen.
 * Es wurde ein Problem behoben, bei dem bei der Verarbeitung von POI-Einstiegsereignissen in kurzer Folge der Token-Austausch über die Regelmaschine manchmal auf den falschen POI verweist.
 
@@ -145,7 +145,7 @@ Die folgenden Aktualisierungen wurden in dieser Version vorgenommen:
 
 ## 28. Mai 2019
 
-Die folgenden Probleme in der Benutzeroberfläche "Orte"wurden behoben:
+Die folgenden Probleme in der Benutzeroberfläche &quot;Orte&quot;wurden behoben:
 
 * Der Lösungsschalter in Orten wurde aktualisiert, um ihn an den Rest der Experience Cloud auszurichten.
 * Es wurde ein Problem behoben, bei dem der Rang gespeichert wurde, wenn keine Rangänderungen vorgenommen wurden.
@@ -176,7 +176,7 @@ Weitere Informationen zum Orts-Monitor finden Sie hier.
 * Es wurde eine neue API für getNearByPlaces eingeführt, die einen errorCallback enthält und mit einem errorCode aufgerufen wird, der den Grund für den Fehler angibt.
 * Die Platzierungserweiterung stellt die Ereignisse jetzt in eine Warteschlange, bis eine Konfiguration abgerufen wird.
 * Unterstützung für umweltbewusste Konfigurationen hinzugefügt.
-* Fehlerbehebung: Korrektur der Schlüssel für die Ereignisse "Ein-/Ausstieg"der Region
+* Fehlerbehebung: Korrektur der Schlüssel für die Ereignisse &quot;Ein-/Ausstieg&quot;der Region
 * Die Speicherung des zuletzt bekannten Speicherorts respektiert jetzt den Datenschutzstatus des Benutzers ordnungsgemäß
 
 
