@@ -309,7 +309,7 @@ Hier finden Sie ein Code-Beispiel für diese Methode:
 
 ### Clear (Android)
 
-Löscht die clientseitigen Daten für "Orte im Freigabezustand", "lokaler Speicher"und "Arbeitsspeicher".
+Löscht die clientseitigen Daten für &quot;Orte im Freigabezustand&quot;, &quot;lokaler Speicher&quot;und &quot;Arbeitsspeicher&quot;.
 
 **Syntax**
 
@@ -329,7 +329,7 @@ Places.clear();
 
 ### clear (iOS)
 
-Löscht die clientseitigen Daten für "Orte im Freigabezustand", "lokaler Speicher"und "Arbeitsspeicher".
+Löscht die clientseitigen Daten für &quot;Orte im Freigabezustand&quot;, &quot;lokaler Speicher&quot;und &quot;Arbeitsspeicher&quot;.
 
 **Syntax**
 
@@ -359,7 +359,7 @@ In Vorbereitung
 
 Legt den Autorisierungsstatus in der Ortserweiterung fest.
 
-Der angegebene Status wird im Status "Orte freigegeben"gespeichert und dient nur als Referenz.
+Der angegebene Status wird im Status &quot;Orte freigegeben&quot;gespeichert und dient nur als Referenz.
 Der Aufruf dieser Methode hat keine Auswirkungen auf den tatsächlichen Status der Standortautorisierung für dieses Gerät.
 
 Wenn sich der Status der Geräteautorisierung ändert, wird die `locationManager:didChangeAuthorizationStatus:` Methode des Geräts aufgerufen `CLLocationManagerDelegate` . Von dieser Methode aus sollten Sie den neuen `CLAuthorizationStatus` Wert an die ACPPlaces- `setAuthorizationStatus:` API übergeben.
