@@ -9,12 +9,12 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 # Places-Erweiterung {#places-extension}
 
-Mit der Erweiterung "Orte"können Sie je nach Standort Ihrer Benutzer handeln. Diese Erweiterung ist die Schnittstelle zu den APIs für die Abfrage von Orten. Durch Listening auf Ereignisse, die GPS-Koordinaten und Ereignisse für Geofenregionen enthalten, löst diese Erweiterung neue Ereignisse aus, die von der Rules Engine verarbeitet werden. Die Plates-Erweiterung ruft außerdem eine Liste des nächstgelegenen POI für die App-Daten ab, die von den APIs abgerufen werden. Die von den APIs zurückgegebenen Regionen werden im Cache und in der Persistenz gespeichert, was eine begrenzte Offlineverarbeitung ermöglicht.
+Mit der Erweiterung &quot;Orte&quot;können Sie je nach Standort Ihrer Benutzer handeln. Diese Erweiterung ist die Schnittstelle zu den APIs für die Abfrage von Orten. Durch Listening auf Ereignisse, die GPS-Koordinaten und Ereignisse für Geofenregionen enthalten, löst diese Erweiterung neue Ereignisse aus, die von der Rules Engine verarbeitet werden. Die Plates-Erweiterung ruft außerdem eine Liste des nächstgelegenen POI für die App-Daten ab, die von den APIs abgerufen werden. Die von den APIs zurückgegebenen Regionen werden im Cache und in der Persistenz gespeichert, was eine begrenzte Offlineverarbeitung ermöglicht.
 
 ## Installieren der Platzierungserweiterung in Adobe Experience Platform Launch
 
-1. In Experience Platform Launch, click the **[!UICONTROL Extensions]** tab.
-1. Suchen Sie auf der **[!UICONTROL Catalog]** Registerkarte die **[!UICONTROL Places]** Erweiterung und klicken Sie auf **[!UICONTROL Install]**.
+1. In Experience Platform Launch, click the **[!UICONTROL Extensions]**tab.
+1. Suchen Sie auf der **[!UICONTROL Catalog]**Registerkarte die**[!UICONTROL Places]** Erweiterung und klicken Sie auf **[!UICONTROL Install]**.
 1. Wählen Sie die Orte-Bibliotheken aus, die Sie in dieser Eigenschaft verwenden möchten. Dies sind die Bibliotheken, auf die in Ihrer App zugegriffen werden kann.
 1. Klicken Sie auf **[!UICONTROL Save]**.
 
@@ -30,7 +30,7 @@ Mit der Erweiterung "Orte"können Sie je nach Standort Ihrer Benutzer handeln. D
 
 ## Hinzufügen der Platzierungserweiterung zu Ihrer App {#add-places-to-app}
 
-Sie können Ihre Android- und iOS-Apps mit der Erweiterung "Orte"versehen.
+Sie können Ihre Android- und iOS-Apps mit der Erweiterung &quot;Orte&quot;versehen.
 
 ### Android
 
@@ -43,7 +43,7 @@ So fügen Sie Ihrer App die Platzierungserweiterung mit Java hinzu:
    implementation 'com.adobe.marketing.mobile:sdk-core:1.+'
    ```
 
-1. Importieren Sie die Erweiterung "Orte"in die Hauptaktivität Ihrer Anwendung.
+1. Importieren Sie die Erweiterung &quot;Orte&quot;in die Hauptaktivität Ihrer Anwendung.
 
    ```java
    import com.adobe.marketing.mobile.Places;
@@ -54,7 +54,7 @@ So fügen Sie Ihrer App die Platzierungserweiterung mit Java hinzu:
 
 So fügen Sie Ihrer App die Platzierungserweiterung mit Objective-C oder Swift hinzu:
 
-1. Fügen Sie Ihrem Projekt die Bibliotheken "Orte"und " [Mobile Core](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/mobile-core) "hinzu. Sie müssen die folgenden Pods hinzufügen `Podfile`:
+1. Fügen Sie Ihrem Projekt die Bibliotheken &quot;Orte&quot;und &quot; [Mobile Core](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/mobile-core) &quot;hinzu. Sie müssen die folgenden Pods hinzufügen `Podfile`:
 
    ```objective-c
    pod 'ACPPlaces', '~> 1.0'
