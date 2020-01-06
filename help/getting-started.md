@@ -21,7 +21,7 @@ Führen Sie die folgenden Aufgaben aus, um den Location Service zu verwenden:
 
 Der Produktkontext des Location Service ist für alle Experience Cloud-Organisationen verfügbar.
 
-* Stellen Sie sicher, dass Sie als Benutzer unter den Produktkontexten "Location Service"und "Experience Platform Launch"in der Admin-Konsole aufgeführt sind.
+* Stellen Sie sicher, dass Sie als Benutzer unter den Produktkontexten &quot;Location Service&quot;und &quot;Experience Platform Launch&quot;in der Admin-Konsole aufgeführt sind.
 
    Weitere Informationen finden Sie unter *Hinzufügen eines Benutzers zum Experience Platform Launch and Location Service* in den [häufig gestellten Fragen](/help/places-gain-access.md).
 
@@ -39,7 +39,7 @@ POI (Points of Interest, POI) sind Geo-Zäune, die Sie für Ihre Organisationen 
    Weitere Informationen finden Sie unter [Web Service API](/help/web-service-api/places-web-services.md).
 
 
-### 3. Die Erweiterungen "Orte"und "Orts Monitor"konfigurieren
+### 3. Die Erweiterungen &quot;Orte&quot;und &quot;Orts Monitor&quot;konfigurieren
 
 Weitere Informationen zum Konfigurieren der Plates-Erweiterung und der Monitor-Erweiterung finden Sie in den folgenden Informationen:
 
