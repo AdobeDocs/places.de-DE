@@ -41,7 +41,7 @@ Im Folgenden finden Sie die Details zu den Kopfzeilen und Parametern, die in der
 | `name` | Name der Einrichtung | string | 512 Zeichen | beide, optional\* | `"name": "My Favorite Place"` |
 | `description` | Beschreibung des POI | string | 512 Zeichen | beide, optional\* | `"description": "This is a very good place."` |
 | `location` | Array von Typ und Koordinaten des POI | array (gemischt) | Keine | both | `"location": {"type": "Point", "coordinates": [-122.201007, 37.604713]` |
-| `type` | Art der POI | string | Nur "Point"wird derzeit unterstützt | beide in Anforderung erforderlich | `"type": "Point"` |
+| `type` | Art der POI | string | Nur &quot;Point&quot;wird derzeit unterstützt | beide in Anforderung erforderlich | `"type": "Point"` |
 | `coordinates` | Längen- und Breitengrad von POI | array (float) | Längengrad: -180 bis 180, Breitengrad -85 bis 85 | beide in Anforderung erforderlich | `"coordinates": [-122.201007, 37.604713]` |
 | `radius` | Größe der kreisförmigen Gewichte um POI | float | 10 - 2000 Meter | beide in Anforderung erforderlich | `"radius": 100` |
 | `country` | Land für den POI | string | 32 Zeichen | beide, optional* | `"country": "United States"` |
