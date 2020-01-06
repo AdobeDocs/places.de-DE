@@ -9,7 +9,7 @@ source-git-commit: c20e720d23121970bb2fa1c63a2fd1e81c84b977
 
 # Übersicht über den Experience Platform Location Service {#home}
 
-!["Adobe Experience Platform Location Service"](/help/assets/LocationHeader.png)
+![&quot;Adobe Experience Platform Location Service&quot;](/help/assets/LocationHeader.png)
 
 Der Standort ist ein wichtiger Kontext für das Verständnis und die Interaktion mit mobilen Benutzern. In diesem Kontext können Entwickler mobiler Apps den App-Entwurf verbessern und ihn zu einem personalisierteren und ansprechenderen Erlebnis machen.
 
@@ -27,7 +27,7 @@ Auf diese Weise können Sie in Echtzeit Aktionen aus Standortsignalen ausführen
 
 Die folgenden Möglichkeiten stehen Ihnen zur Verwendung von Orten zur Verfügung:
 
-* Senden Sie eine Echtzeit-Benachrichtigung, wenn jemand einen POI eingibt, *"Hey...Willkommen im Stadion."*
+* Senden Sie eine Echtzeit-Benachrichtigung, wenn jemand einen POI eingibt, *&quot;Hey...Willkommen im Stadion.&quot;*
 * Analysieren Sie den Fußverkehr Ihrer eigenen Läden im Vergleich zu Ihren Konkurrenzgeschäften.
 * Segmentieren Sie eine Zielgruppe basierend auf dem Offline-Verhalten, indem Sie Zielgruppenprofile mit dem Standortkontext verwenden.
 * Targeting eines Benutzers mit einem Erlebnis im Geschäft, wenn relevant.
