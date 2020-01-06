@@ -27,10 +27,10 @@ Bevor Sie beginnen, stellen Sie sicher, dass Sie die folgenden Aufgaben abgeschl
 
 ## Benachrichtigung senden
 
-Auf der **[!UICONTROL Audience]** Registerkarte des Arbeitsablaufs *Push-Benachrichtigung* erstellen können Sie die Zielgruppe für diese Nachricht auf eine der folgenden Arten erstellen:
+Auf der **[!UICONTROL Audience]**Registerkarte des Arbeitsablaufs *Push-Benachrichtigung*erstellen können Sie die Zielgruppe für diese Nachricht auf eine der folgenden Arten erstellen:
 
-* Wählen Sie in der **[!UICONTROL Analytics Segments]** Dropdownliste ein zuvor erstelltes Adobe Analytics-Segment aus.
+* Wählen Sie in der **[!UICONTROL Analytics Segments]**Dropdownliste ein zuvor erstelltes Adobe Analytics-Segment aus.
 
-* Erstellen Sie im **[!UICONTROL Custom Segment]** Abschnitt eine Zielgruppe mithilfe der verfügbaren benutzerdefinierten Segmentparameter.
+* Erstellen Sie im **[!UICONTROL Custom Segment]**Abschnitt eine Zielgruppe mithilfe der verfügbaren benutzerdefinierten Segmentparameter.
 
 ![Einrichten einer Push-Nachricht](/help/assets/push-set-up.png)
