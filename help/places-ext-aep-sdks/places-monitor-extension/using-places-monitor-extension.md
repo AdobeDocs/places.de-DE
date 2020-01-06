@@ -7,14 +7,14 @@ source-git-commit: ac1d410a676557064d5390f8392f402541754478
 ---
 
 
-# Verwenden der Erweiterung "Orts Monitor" {#using-places-monitor-extension}
+# Verwenden der Erweiterung &quot;Orts Monitor&quot; {#using-places-monitor-extension}
 
-Führen Sie die folgenden Aufgaben aus, um die Erweiterung "Orts-Monitor"zu verwenden:
+Führen Sie die folgenden Aufgaben aus, um die Erweiterung &quot;Orts-Monitor&quot;zu verwenden:
 
-## Installieren der Erweiterung "Platzierungsmonitor"im Experience Platform Launch
+## Installieren der Erweiterung &quot;Platzierungsmonitor&quot;im Experience Platform Launch
 
-1. In Experience Platform Launch, click the **[!UICONTROL Extensions]** tab.
-1. Suchen Sie auf der **[!UICONTROL Catalog]** Registerkarte die **[!UICONTROL Places Monitor]** Erweiterung und klicken Sie auf **Installieren**.
+1. In Experience Platform Launch, click the **[!UICONTROL Extensions]**tab.
+1. Suchen Sie auf der **[!UICONTROL Catalog]**Registerkarte die**[!UICONTROL Places Monitor]** Erweiterung und klicken Sie auf **Installieren**.
 1. Klicken Sie auf **[!UICONTROL Save]**.
 1. Folgen Sie dem Veröffentlichungsprozess, um die SDK-Konfiguration zu aktualisieren.
 
@@ -22,11 +22,11 @@ Führen Sie die folgenden Aufgaben aus, um die Erweiterung "Orts-Monitor"zu verw
 
 Es gibt keine Konfigurationsaufgaben für die Plates Monitor-Erweiterung.
 
-![Konfigurieren der ‌ "Orte-Monitor](/help/assets/configure_places_monitor.png)"
+![Konfigurieren der ‌ &quot;Orte-Monitor](/help/assets/configure_places_monitor.png)&quot;
 
-## Hinzufügen der Erweiterung "Orts-Monitor"zu Ihrer App {#add-monitor-extension-to-app}
+## Hinzufügen der Erweiterung &quot;Orts-Monitor&quot;zu Ihrer App {#add-monitor-extension-to-app}
 
-Sie müssen der Android- oder iOS-App die Erweiterung "Orts Monitor"hinzufügen.
+Sie müssen der Android- oder iOS-App die Erweiterung &quot;Orts Monitor&quot;hinzufügen.
 
 ### Android
 
@@ -34,9 +34,9 @@ Führen Sie in Android die folgenden Schritte aus:
 
 #### Java
 
-1. Fügen Sie die Erweiterungen "Orte-Monitor"und "Orte"mithilfe der Dockingdatei Ihrer App zum Projekt hinzu.
+1. Fügen Sie die Erweiterungen &quot;Orte-Monitor&quot;und &quot;Orte&quot;mithilfe der Dockingdatei Ihrer App zum Projekt hinzu.
 
-1. Schließen Sie auch die neuesten Google-Standorte in der Datei "gradle"ein.
+1. Schließen Sie auch die neuesten Google-Standorte in der Datei &quot;gradle&quot;ein.
 
    ```java
    implementation 'com.adobe.marketing.mobile:places:1.+'
@@ -45,7 +45,7 @@ Führen Sie in Android die folgenden Schritte aus:
    implementation 'com.google.android.gms:play-services-location:16.0.0'
    ```
 
-1. Importieren Sie die Erweiterung "Orts-Monitor"in die Hauptaktivität Ihrer Anwendung.
+1. Importieren Sie die Erweiterung &quot;Orts-Monitor&quot;in die Hauptaktivität Ihrer Anwendung.
 
    ```java
    import com.adobe.marketing.mobile.PlacesMonitor;
