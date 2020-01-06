@@ -51,10 +51,10 @@ Nachdem die Regel mit den richtigen Ereignis- und Bedingungsparametern eingerich
 
 So erstellen Sie eine Aktion:
 
-1. Wählen Sie die **-Erweiterung aus.[!UICONTROL Adobe Analytics]**
-1. Wählen Sie in der **[!UICONTROL Action type]** Dropdownliste **[!UICONTROL Track.]**
+1. Wählen Sie die **[!UICONTROL Adobe Analytics]**-Erweiterung aus.
+1. Wählen Sie in der **[!UICONTROL Action type]**Dropdownliste**[!UICONTROL Track.]**
 1. Geben Sie einen Namen für die Aktion ein.
-1. Wählen Sie im rechten Bereich **[!UICONTROL Context Data]** das Schlüssel-Wert-Paar aus, um die Kontextdaten festzulegen, die an Analytics gesendet werden.
+1. Wählen Sie im rechten Bereich **[!UICONTROL Context Data]**das Schlüssel-Wert-Paar aus, um die Kontextdaten festzulegen, die an Analytics gesendet werden.
 
 Sie können beispielsweise `poiname` als Schlüssel und `{%%Last Entered POI Name}` als Wert auswählen.
 
@@ -75,12 +75,12 @@ Als Teil Ihrer Auslöserparameter können Sie die Zielgruppe für die Nachricht 
 * Verwenden von standortspezifischen Aktionen wie einem Einstieg oder einem Ausstieg.
 * Verwenden von POI-Metadaten, die als Kontextdaten gesendet werden, um das Ziel Ihrer Zielgruppe einzugrenzen.
 
-   Diese Option kann mit einer standortspezifischen Aktion wie "Eintrag"verwendet werden oder als Kontext zu einem anderen Ereignis wie einem Start- oder Schaltflächenklick verwendet werden.
+   Diese Option kann mit einer standortspezifischen Aktion wie &quot;Eintrag&quot;verwendet werden oder als Kontext zu einem anderen Ereignis wie einem Start- oder Schaltflächenklick verwendet werden.
 
-   Im Folgenden finden Sie ein Beispiel, wie Sie eine In-App-Nachricht konfigurieren, um Benutzer aufzunehmen, die einen POI mit **[!UICONTROL Adobe]** dem Namen eingeben:
+   Im Folgenden finden Sie ein Beispiel, wie Sie eine In-App-Nachricht konfigurieren, um Benutzer aufzunehmen, die einen POI mit **[!UICONTROL Adobe]**dem Namen eingeben:
 
    ![Parameter auslösen](/help/assets/trigger-parameters.png)
 
-* Parameter in den Überschriften "Orte"auf der Seite " *Auslöser und Eigenschaften* "in Mobile Services funktionieren nicht mit Daten aus dem Location Service.
+* Parameter in den Überschriften &quot;Orte&quot;auf der Seite &quot; *Auslöser und Eigenschaften* &quot;in Mobile Services funktionieren nicht mit Daten aus dem Location Service.
 
    Diese Parameter gelten nur für die alte Places-Datenbank, die in Mobile Services erstellt wurde.
