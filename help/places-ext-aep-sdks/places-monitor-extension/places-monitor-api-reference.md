@@ -77,7 +77,7 @@ This method should be called in the `didFinishLaunchingWithOptions` delegate met
 
 ## Erweiterungsversion
 
-Gibt die aktuelle Version der Erweiterung "Orts Monitor"zurück
+Gibt die aktuelle Version der Erweiterung &quot;Orts Monitor&quot;zurück
 
 ### ExtensionVersion (Android)
 
@@ -279,7 +279,7 @@ Die Standortberechtigung kann auf einen der folgenden Werte eingestellt werden:
 
 >[!IMPORTANT]
 >
->Wenn dem App-Benutzer die `WHILE_USING_APP` Berechtigung erteilt wurde, werden Geofencing nicht beim Betriebssystem registriert. Die Erweiterung "Orte überwachen"löst daher keine Ein-/Ausstiegsereignisse in Regionen aus, die im Hintergrund stattfinden.
+>Wenn dem App-Benutzer die `WHILE_USING_APP` Berechtigung erteilt wurde, werden Geofencing nicht beim Betriebssystem registriert. Die Erweiterung &quot;Orte überwachen&quot;löst daher keine Ein-/Ausstiegsereignisse in Regionen aus, die im Hintergrund stattfinden.
 
 Die folgende Syntax und der Beispielcode für diese API:
 
@@ -317,7 +317,7 @@ Die Autorisierungsebene kann auf einen der folgenden Werte eingestellt werden:
 
 * `ACPPlacesRequestAuthorizationLevelWhenInUse`
 
-   Fordert die Berechtigung des Benutzers zur Verwendung von Standortdiensten an, während die App verwendet wird. Die Benutzeraufforderung enthält den Text des `NSLocationWhenInUseUsageDescription` Schlüssels in der Datei "Info.plist"der App und das Vorhandensein dieses Schlüssels ist beim Aufruf dieser Methode erforderlich. Weitere Informationen finden Sie in der [Apple-Dokumentation zu requestWhenInUseAuthorization](https://developer.apple.com/documentation/corelocation/cllocationmanager/1620562-requestwheninuseauthorization).
+   Fordert die Berechtigung des Benutzers zur Verwendung von Standortdiensten an, während die App verwendet wird. Die Benutzeraufforderung enthält den Text des `NSLocationWhenInUseUsageDescription` Schlüssels in der Datei &quot;Info.plist&quot;der App und das Vorhandensein dieses Schlüssels ist beim Aufruf dieser Methode erforderlich. Weitere Informationen finden Sie in der [Apple-Dokumentation zu requestWhenInUseAuthorization](https://developer.apple.com/documentation/corelocation/cllocationmanager/1620562-requestwheninuseauthorization).
 
 * `ACPPlacesRequestMonitorAuthorizationLevelAlways`
 
