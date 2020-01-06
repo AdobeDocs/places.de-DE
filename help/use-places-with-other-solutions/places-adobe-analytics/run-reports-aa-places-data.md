@@ -17,11 +17,11 @@ Nachdem Orte die Einstiegs- und Ausstiegsereignisse gesendet haben, können Sie 
 
 ## 1. Regel erstellen
 
-1. Klicken Sie auf der **[!UICONTROL Rules]** Registerkarte auf **[!UICONTROL Create New Rule]**.
+1. Klicken Sie auf der **[!UICONTROL Rules]**Registerkarte auf**[!UICONTROL Create New Rule]**.
 
    Beachten Sie die folgenden Informationen:
-   * Wenn Sie keine Regeln für diese Eigenschaft haben, befindet sich die **[!UICONTROL Create New Rule]** Schaltfläche in der Mitte des Bildschirms.
-   * Wenn Ihre Eigenschaft über Regeln verfügt, befindet sich die **[!UICONTROL Create New Rule]** Schaltfläche oben rechts auf dem Bildschirm.
+   * Wenn Sie keine Regeln für diese Eigenschaft haben, befindet sich die **[!UICONTROL Create New Rule]**Schaltfläche in der Mitte des Bildschirms.
+   * Wenn Ihre Eigenschaft über Regeln verfügt, befindet sich die **[!UICONTROL Create New Rule]**Schaltfläche oben rechts auf dem Bildschirm.
 
 ## 2. Wählen Sie ein Ereignis
 
@@ -29,15 +29,15 @@ Nachdem Orte die Einstiegs- und Ausstiegsereignisse gesendet haben, können Sie 
 
    In diesem Beispiel wird die Regel benannt **[!UICONTROL Attach Places Data to Analytics Track Action Events]**.
 
-1. Klicken Sie unter dem **[!UICONTROL Events]** Abschnitt auf **[!UICONTROL Add]**.
+1. Klicken Sie unter dem **[!UICONTROL Events]**Abschnitt auf**[!UICONTROL Add]**.
 
-1. Wählen Sie aus der **[!UICONTROL Extension]** Dropdownliste **[!UICONTROL Mobile Core]**.
+1. Wählen Sie aus der **[!UICONTROL Extension]**Dropdownliste**[!UICONTROL Mobile Core]**.
 
-1. Wählen Sie aus der **[!UICONTROL Event Type]** Dropdownliste **[!UICONTROL Track Action]**.
+1. Wählen Sie aus der **[!UICONTROL Event Type]**Dropdownliste**[!UICONTROL Track Action]**.
 
 Jetzt können Sie die Auslöser festlegen, die Sie für diese Regel einbeziehen möchten. In diesem Beispiel basiert der Auslöser auf allen `TrackAction` Aufrufen. Klicken Sie nach der Konfiguration des Ereignisses auf **[!UICONTROL Keep Changes]**.
 
-!["Ereignis erstellen"](/help/assets/ad-setEvent_use-analytics-data.png)
+![&quot;Ereignis erstellen&quot;](/help/assets/ad-setEvent_use-analytics-data.png)
 
 
 ## 3. Bedingungen hinzufügen
@@ -48,27 +48,27 @@ Jetzt können Sie die Auslöser festlegen, die Sie für diese Regel einbeziehen 
 
 In diesem Beispiel wird eine Bedingung erstellt, die bewirkt, dass die Regel nur für AT&amp;T-Kunden ausgelöst wird.
 
-1. Klicken Sie unter dem **[!UICONTROL Conditions]** Abschnitt auf **[!UICONTROL Add]**.
+1. Klicken Sie unter dem **[!UICONTROL Conditions]**Abschnitt auf**[!UICONTROL Add]**.
 
-1. Wählen Sie aus der **[!UICONTROL Extension]** Dropdownliste **[!UICONTORL Mobilcore]**.
+1. Wählen Sie aus der **[!UICONTROL Extension]**Dropdownliste**[!UICONTORL  Mobilcore]**.
 
-1. Wählen Sie aus der **[!UICONTROL Condition Type]** Dropdownliste **[!UICONTROL Carrier Name]**.
+1. Wählen Sie aus der **[!UICONTROL Condition Type]**Dropdownliste**[!UICONTROL Carrier Name]**.
 
-1. Wählen Sie im Fenster auf der rechten Seite das **[!UICONTROL AT&T]** Kontrollkästchen aus.
+1. Wählen Sie im Fenster auf der rechten Seite das **[!UICONTROL AT&T]**Kontrollkästchen aus.
 
 1. Klicken Sie auf **[!UICONTROL Keep Changes]**.
 
-!["Bedingung erstellen"](/help/assets/ad-setCondition_use-analytics-data.png)
+![&quot;Bedingung erstellen&quot;](/help/assets/ad-setCondition_use-analytics-data.png)
 
 ## 4. Definieren der Aktion
 
-1. Klicken Sie unter dem **[!UICONTROL Actions]** Abschnitt auf **[!UICONTROL Add]**.
+1. Klicken Sie unter dem **[!UICONTROL Actions]**Abschnitt auf**[!UICONTROL Add]**.
 
-1. Wählen Sie aus der **[!UICONTROL Extension]** Dropdownliste **[!UICONTROL Mobile Core]**.
+1. Wählen Sie aus der **[!UICONTROL Extension]**Dropdownliste**[!UICONTROL Mobile Core]**.
 
-1. Wählen Sie aus der **[!UICONTROL Action Type]** Dropdownliste **[!UICONTROL Attach Data]**.
+1. Wählen Sie aus der **[!UICONTROL Action Type]**Dropdownliste**[!UICONTROL Attach Data]**.
 
-1. Geben Sie im rechten Bereich im **[!UICONTROL JSON Payload]** Feld die Daten ein, die diesem Ereignis hinzugefügt werden sollen.
+1. Geben Sie im rechten Bereich im **[!UICONTROL JSON Payload]**Feld die Daten ein, die diesem Ereignis hinzugefügt werden sollen.
 
 1. Klicken Sie auf **[!UICONTROL Keep Changes]**.
 
@@ -76,13 +76,13 @@ Im rechten Bereich können Sie eine Freiform-JSON-Nutzlast hinzufügen, die Date
 
 Im folgenden Beispiel werden den Kontextdaten des Analytics-Ereignisses Werte `poi.city` und `poi.name` Werte hinzugefügt. Die Werte für die neuen Schlüssel werden vom SDK bei der Verarbeitung dieses Ereignisses dynamisch bestimmt.
 
-!["Aktion erstellen"](/help/assets/ad-setAction_use-analytics-data.png)
+![&quot;Aktion erstellen&quot;](/help/assets/ad-setAction_use-analytics-data.png)
 
 ## 5. Speichern Sie die Regel und erstellen Sie Ihre Eigenschaft neu
 
 Überprüfen Sie nach Abschluss der Konfiguration, ob die Regel wie folgt aussieht:
 
-!["Die Regel ist abgeschlossen."](/help/assets/ad-ruleComplete_use-analytics-data.png)
+![&quot;Die Regel ist abgeschlossen.&quot;](/help/assets/ad-ruleComplete_use-analytics-data.png)
 
 1. Klicken Sie auf **[!UICONTROL Save]**
 
