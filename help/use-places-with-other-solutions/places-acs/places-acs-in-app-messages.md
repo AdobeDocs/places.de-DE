@@ -28,22 +28,22 @@ Führen Sie zuerst die folgenden Aufgaben aus:
 
 1. Klicken Sie in Ihrer Adobe Campaign Standard-Instanz auf **[!UICONTROL Create In-App message]**.
 1. Wählen Sie für den Nachrichtentyp **[!UICONTROL Target all users of a Mobile application]**.
-1. Klicken Sie auf **[!UICONTROL Next]** und geben Sie die allgemeinen Details ein.
+1. Klicken Sie auf **[!UICONTROL Next]**und geben Sie die allgemeinen Details ein.
 1. Überprüfen Sie im linken Bereich, ob Sie eine Vielzahl von Auslösern verwenden können, die mit Location Services in Zusammenhang stehen.
 
    * Sie können festlegen, dass die In-App-Nachricht angezeigt wird, wenn der Benutzer einen POI-Geo-Zaun eingegeben hat.
    * Sie können auch Metadaten verwenden, die in der Benutzeroberfläche von Location Services definiert sind, um die Zielgruppe zu filtern.
    Im folgenden Beispiel können Sie eine In-App-Nachricht auslösen, die nur Benutzern angezeigt wird, die in einen der Ferienresorts einsteigen, die an einem kostenlosen Getränkeprogramm teilnehmen, und diesen Benutzern bei ihrer Ankunft einen Coupon senden.
 
-   !["In-App-Nachrichten-Orte-Metadaten"](/help/assets/last-entered-vacation.png)
+   ![&quot;In-App-Nachrichten-Orte-Metadaten&quot;](/help/assets/last-entered-vacation.png)
 
-1. Click the **[!UICONTROL Next]** to finish creating the In-app message for delivery.
+1. Click the **[!UICONTROL Next]**to finish creating the In-app message for delivery.
 
-   !["Ereignis erstellen"](/help/assets/prepare-ACS.png)
+   ![&quot;Ereignis erstellen&quot;](/help/assets/prepare-ACS.png)
 
    Um die Bereitstellung der In-App-Nachricht zu testen, starten Sie die Anwendung im Xcode- oder Android-Studio und wählen Sie mit dem Standortsimulator einen POI aus, der den Messaging-Kriterien entspricht.
 
-   !["trinken Coupon"](/help/assets/drink-coupon-on-app.png)
+   ![&quot;trinken Coupon&quot;](/help/assets/drink-coupon-on-app.png)
 
 Die Verwendung von Location Services mit Adobe Campaign Standard bietet Ihnen ein leistungsfähiges Tool, um Ihre Nachrichten basierend auf Geo-Zaun-Einstiegen und -Ausstiegen zu segmentieren und gezielt an Benutzer auszurichten. Mit dieser Integration können Sie personalisierte und kontextbezogene Anwendungsfälle erstellen.
 
