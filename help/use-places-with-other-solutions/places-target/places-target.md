@@ -15,7 +15,7 @@ Nachdem die Platzierungserweiterung Ereignisse für Einstiege und Ausstiege gese
 
 ## 1. Regel erstellen
 
-1. Klicken Sie auf der **[!UICONTROL Rules]** Registerkarte auf **[!UICONTROL Create New Rule]**.
+1. Klicken Sie auf der **[!UICONTROL Rules]**Registerkarte auf**[!UICONTROL Create New Rule]**.
 
    Beachten Sie die folgenden Informationen:
 
@@ -28,11 +28,11 @@ Nachdem die Platzierungserweiterung Ereignisse für Einstiege und Ausstiege gese
 
    In diesem Beispiel wird die Regel benannt **[!UICONTROL Attach Places Data to Target Content Requested]**.
 
-1. Klicken Sie unter dem **[!UICONTROL Events]** Abschnitt auf **[!UICONTROL Add]**.
+1. Klicken Sie unter dem **[!UICONTROL Events]**Abschnitt auf**[!UICONTROL Add]**.
 
-1. Wählen Sie aus der **[!UICONTROL Extension]** Dropdownliste **[!UICONTROL Adobe Target]**.
+1. Wählen Sie aus der **[!UICONTROL Extension]**Dropdownliste**[!UICONTROL Adobe Target]**.
 
-1. Wählen Sie aus der **[!UICONTROL Event Type]** Dropdownliste **[!UICONTROL Content Requested]**.
+1. Wählen Sie aus der **[!UICONTROL Event Type]**Dropdownliste**[!UICONTROL Content Requested]**.
 
 1. Klicken Sie auf **[!UICONTROL Keep Changes]**.
 
@@ -46,11 +46,11 @@ Nachdem die Platzierungserweiterung Ereignisse für Einstiege und Ausstiege gese
 
 Im folgenden Beispiel wird eine Bedingung erstellt, die bewirkt, dass die Regel nur für Benutzer ausgelöst wird, die die App fünf oder mehr Mal gestartet haben.
 
-1. Klicken Sie unter dem **[!UICONTROL Conditions]** Abschnitt auf **[!UICONTROL Add]**.
+1. Klicken Sie unter dem **[!UICONTROL Conditions]**Abschnitt auf**[!UICONTROL Add]**.
 
-1. Wählen Sie aus der **[!UICONTROL Extension]** Dropdownliste **[!UICONTROL Mobile Core]**.
+1. Wählen Sie aus der **[!UICONTROL Extension]**Dropdownliste**[!UICONTROL Mobile Core]**.
 
-1. Wählen Sie aus der **[!UICONTROL Condition Type]** Dropdownliste **[!UICONTROL Launches]**.
+1. Wählen Sie aus der **[!UICONTROL Condition Type]**Dropdownliste**[!UICONTROL Launches]**.
 
 1. Ändern Sie im rechten Bereich die Dropdown-Liste und die Nummernsteuerelemente so, dass die Bedingung gelesen wird **[!UICONTROL User has launched the app greater than or equal to 5 times]**.
 
@@ -60,23 +60,23 @@ Im folgenden Beispiel wird eine Bedingung erstellt, die bewirkt, dass die Regel 
 
 ## 4. Definieren der Aktion
 
-1. Klicken Sie unter dem **[!UICONTROL Actions]** Abschnitt auf **[!UICONTROL Add]**.
+1. Klicken Sie unter dem **[!UICONTROL Actions]**Abschnitt auf**[!UICONTROL Add]**.
 
-1. Wählen Sie aus der **[!UICONTROL Extension]** Dropdownliste **[!UICONTROL Mobile Core]**.
+1. Wählen Sie aus der **[!UICONTROL Extension]**Dropdownliste**[!UICONTROL Mobile Core]**.
 
-1. Wählen Sie aus der **[!UICONTROL Action Type]** Dropdownliste **[!UICONTROL Attach Data]**.
+1. Wählen Sie aus der **[!UICONTROL Action Type]**Dropdownliste**[!UICONTROL Attach Data]**.
 
-1. Geben Sie im rechten Bereich im **[!UICONTROL JSON Payload]** Feld die Daten ein, die diesem Ereignis hinzugefügt werden sollen.
+1. Geben Sie im rechten Bereich im **[!UICONTROL JSON Payload]**Feld die Daten ein, die diesem Ereignis hinzugefügt werden sollen.
 
 1. Klicken Sie auf **[!UICONTROL Keep Changes]**.
 
 Im rechten Bereich können Sie eine Freiform-JSON-Nutzlast hinzufügen, die Daten zu einem SDK-Ereignis hinzufügt, bevor die Extensions, die auf dieses Ereignis warten, es hören.
 
-Im folgenden Beispiel werden der Anforderung, die im Target-Ereignis verarbeitet wird, `poiCity` Werte hinzugefügt `poiName`**[!UICONTROL mboxparameters]** . Die Werte für die neuen Schlüssel werden vom SDK zum Zeitpunkt der Verarbeitung dieses Ereignisses dynamisch bestimmt.
+Im folgenden Beispiel werden der Anforderung, die im Target-Ereignis verarbeitet wird, `poiCity` Werte hinzugefügt `poiName` **[!UICONTROL mboxparameters]**. Die Werte für die neuen Schlüssel werden vom SDK zum Zeitpunkt der Verarbeitung dieses Ereignisses dynamisch bestimmt.
 
 >[!TIP]
 >
->Diese JSON-Nutzlast verwendet eine spezielle Notation für das `request` Objekt. Im ursprünglichen Ereignis `request` ist ein Array anonymer Objekte. Wenn Daten mit "Daten anhängen"an alle Objekte in einem Array angehängt werden, bewirkt die `[*]` Notation auf einem Schlüssel, der bekanntermaßen ein Array enthält, dass die Nutzlast auf alle Objekte in diesem Array angewendet wird.
+>Diese JSON-Nutzlast verwendet eine spezielle Notation für das `request` Objekt. Im ursprünglichen Ereignis `request` ist ein Array anonymer Objekte. Wenn Daten mit &quot;Daten anhängen&quot;an alle Objekte in einem Array angehängt werden, bewirkt die `[*]` Notation auf einem Schlüssel, der bekanntermaßen ein Array enthält, dass die Nutzlast auf alle Objekte in diesem Array angewendet wird.
 >
 >Die Notation von `request[*]` kann laut wie _für jedes Objekt im`request`Array_ gelesen werden.
 
