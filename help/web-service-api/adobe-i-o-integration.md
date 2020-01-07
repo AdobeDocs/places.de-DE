@@ -19,13 +19,13 @@ Vergewissern Sie sich beim Systemadministrator Ihres Unternehmens, dass die folg
 * Sie wurden der Organisation hinzugefügt.
 * Sie wurden als Benutzer zum Platzierungs-Core-Service in Ihrem Unternehmen hinzugefügt.
 
-   Weitere Informationen finden Sie unter Benutzer oder Entwickler *zu Ihren Profilen* "Location Service"und "Experience Platform Launch"in den [häufig gestellten Fragen](/help/places-faqs.md).
+   Weitere Informationen finden Sie unter Benutzer oder Entwickler *zu Ihren Profilen* &quot;Location Service&quot;und &quot;Experience Platform Launch&quot;in den [häufig gestellten Fragen](/help/places-faqs.md).
 
 * Sie wurden als Entwickler zum Platzierungs-Core-Service in Ihrem Unternehmen hinzugefügt.
 
-   Weitere Informationen zum Hinzufügen von Entwicklern finden Sie unter Benutzer oder Entwickler *zu Ihren Profilen* "Location Service"und "Experience Platform Launch"in den [häufig gestellten Fragen](/help/places-faqs.md).
+   Weitere Informationen zum Hinzufügen von Entwicklern finden Sie unter Benutzer oder Entwickler *zu Ihren Profilen* &quot;Location Service&quot;und &quot;Experience Platform Launch&quot;in den [häufig gestellten Fragen](/help/places-faqs.md).
 
-   Weitere Informationen zur Rolle "Entwickler"finden Sie unter Entwickler [verwalten](https://helpx.adobe.com/enterprise/using/manage-developers.html).
+   Weitere Informationen zur Rolle &quot;Entwickler&quot;finden Sie unter Entwickler [verwalten](https://helpx.adobe.com/enterprise/using/manage-developers.html).
 
 ### REST-API-Anfragen
 
@@ -43,7 +43,7 @@ Eine Integration mit Adobe I/O bietet diese Elemente und eine Möglichkeit, das 
 
 >[!IMPORTANT]
 >
->Wenn Sie sich nicht bei der Adobe I/O-Konsole anmelden können oder der Experience Platform Location Service keine Option auf der Seite "Integrationen *erstellen"ist*, finden Sie Informationen zu den *Organisationsanforderungen* in der Übersicht über die [Web-Services-APIs](/help/web-service-api/places-web-services.md).
+>Wenn Sie sich nicht bei der Adobe I/O-Konsole anmelden können oder der Experience Platform Location Service keine Option auf der Seite &quot;Integrationen *erstellen&quot;ist*, finden Sie Informationen zu den *Organisationsanforderungen* in der Übersicht über die [Web-Services-APIs](/help/web-service-api/places-web-services.md).
 
 ## Erstellen einer Ortsintegration
 
@@ -55,7 +55,7 @@ Um eine Platzierungsintegration zu erstellen, benötigen Sie ein öffentliches u
 
 So generieren Sie eigene, selbstsignierte Schlüssel:
 
-1. Kopieren Sie die folgenden Zeilen in ein Terminalfenster und fügen Sie sie ein und drücken Sie **[!UICONTROL Enter]** nach dem Einfügen der einzelnen Zeilen die Eingabetaste:
+1. Kopieren Sie die folgenden Zeilen in ein Terminalfenster und fügen Sie sie ein und drücken Sie **[!UICONTROL Enter]**nach dem Einfügen der einzelnen Zeilen die Eingabetaste:
 
    ```text
       mkdir keys
@@ -87,7 +87,7 @@ So generieren Sie eigene, selbstsignierte Schlüssel:
 
 1. Navigieren Sie zu dem Ordner, in dem sich die Dateien `.key` und `.crt` Dateien befinden.
 
-   Gehen Sie in iOS beispielsweise zu **[!UICONTROL Macintosh HD]** &gt; **[!UICONTROL users]** &gt; **[!UICONTROL (your user name)]** &gt; **[!UICONTROL Keys]**.
+   Gehen Sie in iOS beispielsweise zu **[!UICONTROL Macintosh HD]**>**[!UICONTROL users]** > **[!UICONTROL (your user name)]**>**[!UICONTROL Keys]**.
 
 Das folgende Video führt Sie durch den Prozess der Generierung des Schlüsselpaars:
 
@@ -99,15 +99,15 @@ So erstellen Sie eine Ortsintegration:
 
 1. Wechseln Sie zu [https://console.adobe.io](https://console.adobe.io) und melden Sie sich mit Ihrer Adobe ID an.
 1. Klicken Sie im Abschnitt **Kurzanleitung** auf Integration **erstellen**.
-1. Wählen Sie **[!UICONTROL Access an API]** und klicken Sie auf **[!UICONTROL Continue]**.
+1. Wählen Sie **[!UICONTROL Access an API]**und klicken Sie auf**[!UICONTROL Continue]**.
 
-   **[!UICONTROL Access an API]** ist der Standardspeicherort.
+   **[!UICONTROL Access an API]**ist der Standardspeicherort.
 
 1. Wenn Sie Zugriff auf mehr als eine Experience Cloud-Organisation haben, wählen Sie die Organisation in der Dropdownliste oben rechts aus.
-1. Under **[!UICONTROL Experience Cloud]**, select **[!UICONTROL Places]** as the Adobe service to which you want to integrate and click **[!UICONTROL Continue]**.
-1. Wählen Sie **[!UICONTROL New integration]** und klicken Sie auf **[!UICONTROL Continue]**.
-1. Geben Sie im Bildschirm "Neue Integration erstellen"einen Namen und eine Beschreibung ein.
-1. Ziehen Sie die oben erstellte `xxxx_public.crt` Datei in den **[!UICONTROL Public keys certificates]** Ablagebereich.
+1. Under **[!UICONTROL Experience Cloud]**, select**[!UICONTROL Places]** as the Adobe service to which you want to integrate and click **[!UICONTROL Continue]**.
+1. Wählen Sie **[!UICONTROL New integration]**und klicken Sie auf**[!UICONTROL Continue]**.
+1. Geben Sie im Bildschirm &quot;Neue Integration erstellen&quot;einen Namen und eine Beschreibung ein.
+1. Ziehen Sie die oben erstellte `xxxx_public.crt` Datei in den **[!UICONTROL Public keys certificates]**Ablagebereich.
 1. Wählen Sie ein Produktprofil aus.
 
    Wenn Sie sich nicht sicher sind, welches Profil Sie auswählen möchten, wenden Sie sich an Ihren Systemadministrator.
@@ -118,12 +118,12 @@ So erstellen Sie eine Ortsintegration:
 
 1. Die Seite mit den Integrationsdetails wird oben mit dem Namen der Integration angezeigt.
 
-   Die **[!UICONTROL Overview]** Registerkarte wird standardmäßig angezeigt und enthält den API-Schlüssel, Ihre Organisations-ID, die technische Konto-ID und weitere Details zu Ihren Integrationen.
+   Die **[!UICONTROL Overview]**Registerkarte wird standardmäßig angezeigt und enthält den API-Schlüssel, Ihre Organisations-ID, die technische Konto-ID und weitere Details zu Ihren Integrationen.
 
 ### Unternehmen-ID und API-Schlüssel aufzeichnen
 
-1. Klicken Sie auf der Seite mit den Integrationsdetails auf die **[!UICONTROL Services]** Registerkarte und bestätigen Sie, dass diese angezeigt **[!UICONTROL Places]** wird **[!UICONTROL Configured Services]**.
-1. Suchen Sie auf der **[!UICONTROL Overview]** Registerkarte den API-Schlüssel (Client-ID) und die Organisations-ID und zeichnen Sie ihn auf.
+1. Klicken Sie auf der Seite mit den Integrationsdetails auf die **[!UICONTROL Services]**Registerkarte und bestätigen Sie, dass diese angezeigt**[!UICONTROL Places]** wird **[!UICONTROL Configured Services]**.
+1. Suchen Sie auf der **[!UICONTROL Overview]**Registerkarte den API-Schlüssel (Client-ID) und die Organisations-ID und zeichnen Sie ihn auf.
 
    Diese IDs werden für jede Places REST API-Anforderung benötigt.
 
@@ -131,15 +131,15 @@ So erstellen Sie eine Ortsintegration:
 
 ### JWT-Token erstellen
 
-Klicken Sie auf der Seite mit den Integrationsdetails auf die **[!UICONTROL JWT]** Registerkarte, damit Sie Ihre Integration testen können, indem Sie eine JWT generieren und die Austausch-URL angeben.
+Klicken Sie auf der Seite mit den Integrationsdetails auf die **[!UICONTROL JWT]**Registerkarte, damit Sie Ihre Integration testen können, indem Sie eine JWT generieren und die Austausch-URL angeben.
 
 So generieren Sie ein JWT-Token:
 
 1. Öffnen Sie die oben erstellte `private.key` Datei in einem Texteditor.
-1. On the **[!UICONTROL JWT]** tab, copy the contents of the key and paste it in the **[!UICONTROL Paste private key]** field.
+1. On the **[!UICONTROL JWT]**tab, copy the contents of the key and paste it in the**[!UICONTROL Paste private key]** field.
 1. Klicken Sie auf **[!UICONTROL Generate JWT]**.
-1. In the **[!UICONTROL Sample CURL command]** section, click **[!UICONTROL Copy]** and paste the contents in your command prompt or terminal window.
-1. Führen Sie den Befehl aus, indem Sie **[!UICONTROL Enter]** auf die Tastatur drücken.
+1. In the **[!UICONTROL Sample CURL command]**section, click**[!UICONTROL Copy]** and paste the contents in your command prompt or terminal window.
+1. Führen Sie den Befehl aus, indem Sie **[!UICONTROL Enter]**auf die Tastatur drücken.
 1. Suchen Sie den Wert `"token_type": "bearer"` und den `"access_token"` Wert.
 
    Der Wert des Benutzerzugriffszeichens ist der Wert, den Sie in Ihren Places API-Anforderungen verwenden werden.
