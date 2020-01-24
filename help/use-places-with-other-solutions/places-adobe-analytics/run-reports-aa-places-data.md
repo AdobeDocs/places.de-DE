@@ -2,7 +2,7 @@
 title: Hinzufügen von Ortskontext zu Analytics-Anforderungen
 description: Dieser Abschnitt enthält Informationen zum Hinzufügen von Standortkontext zu Analytics-Anforderungen.
 translation-type: tm+mt
-source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
+source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
 
 ---
 
@@ -11,9 +11,9 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 >[!IMPORTANT]
 >
->In diesem Dokument wird davon ausgegangen, dass Adobe Places in Ihrer Anwendung implementiert ist. Weitere Informationen zur Implementierung von Adobe Places finden Sie unter [Platzierungen](/help/places-ext-aep-sdks/places-extension/places-extension.md).
+>In diesem Dokument wird davon ausgegangen, dass Sie über den Places-Dienst in Ihrer Anwendung verfügen. Weitere Informationen zum Implementieren des Places-Dienstes finden Sie unter [Platzierungen von Erweiterungen](/help/places-ext-aep-sdks/places-extension/places-extension.md).
 
-Nachdem Orte die Einstiegs- und Ausstiegsereignisse gesendet haben, können Sie Regeln im Experience Platform Launch erstellen und Ihre Ortsdaten an alle Adobe Analytics-Ereignisse anhängen. Um diesen Regeltyp zu erstellen, wählen Sie Ihre Eigenschaft in Start und führen Sie die folgenden Schritte aus:
+Nachdem der Orte-Dienst die Ein- und Ausstiegsereignisse gesendet hat, können Sie Regeln im Experience Platform-Start erstellen und Ihre Ortsdaten an alle Adobe Analytics-Ereignisse anhängen. Um diesen Regeltyp zu erstellen, wählen Sie Ihre Eigenschaft in Start und führen Sie die folgenden Schritte aus:
 
 ## 1. Regel erstellen
 
@@ -27,7 +27,7 @@ Nachdem Orte die Einstiegs- und Ausstiegsereignisse gesendet haben, können Sie 
 
 1. Geben Sie Ihrer Regel einen aussagekräftigen Namen, damit sie in Ihrer Regelliste leicht erkennbar ist.
 
-   In diesem Beispiel wird die Regel benannt **[!UICONTROL Attach Places Data to Analytics Track Action Events]**.
+   In diesem Beispiel wird die Regel benannt **[!UICONTROL Attach Places Service Data to Analytics Track Action Events]**.
 
 1. Klicken Sie unter dem **[!UICONTROL Events]**Abschnitt auf**[!UICONTROL Add]**.
 
@@ -50,7 +50,7 @@ In diesem Beispiel wird eine Bedingung erstellt, die bewirkt, dass die Regel nur
 
 1. Klicken Sie unter dem **[!UICONTROL Conditions]**Abschnitt auf**[!UICONTROL Add]**.
 
-1. Wählen Sie aus der **[!UICONTROL Extension]**Dropdownliste**[!UICONTORL  Mobilcore]**.
+1. Wählen Sie aus der **[!UICONTROL Extension]**Dropdownliste**[!UICONTROL Mobile Core]**.
 
 1. Wählen Sie aus der **[!UICONTROL Condition Type]**Dropdownliste**[!UICONTROL Carrier Name]**.
 
