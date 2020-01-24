@@ -1,15 +1,15 @@
 ---
 title: Übersicht über die Point-of-Interest-Verwaltungsoberfläche
-description: Dieser Abschnitt enthält Informationen zum Erstellen und Verwalten von Bibliotheken und POIs über die Benutzeroberfläche des Location Service.
+description: Dieser Abschnitt enthält Informationen zum Erstellen und Verwalten von Bibliotheken und POIs über die Benutzeroberfläche des Orts-Dienstes.
 translation-type: tm+mt
-source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
+source-git-commit: c22efc36f2eac6b20fc555d998c3988d8c31169e
 
 ---
 
 
-# Übersicht über die Point-of-Interest-Verwaltungsoberfläche {#management-ui-overview}
+# Übersicht über die Benutzeroberfläche des Platzierungsdienstes {#management-ui-overview}
 
-POIs und Bibliotheken werden in der Location Service-Datenbank mithilfe der Benutzeroberfläche des Location Service erstellt und verwaltet.
+POIs und Bibliotheken werden in der Datenbank des Orts-Dienstes mithilfe der Benutzeroberfläche des Orts-Dienstes erstellt und verwaltet.
 
 * Informationen zum Erstellen einer Bibliothek oder zum Verwalten mehrerer Bibliotheken finden Sie unter [Verwalten von Bibliotheken](/help/poi-mgmt-ui/manage-libraries-in-the-places-ui.md).
 * Informationen zum Erstellen eines POI finden Sie unter [Erstellen eines POI](/help/poi-mgmt-ui/create-a-poi-ui.md).
