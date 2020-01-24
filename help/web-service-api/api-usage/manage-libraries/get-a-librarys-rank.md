@@ -2,12 +2,12 @@
 title: Rang einer Bibliothek abrufen
 description: Rufen Sie den Rang einer Bibliothek mit der Places REST API ab.
 translation-type: tm+mt
-source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
+source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
 
 ---
 
 
-# Rang einer Bibliothek abrufen
+# Rang einer Bibliothek abrufen {#get-library-rank}
 
 Eine GET-Methode, mit der Sie Bibliotheken nach Rang ordnen können.
 
