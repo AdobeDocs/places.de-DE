@@ -2,7 +2,7 @@
 title: Massen-Upload-POIs
 description: Dieser Abschnitt enthält Informationen zum Hochladen von POIs als Massendatei.
 translation-type: tm+mt
-source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
+source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
 
 ---
 
@@ -21,7 +21,7 @@ Im Folgenden finden Sie einige Informationen zu den Skripten:
 
 ## CSV-Datei nicht funktionierte, wurde behoben
 
-Eine .csv-Beispieldatei `places_sample.csv`ist Teil dieses Pakets und enthält die erforderlichen Kopfzeilen und eine Reihe von Musterdaten. Diese Header sind alle Kleinbuchstaben und entsprechen den reservierten Metadatenschlüsseln, die in der Datenbank "Orte"verwendet werden. Spalten, die Sie der .csv-Datei hinzufügen, werden der POI-Datenbank in einem separaten Metadatenabschnitt für jeden POI als Schlüssel/Wert-Paare hinzugefügt und der Header-Wert wird als Schlüssel verwendet.
+Eine .csv-Beispieldatei `places_sample.csv`ist Teil dieses Pakets und enthält die erforderlichen Kopfzeilen und eine Reihe von Musterdaten. Diese Header sind alle Kleinbuchstaben und entsprechen den reservierten Metadatenschlüsseln, die in der Datenbank &quot;Orte&quot;verwendet werden. Spalten, die Sie der .csv-Datei hinzufügen, werden der POI-Datenbank in einem separaten Metadatenabschnitt für jeden POI als Schlüssel/Wert-Paare hinzugefügt und der Header-Wert wird als Schlüssel verwendet.
 
 Im Folgenden finden Sie eine Liste der Spalten und Werte, die Sie verwenden müssen:
 
@@ -47,17 +47,17 @@ Im Folgenden finden Sie eine Liste der Spalten und Werte, die Sie verwenden müs
 
 ### Spaltenwerte
 
-Die Werte der folgenden Spalten werden in der Benutzeroberfläche des Location Service verwendet:
+Die Werte der folgenden Spalten werden in der Benutzeroberfläche des Places-Dienstes verwendet:
 
-* Farbe, die als Farbe des Pins verwendet wird, der die Position des POI in der Benutzeroberfläche des Location Service darstellt.
-   * Die gültigen Werte sind "", #3E76D0, #AA99E8, #DC2ABA, #FC685B, #FC962E, #F6C436, #BECE5D, #61B56B und #3DC8DE und "".
-   * Wenn der Wert leer gelassen wird, verwendet die Benutzeroberfläche des Location Service Blau als Standardfarbe.
+* Farbe, die als Farbe des Pins verwendet wird, der die Position des POI in der Benutzeroberfläche des Orts-Dienstes darstellt.
+   * Die gültigen Werte sind &quot;&quot;, #3E76D0, #AA99E8, #DC2ABA, #FC685B, #FC962E, #F6C436, #BECE5D, #61B56B und #3DC8DE und &quot;&quot;.
+   * Wenn der Wert leer gelassen wird, verwendet die Benutzeroberfläche des Places-Dienstes Blau als Standardfarbe.
 
       Die Werte entsprechen blau (#3E76D0), violett (#AA99E8), fuschia (#DC2ABA), orange (#FC685B), hellorange (#FC962E), gelb (#F6C436), hellgrün (#BECE5D), grün (#6 1B56B) bzw. hellblau (#3DC8DE).
 
-* Symbol, das als Symbol auf dem Pin verwendet wird, das die Position des POI auf der Benutzeroberfläche des Location Service darstellt.
+* -Symbol, das als Symbol auf dem Pin verwendet wird, das die Position des POI auf der Benutzeroberfläche des Places-Dienstes darstellt.
 
-   * Die gültigen Werte sind "", Shop, Hotelbett, Auto, Flugzeug, Zug, Schiff, Stadion, amusementpark, Anker, Beaker, Bell, Bid, Buch, Box, Brieftasche, Broschüre, Bürste, Gebäude, Rechner, Kamera, Uhr, Bildung, Taschenlampe, folgen, Spiel, weiblich, männlich, Geschenk, Hammer, Herz, Schlüssel, Start, Glühbirne, Briefkasten, Geld, Posting, Geld, Geld, Posting, Pin Warenkorb, Warenkorb, Stern, Ziel, Teekanne, Daumendown, Daumen, Trap, Trophäe, Schraubenschlüssel.
+   * Die gültigen Werte sind &quot;&quot;, Shop, Hotelbett, Auto, Flugzeug, Zug, Schiff, Stadion, amusementpark, Anker, Beaker, Bell, Bid, Buch, Box, Brieftasche, Broschüre, Bürste, Gebäude, Rechner, Kamera, Uhr, Bildung, Taschenlampe, folgen, Spiel, weiblich, männlich, Geschenk, Hammer, Herz, Schlüssel, Start, Glühbirne, Briefkasten, Geld, Posting, Geld, Geld, Posting, Pin Warenkorb, Warenkorb, Stern, Ziel, Teekanne, Daumendown, Daumen, Trap, Trophäe, Schraubenschlüssel.
 
       Die Symbolwerte werden in der Reihenfolge aufgeführt, in der sie in der folgenden Abbildung angezeigt werden:
 
@@ -92,7 +92,7 @@ Die Werte der folgenden Spalten werden in der Benutzeroberfläche des Location S
    b. Speichern Sie Ihre Änderungen.
 
 1. Navigieren Sie in einem Terminalfenster zum `…/places-scripts/import/` Ordner.
-1. Geben Sie `python ./places_import.py` die **[!UICONTROL enter]** (**[!UICONTROL return]**) Taste ein.
+1. Geben Sie `python ./places_import.py` die **[!UICONTROL enter]**(**[!UICONTROL return]**) Taste ein.
 
 
 ## CSV-Prüfungen vor dem Import
@@ -109,7 +109,7 @@ Das Skript führt zunächst die folgenden Prüfungen in der .csv-Datei durch:
    >
    >Die Kopfzeilen sind alle in Kleinbuchstaben und können in beliebiger Reihenfolge aufgeführt werden.
 
-* Prüft die Werte der im Abschnitt "CSV-Datei"angegebenen Spalten.
+* Prüft die Werte der im Abschnitt &quot;CSV-Datei&quot;angegebenen Spalten.
 
 Wenn Fehler gefunden werden, gibt das Skript die Fehler aus und wird abgebrochen. Wenn keine Fehler gefunden werden, versucht das Skript, die POIs in Stapeln von 1000 zu importieren. Wenn der Stapel erfolgreich importiert wurde, gibt das Skript einen Statuscode von 200 aus. Wenn der Stapel nicht erfolgreich importiert wurde, werden Fehler gemeldet.
 
