@@ -1,17 +1,17 @@
 ---
 title: Adobe Target
-description: Dieser Abschnitt enthält Informationen zur Verwendung des Location Service mit Adobe Target.
+description: Dieser Abschnitt enthält Informationen zur Verwendung des Orte-Dienstes mit Adobe Target.
 translation-type: tm+mt
-source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
+source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
 
 ---
 
 
-# Standortdienst mit Adobe Target verwenden {#places-target}
+# Orte-Dienst mit Adobe Target verwenden {#places-target}
 
 Bei diesem Dokument wird davon ausgegangen, dass die Plates-Erweiterung in Ihrer Anwendung implementiert ist. Weitere Informationen zum Implementieren der Platzierungserweiterung finden Sie unter [Platzierungserweiterungen](/help/places-ext-aep-sdks/places-extension/places-extension.md).
 
-Nachdem die Platzierungserweiterung Ereignisse für Einstiege und Ausstiege gesendet hat, können Sie die Regeln beim Start nutzen, um Ihre Ortsdaten an Ihre Adobe Target SDK-Ereignisse anzuhängen. Wenn Sie die gewünschte Eigenschaft in Launch ausgewählt haben, können Sie diesen Regeltyp erstellen, indem Sie die folgenden Aufgaben ausführen:
+Nachdem die Platzierungserweiterung Ereignisse für Einstiege und Ausstiege gesendet hat, können Sie die Regeln beim Start nutzen, um Ihre Daten zum Orte-Dienst an Ihre Adobe Target SDK-Ereignisse anzuhängen. Wenn Sie die gewünschte Eigenschaft in Launch ausgewählt haben, können Sie diesen Regeltyp erstellen, indem Sie die folgenden Aufgaben ausführen:
 
 ## 1. Regel erstellen
 
@@ -26,7 +26,7 @@ Nachdem die Platzierungserweiterung Ereignisse für Einstiege und Ausstiege gese
 
 1. Geben Sie Ihrer Regel einen aussagekräftigen Namen, damit sie in Ihrer Regelliste leicht erkennbar ist.
 
-   In diesem Beispiel wird die Regel benannt **[!UICONTROL Attach Places Data to Target Content Requested]**.
+   In diesem Beispiel wird die Regel benannt **[!UICONTROL Attach Places Service Data to Target Content Requested]**.
 
 1. Klicken Sie unter dem **[!UICONTROL Events]**Abschnitt auf**[!UICONTROL Add]**.
 
