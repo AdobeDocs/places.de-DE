@@ -1,14 +1,14 @@
 ---
-title: Verwenden des Location Service mit anderen Adobe-Lösungen
-description: Dieser Abschnitt zeigt Ihnen, wie Sie den Location Service mit anderen Adobe-Lösungen verwenden.
+title: Verwenden des Orte-Dienstes mit anderen Adobe-Lösungen
+description: Dieser Abschnitt zeigt Ihnen, wie Sie den Places-Dienst mit anderen Adobe-Lösungen verwenden.
 translation-type: tm+mt
-source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
+source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
 
 ---
 
 
-# Standortdienst mit anderen Adobe-Lösungen verwenden {#use-places-other-solutions}
+# Orte-Dienst mit anderen Adobe-Lösungen verwenden {#use-places-other-solutions}
 
-Die Verwendung des Location Service zur Erfassung von Standortdaten ist für sich genommen in Ihrer App nicht besonders nützlich. Wenn Sie die Daten für Ihre anderen Adobe-Lösungen bereitstellen, erhalten Sie einen echten Wert aus den Standortdaten. Dieser Prozess ermöglicht Ihnen, mithilfe der Standortdaten benutzerdefinierte Erlebnisse bereitzustellen und fundierte Entscheidungen zu treffen.
+Die Verwendung des Orte-Dienstes zur Erfassung von Standortdaten ist in Ihrer App selbst nicht sinnvoll. Wenn Sie die Daten für Ihre anderen Adobe-Lösungen bereitstellen, erhalten Sie einen echten Wert aus den Standortdaten. Dieser Prozess ermöglicht Ihnen, mithilfe der Standortdaten benutzerdefinierte Erlebnisse bereitzustellen und fundierte Entscheidungen zu treffen.
 
-Dieser Abschnitt enthält Informationen zur Integration von Adobe Places in andere Experience Platform SDK-Erweiterungen, damit Sie Ihre Standortdaten einsetzen können.
+Dieser Abschnitt enthält Informationen zur Integration des Places-Dienstes in andere Experience Platform SDK-Erweiterungen, damit Sie Ihre Standortdaten einsetzen können.
