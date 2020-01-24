@@ -2,12 +2,12 @@
 title: Alle POIs in einer Bibliothek lesen
 description: Lesen Sie alle POIs in einer Bibliothek mithilfe der Places REST APIs.
 translation-type: tm+mt
-source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
+source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
 
 ---
 
 
-# Alle POIs in einer Bibliothek lesen
+# Alle POIs in einer Bibliothek lesen {#read-all-pois-library}
 
 Eine GET-Methode, die alle POIs in einer Bibliothek zurückgibt.
 
