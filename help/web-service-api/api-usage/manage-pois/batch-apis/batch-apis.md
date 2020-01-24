@@ -2,7 +2,7 @@
 title: Stapel-APIs
 description: Mit Batch-APIs können Sie mehrere POIs erstellen, aktualisieren und löschen.
 translation-type: tm+mt
-source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
+source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
 
 ---
 
@@ -11,7 +11,7 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 Mit den Batch-APIs können Sie mehrere POIs gleichzeitig erstellen, aktualisieren oder löschen.
 
-Verwenden Sie die Python-Skripten, um einen Stapelimport Ihrer POIs aus einer `.csv` Datei in die Places-Datenbank Ihres Unternehmens abzuschließen. Sie können die ZIP-Datei dieser Skripte [hier](https://github.com/adobe/places-scripts)herunterladen. Anweisungen zur Verwendung der Skripte finden Sie in der beiliegenden README-Datei.
+Verwenden Sie die Python-Skripten, um einen Stapelimport Ihrer POIs aus einer `.csv` Datei in die Places-Datenbank Ihres Unternehmens abzuschließen. Sie können die ZIP-Datei dieser Skripte [hier](https://github.com/adobe/places-scripts)herunterladen. Anweisungen zur Verwendung der Skripte finden Sie in der README-Datei im Bericht.
 
 Mit den Batch-APIs können Sie die folgenden Aufgaben ausführen:
 
