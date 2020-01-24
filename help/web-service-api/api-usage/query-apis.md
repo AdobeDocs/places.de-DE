@@ -2,7 +2,7 @@
 title: Übersicht
 description: Verstehen und Verwenden von Abfrage-APIs.
 translation-type: tm+mt
-source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
+source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
 
 ---
 
@@ -20,7 +20,7 @@ GET https://query.places.adobe.com/placesedgequery
 
 Mit der folgenden Eingabe gibt der Dienst eine Liste der POIs zurück, die dem Aufrufer am nächsten sind:
 
-* Position des Aufrufers \(Breitengrad, Längengrad\).
+* Position des Aufrufers (Breitengrad, Längengrad).
 * Die IDs der POI-Bibliotheken, die in die Suche einbezogen werden sollen.
 * Die maximale Anzahl der zurückzugebenden POIs.  Der Standardwert lautet 100.
 
