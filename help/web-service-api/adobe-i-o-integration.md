@@ -2,14 +2,14 @@
 title: Überblick über die Adobe-E/A-Integration
 description: Informationen zum Erstellen einer Adobe I/O-Integration.
 translation-type: tm+mt
-source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
+source-git-commit: c22efc36f2eac6b20fc555d998c3988d8c31169e
 
 ---
 
 
 # Übersicht über die Integration und Voraussetzungen {#integration-prereqs}
 
-Diese Informationen zeigen Ihnen, wie Sie eine Adobe I/O- und eine Places-Integration erstellen.
+Diese Informationen zeigen Ihnen, wie Sie eine Adobe-E/A- und eine Orte-Service-Integration erstellen.
 
 ## Voraussetzungen für den Benutzerzugriff
 
@@ -19,17 +19,17 @@ Vergewissern Sie sich beim Systemadministrator Ihres Unternehmens, dass die folg
 * Sie wurden der Organisation hinzugefügt.
 * Sie wurden als Benutzer zum Platzierungs-Core-Service in Ihrem Unternehmen hinzugefügt.
 
-   Weitere Informationen finden Sie unter Benutzer oder Entwickler *zu Ihren Profilen* &quot;Location Service&quot;und &quot;Experience Platform Launch&quot;in den [häufig gestellten Fragen](/help/places-faqs.md).
+   Weitere Informationen finden Sie unter Benutzer oder Entwickler *zu den Profilen* &quot;Orte-Dienst&quot;und &quot;Erlebnisplattform&quot;hinzufügen unter Zugriff [auf den Places-Dienst](/help/places-gain-access.md).
 
 * Sie wurden als Entwickler zum Platzierungs-Core-Service in Ihrem Unternehmen hinzugefügt.
 
-   Weitere Informationen zum Hinzufügen von Entwicklern finden Sie unter Benutzer oder Entwickler *zu Ihren Profilen* &quot;Location Service&quot;und &quot;Experience Platform Launch&quot;in den [häufig gestellten Fragen](/help/places-faqs.md).
+   Weitere Informationen zum Hinzufügen von Entwicklern finden Sie unter Benutzer oder Entwickler zu den Profilen *&quot;Orte-Dienst&quot;und &quot;Erlebnisplattform&quot;* hinzufügen unter Zugriff [auf den Orte-Dienst](/help/places-gain-access.md).
 
    Weitere Informationen zur Rolle &quot;Entwickler&quot;finden Sie unter Entwickler [verwalten](https://helpx.adobe.com/enterprise/using/manage-developers.html).
 
 ### REST-API-Anfragen
 
-Für jede Anforderung an die Places REST API sind die folgenden Elemente erforderlich:
+Für jede Anforderung an die REST-API des Places-Dienstes sind die folgenden Elemente erforderlich:
 
 * Eine Organisations-ID
 * Ein API-Schlüssel
@@ -38,20 +38,20 @@ Für jede Anforderung an die Places REST API sind die folgenden Elemente erforde
 Eine Integration mit Adobe I/O bietet diese Elemente und eine Möglichkeit, das Inhabertoken mithilfe eines JSON-WebTokens (JWT) anzufordern.
 
 * Weitere Informationen zu JWTs finden Sie unter [Einführung in JSON-WebToken](https://jwt.io/introduction/).
-* Informationen zum Erstellen einer Integration für Orte finden Sie im Abschnitt *Erstellen einer Platzierungsintegration* unten.
+* Informationen zum Erstellen einer Integration für den Places-Dienst finden Sie im Abschnitt zur Integration *des* Platzierungsdienstes.
 * Informationen zur Integration von API-Schlüsseln, zum Generieren von JWT-Zertifikaten und Zertifikaten öffentlicher Schlüssel finden Sie unter Übersicht über die [Adobe-E/A-Authentifizierung](https://www.adobe.io/apis/cloudplatform/console/authentication/gettingstarted.html).
 
 >[!IMPORTANT]
 >
->Wenn Sie sich nicht bei der Adobe I/O-Konsole anmelden können oder der Experience Platform Location Service keine Option auf der Seite &quot;Integrationen *erstellen&quot;ist*, finden Sie Informationen zu den *Organisationsanforderungen* in der Übersicht über die [Web-Services-APIs](/help/web-service-api/places-web-services.md).
+>Wenn Sie sich nicht bei der Adobe I/O-Konsole anmelden können oder wenn der Platzierungsdienst keine Option auf der Seite &quot;Integrationen *erstellen&quot;ist*, finden Sie Informationen zu den Anforderungen *der* Organisation in der Übersicht über die [Web-Services-APIs](/help/web-service-api/places-web-services.md).
 
-## Erstellen einer Ortsintegration
+## Integration des Orte-Dienstes erstellen
 
-Führen Sie die folgenden Aufgaben aus, um eine Ortsintegration zu erstellen:
+Führen Sie die folgenden Aufgaben aus, um eine Integration des Places-Dienstes zu erstellen:
 
 ### Generieren eines öffentlichen und privaten Schlüsselpaars
 
-Um eine Platzierungsintegration zu erstellen, benötigen Sie ein öffentliches und ein privates Schlüsselpaar. Diese Paare können gekauft werden oder Sie können eigene, selbstsignierte Schlüssel erstellen.
+Um eine Integration des Platzierungsdienstes zu erstellen, benötigen Sie ein öffentliches und ein privates Schlüsselpaar. Diese Paare können gekauft werden oder Sie können eigene, selbstsignierte Schlüssel erstellen.
 
 So generieren Sie eigene, selbstsignierte Schlüssel:
 
@@ -87,15 +87,15 @@ So generieren Sie eigene, selbstsignierte Schlüssel:
 
 1. Navigieren Sie zu dem Ordner, in dem sich die Dateien `.key` und `.crt` Dateien befinden.
 
-   Gehen Sie in iOS beispielsweise zu **[!UICONTROL Macintosh HD]**>**[!UICONTROL users]** > **[!UICONTROL (your user name)]**>**[!UICONTROL Keys]**.
+   Gehen Sie in MacOS beispielsweise zu **[!UICONTROL Macintosh HD]**>**[!UICONTROL users]** > **[!UICONTROL (your user name)]**>**[!UICONTROL Keys]**.
 
 Das folgende Video führt Sie durch den Prozess der Generierung des Schlüsselpaars:
 
 ![Integrationsvideo](/help/assets/places_integration_video.gif)
 
-### Erstellen einer Ortsintegration in der Adobe I/O-Konsole
+### Erstellen einer Integration des Places Service in der Adobe I/O-Konsole
 
-So erstellen Sie eine Ortsintegration:
+So erstellen Sie eine Integration des Places-Dienstes:
 
 1. Wechseln Sie zu [https://console.adobe.io](https://console.adobe.io) und melden Sie sich mit Ihrer Adobe ID an.
 1. Klicken Sie im Abschnitt **Kurzanleitung** auf Integration **erstellen**.
@@ -104,7 +104,7 @@ So erstellen Sie eine Ortsintegration:
    **[!UICONTROL Access an API]**ist der Standardspeicherort.
 
 1. Wenn Sie Zugriff auf mehr als eine Experience Cloud-Organisation haben, wählen Sie die Organisation in der Dropdownliste oben rechts aus.
-1. Under **[!UICONTROL Experience Cloud]**, select**[!UICONTROL Places]** as the Adobe service to which you want to integrate and click **[!UICONTROL Continue]**.
+1. Under **[!UICONTROL Experience Cloud]**, select**[!UICONTROL Places Service]** as the Adobe service to which you want to integrate and click **[!UICONTROL Continue]**.
 1. Wählen Sie **[!UICONTROL New integration]**und klicken Sie auf**[!UICONTROL Continue]**.
 1. Geben Sie im Bildschirm &quot;Neue Integration erstellen&quot;einen Namen und eine Beschreibung ein.
 1. Ziehen Sie die oben erstellte `xxxx_public.crt` Datei in den **[!UICONTROL Public keys certificates]**Ablagebereich.
@@ -122,10 +122,10 @@ So erstellen Sie eine Ortsintegration:
 
 ### Unternehmen-ID und API-Schlüssel aufzeichnen
 
-1. Klicken Sie auf der Seite mit den Integrationsdetails auf die **[!UICONTROL Services]**Registerkarte und bestätigen Sie, dass diese angezeigt**[!UICONTROL Places]** wird **[!UICONTROL Configured Services]**.
+1. Klicken Sie auf der Seite mit den Integrationsdetails auf die **[!UICONTROL Services]**Registerkarte und bestätigen Sie, dass diese angezeigt**[!UICONTROL Places Service]** wird **[!UICONTROL Configured Services]**.
 1. Suchen Sie auf der **[!UICONTROL Overview]**Registerkarte den API-Schlüssel (Client-ID) und die Organisations-ID und zeichnen Sie ihn auf.
 
-   Diese IDs werden für jede Places REST API-Anforderung benötigt.
+   Diese IDs werden für jede REST-API-Anforderung des Places-Dienstes benötigt.
 
 ![](/help/assets/places_orgid_api-key.png)
 
@@ -142,7 +142,7 @@ So generieren Sie ein JWT-Token:
 1. Führen Sie den Befehl aus, indem Sie **[!UICONTROL Enter]**auf die Tastatur drücken.
 1. Suchen Sie den Wert `"token_type": "bearer"` und den `"access_token"` Wert.
 
-   Der Wert des Benutzerzugriffszeichens ist der Wert, den Sie in Ihren Places API-Anforderungen verwenden werden.
+   Der Wert des Inhaberzugriffszeichens ist der Wert, den Sie in Ihren Places Service API-Anforderungen verwenden werden.
 
 >[!IMPORTANT]
 >
