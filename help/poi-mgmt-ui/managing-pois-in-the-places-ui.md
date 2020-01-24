@@ -1,8 +1,8 @@
 ---
 title: Verwalten vorhandener POIs
-description: In der Benutzeroberfläche des Location Service können Sie vorhandene POIs bearbeiten, löschen oder filtern.
+description: In der Benutzeroberfläche des Orts-Dienstes können Sie vorhandene POIs bearbeiten, löschen oder filtern.
 translation-type: tm+mt
-source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
+source-git-commit: 5a21e734c0ef56c815389a9f08b445bedaae557a
 
 ---
 
@@ -32,7 +32,7 @@ POIs und Bibliotheken werden in der Datenbank &quot;Orte&quot;mithilfe der Benut
 
 ![POI filtern](/help/assets/filter_poi.png)
 
-1. Melden Sie sich mit Ihrer Adobe ID bei der Benutzeroberfläche des Location Service an.
+1. Melden Sie sich mit Ihrer Adobe ID bei der Benutzeroberfläche des Orts-Dienstes an.
 1. Klicken Sie oben rechts auf das Filtersymbol.
 1. Sie können POIs auf eine der folgenden Arten filtern:
 
@@ -61,6 +61,7 @@ Geofences sind ein Typ von POI und werden in der Datenbank anhand der folgenden 
 | ID | Jedem POI zugewiesene eindeutige Kennung | Ja |
 | Name | Freundlicher Name des POI. | Ja |
 | Bibliothek | Jeder POI muss eine Bibliothek für die Organisation zugewiesen werden. | Ja |
+| Radius | Der Radius für Ihren POI in Metern. | Ja |
 | Symbol | Hilfe bei Visualisierungen der POIs. | Ja (Standard zugewiesen) |
 | Kanalfarbe | Hilfe bei Visualisierungen der POIs. | Ja (Standard zugewiesen) |
 | Kategorie | Weisen Sie einen gemeinsamen Rahmen von Kategorien zu, die in allen POIs in allen Bibliotheken verwendet werden. | Nein |
