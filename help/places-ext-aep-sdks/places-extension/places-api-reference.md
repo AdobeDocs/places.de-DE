@@ -2,18 +2,18 @@
 title: Platzierungs-API-Referenz
 description: Informationen zu den API-Referenzen in Places.
 translation-type: tm+mt
-source-git-commit: 23437e28bdfb12f664481d22f9f6df0ba6c30329
+source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
 
 ---
 
 
 # Platzierungs-API-Referenz {#places-api-reference}
 
-Im Folgenden finden Sie Informationen zu den API-Referenzen unter Orte:
+Im Folgenden finden Sie Informationen zu den API-Verweisen in der Places-Erweiterung:
 
 ## Verarbeiten eines Regionenereignisses
 
-Wenn ein Gerät eine vordefinierte Platzierungsregion Ihrer App überschreitet, werden die Region und der Ereignistyp zur Verarbeitung an das SDK übergeben.
+Wenn ein Gerät eine vordefinierte Platzierungsdienstregion der App überschreitet, werden die Region und der Ereignistyp zur Verarbeitung an das SDK übergeben.
 
 ### ProcessGeofence (Android)
 
@@ -309,7 +309,7 @@ Hier finden Sie ein Code-Beispiel für diese Methode:
 
 ### Clear (Android)
 
-Löscht die clientseitigen Daten für &quot;Orte im Freigabezustand&quot;, &quot;lokaler Speicher&quot;und &quot;Arbeitsspeicher&quot;.
+Löscht die clientseitigen Daten für die Places-Erweiterung im Freigabezustand, im lokalen Speicher und im Arbeitsspeicher.
 
 **Syntax**
 
@@ -329,7 +329,7 @@ Places.clear();
 
 ### clear (iOS)
 
-Löscht die clientseitigen Daten für &quot;Orte im Freigabezustand&quot;, &quot;lokaler Speicher&quot;und &quot;Arbeitsspeicher&quot;.
+Löscht die clientseitigen Daten für die Places-Erweiterung im Freigabezustand, im lokalen Speicher und im Arbeitsspeicher.
 
 **Syntax**
 
