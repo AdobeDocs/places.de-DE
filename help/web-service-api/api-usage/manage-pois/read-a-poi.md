@@ -2,12 +2,12 @@
 title: POI lesen
 description: Lesen Sie einen POI mithilfe der Places REST APIs.
 translation-type: tm+mt
-source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
+source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
 
 ---
 
 
-# POI lesen
+# POI lesen {#read-a-poi}
 
 Eine GET-Methode, die die Details für einen POI zurückgibt.
 
