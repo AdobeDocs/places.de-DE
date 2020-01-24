@@ -2,14 +2,14 @@
 title: Häufig gestellte Fragen
 description: Dieses Thema enthält weitere Informationen zu einigen häufig gestellten Fragen.
 translation-type: tm+mt
-source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
+source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
 
 ---
 
 
 # Häufig gestellte Fragen
 
-Hier finden Sie einige Informationen und häufig gestellte Fragen zum Location Service.
+Hier finden Sie einige Informationen und häufig gestellte Fragen zum Places Service.
 
 ## Größe und Zuverlässigkeit
 
