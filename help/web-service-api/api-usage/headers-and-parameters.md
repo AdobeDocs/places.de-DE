@@ -1,15 +1,15 @@
 ---
 title: Kopfzeilen und Parameter
-description: Kopfzeilen und Parameter, die in den Places REST APIs verfügbar sind.
+description: Kopfzeilen und Parameter, die in den REST-APIs des Places-Dienstes verfügbar sind.
 translation-type: tm+mt
-source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
+source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
 
 ---
 
 
 # Kopfzeilen und Parameter {#headers-and-parameters}
 
-Im Folgenden finden Sie die Details zu den Kopfzeilen und Parametern, die in der Places REST API verfügbar sind:
+Im Folgenden finden Sie die Details zu den Headern und Parametern, die in der REST-API des Places Service verfügbar sind:
 
 ## Unterstützte Header
 
