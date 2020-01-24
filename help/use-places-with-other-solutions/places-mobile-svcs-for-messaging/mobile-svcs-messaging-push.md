@@ -1,21 +1,21 @@
 ---
 title: Push-Benachrichtigungen
-description: Dieser Abschnitt zeigt Ihnen, wie Sie Orte mit Push-Benachrichtigungen verwenden.
+description: Dieser Abschnitt zeigt Ihnen, wie Sie den Places-Dienst mit Push-Benachrichtigungen verwenden.
 translation-type: tm+mt
-source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
+source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
 
 ---
 
 
 # Push-Benachrichtigungen
 
-Mit Mobile Services können Sie Push-Benachrichtigungen an Adobe Analytics-Segmente senden. Im Location Service können Sie die Zielgruppe für Ihre Push-Nachricht mithilfe ihrer historischen Interaktionen mit Ihren POIs segmentieren. Beispielsweise können Sie eine Nachricht an Benutzer senden, die sich in den letzten 30 Tagen in einem Ihrer Läden befanden.
+Mit Mobile Services können Sie Push-Benachrichtigungen an Adobe Analytics-Segmente senden. Im Orte-Dienst können Sie die Zielgruppe für Ihre Push-Nachricht mithilfe ihrer historischen Interaktionen mit Ihren POIs segmentieren. Beispielsweise können Sie eine Nachricht an Benutzer senden, die sich in den letzten 30 Tagen in einem Ihrer Läden befanden.
 
 Bevor Sie beginnen, stellen Sie sicher, dass Sie die folgenden Aufgaben abgeschlossen haben:
 
-* Die Daten des Location Service wurden von Adobe Analytics verarbeitet.
+* Die Daten des Orts-Service wurden von Adobe Analytics verarbeitet.
 
-   Das bedeutet, dass Ihre mobile App erfolgreich Standortdienstdaten an eine Report Suite gesendet hat und die Daten für die Segmentierung verfügbar sind.
+   Das bedeutet, dass Ihre mobile App erfolgreich Places Service-Daten an eine Report Suite gesendet hat und die Daten für die Segmentierung verfügbar sind.
 
 * Der Push-Benachrichtigungskanal in Mobile Services wurde eingerichtet.
 
