@@ -1,15 +1,15 @@
 ---
-title: Standortdienst ohne aktive Regionenüberwachung verwenden
-description: Dieser Abschnitt enthält Informationen zur Verwendung von Location ServicePlaces ohne aktive Regionsüberwachung.
+title: Orte-Dienst ohne aktive Regionsüberwachung verwenden
+description: Dieser Abschnitt enthält Informationen zur Verwendung des Orte-Dienstes ohne aktive Regionsüberwachung.
 translation-type: tm+mt
-source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
+source-git-commit: 5a21e734c0ef56c815389a9f08b445bedaae557a
 
 ---
 
 
-# Standortdienst ohne aktive Regionenüberwachung verwenden {#use-places-without-active-monitoring}
+# Orte-Dienst ohne aktive Regionsüberwachung verwenden {#use-places-without-active-monitoring}
 
-Anwendungsfälle für Ihre Anwendung erfordern möglicherweise keine aktive Regionsüberwachung. Adobe-Orte können weiterhin verwendet werden, um die Standortdaten Ihrer Benutzer in andere Experience Platform-Produkte zu integrieren.
+Anwendungsfälle für Ihre Anwendung erfordern möglicherweise keine aktive Regionsüberwachung. Der Ortsdienst kann weiterhin verwendet werden, um die Standortdaten Ihrer Benutzer in andere Experience Platform-Produkte zu integrieren.
 
 In diesem Abschnitt wird erläutert, wie eine POI-Mitgliedschaftsprüfung nur zum Zeitpunkt der Erfassung des Benutzerorts (Breiten- und Längengrad) durchgeführt werden kann.
 
@@ -19,9 +19,9 @@ Der Entwickler erfasst den Speicherort des Geräts mithilfe der APIs, die vom Be
 
 >[!TIP]
 >
->Wenn die Anwendungsfälle Ihrer App eine aktive Regionsüberwachung erfordern, lesen Sie [mithilfe der Ortsüberwachungserweiterung](/help/places-ext-aep-sdks/places-monitor-extension/places-monitor-extension.md).
+>Wenn die Anwendungsfälle Ihrer App eine aktive Regionsüberwachung erfordern, lesen Sie [Verwenden der Platzierungsmonitor-Erweiterung](/help/places-ext-aep-sdks/places-monitor-extension/places-monitor-extension.md).
 
-So verwenden Sie Orte ohne aktive Regionsüberwachung:
+So verwenden Sie den Orte-Dienst ohne aktive Regionsüberwachung:
 
 ## 1. Benutzerspeicherort erfassen
 
@@ -396,6 +396,6 @@ func handleUpdatedPOIs(_ nearbyPois:[ACPPlacesPoi]) {
 }
 ```
 
-Zusätzlich zum Auslösen von Plates-Einstiegsereignissen im SDK können aufgrund der auslösenden Einstiegsereignisse alle Daten, die Ihre POIs definieren, vom Rest des SDK über `data elements` den Start verwendet werden. Mit Launch `rules`können Sie die Ortsdaten dynamisch an eingehende Ereignisse anhängen, die vom SDK verarbeitet werden. Sie können beispielsweise die Metadaten eines POI, in dem sich der Benutzer befindet, anhängen und die Daten als Kontextdaten an Analytics senden.
+Neben der Auslösung von Einstiegsereignissen für den Places Service im SDK können aufgrund der auslösenden Einstiegsereignisse alle Daten, die Ihre POIs definieren, vom Rest des SDK über `data elements` den Experience Platform Launch verwendet werden. Mit Experience Platform Launch `rules`können Sie die Daten des Orts-Dienstes dynamisch an eingehende Ereignisse anhängen, die vom SDK verarbeitet werden. Sie können beispielsweise die Metadaten eines POI, in dem sich der Benutzer befindet, anhängen und die Daten als Kontextdaten an Analytics senden.
 
-Weitere Informationen finden Sie unter [Verwenden von Orten mit anderen Adobe-Lösungen](/help/use-places-with-other-solutions/use-places-with-other-solutions.md).
+Weitere Informationen finden Sie unter [Verwenden des Places-Dienstes mit anderen Adobe-Lösungen](/help/use-places-with-other-solutions/use-places-with-other-solutions.md).
