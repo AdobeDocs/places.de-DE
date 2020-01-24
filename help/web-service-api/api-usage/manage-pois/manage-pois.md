@@ -2,14 +2,14 @@
 title: Übersicht über die Verwaltung von POI
 description: 'Verstehen und Arbeiten mit POIs. '
 translation-type: tm+mt
-source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
+source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
 
 ---
 
 
 # Übersicht über die Verwaltung von POI {#manage-pois}
 
-Sie können die REST-APIs für Orte verwenden, um die folgenden Aufgaben auszuführen:
+Sie können die REST-APIs des Places-Dienstes verwenden, um die folgenden Aufgaben auszuführen:
 
 * [POI erstellen](/help/web-service-api/api-usage/manage-pois/create-a-poi.md)
 * [POI lesen](/help/web-service-api/api-usage/manage-pois/read-a-poi.md)
