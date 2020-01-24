@@ -1,15 +1,15 @@
 ---
 title: In-App-Benachrichtigungen
-description: Dieser Abschnitt zeigt Ihnen, wie Sie Orte mit In-App-Nachrichten verwenden.
+description: Dieser Abschnitt zeigt Ihnen, wie Sie den Places-Dienst mit In-App-Nachrichten verwenden.
 translation-type: tm+mt
-source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
+source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
 
 ---
 
 
-# In-App-Benachrichtigungen (#place-push-messaging)
+# In-App-Benachrichtigungen {#places-push-messaging}
 
-Die folgenden Informationen zeigen Ihnen, wie In-App-Nachrichten so konfiguriert werden, dass sie von Places-Ereignissen ausgelöst werden.
+Die folgenden Informationen zeigen Ihnen, wie In-App-Nachrichten konfiguriert werden, die von Ereignissen des Orts-Dienstes ausgelöst werden.
 
 >[!IMPORTANT]
 >
@@ -35,7 +35,7 @@ Bevor Sie beginnen, erfahren Sie, wie Sie eine In-App-Nachricht in Mobile Servic
 
 ## Regeln in Experience Platform Launch
 
-Sie können Startregeln erstellen, die die Daten senden, die Sie als Teil Ihrer In-App-Nachrichten-Auslöserregeln für Analytics verwenden möchten. Sie können Daten aus den Platzierungserweiterungen in Ihren Startregeln je nach Anwendungsfall entweder als Ereignisse und/oder Bedingungen verwenden.
+Sie können Erlebnisplattform-Startregeln erstellen, die die Daten senden, die Sie als Teil Ihrer In-App-Nachrichten-Auslöserregeln in Analytics verwenden möchten. Sie können Daten aus den Platzierungserweiterungen in Ihren Experience Platform Launch-Regeln entweder als Ereignisse und/oder Bedingungen je nach Anwendungsfall verwenden.
 
 * Verwenden von Positionsdaten als Auslösereignis
 
@@ -43,7 +43,7 @@ Sie können Startregeln erstellen, die die Daten senden, die Sie als Teil Ihrer 
 
 * Verwenden von Standortdaten als Bedingung für ein auslösendes Ereignis
 
-   Wenn Sie beispielsweise im Location Service ein benutzerdefiniertes Metadaten-Tag für das Wetter an verschiedenen POIs erstellt haben, können Sie diese Metadaten als Parameter für Ihre Regelbedingung verwenden. Sie können diese Bedingung zwar mit einem zuvor beschriebenen POI-Eingabeereignis verwenden, Sie können die Bedingung aber auch als Kontext für jedes Ereignis verwenden.
+   Wenn Sie beispielsweise im Orte-Dienst ein benutzerdefiniertes Metadaten-Tag für das Wetter an verschiedenen POIs erstellt haben, können Sie diese Metadaten als Parameter für Ihre Regelbedingung verwenden. Sie können diese Bedingung zwar mit einem zuvor beschriebenen POI-Eingabeereignis verwenden, Sie können die Bedingung aber auch als Kontext für jedes Ereignis verwenden.
 
 Nachdem die Regel mit den richtigen Ereignis- und Bedingungsparametern eingerichtet wurde, schließen Sie Ihre Regelkonfiguration ab, indem Sie die Aktion zum Senden von Daten an Analytics konfigurieren.
 
@@ -70,7 +70,7 @@ Hier ein Beispiel für die vollständige Regel:
 
 ## Erstellen einer In-App-Nachricht in Mobile Services
 
-Als Teil Ihrer Auslöserparameter können Sie die Zielgruppe für die Nachricht mit Daten aus dem Location Service auf eine der folgenden Arten erstellen:
+Als Teil Ihrer Auslöserparameter können Sie die Zielgruppe für die Nachricht mit Daten aus dem Orte-Dienst auf eine der folgenden Arten erstellen:
 
 * Verwenden von standortspezifischen Aktionen wie einem Einstieg oder einem Ausstieg.
 * Verwenden von POI-Metadaten, die als Kontextdaten gesendet werden, um das Ziel Ihrer Zielgruppe einzugrenzen.
@@ -81,6 +81,6 @@ Als Teil Ihrer Auslöserparameter können Sie die Zielgruppe für die Nachricht 
 
    ![Parameter auslösen](/help/assets/trigger-parameters.png)
 
-* Parameter in den Überschriften &quot;Orte&quot;auf der Seite &quot; *Auslöser und Eigenschaften* &quot;in Mobile Services funktionieren nicht mit Daten aus dem Location Service.
+* Die Parameter in den Überschriften &quot;Orte-Dienst&quot;auf der Seite &quot; *Auslöser und Eigenschaften* &quot;in Mobile Services funktionieren nicht mit den Daten des Orte-Dienstes.
 
-   Diese Parameter gelten nur für die alte Places-Datenbank, die in Mobile Services erstellt wurde.
+   Diese Parameter gelten nur für die Legacy-Datenbank für den Places-Dienst, die in Mobile Services erstellt wurde.
