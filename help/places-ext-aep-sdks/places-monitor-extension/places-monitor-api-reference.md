@@ -2,7 +2,7 @@
 title: Platzierungs-Monitor-API-Referenz
 description: Eine Liste der APIs für den Orts-Monitor.
 translation-type: tm+mt
-source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
+source-git-commit: 5a21e734c0ef56c815389a9f08b445bedaae557a
 
 ---
 
@@ -139,7 +139,7 @@ PlacesMonitor.start();
 >
 >Um mit der Überwachung beginnen zu können, muss der Standortdienst über die erforderliche Genehmigung verfügen:
 >
->* Wenn die Autorisierung für den Standortdienst nicht für die Anwendung bereitgestellt wurde, fordert der erste Aufruf der `start` API die Autorisierung zur Verwendung des für die Anwendung konfigurierten Ortsdienstes auf.
+>* Wenn die Autorisierung für den Places-Dienst nicht für die Anwendung bereitgestellt wurde, fordert der erste Aufruf der `start` API die Autorisierung zur Verwendung des Places-Dienstes wie für die Anwendung konfiguriert an.
 >* Wenn die Autorisierung bereitgestellt wurde, verfolgt der Orts-Monitor je nach Gerätefunktionen den Standort des Benutzers anhand des aktuellen Sets `ACPPlacesMonitorMode`. Der Monitor verwendet standardmäßig `ACPPlacesMonitorModeSignificantChanges`.
 
 
@@ -245,7 +245,7 @@ PlacesMonitor.updateLocation();
 
 ## Berechtigung zum App-Speicherort
 
-Sie können diese API verwenden, um den Typ der Ortsberechtigung festzulegen, für den der Benutzer zur Verwendung für Standortdienste aufgefordert und autorisiert wird.
+Sie können diese API verwenden, um den Typ der Ortsberechtigung festzulegen, für den der Benutzer aufgefordert und zur Verwendung für den Orte-Dienst berechtigt ist.
 
 ### SetLocationPermission (Android)
 
@@ -317,17 +317,17 @@ Die Autorisierungsebene kann auf einen der folgenden Werte eingestellt werden:
 
 * `ACPPlacesRequestAuthorizationLevelWhenInUse`
 
-   Fordert die Berechtigung des Benutzers zur Verwendung von Standortdiensten an, während die App verwendet wird. Die Benutzeraufforderung enthält den Text des `NSLocationWhenInUseUsageDescription` Schlüssels in der Datei &quot;Info.plist&quot;der App und das Vorhandensein dieses Schlüssels ist beim Aufruf dieser Methode erforderlich. Weitere Informationen finden Sie in der [Apple-Dokumentation zu requestWhenInUseAuthorization](https://developer.apple.com/documentation/corelocation/cllocationmanager/1620562-requestwheninuseauthorization).
+   Fordert die Berechtigung des Benutzers zur Verwendung des Places-Dienstes an, während die App verwendet wird. Die Benutzeraufforderung enthält den Text des `NSLocationWhenInUseUsageDescription` Schlüssels in der Datei &quot;Info.plist&quot;der App und das Vorhandensein dieses Schlüssels ist beim Aufruf dieser Methode erforderlich. Weitere Informationen finden Sie in der [Apple-Dokumentation zu requestWhenInUseAuthorization](https://developer.apple.com/documentation/corelocation/cllocationmanager/1620562-requestwheninuseauthorization).
 
 * `ACPPlacesRequestMonitorAuthorizationLevelAlways`
 
-   Verwenden Sie dieses Enum, um Standortdienste anzufordern, auch wenn sich die App im Hintergrund befindet. Sie müssen die Schlüssel `NSLocationAlwaysUsageDescription` und `NSLocationWhenInUseUsageDescription` Schlüssel in der Info.plist Ihrer App haben. Diese Schlüssel definieren den Text, der während der Benutzeraufforderung angezeigt wird. Weitere Informationen finden Sie in der [Apple-Dokumentation auf requestalwaysAuthorization](https://developer.apple.com/documentation/corelocation/cllocationmanager/1620551-requestalwaysauthorization).
+   Verwenden Sie dieses Enum, um den Places-Dienst anzufordern, selbst wenn sich die App im Hintergrund befindet. Sie müssen die Schlüssel `NSLocationAlwaysUsageDescription` und `NSLocationWhenInUseUsageDescription` Schlüssel in der Info.plist Ihrer App haben. Diese Schlüssel definieren den Text, der während der Benutzeraufforderung angezeigt wird. Weitere Informationen finden Sie in der [Apple-Dokumentation auf requestalwaysAuthorization](https://developer.apple.com/documentation/corelocation/cllocationmanager/1620551-requestalwaysauthorization).
 
 `ACPPlacesRequestAuthorizationLevelAlways` ist der Standardwert für die Autorisierung einer Anforderung.
 
 >[!IMPORTANT]
 >
->Die Anwendung, die die Verwendung der `ACPPlacesRequestAuthorizationLevelWhenInUse` Berechtigung autorisiert hat, kann keine Ein-/Ausstiegsereignisse für Regionen auslösen, die im Hintergrund stattfinden.
+>Die Anwendung, die die Verwendung der `ACPPlacesRequestAuthorizationLevelWhenInUse` Berechtigung autorisiert hat, löst keine Ein-/Ausstiegsereignisse in Regionen aus, die im Hintergrund stattfinden.
 
 Die folgende Syntax und der Beispielcode für diese API:
 
