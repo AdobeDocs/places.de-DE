@@ -1,15 +1,15 @@
 ---
 title: Verwenden Ihres eigenen Monitors
-description: Sie können Ihre Überwachungsdienste auch verwenden und mit den Orten integrieren, indem Sie die APIs für die Platzierungserweiterung verwenden.
+description: Sie können Ihre Überwachungsdienste auch verwenden und mit dem Places-Dienst integrieren, indem Sie die APIs für die Erweiterung des Places-Dienstes verwenden.
 translation-type: tm+mt
-source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
+source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
 
 ---
 
 
 # Verwenden Ihres eigenen Monitors {#using-your-monitor}
 
-Sie können Ihre Überwachungsdienste auch verwenden und mit den Orten integrieren, indem Sie die APIs für die Platzierungserweiterung verwenden.
+Sie können Ihre Überwachungsdienste auch verwenden und mit dem Places-Dienst integrieren, indem Sie die APIs für die Erweiterung Places verwenden.
 
 ## Registrieren von Geofencing
 
