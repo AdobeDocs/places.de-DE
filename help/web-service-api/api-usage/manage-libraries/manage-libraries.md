@@ -1,14 +1,14 @@
 ---
 title: Bibliotheken verwalten
-description: Verwalten der REST-API-Bibliotheken für Orte.
+description: Verwalten der REST-API-Bibliotheken des Places-Dienstes.
 translation-type: tm+mt
-source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
+source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
 
 ---
 
 # Übersicht über die Verwaltung von Bibliotheken {#manage-libraries}
 
-Sie können die REST-APIs für Orte verwenden, um die folgenden Aufgaben auszuführen:
+Sie können die REST-APIs des Places-Dienstes verwenden, um die folgenden Aufgaben auszuführen:
 
 * [Erstellen einer Bibliothek](/help/web-service-api/api-usage/manage-libraries/create-a-library.md)
 * [Bibliothek lesen](/help/web-service-api/api-usage/manage-libraries/read-a-library.md)
