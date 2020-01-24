@@ -1,27 +1,27 @@
 ---
-title: 'Zugriff auf den Adobe Experience Platform Location Service '
-description: Dieser Abschnitt enthält Informationen dazu, wie ein Benutzer zum Location Service und zum Experience Platform Launch hinzugefügt wird, damit der Benutzer auf den Location Service zugreifen kann.
+title: 'Zugriff auf den Places Service '
+description: In diesem Abschnitt erfahren Sie, wie Sie einen Benutzer zu "Orte-Dienst"und "Erlebnisplattformstart"hinzufügen, damit der Benutzer auf den Orte-Dienst zugreifen kann.
 translation-type: tm+mt
-source-git-commit: e5d6c7f9ad1e2c9c37c1537aadc309ee20757156
+source-git-commit: 5a21e734c0ef56c815389a9f08b445bedaae557a
 
 ---
 
-# Zugriff auf Location Service {#adding-user-launch-places}
+# Zugriff auf den Places Service {#adding-user-launch-places}
 
-Sie können auf den Plattformstandortdienst über das Schnellzugriffsmenü in der [Adobe Experience Cloud-Startseite](https://experience.adobe.com)zugreifen.
-Wenn Ihre Benutzer-ID Zugriff hat, wird das Symbol für den Standort-Dienst wie unten angegeben angezeigt:
+Sie können auf den Orte-Dienst über das Schnellzugriffsmenü in der [Adobe Experience Cloud-Startseite](https://experience.adobe.com)zugreifen.
+Wenn Ihre Benutzer-ID Zugriff hat, wird das Symbol &quot;Orte-Dienst&quot;wie unten beschrieben angezeigt:
 
 ![Schnellzugriff](/help/assets/quick-access.png)
 
-Sie können auch über das Menü &quot;Adobe Experience Platform&quot;auf den Plattformstandortdienst zugreifen:
+Sie können auch über das Menü &quot;Adobe Experience Platform&quot;auf den Places-Dienst zugreifen:
 
 ![Menü &quot;Erlebnisplattform&quot;](/help/assets/exp-platform-menu-sm.png)
 
-Wenn der Plattformstandortdienst in keinem dieser Menüs angezeigt wird, müssen Sie sich an einen Administrator in Ihrem Unternehmen wenden, um Ihre Benutzer-ID dem Orte-Core-Service in der Admin-Konsole hinzuzufügen.
+Wenn Sie den Orte-Dienst in keinem dieser Menüs sehen, wenden Sie sich an einen Administrator in Ihrem Unternehmen, um Ihre Benutzer-ID dem Orte-Core-Dienst in der Admin-Konsole hinzuzufügen.
 
-## Hinzufügen eines Benutzers zum Start des Location Service und der Experience Platform
+## Hinzufügen eines Benutzers zum Start des Places-Dienstes und der Experience Platform
 
-Damit Benutzer auf die Benutzeroberfläche[des ](https://places.adobe.com)Startdienstes zugreifen können, müssen sie als Benutzer dem Orte-Core-Dienst in der Admin-Konsole hinzugefügt werden. Damit Benutzer Zugriff auf Experience Platform Launch haben, mobile Eigenschaften konfigurieren und Orte mit dem Adobe Experience Platform SDK verwenden können, müssen sie in der Admin-Konsole zum Experience Platform Launch hinzugefügt und die folgenden Berechtigungen für Experience Platform Launch erhalten:
+Damit Benutzer auf die [Experience Platform Launch-Benutzeroberfläche](https://launch.adobe.com)zugreifen können, müssen sie als Benutzer dem Places Core Service in der Admin-Konsole hinzugefügt werden. Damit Benutzer Zugriff auf Experience Platform Launch haben, mobile Eigenschaften konfigurieren und Orte mit dem Adobe Experience Platform SDK verwenden können, müssen sie in der Admin-Konsole zum Experience Platform Launch hinzugefügt und die folgenden Berechtigungen für Experience Platform Launch erhalten:
 
 * Alle Eigenschaftsrechte:
    * Entwickeln
@@ -31,15 +31,13 @@ Damit Benutzer auf die Benutzeroberfläche[des ](https://places.adobe.com)Startd
    * Verwalten von Umgebungen
 * Berechtigung &quot;Eigenschaften verwalten&quot;unter &quot;Unternehmensrechte&quot;
 
-Wenn Sie zum ersten Mal einen Benutzer hinzufügen, führen Sie die folgenden Schritte aus, um dem Experience Platform Launch- und Location-Dienst Benutzer hinzuzufügen. Wenn Sie zuvor Benutzer hinzugefügt haben, werden möglicherweise mehrere Profile angezeigt. Wählen Sie daher das richtige Profil aus.
+Wenn Sie zum ersten Mal einen Benutzer hinzufügen, führen Sie die folgenden Schritte aus, um dem Experience Platform Launch and Places Service Benutzer hinzuzufügen. Wenn Sie zuvor Benutzer hinzugefügt haben, werden möglicherweise mehrere Profile angezeigt. Wählen Sie daher das richtige Profil aus.
 
 >[!IMPORTANT]
 >
 >Nur Organisationsadministratoren können auf die Admin-Konsole zugreifen und die Benutzer hinzufügen.
 
-### 1. Stellen Sie sicher, dass Location Service und Experience Platform Launch bereitgestellt wurden.
-
-So überprüfen Sie, ob Location Service und Experience Platform Launch bereitgestellt wurden:
+### 1. Stellen Sie sicher, dass die Bereitstellung des Orts-Dienstes und des Erlebnisplattformstarts erfolgt.
 
 1. Melden Sie sich bei Ihrer Experience Cloud-Organisation an.
 1. Klicken Sie oben rechts auf den Experience Cloud-Shell-Umschalter.
@@ -64,12 +62,10 @@ So überprüfen Sie, ob Location Service und Experience Platform Launch bereitge
 
    ![](/help/assets/places_provisioned1.png)
 
-   Wenn sie angezeigt werden, wurden Location Service und Experience Platform Launch für Ihr Unternehmen bereitgestellt. Wenn sie nicht angezeigt werden, müssen sie für Ihr Unternehmen bereitgestellt werden.
+   Wenn sie angezeigt werden, wurden für Ihr Unternehmen der Orte-Dienst und der Erlebnisplattformstart bereitgestellt. Wenn sie nicht angezeigt werden, müssen sie für Ihr Unternehmen bereitgestellt werden.
 
 
 ### 2. Einrichten des Profils und Hinzufügen der Berechtigungen
-
-So richten Sie das Profil ein und fügen die Berechtigungen hinzu:
 
 1. Richten Sie ein Erlebnisplattformstartprofil ein, das Benutzern, die dem Profil hinzugefügt wurden, den Einsatz von Experience Platform Launch und seinen mobilen Eigenschaften mit dem Experience Platform SDK ermöglicht.
 
@@ -102,17 +98,17 @@ So richten Sie das Profil ein und fügen die Berechtigungen hinzu:
 
 >[!IMPORTANT]
 >
->Für den Location Service gibt es ein Standardprofil, Sie müssen jedoch keine Berechtigungen hinzufügen.
+>Für den Orte-Dienst gibt es ein Standardprofil, Sie müssen jedoch keine Berechtigungen hinzufügen.
 
 Sie haben dem erstellten Profil erfolgreich Berechtigungen hinzugefügt.
 
-### 3. Benutzer oder Entwickler zu den Profilen &quot;Location Service&quot;und &quot;Experience Platform Launch&quot;hinzufügen
+### 3. Benutzer oder Entwickler zu den Profilen &quot;Platzierungsdienst&quot;und &quot;Experience Platform Launch&quot;hinzufügen
 
-Sie können einen Benutzer und/oder einen Entwickler zu Ihren Profilen &quot;Location Service&quot;und &quot;Experience Platform Launch&quot;hinzufügen.
+Sie können einen Benutzer und/oder einen Entwickler zu den Profilen &quot;Orts-Service&quot;und &quot;Experience-Plattform-Start&quot;hinzufügen.
 
 ### Einen Benutzer hinzufügen
 
-So fügen Sie einen Benutzer zu Ihren Profilen &quot;Location Service&quot;und &quot;Experience Platform Launch&quot;hinzu:
+So fügen Sie Ihren Profilen &quot;Platzierungsdienst&quot;und &quot;Experience Platform Launch&quot;einen Benutzer hinzu:
 
 1. Fügen Sie dem Erlebnis-Plattform-Startprofil einen Benutzer hinzu.
 
@@ -140,7 +136,7 @@ So fügen Sie einen Benutzer zu Ihren Profilen &quot;Location Service&quot;und &
 
    >[!TIP]
    >
-   >Derzeit haben alle Benutzer des Location Service dieselben Berechtigungen, sodass Sie die Berechtigungen nicht bearbeiten müssen.
+   >Derzeit haben alle Benutzer des Places-Dienstes dieselben Berechtigungen, sodass Sie die Berechtigungen nicht bearbeiten müssen.
 
    a.Überprüfen Sie auf der **[!UICONTROL Places Core Services]**Karte Folgendes:
 
@@ -178,8 +174,8 @@ So fügen Sie einen Entwickler hinzu:
    * Wenn Sie einen neuen Benutzer hinzufügen, klicken Sie auf **[!UICONTROL New user]**und geben Sie den Vor- und Nachnamen des Benutzers ein.
    * Wenn Sie einen vorhandenen Benutzer hinzufügen, klicken Sie auf den angezeigten Benutzernamen.
 
-1. Wählen Sie in der **[!UICONTROL Please select a profile for this product]**Dropdownliste das Profil Location Service aus.
+1. Wählen Sie in der **[!UICONTROL Please select a profile for this product]**Dropdownliste das Profil Orte-Dienst aus.
 
 1. Klicken Sie auf **Speichern**.
 
-Benutzer erhalten eine E-Mail, in der sie darauf hingewiesen werden, dass sie Zugriff auf Experience Platform Launch haben. Sie können sich bei [Experience Platform Launch](https://launch.adobe.com) oder den [Places](https://places.adobe.com)-Benutzeroberflächen für diese Organisation anmelden. Wenn Sie Schritt 4 im Prozess **Entwickler hinzufügen** abgeschlossen haben, kann sich der Benutzer auch bei der [Adobe I/O-Konsole](https://console.adobe.io) anmelden, um eine Places-Integration zu erstellen und die Places-REST-API zu verwenden.
+Benutzer erhalten eine E-Mail, in der sie darauf hingewiesen werden, dass sie Zugriff auf Experience Platform Launch haben. They can can log in to the [Experience Platform Launch](https://launch.adobe.com) or the [Places Service](https://places.adobe.com) UIs for this organization. Wenn Sie Schritt 4 im Prozess **Entwickler hinzufügen** abgeschlossen haben, kann sich der Benutzer auch bei der [Adobe I/O-Konsole](https://console.adobe.io) anmelden, um eine Places-Integration zu erstellen und die Places-REST-API zu verwenden.
