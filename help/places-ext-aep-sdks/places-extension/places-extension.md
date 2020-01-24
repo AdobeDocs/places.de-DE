@@ -2,7 +2,7 @@
 title: Places-Erweiterung
 description: Mit der Erweiterung "Orte"können Sie je nach Standort Ihrer Benutzer handeln.
 translation-type: tm+mt
-source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
+source-git-commit: 5a21e734c0ef56c815389a9f08b445bedaae557a
 
 ---
 
@@ -22,7 +22,7 @@ Mit der Erweiterung &quot;Orte&quot;können Sie je nach Standort Ihrer Benutzer 
 
 1. Schließen Sie den Veröffentlichungsprozess ab, um die SDK-Konfiguration zu aktualisieren.
 
-   Weitere Informationen zur Veröffentlichung in Experience Platform Launch finden Sie unter [Veröffentlichen](https://docs.adobelaunch.com/launch-reference/publishing).
+   Weitere Informationen zur Veröffentlichung in Experience Platform Launch finden Sie unter [Veröffentlichen](https://docs.adobe.com/content/help/en/launch/using/reference/publish/overview.html).
 
 ### Configure the Places extension {#configure-places-extension}
 
@@ -61,7 +61,7 @@ So fügen Sie Ihrer App die Platzierungserweiterung mit Objective-C oder Swift h
    pod 'ACPCore', '~> 2.0'    # minimum Core version for Places is 2.0.3
    ```
 
-   Wenn Sie keine Cocoapods verwenden, können Sie die Bibliotheken für den Mobile Core und Orte auch manuell auf unserer Seite [für](https://github.com/Adobe-Marketing-Cloud/acp-sdks/releases/) Veröffentlichungen auf Github einbinden.
+   Wenn Sie keine Cocoapods verwenden, können Sie auch die Bibliotheken für den Mobile Core und die Orte manuell auf unserer Seite [für](https://github.com/Adobe-Marketing-Cloud/acp-sdks/releases/) Veröffentlichungen auf Github einbinden.
 
 1. Aktualisieren Sie Ihre Cocoapods:
 
@@ -85,13 +85,13 @@ So fügen Sie Ihrer App die Platzierungserweiterung mit Objective-C oder Swift h
    import ACPPlaces
    ```
 
-### Registrieren von Orten mit Mobile Core {#register-places-mobile-core}
+### Registrieren der Platzierungserweiterung mit Mobile Core {#register-places-mobile-core}
 
-Sie müssen Orte mit Mobile Core in Android und iOS registrieren.
+Sie müssen die Platzierungserweiterung mit Mobile Core unter Android und iOS registrieren.
 
 #### Android
 
-Registrieren Sie in der `OnCreate` Methode Ihrer App die Location Services-Erweiterungen:
+Registrieren Sie in der `OnCreate` Methode Ihrer App die Plates-Erweiterungen:
 
 ```java
 public class PlacesTestApp extends Application {
@@ -137,10 +137,10 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 
 ## Konfigurationsschlüssel
 
-Um die SDK-Konfiguration zur Laufzeit programmgesteuert zu aktualisieren, ändern Sie die Speicherplatzkonfigurationswerte mit den folgenden Informationen. Weitere Informationen finden Sie unter [Configuration API Reference](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/mobile-core/configuration/configuration-api-reference).
+Um die SDK-Konfiguration zur Laufzeit programmgesteuert zu aktualisieren, ändern Sie die Konfigurationswerte der Plates-Erweiterung mithilfe der folgenden Informationen. Weitere Informationen finden Sie unter [Configuration API Reference](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/mobile-core/configuration/configuration-api-reference).
 
 | Schlüssel | Erforderlich | Beschreibung |
 | :--- | :--- | :--- |
-| `places.libraries` | Ja | Die Platzierung von Bibliotheken für die mobile App. Er gibt die Bibliotheks-ID und den Namen der Bibliothek an, die von der mobilen App unterstützt werden. |
-| `places.endpoint` | Ja | Der standardmäßige Experience Platform Location Query Service-Endpunkt, mit dem Informationen zu Bibliotheken und POIs abgerufen werden. |
+| `places.libraries` | Ja | Die Speichererweiterungsbibliotheken für die mobile App. Er gibt die Bibliotheks-ID und den Namen der Bibliothek an, die von der mobilen App unterstützt werden. |
+| `places.endpoint` | Ja | Der standardmäßige Endpunkt &quot;Orts-Abfrage-Dienst&quot;, mit dem Informationen zu Bibliotheken und POIs abgerufen werden. |
 
