@@ -2,7 +2,7 @@
 title: Orte-Dienst
 description: 'Der Ortsdienst ist ein wichtiger Kontext für das Verständnis der Interaktion von Mobilbenutzern. In diesem Kontext können Entwickler mobiler Apps den App-Entwurf verbessern und ihn zu einem personalisierteren und ansprechenderen Erlebnis machen. '
 translation-type: tm+mt
-source-git-commit: 3b78f68d8c5eb79ccf842b629510cc60f4ac52d2
+source-git-commit: 0341e1c818bf61bee01e02c91a67f184c7778c0d
 
 ---
 
@@ -11,7 +11,7 @@ source-git-commit: 3b78f68d8c5eb79ccf842b629510cc60f4ac52d2
 
 ![&quot;Places Service&quot;](/help/assets/LocationHeader.png)
 
-Der Standort ist ein wichtiger Kontext für das Verständnis und die Interaktion mit mobilen Benutzern. In diesem Kontext können Entwickler mobiler Apps den App-Entwurf verbessern und ihn zu einem personalisierteren und ansprechenderen Erlebnis machen.
+Der Standort ist ein wichtiger Kontext, um Benutzer von Mobilgeräten zu verstehen und mit ihnen zu interagieren. In diesem Kontext können Entwickler mobiler Apps den App-Entwurf verbessern und ihn zu einem personalisierteren und ansprechenderen Erlebnis machen.
 
 Der Orte-Dienst, früher als Adobe Experience Platform Location Service bekannt, ist ein Geo-Location-Dienst, mit dem mobile Apps mit Standortbewusstsein den Standortkontext verstehen können, indem sie leistungsstarke und einfach zu bedienende SDK-Schnittstellen sowie eine flexible Datenbank mit Interessenbereichen (POIs) verwenden.
 
