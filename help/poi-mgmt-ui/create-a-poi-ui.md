@@ -1,8 +1,8 @@
 ---
 title: POI erstellen
-description: Erstellen Sie einen POI mithilfe der Benutzeroberfläche "Orte".
+description: Erstellen Sie einen POI mithilfe der Benutzeroberfläche des Orte-Dienstes.
 translation-type: tm+mt
-source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
+source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
 
 ---
 
@@ -11,7 +11,7 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 Ein POI (Point of Interest) ist ein Ort oder ein Punkt auf einer Karte, der für Ihr Unternehmen oder Ihre Organisation von Bedeutung ist. Es kann Orte wie Cafés, Restaurants, Einzelhandelsstandorte, Stadien usw. umfassen. Unternehmen können Interessensgebiete definieren, um das mobile Erlebnis eines Benutzers zu personalisieren, wenn er für einen bestimmten Zielpunkt in eine geo-fenierte Region gelangt ist. Neben personalisierten Erlebnissen können Unternehmen auch Interessensgebiete erstellen, die ihnen helfen, Traffic-Muster an Standorten zu analysieren und besser zu verstehen. Eine große Handelskette kann POIs für alle ihre Speicherorte erstellen, um Analysen zu Benutzern zu erhalten, die über ihre mobile Anwendung verfügen UND einen Speicherort besuchen.
 
-1. Melden Sie sich mit Ihrer Adobe ID beim Location Service an.
+1. Melden Sie sich mit Ihrer Adobe-ID bei der Benutzeroberfläche des Places-Dienstes an.
 1. Klicken Sie oben rechts auf **[!UICONTROL New]**.
 1. Geben Sie einen Namen für Ihren POI ein.
 1. Geben Sie einen Radius ein oder wählen Sie ihn aus.
