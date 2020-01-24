@@ -2,7 +2,7 @@
 title: Definieren von Datenelementen
 description: Dieser Abschnitt enthält Informationen zum Erstellen, Verwenden und Veröffentlichen von Datenelementen in Experience Platform Launch for Places.
 translation-type: tm+mt
-source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
+source-git-commit: c22efc36f2eac6b20fc555d998c3988d8c31169e
 
 ---
 
@@ -33,7 +33,7 @@ Jeder POI enthält die folgenden Datenreferenzen:
 * **[!UICONTROL Latitude]**: Breitengrad des POI
 * **[!UICONTROL Longitude]**: Längengrad des POI
 * **[!UICONTROL Metadata]**: benutzerdefinierte Metadaten des POI
-* **[!UICONTROL Name]**: Region POI
+* **[!UICONTROL Name]**: Name des POI
 * **[!UICONTROL Radius]**: Radius der POI
 * **[!UICONTROL Region ID]**: ID des POI
 * **[!UICONTROL Region/State]**: Region, Provinz oder Bundesstaat des POI
