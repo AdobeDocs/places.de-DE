@@ -1,15 +1,15 @@
 ---
-title: Standortdienst mit Adobe Analytics verwenden
-description: Dieser Abschnitt enthält Informationen zur Verwendung des Location Service mit Adobe Analytics.
+title: Orte-Dienst mit Adobe Analytics verwenden
+description: In diesem Abschnitt finden Sie Informationen zur Verwendung des Places-Dienstes mit Adobe Analytics.
 translation-type: tm+mt
-source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
+source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
 
 ---
 
 
-# Standortdienst mit Adobe Analytics verwenden {#places-with-aa}
+# Orte-Dienst mit Adobe Analytics verwenden {#places-with-aa}
 
-Mithilfe des Location Service mit Adobe Analytics können Sie die folgenden Aufgaben ausführen:
+Mithilfe des Orts-Dienstes in Adobe Analytics können Sie die folgenden Aufgaben ausführen:
 
 * [POI-Einstiegs- und -Ausstiegsdaten über Analytics senden](/help/use-places-with-other-solutions/places-adobe-analytics/use-places-adobe-analytics.md)
 * [Hinzufügen von Ortskontext zu Analytics-Anforderungen](/help/use-places-with-other-solutions/places-adobe-analytics/run-reports-aa-places-data.md)
