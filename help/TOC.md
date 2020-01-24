@@ -1,21 +1,21 @@
 ---
-product: adobe experience platform
+product: Places Service, powered by Adobe Experience Platform
 audience: end-user
-user-guide-title: Adobe Experience Platform Location Service
+user-guide-title: Places Service, powered by Adobe Experience Platform
 translation-type: tm+mt
-source-git-commit: c88c8f8e7e3bb9ea3af85948e682e75e894ad782
+source-git-commit: c22efc36f2eac6b20fc555d998c3988d8c31169e
 
 ---
 
 
-# Hilfe zu Adobe Experience Platform Location Service {#using}
+# Platzierungsdienst, powered by Adobe Experience Platform Help {#using}
 
-+ [Übersicht über den Experience Platform Location Service](home.md)
++ [Platzierungsdienst, powered by Adobe Experience Platform - Übersicht](home.md)
 + [Versionshinweise](release-notes.md)
 + [Erste Schritte](getting-started.md)
-+ [Zugriff auf Location Service](places-gain-access.md)
-+ Point-of-Interest-Verwaltungsoberfläche {#poi-mgmt-ui}
-   + [Übersicht über die Point-of-Interest-Verwaltungsoberfläche](poi-mgmt-ui/poi-mgmt-ui-overview.md)
++ [Zugriff auf den Places Service](places-gain-access.md)
++ Platzierungsdienst-Benutzeroberfläche {#poi-mgmt-ui}
+   + [Übersicht über die Benutzeroberfläche des Platzierungsdienstes](poi-mgmt-ui/poi-mgmt-ui-overview.md)
    + [POI erstellen](poi-mgmt-ui/create-a-poi-ui.md)
    + [Zuvor erstellte POIs verwalten](poi-mgmt-ui/managing-pois-in-the-places-ui.md)
    + [Strategien zur Verwendung von Metadaten mit POIs](poi-mgmt-ui/metadata-with-pois.md)
@@ -60,15 +60,15 @@ source-git-commit: c88c8f8e7e3bb9ea3af85948e682e75e894ad782
       + [Platzierungsmonitor-Erweiterung](places-ext-aep-sdks/places-monitor-extension/places-monitor-extension.md)
       + [Verwenden der Erweiterung &quot;Orts Monitor&quot;](places-ext-aep-sdks/places-monitor-extension/using-places-monitor-extension.md)
       + [Platzierungs-Monitor-API-Referenz](places-ext-aep-sdks/places-monitor-extension/places-monitor-api-reference.md)
-+ [Verwenden Sie den Location Service mit Ihrer eigenen Überwachungslösung](using-your-own-monitor.md)
-+ [Standortdienst ohne aktive Regionenüberwachung verwenden](use-places-without-active-monitoring.md)
-+ Verwenden des Location Service als Teil des Experience Platform Launch-Arbeitsablaufs {#use-places-launch-workflow}
-   + [Verwenden des Location Service als Teil des Experience Platform Launch-Arbeitsablaufs](use-places-launch-workflow/places-launch-workflow.md)
++ [Verwenden Sie den Orte-Dienst mit Ihrer eigenen Überwachungslösung](using-your-own-monitor.md)
++ [Orte-Dienst ohne aktive Regionsüberwachung verwenden](use-places-without-active-monitoring.md)
++ Verwenden des Orte-Dienstes als Teil des Experience Platform Launch-Arbeitsablaufs {#use-places-launch-workflow}
+   + [Verwenden des Orte-Dienstes als Teil des Experience Platform Launch-Arbeitsablaufs](use-places-launch-workflow/places-launch-workflow.md)
    + [Definieren von Datenelementen](use-places-launch-workflow/define-data-elements.md)
    + [Einstiegs- und Ausstiegsregeln erstellen](use-places-launch-workflow/create-rule-places-property.md)
-+ Verwenden des Location Service mit anderen Adobe-Lösungen {#use-places-with-other-solutions}
++ Orte-Dienst mit anderen Adobe-Lösungen verwenden {#use-places-with-other-solutions}
    + Adobe Analytics {#places-adobe-analytics}
-      + [Standortdienst mit Adobe Analytics verwenden](use-places-with-other-solutions/places-adobe-analytics/use-places-analytics-overview.md)
+      + [Orte-Dienst mit Adobe Analytics verwenden](use-places-with-other-solutions/places-adobe-analytics/use-places-analytics-overview.md)
       + [POI-Einstiegs- und -Ausstiegsdaten an Analytics senden](use-places-with-other-solutions/places-adobe-analytics/use-places-adobe-analytics.md)
       + [Hinzufügen von Ortskontext zu Analytics-Anforderungen](use-places-with-other-solutions/places-adobe-analytics/run-reports-aa-places-data.md)
       + [Bericht zu Standortdaten in Analytics Workspace](use-places-with-other-solutions/places-adobe-analytics/places-in-workspace.md)
@@ -77,11 +77,11 @@ source-git-commit: c88c8f8e7e3bb9ea3af85948e682e75e894ad782
       + [Push-Benachrichtigungen](use-places-with-other-solutions/places-mobile-svcs-for-messaging/mobile-svcs-messaging-push.md)
       + [In-App-Benachrichtigungen](use-places-with-other-solutions/places-mobile-svcs-for-messaging/mobile-svcs-messaging-inapp.md)
    + Adobe Campaign Standard {#places-acs}
-      + [Standortdienst mit Adobe Campaign Standard verwenden](use-places-with-other-solutions/places-acs/places-acs-overview.md)
+      + [Platzierungsdienst mit Adobe Campaign Standard verwenden](use-places-with-other-solutions/places-acs/places-acs-overview.md)
       + [Push-Benachrichtigungen](use-places-with-other-solutions/places-acs/places-acs-push-notifications.md)
       + [In-App-Nachrichten](use-places-with-other-solutions/places-acs/places-acs-in-app-messages.md)
    + Adobe Target {#places-target}
-      + [Standortdienst mit Adobe Target verwenden](use-places-with-other-solutions/places-target/places-target.md)
+      + [Orte-Dienst mit Adobe Target verwenden](use-places-with-other-solutions/places-target/places-target.md)
 + Testing and validation {#places-testing-validation}
-   + [Location Service testen und überprüfen](places-testing-validation/test-validate-places.md)
+   + [Praktikumsdienst testen und validieren](places-testing-validation/test-validate-places.md)
 + [Häufig gestellte Fragen](places-faqs.md)
