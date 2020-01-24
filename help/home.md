@@ -1,21 +1,21 @@
 ---
-title: Adobe Experience Platform Location Service
-description: 'Der Location Service ist ein wichtiger Kontext, um die Interaktion der mobilen Benutzer zu verstehen. In diesem Kontext können Entwickler mobiler Apps den App-Entwurf verbessern und ihn zu einem personalisierteren und ansprechenderen Erlebnis machen. '
+title: Orte-Dienst
+description: 'Der Ortsdienst ist ein wichtiger Kontext für das Verständnis der Interaktion von Mobilbenutzern. In diesem Kontext können Entwickler mobiler Apps den App-Entwurf verbessern und ihn zu einem personalisierteren und ansprechenderen Erlebnis machen. '
 translation-type: tm+mt
-source-git-commit: c20e720d23121970bb2fa1c63a2fd1e81c84b977
+source-git-commit: 3b78f68d8c5eb79ccf842b629510cc60f4ac52d2
 
 ---
 
 
-# Übersicht über den Experience Platform Location Service {#home}
+# Orte-Dienst {#home}
 
-![&quot;Adobe Experience Platform Location Service&quot;](/help/assets/LocationHeader.png)
+![&quot;Places Service&quot;](/help/assets/LocationHeader.png)
 
 Der Standort ist ein wichtiger Kontext für das Verständnis und die Interaktion mit mobilen Benutzern. In diesem Kontext können Entwickler mobiler Apps den App-Entwurf verbessern und ihn zu einem personalisierteren und ansprechenderen Erlebnis machen.
 
-Adobe Experience Platform Location Service (Location Service) ist ein Geo-Location-Service, mit dem mobile Apps mit Standortbewusstsein den Standortkontext verstehen können. Dazu werden umfangreiche und benutzerfreundliche SDK-Schnittstellen sowie eine flexible Datenbank mit POIs (Points of Interest) verwendet.
+Der Orte-Dienst, früher als Adobe Experience Platform Location Service bekannt, ist ein Geo-Location-Dienst, mit dem mobile Apps mit Standortbewusstsein den Standortkontext verstehen können, indem sie leistungsstarke und einfach zu bedienende SDK-Schnittstellen sowie eine flexible Datenbank mit Interessenbereichen (POIs) verwenden.
 
-Mit dem Location Service können Sie Folgendes erreichen:
+Mit dem Orts-Dienst können Sie Folgendes erreichen:
 
 * Erstellen und verwalten Sie eine Datenbank mit POIs, die mit anderen Adobe Experience Cloud-Lösungen verwendet werden können.
 * Fügen Sie den POIs benutzerspezifische Metadaten hinzu, um sie durch Angabe zusätzlicher Attribute reicher und aussagekräftiger zu gestalten.
@@ -32,9 +32,9 @@ Die folgenden Möglichkeiten stehen Ihnen zur Verwendung von Orten zur Verfügun
 * Segmentieren Sie eine Zielgruppe basierend auf dem Offline-Verhalten, indem Sie Zielgruppenprofile mit dem Standortkontext verwenden.
 * Targeting eines Benutzers mit einem Erlebnis im Geschäft, wenn relevant.
 
-## Komponenten des Location Service
+## Platziert Dienstkomponenten
 
-Der Location Service umfasst die folgenden Komponenten:
+Der Orte-Dienst umfasst die folgenden Komponenten:
 
 * **Webdienst**
 
