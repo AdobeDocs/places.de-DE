@@ -1,16 +1,16 @@
 ---
-product: Places Service, powered by Adobe Experience Platform
+product: Places Service
 audience: end-user
-user-guide-title: Places Service, powered by Adobe Experience Platform
+user-guide-title: Places Service
 translation-type: tm+mt
-source-git-commit: c22efc36f2eac6b20fc555d998c3988d8c31169e
+source-git-commit: b0b48dcc7179e603ae403449a0f7c5441c987767
 
 ---
 
 
-# Platzierungsdienst, powered by Adobe Experience Platform Help {#using}
+# Orte-Dienst {#using}
 
-+ [Platzierungsdienst, powered by Adobe Experience Platform - Übersicht](home.md)
++ [Übersicht über den Places Service](home.md)
 + [Versionshinweise](release-notes.md)
 + [Erste Schritte](getting-started.md)
 + [Zugriff auf den Places Service](places-gain-access.md)
