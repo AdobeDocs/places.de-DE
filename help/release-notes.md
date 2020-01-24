@@ -1,8 +1,8 @@
 ---
 title: Versionshinweise
-description: Versionshinweise für den Adobe Experience Platform Location Service.
+description: Versionshinweise für den Places-Dienst.
 translation-type: tm+mt
-source-git-commit: 585bcde256c79b9178a04ff66aa04c92f093c432
+source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
 
 ---
 
@@ -15,7 +15,7 @@ source-git-commit: 585bcde256c79b9178a04ff66aa04c92f093c432
 
    * **Android**
 
-      * Es wurde eine neue API hinzugefügt, `setAuthorizationStatus`um den Status der Geräteautorisierung für Standortdienste festzulegen. Der Wert wird gespeichert und im Status &quot;Orte freigegeben&quot;verwendet.
+      * Es wurde eine neue API hinzugefügt, `setAuthorizationStatus`um den Status der Geräteautorisierung für Places Services festzulegen. Der Wert wird gespeichert und im Status &quot;Orte freigegeben&quot;verwendet.
 
 
 ## 3. Dezember 2019
@@ -24,7 +24,7 @@ source-git-commit: 585bcde256c79b9178a04ff66aa04c92f093c432
 
    * **iOS**
 
-      * Es wurde eine neue API hinzugefügt, `setAuthorizationStatus`um den Status der Geräteautorisierung für Standortdienste festzulegen. Der Wert wird gespeichert und im Status &quot;Orte freigegeben&quot;verwendet.
+      * Es wurde eine neue API hinzugefügt, `setAuthorizationStatus`um den Status der Geräteautorisierung für Places Services festzulegen. Der Wert wird gespeichert und im Status &quot;Orte freigegeben&quot;verwendet.
 
 ## 22. November 2019
 
@@ -211,13 +211,13 @@ Der Orts-Monitor verwaltet die Positionierungs-APIs auf Betriebssystemebene und 
 
 ### Beta-Version
 
-Dies ist die erste Version von Places, einem Satz von Tools, mit denen Kunden die Erlebnisse ihrer Benutzer mit echten Standortdaten bereichern können. In der ersten Version besteht unser wichtigster Verwendungsfall darin, mobilen Apps zu ermöglichen, benutzerdefinierte Standortdaten abzurufen und über den Adobe Experience Platform Launch auf diese Daten zu reagieren.
+Dies ist die erste Version des Places Service, eine Reihe von Tools, mit denen Kunden die Erlebnisse ihrer Benutzer mit echten Standortdaten bereichern können. In der ersten Version besteht unser wichtigster Verwendungsfall darin, mobilen Apps zu ermöglichen, benutzerdefinierte Standortdaten abzurufen und über den Adobe Experience Platform Launch auf diese Daten zu reagieren.
 
 ### Wichtigste Funktionen
 
 Die wichtigsten Funktionen in dieser Version:
 
-#### Benutzeroberfläche des Location Service
+#### Platzierungsdienst-Benutzeroberfläche
 
 Wir haben eine Verwaltungs-Benutzeroberfläche veröffentlicht, in der Sie Ihre POIs (Points of Interest) anzeigen und verwalten können. Sie können auch Ihre POIs in Bibliotheken organisieren. Zusätzlich zu Standard-Metadaten wie Stadt, Bundesland und Kategorie unterstützen wir auch die Möglichkeit, Ihren POIs benutzerdefinierte Metadaten hinzuzufügen.
 
@@ -226,7 +226,7 @@ Wir haben eine Verwaltungs-Benutzeroberfläche veröffentlicht, in der Sie Ihre 
 
 #### Platzierungserweiterung
 
-Mit der Platzierungserweiterung können Sie Ihre Orte-Bibliotheken zu Ihrer mobilen App hinzufügen und deren POIs bearbeiten. Mit dem Rule Builder in Experience Platform Launch können Sie Aktionen auslösen, die ausgelöst werden, wenn Benutzer POIs eingeben und beenden.
+Mit der Platzierungserweiterung können Sie Ihre Orte-Dienst-Bibliotheken zu Ihrer mobilen App hinzufügen und deren POIs bearbeiten. Mit dem Rule Builder in Experience Platform Launch können Sie Aktionen auslösen, die ausgelöst werden, wenn Benutzer POIs eingeben und beenden.
 
 In der Erweiterung Orte:
 
@@ -252,4 +252,4 @@ Weitere Informationen zu den Places-APIs finden Sie unter [Webdienst-API](/help/
 
 #### Analytics  Integration
 
-Die Analytics-Erweiterung wird aktualisiert, um allen ausgehenden Analytics-Aufrufen automatisch Kontextdaten zum Standort aus Ihrer Places-Datenbank hinzuzufügen, wenn sich ein Benutzer innerhalb eines POI (Passive-Aufrufe) befindet. Mit diesem Update können auch Regelerstellungen Analytics-Verfolgungsaufrufe direkt beim POI-Einstieg oder -Ausstieg auslösen (Aktive Aufrufe).
+Die Analytics-Erweiterung wird aktualisiert, um allen ausgehenden Analytics-Aufrufen automatisch Kontextdaten zum Standort aus Ihrer Datenbank für den Places-Dienst hinzuzufügen, wenn sich ein Benutzer in einem POI befindet (Passiv-Aufrufe). Mit diesem Update können auch Regelerstellungen Analytics-Verfolgungsaufrufe direkt beim POI-Einstieg oder -Ausstieg auslösen (Aktive Aufrufe).
