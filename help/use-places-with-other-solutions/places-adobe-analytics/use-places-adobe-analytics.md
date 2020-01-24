@@ -2,7 +2,7 @@
 title: POI-Einstiegs- und -Ausstiegsdaten an Analytics senden
 description: Dieser Abschnitt enthält Informationen zum Senden von POI-Einstiegs- und -Ausstiegsdaten an Analytics.
 translation-type: tm+mt
-source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
+source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
 
 ---
 
@@ -12,9 +12,9 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 >[!IMPORTANT]
 >
->In diesem Abschnitt wird davon ausgegangen, dass Sie Places in Ihrer Anwendung implementiert haben. Weitere Informationen zur Implementierung von Places finden Sie unter [Platzierungserweiterungen](/help/places-ext-aep-sdks/places-extension/places-extension.md).
+>In diesem Abschnitt wird davon ausgegangen, dass Sie über den Places-Dienst in Ihrer Anwendung verfügen. Weitere Informationen zum Implementieren des Places-Dienstes finden Sie unter [Platzierungen von Erweiterungen](/help/places-ext-aep-sdks/places-extension/places-extension.md).
 
-Nachdem Orte die Ein- und Ausstiegsereignisse gesendet haben, können Sie in Experience Platform Launch Regeln erstellen, um Ortsdaten an Adobe Analytics zu senden. Um diesen Regeltyp zu erstellen, wählen Sie Ihre Eigenschaft in Start und führen Sie die folgenden Schritte aus:
+Nachdem der Orte-Dienst die Ein- und Ausstiegsereignisse gesendet hat, können Sie in Experience Platform Launch Regeln erstellen, um Daten des Orts-Dienstes an Adobe Analytics zu senden. Um diesen Regeltyp zu erstellen, wählen Sie Ihre Eigenschaft in Start und führen Sie die folgenden Schritte aus:
 
 ## 1. Regel erstellen
 
@@ -33,7 +33,7 @@ Nachdem Orte die Ein- und Ausstiegsereignisse gesendet haben, können Sie in Exp
 
 1. In the **[!UICONTROL Events]**section, click**[!UICONTROL Add]**.
 
-1. Wählen Sie aus der **[!UICONTROL Extension]**Dropdownliste**[!UICONTROL Places]**.
+1. Wählen Sie aus der **[!UICONTROL Extension]**Dropdownliste**[!UICONTROL Places Service]**.
 
 1. Wählen Sie aus der **[!UICONTROL Event Type]**Dropdownliste**[!UICONTROL Enter POI]**.
 
@@ -52,7 +52,7 @@ In diesem Beispiel wird eine Bedingung erstellt, die bewirkt, dass die Regel nur
 
 1. Klicken Sie unter dem **[!UICONTROL Conditions]**Abschnitt auf**[!UICONTROL Add]**.
 
-1. Wählen Sie aus der **[!UICONTROL Extension]**Dropdownliste**[!UICONTROL Places]**.
+1. Wählen Sie aus der **[!UICONTROL Extension]**Dropdownliste**[!UICONTROL Places Service]**.
 
 1. Wählen Sie aus der **[!UICONTROL Condition Type]**Dropdownliste**[!UICONTROL Name]**.
 
