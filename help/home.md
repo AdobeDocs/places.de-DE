@@ -2,14 +2,14 @@
 title: Orte-Dienst
 description: 'Der Ortsdienst ist ein wichtiger Kontext für das Verständnis der Interaktion von Mobilbenutzern. In diesem Kontext können Entwickler mobiler Apps den App-Entwurf verbessern und ihn zu einem personalisierteren und ansprechenderen Erlebnis machen. '
 translation-type: tm+mt
-source-git-commit: 0341e1c818bf61bee01e02c91a67f184c7778c0d
+source-git-commit: 05b4d29aa7925f7a43e70c644e3cb88045cbe446
 
 ---
 
 
 # Orte-Dienst {#home}
 
-![&quot;Places Service&quot;](/help/assets/LocationHeader.png)
+![&quot;Places Service&quot;](/help/assets/places-service-header.png)
 
 Der Standort ist ein wichtiger Kontext, um Benutzer von Mobilgeräten zu verstehen und mit ihnen zu interagieren. In diesem Kontext können Entwickler mobiler Apps den App-Entwurf verbessern und ihn zu einem personalisierteren und ansprechenderen Erlebnis machen.
 
