@@ -2,12 +2,21 @@
 title: Versionshinweise
 description: Versionshinweise für den Places-Dienst.
 translation-type: tm+mt
-source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
+source-git-commit: 04644763a40898432c4b821ca24366c19dda0437
 
 ---
 
 
 # Versionshinweise {#release-notes}
+
+## 27. Januar 2020
+
+* **PlacesMonitor 2.2.0**
+
+   * **Android**
+
+      * Rufen Sie die neue Orte-API auf, um den Status der Standortautorisierung zu erfassen, wenn die App gestartet wird und sich die Autorisierung ändert, während die App ausgeführt wird.
+      * setRequestLocationPermission-API und nicht mehr unterstützte setLocationPermission-API hinzugefügt.
 
 ## 9. Januar 2020
 
@@ -17,6 +26,13 @@ source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
 
       * Es wurde eine neue API hinzugefügt, `setAuthorizationStatus`um den Status der Geräteautorisierung für Places Services festzulegen. Der Wert wird gespeichert und im Status &quot;Orte freigegeben&quot;verwendet.
 
+## 4. Dezember 2019
+
+* **PlacesMonitor 2.1.2**
+
+   * **iOS**
+
+      * Rufen Sie die Places-API auf, um CLAuthorizationStatus vom Gerät zu erfassen, wenn es sich ändert.
 
 ## 3. Dezember 2019
 
@@ -25,6 +41,14 @@ source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
    * **iOS**
 
       * Es wurde eine neue API hinzugefügt, `setAuthorizationStatus`um den Status der Geräteautorisierung für Places Services festzulegen. Der Wert wird gespeichert und im Status &quot;Orte freigegeben&quot;verwendet.
+
+## 25. November 2019
+
+* **PlacesMonitor 2.1.1**
+
+   * **iOS**
+
+      * Es wurden Importanweisungen für Cocoapods-Projekte mit der Option für mehrere Pod-Projekte behoben.
 
 ## 22. November 2019
 
