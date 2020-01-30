@@ -2,7 +2,7 @@
 title: Versionshinweise
 description: Versionshinweise für den Places-Dienst.
 translation-type: tm+mt
-source-git-commit: 04644763a40898432c4b821ca24366c19dda0437
+source-git-commit: 4038972cc56c144c0e7d702d0f80c7f76f275aa4
 
 ---
 
@@ -170,7 +170,7 @@ Die folgenden Aktualisierungen wurden in dieser Version vorgenommen:
 * Es wurde ein Problem behoben, das nach einem ersten Start manchmal dazu führte, dass Places-Ereignisse aufgrund falscher Netzwerkbedingungen verloren gingen.
 * Es wurde ein Problem behoben, bei dem bei der Verarbeitung von POI-Einstiegsereignissen in kurzer Folge der Token-Austausch über die Regelmaschine manchmal auf den falschen POI verweist.
 
-## 30. Mai 2019 (Orte)
+## 30. Mai 2019
 
 **Android Places Monitor 1.0.1**
 
@@ -185,7 +185,7 @@ Die folgenden Probleme in der Benutzeroberfläche &quot;Orte&quot;wurden behoben
 * Der erlaubte Mindestradius in der Benutzeroberfläche wurde auf 10 Meter erhöht.
 * Es wurde ein Problem behoben, bei dem beim Löschen aller Zahlen im Feld das Feld Radius auf 20 Meter zurückgesetzt wurde.
 
-## 17. Mai 2019 (Orte)
+## 17. Mai 2019
 
 Die folgenden Aktualisierungen wurden in dieser Version vorgenommen:
 
