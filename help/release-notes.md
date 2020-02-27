@@ -2,14 +2,27 @@
 title: Versionshinweise
 description: Versionshinweise für den Places-Dienst.
 translation-type: tm+mt
-source-git-commit: 4038972cc56c144c0e7d702d0f80c7f76f275aa4
+source-git-commit: 36ea8616aa05f5b825a2a4c791a00c5b3f332e9f
 
 ---
 
 
 # Versionshinweise {#release-notes}
 
-## 27. Januar 2020
+## 20. Februar 2020
+
+* **ACPPlaces 1.3.1 (iOS)**
+
+   * Die Platzierungserweiterung meldet nun Versionsinformationen an den Ereignis-Hub im Core SDK.
+   * Die Standardzeit bis zum Ende der Gültigkeitsdauer von Device POI-Mitgliedseinformationen beträgt nun eine Stunde ab dem Zeitpunkt der Erfassung. Weitere Informationen finden Sie unter Zeit-zu-Live-Mitgliedschaft [ändern](places-ext-aep-sdks/places-extension/places-extension.md#places-ttl)
+
+
+* **Orte 1.4.1 (Android)**
+
+   * Die Platzierungserweiterung meldet nun Versionsinformationen an den Ereignis-Hub im Core SDK.
+   * Die Standardzeit bis zum Ende der Gültigkeitsdauer von Device POI-Mitgliedseinformationen beträgt nun eine Stunde ab dem Zeitpunkt der Erfassung. Weitere Informationen finden Sie unter Zeit-zu-Live-Mitgliedschaft [ändern](places-ext-aep-sdks/places-extension/places-extension.md#places-ttl)
+
+## 27. Januar 2020
 
 * **PlacesMonitor 2.2.0**
 
@@ -20,7 +33,7 @@ source-git-commit: 4038972cc56c144c0e7d702d0f80c7f76f275aa4
 
 ## 9. Januar 2020
 
-* **ACPPlaces 1.4.0**
+* **Orte 1.4.0**
 
    * **Android**
 
