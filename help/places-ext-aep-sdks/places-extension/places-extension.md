@@ -2,7 +2,7 @@
 title: Places-Erweiterung
 description: Mit der Erweiterung "Orte"können Sie je nach Standort Ihrer Benutzer handeln.
 translation-type: tm+mt
-source-git-commit: 5a21e734c0ef56c815389a9f08b445bedaae557a
+source-git-commit: 36ea8616aa05f5b825a2a4c791a00c5b3f332e9f
 
 ---
 
@@ -13,8 +13,8 @@ Mit der Erweiterung &quot;Orte&quot;können Sie je nach Standort Ihrer Benutzer 
 
 ## Installieren der Platzierungserweiterung in Adobe Experience Platform Launch
 
-1. In Experience Platform Launch, click the **[!UICONTROL Extensions]**tab.
-1. Suchen Sie auf der **[!UICONTROL Catalog]**Registerkarte die**[!UICONTROL Places]** Erweiterung und klicken Sie auf **[!UICONTROL Install]**.
+1. In Experience Platform Launch, click the **[!UICONTROL Extensions]** tab.
+1. Suchen Sie auf der **[!UICONTROL Catalog]** Registerkarte die **[!UICONTROL Places]** Erweiterung und klicken Sie auf **[!UICONTROL Install]**.
 1. Wählen Sie die Orte-Bibliotheken aus, die Sie in dieser Eigenschaft verwenden möchten. Dies sind die Bibliotheken, auf die in Ihrer App zugegriffen werden kann.
 1. Klicken Sie auf **[!UICONTROL Save]**.
 
@@ -135,6 +135,88 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 }
 ```
 
+### Ändern der Mitgliederzeit für Orte {#places-ttl}
+
+Standortdaten können schnell statisch werden, insbesondere wenn das Gerät nicht über eine Aktualisierung des Hintergrundorts verfügt.
+
+Legen Sie die `places.membershipttl` Konfigurationseinstellung fest, um die Live-Übertragung der Mitgliedschaftsdaten auf dem Gerät zu steuern. Der übergebene Wert gibt an, wie viele Sekunden der Status &quot;Orte&quot;für das Gerät gültig bleibt.
+
+#### Android
+
+Im Rückruf der `MobileCore.start()` Aktualisierung der Konfiguration mit den erforderlichen Änderungen vor dem Aufruf `lifecycleStart`:
+
+```java
+public class PlacesTestApp extends Application {
+
+    @Override
+    public void onCreate() {
+        super.onCreate();
+        MobileCore.setApplication(this);
+
+        try {
+            Places.registerExtension();
+            MobileCore.start(new AdobeCallback() {
+                @Override
+                public void call(Object o) {
+                    // switch to your App ID from Launch
+                    MobileCore.configureWithAppID("my-app-id");
+
+                    final Map<String, Object> config = new HashMap<>();
+                    config.put("places.membershipttl", 30);
+                    MobileCore.updateConfiguration(config);
+
+                    MobileCore.lifecycleStart(null);
+                }
+            });
+        } catch (Exception e) {
+            Log.e("PlacesTestApp", e.getMessage());
+        }
+    }
+}
+```
+
+#### iOS
+
+Rufen Sie in der ersten Zeile in der Rückruffunktion der `ACPCore``start:` Methode `updateConfiguration:`
+
+**Objective-C**
+
+```objective-c
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    // make other sdk registration calls
+
+    const UIApplicationState appState = application.applicationState;
+    [ACPCore start:^{
+        [ACPCore updateConfiguration:@{@"places.membershipttl":@(30)}];
+
+        if (appState != UIApplicationStateBackground) {
+            [ACPCore lifecycleStart:nil];            
+        }
+    }];
+
+    return YES;
+}
+```
+
+**Swift**
+
+```swift
+func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+    // make other sdk registration calls
+
+    let appState = application.applicationState;            
+    ACPCore.start {
+        ACPCore.updateConfiguration(["places.membershipttl" : 30])
+
+        if appState != .background {
+            ACPCore.lifecycleStart(nil)
+        }    
+    }
+
+    return true;
+}
+```
+
 ## Konfigurationsschlüssel
 
 Um die SDK-Konfiguration zur Laufzeit programmgesteuert zu aktualisieren, ändern Sie die Konfigurationswerte der Plates-Erweiterung mithilfe der folgenden Informationen. Weitere Informationen finden Sie unter [Configuration API Reference](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/mobile-core/configuration/configuration-api-reference).
@@ -143,4 +225,4 @@ Um die SDK-Konfiguration zur Laufzeit programmgesteuert zu aktualisieren, änder
 | :--- | :--- | :--- |
 | `places.libraries` | Ja | Die Speichererweiterungsbibliotheken für die mobile App. Er gibt die Bibliotheks-ID und den Namen der Bibliothek an, die von der mobilen App unterstützt werden. |
 | `places.endpoint` | Ja | Der standardmäßige Endpunkt &quot;Orts-Abfrage-Dienst&quot;, mit dem Informationen zu Bibliotheken und POIs abgerufen werden. |
-
+| `places.membershipttl` | Nein | Standardwert von 3600 (Sekunden in einer Stunde). Gibt an, wie lange (in Sekunden) die Platzierungsmitgliedschaftsinformationen für das Gerät gültig bleiben. |
