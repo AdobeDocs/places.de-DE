@@ -2,20 +2,20 @@
 title: Orte-Dienst ohne aktive Regionsüberwachung verwenden
 description: Dieser Abschnitt enthält Informationen zur Verwendung des Orte-Dienstes ohne aktive Regionsüberwachung.
 translation-type: tm+mt
-source-git-commit: 5a21e734c0ef56c815389a9f08b445bedaae557a
+source-git-commit: d123d16c822c48d8727de3c0c22bff8ea7c66981
 
 ---
 
 
 # Orte-Dienst ohne aktive Regionsüberwachung verwenden {#use-places-without-active-monitoring}
 
-Anwendungsfälle für Ihre Anwendung erfordern möglicherweise keine aktive Regionsüberwachung. Der Ortsdienst kann weiterhin verwendet werden, um die Standortdaten Ihrer Benutzer in andere Experience Platform-Produkte zu integrieren.
+Anwendungsfälle für Ihre Anwendung erfordern unter Umständen keine aktive Regionsüberwachung. Der Ortsdienst kann weiterhin verwendet werden, um die Standortdaten Ihrer Benutzer in andere Experience Platform-Produkte zu integrieren.
 
 In diesem Abschnitt wird erläutert, wie eine POI-Mitgliedschaftsprüfung nur zum Zeitpunkt der Erfassung des Benutzerorts (Breiten- und Längengrad) durchgeführt werden kann.
 
 ## Voraussetzung
 
-Der Entwickler erfasst den Speicherort des Geräts mithilfe der APIs, die vom Betriebssystem der Zielplattform bereitgestellt werden.
+Der Entwickler erfasst den Speicherort des Geräts mithilfe der APIs, die vom Betriebssystem der Zielgruppe-Plattform bereitgestellt werden.
 
 >[!TIP]
 >
@@ -34,7 +34,7 @@ Weitere Informationen finden Sie in der folgenden Dokumentation:
 
 ## 2. Abrufen nahegelegener Zielpunkte vom SDK
 
-Nachdem Sie den Speicherort des Benutzers abgerufen haben, können Sie ihn an das SDK weiterleiten, um eine Liste der nahe gelegenen POIs zurückzuerhalten.
+Nachdem Sie den Benutzerstandort abgerufen haben, können Sie ihn an das SDK weiterleiten, um eine Liste der nahe gelegenen POIs zurückzuerhalten.
 
 ### Android
 
@@ -114,15 +114,15 @@ func locationManager(_ manager: CLLocationManager, didUpdateLocations locations:
 }
 ```
 
-## 3. Auslösen von Einstiegsereignissen, wenn sich der Benutzer in einem POI befindet
+## 3. Auslösen von Einstiegsdaten, wenn der Ereignis sich in einem POI befindet
 
-Das SDK gibt eine Liste der nahe gelegenen POIs zurück, einschließlich der Angabe, ob sich der Benutzer derzeit in jedem POI befindet. Befindet sich der Benutzer in einem POI, kann das SDK ein Eingabeereignis für diesen Bereich auslösen.
+Das SDK gibt eine Liste von nahe gelegenen POIs zurück, einschließlich der Angabe, ob sich der Benutzer derzeit in jedem POI befindet. Befindet sich der Benutzer in einem POI, kann das SDK ein Einstiegsfeld für diesen Bereich auslösen.
 
 >[!IMPORTANT]
 >
->Um zu verhindern, dass Ihre App bei einem Besuch mehrere Einstiegsereignisse auslöst, führen Sie eine Liste der Regionen, in denen Sie wissen, dass der Benutzer angemeldet ist. Wenn die Antwort von nahe gelegenen POIs aus dem SDK verarbeitet wird, lösen Sie ein Einstiegsereignis nur dann aus, wenn die Region nicht in Ihrer Liste enthalten ist.
+>Um zu verhindern, dass Ihre App bei einem Besuch mehrere Einstiegsregionen auslöst, sollten Sie eine Liste der Ereignis aufbewahren, in denen Sie wissen, dass der Benutzer angemeldet ist. Wenn die Antwort von nahe gelegenen POIs aus dem SDK verarbeitet wird, lösen Sie ein Einstiegsfeld nur dann aus, wenn sich der Bereich nicht in Ihrer Liste befindet.
 >
->Im folgenden Codebeispiel werden `NSUserDefaults` (iOS) und `SharedPreferences` (Android) verwendet, um die Liste der Regionen zu verwalten:
+>Im folgenden Codebeispiel werden `NSUserDefaults` (iOS) und `SharedPreferences` (Android) zur Verwaltung der Liste von Regionen verwendet:
 
 ### Android
 
@@ -164,7 +164,7 @@ void handleUpdatedPOIs(final List<PlacesPOI> nearbyPois) {
 
 ### Objective-C
 
-Das folgende Codebeispiel zeigt die Verarbeitung des im Rückruf von bereitgestellten Ergebnisses `getNearbyPointsOfInterest:limit:callback:errorCallback:`, und `NSArray<ACPPlacesPoi *> *`:
+Das folgende Codebeispiel zeigt die Verarbeitung des Ergebnisses, das im Rückruf von bereitgestellt wurde `getNearbyPointsOfInterest:limit:callback:errorCallback:`, und `NSArray<ACPPlacesPoi *> *`:
 
 ```objectivec
 - (void) handleUpdatedPOIs:(NSArray<ACPPlacesPoi *> *)nearbyPois {
@@ -198,7 +198,7 @@ Das folgende Codebeispiel zeigt die Verarbeitung des im Rückruf von bereitgeste
 
 ### Swift
 
-Das folgende Codebeispiel zeigt die Verarbeitung des im Rückruf von bereitgestellten Ergebnisses `getNearbyPoints(_ ofInterest: CLLocation, limit: UInt, callback: (([ACPPlacesPoi]?) -> Void)?, errorCallback: ((ACPPlacesRequestError) -> Void)?)`, und `[ACPPlacesPoi]`:
+Das folgende Codebeispiel zeigt die Verarbeitung des Ergebnisses, das im Rückruf von bereitgestellt wurde `getNearbyPoints(_ ofInterest: CLLocation, limit: UInt, callback: (([ACPPlacesPoi]?) -> Void)?, errorCallback: ((ACPPlacesRequestError) -> Void)?)`, und `[ACPPlacesPoi]`:
 
 ```swift
 func handleUpdatedPOIs(_ nearbyPois:[ACPPlacesPoi]) {
@@ -229,11 +229,11 @@ func handleUpdatedPOIs(_ nearbyPois:[ACPPlacesPoi]) {
 
 ## Vollständige Beispielimplementierung
 
-Die folgenden Codebeispiele zeigen Ihnen, wie Sie die aktuelle Position des Geräts abrufen, die erforderlichen Ereignisse auslösen und sicherstellen, dass Sie bei einem Besuch nicht mehrere Einträge für dieselbe Position erhalten.
+Die folgenden Codebeispiele zeigen Ihnen, wie Sie die aktuelle Geräteposition abrufen, die erforderlichen Ereignis auslösen und sicherstellen, dass bei einem Besuch nicht mehrere Einträge für dieselbe Position eingehen.
 
 >[!IMPORTANT]
 >
->Diese Snippets sind **nur** Beispiele. Entwickler müssen festlegen, wie sie die Funktionalität implementieren möchten. Bei der Entscheidung sollten die vom Zielbetriebssystem empfohlenen Best Practices berücksichtigt werden.
+>Diese Snippets sind **nur** Beispiele. Entwickler müssen festlegen, wie sie die Funktionen implementieren möchten. Bei der Entscheidung sollten die Best Practices berücksichtigt werden, die vom Betriebssystem Zielgruppe empfohlen werden.
 
 ### Android
 
@@ -396,6 +396,6 @@ func handleUpdatedPOIs(_ nearbyPois:[ACPPlacesPoi]) {
 }
 ```
 
-Neben der Auslösung von Einstiegsereignissen für den Places Service im SDK können aufgrund der auslösenden Einstiegsereignisse alle Daten, die Ihre POIs definieren, vom Rest des SDK über `data elements` den Experience Platform Launch verwendet werden. Mit Experience Platform Launch `rules`können Sie die Daten des Orts-Dienstes dynamisch an eingehende Ereignisse anhängen, die vom SDK verarbeitet werden. Sie können beispielsweise die Metadaten eines POI, in dem sich der Benutzer befindet, anhängen und die Daten als Kontextdaten an Analytics senden.
+Zusätzlich zur Auslösung von Ereignissen für die Eingabe des Orts-Service im SDK können aufgrund der auslösenden Ereignis zur Eingabe alle Daten, die Ihre POIs definieren, vom Rest des SDK über `data elements` den Experience Platform Launch verwendet werden. Mit Experience Platform Launch `rules`können Sie die Daten des Orts-Dienstes dynamisch an eingehende Ereignis anhängen, die vom SDK verarbeitet werden. Sie können beispielsweise die Metadaten eines POI, in dem sich der Benutzer befindet, anhängen und die Daten als Kontextdaten an Analytics senden.
 
-Weitere Informationen finden Sie unter [Verwenden des Places-Dienstes mit anderen Adobe-Lösungen](/help/use-places-with-other-solutions/use-places-with-other-solutions.md).
+Weitere Informationen finden Sie unter [Verwenden des Places-Dienstes mit anderen Adobe-Lösungen](/help/use-places-with-other-solutions/places-adobe-analytics/use-places-analytics-overview.md).
