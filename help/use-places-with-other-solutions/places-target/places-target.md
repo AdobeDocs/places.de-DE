@@ -1,21 +1,21 @@
 ---
 title: Adobe Target
-description: Dieser Abschnitt enthält Informationen zur Verwendung des Orte-Dienstes mit Adobe Target.
+description: In diesem Abschnitt finden Sie Informationen zur Verwendung des Places-Dienstes mit Adobe Zielgruppe.
 translation-type: tm+mt
-source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
+source-git-commit: d33e4e2d798c7048bdd275cdf6c0aabf3434f789
 
 ---
 
 
-# Orte-Dienst mit Adobe Target verwenden {#places-target}
+# Orte-Dienst mit Adobe-Zielgruppe verwenden {#places-target}
 
-Bei diesem Dokument wird davon ausgegangen, dass die Plates-Erweiterung in Ihrer Anwendung implementiert ist. Weitere Informationen zum Implementieren der Platzierungserweiterung finden Sie unter [Platzierungserweiterungen](/help/places-ext-aep-sdks/places-extension/places-extension.md).
+In diesem Dokument wird davon ausgegangen, dass die Plates-Erweiterung in Ihrer Anwendung implementiert ist. Weitere Informationen zum Implementieren der Platzierungserweiterung finden Sie unter [Platzierungserweiterungen](/help/places-ext-aep-sdks/places-extension/places-extension.md).
 
-Nachdem die Platzierungserweiterung Ereignisse für Einstiege und Ausstiege gesendet hat, können Sie die Regeln beim Start nutzen, um Ihre Daten zum Orte-Dienst an Ihre Adobe Target SDK-Ereignisse anzuhängen. Wenn Sie die gewünschte Eigenschaft in Launch ausgewählt haben, können Sie diesen Regeltyp erstellen, indem Sie die folgenden Aufgaben ausführen:
+Nachdem die Plates-Erweiterung Ereignis für Ein- und Ausstiege gesendet hat, können Sie die Regeln des Startvorgangs nutzen, um Ihre Daten des Orts-Dienstes an Ihre Adobe Zielgruppe SDK-Ereignis anzuhängen. Wenn Sie die gewünschte Eigenschaft in Start ausgewählt haben, können Sie diese Art von Regel erstellen, indem Sie die folgenden Aufgaben ausführen:
 
 ## 1. Regel erstellen
 
-1. Klicken Sie auf der **[!UICONTROL Rules]**Registerkarte auf**[!UICONTROL Create New Rule]**.
+1. Klicken Sie auf der **[!UICONTROL Rules]** Registerkarte auf **[!UICONTROL Create New Rule]**.
 
    Beachten Sie die folgenden Informationen:
 
@@ -24,21 +24,18 @@ Nachdem die Platzierungserweiterung Ereignisse für Einstiege und Ausstiege gese
 
 ## 2. Ereignis auswählen
 
-1. Geben Sie Ihrer Regel einen aussagekräftigen Namen, damit sie in Ihrer Regelliste leicht erkennbar ist.
+1. Geben Sie Ihrer Regel einen aussagekräftigen Namen, damit sie in Ihrer Liste der Regeln leicht erkennbar ist.
 
    In diesem Beispiel wird die Regel benannt **[!UICONTROL Attach Places Service Data to Target Content Requested]**.
 
-1. Klicken Sie unter dem **[!UICONTROL Events]**Abschnitt auf**[!UICONTROL Add]**.
-
-1. Wählen Sie aus der **[!UICONTROL Extension]**Dropdownliste**[!UICONTROL Adobe Target]**.
-
-1. Wählen Sie aus der **[!UICONTROL Event Type]**Dropdownliste**[!UICONTROL Content Requested]**.
-
+1. Klicken Sie unter dem **[!UICONTROL Events]** Abschnitt auf **[!UICONTROL Add]**.
+1. Wählen Sie aus der **[!UICONTROL Extension]** Dropdown-Liste **[!UICONTROL Adobe Target]**.
+1. Wählen Sie aus der **[!UICONTROL Event Type]** Dropdown-Liste **[!UICONTROL Content Requested]**.
 1. Klicken Sie auf **[!UICONTROL Keep Changes]**.
 
 ![Ereignis hinzufügen](/help/assets/ad-setEvent_target.png)
 
-## 3. Bedingungen hinzufügen
+## 3. Hinzufügen
 
 >[!IMPORTANT]
 >
@@ -46,37 +43,29 @@ Nachdem die Platzierungserweiterung Ereignisse für Einstiege und Ausstiege gese
 
 Im folgenden Beispiel wird eine Bedingung erstellt, die bewirkt, dass die Regel nur für Benutzer ausgelöst wird, die die App fünf oder mehr Mal gestartet haben.
 
-1. Klicken Sie unter dem **[!UICONTROL Conditions]**Abschnitt auf**[!UICONTROL Add]**.
-
-1. Wählen Sie aus der **[!UICONTROL Extension]**Dropdownliste**[!UICONTROL Mobile Core]**.
-
-1. Wählen Sie aus der **[!UICONTROL Condition Type]**Dropdownliste**[!UICONTROL Launches]**.
-
-1. Ändern Sie im rechten Bereich die Dropdown-Liste und die Nummernsteuerelemente so, dass die Bedingung gelesen wird **[!UICONTROL User has launched the app greater than or equal to 5 times]**.
-
+1. Klicken Sie unter dem **[!UICONTROL Conditions]** Abschnitt auf **[!UICONTROL Add]**.
+1. Wählen Sie aus der **[!UICONTROL Extension]** Dropdown-Liste **[!UICONTROL Mobile Core]**.
+1. Wählen Sie aus der **[!UICONTROL Condition Type]** Dropdown-Liste **[!UICONTROL Launches]**.
+1. Ändern Sie im rechten Bereich die Dropdown-Listen- und Nummernsteuerelemente so, dass die Bedingung gelesen wird **[!UICONTROL User has launched the app greater than or equal to 5 times]**.
 1. Klicken Sie auf **[!UICONTROL Keep Changes]**.
 
 ![Bedingung hinzufügen](/help/assets/ad-setCondition_target.png)
 
 ## 4. Definieren der Aktion
 
-1. Klicken Sie unter dem **[!UICONTROL Actions]**Abschnitt auf**[!UICONTROL Add]**.
-
-1. Wählen Sie aus der **[!UICONTROL Extension]**Dropdownliste**[!UICONTROL Mobile Core]**.
-
-1. Wählen Sie aus der **[!UICONTROL Action Type]**Dropdownliste**[!UICONTROL Attach Data]**.
-
-1. Geben Sie im rechten Bereich im **[!UICONTROL JSON Payload]**Feld die Daten ein, die diesem Ereignis hinzugefügt werden sollen.
-
+1. Klicken Sie unter dem **[!UICONTROL Actions]** Abschnitt auf **[!UICONTROL Add]**.
+1. Wählen Sie aus der **[!UICONTROL Extension]** Dropdown-Liste **[!UICONTROL Mobile Core]**.
+1. Wählen Sie aus der **[!UICONTROL Action Type]** Dropdown-Liste **[!UICONTROL Attach Data]**.
+1. Geben Sie im rechten Bereich im **[!UICONTROL JSON Payload]** Feld die Daten ein, die diesem Ereignis hinzugefügt werden sollen.
 1. Klicken Sie auf **[!UICONTROL Keep Changes]**.
 
-Im rechten Bereich können Sie eine Freiform-JSON-Nutzlast hinzufügen, die Daten zu einem SDK-Ereignis hinzufügt, bevor die Extensions, die auf dieses Ereignis warten, es hören.
+Im rechten Bereich können Sie eine Freiform-JSON-Nutzlast hinzufügen, die Daten zu einem SDK-Ereignis hinzufügt, bevor die für dieses Ereignis Listening-Erweiterungen es hören.
 
-Im folgenden Beispiel werden der Anforderung, die im Target-Ereignis verarbeitet wird, `poiCity` Werte hinzugefügt `poiName` **[!UICONTROL mboxparameters]**. Die Werte für die neuen Schlüssel werden vom SDK zum Zeitpunkt der Verarbeitung dieses Ereignisses dynamisch bestimmt.
+Im folgenden Beispiel werden der Anforderung, die im Zielgruppe-Ereignis verarbeitet wird, `poiCity` Werte `poiName` **[!UICONTROL mboxparameters]** hinzugefügt. Die Werte für die neuen Schlüssel werden zum Zeitpunkt der Verarbeitung durch das SDK dynamisch bestimmt.
 
 >[!TIP]
 >
->Diese JSON-Nutzlast verwendet eine spezielle Notation für das `request` Objekt. Im ursprünglichen Ereignis `request` ist ein Array anonymer Objekte. Wenn Daten mit &quot;Daten anhängen&quot;an alle Objekte in einem Array angehängt werden, bewirkt die `[*]` Notation auf einem Schlüssel, der bekanntermaßen ein Array enthält, dass die Nutzlast auf alle Objekte in diesem Array angewendet wird.
+>Diese JSON-Nutzlast verwendet eine spezielle Notation für das `request` Objekt. Im ursprünglichen Ereignis `request` ist ein Array anonymer Objekte. Wenn Daten mit &quot;Daten anhängen&quot;an alle Objekte in einem Array angehängt werden, bewirkt die `[*]` Notation eines Schlüssels, der bekanntermaßen ein Array enthält, dass die Nutzlast auf alle Objekte in diesem Array angewendet wird.
 >
 >Die Notation von `request[*]` kann laut wie _für jedes Objekt im`request`Array_ gelesen werden.
 
@@ -88,6 +77,5 @@ Im folgenden Beispiel werden der Anforderung, die im Target-Ereignis verarbeitet
 
 ![Abgeschlossene Regel](/help/assets/ad-ruleComplete-target.png)
 
-1. Klicken Sie auf **[!UICONTROL Save]**
-
-1. Erstellen Sie Ihre Launch-Eigenschaft neu und stellen Sie sie in der richtigen Umgebung bereit.
+1. Klicken Sie auf **[!UICONTROL Save]**.
+1. Erstellen Sie Ihre Launch-Eigenschaft neu und stellen Sie sie auf die richtige Umgebung bereit.
