@@ -2,7 +2,7 @@
 title: Orte-Dienst ohne aktive Regionsüberwachung verwenden
 description: Dieser Abschnitt enthält Informationen zur Verwendung des Orte-Dienstes ohne aktive Regionsüberwachung.
 translation-type: tm+mt
-source-git-commit: d123d16c822c48d8727de3c0c22bff8ea7c66981
+source-git-commit: 5846577f10eb1d570465ad7f888feba6dd958ec9
 
 ---
 
@@ -10,8 +10,6 @@ source-git-commit: d123d16c822c48d8727de3c0c22bff8ea7c66981
 # Orte-Dienst ohne aktive Regionsüberwachung verwenden {#use-places-without-active-monitoring}
 
 Anwendungsfälle für Ihre Anwendung erfordern unter Umständen keine aktive Regionsüberwachung. Der Ortsdienst kann weiterhin verwendet werden, um die Standortdaten Ihrer Benutzer in andere Experience Platform-Produkte zu integrieren.
-
-In diesem Abschnitt wird erläutert, wie eine POI-Mitgliedschaftsprüfung nur zum Zeitpunkt der Erfassung des Benutzerorts (Breiten- und Längengrad) durchgeführt werden kann.
 
 ## Voraussetzung
 
@@ -84,7 +82,7 @@ public class LocationBroadcastReceiver extends BroadcastReceiver {
 
 ### Objective-C
 
-Hier finden Sie eine Beispielimplementierung in iOS von einer [`CLLocationManagerDelegate`](https://developer.apple.com/documentation/corelocation/cllocationmanager?language=objc) Methode [`locationManager:didUpdateLocations:`](https://developer.apple.com/documentation/corelocation/cllocationmanagerdelegate/1423615-locationmanager?language=objc):
+Hier finden Sie eine Beispielimplementierung für iOS. Der Code zeigt die Implementierung der [`locationManager:didUpdateLocations:`](https://developer.apple.com/documentation/corelocation/cllocationmanagerdelegate/1423615-locationmanager?language=objc) Methode in der [`CLLocationManagerDelegate`](https://developer.apple.com/documentation/corelocation/cllocationmanager?language=objc):
 
 ```objectivec
 - (void) locationManager:(CLLocationManager*)manager didUpdateLocations:(NSArray<CLLocation*>*)locations {
@@ -100,7 +98,7 @@ Hier finden Sie eine Beispielimplementierung in iOS von einer [`CLLocationManage
 
 ### Swift
 
-Hier finden Sie eine Beispielimplementierung in iOS von einer [`CLLocationManagerDelegate`](https://developer.apple.com/documentation/corelocation/cllocationmanager) Methode [`locationManager(_:didUpdateLocations:)`](https://developer.apple.com/documentation/corelocation/cllocationmanagerdelegate/1423615-locationmanager):
+Hier finden Sie eine Beispielimplementierung für iOS. Der Code zeigt die Implementierung der [`locationManager(_:didUpdateLocations:)`](https://developer.apple.com/documentation/corelocation/cllocationmanagerdelegate/1423615-locationmanager) Methode in der [`CLLocationManagerDelegate`](https://developer.apple.com/documentation/corelocation/cllocationmanager):
 
 ```swift
 func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
@@ -114,9 +112,21 @@ func locationManager(_ manager: CLLocationManager, didUpdateLocations locations:
 }
 ```
 
-## 3. Auslösen von Einstiegsdaten, wenn der Ereignis sich in einem POI befindet
+## 3. Platzierungsdaten an Ihre Analytics-Anforderungen anhängen
 
-Das SDK gibt eine Liste von nahe gelegenen POIs zurück, einschließlich der Angabe, ob sich der Benutzer derzeit in jedem POI befindet. Befindet sich der Benutzer in einem POI, kann das SDK ein Einstiegsfeld für diesen Bereich auslösen.
+Durch Aufruf der `getNearbyPointsOfInterest` API stellt das Places SDK alle POI-Daten, die für das Gerät relevant sind, über Datenelemente in Launch zur Verfügung. Mithilfe einer Regel zum [Anhängen von Daten](https://aep-sdks.gitbook.io/docs/resources/user-guides/attach-data) können Platzierungsdaten automatisch zu zukünftigen Anforderungen an Analytics hinzugefügt werden. Dadurch entfällt die Notwendigkeit eines einmaligen Anrufs an Analytics zum Zeitpunkt der Erfassung des Speicherorts des Geräts.
+
+Weitere Informationen zu diesem Thema finden Sie unter [Hinzufügen Standortkontext zu Analytics-Anforderungen](use-places-with-other-solutions/places-adobe-analytics/run-reports-aa-places-data.md) .
+
+## Optional - Auslösen von Ereignissen für die Eingabe, wenn sich der Benutzer in einem POI befindet
+
+>[!TIP]
+>
+>Die empfohlene Methode zur Erfassung von Ortsdaten ist das [Anhängen von Ortsdaten an Ihre Analytics-Anforderungen](#attach-places-data-to-your-analytics-requests).
+>
+>Wenn im Anwendungsfall ein [Regionseintrag-Ereignis](places-ext-aep-sdks/places-extension/places-event-ref.md#processregionevent) vom SDK ausgelöst werden muss, muss es manuell durchgeführt werden, wie unten beschrieben.
+
+Die von der `getNearbyPointsOfInterest` API zurückgegebene Liste enthält [benutzerdefinierte Objekte](places-ext-aep-sdks/places-extension/cust-places-objects.md) , die angeben, ob sich der Benutzer derzeit in einem POI befindet. Befindet sich der Benutzer in einem POI, kann das SDK ein Einstiegsfeld für diesen Bereich auslösen.
 
 >[!IMPORTANT]
 >
@@ -229,7 +239,9 @@ func handleUpdatedPOIs(_ nearbyPois:[ACPPlacesPoi]) {
 
 ## Vollständige Beispielimplementierung
 
-Die folgenden Codebeispiele zeigen Ihnen, wie Sie die aktuelle Geräteposition abrufen, die erforderlichen Ereignis auslösen und sicherstellen, dass bei einem Besuch nicht mehrere Einträge für dieselbe Position eingehen.
+Die Codebeispiele unten zeigen Ihnen, wie Sie die aktuelle Geräteposition abrufen, erforderliche Ereignis auslösen und sicherstellen können, dass bei einem Besuch nicht mehrere Einträge für dieselbe Position eingehen.
+
+Dieses Codebeispiel enthält den optionalen Schritt zum [Auslösen eines Ereignisses, wenn sich der Benutzer in einem POI](#trigger-entry-events-when-the-user-is-in-a-poi)befindet.
 
 >[!IMPORTANT]
 >
