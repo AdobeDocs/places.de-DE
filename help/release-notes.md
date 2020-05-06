@@ -2,24 +2,44 @@
 title: Versionshinweise
 description: Versionshinweise für den Places-Dienst.
 translation-type: tm+mt
-source-git-commit: 36ea8616aa05f5b825a2a4c791a00c5b3f332e9f
+source-git-commit: f5fa6005396e3c5b5b8eb92c7c920d2d0d974743
+workflow-type: tm+mt
+source-wordcount: '1419'
+ht-degree: 3%
 
 ---
 
 
 # Versionshinweise {#release-notes}
 
+## 6. Mai 2020
+
+* **PlacesMonitor 2.2.1**
+
+   * **Android**
+
+      * Verbesserte Protokollierung
+
+## 5. Mai 2020
+
+
+* **PlacesMonitor 2.1.3**
+
+   * **iOS**
+
+      * Verbesserte Protokollierung
+
 ## 20. Februar 2020
 
 * **ACPPlaces 1.3.1 (iOS)**
 
-   * Die Platzierungserweiterung meldet nun Versionsinformationen an den Ereignis-Hub im Core SDK.
+   * Die Platzierungserweiterung meldet jetzt Versionsinformationen an den Ereignis-Hub im Core SDK.
    * Die Standardzeit bis zum Ende der Gültigkeitsdauer von Device POI-Mitgliedseinformationen beträgt nun eine Stunde ab dem Zeitpunkt der Erfassung. Weitere Informationen finden Sie unter Zeit-zu-Live-Mitgliedschaft [ändern](places-ext-aep-sdks/places-extension/places-extension.md#places-ttl)
 
 
 * **Orte 1.4.1 (Android)**
 
-   * Die Platzierungserweiterung meldet nun Versionsinformationen an den Ereignis-Hub im Core SDK.
+   * Die Platzierungserweiterung meldet jetzt Versionsinformationen an den Ereignis-Hub im Core SDK.
    * Die Standardzeit bis zum Ende der Gültigkeitsdauer von Device POI-Mitgliedseinformationen beträgt nun eine Stunde ab dem Zeitpunkt der Erfassung. Weitere Informationen finden Sie unter Zeit-zu-Live-Mitgliedschaft [ändern](places-ext-aep-sdks/places-extension/places-extension.md#places-ttl)
 
 ## 27. Januar 2020
@@ -70,7 +90,7 @@ source-git-commit: 36ea8616aa05f5b825a2a4c791a00c5b3f332e9f
    * **Android**
 
       * Der Monitor erkennt jetzt den Start eines Android-Geräts und registriert bei Bedarf die Geofencing-Daten anhand der aktuellen Position des Geräts erneut beim Betriebssystem.
-      * Es wurde eine Racebedingung behoben, die manchmal dazu führte, dass Einstiegs-/Ausstiegsereignisse verworfen wurden.
+      * Es wurde eine Racebedingung behoben, die manchmal dazu führte, dass ein-/Ausstiegs-Ereignis verworfen wurden.
 
 ## 9. Oktober 2019
 
@@ -86,7 +106,7 @@ source-git-commit: 36ea8616aa05f5b825a2a4c791a00c5b3f332e9f
 
 
 
-## 08.08.2019
+## 8. August 2019
 
 Die folgenden Aktualisierungen wurden in dieser Version vorgenommen:
 
@@ -96,20 +116,20 @@ Im Folgenden finden Sie eine Liste der Aktualisierungen der Benutzeroberfläche 
 
 #### Neue Funktionen
 
-* Es wurde eine neue Listenansicht hinzugefügt, in der POIs ohne Zuordnung angezeigt werden.
+* Es wurde eine neue Ansicht zur Liste hinzugefügt, die POIs ohne die Karte anzeigt.
 * Es wurden POI-Filteroptionen für Stadt, Staat, Land und Metadaten hinzugefügt.
 * Die erste Bibliothek in einem Unternehmen wird automatisch erstellt.
-* Die POI-Sortierung zur Listenansicht wurde hinzugefügt.
+* Der Ansicht Liste wurde eine POI-Sortierung hinzugefügt.
 
 #### UI-Updates
 
-* Liste und Detailbedienfeld wurden auf der Benutzeroberfläche nach rechts verschoben.
+* Das Bedienfeld &quot;Liste und Details&quot;wurde rechts von der Benutzeroberfläche verschoben.
 * Am Anfang der Benutzeroberfläche wurde ein neues Suchfeld hinzugefügt.
 * Wenn nur eine Bibliothek vorhanden ist, wird diese beim Erstellen eines POI automatisch ausgewählt.
 * Bibliotheksverwaltung in ein Popup-Fenster verschoben.
-* Neben den Filtern wurde eine POI-Anzahl hinzugefügt.
+* Es wurde ein POI-Zähler neben den Filtern hinzugefügt.
 
-## 06.08.2019
+## 6. August 2019
 
 Die folgenden Aktualisierungen wurden in dieser Version vorgenommen:
 
@@ -129,7 +149,7 @@ Die folgenden Aktualisierungen wurden in dieser Version vorgenommen:
 
    Alte API: `public static void stop();`
 
-   Neue API: `public static void stop (final boolean clearData);`
+   Neue -API: `public static void stop (final boolean clearData);`
 
 * Die Verwendung der `getNearbyPointsOfInterest` API wurde aktualisiert, um Fehlerszenarien effektiver zu behandeln.
 
@@ -151,10 +171,10 @@ Die folgenden Aktualisierungen wurden in dieser Version vorgenommen:
 
 ### Android Places 1.3.0
 
-* Es wurde eine neue API hinzugefügt, mit der alle Ortsdaten aus dem Freigabestand, dem In-App-Speicher und der freigegebenen Voreinstellung gelöscht werden.
-* Es wurde ein Problem behoben, bei dem der Status &quot;Freigegeben&quot;beim Anwendungsstart nicht aktualisiert wurde.
+* Es wurde eine neue API hinzugefügt, mit der alle Daten zum Thema Orte aus dem freigegebenen Status, dem In-App-Speicher und der freigegebenen Voreinstellung gelöscht werden.
+* Es wurde ein Problem behoben, bei dem der Status &quot;Freigegeben&quot;während des Beginns der Anwendung nicht aktualisiert wurde.
 * Es wurde ein Fehler behoben, durch den `getNearbyPointsOfInterest` Rückruf Fehlercode `SERVER_RESPONSE_ERROR instead of CONNECTIVITY_ERROR` im Internet zurückgab.
-* `getNearbyPointsOfInterest` Die API (ohne errorCallback) hat den `successCallback` Aufruf mit leerer POI-Liste, falls Fehler beim Abrufen der nahe gelegenen Zielpunkte auftreten.
+* `getNearbyPointsOfInterest` API (ohne errorCallback) wird mit leerer POI-Liste `successCallback` aufgerufen, falls Fehler beim Abrufen der nahe gelegenen Zielpunkte auftreten.
 
 ## 19. Juli 2019
 
@@ -180,14 +200,14 @@ Die folgenden Aktualisierungen wurden in dieser Version vorgenommen:
 
 * Es wurde eine neue API hinzugefügt, um einen Fehlercode zurückzugeben, wenn das Abrufen nahegelegener Orte fehlschlägt.
 * Wenn sich der Datenschutzstatus in &quot;Opt-out&quot;ändert, werden alle mit Orten zusammenhängenden Daten jetzt vom Gerät gelöscht.
-* Es wurde ein Problem behoben, das nach einem ersten Start manchmal dazu führte, dass Places-Ereignisse aufgrund falscher Netzwerkbedingungen verloren gingen.
-* Es wurde ein Problem behoben, bei dem bei der Verarbeitung von POI-Einstiegsereignissen in kurzer Folge der Token-Austausch über die Regelmaschine manchmal auf den falschen POI verweist.
+* Es wurde ein Problem behoben, das nach dem ersten Start manchmal dazu führte, dass Places-Ereignis aufgrund schlechter Netzwerkbedingungen verloren gingen.
+* Es wurde ein Problem behoben, bei dem bei der Verarbeitung von POI-Einstiegszertifikaten in kurzer Folge die Token-Ersetzung über den Rules Engine manchmal auf den falschen POI-Ereignis verweisen.
 
 ## 30. Mai 2019
 
 **Android Places Monitor 1.0.1**
 
-* Es wurde ein Fehler behoben, der dazu führte, dass ein Einstiegsereignis für POIs beim Starten der Orts-Überwachung verhindert wurde.
+* Es wurde ein Fehler behoben, der dazu führte, dass beim Starten der Orteüberwachung kein Ereignis für die Eingabe von POIs angezeigt wurde.
 
 ## 28. Mai 2019
 
@@ -202,10 +222,10 @@ Die folgenden Probleme in der Benutzeroberfläche &quot;Orte&quot;wurden behoben
 
 Die folgenden Aktualisierungen wurden in dieser Version vorgenommen:
 
-**Android Places 1.1.0**
+**Android Places 1.2.0**
 
 * Es wurde eine neue API zur Verarbeitung einer einzelnen Geometrie hinzugefügt.
-* Fehlerbehebung, um mehrere aufeinander folgende Einstiegsereignisse zu verhindern.
+* Fehlerkorrektur, um mehrere aufeinander folgende Ereignis zu verhindern.
 
 **Android Places Monitor 1.0.0**
 
@@ -220,10 +240,10 @@ Weitere Informationen zum Orts-Monitor finden Sie hier.
 **Android Places 1.1.0**
 
 * Es wurde eine neue API für getNearByPlaces eingeführt, die einen errorCallback enthält und mit einem errorCode aufgerufen wird, der den Grund für den Fehler angibt.
-* Die Platzierungserweiterung stellt die Ereignisse jetzt in eine Warteschlange, bis eine Konfiguration abgerufen wird.
-* Unterstützung für umweltbewusste Konfigurationen hinzugefügt.
-* Fehlerbehebung: Korrektur der Schlüssel für die Ereignisse &quot;Ein-/Ausstieg&quot;der Region
-* Die Speicherung des zuletzt bekannten Speicherorts respektiert jetzt den Datenschutzstatus des Benutzers ordnungsgemäß
+* Die Platzierungserweiterung stellt die Ereignis jetzt in eine Warteschlange, bis eine Konfiguration abgerufen wird.
+* Unterstützung für Umgebung-basierte Konfigurationen hinzugefügt.
+* Fehlerbehebung: die Tasten für die Ereignis für die Ein-/Ausstiegsregion korrigiert
+* Datenspeicherung des letzten bekannten Standorts respektiert jetzt den Datenschutzstatus des Benutzers ordnungsgemäß
 
 
 ## 9. April 2019
@@ -236,7 +256,7 @@ Die folgenden Aktualisierungen wurden in dieser Version vorgenommen:
 * CI-Integration (CircleCI)
 * Coverage-Integration (Codecov)
 
-## 25. März 2019
+## 25. März 2019
 
 iOS Places Monitor 1.0.0
 
@@ -256,7 +276,7 @@ Die wichtigsten Funktionen in dieser Version:
 
 #### Platzierungsdienst-Benutzeroberfläche
 
-Wir haben eine Verwaltungs-Benutzeroberfläche veröffentlicht, in der Sie Ihre POIs (Points of Interest) anzeigen und verwalten können. Sie können auch Ihre POIs in Bibliotheken organisieren. Zusätzlich zu Standard-Metadaten wie Stadt, Bundesland und Kategorie unterstützen wir auch die Möglichkeit, Ihren POIs benutzerdefinierte Metadaten hinzuzufügen.
+Wir haben eine Verwaltungs-Benutzeroberfläche veröffentlicht, in der Sie Ihre POIs (Points of Interest) Ansicht und Verwaltung vornehmen können. Sie können auch Ihre POIs in Bibliotheken organisieren. Neben den Standardmetadaten wie Stadt, Bundesland und Kategorie unterstützen wir auch die Möglichkeit, Ihren POIs benutzerdefinierte Metadaten hinzuzufügen.
 
 * Die Benutzeroberfläche finden Sie unter [https://places.adobe.com](https://places.adobe.com).
 * Die ersten Schritte mit der Benutzeroberfläche finden Sie unter [Erste Schritte](/help/getting-started.md).
@@ -268,7 +288,7 @@ Mit der Platzierungserweiterung können Sie Ihre Orte-Dienst-Bibliotheken zu Ihr
 In der Erweiterung Orte:
 
 * Sie können festlegen, welche POI-Bibliotheken in Ihre App aufgenommen werden sollen.
-* Regelereignisse, die beim Ein- oder Ausstieg des POI ausgelöst werden.
+* Regel-Ereignis, die beim Ein- oder Ausstieg des POI ausgelöst werden.
 * Erstellen Sie Datenelemente, die auf den aktuellen POI des Benutzers verweisen.
 
 For more information about the Places extension, see [Places extension](/help/places-ext-aep-sdks/places-extension/places-extension.md).
@@ -277,7 +297,7 @@ For more information about the Places extension, see [Places extension](/help/pl
 
 Sie können die Orte-APIs wie folgt verwenden:
 
-* Erlauben Sie Entwicklern, ihre Liste der POIs zu füllen und zu aktualisieren.
+* Erlauben Sie Entwicklern, ihre Liste von POIs zu füllen und zu aktualisieren.
 * Erstellen Sie eine eigene Benutzeroberfläche oder integrieren Sie sie in eine bestehende POI-Datenbank.
 * Verwenden Sie die Stapelendpunkte der Places API, um POIs stapelweise zu importieren.
 
@@ -285,7 +305,7 @@ Sie können die Orte-APIs wie folgt verwenden:
 
 Weitere Informationen zu den Places-APIs finden Sie unter [Webdienst-API](/help/web-service-api/places-web-services.md).
 
-### In Vorbereitung
+### Bald
 
 #### Analytics  Integration
 
