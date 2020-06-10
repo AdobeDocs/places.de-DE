@@ -1,15 +1,18 @@
 ---
 title: Places-Erweiterung
-description: Mit der Erweiterung "Orte"können Sie je nach Standort Ihrer Benutzer handeln.
+description: Mit der Erweiterung "Orte"können Sie je nach dem Standort Ihrer Benutzer handeln.
 translation-type: tm+mt
-source-git-commit: 36ea8616aa05f5b825a2a4c791a00c5b3f332e9f
+source-git-commit: 0a9a4a713e7e7a49495d11cf26da8981e91b8ed2
+workflow-type: tm+mt
+source-wordcount: '676'
+ht-degree: 5%
 
 ---
 
 
 # Places-Erweiterung {#places-extension}
 
-Mit der Erweiterung &quot;Orte&quot;können Sie je nach Standort Ihrer Benutzer handeln. Diese Erweiterung ist die Schnittstelle zu den APIs für die Abfrage von Orten. Durch Listening auf Ereignisse, die GPS-Koordinaten und Ereignisse für Geofenregionen enthalten, löst diese Erweiterung neue Ereignisse aus, die von der Rules Engine verarbeitet werden. Die Plates-Erweiterung ruft außerdem eine Liste des nächstgelegenen POI für die App-Daten ab, die von den APIs abgerufen werden. Die von den APIs zurückgegebenen Regionen werden im Cache und in der Persistenz gespeichert, was eine begrenzte Offlineverarbeitung ermöglicht.
+Mit der Erweiterung &quot;Orte&quot;können Sie je nach dem Standort Ihrer Benutzer handeln. Diese Erweiterung ist die Schnittstelle zu den Ores Abfrage Service APIs. Durch Listening auf Ereignis, die GPS-Koordinaten und Geofenregion-Ereignis enthalten, löst diese Erweiterung neue Ereignis aus, die von der Rules Engine verarbeitet werden. Die Plates-Erweiterung ruft außerdem eine Liste des nächstgelegenen POI für die App-Daten ab, die von den APIs abgerufen werden. Die von den APIs zurückgegebenen Regionen werden im Cache und in der Persistenz gespeichert, was eine begrenzte Offlineverarbeitung ermöglicht.
 
 ## Installieren der Platzierungserweiterung in Adobe Experience Platform Launch
 
@@ -22,28 +25,32 @@ Mit der Erweiterung &quot;Orte&quot;können Sie je nach Standort Ihrer Benutzer 
 
 1. Schließen Sie den Veröffentlichungsprozess ab, um die SDK-Konfiguration zu aktualisieren.
 
-   Weitere Informationen zur Veröffentlichung in Experience Platform Launch finden Sie unter [Veröffentlichen](https://docs.adobe.com/content/help/en/launch/using/reference/publish/overview.html).
+   Weitere Informationen zur Veröffentlichung in Experience Platform Launch finden Sie unter [Veröffentlichen](https://docs.adobe.com/content/help/de-DE/launch/using/reference/publish/overview.html).
 
 ### Configure the Places extension {#configure-places-extension}
 
 ![](//help/assets/places-extension.png)
 
-## Hinzufügen der Platzierungserweiterung zu Ihrer App {#add-places-to-app}
+## Hinzufügen der Platzierungserweiterung für Ihre App {#add-places-to-app}
 
-Sie können Ihre Android- und iOS-Apps mit der Erweiterung &quot;Orte&quot;versehen.
+Sie können Ihre Android- und iOS-Apps mit der Erweiterung &quot;Orte&quot;versehen. Die Schritte zum Hinzufügen von Orten zu Ihrer iOS- oder Android-Anwendung finden Sie unten. Für Cordova und React Native stehen ebenfalls Plätze zur Verfügung. Informationen zum Hinzufügen von Orten zu Ihrer Anwendung beim Entwickeln mit einer dieser Plattformen finden Sie unter den folgenden Links:
+
+**Cordova ACPPlaces**: https://github.com/adobe/cordova-acpplaces/blob/master/README.md
+
+**Native ACPPlaces** react: https://github.com/adobe/react-native-acpplaces/blob/master/README.md
 
 ### Android
 
 So fügen Sie Ihrer App die Platzierungserweiterung mit Java hinzu:
 
-1. Fügen Sie dem Projekt mithilfe der Adle-Datei Ihrer App die Ortserweiterung hinzu.
+1. Hinzufügen Sie die Platzierungs-Erweiterung mit der GPÜGELdatei Ihrer App auf Ihr Projekt.
 
    ```java
    implementation 'com.adobe.marketing.mobile:places:1.+'
    implementation 'com.adobe.marketing.mobile:sdk-core:1.+'
    ```
 
-1. Importieren Sie die Erweiterung &quot;Orte&quot;in die Hauptaktivität Ihrer Anwendung.
+1. Importieren Sie die Platzierungserweiterung in die Haupt-Aktivität Ihrer Anwendung.
 
    ```java
    import com.adobe.marketing.mobile.Places;
@@ -54,7 +61,7 @@ So fügen Sie Ihrer App die Platzierungserweiterung mit Java hinzu:
 
 So fügen Sie Ihrer App die Platzierungserweiterung mit Objective-C oder Swift hinzu:
 
-1. Fügen Sie Ihrem Projekt die Bibliotheken &quot;Orte&quot;und &quot; [Mobile Core](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/mobile-core) &quot;hinzu. Sie müssen die folgenden Pods hinzufügen `Podfile`:
+1. Hinzufügen Sie die Bibliotheken &quot;Orte&quot;und &quot; [Mobile Core](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/mobile-core) &quot;in Ihr Projekt ein. Sie müssen die folgenden Pods hinzufügen `Podfile`:
 
    ```objective-c
    pod 'ACPPlaces', '~> 1.0'
@@ -224,5 +231,5 @@ Um die SDK-Konfiguration zur Laufzeit programmgesteuert zu aktualisieren, änder
 | Schlüssel | Erforderlich | Beschreibung |
 | :--- | :--- | :--- |
 | `places.libraries` | Ja | Die Speichererweiterungsbibliotheken für die mobile App. Er gibt die Bibliotheks-ID und den Namen der Bibliothek an, die von der mobilen App unterstützt werden. |
-| `places.endpoint` | Ja | Der standardmäßige Endpunkt &quot;Orts-Abfrage-Dienst&quot;, mit dem Informationen zu Bibliotheken und POIs abgerufen werden. |
+| `places.endpoint` | Ja | Der Standardendpunkt &quot;Orts Abfrage Service&quot;, mit dem Informationen zu Bibliotheken und POIs abgerufen werden. |
 | `places.membershipttl` | Nein | Standardwert von 3600 (Sekunden in einer Stunde). Gibt an, wie lange (in Sekunden) die Platzierungsmitgliedschaftsinformationen für das Gerät gültig bleiben. |
