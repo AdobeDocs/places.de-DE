@@ -2,9 +2,9 @@
 title: Places-Erweiterung
 description: Mit der Erweiterung "Orte"können Sie je nach dem Standort Ihrer Benutzer handeln.
 translation-type: tm+mt
-source-git-commit: 0a9a4a713e7e7a49495d11cf26da8981e91b8ed2
+source-git-commit: 0ac139fce666540b36a8c82fe4c05974e12e987f
 workflow-type: tm+mt
-source-wordcount: '676'
+source-wordcount: '678'
 ht-degree: 5%
 
 ---
@@ -14,18 +14,18 @@ ht-degree: 5%
 
 Mit der Erweiterung &quot;Orte&quot;können Sie je nach dem Standort Ihrer Benutzer handeln. Diese Erweiterung ist die Schnittstelle zu den Ores Abfrage Service APIs. Durch Listening auf Ereignis, die GPS-Koordinaten und Geofenregion-Ereignis enthalten, löst diese Erweiterung neue Ereignis aus, die von der Rules Engine verarbeitet werden. Die Plates-Erweiterung ruft außerdem eine Liste des nächstgelegenen POI für die App-Daten ab, die von den APIs abgerufen werden. Die von den APIs zurückgegebenen Regionen werden im Cache und in der Persistenz gespeichert, was eine begrenzte Offlineverarbeitung ermöglicht.
 
-## Installieren der Platzierungserweiterung in Adobe Experience Platform Launch
+## Installieren der Platzierungserweiterung beim Starten der Adobe Experience Platform
 
 1. In Experience Platform Launch, click the **[!UICONTROL Extensions]** tab.
 1. Suchen Sie auf der **[!UICONTROL Catalog]** Registerkarte die **[!UICONTROL Places]** Erweiterung und klicken Sie auf **[!UICONTROL Install]**.
 1. Wählen Sie die Orte-Bibliotheken aus, die Sie in dieser Eigenschaft verwenden möchten. Dies sind die Bibliotheken, auf die in Ihrer App zugegriffen werden kann.
 1. Klicken Sie auf **[!UICONTROL Save]**.
 
-   Wenn Sie auf klicken **[!UICONTROL Save]**, durchsucht das Experience Platform SDK die Places Services nach POIs in den ausgewählten Bibliotheken. Die POI-Daten werden beim Erstellen der App nicht in den Download der Bibliothek einbezogen, aber eine ortsbasierte Untergruppe von POIs wird zur Laufzeit auf das Gerät des Endbenutzers heruntergeladen und basiert auf den GPS-Koordinaten des Benutzers.
+   Wenn Sie auf klicken **[!UICONTROL Save]**, durchsucht das Experience Platform-SDK die Orte-Dienste nach POIs in den von Ihnen ausgewählten Bibliotheken. Die POI-Daten werden beim Erstellen der App nicht in den Download der Bibliothek einbezogen, aber eine ortsbasierte Untergruppe von POIs wird zur Laufzeit auf das Gerät des Endbenutzers heruntergeladen und basiert auf den GPS-Koordinaten des Benutzers.
 
 1. Schließen Sie den Veröffentlichungsprozess ab, um die SDK-Konfiguration zu aktualisieren.
 
-   Weitere Informationen zur Veröffentlichung in Experience Platform Launch finden Sie unter [Veröffentlichen](https://docs.adobe.com/content/help/de-DE/launch/using/reference/publish/overview.html).
+   Weitere Informationen zum Veröffentlichen in Experience Platform Launch finden Sie unter [Veröffentlichen](https://docs.adobe.com/content/help/de-DE/launch/using/reference/publish/overview.html).
 
 ### Configure the Places extension {#configure-places-extension}
 
@@ -35,9 +35,9 @@ Mit der Erweiterung &quot;Orte&quot;können Sie je nach dem Standort Ihrer Benut
 
 Sie können Ihre Android- und iOS-Apps mit der Erweiterung &quot;Orte&quot;versehen. Die Schritte zum Hinzufügen von Orten zu Ihrer iOS- oder Android-Anwendung finden Sie unten. Für Cordova und React Native stehen ebenfalls Plätze zur Verfügung. Informationen zum Hinzufügen von Orten zu Ihrer Anwendung beim Entwickeln mit einer dieser Plattformen finden Sie unter den folgenden Links:
 
-**Cordova ACPPlaces**: https://github.com/adobe/cordova-acpplaces/blob/master/README.md
+**[Cordova Places Plugin](https://github.com/adobe/cordova-acpplaces/blob/master/README.md)**
 
-**Native ACPPlaces** react: https://github.com/adobe/react-native-acpplaces/blob/master/README.md
+**[React Native Places Plugin](https://github.com/adobe/react-native-acpplaces/blob/master/README.md)**
 
 ### Android
 
