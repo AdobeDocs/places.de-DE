@@ -2,15 +2,31 @@
 title: Versionshinweise
 description: Versionshinweise für den Places-Dienst.
 translation-type: tm+mt
-source-git-commit: f5fa6005396e3c5b5b8eb92c7c920d2d0d974743
+source-git-commit: 3f986697179eb9c0af1d9b54daf67793a99b8491
 workflow-type: tm+mt
-source-wordcount: '1419'
-ht-degree: 3%
+source-wordcount: '1503'
+ht-degree: 4%
 
 ---
 
 
 # Versionshinweise {#release-notes}
+
+## 8. Juli 2020
+
+* **Platzierungs- und Platzierungsüberwachungserweiterungen**
+
+   * Erweiterungen für Orts- und Ortemonitor wurden für native [React-Anwendungen hinzugefügt.](https://aep-sdks.gitbook.io/docs/resources/upgrading-to-aep/current-sdk-versions#react-native)
+   * Erweiterungen für Platzierungs- und Ortemonitor wurden für [Cordova-Anwendungen hinzugefügt.](https://aep-sdks.gitbook.io/docs/resources/upgrading-to-aep/current-sdk-versions#cordova)
+   * Weitere Informationen finden Sie unter: [Platzierungs-Erweiterung](https://docs.adobe.com/content/help/de-DE/places/using/places-ext-aep-sdks/places-extension/places-extension.html)
+
+
+## 12. Mai 2020
+
+* **Places Service**
+
+   * Massenimport-POIs aus einer CSV-Datei mit der Schaltfläche &quot;POIs importieren&quot;
+   * Auswählen mehrerer POIs und Massenbearbeitung oder Hinzufügen von Metadatenwerten
 
 ## 6. Mai 2020
 
@@ -184,7 +200,7 @@ Die folgenden Aktualisierungen wurden in dieser Version vorgenommen:
 
 Es wurde eine neue API hinzugefügt, mit der alle Daten zum Thema Orte aus dem Freigabestand, dem In-App-Speicher und `NSUserDefaults`dem gelöscht werden.
 
-## 25. Juni 2019
+## 25. Juni 2019
 
 Die folgenden Aktualisierungen wurden in dieser Version vorgenommen:
 
@@ -213,7 +229,7 @@ Die folgenden Aktualisierungen wurden in dieser Version vorgenommen:
 
 Die folgenden Probleme in der Benutzeroberfläche &quot;Orte&quot;wurden behoben:
 
-* Der Lösungsschalter in Orten wurde aktualisiert, um ihn an den Rest der Experience Cloud auszurichten.
+* Der Solution Switcher in Places wurde aktualisiert, um ihn an das restliche Experience Cloud anzupassen.
 * Es wurde ein Problem behoben, bei dem der Rang gespeichert wurde, wenn keine Rangänderungen vorgenommen wurden.
 * Der erlaubte Mindestradius in der Benutzeroberfläche wurde auf 10 Meter erhöht.
 * Es wurde ein Problem behoben, bei dem beim Löschen aller Zahlen im Feld das Feld Radius auf 20 Meter zurückgesetzt wurde.
@@ -309,4 +325,4 @@ Weitere Informationen zu den Places-APIs finden Sie unter [Webdienst-API](/help/
 
 #### Analytics  Integration
 
-Die Analytics-Erweiterung wird aktualisiert, um allen ausgehenden Analytics-Aufrufen automatisch Kontextdaten zum Standort aus Ihrer Datenbank für den Places-Dienst hinzuzufügen, wenn sich ein Benutzer in einem POI befindet (Passiv-Aufrufe). Mit diesem Update können auch Regelerstellungen Analytics-Verfolgungsaufrufe direkt beim POI-Einstieg oder -Ausstieg auslösen (Aktive Aufrufe).
+Die Analytics-Erweiterung wird aktualisiert, um allen ausgehenden Analytics-Aufrufen automatisch Kontextdaten zum Speicherort aus Ihrer Ortsdienst-Datenbank hinzuzufügen, wenn sich ein Benutzer in einem POI befindet (Passiv-Aufrufe). Diese Aktualisierung ermöglicht auch die Regelerstellung, um Analytics-Verfolgungsaufrufe direkt beim POI-Einstieg oder -Ausstieg auszulösen (Aktive Aufrufe).
