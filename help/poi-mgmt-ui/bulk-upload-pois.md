@@ -1,13 +1,26 @@
 ---
 title: Massen-Upload-POIs
-description: Dieser Abschnitt enthält Informationen zum Hochladen von POIs als Massendatei.
+description: In diesem Abschnitt erfahren Sie, wie Sie POIs als Massenupload hochladen.
 translation-type: tm+mt
-source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
+source-git-commit: 1ffc1f4237dfb872614a4bffd43d3fdaefc62fa9
+workflow-type: tm+mt
+source-wordcount: '853'
+ht-degree: 0%
 
 ---
 
 
-# Massenupload von POIs {#bulk-upload-pois}
+# Bulk upload of POIs {#bulk-upload-pois}
+
+Mit der Schaltfläche &quot;POIs **importieren** &quot;im Orte-Dienst können neue POIs mit einer CSV-Datei als Massen-Upload hochgeladen werden. Es wird eine Beispielvorlage für Tabellen bereitgestellt, die zeigt, welche Datenspalten erforderlich sind und wie optionale benutzerdefinierte Metadaten hinzugefügt werden.
+
+![Massenimportbildschirm](/help/assets/Bulk-import.png)
+
+Nachfolgend finden Sie ein Video mit dem Vorgang für den Massenimport und die Massenbearbeitung:
+
+>[!VIDEO](https://www.youtube.com/watch?v=75qVtirsXhg)
+
+## Python API-Skripten
 
 Eine Reihe von Python-Skripten wurden erstellt, um den Stapelimport von POIs aus einer CSV-Datei in eine POI-Datenbank mithilfe der Web Service APIs zu vereinfachen. Diese Skripten können von diesem Open-Source- [Git-Repo](https://github.com/adobe/places-scripts)heruntergeladen werden.
 
@@ -23,7 +36,7 @@ Im Folgenden finden Sie einige Informationen zu den Skripten:
 
 Eine .csv-Beispieldatei `places_sample.csv`ist Teil dieses Pakets und enthält die erforderlichen Kopfzeilen und eine Reihe von Musterdaten. Diese Header sind alle Kleinbuchstaben und entsprechen den reservierten Metadatenschlüsseln, die in der Datenbank &quot;Orte&quot;verwendet werden. Spalten, die Sie der .csv-Datei hinzufügen, werden der POI-Datenbank in einem separaten Metadatenabschnitt für jeden POI als Schlüssel/Wert-Paare hinzugefügt und der Header-Wert wird als Schlüssel verwendet.
 
-Im Folgenden finden Sie eine Liste der Spalten und Werte, die Sie verwenden müssen:
+Im Folgenden finden Sie eine Liste der Spalten und der erforderlichen Werte:
 
 * `lib_id`
 
@@ -57,7 +70,7 @@ Die Werte der folgenden Spalten werden in der Benutzeroberfläche des Places-Die
 
 * -Symbol, das als Symbol auf dem Pin verwendet wird, das die Position des POI auf der Benutzeroberfläche des Places-Dienstes darstellt.
 
-   * Die gültigen Werte sind &quot;&quot;, Shop, Hotelbett, Auto, Flugzeug, Zug, Schiff, Stadion, amusementpark, Anker, Beaker, Bell, Bid, Buch, Box, Brieftasche, Broschüre, Bürste, Gebäude, Rechner, Kamera, Uhr, Bildung, Taschenlampe, folgen, Spiel, weiblich, männlich, Geschenk, Hammer, Herz, Schlüssel, Start, Glühbirne, Briefkasten, Geld, Posting, Geld, Geld, Posting, Pin Warenkorb, Warenkorb, Stern, Ziel, Teekanne, Daumendown, Daumen, Trap, Trophäe, Schraubenschlüssel.
+   * Die gültigen Werte sind &quot;&quot;, Shop, Hotelbett, Auto, Flugzeug, Zug, Schiff, Stadion, amusementpark, Anker, Beaker, Bell, Bid, Buch, Box, Brieftasche, Broschüre, Bürste, Gebäude, Rechner, Kamera, Uhr, Bildung, Taschenlampe, folgen, Spiel, weiblich, männlich, Geschenk, Hammer, Herz, Schlüssel, Start, Glühbirne, Briefkasten, Geld, Posting, Geld, Geld, Posting, Pin Warenkorb, Warenkorb, Stern, Zielgruppe, Teekanne, Daumendown, Daumen, Trap, Trophäe, Schraubenschlüssel.
 
       Die Symbolwerte werden in der Reihenfolge aufgeführt, in der sie in der folgenden Abbildung angezeigt werden:
 
@@ -80,11 +93,11 @@ Die Werte der folgenden Spalten werden in der Benutzeroberfläche des Places-Die
 
    * `access_code`
 
-      Dies ist Ihr Zugriffscode, den Sie beim Aufruf von Adobe IMS erhalten haben. Informationen zum Abrufen dieses Zugriffscodes finden Sie unter *Voraussetzungen für den Benutzerzugriff* in der [Integrationsübersicht und Voraussetzungen](/help/web-service-api/adobe-i-o-integration.md).
+      Dies ist Ihr Zugriffscode, den Sie beim Aufruf von Adobe IMS erhalten haben. Informationen zum Abrufen dieses Zugriffscodes finden Sie unter *Voraussetzungen für den Benutzerzugriff* in der Übersicht über die [Integration und Voraussetzungen](/help/web-service-api/adobe-i-o-integration.md).
 
    * `org_id`
 
-      Die Experience Cloud-Organisations-ID, in die die POIs importiert werden sollen. Informationen zum Abrufen der Organisations-ID finden Sie unter *Voraussetzungen für den Benutzerzugriff* in der Übersicht über die [Integration und Voraussetzungen](/help/web-service-api/adobe-i-o-integration.md).
+      Die Experience Cloud-orgID, in die die POIs importiert werden sollen. Informationen zum Abrufen der Organisations-ID finden Sie unter *Voraussetzungen für den Benutzerzugriff* in der Übersicht über die [Integration und Voraussetzungen](/help/web-service-api/adobe-i-o-integration.md).
 
    * `api_key`
 
@@ -92,18 +105,18 @@ Die Werte der folgenden Spalten werden in der Benutzeroberfläche des Places-Die
    b. Speichern Sie Ihre Änderungen.
 
 1. Navigieren Sie in einem Terminalfenster zum `…/places-scripts/import/` Ordner.
-1. Geben Sie `python ./places_import.py` die **[!UICONTROL enter]**(**[!UICONTROL return]**) Taste ein.
+1. Geben Sie `python ./places_import.py` die **[!UICONTROL enter]** (**[!UICONTROL return]**) Taste ein.
 
 
 ## CSV-Prüfungen vor dem Import
 
 Das Skript führt zunächst die folgenden Prüfungen in der .csv-Datei durch:
 
-* Ob eine `.csv` Datei angegeben wurde.
+* Gibt an, ob eine `.csv` Datei angegeben wurde.
 * Ob der Dateipfad gültig ist.
-* Ob die reservierten Metadaten-Header enthalten sind.
+* Gibt an, ob die reservierten Metadaten-Header enthalten sind.
 
-   Die reservierten Metadaten-Header sind lib_id, name, description, type, length, latitude, radius, country, state, city, street, category, icon und color.
+   Die reservierten Metadaten-Header sind lib_id, name, description, type, length, latitude, radius, country, state, city, street, Kategorie, icon und color.
 
    >[!TIP]
    >
@@ -113,6 +126,6 @@ Das Skript führt zunächst die folgenden Prüfungen in der .csv-Datei durch:
 
 Wenn Fehler gefunden werden, gibt das Skript die Fehler aus und wird abgebrochen. Wenn keine Fehler gefunden werden, versucht das Skript, die POIs in Stapeln von 1000 zu importieren. Wenn der Stapel erfolgreich importiert wurde, gibt das Skript einen Statuscode von 200 aus. Wenn der Stapel nicht erfolgreich importiert wurde, werden Fehler gemeldet.
 
-## Komponententests
+## Unit-Tests
 
 Komponententests befinden sich in der `tests.py` Datei, sollten vor jeder Pull-Anforderung ausgeführt werden und alle bestehen. Zusätzliche Tests sollten mit neuem Code hinzugefügt werden. Um die Tests auszuführen, navigieren Sie zum `…/places-scripts/import/` Ordner und geben Sie `python ./places_import.py` in Terminal ein.
