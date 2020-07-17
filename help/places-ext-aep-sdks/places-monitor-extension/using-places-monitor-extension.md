@@ -2,7 +2,10 @@
 title: Verwenden der Erweiterung "Orts Monitor"
 description: Informationen zum Installieren, Konfigurieren und Verwenden der Erweiterung "Orts Monitor".
 translation-type: tm+mt
-source-git-commit: ac1d410a676557064d5390f8392f402541754478
+source-git-commit: 7fdaace59886225b7fd9b0eba8cc6c2a139fa2d7
+workflow-type: tm+mt
+source-wordcount: '491'
+ht-degree: 6%
 
 ---
 
@@ -11,22 +14,30 @@ source-git-commit: ac1d410a676557064d5390f8392f402541754478
 
 Führen Sie die folgenden Aufgaben aus, um die Erweiterung &quot;Orts-Monitor&quot;zu verwenden:
 
-## Installieren der Erweiterung &quot;Platzierungsmonitor&quot;im Experience Platform Launch
+## Installieren der Erweiterung &quot;Platzierungsmonitor&quot;in Experience Platform Launch
 
-1. In Experience Platform Launch, click the **[!UICONTROL Extensions]**tab.
-1. Suchen Sie auf der **[!UICONTROL Catalog]**Registerkarte die**[!UICONTROL Places Monitor]** Erweiterung und klicken Sie auf **Installieren**.
+1. In Experience Platform Launch, click the **[!UICONTROL Extensions]** tab.
+1. Suchen Sie auf der **[!UICONTROL Catalog]** Registerkarte die **[!UICONTROL Places Monitor]** Erweiterung und klicken Sie auf **Installieren**.
 1. Klicken Sie auf **[!UICONTROL Save]**.
-1. Folgen Sie dem Veröffentlichungsprozess, um die SDK-Konfiguration zu aktualisieren.
+1. Führen Sie den Veröffentlichungsprozess aus, um die SDK-Konfiguration zu aktualisieren.
 
 ### Konfigurieren der Platzierungsmonitor-Erweiterung {#configure-places-monitor-extension}
 
-Es gibt keine Konfigurationsaufgaben für die Plates Monitor-Erweiterung.
+Es gibt keine Aufgaben zur Konfiguration der Plates Monitor-Erweiterung.
 
 ![Konfigurieren der ‌ &quot;Orte-Monitor](/help/assets/configure_places_monitor.png)&quot;
 
-## Hinzufügen der Erweiterung &quot;Orts-Monitor&quot;zu Ihrer App {#add-monitor-extension-to-app}
+## Hinzufügen der Platzierungsmonitor-Erweiterung für Ihre App {#add-monitor-extension-to-app}
 
-Sie müssen der Android- oder iOS-App die Erweiterung &quot;Orts Monitor&quot;hinzufügen.
+Die Anweisungen zum Hinzufügen der Platzierungsmonitor-Erweiterung zu Ihrer Android- oder iOS-Anwendung finden Sie unten.
+
+Weitere Plattformunterstützung für die Platzierungsmonitor-Erweiterung:
+**[Cordova Places Monitor](https://github.com/adobe/cordova-acpplaces-monitor/blob/master/README.md)**
+
+**[Bildschirm &quot;Ansprechende native Orte&quot;](https://github.com/adobe/react-native-acpplaces-monitor/blob/master/README.md)**
+
+**[Flachbildschirm](https://github.com/adobe/flutter_acpplaces_monitor/blob/master/README.md)**
+
 
 ### Android
 
@@ -34,7 +45,7 @@ Führen Sie in Android die folgenden Schritte aus:
 
 #### Java
 
-1. Fügen Sie die Erweiterungen &quot;Orte-Monitor&quot;und &quot;Orte&quot;mithilfe der Dockingdatei Ihrer App zum Projekt hinzu.
+1. Hinzufügen Sie die Erweiterungen &quot;Orte-Monitor&quot;und &quot;Orte&quot;mithilfe der Dockingdatei Ihrer App an Ihr Projekt an.
 
 1. Schließen Sie auch die neuesten Google-Standorte in der Datei &quot;gradle&quot;ein.
 
@@ -45,7 +56,7 @@ Führen Sie in Android die folgenden Schritte aus:
    implementation 'com.google.android.gms:play-services-location:16.0.0'
    ```
 
-1. Importieren Sie die Erweiterung &quot;Orts-Monitor&quot;in die Hauptaktivität Ihrer Anwendung.
+1. Importieren Sie die Erweiterung &quot;Orts-Monitor&quot;in die Haupt-Aktivität Ihrer Anwendung.
 
    ```java
    import com.adobe.marketing.mobile.PlacesMonitor;
@@ -55,7 +66,7 @@ Führen Sie in Android die folgenden Schritte aus:
 
 Führen Sie unter iOS die folgenden Schritte aus:
 
-1. Fügen Sie die Bibliothek über Ihre Cocoapods zu Ihrem Projekt hinzu, `Podfile` indem Sie sie hinzufügen `pod 'ACPPlacesMonitor'`.
+1. Add the library to your project via your Cocoapods `Podfile` by adding `pod 'ACPPlacesMonitor'`.
 1. Importieren Sie die Bibliotheken für die Orts- und Orteüberwachung:
 
 #### Objective-C
@@ -75,9 +86,9 @@ import ACPPlacesMonitor
 ```
 
 
-## Registrieren und Starten des Orts-Monitors {#register-start-places-monitor}
+## Registrieren und Beginn des Orts-Monitors {#register-start-places-monitor}
 
-Sie müssen sich registrieren und den Orte-Monitor in Android oder iOS starten.
+Sie müssen sich registrieren und den Orte-Monitor in Android oder iOS Beginn.
 
 ## Android
 
@@ -152,13 +163,13 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 >Die Orteüberwachung hängt von der Platzierungserweiterung ab. When manually installing the Places Monitor extension, ensure that you also add the `libACPPlaces_iOS.a` library to your project.
 
 
-## Berechtigungen zum Manifest hinzufügen
+## Hinzufügen Berechtigungen für das Manifest
 
 ### Android
 
 **Java**
 
-Um für alle Versionen von Android anzugeben, dass für Ihre App eine Standortberechtigung erforderlich ist, fügen Sie ein `<uses-permission>` Element im App-Manifest als untergeordnetes Element des obersten `<manifest>` Elements hinzu. Wenn Android-Anwendungen, die auf API-Ebene ab 29 abzielen, der App den Zugriff auf den Speicherort im Hintergrund ermöglichen sollen, schließen Sie die ACCESS_HINTERGRUND_LOCATION-Berechtigung ein.
+Um für alle Versionen von Android anzugeben, dass für Ihre App eine Standortberechtigung erforderlich ist, fügen Sie ein `<uses-permission>` Element im App-Manifest als untergeordnetes Element des obersten `<manifest>` Elements hinzu. Für Android-Anwendungen mit Zielgruppe API Level 29 und höher, die der App den Zugriff auf den Speicherort im Hintergrund ermöglichen, schließen Sie die ACCESS_HINTERGRUND_LOCATION-Berechtigung ein.
 
 ```java
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.adobe.placesapp">
@@ -172,9 +183,9 @@ Um für alle Versionen von Android anzugeben, dass für Ihre App eine Standortbe
 ```
 
 
-## Aktivieren von Standortaktualisierungen im Hintergrund {#enable-location-updates-background}
+## Aktivieren von Standortaktualisierungen im Hintergrund  {#enable-location-updates-background}
 
-iOS unterstützt die Bereitstellung von Standortereignissen für Apps, die ausgesetzt oder nicht mehr ausgeführt werden. Um Standortaktualisierungen im Hintergrund für die Places Monitor-Erweiterung zu erhalten, konfigurieren Sie die Funktion für Standortaktualisierungen für Ihre App in `Xcode.background-location-updates`.
+iOS unterstützt den Versand von Positionierungs-Ereignissen in Apps, die ausgesetzt oder nicht mehr ausgeführt werden. Um Standortaktualisierungen im Hintergrund für die Places Monitor-Erweiterung zu erhalten, konfigurieren Sie die Funktion für Standortaktualisierungen für Ihre App in `Xcode.background-location-updates`.
 
 ![mit dem Orte-Monitor](/help/assets/using-the-places-monitor_1.png)
 
