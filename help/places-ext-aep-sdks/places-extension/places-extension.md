@@ -2,9 +2,9 @@
 title: Places-Erweiterung
 description: Mit der Erweiterung "Orte"können Sie je nach dem Standort Ihrer Benutzer handeln.
 translation-type: tm+mt
-source-git-commit: 0ac139fce666540b36a8c82fe4c05974e12e987f
+source-git-commit: a7dddb78e1e00a0bde01ea668334932759a9dae8
 workflow-type: tm+mt
-source-wordcount: '678'
+source-wordcount: '694'
 ht-degree: 5%
 
 ---
@@ -33,11 +33,16 @@ Mit der Erweiterung &quot;Orte&quot;können Sie je nach dem Standort Ihrer Benut
 
 ## Hinzufügen der Platzierungserweiterung für Ihre App {#add-places-to-app}
 
-Sie können Ihre Android- und iOS-Apps mit der Erweiterung &quot;Orte&quot;versehen. Die Schritte zum Hinzufügen von Orten zu Ihrer iOS- oder Android-Anwendung finden Sie unten. Für Cordova und React Native stehen ebenfalls Plätze zur Verfügung. Informationen zum Hinzufügen von Orten zu Ihrer Anwendung beim Entwickeln mit einer dieser Plattformen finden Sie unter den folgenden Links:
+Sie können Ihre Android- und iOS-Apps mit der Erweiterung &quot;Orte&quot;versehen. Die Schritte zum Hinzufügen von Orten zu Ihrer iOS- oder Android-Anwendung finden Sie unten. Die Platzierungserweiterungen stehen auch für die folgenden Plattformen zur Verfügung. Informationen zum Hinzufügen von Orten zu Ihrer Anwendung beim Entwickeln mit einer dieser Plattformen finden Sie unter den folgenden Links:
 
 **[Cordova Places Plugin](https://github.com/adobe/cordova-acpplaces/blob/master/README.md)**
 
 **[React Native Places Plugin](https://github.com/adobe/react-native-acpplaces/blob/master/README.md)**
+
+**[Flatter Places Plugin](https://github.com/adobe/flutter-acpplaces_monitor)**
+
+**[Xamarin Places Plugin](https://github.com/adobe/xamarin-acpcore)**
+
 
 ### Android
 
