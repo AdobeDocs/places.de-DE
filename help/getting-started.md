@@ -2,7 +2,10 @@
 title: Erste Schritte
 description: Erste Schritte mit dem Orte-Dienst.
 translation-type: tm+mt
-source-git-commit: c22efc36f2eac6b20fc555d998c3988d8c31169e
+source-git-commit: 30650c1e11a52f6bbc118d374b8ff6050b5d80ce
+workflow-type: tm+mt
+source-wordcount: '180'
+ht-degree: 3%
 
 ---
 
@@ -11,7 +14,11 @@ source-git-commit: c22efc36f2eac6b20fc555d998c3988d8c31169e
 
 Im Folgenden finden Sie ein hilfreiches Video, um einen Überblick über Places Services zu erhalten:
 
->[!VIDEO](https://www.youtube.com/watch?v=aV6i_ayxWCw)
+<!--
+Test of different youtube link for exl
+-->
+
+>[!VIDEO](https://youtu.be/aV6i_ayxWCw)
 
 ## Verwenden des Orte-Dienstes
 
@@ -19,20 +26,20 @@ Führen Sie die folgenden Aufgaben aus, um den Places-Dienst zu verwenden:
 
 ### 1. Stellen Sie sicher, dass Ihr Benutzer für die Verwendung des Orte-Dienstes freigeschaltet ist.
 
-Der Produktkontext des Orts-Dienstes ist für alle Experience Cloud-Organisationen verfügbar.
+Der Produktkontext für den Places Service steht für alle Experience Cloud-Organisationen zur Verfügung.
 
-* Stellen Sie sicher, dass Sie als Benutzer unter den Produktkontexten &quot;Orte-Dienst und Erlebnisplattform-Start&quot;in der Admin-Konsole aufgeführt sind.
+* Vergewissern Sie sich, dass Sie als Benutzer unter den Kontexten &quot;Orte-Dienst&quot;und &quot;Experience Platform Launch&quot;in der Admin Console aufgeführt sind.
 
-   Weitere Informationen finden Sie unter *Hinzufügen eines Benutzers zum Experience Platform Launch and Places Service* in den [häufig gestellten Fragen](/help/places-gain-access.md).
+   Weitere Informationen finden Sie unter *Hinzufügen eines Benutzers zum Experience Platform Launch- und Platzierungsdienst* in [häufig gestellten Fragen](/help/places-gain-access.md).
 
 
-### 2. POIs erstellen
+### 2. Erstellen von POIs
 
 POI (Points of Interest, POI) sind Geo-Zäune, die Sie für Ihre Organisationen erstellen. Sie können POIs auf eine der folgenden Arten erstellen:
 
 * Verwenden der Benutzeroberfläche des Places-Dienstes.
 
-   Weitere Informationen finden Sie unter Übersicht über den [Platzierungsdienst](/help/poi-mgmt-ui/poi-mgmt-ui-overview.md).
+   For more information, see [Places Service overview](/help/poi-mgmt-ui/poi-mgmt-ui-overview.md).
 
 * Verwenden der APIs des Places-Webdiensts.
 
