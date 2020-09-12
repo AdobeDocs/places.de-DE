@@ -1,13 +1,13 @@
 ---
 product: Places Service
 audience: end-user
-user-guide-title: Places Service
+user-guide-title: Handbuch zum Orte-Dienst
 user-guide-description: Places Service is a geo-location service that enables mobile apps with location awareness to understand the location context.
 translation-type: tm+mt
-source-git-commit: 43b1eb0d384e2e75e444b737c0ab15798492d0a8
+source-git-commit: f9215fa3871d91166ad109a0708105f79536213c
 workflow-type: tm+mt
-source-wordcount: '297'
-ht-degree: 14%
+source-wordcount: '298'
+ht-degree: 13%
 
 ---
 
@@ -66,15 +66,15 @@ ht-degree: 14%
       + [Platzierungs-Monitor-API-Referenz](places-ext-aep-sdks/places-monitor-extension/places-monitor-api-reference.md)
 + [Verwenden Sie den Orte-Dienst mit Ihrer eigenen Überwachungslösung](using-your-own-monitor.md)
 + [Orte-Dienst ohne aktive Regionsüberwachung verwenden](use-places-without-active-monitoring.md)
-+ Verwenden des Orte-Dienstes als Teil des Experience Platform Launch-Arbeitsablaufs {#use-places-launch-workflow}
-   + [Verwenden des Orte-Dienstes als Teil des Experience Platform Launch-Arbeitsablaufs](use-places-launch-workflow/places-launch-workflow.md)
++ Verwenden des Orte-Dienstes als Teil des Experience Platform Launch-Workflows {#use-places-launch-workflow}
+   + [Verwenden des Orte-Dienstes als Teil des Experience Platform Launch-Workflows](use-places-launch-workflow/places-launch-workflow.md)
    + [Definieren von Datenelementen](use-places-launch-workflow/define-data-elements.md)
    + [Einstiegs- und Ausstiegsregeln erstellen](use-places-launch-workflow/create-rule-places-property.md)
-+ Orte-Dienst mit anderen Adobe-Lösungen verwenden {#use-places-with-other-solutions}
++ Orte-Dienst mit anderen Adoben-Lösungen verwenden {#use-places-with-other-solutions}
    + Adobe Analytics {#places-adobe-analytics}
       + [Orte-Dienst mit Adobe Analytics verwenden](use-places-with-other-solutions/places-adobe-analytics/use-places-analytics-overview.md)
       + [POI-Einstiegs- und -Ausstiegsdaten an Analytics senden](use-places-with-other-solutions/places-adobe-analytics/use-places-adobe-analytics.md)
-      + [Hinzufügen Standortkontext für Analytics-Anforderungen](use-places-with-other-solutions/places-adobe-analytics/run-reports-aa-places-data.md)
+      + [hinzufügen Standortkontext für Analytics-Anforderungen](use-places-with-other-solutions/places-adobe-analytics/run-reports-aa-places-data.md)
       + [Bericht zu Standortdaten in Analytics Workspace](use-places-with-other-solutions/places-adobe-analytics/places-in-workspace.md)
    + Adobe Mobile Services {#places-mobile-svcs-messaging}
       + [Adobe Mobile Services](use-places-with-other-solutions/places-mobile-svcs-for-messaging/use-places-mobie-svcs-messaging.md)
@@ -85,7 +85,7 @@ ht-degree: 14%
       + [Push-Benachrichtigungen ](use-places-with-other-solutions/places-acs/places-acs-push-notifications.md)
       + [In-App-Nachrichten](use-places-with-other-solutions/places-acs/places-acs-in-app-messages.md)
    + Adobe Target {#places-target}
-      + [Orte-Dienst mit Adobe-Zielgruppe verwenden](use-places-with-other-solutions/places-target/places-target.md)
+      + [Orte-Dienst mit Adobe Target verwenden](use-places-with-other-solutions/places-target/places-target.md)
 + Test und Validierung {#places-testing-validation}
    + [Praktikumsdienst testen und validieren](places-testing-validation/test-validate-places.md)
 + [Häufig gestellte Fragen](places-faqs.md)
