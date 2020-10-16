@@ -1,8 +1,11 @@
 ---
 title: In-App-Nachrichten mit dem Places-Dienst
-description: Dieser Abschnitt enthält Informationen zur Verwendung von Push-Nachrichten in Campaign Standard mit In-App-Nachrichten in Campaign Standard.
+description: Dieser Abschnitt enthält Informationen zur Verwendung von Push-Nachrichten im Campaign Standard mit In-App-Nachrichten in Campaign Standard.
 translation-type: tm+mt
-source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
+source-git-commit: 462df20bb351795dc72009cc18d390cb45e262a8
+workflow-type: tm+mt
+source-wordcount: '356'
+ht-degree: 3%
 
 ---
 
@@ -13,12 +16,12 @@ Anhand dieser Informationen können Sie erkennen, wie Sie mit den Informationen 
 
 ## Voraussetzungen 
 
-Führen Sie zuerst die folgenden Aufgaben aus:
+Führen Sie zuerst die folgenden Aufgaben durch:
 
-* Verwenden Sie eine mobile Anwendung, die mit dem Adobe Experience Platform Mobile SDK, einschließlich der [Adobe Campaign Standard-Erweiterung](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-campaign-standard), konfiguriert wurde.
+* Verwenden Sie eine Mobilanwendung, die mit dem Adobe Experience Platform Mobile SDK einschließlich der [Adobe Campaign Standard-Erweiterung](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-campaign-standard)konfiguriert ist.
 
 * Integrieren Sie das [Adobe Experience Platform Mobile SDK](https://aep-sdks.gitbook.io/docs/getting-started/get-the-sdk) in Ihre App.
-* Fügen Sie Ihrer App-Konfiguration die [Adobe Campaign Standard Extension](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-campaign-standard) hinzu.
+* hinzufügen Sie die [Adobe Campaign Standard Extension](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-campaign-standard) auf Ihre App-Konfiguration.
 
 * [Erstellen Sie einen POI](/help/poi-mgmt-ui/create-a-poi-ui.md) in der Verwaltungsoberfläche für den POI-Dienst für Orte.
 
@@ -28,23 +31,26 @@ Führen Sie zuerst die folgenden Aufgaben aus:
 
 1. Klicken Sie in Ihrer Adobe Campaign Standard-Instanz auf **[!UICONTROL Create In-App message]**.
 1. Wählen Sie für den Nachrichtentyp **[!UICONTROL Target all users of a Mobile application]**.
-1. Klicken Sie auf **[!UICONTROL Next]**und geben Sie die allgemeinen Details ein.
+1. Klicken Sie auf **[!UICONTROL Next]** und geben Sie die allgemeinen Details ein.
 1. Überprüfen Sie im linken Bereich, ob Sie eine Vielzahl von Auslösern verwenden können, die mit Places Services zusammenhängen.
 
    * Sie können festlegen, dass die In-App-Nachricht angezeigt wird, wenn der Benutzer einen POI-Geo-Zaun eingegeben hat.
-   * Sie können auch Metadaten verwenden, die in der Benutzeroberfläche &quot;Orte-Dienste&quot;definiert sind, um die Zielgruppe zu filtern.
-   Im folgenden Beispiel können Sie eine In-App-Nachricht auslösen, die nur Benutzern angezeigt wird, die in einen der Ferienresorts einsteigen, die an einem kostenlosen Getränkeprogramm teilnehmen, und diesen Benutzern bei ihrer Ankunft einen Coupon senden.
+   * Sie können zum Filtern der Audience auch Metadaten verwenden, die in der Benutzeroberfläche der Places-Dienste definiert sind.
+
+   Im folgenden Beispiel können Sie eine In-App-Nachricht auslösen, die nur Benutzern angezeigt wird, die in einem der Urlaubsresorts einsteigen, die an einem kostenlosen Drink-Programm teilnehmen, und diesen Benutzern bei ihrer Ankunft einen Coupon senden.
 
    ![&quot;In-App-Nachrichten-Orte-Metadaten&quot;](/help/assets/last-entered-vacation.png)
 
-1. Click the **[!UICONTROL Next]**to finish creating the In-app message for delivery.
+1. Click the **[!UICONTROL Next]** to finish creating the In-app message for delivery.
 
    ![&quot;Ereignis erstellen&quot;](/help/assets/prepare-ACS.png)
 
-   Um die Bereitstellung der In-App-Nachricht zu testen, starten Sie die Anwendung im Xcode- oder Android-Studio und wählen Sie mit dem Standortsimulator einen POI aus, der den Messaging-Kriterien entspricht.
+   Um den In-App-Nachrichten-Versand zu testen, starten Sie die Anwendung im Xcode- oder Android-Studio und wählen Sie mit dem Standortsimulator einen POI aus, der den Messaging-Kriterien entspricht.
 
    ![&quot;trinken Coupon&quot;](/help/assets/drink-coupon-on-app.png)
 
-Die Verwendung von Places Services mit Adobe Campaign Standard bietet Ihnen ein leistungsfähiges Tool, um Ihre Nachrichten basierend auf Geo-Zaun-Einstiegen und -Ausstiegen zu segmentieren und gezielt an Benutzer auszurichten. Mit dieser Integration können Sie personalisierte und kontextbezogene Anwendungsfälle erstellen.
+Die Verwendung von Places Services mit Adobe Campaign Standard bietet Ihnen ein leistungsfähiges Tool zur Segmentierung und Zielgruppe Ihrer Nachrichten an Benutzer, basierend auf Geo-Zaun-Einstiegen und -Ausstiegen. Mit dieser Integration können Sie personalisierte und kontextbezogene Anwendungsfälle erstellen.
 
->[!VIDEO](https://www.youtube.com/watch?v=ikiTTQw9c-o)
+<!--I changed this embed to a link to pass validation. We should not link to youtube videos, so please upload this to MCP-->
+
+[Adobe Experience Platform Location Service mit Kampagne Messaging](https://www.youtube.com/watch?v=ikiTTQw9c-o)
