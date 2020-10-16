@@ -1,20 +1,20 @@
 ---
 product: Places Service
 audience: end-user
-user-guide-title: Handbuch zum Orte-Dienst
-user-guide-description: Places Service is a geo-location service that enables mobile apps with location awareness to understand the location context.
+user-guide-title: Places Service-Anleitung
+user-guide-description: Places-Service ist ein Geolokations-Service, mit dem Mobile Apps mit Standorterkennung den Standortkontext verstehen können.
 translation-type: tm+mt
 source-git-commit: f9215fa3871d91166ad109a0708105f79536213c
 workflow-type: tm+mt
-source-wordcount: '298'
-ht-degree: 13%
+source-wordcount: '316'
+ht-degree: 19%
 
 ---
 
 
 # Places Service {#using}
 
-+ [Übersicht über den Platzierungsdienst](home.md)
++ [Übersicht über den Places Service](home.md)
 + [Versionshinweise](release-notes.md)
 + [Erste Schritte](getting-started.md)
 + [Zugriff auf den Places Service](places-gain-access.md)
@@ -44,7 +44,7 @@ ht-degree: 13%
          + [Überblick über die Verwaltung von POI](web-service-api/api-usage/manage-pois/manage-pois.md)
          + [Erstellen eines POI](web-service-api/api-usage/manage-pois/create-a-poi.md)
          + [POI lesen](web-service-api/api-usage/manage-pois/read-a-poi.md)
-         + [Einen POI aktualisieren](web-service-api/api-usage/manage-pois/update-a-poi.md)
+         + [POI aktualisieren](web-service-api/api-usage/manage-pois/update-a-poi.md)
          + [Einen POI löschen](web-service-api/api-usage/manage-pois/delete-a-poi.md)
          + [Alle POIs in einer Bibliothek lesen](web-service-api/api-usage/manage-pois/read-all-pois-in-a-library.md)
          + [Alle POIs in Ihrer Organisation lesen](web-service-api/api-usage/manage-pois/read-all-pois-in-your-organization.md)
