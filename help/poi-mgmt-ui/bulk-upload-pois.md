@@ -2,9 +2,9 @@
 title: Massen-Upload-POIs
 description: In diesem Abschnitt erfahren Sie, wie Sie POIs als Massenupload hochladen.
 translation-type: tm+mt
-source-git-commit: 1ffc1f4237dfb872614a4bffd43d3fdaefc62fa9
+source-git-commit: 462df20bb351795dc72009cc18d390cb45e262a8
 workflow-type: tm+mt
-source-wordcount: '853'
+source-wordcount: '859'
 ht-degree: 0%
 
 ---
@@ -16,9 +16,11 @@ Mit der Schaltfläche &quot;POIs **importieren** &quot;im Orte-Dienst können ne
 
 ![Massenimportbildschirm](/help/assets/Bulk-import.png)
 
-Nachfolgend finden Sie ein Video mit dem Vorgang für den Massenimport und die Massenbearbeitung:
+In diesem Video wird der Vorgang für den Massenimport und die Massenbearbeitung dargestellt:
 
->[!VIDEO](https://www.youtube.com/watch?v=75qVtirsXhg)
+<!--I changed this embed to a link to pass validation. We should not link to youtube videos, so please upload this to MCP-->
+
+[POIs für den Massenimport und die Bearbeitung von Diensten](https://www.youtube.com/watch?v=75qVtirsXhg)
 
 ## Python API-Skripten
 
@@ -93,7 +95,7 @@ Die Werte der folgenden Spalten werden in der Benutzeroberfläche des Places-Die
 
    * `access_code`
 
-      Dies ist Ihr Zugriffscode, den Sie beim Aufruf von Adobe IMS erhalten haben. Informationen zum Abrufen dieses Zugriffscodes finden Sie unter *Voraussetzungen für den Benutzerzugriff* in der Übersicht über die [Integration und Voraussetzungen](/help/web-service-api/adobe-i-o-integration.md).
+      Dies ist Ihr Zugriffscode, der durch den Aufruf von Adobe IMS erhalten wurde. Informationen zum Abrufen dieses Zugriffscodes finden Sie unter *Voraussetzungen für den Benutzerzugriff* in der Übersicht über die [Integration und Voraussetzungen](/help/web-service-api/adobe-i-o-integration.md).
 
    * `org_id`
 
@@ -101,7 +103,7 @@ Die Werte der folgenden Spalten werden in der Benutzeroberfläche des Places-Die
 
    * `api_key`
 
-      Dies ist der REST-API-Schlüssel für Platzierungen, den Sie aus der Adobe I/O-Platzierungsintegration erhalten haben. Informationen zum Abrufen des API-Schlüssels finden Sie unter *Voraussetzungen für den Benutzerzugriff* in der Übersicht über die [Integration und Voraussetzungen](/help/web-service-api/adobe-i-o-integration.md).
+      Dies ist der REST-API-Schlüssel, den Sie aus der Adobe-E/A-Ortsintegration erhalten haben. Informationen zum Abrufen des API-Schlüssels finden Sie unter *Voraussetzungen für den Benutzerzugriff* in der Übersicht über die [Integration und Voraussetzungen](/help/web-service-api/adobe-i-o-integration.md).
    b. Speichern Sie Ihre Änderungen.
 
 1. Navigieren Sie in einem Terminalfenster zum `…/places-scripts/import/` Ordner.
@@ -113,7 +115,7 @@ Die Werte der folgenden Spalten werden in der Benutzeroberfläche des Places-Die
 Das Skript führt zunächst die folgenden Prüfungen in der .csv-Datei durch:
 
 * Gibt an, ob eine `.csv` Datei angegeben wurde.
-* Ob der Dateipfad gültig ist.
+* Gibt an, ob der Dateipfad gültig ist.
 * Gibt an, ob die reservierten Metadaten-Header enthalten sind.
 
    Die reservierten Metadaten-Header sind lib_id, name, description, type, length, latitude, radius, country, state, city, street, Kategorie, icon und color.
