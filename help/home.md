@@ -1,26 +1,29 @@
 ---
-title: Orte-Dienst
+title: Places Service
 description: 'Der Ortsdienst ist ein wichtiger Kontext für das Verständnis der Interaktion von Mobilbenutzern. In diesem Kontext können Entwickler mobiler Apps den App-Entwurf verbessern und ihn zu einem personalisierteren und ansprechenderen Erlebnis machen. '
 translation-type: tm+mt
 source-git-commit: 05b4d29aa7925f7a43e70c644e3cb88045cbe446
+workflow-type: tm+mt
+source-wordcount: '708'
+ht-degree: 10%
 
 ---
 
 
-# Orte-Dienst {#home}
+# Places Service {#home}
 
 ![&quot;Places Service&quot;](/help/assets/places-service-header.png)
 
 Der Standort ist ein wichtiger Kontext, um Benutzer von Mobilgeräten zu verstehen und mit ihnen zu interagieren. In diesem Kontext können Entwickler mobiler Apps den App-Entwurf verbessern und ihn zu einem personalisierteren und ansprechenderen Erlebnis machen.
 
-Der Orte-Dienst, früher als Adobe Experience Platform Location Service bekannt, ist ein Geo-Location-Dienst, mit dem mobile Apps mit Standortbewusstsein den Standortkontext verstehen können, indem sie leistungsstarke und einfach zu bedienende SDK-Schnittstellen sowie eine flexible Datenbank mit Interessenbereichen (POIs) verwenden.
+Places Service, früher als Adobe Experience Platform Location Service bekannt, ist ein Geolokationsdienst, mit dem mobile Apps mit Standortbewusstsein den Standortkontext verstehen können. Dazu werden umfangreiche und benutzerfreundliche SDK-Schnittstellen sowie eine flexible Datenbank mit POIs (Points of Interest) verwendet.
 
 Mit dem Orts-Dienst können Sie Folgendes erreichen:
 
 * Erstellen und verwalten Sie eine Datenbank mit POIs, die mit anderen Adobe Experience Cloud-Lösungen verwendet werden können.
 * Fügen Sie den POIs benutzerspezifische Metadaten hinzu, um sie durch Angabe zusätzlicher Attribute reicher und aussagekräftiger zu gestalten.
 * Visualisieren Sie die POIs auf einer Karte, um den räumlichen Kontext zu verstehen und Metadatenattribute hinzuzufügen/zu bearbeiten.
-* Konfigurieren Sie das SDK in Adobe Experience Platform Launch, um die standortgesteuerten Regeln und metadatenbasierten Bedingungen zu definieren.
+* Konfigurieren Sie das SDK in Adobe Experience Platform Launch, um die durch Ihren Standort ausgelösten Regeln und metadatenbasierten Bedingungen zu definieren.
 * Verringern Sie den Code, den Sie zum Überwachen des Speicherorts eines Geräts schreiben müssen, und verwenden Sie die Platzierungserweiterung, um die standortspezifischen Regeln automatisch auszulösen.
 
 Auf diese Weise können Sie in Echtzeit Aktionen aus Standortsignalen ausführen, wann und wo sie wichtig sind. Der richtige Kontext bietet eine umfassendere Interaktion mit Mobilgeräten.
@@ -28,9 +31,9 @@ Auf diese Weise können Sie in Echtzeit Aktionen aus Standortsignalen ausführen
 Die folgenden Möglichkeiten stehen Ihnen zur Verwendung von Orten zur Verfügung:
 
 * Senden Sie eine Echtzeit-Benachrichtigung, wenn jemand einen POI eingibt, *&quot;Hey...Willkommen im Stadion.&quot;*
-* Analysieren Sie den Fußverkehr Ihrer eigenen Läden im Vergleich zu Ihren Konkurrenzgeschäften.
-* Segmentieren Sie eine Zielgruppe basierend auf dem Offline-Verhalten, indem Sie Zielgruppenprofile mit dem Standortkontext verwenden.
-* Targeting eines Benutzers mit einem Erlebnis im Geschäft, wenn relevant.
+* Analysieren Sie den Fußverkehr Ihrer eigenen Läden im Vergleich zu Ihren Konkurrent-Läden.
+* Segmentieren Sie eine Audience nach dem Offlineverhalten, indem Sie Audiencen-Profil mit Standortkontext verwenden.
+* Zielgruppe eines Benutzers mit einem Erlebnis im Geschäft, falls relevant.
 
 ## Platziert Dienstkomponenten
 
@@ -50,7 +53,7 @@ Der Orte-Dienst umfasst die folgenden Komponenten:
 
 * **Regeln starten**
 
-   Die geointelligenten Startregeln, mit denen Sie Aktionen mit Ein- und Ausstiegsereignissen auslösen können. Die Regeln ermöglichen es Ihnen auch, Geo-Attribute unter Bedingungen zu verwenden, um das Erlebnis zu personalisieren.
+   Die geointelligenten Startregeln, mit denen Sie Aktionen mit Ein- und Ausstiegsaktionen auslösen können. Die Regeln ermöglichen es Ihnen auch, Geo-Attribute unter Bedingungen zu verwenden, um das Erlebnis zu personalisieren.
 
 * **Platzierungsmonitor-Erweiterung**
 
@@ -58,7 +61,7 @@ Der Orte-Dienst umfasst die folgenden Komponenten:
 
 ## Terminologie
 
-In dieser Dokumentation werden einige allgemeine Begriffe verwendet:
+Im Folgenden finden Sie einige allgemeine Begriffe, die in dieser Dokumentation verwendet werden:
 
 * Ein **interessanter Punkt (POI)** ist ein Geo-Ort, der für Ihr Unternehmen von Interesse ist.
 
@@ -74,13 +77,13 @@ In dieser Dokumentation werden einige allgemeine Begriffe verwendet:
 
 * Eine **Bibliothek** ist eine Sammlung von POIs, die gruppiert sind, um Regeln einfach an mehrere statt nur an einen POI anzuhängen.
 
-* Eine **Erweiterung** ist die Experience Platform Launch-Erweiterung, die erforderlich ist, um das Plates SDK in Ihre mobilen Apps zu integrieren.
+* Eine **Erweiterung** ist die Experience Platform Launch-Erweiterung, die zum Integrieren des Plates SDK in Ihre mobilen Apps erforderlich ist.
 
    Die mit den anderen mobilen SDKs verwendete Erweiterung, um Ihren Erlebnissen Ortskontext hinzuzufügen.
 
 * Eine **Organisation** ist die Adobe-Einheit, die Ihr Unternehmen in der Adobe Experience Cloud identifiziert.
 
-   Normalerweise ist ein Unternehmen Ihr Firmenname. Ein Unternehmen kann jedoch über mehr als eine Organisation verfügen. Der Organisationsadministrator kann Gruppen und Benutzer konfigurieren und die Single Sign-On-Funktion konfigurieren.
+   Normalerweise ist ein Unternehmen Ihr Name für die Firma. Eine Firma kann jedoch über mehr als eine Organisation verfügen. Der Organisationsadministrator kann Gruppen und Benutzer konfigurieren und die Single Sign-On-Funktion konfigurieren.
 
 * Die **orgID** ist die ID für Ihr Unternehmen auf der gesamten Adobe Experience Platform.
 
@@ -88,4 +91,4 @@ In dieser Dokumentation werden einige allgemeine Begriffe verwendet:
 
 * The **Experience Cloud ID** service provides a universal, persistent ID that identifies your visitors across all the solutions in the Experience Cloud.
 
-   For more information, see [Overview](https://docs.adobe.com/content/help/en/id-service/using/intro/overview.html).
+   Weitere Informationen finden Sie unter [Übersicht](https://docs.adobe.com/content/help/de-DE/id-service/using/intro/overview.html).
