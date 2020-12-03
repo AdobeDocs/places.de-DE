@@ -14,7 +14,7 @@ ht-degree: 5%
 
 Mit der Erweiterung &quot;Orte&quot;können Sie je nach dem Standort Ihrer Benutzer handeln. Diese Erweiterung ist die Schnittstelle zu den Ores Abfrage Service APIs. Durch Listening auf Ereignis, die GPS-Koordinaten und Geofenregion-Ereignis enthalten, löst diese Erweiterung neue Ereignis aus, die von der Rules Engine verarbeitet werden. Die Plates-Erweiterung ruft außerdem eine Liste des nächstgelegenen POI für die App-Daten ab, die von den APIs abgerufen werden. Die von den APIs zurückgegebenen Regionen werden im Cache und in der Persistenz gespeichert, was eine begrenzte Offlineverarbeitung ermöglicht.
 
-## Installieren der Platzierungserweiterung beim Starten der Adobe Experience Platform
+## Installieren der Platzierungserweiterung in Adobe Experience Platform Launch
 
 1. In Experience Platform Launch, click the **[!UICONTROL Extensions]** tab.
 1. Suchen Sie auf der **[!UICONTROL Catalog]** Registerkarte die **[!UICONTROL Places]** Erweiterung und klicken Sie auf **[!UICONTROL Install]**.
@@ -31,7 +31,7 @@ Mit der Erweiterung &quot;Orte&quot;können Sie je nach dem Standort Ihrer Benut
 
 ![](//help/assets/places-extension.png)
 
-## Hinzufügen der Platzierungserweiterung für Ihre App {#add-places-to-app}
+## hinzufügen der Platzierungserweiterung für Ihre App {#add-places-to-app}
 
 Sie können Ihre Android- und iOS-Apps mit der Erweiterung &quot;Orte&quot;versehen. Die Schritte zum Hinzufügen von Orten zu Ihrer iOS- oder Android-Anwendung finden Sie unten. Die Platzierungserweiterungen stehen auch für die folgenden Plattformen zur Verfügung. Informationen zum Hinzufügen von Orten zu Ihrer Anwendung beim Entwickeln mit einer dieser Plattformen finden Sie unter den folgenden Links:
 
@@ -48,7 +48,7 @@ Sie können Ihre Android- und iOS-Apps mit der Erweiterung &quot;Orte&quot;verse
 
 So fügen Sie Ihrer App die Platzierungserweiterung mit Java hinzu:
 
-1. Hinzufügen Sie die Platzierungs-Erweiterung mit der GPÜGELdatei Ihrer App auf Ihr Projekt.
+1. hinzufügen Sie die Platzierungs-Erweiterung mit der GPÜGELdatei Ihrer App auf Ihr Projekt.
 
    ```java
    implementation 'com.adobe.marketing.mobile:places:1.+'
@@ -66,7 +66,7 @@ So fügen Sie Ihrer App die Platzierungserweiterung mit Java hinzu:
 
 So fügen Sie Ihrer App die Platzierungserweiterung mit Objective-C oder Swift hinzu:
 
-1. Hinzufügen Sie die Bibliotheken &quot;Orte&quot;und &quot; [Mobile Core](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/mobile-core) &quot;in Ihr Projekt ein. Sie müssen die folgenden Pods hinzufügen `Podfile`:
+1. hinzufügen Sie die Bibliotheken &quot;Orte&quot;und &quot; [Mobile Core](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/mobile-core) &quot;in Ihr Projekt ein. Sie müssen die folgenden Pods hinzufügen `Podfile`:
 
    ```objective-c
    pod 'ACPPlaces', '~> 1.0'
