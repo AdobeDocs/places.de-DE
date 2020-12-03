@@ -30,7 +30,7 @@ Führen Sie zuerst die folgenden Aufgaben durch:
 
 ## Datenelemente in Experience Platform Launch erstellen
 
-Nachdem Sie überprüft haben, ob die Erweiterungen &quot;Orte&quot;und &quot;Orte-Monitor&quot;in Ihrer Anwendung ordnungsgemäß funktionieren, müssen Sie Datenelemente in Experience Platform Launch erstellen. Mithilfe von Datenelementen können Sie die Informationen lesen, die von den Erweiterungen bereitgestellt wurden, die über den Mobile SDK-Ereignis-Hub gesendet werden, und als Alias fungieren, um Daten aus der Clientanwendung abzurufen. Um Daten aus den Platzierungs-Erweiterungen abzurufen und die Informationen zum Orte-Dienst an die Kampagne zu senden, müssen Sie einige Datenelemente erstellen.
+Nachdem Sie überprüft haben, ob die Erweiterungen &quot;Orte&quot;und &quot;Orte-Monitor&quot;in Ihrer Anwendung ordnungsgemäß funktionieren, müssen Sie Datenelemente in Experience Platform Launch erstellen. Mithilfe von Datenelementen können Sie die Informationen lesen, die von den Erweiterungen bereitgestellt wurden, die über den Mobile SDK-Ereignis-Hub gesendet werden, und als Alias fungieren, um Daten aus der Clientanwendung abzurufen. Um Daten aus den Platzierungs-Erweiterungen abzurufen und die Informationen des Orts-Dienstes an die Kampagne zu senden, müssen Sie einige Datenelemente erstellen.
 
 Erstellen eines Datenelements:
 
