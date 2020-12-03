@@ -3,6 +3,9 @@ title: Rang auf Ihre Bibliotheken festlegen
 description: Legen Sie mithilfe der Places REST API einen Rang in Ihren Bibliotheken fest.
 translation-type: tm+mt
 source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
+workflow-type: tm+mt
+source-wordcount: '56'
+ht-degree: 5%
 
 ---
 
@@ -24,7 +27,7 @@ Eine PUT-Methode, mit der Sie eine Rangreihenfolge für alle Bibliotheken festle
 -H 'Accept-Language: en-US'
 ```
 
-## PUT-Daten
+## PUT von Daten
 
 ```
 "library_rank_order": ["dfcc5270-1d6d-4bc9-9cd9-85ecd5ebc12b","ea45781f-26af-44b1-b4f8-43baf5f0fe28"]  
@@ -45,5 +48,5 @@ curl -X PUT `'https://api-places.adobe.io/places/placesapi/v1/libraries/rank'` -
 
 >[!IMPORTANT]
 >
->Variablen wie `<API KEY>`, `<TOKEN>`und `<ORGID>` durch tatsächliche Werte ersetzen
+>Ersetzen Sie Variablen wie `<API KEY>`, `<TOKEN>`und `<ORGID>` durch tatsächliche Werte.
 
