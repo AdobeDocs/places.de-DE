@@ -3,13 +3,16 @@ title: Orte-Dienst ohne aktive Regionsüberwachung verwenden
 description: Dieser Abschnitt enthält Informationen zur Verwendung des Orte-Dienstes ohne aktive Regionsüberwachung.
 translation-type: tm+mt
 source-git-commit: 5846577f10eb1d570465ad7f888feba6dd958ec9
+workflow-type: tm+mt
+source-wordcount: '745'
+ht-degree: 1%
 
 ---
 
 
 # Orte-Dienst ohne aktive Regionsüberwachung verwenden {#use-places-without-active-monitoring}
 
-Anwendungsfälle für Ihre Anwendung erfordern unter Umständen keine aktive Regionsüberwachung. Der Ortsdienst kann weiterhin verwendet werden, um die Standortdaten Ihrer Benutzer in andere Experience Platform-Produkte zu integrieren.
+Anwendungsfälle für Ihre Anwendung erfordern unter Umständen keine aktive Regionsüberwachung. Der Ortsdienst kann weiterhin verwendet werden, um die Standortdaten Ihrer Experience Platformen in andere Produkte zu integrieren.
 
 ## Voraussetzung
 
@@ -408,6 +411,6 @@ func handleUpdatedPOIs(_ nearbyPois:[ACPPlacesPoi]) {
 }
 ```
 
-Zusätzlich zur Auslösung von Ereignissen für die Eingabe des Orts-Service im SDK können aufgrund der auslösenden Ereignis zur Eingabe alle Daten, die Ihre POIs definieren, vom Rest des SDK über `data elements` den Experience Platform Launch verwendet werden. Mit Experience Platform Launch `rules`können Sie die Daten des Orts-Dienstes dynamisch an eingehende Ereignis anhängen, die vom SDK verarbeitet werden. Sie können beispielsweise die Metadaten eines POI, in dem sich der Benutzer befindet, anhängen und die Daten als Kontextdaten an Analytics senden.
+Zusätzlich zur Auslösung von Ereignissen zur Platzierung von &quot;Places Service&quot;-Einträgen im SDK können aufgrund der auslösenden &quot;entry&quot;-Ereignis alle Daten, die Ihre POIs definieren, vom Rest des SDK über `data elements` den Experience Platform Launch verwendet werden. Mit Experience Platform Launch `rules`können Sie die Daten des Orts-Dienstes dynamisch an eingehende Ereignis anhängen, die vom SDK verarbeitet werden. Sie können beispielsweise die Metadaten eines POI, in dem sich der Benutzer befindet, anhängen und die Daten als Kontextdaten an Analytics senden.
 
-Weitere Informationen finden Sie unter [Verwenden des Places-Dienstes mit anderen Adobe-Lösungen](/help/use-places-with-other-solutions/places-adobe-analytics/use-places-analytics-overview.md).
+Weitere Informationen finden Sie unter [Verwenden des Orte-Dienstes mit anderen Adoben](/help/use-places-with-other-solutions/places-adobe-analytics/use-places-analytics-overview.md).
