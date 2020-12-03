@@ -1,15 +1,18 @@
 ---
-title: Erstellen einer Bibliothek
+title: eine Bibliothek erstellen
 description: Erstellen Sie eine Bibliothek mit der Places REST API.
 translation-type: tm+mt
 source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
+workflow-type: tm+mt
+source-wordcount: '48'
+ht-degree: 18%
 
 ---
 
 
 # Erstellen einer Bibliothek {#create-a-library}
 
-Eine POST-Methode, mit der Sie eine Bibliothek erstellen können.
+Eine POST, mit der Sie eine Bibliothek erstellen können.
 
 ## Anfrage
 
@@ -23,7 +26,7 @@ POST https://api-places.adobe.io/places/placesapi/v1/libraries
 -H' Content-Type: application/json'  -H 'Authorization: Bearer <TOKEN>'  -H 'x-api-key: <API KEY>'  -H 'x-gw-ims-org-id: <ORGID>'  -H 'Accept-Language: en-US'
 ```
 
-## Text
+## Body
 
 ```text
 {"name": "<LIBRARY_NAME>"}
@@ -45,5 +48,5 @@ curl -X POST 'https://api-places.adobe.io/places/placesapi/v1/libraries' -H 'x-a
 
 >[!IMPORTANT]
 >
->Variablen wie `<API KEY>`, `<TOKEN>`und `<ORGID>` durch tatsächliche Werte ersetzen
+>Ersetzen Sie Variablen wie `<API KEY>`, `<TOKEN>`und `<ORGID>` durch tatsächliche Werte.
 
