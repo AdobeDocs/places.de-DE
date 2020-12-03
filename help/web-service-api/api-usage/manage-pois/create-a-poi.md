@@ -1,15 +1,18 @@
 ---
-title: POI erstellen
+title: Erstellen eines POI
 description: Erstellen Sie einen POI mit den Places REST APIs.
 translation-type: tm+mt
 source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
+workflow-type: tm+mt
+source-wordcount: '47'
+ht-degree: 6%
 
 ---
 
 
-# POI erstellen {#create-a-poi}
+# Erstellen eines POI {#create-a-poi}
 
-Eine POST-Methode, mit der Sie einen POI erstellen können.
+Eine POST, mit der Sie einen POI erstellen können.
 
 ## Anfrage
 
@@ -27,7 +30,7 @@ POST https://api-places.adobe.io/places/placesapi/v1/pois
 -H 'Accept-Language: en-US'
 ```
 
-## Text
+## Body
 
 ```text
 {
