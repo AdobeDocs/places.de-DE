@@ -103,7 +103,7 @@ Die Werte der folgenden Spalten werden in der Benutzeroberfläche des Places-Die
 
    * `api_key`
 
-      Dies ist der REST-API-Schlüssel, den Sie aus der Adobe-E/A-Ortsintegration erhalten haben. Informationen zum Abrufen des API-Schlüssels finden Sie unter *Voraussetzungen für den Benutzerzugriff* in der Übersicht über die [Integration und Voraussetzungen](/help/web-service-api/adobe-i-o-integration.md).
+      Dies ist der REST-API-Schlüssel, den Sie von der Adobe I/O Places Integration erhalten haben. Informationen zum Abrufen des API-Schlüssels finden Sie unter *Voraussetzungen für den Benutzerzugriff* in der Übersicht über die [Integration und Voraussetzungen](/help/web-service-api/adobe-i-o-integration.md).
    b. Speichern Sie Ihre Änderungen.
 
 1. Navigieren Sie in einem Terminalfenster zum `…/places-scripts/import/` Ordner.
