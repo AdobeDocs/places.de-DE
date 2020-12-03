@@ -3,6 +3,9 @@ title: Einen POI löschen
 description: Löschen Sie einen POI mithilfe der Places REST APIs.
 translation-type: tm+mt
 source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
+workflow-type: tm+mt
+source-wordcount: '44'
+ht-degree: 6%
 
 ---
 
