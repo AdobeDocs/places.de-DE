@@ -3,6 +3,9 @@ title: Platzierungs-Monitor-API-Referenz
 description: Eine Liste der APIs für den Orts-Monitor.
 translation-type: tm+mt
 source-git-commit: 5a21e734c0ef56c815389a9f08b445bedaae557a
+workflow-type: tm+mt
+source-wordcount: '1090'
+ht-degree: 2%
 
 ---
 
@@ -11,7 +14,7 @@ source-git-commit: 5a21e734c0ef56c815389a9f08b445bedaae557a
 
 ## Platzierungs-Monitor-Erweiterung registrieren
 
-Registriert die Platzierungsmonitor-Erweiterung mit dem Core Event Hub.
+Registriert die Plates Monitor Extension mit dem Core Ereignis Hub.
 
 ### RegisterExtension (Android)
 
@@ -111,13 +114,13 @@ Die folgende Syntax und der Beispielcode für diese API:
 NSString *placesMonitorVersion = [ACPPlacesMonitor extensionVersion];
 ```
 
-## Geräteüberwachung starten
+## Geräteüberwachung des Beginns
 
 Beginnen Sie mit der Verfolgung der Position des Geräts und der Überwachung nahe gelegener Orte.
 
-### Start (Android)
+### Beginn (Android)
 
-Wenn der Benutzer die Berechtigung zum Verwenden des Geräteorts nicht erteilt hat, wird der Benutzer beim ersten Aufruf der `start` API zur Eingabe der Berechtigung aufgefordert.
+Wenn der Benutzer die Berechtigung zum Verwenden des Gerätespeicherorts nicht erteilt hat, wird der Benutzer beim ersten Aufruf der `start` API zur Eingabe der Berechtigung aufgefordert.
 
 Die folgende Syntax und der Beispielcode für diese API:
 
@@ -133,11 +136,11 @@ public static void start();
 PlacesMonitor.start();
 ```
 
-### Start (iOS)
+### Beginn (iOS)
 
 >[!IMPORTANT]
 >
->Um mit der Überwachung beginnen zu können, muss der Standortdienst über die erforderliche Genehmigung verfügen:
+>Um mit der Überwachung beginnen zu können, muss der Standortdienst über die erforderliche Autorisierung verfügen:
 >
 >* Wenn die Autorisierung für den Places-Dienst nicht für die Anwendung bereitgestellt wurde, fordert der erste Aufruf der `start` API die Autorisierung zur Verwendung des Places-Dienstes wie für die Anwendung konfiguriert an.
 >* Wenn die Autorisierung bereitgestellt wurde, verfolgt der Orts-Monitor je nach Gerätefunktionen den Standort des Benutzers anhand des aktuellen Sets `ACPPlacesMonitorMode`. Der Monitor verwendet standardmäßig `ACPPlacesMonitorModeSignificantChanges`.
@@ -145,7 +148,7 @@ PlacesMonitor.start();
 
 >[!CAUTION]
 >
->Wenn Ihr Aufruf zum Starten der Überwachung ausgeführt wird, bevor die Initialisierung des SDK abgeschlossen ist, wird er möglicherweise ignoriert.
+>Wenn Ihr Aufruf zur Beginn-Überwachung erfolgt, bevor die Initialisierung des SDK abgeschlossen ist, wird er möglicherweise ignoriert.
 
 Sie können sicherstellen, dass das SDK die Initialisierung abgeschlossen hat, indem Sie `start` aus dem Rückruf, der bereitgestellt wird, aufrufen `ACPCore::start:`.
 
@@ -167,7 +170,7 @@ Starten des Orts-Monitors, wenn das SDK initialisiert wird:
 }];
 ```
 
-Starten des Orts-Monitors später in der App-Ausführung:
+Starten des Orts-Monitors zu einem späteren Zeitpunkt in der App-Ausführung:
 
 ```objective-c
 [ACPPlacesMonitor start];
@@ -279,7 +282,7 @@ Die Standortberechtigung kann auf einen der folgenden Werte eingestellt werden:
 
 >[!IMPORTANT]
 >
->Wenn dem App-Benutzer die `WHILE_USING_APP` Berechtigung erteilt wurde, werden Geofencing nicht beim Betriebssystem registriert. Die Erweiterung &quot;Orte überwachen&quot;löst daher keine Ein-/Ausstiegsereignisse in Regionen aus, die im Hintergrund stattfinden.
+>Wenn dem App-Benutzer die `WHILE_USING_APP` Berechtigung erteilt wurde, werden Geofencing nicht beim Betriebssystem registriert. Die Erweiterung &quot;Orte überwachen&quot;löst daher keine Ereignisse zum Ein-/Ausstieg aus Regionen aus, die im Hintergrund ausgeführt werden.
 
 Die folgende Syntax und der Beispielcode für diese API:
 
@@ -327,7 +330,7 @@ Die Autorisierungsebene kann auf einen der folgenden Werte eingestellt werden:
 
 >[!IMPORTANT]
 >
->Die Anwendung, die die Verwendung der `ACPPlacesRequestAuthorizationLevelWhenInUse` Berechtigung autorisiert hat, löst keine Ein-/Ausstiegsereignisse in Regionen aus, die im Hintergrund stattfinden.
+>Die Anwendung, die die Verwendung der `ACPPlacesRequestAuthorizationLevelWhenInUse` Berechtigung autorisiert hat, löst keine Ereignisse zum Ein-/Ausstieg in Regionen aus, die im Hintergrund stattfinden.
 
 Die folgende Syntax und der Beispielcode für diese API:
 
