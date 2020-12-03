@@ -3,6 +3,9 @@ title: Bibliothek aktualisieren
 description: Aktualisieren Sie eine Bibliothek mit der Places REST API.
 translation-type: tm+mt
 source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
+workflow-type: tm+mt
+source-wordcount: '48'
+ht-degree: 6%
 
 ---
 
@@ -23,7 +26,7 @@ PUT https://api-places.adobe.io/places/placesapi/v1/libraries/<lIBRARYID>
 -H' Content-Type: application/json'  -H 'Authorization: bearer <TOKEN>'  -H 'x-api-key: <API KEY>'  -H 'x-gw-ims-org-id: <ORGID>'  -H 'Accept-Language: en-US'
 ```
 
-## Text
+## Body
 
 ```text
 {"name": "<NEW_LIBRARY_NAME>"}
