@@ -1,8 +1,11 @@
 ---
 title: Übersicht
-description: Verstehen und Verwenden von Abfrage-APIs.
+description: Grundlegendes und Verwenden von Abfrage-APIs.
 translation-type: tm+mt
 source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
+workflow-type: tm+mt
+source-wordcount: '217'
+ht-degree: 4%
 
 ---
 
@@ -10,7 +13,7 @@ source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
 
 # Abfrage-APIs
 
-Eine GET-Methode, mit der Sie die POIs abfragen können, die dem Aufrufer am nächsten sind.
+Eine GET, mit der Sie die POIs, die dem Aufrufer am nächsten sind, Abfrage werden können.
 
 ## Anfrage
 
@@ -20,13 +23,13 @@ GET https://query.places.adobe.com/placesedgequery
 
 Mit der folgenden Eingabe gibt der Dienst eine Liste der POIs zurück, die dem Aufrufer am nächsten sind:
 
-* Position des Aufrufers (Breitengrad, Längengrad).
+* Die Position des Aufrufers (Breitengrad, Längengrad).
 * Die IDs der POI-Bibliotheken, die in die Suche einbezogen werden sollen.
 * Die maximale Anzahl der zurückzugebenden POIs.  Der Standardwert lautet 100.
 
    Der Abstand zwischen Anrufer und POI ist definiert als der Abstand vom Anrufer bis zum Rand der POI-Sequenz. In der Antwort werden POIs, die den Aufrufer enthalten, als mit dem Aufrufer gekennzeichnet.
 
-Argumente werden als folgende Abfrageparameter bereitgestellt:
+Argumente werden als folgende Abfragen bereitgestellt:
 
 * (**Erforderlich**) `latitude`
 
@@ -41,7 +44,7 @@ Argumente werden als folgende Abfrageparameter bereitgestellt:
 
 * (**Erforderlich**) `library`
 
-   Die ID der abzurufenden Bibliothek. Um mehrere Bibliotheken abzufragen, stellen Sie sicher, dass Sie mehrere Kopien des Bibliotheksparameters in die Abfrage einbeziehen.
+   Die ID der zu Abfrage Bibliothek. Um mehrere Bibliotheken Abfrage, stellen Sie sicher, dass Sie mehrere Kopien des library-Parameters in die Abfrage einschließen.
 
 Hier ein Beispiel für das erfolgreich zurückgegebene JSON-Format:
 
