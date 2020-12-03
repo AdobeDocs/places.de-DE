@@ -1,23 +1,26 @@
 ---
 title: Adobe Target
-description: In diesem Abschnitt finden Sie Informationen zur Verwendung des Places-Dienstes mit Adobe Zielgruppe.
+description: Dieser Abschnitt enthält Informationen zur Verwendung des Places-Dienstes mit Adobe Target.
 translation-type: tm+mt
 source-git-commit: d33e4e2d798c7048bdd275cdf6c0aabf3434f789
+workflow-type: tm+mt
+source-wordcount: '477'
+ht-degree: 2%
 
 ---
 
 
-# Orte-Dienst mit Adobe-Zielgruppe verwenden {#places-target}
+# Orte-Dienst mit Adobe Target verwenden {#places-target}
 
 In diesem Dokument wird davon ausgegangen, dass die Plates-Erweiterung in Ihrer Anwendung implementiert ist. Weitere Informationen zum Implementieren der Platzierungserweiterung finden Sie unter [Platzierungserweiterungen](/help/places-ext-aep-sdks/places-extension/places-extension.md).
 
-Nachdem die Plates-Erweiterung Ereignis für Ein- und Ausstiege gesendet hat, können Sie die Regeln des Startvorgangs nutzen, um Ihre Daten des Orts-Dienstes an Ihre Adobe Zielgruppe SDK-Ereignis anzuhängen. Wenn Sie die gewünschte Eigenschaft in Start ausgewählt haben, können Sie diese Art von Regel erstellen, indem Sie die folgenden Aufgaben ausführen:
+Nachdem die Plates-Erweiterung Ereignis für Einstiege und Ausstiege gesendet hat, können Sie die Regeln in Launch nutzen, um Ihre Ortsdienstdaten an Ihre Adobe Target SDK-Ereignis anzuhängen. Wenn Sie die gewünschte Eigenschaft in Start ausgewählt haben, können Sie diese Art von Regel erstellen, indem Sie die folgenden Aufgaben ausführen:
 
 ## 1. Regel erstellen
 
 1. Klicken Sie auf der **[!UICONTROL Rules]** Registerkarte auf **[!UICONTROL Create New Rule]**.
 
-   Beachten Sie die folgenden Informationen:
+   Berücksichtigen Sie folgende Informationen:
 
    * Wenn Sie keine Regeln für diese Eigenschaft haben, befindet sich die Schaltfläche in der Mitte des Bildschirms.
    * Wenn Ihre Eigenschaft über Regeln verfügt, befindet sich die Schaltfläche oben rechts auf dem Bildschirm.
@@ -33,9 +36,9 @@ Nachdem die Plates-Erweiterung Ereignis für Ein- und Ausstiege gesendet hat, k�
 1. Wählen Sie aus der **[!UICONTROL Event Type]** Dropdown-Liste **[!UICONTROL Content Requested]**.
 1. Klicken Sie auf **[!UICONTROL Keep Changes]**.
 
-![Ereignis hinzufügen](/help/assets/ad-setEvent_target.png)
+![ereignis hinzufügen](/help/assets/ad-setEvent_target.png)
 
-## 3. Hinzufügen
+## 3. hinzufügen
 
 >[!IMPORTANT]
 >
@@ -67,7 +70,7 @@ Im folgenden Beispiel werden der Anforderung, die im Zielgruppe-Ereignis verarbe
 >
 >Diese JSON-Nutzlast verwendet eine spezielle Notation für das `request` Objekt. Im ursprünglichen Ereignis `request` ist ein Array anonymer Objekte. Wenn Daten mit &quot;Daten anhängen&quot;an alle Objekte in einem Array angehängt werden, bewirkt die `[*]` Notation eines Schlüssels, der bekanntermaßen ein Array enthält, dass die Nutzlast auf alle Objekte in diesem Array angewendet wird.
 >
->Die Notation von `request[*]` kann laut wie _für jedes Objekt im`request`Array_ gelesen werden.
+>Die Notation von `request[*]` kann laut wie _für jedes Objekt im `request` Array_ gelesen werden.
 
 ![die Aktion definieren](/help/assets/ad-setAction-target.png)
 
