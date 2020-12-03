@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 7fdaace59886225b7fd9b0eba8cc6c2a139fa2d7
 workflow-type: tm+mt
 source-wordcount: '491'
-ht-degree: 6%
+ht-degree: 8%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 6%
 
 Führen Sie die folgenden Aufgaben aus, um die Erweiterung &quot;Orts-Monitor&quot;zu verwenden:
 
-## Installieren der Erweiterung &quot;Platzierungsmonitor&quot;in Experience Platform Launch
+## Installieren Sie die Erweiterung Places Monitor in Experience Platform Launch
 
 1. In Experience Platform Launch, click the **[!UICONTROL Extensions]** tab.
 1. Suchen Sie auf der **[!UICONTROL Catalog]** Registerkarte die **[!UICONTROL Places Monitor]** Erweiterung und klicken Sie auf **Installieren**.
@@ -27,7 +27,7 @@ Es gibt keine Aufgaben zur Konfiguration der Plates Monitor-Erweiterung.
 
 ![Konfigurieren der ‌ &quot;Orte-Monitor](/help/assets/configure_places_monitor.png)&quot;
 
-## Hinzufügen der Platzierungsmonitor-Erweiterung für Ihre App {#add-monitor-extension-to-app}
+## hinzufügen der Platzierungsmonitor-Erweiterung für Ihre App {#add-monitor-extension-to-app}
 
 Die Anweisungen zum Hinzufügen der Platzierungsmonitor-Erweiterung zu Ihrer Android- oder iOS-Anwendung finden Sie unten.
 
@@ -45,7 +45,7 @@ Führen Sie in Android die folgenden Schritte aus:
 
 #### Java
 
-1. Hinzufügen Sie die Erweiterungen &quot;Orte-Monitor&quot;und &quot;Orte&quot;mithilfe der Dockingdatei Ihrer App an Ihr Projekt an.
+1. hinzufügen Sie die Erweiterungen &quot;Orte-Monitor&quot;und &quot;Orte&quot;mithilfe der Dockingdatei Ihrer App an Ihr Projekt an.
 
 1. Schließen Sie auch die neuesten Google-Standorte in der Datei &quot;gradle&quot;ein.
 
@@ -163,7 +163,7 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 >Die Orteüberwachung hängt von der Platzierungserweiterung ab. When manually installing the Places Monitor extension, ensure that you also add the `libACPPlaces_iOS.a` library to your project.
 
 
-## Hinzufügen Berechtigungen für das Manifest
+## hinzufügen Berechtigungen für das Manifest
 
 ### Android
 
