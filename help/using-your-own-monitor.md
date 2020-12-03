@@ -3,6 +3,9 @@ title: Verwenden Ihres eigenen Monitors
 description: Sie können Ihre Überwachungsdienste auch verwenden und mit dem Places-Dienst integrieren, indem Sie die APIs für die Erweiterung des Places-Dienstes verwenden.
 translation-type: tm+mt
 source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
+workflow-type: tm+mt
+source-wordcount: '264'
+ht-degree: 1%
 
 ---
 
@@ -31,7 +34,7 @@ Führen Sie unter iOS die folgenden Schritte aus:
    }
    ```
 
-1. Extrahieren Sie die Informationen aus den erhaltenen `ACPPlacesPOI` Objekten und beginnen Sie mit der Überwachung dieser POI.
+1. Extrahieren Sie die Informationen aus den erhaltenen `ACPPlacesPOI` Objekten und überwachen Sie diese POIs durch den Beginn.
 
    ```objective-c
    - (void) startMonitoringGeoFences: (NSArray*) newGeoFences {
@@ -57,7 +60,7 @@ Führen Sie unter iOS die folgenden Schritte aus:
 
 1. Übergeben Sie die Ortsaktualisierungen, die Sie über die Google Play-Dienste oder die Android-Ortsdienste erhalten haben, an die Places-Erweiterung.
 
-1. Verwenden Sie die `getNearbyPointsOfInterest` Places Extension API, um die Liste der `PlacesPoi` Objekte um den aktuellen Speicherort abzurufen.
+1. Verwenden Sie die `getNearbyPointsOfInterest` Places Extension API, um die Liste von `PlacesPoi` Objekten an der aktuellen Position abzurufen.
 
    ```java
    LocationCallback callback = new LocationCallback() {
@@ -75,7 +78,7 @@ Führen Sie unter iOS die folgenden Schritte aus:
    };
    ```
 
-1. Extrahieren Sie die Daten aus den erhaltenen `PlacesPOI` Objekten und beginnen Sie mit der Überwachung dieser POI.
+1. Extrahieren Sie die Daten aus den erhaltenen `PlacesPOI` Objekten und überwachen Sie diese POIs durch den Beginn.
 
    ```java
    private void startMonitoringFences(final List<PlacesPOI> nearByPOIs) {
@@ -106,7 +109,7 @@ Der Aufruf der `getNearbyPointsOfInterest` API führt zu einem Netzwerkaufruf, d
 >
 >Sie sollten die API nur sparsam oder nur dann aufrufen, wenn der Benutzer eine wesentliche Standortänderung vornimmt.
 
-## Posting von Geofenereignissen
+## Ereignisse für Geofencing veröffentlichen
 
 ### iOS
 
@@ -124,7 +127,7 @@ Rufen Sie unter iOS die `processGeofenceEvent` Places-API im `CLLocationManager`
 
 ### Android
 
-Rufen Sie in Android die `processGeofence` Methode zusammen mit dem entsprechenden Übergangsereignis in Ihrem Geofence-Broadcast-Empfänger auf. Möglicherweise möchten Sie die Liste der empfangenen Exemplare kuratieren, um doppelte Einstiege/Ausstiege zu verhindern.
+Rufen Sie in Android die `processGeofence` Methode zusammen mit dem entsprechenden Transition-Ereignis in Ihrem Geofence-Broadcast-Empfänger auf. Möglicherweise möchten Sie die Liste der erhaltenen Geofencing kuratieren, um zu verhindern, dass Duplikate ein-/ausgehen.
 
 ```java
 void onGeofenceReceived(final Intent intent) {
