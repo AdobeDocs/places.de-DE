@@ -30,7 +30,7 @@ ht-degree: 4%
 
 ## 6. Mai 2020
 
-* **PlacesMonitor 2.2.1**
+* **PlacesMonitor 2.1.1**
 
    * **Android**
 
@@ -58,7 +58,7 @@ ht-degree: 4%
    * Die Platzierungserweiterung meldet jetzt Versionsinformationen an den Ereignis-Hub im Core SDK.
    * Die Standardzeit bis zum Ende der Gültigkeitsdauer von Device POI-Mitgliedseinformationen beträgt nun eine Stunde ab dem Zeitpunkt der Erfassung. Weitere Informationen finden Sie unter Zeit-zu-Live-Mitgliedschaft [ändern](places-ext-aep-sdks/places-extension/places-extension.md#places-ttl)
 
-## 27. Januar 2020
+## Dienstag, 27. Januar 2020
 
 * **PlacesMonitor 2.2.0**
 
@@ -93,22 +93,22 @@ ht-degree: 4%
 
 ## 25. November 2019
 
-* **PlacesMonitor 2.1.1**
+* **PlacesMonitor 2.2.1**
 
    * **iOS**
 
       * Es wurden Importanweisungen für Cocoapods-Projekte mit der Option für mehrere Pod-Projekte behoben.
 
-## 22. November 2019
+## 22. November 2019
 
-* **PlacesMonitor 2.1.1**
+* **PlacesMonitor 2.2.1**
 
    * **Android**
 
       * Der Monitor erkennt jetzt den Start eines Android-Geräts und registriert bei Bedarf die Geofencing-Daten anhand der aktuellen Position des Geräts erneut beim Betriebssystem.
       * Es wurde eine Racebedingung behoben, die manchmal dazu führte, dass ein-/Ausstiegs-Ereignis verworfen wurden.
 
-## 9. Oktober 2019
+## 9. Oktober 2019
 
 * **PlacesMonitor 2.1.0**
 
@@ -169,7 +169,7 @@ Die folgenden Aktualisierungen wurden in dieser Version vorgenommen:
 
 * Die Verwendung der `getNearbyPointsOfInterest` API wurde aktualisiert, um Fehlerszenarien effektiver zu behandeln.
 
-## 25. Juli 2019
+## Donnerstag, 25. Juli 2019
 
 Die folgenden Aktualisierungen wurden in dieser Version vorgenommen:
 
@@ -181,7 +181,7 @@ Die folgenden Aktualisierungen wurden in dieser Version vorgenommen:
 
 * Die Verwendung der ACPPlaces- `getNearbyPointsOfInterest` API wurde aktualisiert, um Fehlerszenarien effektiver zu behandeln.
 
-## 22. Juli 2019
+## 22. Juli 2019
 
 Die folgenden Aktualisierungen wurden in dieser Version vorgenommen:
 
@@ -192,7 +192,7 @@ Die folgenden Aktualisierungen wurden in dieser Version vorgenommen:
 * Es wurde ein Fehler behoben, durch den `getNearbyPointsOfInterest` Rückruf Fehlercode `SERVER_RESPONSE_ERROR instead of CONNECTIVITY_ERROR` im Internet zurückgab.
 * `getNearbyPointsOfInterest` API (ohne errorCallback) wird mit leerer POI-Liste `successCallback` aufgerufen, falls Fehler beim Abrufen der nahe gelegenen Zielpunkte auftreten.
 
-## 19. Juli 2019
+## 19. Juli 2019
 
 Die folgenden Aktualisierungen wurden in dieser Version vorgenommen:
 
@@ -262,7 +262,7 @@ Weitere Informationen zum Orts-Monitor finden Sie hier.
 * Datenspeicherung des letzten bekannten Standorts respektiert jetzt den Datenschutzstatus des Benutzers ordnungsgemäß
 
 
-## 9. April 2019
+## Dienstag, 9. April 2019
 
 Die folgenden Aktualisierungen wurden in dieser Version vorgenommen:
 
@@ -284,7 +284,7 @@ Der Orts-Monitor verwaltet die Positionierungs-APIs auf Betriebssystemebene und 
 
 ### Beta-Version
 
-Dies ist die erste Version des Places Service, eine Reihe von Tools, mit denen Kunden die Erlebnisse ihrer Benutzer mit echten Standortdaten bereichern können. In der ersten Version besteht unser wichtigster Verwendungsfall darin, mobilen Apps zu ermöglichen, benutzerdefinierte Standortdaten abzurufen und über den Adobe Experience Platform Launch auf diese Daten zu reagieren.
+Dies ist die erste Version des Places Service, eine Reihe von Tools, mit denen Kunden die Erlebnisse ihrer Benutzer mit echten Standortdaten bereichern können. In der ersten Version besteht unser wichtigster Verwendungsfall darin, mobilen Apps zu ermöglichen, benutzerdefinierte Standortdaten abzurufen und diese Daten über Adobe Experience Platform Launch zu bearbeiten.
 
 ### Wichtigste Funktionen
 
@@ -325,4 +325,4 @@ Weitere Informationen zu den Places-APIs finden Sie unter [Webdienst-API](/help/
 
 #### Analytics  Integration
 
-Die Analytics-Erweiterung wird aktualisiert, um allen ausgehenden Analytics-Aufrufen automatisch Kontextdaten zum Speicherort aus Ihrer Ortsdienst-Datenbank hinzuzufügen, wenn sich ein Benutzer in einem POI befindet (Passiv-Aufrufe). Diese Aktualisierung ermöglicht auch die Regelerstellung, um Analytics-Verfolgungsaufrufe direkt beim POI-Einstieg oder -Ausstieg auszulösen (Aktive Aufrufe).
+Die Analytics-Erweiterung wird aktualisiert, um allen ausgehenden Analytics-Aufrufen automatisch Kontextdaten zum Standort aus Ihrer Datenbank für den Places-Dienst hinzuzufügen, wenn sich ein Benutzer in einem POI befindet (Passiv-Aufrufe). Mit diesem Update können auch Regelerstellungen Analytics-Verfolgungsaufrufe direkt beim POI-Einstieg oder -Ausstieg auslösen (Aktive Aufrufe).
