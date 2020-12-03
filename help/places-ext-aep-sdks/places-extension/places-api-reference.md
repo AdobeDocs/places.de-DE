@@ -3,6 +3,9 @@ title: Platzierungs-API-Referenz
 description: Informationen zu den API-Referenzen in Places.
 translation-type: tm+mt
 source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
+workflow-type: tm+mt
+source-wordcount: '583'
+ht-degree: 32%
 
 ---
 
@@ -11,9 +14,9 @@ source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
 
 Im Folgenden finden Sie Informationen zu den API-Verweisen in der Places-Erweiterung:
 
-## Verarbeiten eines Regionenereignisses
+## Bearbeiten eines Regions-Ereignisses
 
-Wenn ein Gerät eine vordefinierte Platzierungsdienstregion der App überschreitet, werden die Region und der Ereignistyp zur Verarbeitung an das SDK übergeben.
+Wenn ein Gerät eine der vordefinierten Orte-Dienst-Regionsgrenzen der App überschreitet, werden die Region und der Ereignistyp zur Verarbeitung an das SDK übergeben.
 
 ### ProcessGeofence (Android)
 
@@ -94,7 +97,7 @@ public static void processGeofenceEvent(final GeofencingEvent geofencingEvent);
 
 **Beispiel**
 
-Rufen Sie diese Methode in Ihrer `IntentService` auf, die für den Empfang von Android-Geofencing-Ereignissen registriert ist.
+Rufen Sie diese Methode in Ihrer `IntentService` auf, die für den Empfang von Android-Geofenity-Ereignissen registriert ist.
 
 ```java
 public class GeofenceTransitionsIntentService extends IntentService {
@@ -113,7 +116,7 @@ public class GeofenceTransitionsIntentService extends IntentService {
 
 ## Abrufen nahegelegener Zielpunkte
 
-Gibt eine geordnete Liste der nahe gelegenen POIs in einem Rückruf zurück. Eine überladene Version dieser Methode gibt einen Fehlercode zurück, wenn beim resultierenden Netzwerkaufruf ein Fehler aufgetreten ist.
+Gibt eine geordnete Liste von nahe gelegenen POIs in einem Rückruf zurück. Eine überladene Version dieser Methode gibt einen Fehlercode zurück, wenn beim resultierenden Netzwerkaufruf ein Fehler aufgetreten ist.
 
 ### GetNeestedPointsOfInterest (Android)
 
@@ -202,7 +205,7 @@ Places.getNearbyPointsOfInterest(currentLocation, 10,
 
 ## Abrufen aktueller Gerätepunkte
 
-Fordert eine Liste der POIs an, in denen das Gerät derzeit bekannt ist, und gibt sie in einem Rückruf zurück.
+Fordert eine Liste von POIs an, in denen das Gerät derzeit bekannt ist, und gibt sie in einem Rückruf zurück.
 
 ### GetCurrentPointsOfInterest (Android)
 
@@ -309,7 +312,7 @@ Hier finden Sie ein Code-Beispiel für diese Methode:
 
 ### Clear (Android)
 
-Löscht die clientseitigen Daten für die Places-Erweiterung im Freigabezustand, im lokalen Speicher und im Arbeitsspeicher.
+Löscht die clientseitigen Daten für die Places-Erweiterung im Freigabezustand, in der lokalen Datenspeicherung und im Arbeitsspeicher.
 
 **Syntax**
 
@@ -329,7 +332,7 @@ Places.clear();
 
 ### clear (iOS)
 
-Löscht die clientseitigen Daten für die Places-Erweiterung im Freigabezustand, im lokalen Speicher und im Arbeitsspeicher.
+Löscht die clientseitigen Daten für die Places-Erweiterung im Freigabezustand, in der lokalen Datenspeicherung und im Arbeitsspeicher.
 
 **Syntax**
 
@@ -353,7 +356,7 @@ Hier finden Sie ein Code-Beispiel für diese Methode:
 
 *Verfügbar ab Places v1.4.0*
 
-Legt den Autorisierungsstatus in der Ortserweiterung fest.
+Legt den Autorisierungsstatus in der Places-Erweiterung fest.
 
 Der angegebene Status wird im Status &quot;Orte freigegeben&quot;gespeichert und dient nur als Referenz.
 Der Aufruf dieser Methode hat keine Auswirkungen auf den tatsächlichen Status der Standortautorisierung für dieses Gerät.
@@ -378,7 +381,7 @@ Places.setAuthorizationStatus(PlacesAuthorizationStatus.ALWAYS);
 
 *Verfügbar ab ACPPlaces v1.3.0*
 
-Legt den Autorisierungsstatus in der Ortserweiterung fest.
+Legt den Autorisierungsstatus in der Places-Erweiterung fest.
 
 Der angegebene Status wird im Status &quot;Orte freigegeben&quot;gespeichert und dient nur als Referenz.
 Der Aufruf dieser Methode hat keine Auswirkungen auf den tatsächlichen Status der Standortautorisierung für dieses Gerät.
