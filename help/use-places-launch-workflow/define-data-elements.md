@@ -1,8 +1,11 @@
 ---
 title: Definieren von Datenelementen
-description: Dieser Abschnitt enthält Informationen zum Erstellen, Verwenden und Veröffentlichen von Datenelementen in Experience Platform Launch for Places.
+description: Dieser Abschnitt enthält Informationen zum Erstellen, Verwenden und Veröffentlichen von Datenelementen in Experience Platform Launch für Orte.
 translation-type: tm+mt
 source-git-commit: c22efc36f2eac6b20fc555d998c3988d8c31169e
+workflow-type: tm+mt
+source-wordcount: '456'
+ht-degree: 1%
 
 ---
 
@@ -15,11 +18,11 @@ Die folgenden Informationen helfen Ihnen, Datenelemente zu verstehen und zu erst
 
 Datenelemente sind die Bausteine für das Datenwörterbuch der Anwendung und werden verwendet, um Daten über Marketing- und Anzeigentechnologie hinweg zu erfassen, zu organisieren und bereitzustellen.
 
-Ein Datenelement ist eine Variable, bei der der Wert einer Besucher-ID, einem Betreibernamen, einer Anzeigen-ID, einer Push-ID usw. zugeordnet werden kann. In Experience Platform Launch können Sie auf diesen Wert anhand seines Variablennamen verweisen. Diese Sammlung von Datenelementen wird zum Wörterbuch definierter Daten, die Sie zum Erstellen Ihrer Regeln (Ereignisse, Bedingungen und Aktionen) verwenden können. Dieses Wörterbuch wird über Experience Platform Launch freigegeben, wo es mit jeder Erweiterung in Ihrer Eigenschaft verwendet werden kann.
+Ein Datenelement ist eine Variable, bei der der Wert einer Besucher-ID, einem Betreibernamen, einer Anzeigen-ID, einer Push-ID usw. zugeordnet werden kann. In Experience Platform Launch können Sie auf diesen Wert anhand des Variablennamens verweisen. Diese Sammlung von Datenelementen wird zum Wörterbuch definierter Daten, die Sie zum Erstellen Ihrer Regeln (Ereignisse, Bedingungen und Aktionen) verwenden können. Dieses Wörterbuch wird über den Experience Platform Launch hinweg freigegeben und kann mit jeder beliebigen Erweiterung in Ihrer Eigenschaft verwendet werden.
 
-Mit der Erweiterung &quot;Orte&quot;können Sie auf Werte aus den folgenden Zielen verweisen:
+Mit der Erweiterung &quot;Orte&quot;können Sie auf Werte aus den folgenden Zielgruppen verweisen:
 
-* Aktueller POI, der den POI bezeichnet, in dem sich Ihr Kunde derzeit befindet.
+* Aktueller POI, der auf den POI verweist, in dem sich Ihr Kunde derzeit befindet.
 
    Befindet sich der Benutzer in mehreren POIs, wird der Benutzer zur Bibliothek mit höherem Rang ausgewählt. Wenn mehrere POIs zur Bibliothek mit dem höchsten Rang gehören, wird die mit dem kleinsten Radius ausgewählt.
 * Letzter ausgesetzter POI, der auf den letzten POI verweist, den der Benutzer verlassen hat.
@@ -27,7 +30,7 @@ Mit der Erweiterung &quot;Orte&quot;können Sie auf Werte aus den folgenden Ziel
 
 Jeder POI enthält die folgenden Datenreferenzen:
 
-* **[!UICONTROL Category]**: Kategorie des POI
+* **[!UICONTROL Category]**: kategorie des POI
 * **[!UICONTROL City]**: Ort des POI
 * **[!UICONTROL Country]**: Land des POI
 * **[!UICONTROL Latitude]**: Breitengrad des POI
@@ -38,17 +41,17 @@ Jeder POI enthält die folgenden Datenreferenzen:
 * **[!UICONTROL Region ID]**: ID des POI
 * **[!UICONTROL Region/State]**: Region, Provinz oder Bundesstaat des POI
 
-### Datenelement erstellen
+### ein Datenelement erstellen
 
-1. Klicken Sie auf der Seite &quot;Eigenschaft&quot;für Ihre App auf die **[!UICONTROL Data Elements]**Registerkarte.
+1. Klicken Sie auf der Seite &quot;Eigenschaft&quot;für Ihre App auf die **[!UICONTROL Data Elements]** Registerkarte.
 
 1. Klicken Sie auf **[!UICONTROL Create New Data Element]**.
 
 1. Suchen Sie in der Liste der installierten Erweiterungen nach **[!UICONTROL Places]**.
 
-1. Wählen Sie in der **[!UICONTROL Data Element Type]**Dropdownliste einen Datenverweis für dieses Datenelement aus.
+1. Wählen Sie in der **[!UICONTROL Data Element Type]** Dropdown-Liste einen Datenverweis für dieses Datenelement aus.
 
-1. Wählen Sie ein POI-Ziel.
+1. Wählen Sie eine POI-Zielgruppe.
 
 1. Wenn dieses Datenelement ein benutzerdefinierter Metadatenverweis ist, wählen Sie einen Metadatenschlüssel aus.
 
@@ -57,14 +60,14 @@ Jeder POI enthält die folgenden Datenreferenzen:
    ![Datenelement erstellen](/help/assets/create-de-7-v3.png)
 
 
-## Datenelemente zu verwenden
+## Datenelement verwenden
 
 Nachdem ein Datenelement erstellt wurde, können Sie das Datenelement aus einer beliebigen Regelkomponente verwenden, wenn eine Datenelementauswahl vorhanden ist.
 
 ![Datenelement verwenden](/help/assets/use-de-v2.png)
 
-Wenn die Regelkomponente keine Datenelementauswahl enthält, können Sie das Datenelement verwenden, indem Sie den Datenelementnamen mit den **[!UICONTROL %%]**Token einschließen.
-Wenn der Name des Datenelements beispielsweise**[!UICONTROL Last POI City]** lautet, können Sie **[!UICONTROL LAST POI City]**der Texteingabe hinzufügen.
+Wenn in der Regelkomponente keine Datenelementauswahl vorhanden ist, können Sie das Datenelement verwenden, indem Sie den Datenelementnamen mit den **[!UICONTROL %%]** Token einschließen.
+Wenn der Name des Datenelements beispielsweise **[!UICONTROL Last POI City]** lautet, können Sie **[!UICONTROL LAST POI City]** der Texteingabe hinzufügen.
 
 
 ## Datenelemente veröffentlichen
