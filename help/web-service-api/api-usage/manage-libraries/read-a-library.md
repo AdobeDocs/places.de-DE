@@ -3,6 +3,9 @@ title: Bibliothek lesen
 description: Lesen Sie eine Bibliothek mithilfe der Places REST API.
 translation-type: tm+mt
 source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
+workflow-type: tm+mt
+source-wordcount: '45'
+ht-degree: 6%
 
 ---
 
@@ -10,7 +13,7 @@ source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
 
 # Bibliothek lesen {#read-a-library}
 
-Eine GET-Methode, die die Details für eine Bibliothek zurückgibt.
+Eine GET, die die Details für eine Bibliothek zurückgibt.
 
 ## Anfrage
 
