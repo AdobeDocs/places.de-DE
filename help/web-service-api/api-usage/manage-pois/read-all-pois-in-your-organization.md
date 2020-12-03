@@ -3,13 +3,16 @@ title: Alle POIs in Ihrer Organisation lesen
 description: Lesen Sie alle POIs in Ihrem Unternehmen mithilfe der Places REST APIs.
 translation-type: tm+mt
 source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
+workflow-type: tm+mt
+source-wordcount: '54'
+ht-degree: 5%
 
 ---
 
 
 # Alle POIs in Ihrer Organisation lesen {#read-all-pois-org}
 
-Eine GET-Methode, die alle POIs in Ihrer Organisation zurückgibt.
+Eine GET, die alle POIs in Ihrem Unternehmen zurückgibt.
 
 ## Anfrage
 
