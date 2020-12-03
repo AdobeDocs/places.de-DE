@@ -1,15 +1,18 @@
 ---
-title: Ereignisreferenz für Orte
-description: 'Eine Liste der Ereignisse, die von der Places-Erweiterung verarbeitet werden. '
+title: Platzierungs-Ereignis
+description: 'Eine Liste der Ereignis, die von der Places-Erweiterung verarbeitet werden. '
 translation-type: tm+mt
 source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
+workflow-type: tm+mt
+source-wordcount: '248'
+ht-degree: 25%
 
 ---
 
 
-# Ereignisreferenz für Orte {#places-event-reference}
+# Platzierungs-Ereignis {#places-event-reference}
 
-Im Folgenden finden Sie eine Liste der Ereignisse, die von der Places-Erweiterung behandelt werden.
+Im Folgenden finden Sie eine Liste der Ereignis, die mit der Places-Erweiterung behandelt werden.
 
 ## GetCurrentPointsOfInterest
 
@@ -25,7 +28,7 @@ Dieses Ereignis ist eine Anforderung zum Abrufen der POIs, in denen sich das Ger
 
 **Datennutzlast-Definition**
 
-Keine
+n/a
 
 ## GetNeestedPointsOfInterest
 
@@ -37,16 +40,16 @@ Keine
 
 **Ereignisbeschreibung**
 
-Bei diesem Ereignis werden die nahe gelegenen POIs unter Berücksichtigung des aktuellen Geräteorts und der konfigurierten Orte-Bibliotheken abgerufen.
+Dieses Ereignis stellt eine Anforderung dar, die nahe gelegenen POIs unter Berücksichtigung der aktuellen Geräteposition und der konfigurierten Orte-Bibliotheken abzurufen.
 
 **Datennutzlast-Definition**
 
 | Schlüssel | Werttyp | Erforderlich | Standardwert | Beschreibung |
 | :--- | :--- | :--- | :--- | :--- |
-| Breitengrad | double | wahr | Keine | Enthält den Breitenwert für die Mitte der Suche nach nahe gelegenen POIs. |
-| Längengrad | double | wahr | Keine | Gibt den Längengradwert für die Mitte der Suche nach nahe gelegenen POIs an. |
-| radius | integer | false | Keine | Radius, in Metern, verwendet durch die Suche nach nahe gelegenen POIs. |
-| count | integer | false | 10 | Maximale Anzahl an POIs, die in einem resultierenden Antwortereignis zurückgegeben werden. |
+| latitude | double | true | n/a | Enthält den Breitenwert für die Mitte der Suche nach nahe gelegenen POIs. |
+| longitude | double | true | n/a | Gibt den Längengradwert für die Mitte der Suche nach nahe gelegenen POIs an. |
+| radius | Ganzzahl | false | n/a | Radius, in Metern, verwendet durch die Suche nach nahe gelegenen POIs. |
+| count | Ganzzahl | false | 10 | Maximale Anzahl der POIs, die in einem resultierenden Ereignis zurückgegeben werden. |
 
 ## ProcessRegionEvent
 
@@ -58,16 +61,16 @@ Bei diesem Ereignis werden die nahe gelegenen POIs unter Berücksichtigung des a
 
 **Ereignisbeschreibung**
 
-Dieses Ereignis bewirkt, dass die Places-Erweiterung ein Ereignis zum Abrufen oder Beenden von Geofencing verarbeitet.
+Dieses Ereignis führt dazu, dass die Platzierungserweiterung ein Ereignis zum Abrufen oder Beenden von Geometrien verarbeitet.
 
 **Datennutzlast-Definition**
 
 | Schlüssel | Werttyp | Erforderlich | Beschreibung |
 | :--- | :--- | :--- | :--- |
-| regionid | string | wahr | ID der Region, die das Ereignis generiert. |
-| regionereigntype | int | wahr | Typ des zu generierenden Regions-Ereignisses. 1 für Einfahrt und 2 für Ausfahrt. |
+| regionid | Zeichenfolge | wahr | ID des Bereichs, der das Ereignis generiert. |
+| regionereigntype | int | wahr | Typ des zu generierenden Regions-Ereignisses. 1 für die Einfahrt und 2 für die Ausfahrt. |
 
-## Ereignisse, die von der Places-Erweiterung ausgelöst werden
+## Ereignis, die von der Places-Erweiterung gesendet werden
 
 Diese Informationen werden derzeit bereitgestellt.
 
