@@ -22,34 +22,34 @@ Sie können auch über das Menü Adobe Experience Platform auf den Ortsdienst zu
 
 Wenn Sie den Orte-Dienst in keinem dieser Menüs sehen, wenden Sie sich an einen Administrator in Ihrem Unternehmen, um Ihre Benutzer-ID dem Orts-Core-Service in der Admin Console hinzuzufügen.
 
-## Adding a user to Places Service and Experience Platform Launch
+## Hinzufügen eines Benutzers zum Platzierungsdienst und Experience Platform Launch
 
-To allow users to access the [Experience Platform Launch UI](https://launch.adobe.com), they need to be added to Places Core Service in the Admin Console as a user. Damit Benutzer Zugriff auf Experience Platform Launch haben, mobile Eigenschaften konfigurieren und Orte mit dem Adobe Experience Platform SDK verwenden können, müssen sie dem Experience Platform Launch in der Admin Console hinzugefügt und die folgenden Berechtigungen für den Experience Platform Launch erhalten:
+Damit Benutzer auf die Benutzeroberfläche [des](https://launch.adobe.com)Experience Platform Launchs zugreifen können, müssen sie als Benutzer dem Orts-Core-Dienst in der Admin Console hinzugefügt werden. Damit Benutzer Zugriff auf Experience Platform Launch haben, mobile Eigenschaften konfigurieren und Orte mit dem Adobe Experience Platform SDK verwenden können, müssen sie dem Experience Platform Launch in der Admin Console hinzugefügt und die folgenden Berechtigungen für den Experience Platform Launch erhalten:
 
-* All Property Rights:
+* Alle Eigenschaftsrechte:
    * Entwickeln
    * Genehmigen
    * Veröffentlichen Sie
-   * Manage extensions
-   * Manage environments
-* Manage Properties permission under Company Rights
+   * Erweiterungen verwalten
+   * Umgebung verwalten
+* Berechtigung &quot;Eigenschaften verwalten&quot;unter &quot;Firma-Rechte&quot;
 
-If this is the first time you are adding a user, complete the following steps to add users to Experience Platform Launch and Places Service. If you have added users before, multiple profiles might be displayed, so ensure that you select the correct profile.
+Wenn Sie zum ersten Mal einen Benutzer hinzufügen, führen Sie die folgenden Schritte aus, um Benutzer zum Experience Platform Launch- und Ortungsdienst hinzuzufügen. Wenn Sie zuvor Benutzer hinzugefügt haben, werden möglicherweise mehrere Profil angezeigt. Wählen Sie daher das richtige Profil aus.
 
 >[!IMPORTANT]
 >
->Only org administrators can access the Admin Console and add the users.
+>Nur Organisationsadministratoren können auf die Admin Console zugreifen und die Benutzer hinzufügen.
 
-### 1. Verify that Places Service and Experience Platform Launch are provisioned
+### 1. Stellen Sie sicher, dass der Orte-Dienst und der Experience Platform Launch bereitgestellt wurden.
 
-1. Log in to your Experience Cloud organization.
-1. In the top-right side, click the Experience Cloud shell switcher.
+1. Melden Sie sich bei Ihrer Experience Cloud-Organisation an.
+1. Klicken Sie oben rechts auf den Experience Cloud Shell-Umschalter.
 
-   ![shell switcher](/help/assets/places_shell_switcher1.png)
+   ![Shell-Umschalter](/help/assets/places_shell_switcher1.png)
 
 1. Unter **[!UICONTROL Platform]** klicken Sie auf **[!UICONTROL Administration]**.
 
-   If you do not see **Administration** in the list, you are not an admin. You must contact your org admin to complete this procedure.
+   Wenn die Liste keine **Administration** enthält, sind Sie kein Administrator. Sie müssen sich an Ihren Organisationsadministrator wenden, um dieses Verfahren abzuschließen.
 
 1. Klicken Sie auf der Seite &quot;Experience Cloud-Verwaltung&quot;auf der **[!UICONTROL Admin Console]** Karte auf **[!UICONTROL Take me there]**.
 
@@ -147,29 +147,29 @@ So fügen Sie Ihren Profilen &quot;Orte-Dienst&quot;und &quot;Experience Platfor
    * Am unteren Rand der Karte werden zwei Punkte angezeigt.
    * Der Punkt links ist schwarz.
 
-   b. Click **[!UICONTROL + Assign Users]**.
+   b. Klicken Sie auf **[!UICONTROL + Assign Users]**.
 
    c. Geben Sie das Adobe ID des Benutzers ein.
 
    d. Führen Sie einen der folgenden Schritte aus:
 
-   * If you are adding a new user, click **[!UICONTROL New user]**, and enter the user’s first and last name.
+   * Wenn Sie einen neuen Benutzer hinzufügen, klicken Sie auf **[!UICONTROL New user]** und geben Sie den Vor- und Nachnamen des Benutzers ein.
    * Wenn Sie einen vorhandenen Benutzer hinzufügen, klicken Sie auf den Namen des Benutzers, der angezeigt wird.
 
-   e. In the **[!UICONTROL Please select a profile for this product]** drop-down list, select the Places profile.
+   e. Wählen Sie in der **[!UICONTROL Please select a profile for this product]** Dropdown-Liste das Profil Orte.
 
-   f. Click **[!UICONTROL Save]**.
+   f. Klicken Sie auf **[!UICONTROL Save]**.
 
-### Add a developer
+### Entwickler Hinzufügen
 
-For users who also need access to the Web Service API, you need to add them as a Developer.
+Für Benutzer, die auch Zugriff auf die Web Service API benötigen, müssen Sie diese als Entwickler hinzufügen.
 
 So fügen Sie einen Entwickler hinzu:
 
-1. On the **[!UICONTROL Places Core Services]** card, verify the following:
+1. Überprüfen Sie auf der **[!UICONTROL Places Core Services]** Karte Folgendes:
 
-   * Two dots are displayed at the bottom of the card.
-   * Click the dot on the right so **[!UICONTROL Assign Developers]** appears at the bottom of the card.
+   * Am unteren Rand der Karte werden zwei Punkte angezeigt.
+   * Klicken Sie auf den Punkt rechts, damit er unten auf der Karte angezeigt **[!UICONTROL Assign Developers]** wird.
 
 1. Klicken Sie auf **[!UICONTROL + Assign Developers]**.
 
@@ -177,10 +177,10 @@ So fügen Sie einen Entwickler hinzu:
 
 1. Führen Sie einen der folgenden Schritte aus:
 
-   * If you are adding a new user, click **[!UICONTROL New user]** and enter the user’s first and last name.
-   * If you are adding an existing user, click the user’s name that is displayed.
+   * Wenn Sie einen neuen Benutzer hinzufügen, klicken Sie auf **[!UICONTROL New user]** und geben Sie den Vor- und Nachnamen des Benutzers ein.
+   * Wenn Sie einen vorhandenen Benutzer hinzufügen, klicken Sie auf den Namen des Benutzers, der angezeigt wird.
 
-1. In the **[!UICONTROL Please select a profile for this product]** drop-down list, select the Places Service profile.
+1. Wählen Sie in der **[!UICONTROL Please select a profile for this product]** Dropdown-Liste das Profil Orte-Dienst.
 
 1. Klicken Sie auf **Speichern**.
 
