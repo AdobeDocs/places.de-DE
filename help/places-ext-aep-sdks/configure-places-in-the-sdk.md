@@ -3,6 +3,9 @@ title: SDK mit der Ortserweiterung konfigurieren
 description: 'Sie können das SDK mit der Platzierungserweiterung konfigurieren, um Standortbewusstsein in Ihrer mobilen App zu aktivieren. '
 translation-type: tm+mt
 source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
+workflow-type: tm+mt
+source-wordcount: '218'
+ht-degree: 9%
 
 ---
 
@@ -13,15 +16,15 @@ Um die Ortung in Ihrer App zu aktivieren, konfigurieren Sie das SDK mit den Plac
 
 ## Konfigurieren der Platzierungserweiterung
 
-Konfigurieren der Platzierungserweiterung
+So konfigurieren Sie die Platzierungserweiterung:
 
-1. Konfigurieren Sie die Erweiterung Orte beim Start.
+1. Konfigurieren Sie die Platzierungserweiterung in Launch.
 
-   Weitere Informationen finden Sie unter *Konfigurieren der Erweiterung &quot;Orte&quot;in &quot;Start* &quot;in der Erweiterung[&quot; ](/help/places-ext-aep-sdks/places-extension/places-extension.md)Orte&quot;.
+   Weitere Informationen finden Sie unter *Konfigurieren der Erweiterung &quot;Orte&quot;in &quot;Start* &quot;in der Erweiterung [&quot;](/help/places-ext-aep-sdks/places-extension/places-extension.md)Orte&quot;.
 
-1. Fügen Sie Ihrer mobilen App die Platzierungserweiterung hinzu.
+1. hinzufügen Sie die Platzierungserweiterung zu Ihrer mobilen App.
 
-   Weitere Informationen finden Sie unter *Hinzufügen der Platzierungserweiterung zu Ihrer App* in der [Platzierungserweiterung](/help/places-ext-aep-sdks/places-extension/places-extension.md).
+   Weitere Informationen finden Sie unter *Hinzufügen der Places-Erweiterung für Ihre App* in der [Places-Erweiterung](/help/places-ext-aep-sdks/places-extension/places-extension.md).
 
 1. Registrieren Sie Orte mit der Erweiterung Mobile Core.
 
@@ -35,11 +38,11 @@ Konfigurieren der Erweiterung &quot;Platzierungsmonitor&quot;beim Start:
 
    Weitere Informationen finden Sie unter *Konfigurieren der Platzierungsüberwachungserweiterung in Launch*.
 
-1. Fügen Sie Ihrer mobilen App die Erweiterung &quot;Orts-Monitor&quot;hinzu.
+1. hinzufügen Sie die Erweiterung &quot;Orts Monitor&quot;auf Ihre mobile App.
 
-   Weitere Informationen finden Sie unter *Hinzufügen der Erweiterung &quot;Orts-Monitor&quot;zu Ihrer App*.
+   Weitere Informationen finden Sie unter *Hinzufügen der Erweiterung &quot;Orts-Monitor&quot;für Ihre App*.
 
-1. Registrieren Sie den Places Monitor mit der Erweiterung Mobile Core.
+1. Registrieren Sie den Orts-Monitor mit der Erweiterung Mobile Core.
 
    Weitere Informationen finden Sie unter Registrieren des *Orts-Monitors mit Mobile Core*.
 
