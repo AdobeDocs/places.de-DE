@@ -3,6 +3,9 @@ title: Verwenden des Orte-Dienstes mit Mobile Services für Messaging
 description: Dieser Abschnitt zeigt Ihnen, wie Sie den Places-Dienst mit Mobile Services für Nachrichten verwenden.
 translation-type: tm+mt
 source-git-commit: 5a21e734c0ef56c815389a9f08b445bedaae557a
+workflow-type: tm+mt
+source-wordcount: '354'
+ht-degree: 1%
 
 ---
 
@@ -21,37 +24,37 @@ Bevor Sie die Mobile Services-Erweiterung für Nachrichten verwenden können, ü
 
    ![Alte Benutzeroberfläche](/help/assets/legacy-location-v4-ui.png)
 
-* Die Benutzeroberfläche des Orte-Dienstes lautet:
+* Die Benutzeroberfläche des Orte-Dienstes lautet wie folgt:
 
    ![Places Service POI Management-Benutzeroberfläche](/help/assets/places-ui.png)
 
 * Das ACP SDK ist ordnungsgemäß mit den Erweiterungen &quot;Places Service&quot;und/oder &quot;Places Monitor&quot;konfiguriert.
 
-   Das bedeutet, dass Daten als Ereignisse und/oder Bedingungen in der Erlebnisplattformstartregeln-Engine für Ihre mobile App verfügbar sind. Weitere Informationen finden Sie unter [Platzierungserweiterung](/help/places-ext-aep-sdks/places-extension/places-extension.md) oder [Platzierungsmonitor-Erweiterung](/help/places-ext-aep-sdks/places-monitor-extension/using-places-monitor-extension.md).
+   Das bedeutet, dass Daten als Ereignisse und/oder Bedingungen in der Experience Platform Launch Rules Engine für Ihre mobile App verfügbar sind. Weitere Informationen finden Sie unter [Platzierungserweiterung](/help/places-ext-aep-sdks/places-extension/places-extension.md) oder [Platzierungsmonitor-Erweiterung](/help/places-ext-aep-sdks/places-monitor-extension/using-places-monitor-extension.md).
 
 * Machen Sie sich mit dem Erstellen und Veröffentlichen von Experience Platform Launch-Regeln für das ACP SDK in Ihrer mobilen App vertraut.
 
    For more information, see [Rules engine](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/mobile-core/rules-engine).
 
-* Die Datenelemente zum Starten der Erlebnisplattform werden aus den Platzierungserweiterungsdaten erstellt, die in der Regel-Engine verwendet werden.
+* Experience Platform Launch-Datenelemente werden aus den Plates-Erweiterungsdaten erstellt, die in der Rules-Engine verwendet werden.
 
    For more information, see [Data elements](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/mobile-core/rules-engine#data-elements).
 
 ## Berichterstellung 
 
-Bevor Sie die Berichterstellung verwenden können, müssen Sie die folgenden Voraussetzungen erfüllen:
+Bevor Sie Berichte verwenden können, müssen Sie die folgenden Voraussetzungen erfüllen:
 
-* Senden Sie erfolgreich Daten zum Platzierungsdienst an die Adobe Analytics Report Suite.
+* Senden von Ortsdaten erfolgreich an die Adobe Analytics Report Suite
 
    Weitere Informationen finden Sie unter [Verwenden des Orte-Dienstes mit Adobe Analytics](/help/use-places-with-other-solutions/places-adobe-analytics/use-places-adobe-analytics.md).
 
-* Machen Sie sich mit der Berichterstellung zu Mobile Services vertraut.
+* Machen Sie sich mit Mobile Services Berichte vertraut.
 
    For more information, see [Reports](https://docs.adobe.com/content/help/en/mobile-services/using/reports-ug/usage.html).
 
-## Berichtsvisualisierung
+## Visualisierung von Berichten
 
-Sie können Mobile Service-Berichte mit den an Adobe Analytics gesendeten Daten des Places Service ausführen. Im folgenden Beispiel werden Ereignisse gesendet, wenn Benutzer Einträge in einem der POIs haben. In diesem Bericht wurde ein Filter für das POI-Einstiegsereignis über den vordefinierten Benutzerbericht hinzugefügt:
+Sie können Mobile Service-Berichte mit den an Adobe Analytics gesendeten Daten des Places Service ausführen. Im folgenden Beispiel werden Ereignis gesendet, wenn Benutzer Einträge in einem der POIs haben. In diesem Bericht wurde ein Filter des POI-Eintrags-Ereignisses über den vordefinierten Benutzerbericht hinzugefügt:
 
 ![Berichtsvisualisierung](/help/assets/report-visualize.png)
 
