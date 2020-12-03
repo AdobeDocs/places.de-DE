@@ -3,6 +3,9 @@ title: Übersicht über den Places Service
 description: 'Dieser Abschnitt enthält Informationen zum Erstellen und Verwenden von POI (Points of Interest). '
 translation-type: tm+mt
 source-git-commit: c22efc36f2eac6b20fc555d998c3988d8c31169e
+workflow-type: tm+mt
+source-wordcount: '53'
+ht-degree: 0%
 
 ---
 
