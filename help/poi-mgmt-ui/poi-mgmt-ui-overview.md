@@ -1,8 +1,11 @@
 ---
-title: Übersicht über die Point-of-Interest-Verwaltungsoberfläche
+title: Übersicht über die Point-of-Interest-Management-Oberfläche
 description: Dieser Abschnitt enthält Informationen zum Erstellen und Verwalten von Bibliotheken und POIs über die Benutzeroberfläche des Orts-Dienstes.
 translation-type: tm+mt
 source-git-commit: c22efc36f2eac6b20fc555d998c3988d8c31169e
+workflow-type: tm+mt
+source-wordcount: '86'
+ht-degree: 0%
 
 ---
 
