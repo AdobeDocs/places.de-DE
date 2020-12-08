@@ -1,16 +1,12 @@
 ---
-source-git-commit: ca711e5f9d05ff01ab87a39377b09fad258fbb90
+source-git-commit: 8688bd4a613b71f205909588bd2a3391e1cc8793
 workflow-type: tm+mt
 translation-type: tm+mt
-source-wordcount: '517'
-ht-degree: 85%
+source-wordcount: '435'
+ht-degree: 100%
 
 ---
 # Artikel beitragen
-
-| EXL-PR | EXL | Vorschau | Aktivieren | Veröffentlicht | Hilfe |
-|--- |--- |--- |--- |--- |--- |
-| [![Build-Status](https://docs.ci.corp.adobe.com/view/exl-pr/job/places.en_pr-exl/badge/icon)](https://docs.ci.corp.adobe.com/view/exl-pr/job/places.en_pr-exl/lastBuild/) | [![Build-Status](https://docs.ci.corp.adobe.com/view/exl-pr/job/places.en_exl/lastBuild/badge/icon)](https://docs.ci.corp.adobe.com/view/exl-pr/job/places.en_exl/lastBuild/lastBuild) | [Vorschauen-URL](https://experienceleague.corp.adobe.com/docs/places/using/home.html?lang=en) | [activate-exl](https://docs.ci.corp.adobe.com/job/activate-exl/build/) | [Live-URL](https://experienceleague.adobe.com/docs/places/using/home.html?lang=en) | [Autorenanleitung](https://experienceleague.adobe.com/docs/authoring-guide-exl/using/home.html?lang=en) |
 
 Wir freuen uns über Inhaltsbeiträge unserer Community und von Adobe-Mitarbeitern außerhalb der Dokumentationsteams.
 
@@ -24,7 +20,7 @@ Lesen Sie das [Adobe Docs-Mitarbeiter-Handbuch](https://docs.adobe.com/help/en/c
 
 Wie Sie Beiträge einbringen, hängt davon ab, wer Sie sind und welche Art von Änderungen Sie beitragen möchten:
 
-### Geringfügige Änderungen oder Anfragen
+### Geringfügige Änderungen  oder Anfragen
 
 Um eine Anfrage einzureichen, klicken Sie in einem Artikel auf den Link **Problem protokollieren**, wodurch ein Problem in GitHub geöffnet wird. Geben Sie einen Titel und eine Beschreibung an und klicken Sie dann auf **Neues Problem vorlegen**.
 
