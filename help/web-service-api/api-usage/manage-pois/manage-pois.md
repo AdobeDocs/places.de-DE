@@ -10,7 +10,7 @@ ht-degree: 0%
 ---
 
 
-# Überblick über die Verwaltung von POI {#manage-pois}
+# Übersicht über POIs verwalten {#manage-pois}
 
 Sie können die REST-APIs des Places-Dienstes verwenden, um die folgenden Aufgaben durchzuführen:
 
