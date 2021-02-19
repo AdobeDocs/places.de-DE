@@ -10,7 +10,7 @@ ht-degree: 0%
 ---
 
 
-# Platzierungsmonitor-Erweiterung {#places-monitor-extension}
+# Platziert die Monitorerweiterung {#places-monitor-extension}
 
 Die Erweiterung &quot;Orts Monitor&quot;verarbeitet die Interaktionen mit dem Betriebssystem, um die POIs zu registrieren und zu überwachen, die dem Benutzer am nächsten sind. Diese Erweiterung ruft die POIs ab, die bei der Ortserweiterung registriert werden müssen, und leitet die Ein- und Ausstiegsbenachrichtigungen an die Ortserweiterung weiter. Diese Benachrichtigungen stehen als Ereignisse in Experience Platform Launch-Regeln zur Verfügung.
 
