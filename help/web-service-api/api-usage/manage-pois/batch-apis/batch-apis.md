@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Mit den Batch-APIs können Sie mehrere POIs gleichzeitig erstellen, aktualisieren oder löschen.
 
-Verwenden Sie die Python-Skripten, um einen Batch-Import Ihrer POIs aus einer `.csv` Datei in die Places-Datenbank Ihres Unternehmens abzuschließen. Sie können die ZIP-Datei dieser Skripte [hier](https://github.com/adobe/places-scripts)herunterladen. Anweisungen zur Verwendung der Skripte finden Sie in der README-Datei im Bericht.
+Verwenden Sie die Python-Skripten, um einen Batch-Import Ihrer POIs aus einer `.csv`-Datei in die Places-Datenbank Ihres Unternehmens abzuschließen. Sie können die ZIP-Datei dieser Skripte [hier](https://github.com/adobe/places-scripts) herunterladen. Anweisungen zur Verwendung der Skripte finden Sie in der README-Datei im Bericht.
 
 Mit den Batch-APIs können Sie die folgenden Aufgaben durchführen:
 
