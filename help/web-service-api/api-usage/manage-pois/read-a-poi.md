@@ -5,12 +5,12 @@ translation-type: tm+mt
 source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
 workflow-type: tm+mt
 source-wordcount: '45'
-ht-degree: 6%
+ht-degree: 8%
 
 ---
 
 
-# POI lesen {#read-a-poi}
+# POI {#read-a-poi} lesen
 
 Eine GET, die die Details für einen POI zurückgibt.
 
@@ -20,7 +20,7 @@ Eine GET, die die Details für einen POI zurückgibt.
 GET https://api-places.adobe.io/places/placesapi/v1/pois/<POIID>
 ```
 
-## Kopfzeilen
+## Header
 
 ```text
 -H' Content-Type: application/json'  
@@ -70,5 +70,5 @@ curl -X GET 'https://api-places.adobe.io/places/placesapi/v1/pois/<POIID>' -H 'x
 
 >[!IMPORTANT]
 >
->Ersetzen `<POIID>`, `<API KEY>`, `<TOKEN>`und `<ORIGIN>` durch tatsächliche Werte.
+>Ersetzen Sie `<POIID>`, `<API KEY>`, `<TOKEN>` und `<ORIGIN>` durch tatsächliche Werte.
 
