@@ -5,12 +5,12 @@ translation-type: tm+mt
 source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
 workflow-type: tm+mt
 source-wordcount: '54'
-ht-degree: 5%
+ht-degree: 7%
 
 ---
 
 
-# Alle POIs in einer Bibliothek lesen {#read-all-pois-library}
+# Alle POIs in einer Bibliothek {#read-all-pois-library} lesen
 
 Eine GET, die alle POIs in einer Bibliothek zurückgibt.
 
@@ -20,7 +20,7 @@ Eine GET, die alle POIs in einer Bibliothek zurückgibt.
 GET https://api-places.adobe.io/places/placesapi/v1/libraries/<LIBRARYID>/pois
 ```
 
-## Kopfzeilen
+## Header
 
 ```text
 -H' Content-Type: application/json'  
@@ -168,5 +168,5 @@ curl -X GET 'https://api-places.adobe.io/places/placesapi/v1/libraries/<LIBRARYI
 
 >[!IMPORTANT]
 >
->Ersetzen Sie &quot;&quot;, `<API KEY>`, `<TOKEN>`und `<ORGID>` durch tatsächliche Werte.
+>Ersetzen Sie &#39;&#39;, `<API KEY>`, `<TOKEN>` und `<ORGID>` durch tatsächliche Werte.
 
