@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
 workflow-type: tm+mt
 source-wordcount: '48'
-ht-degree: 18%
+ht-degree: 20%
 
 ---
 
@@ -20,7 +20,7 @@ Eine POST, mit der Sie eine Bibliothek erstellen können.
 POST https://api-places.adobe.io/places/placesapi/v1/libraries
 ```
 
-## Kopfzeilen
+## Header
 
 ```text
 -H' Content-Type: application/json'  -H 'Authorization: Bearer <TOKEN>'  -H 'x-api-key: <API KEY>'  -H 'x-gw-ims-org-id: <ORGID>'  -H 'Accept-Language: en-US'
@@ -48,5 +48,5 @@ curl -X POST 'https://api-places.adobe.io/places/placesapi/v1/libraries' -H 'x-a
 
 >[!IMPORTANT]
 >
->Ersetzen Sie Variablen wie `<API KEY>`, `<TOKEN>`und `<ORGID>` durch tatsächliche Werte.
+>Ersetzen Sie Variablen wie `<API KEY>`, `<TOKEN>` und `<ORGID>` durch tatsächliche Werte.
 
