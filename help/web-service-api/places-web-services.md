@@ -30,13 +30,13 @@ Bevor Sie die Web-Services-API verwenden können, stellen Sie sicher, dass die f
 
 * Der Orte-Dienst wird in Ihrer Organisation bereitgestellt und Sie haben als Benutzer entsprechenden Zugriff.
 
-   Weitere Informationen finden Sie unter *Voraussetzungen für den Benutzerzugriff* in der Übersicht über die [Integration und Voraussetzungen](/help/web-service-api/adobe-i-o-integration.md).
+   Weitere Informationen finden Sie unter *Voraussetzungen für den Benutzerzugriff* in [Integrationsübersicht und Voraussetzungen](/help/web-service-api/adobe-i-o-integration.md).
 
 * Nachdem Sie den Orte-Dienst in Ihrem Unternehmen bereitgestellt haben und Zugriff haben, erstellen Sie eine Adobe-Integration für den Orte-Dienst.
 
-   Weitere Informationen finden Sie unter *Erstellen einer Integration* des Orts-Dienstes in der [Integrationsübersicht und den Voraussetzungen](/help/web-service-api/adobe-i-o-integration.md).
+   Weitere Informationen finden Sie unter *Erstellen einer Ortsvermittlungsdienstintegration* in [Integrationsübersicht und Voraussetzungen](/help/web-service-api/adobe-i-o-integration.md).
 
 Weitere Informationen:
 
-* Weitere Informationen zu den verfügbaren APIs und deren Verwendung finden Sie unter [Verwalten von Bibliotheken](/help/web-service-api/api-usage/manage-libraries/manage-libraries.md) und [Verwalten von POIs](/help/web-service-api/api-usage/manage-pois/manage-pois.md).
+* Weitere Informationen zu den verfügbaren APIs und deren Verwendung finden Sie unter [Bibliotheken verwalten](/help/web-service-api/api-usage/manage-libraries/manage-libraries.md) und [POIs verwalten](/help/web-service-api/api-usage/manage-pois/manage-pois.md).
 * Weitere Informationen zu den Kopfzeilen und Parametern in diesen APIs finden Sie unter [Kopfzeilen und Parameter](/help/web-service-api/api-usage/headers-and-parameters.md).
