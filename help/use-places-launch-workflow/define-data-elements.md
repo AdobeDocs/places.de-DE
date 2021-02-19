@@ -4,13 +4,13 @@ description: Dieser Abschnitt enthält Informationen zum Erstellen, Verwenden un
 translation-type: tm+mt
 source-git-commit: c22efc36f2eac6b20fc555d998c3988d8c31169e
 workflow-type: tm+mt
-source-wordcount: '456'
+source-wordcount: '485'
 ht-degree: 1%
 
 ---
 
 
-# Define a data element {#define-data-elements}
+# Definieren eines Datenelements {#define-data-elements}
 
 Die folgenden Informationen helfen Ihnen, Datenelemente zu verstehen und zu erstellen und zu veröffentlichen.
 
@@ -30,32 +30,32 @@ Mit der Erweiterung &quot;Orte&quot;können Sie auf Werte aus den folgenden Ziel
 
 Jeder POI enthält die folgenden Datenreferenzen:
 
-* **[!UICONTROL Category]**: kategorie des POI
-* **[!UICONTROL City]**: Ort des POI
-* **[!UICONTROL Country]**: Land des POI
-* **[!UICONTROL Latitude]**: Breitengrad des POI
-* **[!UICONTROL Longitude]**: Längengrad des POI
-* **[!UICONTROL Metadata]**: benutzerdefinierte Metadaten des POI
+* **[!UICONTROL Kategorie]**: Kategorie des POI
+* **[!UICONTROL Ort]**: Ort des POI
+* **[!UICONTROL Land]**: Land des POI
+* **[!UICONTROL Breitengrad]**: Breitengrad des POI
+* **[!UICONTROL Längengrad]**: Längengrad des POI
+* **[!UICONTROL Metadaten]**: benutzerdefinierte Metadaten des POI
 * **[!UICONTROL Name]**: Name des POI
 * **[!UICONTROL Radius]**: Radius der POI
-* **[!UICONTROL Region ID]**: ID des POI
-* **[!UICONTROL Region/State]**: Region, Provinz oder Bundesstaat des POI
+* **[!UICONTROL Regions-ID]**: ID des POI
+* **[!UICONTROL Region/Bundesland]**: Region, Provinz oder Bundesstaat des POI
 
 ### ein Datenelement erstellen
 
-1. Klicken Sie auf der Seite &quot;Eigenschaft&quot;für Ihre App auf die **[!UICONTROL Data Elements]** Registerkarte.
+1. Klicken Sie auf der Seite &quot;Eigenschaft&quot;für Ihre App auf die Registerkarte **[!UICONTROL Datenelemente]**.
 
-1. Klicken Sie auf **[!UICONTROL Create New Data Element]**.
+1. Klicken Sie auf **[!UICONTROL Neues Datenelement erstellen]**.
 
-1. Suchen Sie in der Liste der installierten Erweiterungen nach **[!UICONTROL Places]**.
+1. Suchen Sie in der Liste der installierten Erweiterungen nach **[!UICONTROL Orte]**.
 
-1. Wählen Sie in der **[!UICONTROL Data Element Type]** Dropdown-Liste einen Datenverweis für dieses Datenelement aus.
+1. Wählen Sie in der Dropdown-Liste **[!UICONTROL Datenelementtyp]** einen Datenverweis für dieses Datenelement aus.
 
 1. Wählen Sie eine POI-Zielgruppe.
 
 1. Wenn dieses Datenelement ein benutzerdefinierter Metadatenverweis ist, wählen Sie einen Metadatenschlüssel aus.
 
-1. Geben Sie einen Namen für das Datenelement ein und klicken Sie auf **[!UICONTROL Save]**.
+1. Geben Sie einen Namen für das Datenelement ein und klicken Sie auf **[!UICONTROL Speichern]**.
 
    ![Datenelement erstellen](/help/assets/create-de-7-v3.png)
 
@@ -66,8 +66,8 @@ Nachdem ein Datenelement erstellt wurde, können Sie das Datenelement aus einer 
 
 ![Datenelement verwenden](/help/assets/use-de-v2.png)
 
-Wenn in der Regelkomponente keine Datenelementauswahl vorhanden ist, können Sie das Datenelement verwenden, indem Sie den Datenelementnamen mit den **[!UICONTROL %%]** Token einschließen.
-Wenn der Name des Datenelements beispielsweise **[!UICONTROL Last POI City]** lautet, können Sie **[!UICONTROL LAST POI City]** der Texteingabe hinzufügen.
+Wenn in der Regelkomponente keine Datenelementauswahl vorhanden ist, können Sie das Datenelement verwenden, indem Sie den Datenelementnamen mit den Token **[!UICONTROL %]** umschließen.
+Wenn der Name des Datenelements beispielsweise **[!UICONTROL Letzter POI-Ort]** lautet, können Sie **[!UICONTROL LAST POI-Stadt]** zu einer Texteingabe hinzufügen.
 
 
 ## Datenelemente veröffentlichen
