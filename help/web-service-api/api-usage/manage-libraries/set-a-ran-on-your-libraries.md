@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
 workflow-type: tm+mt
 source-wordcount: '56'
-ht-degree: 5%
+ht-degree: 7%
 
 ---
 
@@ -18,7 +18,7 @@ Eine PUT-Methode, mit der Sie eine Rangreihenfolge für alle Bibliotheken festle
 
 `PUT https://api-places-dev.adobe.io/places/placesapi/v1/libraries/rank`
 
-## Kopfzeilen
+## Header
 
 ```-H Content-Type: application/json'
 -H 'Authorization: Bearer <TOKEN>`  
@@ -48,5 +48,5 @@ curl -X PUT `'https://api-places.adobe.io/places/placesapi/v1/libraries/rank'` -
 
 >[!IMPORTANT]
 >
->Ersetzen Sie Variablen wie `<API KEY>`, `<TOKEN>`und `<ORGID>` durch tatsächliche Werte.
+>Ersetzen Sie Variablen wie `<API KEY>`, `<TOKEN>` und `<ORGID>` durch tatsächliche Werte.
 
