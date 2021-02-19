@@ -4,7 +4,7 @@ description: Informationen zum Installieren, Konfigurieren und Verwenden der Erw
 translation-type: tm+mt
 source-git-commit: 7fdaace59886225b7fd9b0eba8cc6c2a139fa2d7
 workflow-type: tm+mt
-source-wordcount: '491'
+source-wordcount: '496'
 ht-degree: 8%
 
 ---
@@ -16,18 +16,18 @@ Führen Sie die folgenden Aufgaben aus, um die Erweiterung &quot;Orts-Monitor&qu
 
 ## Installieren Sie die Erweiterung Places Monitor in Experience Platform Launch
 
-1. In Experience Platform Launch, click the **[!UICONTROL Extensions]** tab.
-1. Suchen Sie auf der **[!UICONTROL Catalog]** Registerkarte die **[!UICONTROL Places Monitor]** Erweiterung und klicken Sie auf **Installieren**.
-1. Klicken Sie auf **[!UICONTROL Save]**.
+1. Klicken Sie in Experience Platform Launch auf die Registerkarte **[!UICONTROL Erweiterungen]**.
+1. Suchen Sie auf der Registerkarte **[!UICONTROL Katalog]** die Erweiterung **[!UICONTROL Orte Monitor]** und klicken Sie auf **Installieren**.
+1. Klicken Sie auf **[!UICONTROL Speichern]**.
 1. Führen Sie den Veröffentlichungsprozess aus, um die SDK-Konfiguration zu aktualisieren.
 
-### Konfigurieren der Platzierungsmonitor-Erweiterung {#configure-places-monitor-extension}
+### Die Erweiterung &quot;Platzierungsmonitor&quot;konfigurieren {#configure-places-monitor-extension}
 
 Es gibt keine Aufgaben zur Konfiguration der Plates Monitor-Erweiterung.
 
 ![Konfigurieren der ‌ &quot;Orte-Monitor](/help/assets/configure_places_monitor.png)&quot;
 
-## hinzufügen der Platzierungsmonitor-Erweiterung für Ihre App {#add-monitor-extension-to-app}
+## hinzufügen der Erweiterung &quot;Platzierungsmonitor&quot;auf Ihre App {#add-monitor-extension-to-app}
 
 Die Anweisungen zum Hinzufügen der Platzierungsmonitor-Erweiterung zu Ihrer Android- oder iOS-Anwendung finden Sie unten.
 
@@ -66,7 +66,7 @@ Führen Sie in Android die folgenden Schritte aus:
 
 Führen Sie unter iOS die folgenden Schritte aus:
 
-1. Add the library to your project via your Cocoapods `Podfile` by adding `pod 'ACPPlacesMonitor'`.
+1. hinzufügen Sie die Bibliothek über Ihre Cocoapods `Podfile`, indem Sie `pod 'ACPPlacesMonitor'` hinzufügen.
 1. Importieren Sie die Bibliotheken für die Orts- und Orteüberwachung:
 
 #### Objective-C
@@ -96,7 +96,7 @@ Führen Sie in Android die folgenden Schritte aus:
 
 ### Java
 
-Registrieren Sie in der `OnCreate` Methode Ihrer App die Plates Monitor-Erweiterungen:
+Registrieren Sie in der `OnCreate`-Methode Ihrer App die Plates Monitor Extensions:
 
 ```java
 public class MobileApp extends Application {
@@ -123,9 +123,9 @@ public class MobileApp extends Application {
 
 ## iOS
 
-Registrieren Sie sich in der`application:didFinishLaunchingWithOptions`iOS-App `PlacesMonitor` und stellen Sie sie mit Mobile Core zusammen:
+Registrieren Sie im Ordner`application:didFinishLaunchingWithOptions` Ihrer iOS-App `PlacesMonitor` und Orte mit Mobile Core:
 
-### Objective-C
+### Ziel-C
 
 ```objectivec
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary*)launchOptions {
@@ -160,7 +160,7 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 
 >[!IMPORTANT]
 >
->Die Orteüberwachung hängt von der Platzierungserweiterung ab. When manually installing the Places Monitor extension, ensure that you also add the `libACPPlaces_iOS.a` library to your project.
+>Die Orteüberwachung hängt von der Platzierungserweiterung ab. Wenn Sie die Erweiterung &quot;Orts-Monitor&quot;manuell installieren, stellen Sie sicher, dass Sie auch die Bibliothek `libACPPlaces_iOS.a` zu Ihrem Projekt hinzufügen.
 
 
 ## hinzufügen Berechtigungen für das Manifest
@@ -169,7 +169,7 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 
 **Java**
 
-Um für alle Versionen von Android anzugeben, dass für Ihre App eine Standortberechtigung erforderlich ist, fügen Sie ein `<uses-permission>` Element im App-Manifest als untergeordnetes Element des obersten `<manifest>` Elements hinzu. Für Android-Anwendungen mit Zielgruppe API Level 29 und höher, die der App den Zugriff auf den Speicherort im Hintergrund ermöglichen, schließen Sie die ACCESS_HINTERGRUND_LOCATION-Berechtigung ein.
+Um für alle Versionen von Android anzugeben, dass für Ihre App eine Ortsberechtigung erforderlich ist, fügen Sie ein `<uses-permission>`-Element in Ihrem App-Manifest als untergeordnetes Element des Elements der obersten Ebene `<manifest>` hinzu. Für Android-Anwendungen mit Zielgruppe API Level 29 und höher, die der App den Zugriff auf den Speicherort im Hintergrund ermöglichen, schließen Sie die ACCESS_HINTERGRUND_LOCATION-Berechtigung ein.
 
 ```java
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.adobe.placesapp">
@@ -183,21 +183,21 @@ Um für alle Versionen von Android anzugeben, dass für Ihre App eine Standortbe
 ```
 
 
-## Aktivieren von Standortaktualisierungen im Hintergrund  {#enable-location-updates-background}
+## Aktivieren von Standortaktualisierungen im Hintergrund {#enable-location-updates-background}
 
-iOS unterstützt den Versand von Positionierungs-Ereignissen in Apps, die ausgesetzt oder nicht mehr ausgeführt werden. Um Standortaktualisierungen im Hintergrund für die Places Monitor-Erweiterung zu erhalten, konfigurieren Sie die Funktion für Standortaktualisierungen für Ihre App in `Xcode.background-location-updates`.
+iOS unterstützt den Versand von Positionierungs-Ereignissen in Apps, die ausgesetzt oder nicht mehr ausgeführt werden. Um Ortsaktualisierungen im Hintergrund für die Platzierungsmonitor-Erweiterung zu erhalten, konfigurieren Sie die Funktion für Standortaktualisierungen für Ihre App in `Xcode.background-location-updates`.
 
 ![mit dem Orte-Monitor](/help/assets/using-the-places-monitor_1.png)
 
 ## Konfigurieren der plist-Schlüssel
 
-Die folgenden Schlüssel müssen in der `Info.plist` Datei Ihrer App enthalten sein:
+Die folgenden Schlüssel müssen in der Datei `Info.plist` Ihrer App enthalten sein:
 
 * `NSLocationWhenInUseUsageDescription` - Der Text sollte beschreiben, warum die App während der Ausführung im Vordergrund Zugriff auf die Standortinformationen des Benutzers anfordert.
 * `NSLocationAlwaysAndWhenInUseUsageDescription` - Der Text sollte beschreiben, warum die App jederzeit den Zugriff auf die Standortinformationen des Benutzers anfordert.
 
 >[!TIP]
 >
->Wenn Ihre App iOS 10 und früher unterstützt, ist auch der `NSLocationAlwaysUsageDescription` Schlüssel erforderlich.
+>Wenn Ihre App iOS 10 und früher unterstützt, ist auch der Schlüssel `NSLocationAlwaysUsageDescription` erforderlich.
 
 ![](/help/assets/using-the-places-monitor_2.png)
