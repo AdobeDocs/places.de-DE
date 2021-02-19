@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
 workflow-type: tm+mt
 source-wordcount: '41'
-ht-degree: 7%
+ht-degree: 9%
 
 ---
 
@@ -18,7 +18,7 @@ Eine GET, mit der Sie Bibliotheken nach Rang ordnen können.
 
 `GET https://api-places.adobe.io/places/placesapi/v1/libraries/rank`
 
-## Kopfzeilen
+## Header
 
 ```
 -H Content-Type: application/JSON  
@@ -42,5 +42,5 @@ curl -X GET 'https://api-places.adobe.io/places/placesapi/v1/libraries/rank ' -H
 
 >[!IMPORTANT]
 >
->Ersetzen Sie Variablen wie `<API KEY>`, `<TOKEN>`und `<ORGID>` durch tatsächliche Werte.
+>Ersetzen Sie Variablen wie `<API KEY>`, `<TOKEN>` und `<ORGID>` durch tatsächliche Werte.
 
