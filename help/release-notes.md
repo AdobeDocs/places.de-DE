@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 3f986697179eb9c0af1d9b54daf67793a99b8491
 workflow-type: tm+mt
 source-wordcount: '1503'
-ht-degree: 4%
+ht-degree: 3%
 
 ---
 
@@ -16,9 +16,9 @@ ht-degree: 4%
 
 * **Platzierungs- und Platzierungsüberwachungserweiterungen**
 
-   * Erweiterungen für Orts- und Ortemonitor wurden für native [React-Anwendungen hinzugefügt.](https://aep-sdks.gitbook.io/docs/resources/upgrading-to-aep/current-sdk-versions#react-native)
-   * Erweiterungen für Platzierungs- und Ortemonitor wurden für [Cordova-Anwendungen hinzugefügt.](https://aep-sdks.gitbook.io/docs/resources/upgrading-to-aep/current-sdk-versions#cordova)
-   * Weitere Informationen finden Sie unter: [Platzierungs-Erweiterung](https://docs.adobe.com/content/help/de-DE/places/using/places-ext-aep-sdks/places-extension/places-extension.html)
+   * Erweiterungen für Orte und Orte-Monitor wurden für [Native Anwendungen reagieren](https://aep-sdks.gitbook.io/docs/resources/upgrading-to-aep/current-sdk-versions#react-native) hinzugefügt
+   * Für [Cordova-Anwendungen](https://aep-sdks.gitbook.io/docs/resources/upgrading-to-aep/current-sdk-versions#cordova) wurden Erweiterungen für &quot;Orte und Orte überwachen&quot;hinzugefügt.
+   * Weitere Informationen finden Sie unter: [Verwenden der Ortserweiterung](https://docs.adobe.com/content/help/de-DE/places/using/places-ext-aep-sdks/places-extension/places-extension.html)
 
 
 ## 12. Mai 2020
@@ -50,15 +50,15 @@ ht-degree: 4%
 * **ACPPlaces 1.3.1 (iOS)**
 
    * Die Platzierungserweiterung meldet jetzt Versionsinformationen an den Ereignis-Hub im Core SDK.
-   * Die Standardzeit bis zum Ende der Gültigkeitsdauer von Device POI-Mitgliedseinformationen beträgt nun eine Stunde ab dem Zeitpunkt der Erfassung. Weitere Informationen finden Sie unter Zeit-zu-Live-Mitgliedschaft [ändern](places-ext-aep-sdks/places-extension/places-extension.md#places-ttl)
+   * Die Standardzeit bis zum Ende der Gültigkeitsdauer von Device POI-Mitgliedseinformationen beträgt nun eine Stunde ab dem Zeitpunkt der Erfassung. Weitere Informationen finden Sie unter [Ändern der Mitgliederzeit für Orte](places-ext-aep-sdks/places-extension/places-extension.md#places-ttl)
 
 
 * **Orte 1.4.1 (Android)**
 
    * Die Platzierungserweiterung meldet jetzt Versionsinformationen an den Ereignis-Hub im Core SDK.
-   * Die Standardzeit bis zum Ende der Gültigkeitsdauer von Device POI-Mitgliedseinformationen beträgt nun eine Stunde ab dem Zeitpunkt der Erfassung. Weitere Informationen finden Sie unter Zeit-zu-Live-Mitgliedschaft [ändern](places-ext-aep-sdks/places-extension/places-extension.md#places-ttl)
+   * Die Standardzeit bis zum Ende der Gültigkeitsdauer von Device POI-Mitgliedseinformationen beträgt nun eine Stunde ab dem Zeitpunkt der Erfassung. Weitere Informationen finden Sie unter [Ändern der Mitgliederzeit für Orte](places-ext-aep-sdks/places-extension/places-extension.md#places-ttl)
 
-## Dienstag, 27. Januar 2020
+## 27. Januar 2020
 
 * **PlacesMonitor 2.2.0**
 
@@ -73,9 +73,9 @@ ht-degree: 4%
 
    * **Android**
 
-      * Es wurde eine neue API hinzugefügt, `setAuthorizationStatus`um den Status der Geräteautorisierung für Places Services festzulegen. Der Wert wird gespeichert und im Status &quot;Orte freigegeben&quot;verwendet.
+      * Es wurde eine neue API hinzugefügt, `setAuthorizationStatus`, um den Status der Geräteautorisierung für Places Services festzulegen. Der Wert wird gespeichert und im Status &quot;Orte freigegeben&quot;verwendet.
 
-## 4. Dezember 2019
+## 4. Dezember 2019
 
 * **PlacesMonitor 2.1.2**
 
@@ -89,7 +89,7 @@ ht-degree: 4%
 
    * **iOS**
 
-      * Es wurde eine neue API hinzugefügt, `setAuthorizationStatus`um den Status der Geräteautorisierung für Places Services festzulegen. Der Wert wird gespeichert und im Status &quot;Orte freigegeben&quot;verwendet.
+      * Es wurde eine neue API hinzugefügt, `setAuthorizationStatus`, um den Status der Geräteautorisierung für Places Services festzulegen. Der Wert wird gespeichert und im Status &quot;Orte freigegeben&quot;verwendet.
 
 ## 25. November 2019
 
@@ -99,9 +99,9 @@ ht-degree: 4%
 
       * Es wurden Importanweisungen für Cocoapods-Projekte mit der Option für mehrere Pod-Projekte behoben.
 
-## 22. November 2019
+## 22. November 2019
 
-* **PlacesMonitor 2.2.1**
+* **PlacesMonitor 2.1.1**
 
    * **Android**
 
@@ -114,10 +114,10 @@ ht-degree: 4%
 
    * **iOS**
 
-      * Es wurde eine neue API hinzugefügt, `setRequestAuthorizationLevel`um den Typ der Autorisierungsanfrage für den Speicherort festzulegen, für den der Benutzer aufgefordert wird.
+      * Es wurde eine neue API hinzugefügt, `setRequestAuthorizationLevel`, um den Typ der Autorisierungsanfrage für den Speicherort festzulegen, für den der Benutzer aufgefordert wird.
    * **Android**
 
-      * Es wurde eine neue API hinzugefügt, `setLocationPermission`um den Typ der Ortsberechtigungsanforderung festzulegen, für die der Benutzer aufgefordert wird.
+      * Es wurde eine neue API mit dem Namen `setLocationPermission` hinzugefügt, um den Typ der Ortsberechtigungsanforderung festzulegen, für die der Benutzer aufgefordert wird.
       * Der Orts-Monitor unterstützt jetzt Android 10.
 
 
@@ -167,7 +167,7 @@ Die folgenden Aktualisierungen wurden in dieser Version vorgenommen:
 
    Neue -API: `public static void stop (final boolean clearData);`
 
-* Die Verwendung der `getNearbyPointsOfInterest` API wurde aktualisiert, um Fehlerszenarien effektiver zu behandeln.
+* Die Verwendung der API `getNearbyPointsOfInterest` wurde aktualisiert, um Fehlerszenarien effektiver zu behandeln.
 
 ## Donnerstag, 25. Juli 2019
 
@@ -177,9 +177,9 @@ Die folgenden Aktualisierungen wurden in dieser Version vorgenommen:
 
 * So löschen Sie alle Ortsdaten vom Gerät
 
-   in ACPPlacesMonitor eine vorhandene API `+ (void) stop;` durch`+ (void) stop: (BOOL) clearData;`ersetzt.
+   in ACPPlacesMonitor eine vorhandene API `+ (void) stop;` durch`+ (void) stop: (BOOL) clearData;` ersetzt.
 
-* Die Verwendung der ACPPlaces- `getNearbyPointsOfInterest` API wurde aktualisiert, um Fehlerszenarien effektiver zu behandeln.
+* Die Verwendung der ACPPlaces `getNearbyPointsOfInterest`-API wurde aktualisiert, um Fehlerszenarien effektiver zu behandeln.
 
 ## 22. Juli 2019
 
@@ -189,8 +189,8 @@ Die folgenden Aktualisierungen wurden in dieser Version vorgenommen:
 
 * Es wurde eine neue API hinzugefügt, mit der alle Daten zum Thema Orte aus dem freigegebenen Status, dem In-App-Speicher und der freigegebenen Voreinstellung gelöscht werden.
 * Es wurde ein Problem behoben, bei dem der Status &quot;Freigegeben&quot;während des Beginns der Anwendung nicht aktualisiert wurde.
-* Es wurde ein Fehler behoben, durch den `getNearbyPointsOfInterest` Rückruf Fehlercode `SERVER_RESPONSE_ERROR instead of CONNECTIVITY_ERROR` im Internet zurückgab.
-* `getNearbyPointsOfInterest` API (ohne errorCallback) wird mit leerer POI-Liste `successCallback` aufgerufen, falls Fehler beim Abrufen der nahe gelegenen Zielpunkte auftreten.
+* Es wurde ein Fehler behoben, durch den `getNearbyPointsOfInterest`-Rückruf Fehlercode `SERVER_RESPONSE_ERROR instead of CONNECTIVITY_ERROR` in keiner Internetverbindung zurückgab.
+* `getNearbyPointsOfInterest` API (ohne errorCallback) wird mit leerer POI-Liste  `successCallback` aufgerufen, falls Fehler beim Abrufen der nahe gelegenen Zielpunkte auftreten.
 
 ## 19. Juli 2019
 
@@ -198,7 +198,7 @@ Die folgenden Aktualisierungen wurden in dieser Version vorgenommen:
 
 **iOS Places 1.2.0**
 
-Es wurde eine neue API hinzugefügt, mit der alle Daten zum Thema Orte aus dem Freigabestand, dem In-App-Speicher und `NSUserDefaults`dem gelöscht werden.
+Es wurde eine neue API hinzugefügt, mit der alle Ortsdaten aus dem Freigabestand, dem In-App-Speicher und `NSUserDefaults` gelöscht werden.
 
 ## 25. Juni 2019
 
@@ -278,7 +278,7 @@ iOS Places Monitor 1.0.0
 
 Erste Veröffentlichung des Orts-Monitors für iOS.
 
-Der Orts-Monitor verwaltet die Positionierungs-APIs auf Betriebssystemebene und kommuniziert direkt mit der Ortserweiterung. Wenn beide Erweiterungen installiert sind, können Kunden in ihrer Anwendung eine Out-of-the-Box-Regionsüberwachung verwenden. Weitere Informationen zum Platzierungsmonitor finden Sie unter [Platzierungsmonitor-Erweiterung](/help/places-ext-aep-sdks/places-monitor-extension/places-monitor-extension.md).
+Der Orts-Monitor verwaltet die Positionierungs-APIs auf Betriebssystemebene und kommuniziert direkt mit der Ortserweiterung. Wenn beide Erweiterungen installiert sind, können Kunden in ihrer Anwendung eine Out-of-the-Box-Regionsüberwachung verwenden. Weitere Informationen zum Orts-Monitor finden Sie unter [Platzierungsmonitor-Erweiterung](/help/places-ext-aep-sdks/places-monitor-extension/places-monitor-extension.md).
 
 ## 28. Februar 2019
 
@@ -294,20 +294,20 @@ Die wichtigsten Funktionen in dieser Version:
 
 Wir haben eine Verwaltungs-Benutzeroberfläche veröffentlicht, in der Sie Ihre POIs (Points of Interest) Ansicht und Verwaltung vornehmen können. Sie können auch Ihre POIs in Bibliotheken organisieren. Neben den Standardmetadaten wie Stadt, Bundesland und Kategorie unterstützen wir auch die Möglichkeit, Ihren POIs benutzerdefinierte Metadaten hinzuzufügen.
 
-* Die Benutzeroberfläche finden Sie unter [https://places.adobe.com](https://places.adobe.com).
-* Die ersten Schritte mit der Benutzeroberfläche finden Sie unter [Erste Schritte](/help/getting-started.md).
+* Um die Benutzeroberfläche anzuzeigen, gehen Sie zu [https://places.adobe.com](https://places.adobe.com).
+* Informationen zum Einstieg in die Benutzeroberfläche finden Sie unter [Erste Schritte](/help/getting-started.md).
 
 #### Platzierungserweiterung
 
-Mit der Platzierungserweiterung können Sie Ihre Orte-Dienst-Bibliotheken zu Ihrer mobilen App hinzufügen und deren POIs bearbeiten. Mit dem Rule Builder in Experience Platform Launch können Sie Aktionen auslösen, die ausgelöst werden, wenn Benutzer POIs eingeben und beenden.
+Mit der Platzierungserweiterung können Sie Ihre Orte-Dienst-Bibliotheken zu Ihrer mobilen App hinzufügen und deren POIs bearbeiten. Mit dem Rule Builder in Experience Platform Launch können Sie Trigger-Aktionen ausführen, die ausgelöst werden, wenn Benutzer POIs eingeben und beenden.
 
 In der Erweiterung Orte:
 
 * Sie können festlegen, welche POI-Bibliotheken in Ihre App aufgenommen werden sollen.
-* Regel-Ereignis, die beim Ein- oder Ausstieg des POI ausgelöst werden.
+* Regelmäßige Ereignis, die bei einem POI-Eintrag oder -Ausstieg Trigger werden.
 * Erstellen Sie Datenelemente, die auf den aktuellen POI des Benutzers verweisen.
 
-For more information about the Places extension, see [Places extension](/help/places-ext-aep-sdks/places-extension/places-extension.md).
+Weitere Informationen zur Platzierungserweiterung finden Sie unter [Platzierungserweiterung](/help/places-ext-aep-sdks/places-extension/places-extension.md).
 
 #### Orts-APIs
 
@@ -319,7 +319,7 @@ Sie können die Orte-APIs wie folgt verwenden:
 
    Sie können das angegebene Python-Dienstprogramm verwenden, um den Massenimport abzuschließen.
 
-Weitere Informationen zu den Places-APIs finden Sie unter [Webdienst-API](/help/web-service-api/places-web-services.md).
+Weitere Informationen zu den Orte-APIs finden Sie unter [Web-Service-API](/help/web-service-api/places-web-services.md).
 
 ### Bald
 
