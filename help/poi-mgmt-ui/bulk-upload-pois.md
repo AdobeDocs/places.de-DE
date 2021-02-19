@@ -4,15 +4,15 @@ description: In diesem Abschnitt erfahren Sie, wie Sie POIs als Massenupload hoc
 translation-type: tm+mt
 source-git-commit: 462df20bb351795dc72009cc18d390cb45e262a8
 workflow-type: tm+mt
-source-wordcount: '859'
+source-wordcount: '861'
 ht-degree: 0%
 
 ---
 
 
-# Bulk upload of POIs {#bulk-upload-pois}
+# Massenupload von POIs {#bulk-upload-pois}
 
-Mit der Schaltfläche &quot;POIs **importieren** &quot;im Orte-Dienst können neue POIs mit einer CSV-Datei als Massen-Upload hochgeladen werden. Es wird eine Beispielvorlage für Tabellen bereitgestellt, die zeigt, welche Datenspalten erforderlich sind und wie optionale benutzerdefinierte Metadaten hinzugefügt werden.
+Mit der Schaltfläche **POIs importieren** im Orte-Dienst können neue POIs mit einer CSV-Datei als Massen-Upload hochgeladen werden. Es wird eine Beispielvorlage für Tabellen bereitgestellt, die zeigt, welche Datenspalten erforderlich sind und wie optionale benutzerdefinierte Metadaten hinzugefügt werden.
 
 ![Massenimportbildschirm](/help/assets/Bulk-import.png)
 
@@ -24,19 +24,19 @@ In diesem Video wird der Vorgang für den Massenimport und die Massenbearbeitung
 
 ## Python API-Skripten
 
-Eine Reihe von Python-Skripten wurden erstellt, um den Stapelimport von POIs aus einer CSV-Datei in eine POI-Datenbank mithilfe der Web Service APIs zu vereinfachen. Diese Skripten können von diesem Open-Source- [Git-Repo](https://github.com/adobe/places-scripts)heruntergeladen werden.
+Eine Reihe von Python-Skripten wurden erstellt, um den Stapelimport von POIs aus einer CSV-Datei in eine POI-Datenbank mithilfe der Web Service APIs zu vereinfachen. Diese Skripten können von dieser Open Source [git repo](https://github.com/adobe/places-scripts) heruntergeladen werden.
 
-Bevor Sie diese Skripten ausführen, lesen Sie die Informationen zum Zugriff auf die Webdienst-APIs unter *Voraussetzungen für den Benutzerzugriff* in der Übersicht über die [Integration und Voraussetzungen](/help/web-service-api/adobe-i-o-integration.md).
+Bevor Sie diese Skripten ausführen, lesen Sie *Voraussetzungen für den Benutzerzugriff* in [Integrationsübersicht und Voraussetzungen](/help/web-service-api/adobe-i-o-integration.md), um auf die Webdienst-APIs zuzugreifen.
 
 Im Folgenden finden Sie einige Informationen zu den Skripten:
 
 >[!TIP]
 >
->Diese Informationen sind auch in einer Readme-Datei im [Git-Repo](https://github.com/adobe/places-scripts)enthalten.
+>Diese Informationen sind auch in einer Readme-Datei im [git repo](https://github.com/adobe/places-scripts) enthalten.
 
 ## CSV-Datei nicht funktionierte, wurde behoben
 
-Eine .csv-Beispieldatei `places_sample.csv`ist Teil dieses Pakets und enthält die erforderlichen Kopfzeilen und eine Reihe von Musterdaten. Diese Header sind alle Kleinbuchstaben und entsprechen den reservierten Metadatenschlüsseln, die in der Datenbank &quot;Orte&quot;verwendet werden. Spalten, die Sie der .csv-Datei hinzufügen, werden der POI-Datenbank in einem separaten Metadatenabschnitt für jeden POI als Schlüssel/Wert-Paare hinzugefügt und der Header-Wert wird als Schlüssel verwendet.
+Eine .csv-Beispieldatei, `places_sample.csv`, ist Teil dieses Pakets und enthält die erforderlichen Kopfzeilen und eine Reihe von Musterdaten. Diese Header sind alle Kleinbuchstaben und entsprechen den reservierten Metadatenschlüsseln, die in der Datenbank &quot;Orte&quot;verwendet werden. Spalten, die Sie der .csv-Datei hinzufügen, werden der POI-Datenbank in einem separaten Metadatenabschnitt für jeden POI als Schlüssel/Wert-Paare hinzugefügt und der Header-Wert wird als Schlüssel verwendet.
 
 Im Folgenden finden Sie eine Liste der Spalten und der erforderlichen Werte:
 
@@ -84,37 +84,37 @@ Die Werte der folgenden Spalten werden in der Benutzeroberfläche des Places-Die
 
 ## Ausführen des Skripts
 
-1. Laden Sie Dateien aus dem [Git-Repo](https://github.com/adobe/places-scripts) in Ihren lokalen Ordner herunter.
-1. Öffnen Sie die `config.py` Datei in einem Texteditor und führen Sie die folgenden Aufgaben aus:
+1. Laden Sie Dateien von [git repo](https://github.com/adobe/places-scripts) in Ihren lokalen Ordner herunter.
+1. Öffnen Sie in einem Texteditor die Datei `config.py` und führen Sie die folgenden Aufgaben aus:
 
    a. Bearbeiten Sie die folgenden Variablenwerte als Zeichenfolgen:
 
    * `csv_file_path`
 
-      Dies ist der Pfad zu Ihrer `.csv` Datei.
+      Dies ist der Pfad zu Ihrer `.csv`-Datei.
 
    * `access_code`
 
-      Dies ist Ihr Zugriffscode, der durch den Aufruf von Adobe IMS erhalten wurde. Informationen zum Abrufen dieses Zugriffscodes finden Sie unter *Voraussetzungen für den Benutzerzugriff* in der Übersicht über die [Integration und Voraussetzungen](/help/web-service-api/adobe-i-o-integration.md).
+      Dies ist Ihr Zugriffscode, der durch den Aufruf von Adobe IMS erhalten wurde. Informationen zum Abrufen dieses Zugriffscodes finden Sie unter *Voraussetzungen für den Benutzerzugriff* in [Übersicht über die Integration und Voraussetzungen](/help/web-service-api/adobe-i-o-integration.md).
 
    * `org_id`
 
-      Die Experience Cloud-orgID, in die die POIs importiert werden sollen. Informationen zum Abrufen der Organisations-ID finden Sie unter *Voraussetzungen für den Benutzerzugriff* in der Übersicht über die [Integration und Voraussetzungen](/help/web-service-api/adobe-i-o-integration.md).
+      Die Experience Cloud-orgID, in die die POIs importiert werden sollen. Informationen zum Abrufen der Organisations-ID finden Sie unter *Voraussetzungen für den Benutzerzugriff* in [Übersicht über die Integration und Voraussetzungen](/help/web-service-api/adobe-i-o-integration.md).
 
    * `api_key`
 
-      Dies ist der REST-API-Schlüssel, den Sie von der Adobe I/O Places Integration erhalten haben. Informationen zum Abrufen des API-Schlüssels finden Sie unter *Voraussetzungen für den Benutzerzugriff* in der Übersicht über die [Integration und Voraussetzungen](/help/web-service-api/adobe-i-o-integration.md).
+      Dies ist der REST-API-Schlüssel, den Sie von der Adobe I/O Places Integration erhalten haben. Informationen zum Abrufen des API-Schlüssels finden Sie unter *Voraussetzungen für den Benutzerzugriff* in [Übersicht über die Integration und Voraussetzungen](/help/web-service-api/adobe-i-o-integration.md).
    b. Speichern Sie Ihre Änderungen.
 
-1. Navigieren Sie in einem Terminalfenster zum `…/places-scripts/import/` Ordner.
-1. Geben Sie `python ./places_import.py` die **[!UICONTROL enter]** (**[!UICONTROL return]**) Taste ein.
+1. Navigieren Sie in einem Terminalfenster zum Ordner `…/places-scripts/import/`.
+1. Geben Sie `python ./places_import.py` ein und drücken Sie die Eingabetaste **[!UICONTROL enter]** (**[!UICONTROL return]**).
 
 
 ## CSV-Prüfungen vor dem Import
 
 Das Skript führt zunächst die folgenden Prüfungen in der .csv-Datei durch:
 
-* Gibt an, ob eine `.csv` Datei angegeben wurde.
+* Ob eine `.csv`-Datei angegeben wurde.
 * Gibt an, ob der Dateipfad gültig ist.
 * Gibt an, ob die reservierten Metadaten-Header enthalten sind.
 
@@ -130,4 +130,4 @@ Wenn Fehler gefunden werden, gibt das Skript die Fehler aus und wird abgebrochen
 
 ## Unit-Tests
 
-Komponententests befinden sich in der `tests.py` Datei, sollten vor jeder Pull-Anforderung ausgeführt werden und alle bestehen. Zusätzliche Tests sollten mit neuem Code hinzugefügt werden. Um die Tests auszuführen, navigieren Sie zum `…/places-scripts/import/` Ordner und geben Sie `python ./places_import.py` in Terminal ein.
+Komponententests befinden sich in der Datei `tests.py`, sollten vor jeder Pull-Anforderung ausgeführt werden und alle bestehen. Zusätzliche Tests sollten mit neuem Code hinzugefügt werden. Um die Tests auszuführen, navigieren Sie zum Ordner `…/places-scripts/import/` und geben Sie `python ./places_import.py` in Terminal ein.
