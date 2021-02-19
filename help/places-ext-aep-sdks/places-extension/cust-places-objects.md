@@ -9,7 +9,7 @@ ht-degree: 7%
 ---
 
 
-# Objekte für benutzerdefinierte Orte {#places-objects}
+# Benutzerdefinierte Orte, Objekte {#places-objects}
 
 Hier sind die benutzerdefinierten nativen Klassen, die mit den Places APIs verwendet werden:
 
