@@ -30,7 +30,7 @@ Der Produktkontext für den Places Service steht für alle Experience Cloud-Orga
 
 * Vergewissern Sie sich, dass Sie als Benutzer unter den Kontexten &quot;Orte-Dienst&quot;und &quot;Experience Platform Launch&quot;in der Admin Console aufgeführt sind.
 
-   Weitere Informationen finden Sie unter *Hinzufügen eines Benutzers zum Experience Platform Launch- und Platzierungsdienst* in [häufig gestellten Fragen](/help/places-gain-access.md).
+   Weitere Informationen finden Sie unter *Hinzufügen eines Benutzers zum Experience Platform Launch- und Ortsdienst* in [Häufig gestellte Fragen](/help/places-gain-access.md).
 
 
 ### 2. Erstellen von POIs
@@ -39,7 +39,7 @@ POI (Points of Interest, POI) sind Geo-Zäune, die Sie für Ihre Organisationen 
 
 * Verwenden der Benutzeroberfläche des Places-Dienstes.
 
-   For more information, see [Places Service overview](/help/poi-mgmt-ui/poi-mgmt-ui-overview.md).
+   Weitere Informationen finden Sie unter [Übersicht über den Ortsdienst](/help/poi-mgmt-ui/poi-mgmt-ui-overview.md).
 
 * Verwenden der APIs des Places-Webdiensts.
 
