@@ -10,7 +10,7 @@ ht-degree: 25%
 ---
 
 
-# Platzierungs-Ereignis {#places-event-reference}
+# Platziert Ereignis-Referenz {#places-event-reference}
 
 Im Folgenden finden Sie eine Liste der Ereignis, die mit der Places-Erweiterung behandelt werden.
 
@@ -36,7 +36,7 @@ n/a
 
 | Typ | Quelle | Name | Gekoppelt |
 | :--- | :--- | :--- | :--- |
-| PLÄTZE | REQUEST_CONTENT | `requestgetnearbyplaces` | True |
+| PLÄTZE | REQUEST_CONTENT | `requestgetnearbyplaces` | true |
 
 **Ereignisbeschreibung**
 
@@ -47,7 +47,7 @@ Dieses Ereignis stellt eine Anforderung dar, die nahe gelegenen POIs unter Berü
 | Schlüssel | Werttyp | Erforderlich | Standardwert | Beschreibung |
 | :--- | :--- | :--- | :--- | :--- |
 | latitude | double | true | n/a | Enthält den Breitenwert für die Mitte der Suche nach nahe gelegenen POIs. |
-| longitude | double | true | n/a | Gibt den Längengradwert für die Mitte der Suche nach nahe gelegenen POIs an. |
+| longitude | Dublette | true | n/a | Gibt den Längengradwert für die Mitte der Suche nach nahe gelegenen POIs an. |
 | radius | Ganzzahl | false | n/a | Radius, in Metern, verwendet durch die Suche nach nahe gelegenen POIs. |
 | count | Ganzzahl | false | 10 | Maximale Anzahl der POIs, die in einem resultierenden Ereignis zurückgegeben werden. |
 
