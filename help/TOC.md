@@ -31,7 +31,7 @@ ht-degree: 19%
    + API-Nutzung {#api-usage}
       + [API-Nutzungsübersicht](web-service-api/api-usage/api-usage-overview.md)
       + [Kopfzeilen und Parameter](web-service-api/api-usage/headers-and-parameters.md)
-      + Bibliotheken verwalten {#manage-libraries}
+      + Verwalten von Bibliotheken {#manage-libraries}
          + [Übersicht über die Verwaltung von Bibliotheken](web-service-api/api-usage/manage-libraries/manage-libraries.md)
          + [eine Bibliothek erstellen](web-service-api/api-usage/manage-libraries/create-a-library.md)
          + [Bibliothek lesen](web-service-api/api-usage/manage-libraries/read-a-library.md)
@@ -54,13 +54,13 @@ ht-degree: 19%
             + [Mehrere POIs aktualisieren](web-service-api/api-usage/manage-pois/batch-apis/update-multiple-pois.md)
             + [Löschen mehrerer POIs](web-service-api/api-usage/manage-pois/batch-apis/delete-multiple-pois.md)
       + [Abfrage-APIs](web-service-api/api-usage/query-apis.md)
-+ Erweiterungen für mobile SDKs {#places-ext-aep-sdks}
++ Erweiterungen für die Mobile SDKs {#places-ext-aep-sdks}
    + Places-Erweiterung {#places-extension}
       + [Places-Erweiterung](places-ext-aep-sdks/places-extension/places-extension.md)
       + [Platzierungs-API-Referenz](places-ext-aep-sdks/places-extension/places-api-reference.md)
       + [Platzierungs-Ereignis](places-ext-aep-sdks/places-extension/places-event-ref.md)
       + [Objekte für benutzerdefinierte Orte](places-ext-aep-sdks/places-extension/cust-places-objects.md)
-   + Platzierungsmonitor-Erweiterung {#places-monitor-extension}
+   + Platziert die Monitorerweiterung {#places-monitor-extension}
       + [Platzierungsmonitor-Erweiterung](places-ext-aep-sdks/places-monitor-extension/places-monitor-extension.md)
       + [Verwenden der Erweiterung &quot;Orts Monitor&quot;](places-ext-aep-sdks/places-monitor-extension/using-places-monitor-extension.md)
       + [Platzierungs-Monitor-API-Referenz](places-ext-aep-sdks/places-monitor-extension/places-monitor-api-reference.md)
@@ -70,7 +70,7 @@ ht-degree: 19%
    + [Verwenden des Orte-Dienstes als Teil des Experience Platform Launch-Workflows](use-places-launch-workflow/places-launch-workflow.md)
    + [Definieren von Datenelementen](use-places-launch-workflow/define-data-elements.md)
    + [Einstiegs- und Ausstiegsregeln erstellen](use-places-launch-workflow/create-rule-places-property.md)
-+ Orte-Dienst mit anderen Adoben-Lösungen verwenden {#use-places-with-other-solutions}
++ Orte-Dienst mit anderen Adoben-Lösungen {#use-places-with-other-solutions} verwenden
    + Adobe Analytics {#places-adobe-analytics}
       + [Orte-Dienst mit Adobe Analytics verwenden](use-places-with-other-solutions/places-adobe-analytics/use-places-analytics-overview.md)
       + [POI-Einstiegs- und -Ausstiegsdaten an Analytics senden](use-places-with-other-solutions/places-adobe-analytics/use-places-adobe-analytics.md)
