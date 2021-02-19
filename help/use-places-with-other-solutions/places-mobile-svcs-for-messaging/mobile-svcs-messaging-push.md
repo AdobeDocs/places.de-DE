@@ -4,7 +4,7 @@ description: Dieser Abschnitt zeigt Ihnen, wie Sie den Places-Dienst mit Push-Be
 translation-type: tm+mt
 source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
 workflow-type: tm+mt
-source-wordcount: '228'
+source-wordcount: '233'
 ht-degree: 8%
 
 ---
@@ -30,10 +30,10 @@ Bevor Sie beginnen, stellen Sie sicher, dass Sie die folgenden Aufgaben abgeschl
 
 ## Benachrichtigung senden
 
-Auf der **[!UICONTROL Audience]** Registerkarte des Arbeitsablaufs *Push-Benachrichtigung* erstellen können Sie die Audience für diese Nachricht auf eine der folgenden Arten erstellen:
+Auf der Registerkarte **[!UICONTROL Audience]** des Arbeitsablaufs *Push-Benachrichtigung erstellen* können Sie die Audience für diese Nachricht auf eine der folgenden Arten erstellen:
 
-* Wählen Sie in der **[!UICONTROL Analytics Segments]** Dropdown-Liste ein zuvor erstelltes Adobe Analytics-Segment aus.
+* Wählen Sie in der Dropdown-Liste **[!UICONTROL Analytics-Segmente]** ein zuvor erstelltes Adobe Analytics-Segment aus.
 
-* Erstellen Sie im **[!UICONTROL Custom Segment]** Abschnitt eine Audience mit den verfügbaren Segmentparametern.
+* Erstellen Sie im Abschnitt **[!UICONTROL Benutzerdefiniertes Segment]** mithilfe der verfügbaren benutzerspezifischen Segmentparameter eine Audience.
 
 ![Einrichten einer Push-Nachricht](/help/assets/push-set-up.png)
