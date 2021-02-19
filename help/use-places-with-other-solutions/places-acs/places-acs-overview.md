@@ -10,7 +10,7 @@ ht-degree: 0%
 ---
 
 
-# Orte-Dienst mit Adobe Campaign Standard verwenden {#location-service-acs}
+# Orte-Dienst mit Adobe Campaign Standard {#location-service-acs} verwenden
 
 Wenn Sie den Orte-Dienst mit Campaign Standard verwenden, können Sie die folgenden Nachrichtentypen verwenden:
 
