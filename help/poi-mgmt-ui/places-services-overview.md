@@ -10,9 +10,9 @@ ht-degree: 0%
 ---
 
 
-# Übersicht über den Places Service {#places-service-overview}
+# Übersicht über den Platzierungsdienst {#places-service-overview}
 
 POIs werden in der Datenbank des Orte-Dienstes mithilfe der Benutzeroberfläche des Orts-Dienstes erstellt und verwaltet.
 
-* Informationen zum Erstellen oder Ändern einer Bibliothek finden Sie unter Bibliotheken [verwalten](/help/poi-mgmt-ui/manage-libraries-in-the-places-ui.md).
-* Informationen zum Erstellen oder Ändern eines POI finden Sie unter POI [verwalten](/help/poi-mgmt-ui/managing-pois-in-the-places-ui.md).
+* Informationen zum Erstellen oder Ändern einer Bibliothek finden Sie unter [Bibliotheken verwalten](/help/poi-mgmt-ui/manage-libraries-in-the-places-ui.md).
+* Informationen zum Erstellen oder Ändern eines POI finden Sie unter [POIs verwalten](/help/poi-mgmt-ui/managing-pois-in-the-places-ui.md).
