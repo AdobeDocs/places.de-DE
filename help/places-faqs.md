@@ -16,7 +16,7 @@ Im Folgenden finden Sie einige Informationen und häufig gestellte Fragen zum Pl
 
 ## Migrieren von trackLocation im v4 SDK
 
-Wenn Sie vom v4-SDK migrieren und nach einem Ersatz für die `trackLocation` API suchen, lesen Sie bitte das Thema Orte [verwenden ohne Active Region Monitoring](use-places-without-active-monitoring.md).
+Wenn Sie vom v4 SDK migrieren und nach einem Ersatz für die `trackLocation`-API suchen, lesen Sie bitte das Thema [Orte-Dienst ohne Active Region Monitoring](use-places-without-active-monitoring.md).
 
 ## Größe und Zuverlässigkeit
 
@@ -24,11 +24,11 @@ Beachten Sie, dass bei der Regionsüberwachung unabhängig von der Adobe oder ei
 
 Darüber hinaus können Genauigkeit und Zuverlässigkeit aufgrund von Hardwarebedingungen wie z. B. ausgeschalteter oder nicht verfügbarer Wi-Fi sowie aufgrund der Position des Geräts im Zusammenhang mit der Behinderung von GPS-Signalen verringert werden. Beispielsweise können Bergregionen, städtische Einstellungen und Innenbereiche die Standortgenauigkeit von iOS- und Android-Betriebssystemen reduzieren.
 
-## Wie löst ein Ausstiegs-Ereignis aus?
+## Wie sieht der Trigger eines Ausstiegs-Ereignisses aus?
 
-Wenn das Orts Monitor (SDK) eine neue Liste von nahe gelegenen POIs erhält, wird für jeden POI eine Region mit dem Betriebssystem registriert. Das Betriebssystem ist nun dafür verantwortlich, das SDK zu benachrichtigen, wenn das Gerät eine Grenze (ein- oder ausstieg) für einen der überwachten Regionen überschreitet. Das SDK löst nur dann ein exit-Ereignis aus, wenn das Betriebssystem dem SDK mitteilt, dass das Ereignis aufgetreten ist. Der Hauptgrund für diese Benachrichtigung ist die Zeitempfindlichkeit der Standortdaten.
+Wenn das Orts Monitor (SDK) eine neue Liste von nahe gelegenen POIs erhält, wird für jeden POI eine Region mit dem Betriebssystem registriert. Das Betriebssystem ist nun dafür verantwortlich, das SDK zu benachrichtigen, wenn das Gerät eine Grenze (ein- oder ausstieg) für einen der überwachten Regionen überschreitet. Das SDK Trigger nur dann ein Ereignis zum Beenden, wenn das Betriebssystem dem SDK mitteilt, dass das Ereignis aufgetreten ist. Der Hauptgrund für diese Benachrichtigung ist die Zeitempfindlichkeit der Standortdaten.
 
-Wenn das Betriebssystem beim Verlassen eines Bereichs kein Ausstiegsgerät bereitstellen kann, ist es sicherer, dass das SDK das Ereignis &quot;exit&quot;einfach weglässt. Wenn das SDK ein Ausstiegs-Ereignis ohne Auslösung des Ereignisses durch das Betriebssystem erstellt, besteht die Gefahr, dass das Ausstiegsgerät weit über den Zeitraum hinaus verarbeitet wird, in dem sich das Ereignis in der Nähe des POI befand.
+Wenn das Betriebssystem beim Verlassen eines Bereichs kein Ausstiegsgerät bereitstellen kann, ist es sicherer, dass das SDK das Ereignis zum Beenden auslässt. Wenn das SDK ein Ausstiegs-Ereignis ohne Auslösung des Ereignisses durch das Betriebssystem erstellt, besteht die Gefahr, dass das Ausstiegsgerät weit über den Zeitraum hinaus verarbeitet wird, in dem sich das Ereignis in der Nähe des POI befand.
 
 ## Anzahl der POI
 
@@ -40,4 +40,4 @@ Die Überwachung einer geografischen Region beginnt unmittelbar nach der Registr
 
 Achten Sie bei der Angabe der zu überwachenden Regionen besonders darauf. Regionen sind eine gemeinsame Systemressource, und die Gesamtzahl der systemweit verfügbaren Regionen ist begrenzt. Aus diesem Grund wird die Anzahl der Regionen, die gleichzeitig von einer einzelnen App überwacht werden können, auf 20 begrenzt. Um diese Grenze zu umgehen, sollten Sie nur die Regionen in der unmittelbaren Umgebung des Benutzers registrieren.
 
-[Weitere Informationen finden Sie auf der Apple Developer-Website] (https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/LocationAwarenessPG/RegionMonitoring/RegionMonitoring.html#//apple_ref/doc/uid/TP40009497-CH9-SW11).
+[Weitere Informationen finden Sie auf der Apple Developer-Website]  (https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/LocationAwarenessPG/RegionMonitoring/RegionMonitoring.html#//apple_ref/doc/uid/TP40009497-CH9-SW11).
