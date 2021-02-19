@@ -4,8 +4,8 @@ description: In der Benutzeroberfläche des Orts-Dienstes können Sie vorhandene
 translation-type: tm+mt
 source-git-commit: 5a21e734c0ef56c815389a9f08b445bedaae557a
 workflow-type: tm+mt
-source-wordcount: '398'
-ht-degree: 7%
+source-wordcount: '407'
+ht-degree: 6%
 
 ---
 
@@ -20,8 +20,8 @@ POIs und Bibliotheken werden in der Datenbank &quot;Orte&quot;mithilfe der Benut
 1. Melden Sie sich mit Ihrem Adobe ID beim Places Service an.
 1. Klicken Sie oben rechts auf das Symbol, das wie eine Liste mit Aufzählungszeichen aussieht.
 1. Suchen Sie den POI, den Sie bearbeiten möchten.
-1. Klicken Sie auf **[!UICONTROL ...]** und wählen Sie **[!UICONTROL View Details]**.
-1. Aktualisieren Sie die Informationen und klicken Sie auf **[!UICONTROL Save]**.
+1. Klicken Sie auf **[!UICONTROL ...]** und wählen Sie **[!UICONTROL Ansicht Details]**.
+1. Aktualisieren Sie die Informationen und klicken Sie auf **[!UICONTROL Speichern]**.
 
 ## Einen POI löschen
 
@@ -29,7 +29,7 @@ POIs und Bibliotheken werden in der Datenbank &quot;Orte&quot;mithilfe der Benut
 1. Melden Sie sich mit Ihrem Adobe ID beim Places Service an.
 1. Klicken Sie oben rechts auf das Symbol, das wie eine Liste mit Aufzählungszeichen aussieht.
 1. Suchen Sie den POI, den Sie löschen möchten.
-1. Klicken Sie auf **[!UICONTROL ...]** und wählen Sie **[!UICONTROL Delete]**.
+1. Klicken Sie auf **[!UICONTROL ...]** und wählen Sie **[!UICONTROL Löschen]**.
 
 ## Filtern von POIs nach Stadt, Bundesland, Land oder Metadaten
 
@@ -45,11 +45,11 @@ POIs und Bibliotheken werden in der Datenbank &quot;Orte&quot;mithilfe der Benut
 
    * Nach Eigenschaft:
 
-      a. Wählen Sie in der Dropdown-Liste Eigenschaft die Option **[!UICONTROL Country]**, **[!UICONTROL State]** oder **[!UICONTROL City]**.
+      a. Wählen Sie in der Dropdown-Liste Eigenschaft die Optionen **[!UICONTROL Land]**, **[!UICONTROL Bundesland]** oder **[!UICONTROL Ort]**.
 
       b. Geben Sie in der nächsten Zeile einen Wert ein.
 
-      Sie können beispielsweise auswählen **[!UICONTROL State]** und eingeben **[!UICONTROL California]**.
+      Sie können beispielsweise **[!UICONTROL Bundesland]** auswählen und **[!UICONTROL Kalifornien]** eingeben.
 
    * Mit Metadaten:
 
