@@ -5,12 +5,12 @@ translation-type: tm+mt
 source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
 workflow-type: tm+mt
 source-wordcount: '44'
-ht-degree: 6%
+ht-degree: 9%
 
 ---
 
 
-# Einen POI löschen {#delete-a-poi}
+# Löschen eines POI {#delete-a-poi}
 
 Eine DELETE-Methode, mit der Sie einen POI löschen können.
 
@@ -20,7 +20,7 @@ Eine DELETE-Methode, mit der Sie einen POI löschen können.
 DELETE https://api-places.adobe.io/places/placesapi/v1/pois/<POIID>
 ```
 
-## Kopfzeilen
+## Header
 
 ```text
 -H' Content-Type: application/json'  
@@ -46,5 +46,5 @@ curl -X DELETE 'https://api-places.adobe.io/places/placesapi/v1/pois/<POIID>' -H
 
 >[!IMPORTANT]
 >
->Ersetzen `<POIID>`, `<API KEY>`, `<TOKEN>`und `<ORGID>` durch tatsächliche Werte.
+>Ersetzen Sie `<POIID>`, `<API KEY>`, `<TOKEN>` und `<ORGID>` durch tatsächliche Werte.
 
