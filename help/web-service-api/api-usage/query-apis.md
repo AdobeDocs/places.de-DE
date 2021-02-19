@@ -109,7 +109,7 @@ Hier ein Beispiel für das erfolgreich zurückgegebene JSON-Format:
 }
 ```
 
-POIs unter `places.pois` werden nach Entfernung vom Anrufer bis zum Rand der POIs sortiert. POIs unter `places.userWithin` enthalten den Aufrufer, und diese POIs werden nach Rang und dann nach Radius sortiert.
+POIs unter `places.pois` werden nach der Entfernung vom Anrufer bis zum Rand der POIs sortiert. POIs unter `places.userWithin` enthalten den Aufrufer, und diese POIs werden nach Rang und dann nach zunehmendem Radius sortiert.
 
 ## Beispielaufruf
 
