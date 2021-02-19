@@ -20,9 +20,9 @@ Wenn ein Gerät eine der vordefinierten Orte-Dienst-Regionsgrenzen der App über
 
 ### ProcessGeofence (Android)
 
-Verarbeiten Sie ein `Geofence` Regions-Ereignis für die bereitgestellte `transitionType`.
+Verarbeiten Sie ein `Geofence`-Regions-Ereignis für das bereitgestellte `transitionType`.
 
-Geben Sie die `transitionType` Daten ab `GeofencingEvent.getGeofenceTransition()`. Zurzeit `Geofence.GEOFENCE_TRANSITION_ENTER` und `Geofence.GEOFENCE_TRANSITION_EXIT` werden unterstützt.
+Übergeben Sie `transitionType` von `GeofencingEvent.getGeofenceTransition()`. Derzeit werden `Geofence.GEOFENCE_TRANSITION_ENTER` und `Geofence.GEOFENCE_TRANSITION_EXIT` unterstützt.
 
 **Syntax**
 
@@ -34,7 +34,7 @@ public static void processGeofence(final Geofence geofence, final int transition
 
 **Beispiel**
 
-Rufen Sie diese Methode in Ihrer Methode auf, `IntentService` die für den Empfang von Android-Geofence-Ereignissen registriert ist.
+Rufen Sie diese Methode in Ihrem `IntentService` auf, das für den Empfang von Android-Geofence-Ereignissen registriert ist.
 
 Hier finden Sie ein Code-Beispiel für diese Methode:
 
@@ -60,7 +60,7 @@ public class GeofenceTransitionsIntentService extends IntentService {
 
 ### ProcessRegionEvent (iOS)
 
-Diese Methode sollte im `CLLocationManager` Delegate aufgerufen werden, der angibt, ob der Benutzer eine bestimmte Region aufgerufen oder verlassen hat.
+Diese Methode sollte im Delegate `CLLocationManager` aufgerufen werden, der angibt, ob der Benutzer einen bestimmten Bereich eingegeben oder verlassen hat.
 
 **Syntax**
 
@@ -87,7 +87,7 @@ Hier finden Sie ein Code-Beispiel für diese Methode:
 
 ### ProcessGeofencingEvent (Android)
 
-Verarbeiten Sie alle `Geofences` gleichzeitig `GeofencingEvent` .
+Verarbeiten Sie alle `Geofences` in `GeofencingEvent` gleichzeitig.
 
 **Syntax**
 
@@ -259,7 +259,7 @@ Fordert den Speicherort des Geräts an, wie zuvor durch die Plateausgabe bekannt
 
 >[!TIP]
 >
->Die Ortserweiterung kennt nur Orte, an denen sie über Anrufe an `GetNearbyPointsOfInterest`gesendet wurde.
+>Die Ortserweiterung kennt nur Orte, die ihr über Aufrufe von `GetNearbyPointsOfInterest` bereitgestellt wurden.
 
 
 ### GetLastKnownLocation (Android)
@@ -386,7 +386,7 @@ Legt den Autorisierungsstatus in der Places-Erweiterung fest.
 Der angegebene Status wird im Status &quot;Orte freigegeben&quot;gespeichert und dient nur als Referenz.
 Der Aufruf dieser Methode hat keine Auswirkungen auf den tatsächlichen Status der Standortautorisierung für dieses Gerät.
 
-Wenn sich der Status der Geräteautorisierung ändert, wird die `locationManager:didChangeAuthorizationStatus:` Methode des Geräts aufgerufen `CLLocationManagerDelegate` . Von dieser Methode aus sollten Sie den neuen `CLAuthorizationStatus` Wert an die ACPPlaces- `setAuthorizationStatus:` API übergeben.
+Wenn sich der Status der Geräteautorisierung ändert, wird die `locationManager:didChangeAuthorizationStatus:`-Methode von `CLLocationManagerDelegate` aufgerufen. Von dieser Methode aus sollten Sie den neuen Wert `CLAuthorizationStatus` an die ACPPlaces `setAuthorizationStatus:`-API übergeben.
 
 **Syntax**
 
