@@ -5,13 +5,13 @@ translation-type: tm+mt
 source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
 workflow-type: tm+mt
 source-wordcount: '45'
-ht-degree: 6%
+ht-degree: 8%
 
 ---
 
 
 
-# Bibliothek lesen {#read-a-library}
+# Bibliothek {#read-a-library} lesen
 
 Eine GET, die die Details für eine Bibliothek zurückgibt.
 
@@ -21,7 +21,7 @@ Eine GET, die die Details für eine Bibliothek zurückgibt.
 GET https://api-places.adobe.io/places/placesapi/v1/libraries/<LIBRARYID>
 ```
 
-## Kopfzeilen
+## Header
 
 ```text
 -H' Content-Type: application/json'  
@@ -92,5 +92,5 @@ curl -X GET 'https://api-places.adobe.io/places/placesapi/v1/libraries/<LIBRARYI
 
 >[!IMPORTANT]
 >
->Ersetzen `<LIBRARYID>`, `<API KEY>`, `<TOKEN>`und `<ORGID>` durch tatsächliche Werte.
+>Ersetzen Sie `<LIBRARYID>`, `<API KEY>`, `<TOKEN>` und `<ORGID>` durch tatsächliche Werte.
 
