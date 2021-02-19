@@ -12,5 +12,5 @@ ht-degree: 0%
 
 # Verwenden des Orte-Dienstes als Teil des Experience Platform Launch-Workflows {#loc-service-launch-workflow}
 
-* Informationen zum Definieren von Datenelementen finden Sie unter Datenelemente [definieren](/help/use-places-launch-workflow/define-data-elements.md).
-* Informationen zum Erstellen von Einstiegs- und Ausstiegsregeln finden Sie unter [Einstiegs- und Ausstiegsregeln](/help/use-places-launch-workflow/create-rule-places-property.md)erstellen.
+* Informationen zum Definieren von Datenelementen finden Sie unter [Datenelemente definieren](/help/use-places-launch-workflow/define-data-elements.md).
+* Informationen zum Erstellen von Einstiegs- und Ausstiegsregeln finden Sie unter [Einstiegs- und Ausstiegsregeln erstellen](/help/use-places-launch-workflow/create-rule-places-property.md).
