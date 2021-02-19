@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 workflow-type: tm+mt
 source-wordcount: '150'
-ht-degree: 13%
+ht-degree: 14%
 
 ---
 
@@ -18,5 +18,5 @@ Datenelemente sind die Bausteine für Ihr Datenwörterbuch oder Ihre Datenzuordn
 
 Ein Datenelement ist eine Variable, deren Abfrage Zeichenfolgen, URLs, Cookie-Werte, JavaScript-Variablen usw. zugeordnet werden kann. In Experience Platform Launch können Sie auf diesen Wert anhand des Variablennamens verweisen. Die Datenerfassung wird zum Wörterbuch definierter Daten, die Sie zum Erstellen Ihrer Regeln (Ereignisse, Bedingungen und Aktionen) verwenden können. Das Datenwörterbuch wird über den Experience Platform Launch freigegeben und kann mit der Ortserweiterung verwendet werden.
 
-For more information about data elements, see [Data Elements](https://docs.adobelaunch.com/launch-reference/managing-resources/data-elements) .
+Weitere Informationen zu Datenelementen finden Sie unter [Datenelemente](https://docs.adobelaunch.com/launch-reference/managing-resources/data-elements).
 
