@@ -10,7 +10,7 @@ ht-degree: 0%
 ---
 
 
-# Orte-Dienst mit Adobe Analytics verwenden {#places-with-aa}
+# Orte-Dienst mit Adobe Analytics {#places-with-aa} verwenden
 
 Mithilfe des Places Service mit Adobe Analytics können Sie die folgenden Aufgaben durchführen:
 
