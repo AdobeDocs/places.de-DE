@@ -14,13 +14,13 @@ ht-degree: 1%
 
 Bevor Sie die Mobile Services-Erweiterung für Nachrichten verwenden können, überprüfen Sie die folgenden Voraussetzungen:
 
-* Interessensgebiete wurden im Ortsdienst erstellt. For more information, see [Create a POI](/help/poi-mgmt-ui/create-a-poi-ui.md).
+* Interessensgebiete wurden im Ortsdienst erstellt. Weitere Informationen finden Sie unter [Einen POI erstellen](/help/poi-mgmt-ui/create-a-poi-ui.md).
 
    >[!IMPORTANT]
    >
-   >Der Places Service umfasst eine neue und verbesserte POI-Datenbank für Ihr Unternehmen, die außerhalb der alten Mobile Services-Benutzeroberfläche vorhanden ist. POIs, die sich auf der Navigation der Seite &quot;Orte *verwalten* &quot;des Mobile Service befinden, funktionieren nur für Version 4 des SDK.
+   >Der Places Service umfasst eine neue und verbesserte POI-Datenbank für Ihr Unternehmen, die außerhalb der alten Mobile Services-Benutzeroberfläche vorhanden ist. POIs, die sich im Mobile Service *Verwaltung von Orten*-Seitennavigation befinden, funktionieren nur für Version 4 des SDK.
 
-* Im Folgenden finden Sie die Verwaltungsseite &quot;POI-Verwaltung *für Orte* verwalten&quot;in der alten Mobile Services-Benutzeroberfläche für ältere Versionen des SDK:
+* Im Folgenden finden Sie die Seite *Orte verwalten* POI-Verwaltung in der alten Mobile Services-Benutzeroberfläche für ältere Versionen des SDK:
 
    ![Alte Benutzeroberfläche](/help/assets/legacy-location-v4-ui.png)
 
@@ -34,11 +34,11 @@ Bevor Sie die Mobile Services-Erweiterung für Nachrichten verwenden können, ü
 
 * Machen Sie sich mit dem Erstellen und Veröffentlichen von Experience Platform Launch-Regeln für das ACP SDK in Ihrer mobilen App vertraut.
 
-   For more information, see [Rules engine](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/mobile-core/rules-engine).
+   Weitere Informationen finden Sie unter [Rules Engine](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/mobile-core/rules-engine).
 
 * Experience Platform Launch-Datenelemente werden aus den Plates-Erweiterungsdaten erstellt, die in der Rules-Engine verwendet werden.
 
-   For more information, see [Data elements](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/mobile-core/rules-engine#data-elements).
+   Weitere Informationen finden Sie unter [Datenelemente](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/mobile-core/rules-engine#data-elements).
 
 ## Berichterstellung 
 
@@ -46,11 +46,11 @@ Bevor Sie Berichte verwenden können, müssen Sie die folgenden Voraussetzungen 
 
 * Senden von Ortsdaten erfolgreich an die Adobe Analytics Report Suite
 
-   Weitere Informationen finden Sie unter [Verwenden des Orte-Dienstes mit Adobe Analytics](/help/use-places-with-other-solutions/places-adobe-analytics/use-places-adobe-analytics.md).
+   Weitere Informationen finden Sie unter [Orte-Dienst mit Adobe Analytics](/help/use-places-with-other-solutions/places-adobe-analytics/use-places-adobe-analytics.md) verwenden.
 
 * Machen Sie sich mit Mobile Services Berichte vertraut.
 
-   For more information, see [Reports](https://docs.adobe.com/content/help/en/mobile-services/using/reports-ug/usage.html).
+   Weitere Informationen finden Sie unter [Berichte](https://docs.adobe.com/content/help/en/mobile-services/using/reports-ug/usage.html).
 
 ## Visualisierung von Berichten
 
