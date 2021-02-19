@@ -4,8 +4,8 @@ description: Dieser Abschnitt enthält Informationen zur Verwendung von Push-Nac
 translation-type: tm+mt
 source-git-commit: 462df20bb351795dc72009cc18d390cb45e262a8
 workflow-type: tm+mt
-source-wordcount: '356'
-ht-degree: 3%
+source-wordcount: '368'
+ht-degree: 2%
 
 ---
 
@@ -14,34 +14,34 @@ ht-degree: 3%
 
 Anhand dieser Informationen können Sie erkennen, wie Sie mit den Informationen des Orts-Dienstes In-App-Nachrichten oder lokale Benachrichtigungen senden können.
 
-## Voraussetzungen 
+## Voraussetzungen
 
 Führen Sie zuerst die folgenden Aufgaben durch:
 
-* Verwenden Sie eine Mobilanwendung, die mit dem Adobe Experience Platform Mobile SDK einschließlich der [Adobe Campaign Standard-Erweiterung](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-campaign-standard)konfiguriert ist.
+* Verwenden Sie eine Mobilanwendung, die mit dem Adobe Experience Platform Mobile SDK konfiguriert ist, einschließlich der Erweiterung [Adobe Campaign Standard](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-campaign-standard).
 
 * Integrieren Sie das [Adobe Experience Platform Mobile SDK](https://aep-sdks.gitbook.io/docs/getting-started/get-the-sdk) in Ihre App.
-* hinzufügen Sie die [Adobe Campaign Standard Extension](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-campaign-standard) auf Ihre App-Konfiguration.
+* hinzufügen Sie die [Adobe Campaign Standard Extension](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-campaign-standard) in Ihre Mobile App-Konfiguration ein.
 
-* [Erstellen Sie einen POI](/help/poi-mgmt-ui/create-a-poi-ui.md) in der Verwaltungsoberfläche für den POI-Dienst für Orte.
+* [Erstellen Sie einen ](/help/poi-mgmt-ui/create-a-poi-ui.md) POI in der Verwaltungsoberfläche des Places-Dienstes.
 
-* Installieren und konfigurieren Sie die [Platzierungserweiterungen](/help/places-ext-aep-sdks/places-extension/places-extension.md) und [Orts-Monitorerweiterungen](/help/places-ext-aep-sdks/places-monitor-extension/places-monitor-extension.md) in Ihrer mobilen Anwendung.
+* Installieren und konfigurieren Sie die Erweiterungen [Orte](/help/places-ext-aep-sdks/places-extension/places-extension.md) und [Platziert Monitorerweiterungen](/help/places-ext-aep-sdks/places-monitor-extension/places-monitor-extension.md) in Ihrer mobilen Anwendung.
 
 ## Senden einer In-App-Nachricht basierend auf einem Geo-Zaun-Eintrag oder -Ausstieg
 
-1. Klicken Sie in Ihrer Adobe Campaign Standard-Instanz auf **[!UICONTROL Create In-App message]**.
-1. Wählen Sie für den Nachrichtentyp **[!UICONTROL Target all users of a Mobile application]**.
-1. Klicken Sie auf **[!UICONTROL Next]** und geben Sie die allgemeinen Details ein.
-1. Überprüfen Sie im linken Bereich, ob Sie eine Vielzahl von Auslösern verwenden können, die mit Places Services zusammenhängen.
+1. Klicken Sie in Ihrer Adobe Campaign Standard-Instanz auf **[!UICONTROL In-App-Nachricht erstellen]**.
+1. Wählen Sie für den Nachrichtentyp **[!UICONTROL Zielgruppe aller Benutzer einer Mobilanwendung]**.
+1. Klicken Sie auf **[!UICONTROL Weiter]** und geben Sie die allgemeinen Details ein.
+1. Überprüfen Sie im linken Bereich, ob Sie eine Reihe von Triggern verwenden können, die mit Places Services zusammenhängen.
 
    * Sie können festlegen, dass die In-App-Nachricht angezeigt wird, wenn der Benutzer einen POI-Geo-Zaun eingegeben hat.
    * Sie können zum Filtern der Audience auch Metadaten verwenden, die in der Benutzeroberfläche der Places-Dienste definiert sind.
 
-   Im folgenden Beispiel können Sie eine In-App-Nachricht auslösen, die nur Benutzern angezeigt wird, die in einem der Urlaubsresorts einsteigen, die an einem kostenlosen Drink-Programm teilnehmen, und diesen Benutzern bei ihrer Ankunft einen Coupon senden.
+   Im unten stehenden Beispiel können Sie eine In-App-Nachricht Trigger haben, die nur Benutzern angezeigt wird, die in einem der Urlaubsresorts einsteigen, die an einem Programm für kostenlose Getränke teilnehmen, und diesen Benutzern bei ihrer Ankunft einen Coupon senden.
 
    ![&quot;In-App-Nachrichten-Orte-Metadaten&quot;](/help/assets/last-entered-vacation.png)
 
-1. Click the **[!UICONTROL Next]** to finish creating the In-app message for delivery.
+1. Klicken Sie auf **[!UICONTROL Weiter]**, um die In-App-Nachricht für den Versand zu erstellen.
 
    ![&quot;Ereignis erstellen&quot;](/help/assets/prepare-ACS.png)
 
