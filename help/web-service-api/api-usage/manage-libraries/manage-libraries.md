@@ -9,7 +9,7 @@ ht-degree: 5%
 
 ---
 
-# Übersicht über die Verwaltung von Bibliotheken {#manage-libraries}
+# Bibliotheken verwalten - Übersicht {#manage-libraries}
 
 Sie können die REST-APIs des Places-Dienstes verwenden, um die folgenden Aufgaben durchzuführen:
 
