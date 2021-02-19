@@ -10,7 +10,7 @@ ht-degree: 12%
 ---
 
 
-# Headers and parameters {#headers-and-parameters}
+# Überschriften und Parameter {#headers-and-parameters}
 
 Im Folgenden finden Sie die Details zu den Headern und Parametern, die in der REST-API des Places Service verfügbar sind:
 
@@ -57,5 +57,5 @@ Im Folgenden finden Sie die Details zu den Headern und Parametern, die in der RE
 | `metadata` | Array von Schlüssel/Wert-Paaren für den POI | array(string) | key: 256 Zeichen, Wert: 256 Zeichen, max. 10 Paare | beide, optional* | `"metadata": {"region": "Equator"}` |
 | `lib_id` | ID der Bibliothek, in der sich der POI befindet | n/a | n/a | beide, erforderlich | `"lib_id": "ac7a0b25-c6c2-43ba-bbc6-2b1777b80fe9"` |
 
-* Wenn der Parameterwert nicht enthalten ist, wird der Wert auf `empty` in der Datenbank eingestellt. Wenn das vorhandene Schlüssel/Wert-Paar nicht enthalten ist, wird das Schlüssel/Wert-Paar für diesen POI in der Datenbank entfernt.
+* Wenn der Parameterwert nicht enthalten ist, wird der Wert in der Datenbank auf `empty` gesetzt. Wenn das vorhandene Schlüssel/Wert-Paar nicht enthalten ist, wird das Schlüssel/Wert-Paar für diesen POI in der Datenbank entfernt.
 
