@@ -5,12 +5,12 @@ translation-type: tm+mt
 source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
 workflow-type: tm+mt
 source-wordcount: '47'
-ht-degree: 6%
+ht-degree: 8%
 
 ---
 
 
-# Bibliothek löschen {#delete-a-library}
+# Bibliothek {#delete-a-library} löschen
 
 Eine DELETE-Methode, mit der Sie eine Bibliothek löschen können.
 
@@ -20,7 +20,7 @@ Eine DELETE-Methode, mit der Sie eine Bibliothek löschen können.
 DELETE https://api-places.adobe.io/places/placesapi/v1/libraries/<lIBRARYID>
 ```
 
-## Kopfzeilen
+## Header
 
 ```text
 -H' Content-Type: application/json'  
@@ -46,5 +46,5 @@ curl -X DELETE 'https://api-places.adobe.io/places/placesapi/v1/libraries/<LIBRA
 
 >[!IMPORTANT]
 >
->Variablen wie `<lIBRARYID>`, `<API KEY>`, `<TOKEN>`und `<ORGID>`durch tatsächliche Werte ersetzen
+>Ersetzen Sie Variablen wie `<lIBRARYID>`, `<API KEY>`, `<TOKEN>` und `<ORGID>` durch tatsächliche Werte.
 
