@@ -5,12 +5,12 @@ translation-type: tm+mt
 source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
 workflow-type: tm+mt
 source-wordcount: '45'
-ht-degree: 6%
+ht-degree: 8%
 
 ---
 
 
-# POI aktualisieren {#update-a-poi}
+# Aktualisieren eines POI {#update-a-poi}
 
 Eine PUT-Methode, mit der Sie einen POI aktualisieren können.
 
@@ -20,7 +20,7 @@ Eine PUT-Methode, mit der Sie einen POI aktualisieren können.
 PUT https://api-places.adobe.io/places/placesapi/v1/pois/<POIID>
 ```
 
-## Kopfzeilen
+## Header
 
 ```text
 -H' Content-Type: application/json'  -H 'Authorization: Bearer <TOKEN>'  -H 'x-api-key: <API KEY>'  -H 'x-gw-ims-org-id: <ORGID>'  -H 'Accept-Language: en-US'
@@ -48,4 +48,4 @@ curl -X PUT 'https://api-places.adobe.io/places/placesapi/v1/pois/<POIID>' -H 'x
 
 >[!IMPORTANT]
 >
->Ersetzen `<POIID>`, `<API KEY>`, `<TOKEN>`, `<ORGID>`und `<SINGLEPOIDATA>` durch tatsächliche Werte.
+>Ersetzen Sie `<POIID>`, `<API KEY>`, `<TOKEN>`, `<ORGID>` und `<SINGLEPOIDATA>` durch tatsächliche Werte.
