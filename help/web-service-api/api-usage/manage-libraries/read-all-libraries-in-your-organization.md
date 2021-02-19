@@ -5,12 +5,12 @@ translation-type: tm+mt
 source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
 workflow-type: tm+mt
 source-wordcount: '60'
-ht-degree: 5%
+ht-degree: 6%
 
 ---
 
 
-# Alle Bibliotheken in Ihrer Organisation lesen {#read-all-lib-in-org}
+# Alle Bibliotheken in Ihrer Organisation lesen{#read-all-lib-in-org}
 
 Eine GET, die die Details zu allen Bibliotheken in Ihrem Unternehmen zurückgibt.
 
@@ -20,7 +20,7 @@ Eine GET, die die Details zu allen Bibliotheken in Ihrem Unternehmen zurückgibt
 GET https://api-places.adobe.io/places/placesapi/v1/libraries
 ```
 
-## Kopfzeilen
+## Header
 
 ```text
 -H' Content-Type: application/json'  -H 'Authorization: Bearer <TOKEN>'  -H 'x-api-key: <API KEY>'  -H 'x-gw-ims-org-id: <ORGID>'  -H 'Accept-Language: en-US'
