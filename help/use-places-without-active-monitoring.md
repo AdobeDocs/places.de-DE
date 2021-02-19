@@ -20,18 +20,18 @@ Der Entwickler erfasst den Speicherort des Geräts mithilfe der APIs, die vom Be
 
 >[!TIP]
 >
->Wenn die Anwendungsfälle Ihrer App eine aktive Regionsüberwachung erfordern, lesen Sie [Verwenden der Platzierungsmonitor-Erweiterung](/help/places-ext-aep-sdks/places-monitor-extension/places-monitor-extension.md).
+>Wenn die Anwendungsfälle Ihrer App eine aktive Bereichsüberwachung erfordern, finden Sie weitere Informationen unter [Verwenden der Erweiterung &quot;Orts-Monitor&quot;](/help/places-ext-aep-sdks/places-monitor-extension/places-monitor-extension.md).
 
 So verwenden Sie den Orte-Dienst ohne aktive Regionsüberwachung:
 
 ## 1. Benutzerspeicherort erfassen
 
-Der App-Entwickler muss den aktuellen Speicherort des Geräts mithilfe der `CoreLocation.framework` (iOS) oder der von Google Play Services (Android) bereitgestellten `Location` APIs erfassen.
+Der App-Entwickler muss den aktuellen Speicherort des Geräts mit den APIs `CoreLocation.framework` (iOS) oder `Location` von Google Play Services (Android) erfassen.
 
 Weitere Informationen finden Sie in der folgenden Dokumentation:
 
 - [CoreLocation](https://developer.apple.com/documentation/corelocation) (Apple)
-- [Standort-APIs in Google Play Services](https://developer.android.com/training/location) (Google)
+- [Standort-APIs in Google Play Services](https://developer.android.com/training/location)  (Google)
 
 ## 2. Abrufen nahegelegener Zielpunkte vom SDK
 
@@ -39,7 +39,7 @@ Nachdem Sie den Benutzerstandort abgerufen haben, können Sie ihn an das SDK wei
 
 ### Android
 
-Im Folgenden finden Sie eine Beispielimplementierung in Android mit einer [`BroadcastReceiver`](https://codelabs.developers.google.com/codelabs/background-location-updates-android-o/index.html?index=..%2F..index#5):
+Im Folgenden finden Sie eine Beispielimplementierung in Android, die eine [`BroadcastReceiver`](https://codelabs.developers.google.com/codelabs/background-location-updates-android-o/index.html?index=..%2F..index#5) verwendet:
 
 ```java
 public class LocationBroadcastReceiver extends BroadcastReceiver {
@@ -85,7 +85,7 @@ public class LocationBroadcastReceiver extends BroadcastReceiver {
 
 ### Objective-C
 
-Hier finden Sie eine Beispielimplementierung für iOS. Der Code zeigt die Implementierung der [`locationManager:didUpdateLocations:`](https://developer.apple.com/documentation/corelocation/cllocationmanagerdelegate/1423615-locationmanager?language=objc) Methode in der [`CLLocationManagerDelegate`](https://developer.apple.com/documentation/corelocation/cllocationmanager?language=objc):
+Hier finden Sie eine Beispielimplementierung für iOS. Der Code zeigt die Implementierung der [`locationManager:didUpdateLocations:`](https://developer.apple.com/documentation/corelocation/cllocationmanagerdelegate/1423615-locationmanager?language=objc)-Methode in [`CLLocationManagerDelegate`](https://developer.apple.com/documentation/corelocation/cllocationmanager?language=objc):
 
 ```objectivec
 - (void) locationManager:(CLLocationManager*)manager didUpdateLocations:(NSArray<CLLocation*>*)locations {
@@ -101,7 +101,7 @@ Hier finden Sie eine Beispielimplementierung für iOS. Der Code zeigt die Implem
 
 ### Swift
 
-Hier finden Sie eine Beispielimplementierung für iOS. Der Code zeigt die Implementierung der [`locationManager(_:didUpdateLocations:)`](https://developer.apple.com/documentation/corelocation/cllocationmanagerdelegate/1423615-locationmanager) Methode in der [`CLLocationManagerDelegate`](https://developer.apple.com/documentation/corelocation/cllocationmanager):
+Hier finden Sie eine Beispielimplementierung für iOS. Der Code zeigt die Implementierung der [`locationManager(_:didUpdateLocations:)`](https://developer.apple.com/documentation/corelocation/cllocationmanagerdelegate/1423615-locationmanager)-Methode in [`CLLocationManagerDelegate`](https://developer.apple.com/documentation/corelocation/cllocationmanager):
 
 ```swift
 func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
@@ -117,29 +117,29 @@ func locationManager(_ manager: CLLocationManager, didUpdateLocations locations:
 
 ## 3. Platzierungsdaten an Ihre Analytics-Anforderungen anhängen
 
-Durch Aufruf der `getNearbyPointsOfInterest` API stellt das Places SDK alle POI-Daten, die für das Gerät relevant sind, über Datenelemente in Launch zur Verfügung. Mithilfe einer Regel zum [Anhängen von Daten](https://aep-sdks.gitbook.io/docs/resources/user-guides/attach-data) können Platzierungsdaten automatisch zu zukünftigen Anforderungen an Analytics hinzugefügt werden. Dadurch entfällt die Notwendigkeit eines einmaligen Anrufs an Analytics zum Zeitpunkt der Erfassung des Speicherorts des Geräts.
+Durch Aufruf der API `getNearbyPointsOfInterest` stellt das Places SDK alle POI-Daten, die für das Gerät relevant sind, über Datenelemente in Launch zur Verfügung. Mithilfe einer Regel [Daten anhängen](https://aep-sdks.gitbook.io/docs/resources/user-guides/attach-data) können Ortsdaten automatisch zu zukünftigen Anforderungen an Analytics hinzugefügt werden. Dadurch entfällt die Notwendigkeit eines einmaligen Anrufs an Analytics zum Zeitpunkt der Erfassung des Speicherorts des Geräts.
 
-Weitere Informationen zu diesem Thema finden Sie unter [Hinzufügen Standortkontext zu Analytics-Anforderungen](use-places-with-other-solutions/places-adobe-analytics/run-reports-aa-places-data.md) .
+Weitere Informationen zu diesem Thema finden Sie unter [Hinzufügen Standortkontext zu Analytics-Anforderungen](use-places-with-other-solutions/places-adobe-analytics/run-reports-aa-places-data.md).
 
-## Optional - Auslösen von Ereignissen für die Eingabe, wenn sich der Benutzer in einem POI befindet
+## Optional - Ereignis für die Benutzereingabe, wenn sich der Trigger in einem POI befindet
 
 >[!TIP]
 >
->Die empfohlene Methode zur Erfassung von Ortsdaten ist das [Anhängen von Ortsdaten an Ihre Analytics-Anforderungen](#attach-places-data-to-your-analytics-requests).
+>Die empfohlene Methode zum Erfassen von Ortsdaten ist [Orte-Daten an Ihre Analytics-Anforderungen anhängen](#attach-places-data-to-your-analytics-requests).
 >
->Wenn im Anwendungsfall ein [Regionseintrag-Ereignis](places-ext-aep-sdks/places-extension/places-event-ref.md#processregionevent) vom SDK ausgelöst werden muss, muss es manuell durchgeführt werden, wie unten beschrieben.
+>Wenn im Anwendungsfall ein [region entry Ereignis](places-ext-aep-sdks/places-extension/places-event-ref.md#processregionevent) vom SDK ausgelöst werden muss, muss es manuell wie unten beschrieben durchgeführt werden.
 
-Die von der `getNearbyPointsOfInterest` API zurückgegebene Liste enthält [benutzerdefinierte Objekte](places-ext-aep-sdks/places-extension/cust-places-objects.md) , die angeben, ob sich der Benutzer derzeit in einem POI befindet. Befindet sich der Benutzer in einem POI, kann das SDK ein Einstiegsfeld für diesen Bereich auslösen.
+Die von der API zurückgegebene Liste enthält [benutzerdefinierte Objekte](places-ext-aep-sdks/places-extension/cust-places-objects.md), die angeben, ob sich der Benutzer derzeit in einem POI befindet. `getNearbyPointsOfInterest` Befindet sich der Benutzer in einem POI, können Sie dem SDK-Trigger ein Ereignis zum Einstieg für diesen Bereich bereitstellen.
 
 >[!IMPORTANT]
 >
->Um zu verhindern, dass Ihre App bei einem Besuch mehrere Einstiegsregionen auslöst, sollten Sie eine Liste der Ereignis aufbewahren, in denen Sie wissen, dass der Benutzer angemeldet ist. Wenn die Antwort von nahe gelegenen POIs aus dem SDK verarbeitet wird, lösen Sie ein Einstiegsfeld nur dann aus, wenn sich der Bereich nicht in Ihrer Liste befindet.
+>Um zu verhindern, dass Ihre App bei einem Besuch mehrere Einstiegsregionen auslöst, sollten Sie eine Liste der Ereignis aufbewahren, in denen Sie wissen, dass der Benutzer angemeldet ist. Wenn Sie die Antwort von nahe gelegenen POIs aus dem SDK verarbeiten, erstellen Sie ein Ereignis nur dann, wenn die Region nicht in Ihrer Liste ist.
 >
->Im folgenden Codebeispiel werden `NSUserDefaults` (iOS) und `SharedPreferences` (Android) zur Verwaltung der Liste von Regionen verwendet:
+>Im folgenden Codebeispiel werden `NSUserDefaults` (iOS) und `SharedPreferences` (Android) verwendet, um die Liste von Regionen zu verwalten:
 
 ### Android
 
-Das folgende Codebeispiel zeigt die Verarbeitung des Ergebnisses, das im Rückruf von `getNearbyPointsOfInterest`, a bereitgestellt wurde `List<PlacesPOI>`:
+Das folgende Codebeispiel zeigt die Verarbeitung des Ergebnisses, das im Rückruf von `getNearbyPointsOfInterest`, a `List<PlacesPOI>` bereitgestellt wurde:
 
 ```java
 void handleUpdatedPOIs(final List<PlacesPOI> nearbyPois) {
@@ -175,9 +175,9 @@ void handleUpdatedPOIs(final List<PlacesPOI> nearbyPois) {
 }
 ```
 
-### Objective-C
+### Ziel-C
 
-Das folgende Codebeispiel zeigt die Verarbeitung des Ergebnisses, das im Rückruf von bereitgestellt wurde `getNearbyPointsOfInterest:limit:callback:errorCallback:`, und `NSArray<ACPPlacesPoi *> *`:
+Das folgende Codebeispiel zeigt die Verarbeitung des Ergebnisses, das im Rückruf von `getNearbyPointsOfInterest:limit:callback:errorCallback:` und `NSArray<ACPPlacesPoi *> *` bereitgestellt wurde:
 
 ```objectivec
 - (void) handleUpdatedPOIs:(NSArray<ACPPlacesPoi *> *)nearbyPois {
@@ -211,7 +211,7 @@ Das folgende Codebeispiel zeigt die Verarbeitung des Ergebnisses, das im Rückru
 
 ### Swift
 
-Das folgende Codebeispiel zeigt die Verarbeitung des Ergebnisses, das im Rückruf von bereitgestellt wurde `getNearbyPoints(_ ofInterest: CLLocation, limit: UInt, callback: (([ACPPlacesPoi]?) -> Void)?, errorCallback: ((ACPPlacesRequestError) -> Void)?)`, und `[ACPPlacesPoi]`:
+Das folgende Codebeispiel zeigt die Verarbeitung des Ergebnisses, das im Rückruf von `getNearbyPoints(_ ofInterest: CLLocation, limit: UInt, callback: (([ACPPlacesPoi]?) -> Void)?, errorCallback: ((ACPPlacesRequestError) -> Void)?)` und `[ACPPlacesPoi]` bereitgestellt wurde:
 
 ```swift
 func handleUpdatedPOIs(_ nearbyPois:[ACPPlacesPoi]) {
@@ -242,13 +242,13 @@ func handleUpdatedPOIs(_ nearbyPois:[ACPPlacesPoi]) {
 
 ## Vollständige Beispielimplementierung
 
-Die Codebeispiele unten zeigen Ihnen, wie Sie die aktuelle Geräteposition abrufen, erforderliche Ereignis auslösen und sicherstellen können, dass bei einem Besuch nicht mehrere Einträge für dieselbe Position eingehen.
+Die folgenden Codebeispiele zeigen Ihnen, wie Sie die aktuelle Geräteposition abrufen können, wie Sie die erforderlichen Trigger für die Eingabe von Ereignissen abrufen können und wie Sie sicherstellen können, dass bei einem Besuch nicht mehrere Einträge für dieselbe Position angezeigt werden.
 
-Dieses Codebeispiel enthält den optionalen Schritt zum [Auslösen eines Ereignisses, wenn sich der Benutzer in einem POI](#trigger-entry-events-when-the-user-is-in-a-poi)befindet.
+Dieses Codebeispiel enthält den optionalen Schritt von [und löst ein Eingabefeld aus, wenn sich der Ereignis in einem POI](#trigger-entry-events-when-the-user-is-in-a-poi) befindet.
 
 >[!IMPORTANT]
 >
->Diese Snippets sind **nur** Beispiele. Entwickler müssen festlegen, wie sie die Funktionen implementieren möchten. Bei der Entscheidung sollten die Best Practices berücksichtigt werden, die vom Betriebssystem Zielgruppe empfohlen werden.
+>Diese Snippets sind Beispiele für **nur**. Entwickler müssen festlegen, wie sie die Funktionen implementieren möchten. Bei der Entscheidung sollten die Best Practices berücksichtigt werden, die vom Betriebssystem Zielgruppe empfohlen werden.
 
 ### Android
 
@@ -328,7 +328,7 @@ public class LocationBroadcastReceiver extends BroadcastReceiver {
 ```
 
 
-### Objective-C
+### Ziel-C
 
 ```objectivec
 - (void) locationManager:(CLLocationManager*)manager didUpdateLocations:(NSArray<CLLocation*>*)locations {
@@ -411,6 +411,6 @@ func handleUpdatedPOIs(_ nearbyPois:[ACPPlacesPoi]) {
 }
 ```
 
-Zusätzlich zur Auslösung von Ereignissen zur Platzierung von &quot;Places Service&quot;-Einträgen im SDK können aufgrund der auslösenden &quot;entry&quot;-Ereignis alle Daten, die Ihre POIs definieren, vom Rest des SDK über `data elements` den Experience Platform Launch verwendet werden. Mit Experience Platform Launch `rules`können Sie die Daten des Orts-Dienstes dynamisch an eingehende Ereignis anhängen, die vom SDK verarbeitet werden. Sie können beispielsweise die Metadaten eines POI, in dem sich der Benutzer befindet, anhängen und die Daten als Kontextdaten an Analytics senden.
+Zusätzlich zur Auslösung von Ereignissen zur Platzierung von &quot;Places Service&quot;-Einträgen im SDK können aufgrund der auslösenden &quot;entry&quot;-Ereignis alle Daten, die Ihre POIs definieren, vom Rest des SDK über `data elements` in Experience Platform Launch verwendet werden. Mit Experience Platform Launch `rules` können Sie die Daten des Orts-Dienstes dynamisch an eingehende Ereignis anhängen, die vom SDK verarbeitet werden. Sie können beispielsweise die Metadaten eines POI, in dem sich der Benutzer befindet, anhängen und die Daten als Kontextdaten an Analytics senden.
 
-Weitere Informationen finden Sie unter [Verwenden des Orte-Dienstes mit anderen Adoben](/help/use-places-with-other-solutions/places-adobe-analytics/use-places-analytics-overview.md).
+Weitere Informationen finden Sie unter [Verwenden des Ortsdienstes mit anderen Adoben](/help/use-places-with-other-solutions/places-adobe-analytics/use-places-analytics-overview.md).
