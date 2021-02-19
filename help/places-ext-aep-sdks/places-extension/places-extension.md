@@ -4,7 +4,7 @@ description: Mit der Erweiterung "Orte"können Sie je nach dem Standort Ihrer Be
 translation-type: tm+mt
 source-git-commit: a7dddb78e1e00a0bde01ea668334932759a9dae8
 workflow-type: tm+mt
-source-wordcount: '694'
+source-wordcount: '700'
 ht-degree: 5%
 
 ---
@@ -16,18 +16,18 @@ Mit der Erweiterung &quot;Orte&quot;können Sie je nach dem Standort Ihrer Benut
 
 ## Installieren der Platzierungserweiterung in Adobe Experience Platform Launch
 
-1. In Experience Platform Launch, click the **[!UICONTROL Extensions]** tab.
-1. Suchen Sie auf der **[!UICONTROL Catalog]** Registerkarte die **[!UICONTROL Places]** Erweiterung und klicken Sie auf **[!UICONTROL Install]**.
+1. Klicken Sie in Experience Platform Launch auf die Registerkarte **[!UICONTROL Erweiterungen]**.
+1. Suchen Sie auf der Registerkarte **[!UICONTROL Katalog]** die Erweiterung **[!UICONTROL Orte]** und klicken Sie auf **[!UICONTROL Installieren]**.
 1. Wählen Sie die Orte-Bibliotheken aus, die Sie in dieser Eigenschaft verwenden möchten. Dies sind die Bibliotheken, auf die in Ihrer App zugegriffen werden kann.
-1. Klicken Sie auf **[!UICONTROL Save]**.
+1. Klicken Sie auf **[!UICONTROL Speichern]**.
 
-   Wenn Sie auf klicken **[!UICONTROL Save]**, durchsucht das Experience Platform-SDK die Orte-Dienste nach POIs in den von Ihnen ausgewählten Bibliotheken. Die POI-Daten werden beim Erstellen der App nicht in den Download der Bibliothek einbezogen, aber eine ortsbasierte Untergruppe von POIs wird zur Laufzeit auf das Gerät des Endbenutzers heruntergeladen und basiert auf den GPS-Koordinaten des Benutzers.
+   Wenn Sie auf **[!UICONTROL Speichern]** klicken, sucht das Experience Platform SDK in den ausgewählten Bibliotheken nach POIs in den Places Services. Die POI-Daten werden beim Erstellen der App nicht in den Download der Bibliothek einbezogen, aber eine ortsbasierte Untergruppe von POIs wird zur Laufzeit auf das Gerät des Endbenutzers heruntergeladen und basiert auf den GPS-Koordinaten des Benutzers.
 
 1. Schließen Sie den Veröffentlichungsprozess ab, um die SDK-Konfiguration zu aktualisieren.
 
    Weitere Informationen zum Veröffentlichen in Experience Platform Launch finden Sie unter [Veröffentlichen](https://docs.adobe.com/content/help/de-DE/launch/using/reference/publish/overview.html).
 
-### Configure the Places extension {#configure-places-extension}
+### Die Platzierungserweiterung {#configure-places-extension} konfigurieren
 
 ![](//help/assets/places-extension.png)
 
@@ -66,14 +66,14 @@ So fügen Sie Ihrer App die Platzierungserweiterung mit Java hinzu:
 
 So fügen Sie Ihrer App die Platzierungserweiterung mit Objective-C oder Swift hinzu:
 
-1. hinzufügen Sie die Bibliotheken &quot;Orte&quot;und &quot; [Mobile Core](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/mobile-core) &quot;in Ihr Projekt ein. Sie müssen die folgenden Pods hinzufügen `Podfile`:
+1. hinzufügen Sie die Bibliotheken &quot;Orte&quot;und &quot;[Mobile Core](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/mobile-core)&quot;in Ihr Projekt ein. Sie müssen die folgenden Pods zu Ihrem `Podfile` hinzufügen:
 
    ```objective-c
    pod 'ACPPlaces', '~> 1.0'
    pod 'ACPCore', '~> 2.0'    # minimum Core version for Places is 2.0.3
    ```
 
-   Wenn Sie keine Cocoapods verwenden, können Sie auch die Bibliotheken für den Mobile Core und die Orte manuell auf unserer Seite [für](https://github.com/Adobe-Marketing-Cloud/acp-sdks/releases/) Veröffentlichungen auf Github einbinden.
+   Wenn Sie keine Cocoapods verwenden, können Sie auch die Bibliotheken für den Mobile Core und die Orte manuell auf unserer [Seite für Veröffentlichungen](https://github.com/Adobe-Marketing-Cloud/acp-sdks/releases/) auf Github einbinden.
 
 1. Aktualisieren Sie Ihre Cocoapods:
 
@@ -97,13 +97,13 @@ So fügen Sie Ihrer App die Platzierungserweiterung mit Objective-C oder Swift h
    import ACPPlaces
    ```
 
-### Registrieren der Platzierungserweiterung mit Mobile Core {#register-places-mobile-core}
+### Registrieren Sie die Platzierungserweiterung mit Mobile Core {#register-places-mobile-core}
 
 Sie müssen die Platzierungserweiterung mit Mobile Core unter Android und iOS registrieren.
 
 #### Android
 
-Registrieren Sie in der `OnCreate` Methode Ihrer App die Plates-Erweiterungen:
+Registrieren Sie in der `OnCreate`-Methode Ihrer App die Platzierungserweiterungen:
 
 ```java
 public class PlacesTestApp extends Application {
@@ -125,9 +125,9 @@ public class PlacesTestApp extends Application {
 
 #### iOS
 
-Registrieren Sie in der `application:didFinishLaunchingWithOptions:` Methode Ihrer App die Plates-Erweiterung bei Ihren anderen SDK-Registrierungsaufrufen:
+Registrieren Sie in der `application:didFinishLaunchingWithOptions:`-Methode Ihrer App die Plates-Erweiterung mit Ihren anderen SDK-Registrierungsaufrufen:
 
-**Objective-C**
+**Ziel-C**
 
 ```objective-c
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
@@ -147,15 +147,15 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 }
 ```
 
-### Ändern der Mitgliederzeit für Orte {#places-ttl}
+### Modifizieren der Ortsmitgliedschaft zu live {#places-ttl}
 
 Standortdaten können schnell statisch werden, insbesondere wenn das Gerät nicht über eine Aktualisierung des Hintergrundorts verfügt.
 
-Legen Sie die `places.membershipttl` Konfigurationseinstellung fest, um die Live-Übertragung der Mitgliedschaftsdaten auf dem Gerät zu steuern. Der übergebene Wert gibt an, wie viele Sekunden der Status &quot;Orte&quot;für das Gerät gültig bleibt.
+Steuern Sie die Time-to-Live-Verbindung für Plates-Mitgliedschaftsdaten auf dem Gerät, indem Sie die Konfigurationseinstellung `places.membershipttl` festlegen. Der übergebene Wert gibt an, wie viele Sekunden der Status &quot;Orte&quot;für das Gerät gültig bleibt.
 
 #### Android
 
-Im Rückruf der `MobileCore.start()` Aktualisierung der Konfiguration mit den erforderlichen Änderungen vor dem Aufruf `lifecycleStart`:
+Aktualisieren Sie im Rückruf von `MobileCore.start()` die Konfiguration mit den erforderlichen Änderungen, bevor Sie `lifecycleStart` aufrufen:
 
 ```java
 public class PlacesTestApp extends Application {
@@ -189,9 +189,9 @@ public class PlacesTestApp extends Application {
 
 #### iOS
 
-Rufen Sie in der ersten Zeile in der Rückruffunktion der `ACPCore``start:` Methode `updateConfiguration:`
+Rufen Sie in der ersten Zeile im Rückruf der `ACPCore`&#39;s `start:`-Methode `updateConfiguration:` auf
 
-**Objective-C**
+**Ziel-C**
 
 ```objective-c
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
