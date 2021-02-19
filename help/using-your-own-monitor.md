@@ -24,7 +24,7 @@ Führen Sie unter iOS die folgenden Schritte aus:
 
 1. Übergeben Sie die Ortsaktualisierungen, die Sie von den Core-Standortdiensten des iOS erhalten haben, an die Places-Erweiterung.
 
-1. Verwenden Sie die API für die `getNearbyPointsOfInterest` Platzierungserweiterung, um das Array von `ACPPlacesPoi` Objekten um den aktuellen Speicherort abzurufen.
+1. Verwenden Sie die API für die Platzierung der Erweiterung `getNearbyPointsOfInterest`, um das Array der `ACPPlacesPoi`-Objekte um die aktuelle Position zu erhalten.
 
    ```objective-c
    - (void) locationManager: (CLLocationManager*) manager didUpdateLocations: (NSArray<CLLocation*>*) locations {
@@ -34,7 +34,7 @@ Führen Sie unter iOS die folgenden Schritte aus:
    }
    ```
 
-1. Extrahieren Sie die Informationen aus den erhaltenen `ACPPlacesPOI` Objekten und überwachen Sie diese POIs durch den Beginn.
+1. Extrahieren Sie die Informationen aus den erhaltenen `ACPPlacesPOI`-Objekten und überwachen Sie diese POIs durch den Beginn.
 
    ```objective-c
    - (void) startMonitoringGeoFences: (NSArray*) newGeoFences {
@@ -60,7 +60,7 @@ Führen Sie unter iOS die folgenden Schritte aus:
 
 1. Übergeben Sie die Ortsaktualisierungen, die Sie über die Google Play-Dienste oder die Android-Ortsdienste erhalten haben, an die Places-Erweiterung.
 
-1. Verwenden Sie die `getNearbyPointsOfInterest` Places Extension API, um die Liste von `PlacesPoi` Objekten an der aktuellen Position abzurufen.
+1. Verwenden Sie die API für die Platzierung von Erweiterungen, um die Liste von `PlacesPoi`-Objekten an der aktuellen Position abzurufen.`getNearbyPointsOfInterest`
 
    ```java
    LocationCallback callback = new LocationCallback() {
@@ -78,7 +78,7 @@ Führen Sie unter iOS die folgenden Schritte aus:
    };
    ```
 
-1. Extrahieren Sie die Daten aus den erhaltenen `PlacesPOI` Objekten und überwachen Sie diese POIs durch den Beginn.
+1. Extrahieren Sie die Daten aus den erhaltenen `PlacesPOI`-Objekten und überwachen Sie diese POIs durch den Beginn.
 
    ```java
    private void startMonitoringFences(final List<PlacesPOI> nearByPOIs) {
@@ -103,7 +103,7 @@ Führen Sie unter iOS die folgenden Schritte aus:
    ```
 
 
-Der Aufruf der `getNearbyPointsOfInterest` API führt zu einem Netzwerkaufruf, der den Speicherort um den aktuellen Speicherort abruft.
+Der Aufruf der API `getNearbyPointsOfInterest` führt zu einem Netzwerkaufruf, der den Speicherort um den aktuellen Speicherort abruft.
 
 >[!IMPORTANT]
 >
@@ -113,7 +113,7 @@ Der Aufruf der `getNearbyPointsOfInterest` API führt zu einem Netzwerkaufruf, d
 
 ### iOS
 
-Rufen Sie unter iOS die `processGeofenceEvent` Places-API im `CLLocationManager` Delegaten auf. Diese API informiert Sie darüber, ob der Benutzer eine bestimmte Region eingegeben oder verlassen hat.
+Rufen Sie unter iOS die Platzierungs-API im Delegate `CLLocationManager` auf. `processGeofenceEvent` Diese API informiert Sie darüber, ob der Benutzer eine bestimmte Region eingegeben oder verlassen hat.
 
 ```objective-c
 - (void) locationManager:(CLLocationManager *)manager didEnterRegion:(CLRegion *)region {
@@ -127,7 +127,7 @@ Rufen Sie unter iOS die `processGeofenceEvent` Places-API im `CLLocationManager`
 
 ### Android
 
-Rufen Sie in Android die `processGeofence` Methode zusammen mit dem entsprechenden Transition-Ereignis in Ihrem Geofence-Broadcast-Empfänger auf. Möglicherweise möchten Sie die Liste der erhaltenen Geofencing kuratieren, um zu verhindern, dass Duplikate ein-/ausgehen.
+Rufen Sie in Android die `processGeofence`-Methode zusammen mit dem entsprechenden Transition-Ereignis in Ihrem Geofence-Broadcast-Empfänger auf. Möglicherweise möchten Sie die Liste der erhaltenen Geofencing kuratieren, um zu verhindern, dass Duplikate ein-/ausgehen.
 
 ```java
 void onGeofenceReceived(final Intent intent) {
