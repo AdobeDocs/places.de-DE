@@ -2,7 +2,7 @@
 title: 'Zugriff auf den Places Service '
 description: In diesem Abschnitt erfahren Sie, wie Sie einen Benutzer zu "Orte-Dienst"und "Experience Platform Launch"hinzufügen, damit der Benutzer auf den Orte-Dienst zugreifen kann.
 translation-type: tm+mt
-source-git-commit: 26538602a73e806a4822705c7a3aa44d76351030
+source-git-commit: ecf50d67d4c08e79d9c3be64480f27d435fd7fcb
 workflow-type: tm+mt
 source-wordcount: '1160'
 ht-degree: 10%
@@ -31,7 +31,7 @@ Damit Benutzer auf die [Benutzeroberfläche des Experience Platform Launchs](htt
    * Genehmigen
    * Veröffentlichen Sie
    * Erweiterungen verwalten
-   * Umgebung verwalten
+   * Umgebungen verwalten
 * Berechtigung &quot;Eigenschaften verwalten&quot;unter &quot;Firma-Rechte&quot;
 
 Wenn Sie zum ersten Mal einen Benutzer hinzufügen, führen Sie die folgenden Schritte aus, um Benutzer zum Experience Platform Launch- und Ortungsdienst hinzuzufügen. Wenn Sie zuvor Benutzer hinzugefügt haben, werden möglicherweise mehrere Profil angezeigt. Wählen Sie daher das richtige Profil aus.
@@ -49,7 +49,7 @@ Wenn Sie zum ersten Mal einen Benutzer hinzufügen, führen Sie die folgenden Sc
 
 1. Klicken Sie unter **[!UICONTROL Platform]** auf **[!UICONTROL Administration]**.
 
-   Wenn **Administration** in der Liste nicht angezeigt wird, sind Sie kein Administrator. Sie müssen sich an Ihren Organisationsadministrator wenden, um dieses Verfahren abzuschließen.
+   Wenn **[!UICONTROL Administration]** in der Liste nicht angezeigt wird, sind Sie kein Administrator. Sie müssen sich an Ihren Organisationsadministrator wenden, um dieses Verfahren abzuschließen.
 
 1. Klicken Sie auf der Seite &quot;Experience Cloud-Verwaltung&quot;auf der Karte **[!UICONTROL Admin Console]** auf **[!UICONTROL Nehmen Sie mich dort]**.
 
@@ -182,6 +182,6 @@ So fügen Sie einen Entwickler hinzu:
 
 1. Wählen Sie in der Dropdown-Liste **[!UICONTROL Bitte ein Profil für dieses Produkt]** aus, das Profil &quot;Orte-Dienst&quot;.
 
-1. Klicken Sie auf **Speichern**.
+1. Klicken Sie auf **[!UICONTROL Speichern]**.
 
-Benutzer erhalten eine E-Mail, in der sie darauf hingewiesen werden, dass sie Zugriff auf Experience Platform Launch haben. Sie können sich bei den [Experience Platform Launch](https://launch.adobe.com) oder [Platzierungsdienst](https://places.adobe.com)-UIs für diese Organisation anmelden. Wenn Sie Schritt 4 im Prozess **Entwickler hinzufügen** abgeschlossen haben, kann sich der Benutzer auch bei der [Adobe I/O-Konsole](https://console.adobe.io) anmelden, um eine Places-Integration zu erstellen und die Places-REST-API zu verwenden.
+Benutzer erhalten eine E-Mail, in der sie darauf hingewiesen werden, dass sie Zugriff auf Experience Platform Launch haben. Sie können sich bei den [Experience Platform Launch](https://launch.adobe.com) oder [Platzierungsdienst](https://places.adobe.com)-UIs für diese Organisation anmelden. Wenn Sie Schritt 4 im Prozess **[!UICONTROL Entwickler hinzufügen]** abgeschlossen haben, kann sich der Benutzer auch bei der [Adobe I/O-Konsole](https://console.adobe.io) anmelden, um eine Places-Integration zu erstellen und die Places-REST-API zu verwenden.
