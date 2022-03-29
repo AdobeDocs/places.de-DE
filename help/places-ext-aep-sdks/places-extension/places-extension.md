@@ -4,8 +4,8 @@ description: Mit der Places-Erweiterung können Sie basierend auf dem Standort I
 exl-id: 09c02753-09b3-4e07-82b2-b6c72c4e0e42
 source-git-commit: 795808b38851d5afcedc03f58e9a1d6342830934
 workflow-type: tm+mt
-source-wordcount: '700'
-ht-degree: 5%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -72,7 +72,7 @@ So fügen Sie Ihrer App eine Places-Erweiterung mithilfe von Objective-C oder Sw
    pod 'ACPCore', '~> 2.0'    # minimum Core version for Places is 2.0.3
    ```
 
-   Wenn Sie Cocoapods nicht verwenden, können Sie auch die Mobile Core- und Places-Bibliotheken manuell aus unserer [Veröffentlichungsseite](https://github.com/Adobe-Marketing-Cloud/acp-sdks/releases/) auf GitHub.
+   Wenn Sie Cocoapods nicht verwenden, können Sie die Mobile Core- und Places-Bibliotheken auch manuell aus unserer [Veröffentlichungsseite](https://github.com/Adobe-Marketing-Cloud/acp-sdks/releases/) auf GitHub.
 
 1. Aktualisieren Sie Ihre Cocoapods:
 
