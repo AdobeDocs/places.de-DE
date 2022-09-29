@@ -1,94 +1,91 @@
 ---
 title: Places Service
-description: 'Der Ortsdienst ist ein wichtiger Kontext für das Verständnis der Interaktion von Mobilbenutzern. In diesem Kontext können Entwickler mobiler Apps den App-Entwurf verbessern und ihn zu einem personalisierteren und ansprechenderen Erlebnis machen. '
-translation-type: tm+mt
-source-git-commit: 05b4d29aa7925f7a43e70c644e3cb88045cbe446
+description: Places Service ist ein wichtiger Kontext für das Verständnis der Interaktion mobiler Benutzer. In diesem Kontext können Entwickler mobiler Apps das App-Design verbessern und es zu einem personalisierteren und ansprechenderen Erlebnis machen.
+exl-id: 7369176f-c072-437a-9ee3-b463c5ff1d12
+source-git-commit: c13da9ea3dc0cd574f2f9a496405867f7d36eae0
 workflow-type: tm+mt
-source-wordcount: '708'
+source-wordcount: '706'
 ht-degree: 10%
 
 ---
 
-
 # Places Service {#home}
 
-![&quot;Places Service&quot;](/help/assets/places-service-header.png)
+Standort ist ein wichtiger Kontext, um mobile Benutzer zu verstehen und mit ihnen zu interagieren. In diesem Kontext können Entwickler mobiler Apps das App-Design verbessern und es zu einem personalisierteren und ansprechenderen Erlebnis machen.
 
-Der Standort ist ein wichtiger Kontext, um Benutzer von Mobilgeräten zu verstehen und mit ihnen zu interagieren. In diesem Kontext können Entwickler mobiler Apps den App-Entwurf verbessern und ihn zu einem personalisierteren und ansprechenderen Erlebnis machen.
+Places Service, früher als Adobe Experience Platform Location Service bezeichnet, ist ein Standortdienst, mit dem mobile Apps mit Standorterkennung den Standortkontext verstehen können. Dazu werden umfangreiche und benutzerfreundliche SDK-Schnittstellen sowie eine flexible Datenbank mit Zielpunkten (POIs) verwendet.
 
-Places Service, früher als Adobe Experience Platform Location Service bekannt, ist ein Geolokationsdienst, mit dem mobile Apps mit Standortbewusstsein den Standortkontext verstehen können. Dazu werden umfangreiche und benutzerfreundliche SDK-Schnittstellen sowie eine flexible Datenbank mit POIs (Points of Interest) verwendet.
+Mit Places Service können Sie Folgendes erreichen:
 
-Mit dem Orts-Dienst können Sie Folgendes erreichen:
-
-* Erstellen und verwalten Sie eine Datenbank mit POIs, die mit anderen Adobe Experience Cloud-Lösungen verwendet werden können.
-* Fügen Sie den POIs benutzerspezifische Metadaten hinzu, um sie durch Angabe zusätzlicher Attribute reicher und aussagekräftiger zu gestalten.
+* Erstellen und verwalten Sie eine Datenbank mit POIs, die mit anderen Adobe Experience Cloud-Lösungen genutzt werden können.
+* Fügen Sie den Zielpunkten benutzerdefinierte Metadaten hinzu, um sie durch Angabe zusätzlicher Attribute reicher und aussagekräftiger zu machen.
 * Visualisieren Sie die POIs auf einer Karte, um den räumlichen Kontext zu verstehen und Metadatenattribute hinzuzufügen/zu bearbeiten.
-* Konfigurieren Sie das SDK in Adobe Experience Platform Launch, um die durch Ihren Standort ausgelösten Regeln und metadatenbasierten Bedingungen zu definieren.
-* Verringern Sie den zu schreibenden Code, um den Standort des Geräts zu überwachen, und verwenden Sie die Platzierungserweiterung, um die standortspezifischen Regeln automatisch Trigger.
+* Konfigurieren Sie das SDK in Adobe Experience Platform Launch, um Ihre standortbasierten Regeln und metadatenbasierten Bedingungen zu definieren.
+* Reduzieren Sie den Code, den Sie schreiben müssen, um den Standort eines Geräts zu überwachen, und verwenden Sie die Places-Erweiterung, um die standortspezifischen Regeln automatisch Trigger.
 
-Auf diese Weise können Sie in Echtzeit Aktionen aus Standortsignalen ausführen, wann und wo sie wichtig sind. Der richtige Kontext bietet eine umfassendere Interaktion mit Mobilgeräten.
+Dadurch können Sie Aktionen aus Standortsignalen in Echtzeit ausführen, wann und wo es wichtig ist. Der richtige Kontext bietet eine umfassendere Interaktion mit Mobilgeräten.
 
-Die folgenden Möglichkeiten stehen Ihnen zur Verwendung von Orten zur Verfügung:
+Im Folgenden finden Sie einige Möglichkeiten zur Verwendung von Places:
 
-* Senden Sie eine Benachrichtigung in Echtzeit, wenn jemand einen POI eingibt, *&quot;Hey...Willkommen im Stadion.&quot;*
-* Analysieren Sie den Fußverkehr Ihrer eigenen Läden im Vergleich zu Ihren Konkurrent-Läden.
-* Segmentieren Sie eine Audience nach dem Offlineverhalten, indem Sie Audiencen-Profil mit Standortkontext verwenden.
-* Zielgruppe eines Benutzers mit einem Erlebnis im Geschäft, falls relevant.
+* Senden Sie eine Echtzeitbenachrichtigung, wenn ein Benutzer einen POI aufruft. *&quot;Hey.Willkommen im Stadion.&quot;*
+* Analysieren Sie den Fußverkehr Ihrer eigenen Stores im Vergleich zu Ihren Konkurrenzgeschäften.
+* Segmentieren einer Zielgruppe basierend auf dem Offline-Verhalten durch Verwendung von Zielgruppenprofilen mit Standortkontext.
+* Targeting eines Benutzers mit einem In-Store-Erlebnis, falls relevant.
 
-## Platziert Dienstkomponenten
+## Places Service-Komponenten
 
-Der Orte-Dienst umfasst die folgenden Komponenten:
+Places Service umfasst die folgenden Komponenten:
 
 * **Webdienst**
 
-   Sie können POIs mithilfe der REST-APIs für Orte erstellen und verwalten. Weitere Informationen zu den REST-APIs finden Sie unter [Bibliotheken verwalten](/help/web-service-api/api-usage/manage-libraries/manage-libraries.md) und [POIs verwalten](/help/web-service-api/api-usage/manage-pois/manage-pois.md).
+   Sie können POIs mithilfe der Places REST APIs erstellen und verwalten. Weitere Informationen zu den REST-APIs finden Sie unter [Bibliotheken verwalten](/help/web-service-api/api-usage/manage-libraries/manage-libraries.md) und [POIs verwalten](/help/web-service-api/api-usage/manage-pois/manage-pois.md).
 
 * **POI-Verwaltungsoberfläche**
 
-   Visualisieren Sie POIs auf einer Karte, um den räumlichen Kontext zu verstehen und POIs und ihre benutzerspezifischen Metadaten hinzuzufügen/zu bearbeiten.
+   Visualisieren Sie POIs auf einer Karte, um den räumlichen Kontext zu verstehen und POIs und ihre benutzerdefinierten Metadaten hinzuzufügen/zu bearbeiten.
 
 * **Places-Erweiterung**
 
-   Die API-Schnittstelle für mehrere Plattformen, um den Standortkontext in Ihre mobilen Apps zu integrieren. Weitere Informationen zu den SDKs finden Sie unter [Plates extension](/help/places-ext-aep-sdks/places-extension/places-extension.md).
+   Die mobile API-Schnittstelle für mehrere Plattformen zur Integration des Standortkontexts in Ihre mobilen Apps. Weitere Informationen zu den SDKs finden Sie unter [Places-Erweiterung](/help/places-ext-aep-sdks/places-extension/places-extension.md).
 
-* **Regeln starten**
+* **Launch-Regeln**
 
-   Die geo-intelligenten Startregeln, mit denen Sie Aktionen mit Ein- und Ausstiegs-Ereignissen Trigger haben. Die Regeln ermöglichen es Ihnen auch, Geo-Attribute unter Bedingungen zu verwenden, um das Erlebnis zu personalisieren.
+   Die geo-intelligenten Launch-Regeln, mit denen Sie Aktionen mit Ein- und Ausstiegsereignissen Trigger haben. Die Regeln ermöglichen Ihnen auch die Verwendung von Geo-Attributen in Bedingungen zur Personalisierung des Erlebnisses.
 
-* **Platzierungsmonitor-Erweiterung**
+* **Places Monitor-Erweiterung**
 
-   Das mobile Multi-Plattform-SDK, das in Ihre mobile App eingebettet werden kann, um automatisch die Standortänderungen und Trigger Places-Regeln Ihres Benutzers zu überwachen. Weitere Informationen finden Sie unter [Plates Monitor extension](/help/places-ext-aep-sdks/places-monitor-extension/places-monitor-extension.md).
+   Das mobile SDK für mehrere Plattformen, das in Ihre mobile App eingebettet werden kann, um automatisch die Standortänderungen und Trigger Places-Regeln Ihres Benutzers zu überwachen. Weitere Informationen finden Sie unter [Places Monitor-Erweiterung](/help/places-ext-aep-sdks/places-monitor-extension/places-monitor-extension.md).
 
 ## Terminologie
 
-Im Folgenden finden Sie einige allgemeine Begriffe, die in dieser Dokumentation verwendet werden:
+Im Folgenden finden Sie einige häufig verwendete Begriffe, die in dieser Dokumentation verwendet werden:
 
-* Ein **POI (Point of Interest)** ist ein Geo-Ort, der für Ihr Unternehmen von Interesse ist.
+* A **POI** ist ein Geostandort, der für Ihre Organisation von Interesse ist.
 
    Sie können POIs mit Attributen wie Namen, Radius, Adresse, Kategorie und Metadaten-Tags definieren.
 
-* Ein **geofence** ist ein Typ von POI.
+* A **Geofence** ist eine Art POI.
 
-   Dieser POI-Typ ist eine virtuelle geografische Grenze, die durch Breiten- und Längengradkoordinaten definiert wird.
+   Dieser POI-Typ ist eine virtuelle geografische Grenze, die durch Längen- und Breitenkoordinaten definiert wird.
 
-* Ein **Beacon** ist ein Typ von POI.
+* A **Beacon** ist eine Art POI.
 
-   Dieser POI-Typ ist ein physisches Gerät, das einen Standort durch die Ausgabe eines Bluetooth-Signals mit niedriger Leistung darstellt. Beacons-Unterstützung wird in einer zukünftigen Version angeboten.
+   Dieser POI-Typ ist ein physisches Gerät, das einen Standort darstellt, indem ein Bluetooth-Signal mit geringer Leistung ausgegeben wird. Unterstützung für Beacons wird in einer zukünftigen Version verfügbar sein.
 
 * Eine **Bibliothek** ist eine Sammlung von POIs, die gruppiert sind, um Regeln einfach an mehrere statt nur an einen POI anzuhängen.
 
-* Eine **extension** ist die Experience Platform Launch-Erweiterung, die zum Integrieren des Places SDK in Ihre mobilen Apps erforderlich ist.
+* Ein **Erweiterung** ist die Experience Platform Launch-Erweiterung, die zur Integration des Places SDK in Ihre mobilen Apps erforderlich ist.
 
-   Die mit den anderen mobilen SDKs verwendete Erweiterung, um Ihren Erlebnissen Ortskontext hinzuzufügen.
+   Die Erweiterung, die mit den anderen mobilen SDKs verwendet wird, um Ihren Erlebnissen Ortskontext hinzuzufügen.
 
 * Eine **Organisation** ist die Adobe-Einheit, die Ihr Unternehmen in der Adobe Experience Cloud identifiziert.
 
-   Normalerweise ist ein Unternehmen Ihr Name für die Firma. Eine Firma kann jedoch über mehr als eine Organisation verfügen. Der Organisationsadministrator kann Gruppen und Benutzer konfigurieren und die Single Sign-On-Funktion konfigurieren.
+   Normalerweise ist eine Organisation Ihr Unternehmensname. Ein Unternehmen kann jedoch über mehrere Organisationen verfügen. Der Organisationsadministrator kann Gruppen und Benutzer konfigurieren und die Single Sign-on-Funktion konfigurieren.
 
 * Die **orgID** ist die ID für Ihr Unternehmen auf der gesamten Adobe Experience Platform.
 
-   Weitere Informationen finden Sie unter [Suchen Ihrer orgID](https://forums.adobe.com/thread/2339895).
+   Weitere Informationen finden Sie unter [Suchen Ihrer Organisations-ID](https://forums.adobe.com/thread/2339895).
 
-* Der Dienst **Experience Cloud-ID** stellt eine universelle, beständige ID bereit, die Ihre Besucher in allen Lösungen des Experience Cloud identifiziert.
+* Die **Experience Cloud-ID** -Dienst bietet eine universelle, beständige ID zum Identifizieren Ihrer Besucher über alle Lösungen des Experience Cloud hinweg.
 
    Weitere Informationen finden Sie unter [Übersicht](https://docs.adobe.com/content/help/de-DE/id-service/using/intro/overview.html).
