@@ -1,73 +1,72 @@
 ---
 title: Push-Benachrichtigungen mit dem Places-Dienst
-description: Dieser Abschnitt enthält Informationen zur Verwendung des Orts-Dienstes mit Push-Benachrichtigungen in Campaign Standard.
-translation-type: tm+mt
-source-git-commit: fd469358845e14c47a58b40bb18c9144828a8996
+description: Dieser Abschnitt enthält Informationen zur Verwendung des Places-Dienstes mit Push-Benachrichtigungen in Campaign Standard.
+exl-id: 4b50f552-deb8-49cd-9221-fbbf33aaa5f9
+source-git-commit: 010de286c25c1eeb989fb76e3c2adaa82ac9fd35
 workflow-type: tm+mt
-source-wordcount: '979'
+source-wordcount: '1005'
 ht-degree: 4%
 
 ---
 
+# Push-Benachrichtigungen mit dem Places-Dienst {#push-notifications}
 
-# Push-Benachrichtigungen mit Places-Dienst {#push-notifications}
-
-In diesem Abschnitt erfahren Sie, wie Sie historische Geo-Positionsinformationen zur Zielgruppe von Push-Benachrichtigungen verwenden, die über Adobe Campaign Standard bereitgestellt werden.
+In diesem Abschnitt erfahren Sie, wie Sie historische Geostandortinformationen für Push-Benachrichtigungen verwenden, die über Adobe Campaign Standard bereitgestellt werden.
 
 ## Voraussetzungen
 
-Führen Sie zuerst die folgenden Aufgaben durch:
+Führen Sie zunächst die folgenden Aufgaben aus:
 
-* Verwenden Sie eine Mobilanwendung, die mit dem Adobe Experience Platform Mobile SDK konfiguriert ist, einschließlich der Erweiterung [Adobe Campaign Standard](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-campaign-standard).
+* Sie müssen eine Mobile App mit dem Adobe Experience Platform Mobile SDK konfigurieren, einschließlich der Variablen [Adobe Campaign Standard-Erweiterung](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-campaign-standard).
 
-* Integrieren Sie das [Adobe Experience Platform Mobile SDK](https://aep-sdks.gitbook.io/docs/getting-started/get-the-sdk) in Ihre App.
-* hinzufügen Sie die [Adobe Campaign Standard Extension](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-campaign-standard) in Ihre Mobile App-Konfiguration ein.
+* Integrieren Sie die [Adobe Experience Platform Mobile SDK](https://aep-sdks.gitbook.io/docs/getting-started/get-the-sdk) in Ihre App ein.
+* Fügen Sie die [Adobe Campaign Standard-Erweiterung](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-campaign-standard) in Ihre App-Konfiguration.
 
-* [Erstellen Sie einen ](/help/poi-mgmt-ui/create-a-poi-ui.md) POI in der Verwaltungsoberfläche des Places-Dienstes.
+* [POI erstellen](/help/poi-mgmt-ui/create-a-poi-ui.md) in der Verwaltungsoberfläche für POI des Places-Dienstes.
 
-* Aktivieren und installieren Sie die Erweiterung [Orte](/help/places-ext-aep-sdks/places-extension/places-extension.md).
+* Aktivieren und Installieren der [Places-Erweiterung](/help/places-ext-aep-sdks/places-extension/places-extension.md).
 
 
-## Datenelemente in Experience Platform Launch erstellen
+## Erstellen von Datenelementen in Experience Platform Launch
 
-Nachdem Sie überprüft haben, ob die Erweiterungen &quot;Orte&quot;und &quot;Orte-Monitor&quot;in Ihrer Anwendung ordnungsgemäß funktionieren, müssen Sie Datenelemente in Experience Platform Launch erstellen. Mithilfe von Datenelementen können Sie die Informationen lesen, die von den Erweiterungen bereitgestellt wurden, die über den Mobile SDK-Ereignis-Hub gesendet werden, und als Alias fungieren, um Daten aus der Clientanwendung abzurufen. Um Daten aus den Platzierungs-Erweiterungen abzurufen und die Informationen zum Orte-Dienst an die Kampagne zu senden, müssen Sie einige Datenelemente erstellen.
+Nachdem Sie überprüft haben, ob die Places-Erweiterung und eine Region-Monitoring-Lösung ([Dokumentation zu CoreLocation](https://developer.apple.com/documentation/corelocation/monitoring_the_user_s_proximity_to_geographic_regions) für iOS oder [Dokumentation zur Android-Position](https://developer.android.com/training/location/geofencing)) in Ihrer Anwendung ordnungsgemäß funktionieren, müssen Sie Datenelemente in Experience Platform Launch erstellen. Datenelemente ermöglichen es Ihnen, die Informationen zu lesen, die von den Erweiterungen bereitgestellt wurden, die über den Mobile SDK-Ereignis-Hub gelangen, und als Alias zum Abrufen von Daten aus der Client-Anwendung zu fungieren. Um Daten aus den Places-Erweiterungen abzurufen und die Places-Dienst-Informationen an Campaign zu senden, müssen Sie einige Datenelemente erstellen.
 
 Erstellen eines Datenelements:
 
-1. Klicken Sie in der Mobileigenschaft Ihres Experience Platform Launchs auf die Registerkarte **[!UICONTROL Datenelemente]** und dann auf **[!UICONTROL Hinzufügen Datenelement]**.
-1. Wählen Sie in der Dropdown-Liste **[!UICONTROL Extension]** **[!UICONTROL Places Service]**.
-1. Wählen Sie in der Dropdown-Liste **[!UICONTROL Datenelementtyp]** **[!UICONTROL Name]**.
-1. Im rechten Fensterbereich können Sie **[!UICONTROL Aktuelle POI]** auswählen, um den Namen des POI abzurufen, in dem sich der Benutzer derzeit befindet.
+1. Klicken Sie in der Eigenschaft für Ihr Experience Platform Launch-Mobilgerät auf die **[!UICONTROL Datenelemente]** Registerkarte und klicken Sie auf **[!UICONTROL Datenelement hinzufügen]**.
+1. Im **[!UICONTROL Erweiterung]** Dropdown-Liste auswählen **[!UICONTROL Places Service]**.
+1. Aus dem **[!UICONTROL Datenelementtyp]** Dropdown-Liste auswählen **[!UICONTROL Name]**.
+1. Im rechten Seitenbereich können Sie **[!UICONTROL Aktueller POI]** , der den Namen des POI abruft, an dem sich der Benutzer derzeit befindet.
 
-   **[!UICONTROL &quot;Letzte]** Eingabe&quot;ruft den Namen des POI ab, das der Benutzer zuletzt eingegeben hat, und &quot; **[!UICONTROL Letzte]** Ausstiege&quot;gibt den Namen des POI an, das der Benutzer zuletzt verlassen hat. In diesem Beispiel haben wir **[!UICONTROL Letzte Eingabe]** ausgewählt und einen Namen für das Datenelement eingegeben, z. B. **[!UICONTROL Letzte Eingabe POI-Name]** und auf **[!UICONTROL Speichern]** geklickt.
+   **[!UICONTROL Zuletzt eingegeben]** ruft den Namen des POI ab, den der Benutzer zuletzt eingegeben hat, und **[!UICONTROL Zuletzt beendet]** gibt den Namen des POI an, den der Benutzer zuletzt verlassen hat. In diesem Beispiel haben wir **[!UICONTROL Zuletzt eingegeben]** und gab einen Namen für das Datenelement ein, z. B. **[!UICONTROL Letzter eingegebener POI-Name]** und geklickt **[!UICONTROL Speichern]**.
 
    ![&quot;Push-Nachrichten in Campaign Standard&quot;](/help/assets/ACS_Push1.png)
 
-1. Wiederholen Sie die Schritte 1-4 oben und erstellen Sie Datenelemente für *Zuletzt eingegebene POI-Breitengrad*, *Letzte eingegebene POI-Längengrad* und *Letzter eingegebener POI-Radius*.
+1. Wiederholen Sie die Schritte 1 bis 4 und erstellen Sie Datenelemente für *Letzter eingegebener POI-Breitengrad*, *Letzte eingegebene POI-Längengrad* und *Letzter eingegebener POI-Radius*.
 
-Achten Sie neben den Datenelementen für den Orte-Dienst darauf, dass Sie Mobile-Core-Datenelemente für *App-ID* und *Experience Cloud-ID* erstellen.
+Stellen Sie neben den Datenelementen für den Places-Dienst sicher, dass Sie Mobile Core-Datenelemente für *App-ID* und *Experience Cloud-ID*.
 
-## Regel zum Senden von Ortsdaten an Adobe Campaign Standard erstellen
+## Erstellen einer Regel zum Senden von Standortdaten an Adobe Campaign Standard
 
-Mit Regeln in Experience Platform Launch können Sie komplexe Workflows mit mehreren Lösungen erstellen, die auf Ereignis-Triggern basieren. Mit Regeln können Sie neue Regeln erstellen oder vorhandene ändern und die Updates dynamisch für Ihre mobilen Anwendungen bereitstellen. Im folgenden Beispiel wird die Regel ausgelöst, wenn ein Benutzer einen Geofencing-POI aufruft. Nachdem die Regel ausgelöst wurde, wird ein Update an Campaign Standard gesendet, um einen Eintrag für einen bestimmten POI für einen bestimmten Benutzer basierend auf der Experience Cloud-ID aufzuzeichnen.
+Mit Regeln in Experience Platform Launch können Sie komplexe, lösungsübergreifende Workflows erstellen, die auf Ereignis-Triggern basieren. Mit Regeln können Sie neue Regeln erstellen oder vorhandene ändern und die Aktualisierungen dynamisch für Ihre Mobile Apps bereitstellen. Im folgenden Beispiel wird die Regel ausgelöst, wenn ein Benutzer einen geo-fencing-POI betritt. Nachdem die Regel ausgelöst wurde, wird eine Aktualisierung an den Campaign Standard gesendet, um einen Eintrag für einen bestimmten Benutzer basierend auf der Experience Cloud-ID an einen bestimmten POI aufzuzeichnen.
 
-1. Klicken Sie in der Eigenschaft mobile Ihres Experience Platform Launchs auf der Registerkarte **[!UICONTROL Rules]** auf **[!UICONTROL Hinzufügen Regel]**.
-1. Klicken Sie unter **[!UICONTROL Ereignis]** auf **[!UICONTROL +]** und wählen Sie **[!UICONTROL Ortsdienst]** als Erweiterung.
-1. Wählen Sie für den Ereignistyp **** **[!UICONTROL POI]** eingeben.
-1. Benennen Sie die Regel, z. B. **Benutzer eingegeben POI**.
+1. In der Eigenschaft für Mobilgeräte Ihres Experience Platform Launchs auf der **[!UICONTROL Regeln]** Registerkarte, klicken Sie auf **[!UICONTROL Regel hinzufügen]**.
+1. Unter dem **[!UICONTROL Veranstaltungen]** Abschnitt, klicken Sie auf **[!UICONTROL +]** und wählen Sie **[!UICONTROL Places Service]** als Erweiterung.
+1. Für **[!UICONTROL Ereignistyp]** auswählen **[!UICONTROL POI eingeben]**.
+1. Benennen Sie die Regel, z. B. **Benutzer hat POI eingegeben**.
 1. Klicken Sie auf **[!UICONTROL Änderungen beibehalten]**.
-1. Lassen Sie den Abschnitt **[!UICONTROL Bedingungen]** leer.
+1. Lassen Sie die **[!UICONTROL Bedingungen]** leer sein.
 
-   In diesem Abschnitt können Sie filtern oder Einschränkungen festlegen, wann diese Regel ausgelöst werden soll.
+   In diesem Abschnitt können Sie filtern oder Einschränkungen dafür platzieren, wann diese Regel ausgelöst werden soll.
 
-1. Klicken Sie unter dem Abschnitt **[!UICONTROL Aktionen]** auf **[!UICONTROL +]**.
-1. Wählen Sie in der Dropdown-Liste **[!UICONTROL Extension]** **[!UICONTROL Mobile Core]** und in der Dropdown-Liste **[!UICONTROL Aktionstyp]** **[!UICONTROL Postback senden]**.
-1. Unter **[!UICONTROL URL]** müssen Sie den Endpunkt &quot;Campaign Standard-Speicherorte&quot;erstellen.
+1. Unter dem **[!UICONTROL Aktionen]** Abschnitt, klicken Sie auf **[!UICONTROL +]**.
+1. Im **[!UICONTROL Erweiterung]** Dropdown-Liste auswählen **[!UICONTROL Mobile Core]** und im **[!UICONTROL Aktionstyp]** Dropdown-Liste auswählen **[!UICONTROL Postback senden]**.
+1. In **[!UICONTROL URL]** müssen Sie den Endpunkt Ihrer Campaign Standard-Standorte erstellen.
 
-   Die URL sollte ähnlich wie `https:///rest/head/mobileAppV5//locations/` aussehen.
-Stellen Sie sicher, dass Sie die korrekten Datenelemente verwenden, die Sie zuvor für Ihren Kampagnen-Server und Ihren pKey erstellt haben.
+   Die URL sollte in etwa wie folgt aussehen: `https:///rest/head/mobileAppV5//locations/`.
+Stellen Sie sicher, dass Sie die korrekten Datenelemente verwenden, die Sie zuvor für Ihren Campaign-Server und Ihren pKey erstellt haben.
 
-1. Klicken Sie auf das Feld, um einen Beitragstext hinzuzufügen und senden Sie Folgendes:
+1. Klicken Sie auf das Kästchen, um einen POST-Hauptteil hinzuzufügen und Folgendes zu senden:
 
    ```
    {
@@ -88,40 +87,40 @@ Stellen Sie sicher, dass Sie die korrekten Datenelemente verwenden, die Sie zuvo
 
 >[!IMPORTANT]
 >
->* Es kann hilfreich sein, einen Slack-Web-Haken als zusätzliche Aktion einzurichten, um zu überprüfen, ob Einsendungen ausgelöst werden und ob die richtigen Daten erfasst werden.
->* Denken Sie daran, die letzten Änderungen an Ihrer App zu veröffentlichen, um sicherzustellen, dass die Regel und alle Ihre Datenelemente im Rahmen Ihrer Konfiguration bereitgestellt werden. Starten Sie nach der Veröffentlichung die mobile Anwendung erneut, um die neuesten Konfigurationsaktualisierungen zu erhalten.
+>* Es kann hilfreich sein, einen Slack-Web-Hook als zusätzliche Aktion einzurichten, um zu überprüfen, ob Einträge ausgelöst werden und die richtigen Daten erfasst werden.
+>* Denken Sie daran, die letzten Änderungen an Ihrer App zu veröffentlichen, um sicherzustellen, dass die Regel und alle Ihre Datenelemente im Rahmen Ihrer Konfiguration bereitgestellt werden. Starten Sie nach der Veröffentlichung die Mobile App erneut, um die neuesten Konfigurationsaktualisierungen zu erhalten.
 
 
-## Standortdaten zur Zielgruppe von Kampagnen-Nachrichten verwenden
+## Verwenden von Standortdaten für Campaign-Nachrichten
 
-Nachdem wir nun Ortsdaten in Kampagne ausgefüllt haben, können wir POIs als Segmentwerkzeug für Audiencen verwenden.
+Nachdem wir nun Standortdaten in Campaign ausgefüllt haben, können wir POIs als Tool für Zielgruppensegmente verwenden.
 
 1. Klicken Sie in Ihrer Adobe Campaign Standard-Instanz auf **[!UICONTROL Push-Benachrichtigung erstellen]**.
-1. Wählen Sie für den Typ der Push-Benachrichtigung **[!UICONTROL Push-an-Kampagne-Profil]**.
-1. Klicken Sie auf **[!UICONTROL Weiter]** und geben Sie die allgemeinen Details ein.
-1. Klicken Sie im Bildschirm &quot;Audience&quot;auf **[!UICONTROL Anzahl]**, um festzustellen, wie viele Benutzer die Push-Benachrichtigung gesendet werden soll.
+1. Wählen Sie für den Push-Benachrichtigungstyp die Option **[!UICONTROL Push-Benachrichtigungen an Campaign-Profile senden]**.
+1. Klicken **[!UICONTROL Nächste]** und geben Sie die allgemeinen Details ein.
+1. Klicken Sie im Bildschirm &quot;Zielgruppe&quot;auf **[!UICONTROL Count]** , um zu bestimmen, wie viele geschätzte Benutzer die Push-Benachrichtigung senden wird.
 
    >[!TIP]
    >
-   >In diesem Beispiel ist der Zähler 3, da es drei installierte Geräte gibt, auf denen die Anwendung getestet wird.
+   >In diesem Beispiel beträgt die Anzahl 3, da es drei installierte Geräte gibt, auf denen die Anwendung getestet wird.
 
-1. Erweitern Sie im linken Bereich die Registerkarte **[!UICONTROL Profil]** und ziehen Sie den Filter **[!UICONTROL POI-Position]** in den Hauptbereich.
-1. Geben Sie im Fenster &quot;POI-Filter&quot;den exakten Namen des POI ein, der Zielgruppe werden soll.
+1. Erweitern Sie im linken Bereich den **[!UICONTROL Profil]** und ziehen Sie die **[!UICONTROL POI-Position]** in den Hauptbereich filtern.
+1. Geben Sie im Fenster POI-Filter den genauen Namen des POI ein, der als Ziel ausgewählt werden soll.
 
    >[!TIP]
    >
-   >Sie können zusätzliche Auswahlen vornehmen, um den Zeitraum seit dem vorherigen Besuch des Benutzers an diesem POI zu bestimmen.
+   >Sie können zusätzliche Auswahlen vornehmen, um den Zeitraum seit dem letzten Besuch des Benutzers an diesem POI zu bestimmen.
 
-   ![&quot;Push Messaging 2 in ACS&quot;](/help/assets/ACS_push2.png)
+   ![&quot;Push messaging 2 in ACS&quot;](/help/assets/ACS_push2.png)
 
-1. Wählen Sie **[!UICONTROL Bestätigen]** aus.
-1. Führen Sie die Zählung erneut oben aus, um die Größenänderung Ihrer Audience zu sehen.
+1. Klicken Sie auf **[!UICONTROL Bestätigen]**.
+1. Führen Sie die Zählung oben erneut aus, um die Änderung der Zielgruppengröße anzuzeigen.
 
-   Wenn Ihre Zähleraktualisierung nicht angezeigt wird, haben Sie möglicherweise einen POI-Namen eingegeben, für den keine Geräte einen Eintrag ausgelöst haben. Der Slack-Web-Haken wird in dieser Situation wertvoll, da Sie eine Liste der POI-Einträge von verschiedenen Testgeräten sehen können.
+   Wenn Ihre Anzahl nicht aktualisiert wird, haben Sie möglicherweise einen POI-Namen eingegeben, für den keine Geräte einen Eintrag ausgelöst haben. In dieser Situation wird der Slack-Web-Hook nützlich, da Sie eine Liste mit POI-Einträgen von verschiedenen Testgeräten sehen können.
 
-1. Sie können weitere POI-Filter herausziehen, um mehrere POIs in Ihre Nachricht einzuschließen.
+1. Sie können zusätzliche POI-Standortfilter herausziehen, um mehrere POIs in Ihre Nachricht einzuschließen.
 1. Klicken Sie auf **[!UICONTROL Weiter]**, um die Erstellung der Push-Benachrichtigung für die Bereitstellung abzuschließen.
 
-   ![&quot;Push Messaging 3 in ACS&quot;](/help/assets/ACS_push3.png)
+   ![&quot;Push messaging 3 in ACS&quot;](/help/assets/ACS_push3.png)
 
-Die Verwendung des Places Service mit Adobe Campaign Standard bietet Ihnen ein leistungsfähiges Tool, um Ihre Nachrichten zu segmentieren und an Benutzer basierend auf Geo-Zaun-Einstiegen und -Ausstiegen Zielgruppe. Diese Integration hilft Ihnen bei der Erstellung personalisierter und kontextueller Anwendungsfälle.
+Die Verwendung von Places Service mit Adobe Campaign Standard bietet Ihnen ein leistungsstarkes Tool, um Ihre Nachrichten basierend auf Geofeneinstiegen und -ausstiegen zu segmentieren und an Benutzer auszurichten. Diese Integration hilft Ihnen bei der Erstellung personalisierterer und kontextbezogener Anwendungsfälle.

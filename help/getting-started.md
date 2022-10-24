@@ -1,18 +1,17 @@
 ---
 title: Erste Schritte
-description: Erste Schritte mit dem Orte-Dienst.
-translation-type: tm+mt
-source-git-commit: 45a6af8396c24eda2c7e0d8966684935c45fe966
+description: Erste Schritte mit dem Places-Dienst.
+exl-id: 1f0ac226-4993-495b-9d07-1e0ada7f19a7
+source-git-commit: 010de286c25c1eeb989fb76e3c2adaa82ac9fd35
 workflow-type: tm+mt
-source-wordcount: '175'
+source-wordcount: '219'
 ht-degree: 3%
 
 ---
 
-
 # Erste Schritte {#getting-started}
 
-Im Folgenden finden Sie ein hilfreiches Video, um einen Überblick über Places Services zu erhalten:
+Hier finden Sie ein hilfreiches Video, um einen Überblick über Places Services zu erhalten:
 
 <!--
 Test of different youtube link for exl
@@ -20,35 +19,42 @@ Test of different youtube link for exl
 
 >[!VIDEO](https://video.tv.adobe.com/v/41647)
 
-## Verwenden des Orte-Dienstes
+## Verwenden des Places-Dienstes
 
 Führen Sie die folgenden Aufgaben aus, um den Places-Dienst zu verwenden:
 
-### 1. Stellen Sie sicher, dass Ihr Benutzer für die Verwendung des Orte-Dienstes freigeschaltet ist.
+### 1. Stellen Sie sicher, dass Ihr Benutzer für die Verwendung von Places Service bereitgestellt ist.
 
-Der Produktkontext für den Places Service steht für alle Experience Cloud-Organisationen zur Verfügung.
+Der Places Service-Produktkontext ist für alle Experience Cloud-Unternehmen verfügbar.
 
-* Vergewissern Sie sich, dass Sie als Benutzer unter den Kontexten &quot;Orte-Dienst&quot;und &quot;Experience Platform Launch&quot;in der Admin Console aufgeführt sind.
+* Stellen Sie sicher, dass Sie als Benutzer unter den Produktkontexten &quot;Places Service&quot;und &quot;Experience Platform Launch&quot;in der Admin Console aufgeführt sind.
 
-   Weitere Informationen finden Sie unter *Hinzufügen eines Benutzers zum Experience Platform Launch- und Ortsdienst* in [Häufig gestellte Fragen](/help/places-gain-access.md).
+   Weitere Informationen finden Sie unter *Hinzufügen eines Benutzers zu Experience Platform Launch und Places Service* in [Häufig gestellte Fragen](/help/places-gain-access.md).
 
 
-### 2. Erstellen von POIs
+### 2. POIs erstellen
 
-POI (Points of Interest, POI) sind Geo-Zäune, die Sie für Ihre Organisationen erstellen. Sie können POIs auf eine der folgenden Arten erstellen:
+POI (Points of Interest, POI) sind Geo-Fences, die Sie für Ihre Organisationen erstellen. Sie können POIs auf eine der folgenden Arten erstellen:
 
 * Verwenden der Benutzeroberfläche des Places-Dienstes.
 
-   Weitere Informationen finden Sie unter [Übersicht über den Ortsdienst](/help/poi-mgmt-ui/poi-mgmt-ui-overview.md).
+   Weitere Informationen finden Sie unter [Places Service - Übersicht](/help/poi-mgmt-ui/poi-mgmt-ui-overview.md).
 
 * Verwenden der APIs des Places-Webdiensts.
 
-   Weitere Informationen finden Sie unter [Web Service API](/help/web-service-api/places-web-services.md).
+   Weitere Informationen finden Sie unter [Web Service-API](/help/web-service-api/places-web-services.md).
 
 
-### 3. Die Erweiterungen &quot;Orte&quot;und &quot;Orts Monitor&quot;konfigurieren
+### 3. Konfigurieren der Places-Erweiterung
 
-Weitere Informationen zum Konfigurieren der Plates-Erweiterung und der Monitor-Erweiterung finden Sie in den folgenden Informationen:
+Weitere Informationen zum Konfigurieren der Places-Erweiterung finden Sie unter den folgenden Informationen:
 
 * [Places-Erweiterung](/help/places-ext-aep-sdks/places-extension/places-extension.md)
-* [Platzierungsmonitor-Erweiterung](/help/places-ext-aep-sdks/places-monitor-extension/places-monitor-extension.md)
+
+### 4. (Optional) Implementieren einer Region-Monitoring-Lösung
+
+Wenn Sie eine aktive Regionsüberwachung planen, müssen Sie diese direkt mit dem Betriebssystem implementieren. Weitere Informationen finden Sie in den folgenden Dokumenten:
+
+* iOS - [Dokumentation zu CoreLocation](https://developer.apple.com/documentation/corelocation/monitoring_the_user_s_proximity_to_geographic_regions)
+
+* Android - [Standortdokumentation](https://developer.android.com/training/location/geofencing)

@@ -1,62 +1,60 @@
 ---
-title: Verwenden des Orte-Dienstes mit Mobile Services für Messaging
-description: Dieser Abschnitt zeigt Ihnen, wie Sie den Places-Dienst mit Mobile Services für Nachrichten verwenden.
-translation-type: tm+mt
-source-git-commit: 5a21e734c0ef56c815389a9f08b445bedaae557a
+title: Verwenden des Places-Dienstes mit Mobile Services für Messaging
+description: In diesem Abschnitt erfahren Sie, wie Sie den Places-Dienst mit Mobile Services für Messaging verwenden.
+exl-id: dfa6b8bb-6bf2-44eb-8bfc-87294807ec3b
+source-git-commit: 010de286c25c1eeb989fb76e3c2adaa82ac9fd35
 workflow-type: tm+mt
-source-wordcount: '354'
+source-wordcount: '346'
 ht-degree: 1%
 
 ---
 
-
 # Adobe Mobile Services {#places-mobile-services}
 
-Bevor Sie die Mobile Services-Erweiterung für Nachrichten verwenden können, überprüfen Sie die folgenden Voraussetzungen:
+Bevor Sie die Mobile Services-Erweiterung für Messaging verwenden können, überprüfen Sie die folgenden Voraussetzungen:
 
-* Interessensgebiete wurden im Ortsdienst erstellt. Weitere Informationen finden Sie unter [Einen POI erstellen](/help/poi-mgmt-ui/create-a-poi-ui.md).
+* In Places Service wurden Zielpunkte erstellt. Weitere Informationen finden Sie unter [POI erstellen](/help/poi-mgmt-ui/create-a-poi-ui.md).
 
    >[!IMPORTANT]
    >
-   >Der Places Service umfasst eine neue und verbesserte POI-Datenbank für Ihr Unternehmen, die außerhalb der alten Mobile Services-Benutzeroberfläche vorhanden ist. POIs, die sich im Mobile Service *Verwaltung von Orten*-Seitennavigation befinden, funktionieren nur für Version 4 des SDK.
+   >Der Places Service enthält eine neue und verbesserte POI-Datenbank für Ihre Organisation, die außerhalb der veralteten Mobile Services-Benutzeroberfläche existiert. POIs, die sich im Mobile Service befinden *Verwalten von Orten* Die Seitennavigation funktioniert nur für Version 4 des SDK.
 
-* Im Folgenden finden Sie die Seite *Orte verwalten* POI-Verwaltung in der alten Mobile Services-Benutzeroberfläche für ältere Versionen des SDK:
+* Hier finden Sie die *Orte verwalten* Seite zur POI-Verwaltung in der alten Mobile Services-Benutzeroberfläche für ältere Versionen des SDK:
 
    ![Alte Benutzeroberfläche](/help/assets/legacy-location-v4-ui.png)
 
-* Die Benutzeroberfläche des Orte-Dienstes lautet wie folgt:
+* Hier finden Sie die Benutzeroberfläche des Places-Dienstes:
 
-   ![Places Service POI Management-Benutzeroberfläche](/help/assets/places-ui.png)
+   ![Places Service-POI-Management-Benutzeroberfläche](/help/assets/places-ui.png)
 
-* Das ACP SDK ist ordnungsgemäß mit den Erweiterungen &quot;Places Service&quot;und/oder &quot;Places Monitor&quot;konfiguriert.
+* Das AKP-SDK ist ordnungsgemäß mit der Places-Erweiterung konfiguriert.
 
-   Das bedeutet, dass Daten als Ereignisse und/oder Bedingungen in der Experience Platform Launch Rules Engine für Ihre mobile App verfügbar sind. Weitere Informationen finden Sie unter [Platzierungserweiterung](/help/places-ext-aep-sdks/places-extension/places-extension.md) oder [Platzierungsmonitor-Erweiterung](/help/places-ext-aep-sdks/places-monitor-extension/using-places-monitor-extension.md).
+   Das bedeutet, dass Daten als Ereignisse und/oder Bedingungen in der Experience Platform Launch-Regel-Engine für Ihre mobile App verfügbar sind. Weitere Informationen finden Sie unter [Places-Erweiterung](/help/places-ext-aep-sdks/places-extension/places-extension.md).
 
-* Machen Sie sich mit dem Erstellen und Veröffentlichen von Experience Platform Launch-Regeln für das ACP SDK in Ihrer mobilen App vertraut.
+* Machen Sie sich mit dem Erstellen und Veröffentlichen von Experience Platform Launch-Regeln für das AKP-SDK in Ihrer mobilen App vertraut.
 
-   Weitere Informationen finden Sie unter [Rules Engine](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/mobile-core/rules-engine).
+   Weitere Informationen finden Sie unter [Regel-Engine](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/mobile-core/rules-engine).
 
-* Experience Platform Launch-Datenelemente werden aus den Plates-Erweiterungsdaten erstellt, die in der Rules-Engine verwendet werden.
+* Experience Platform Launch-Datenelemente werden aus den Places-Erweiterungsdaten erstellt, die in der Regel-Engine verwendet werden.
 
    Weitere Informationen finden Sie unter [Datenelemente](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/mobile-core/rules-engine#data-elements).
 
-## Berichterstellung 
+## Reporting
 
-Bevor Sie Berichte verwenden können, müssen Sie die folgenden Voraussetzungen erfüllen:
+Bevor Sie die Berichterstellung verwenden können, müssen Sie die folgenden Voraussetzungen erfüllen:
 
-* Senden von Ortsdaten erfolgreich an die Adobe Analytics Report Suite
+* Places Service-Daten erfolgreich an die Adobe Analytics Report Suite senden.
 
-   Weitere Informationen finden Sie unter [Orte-Dienst mit Adobe Analytics](/help/use-places-with-other-solutions/places-adobe-analytics/use-places-adobe-analytics.md) verwenden.
+   Weitere Informationen finden Sie unter [Verwenden des Places-Dienstes mit Adobe Analytics](/help/use-places-with-other-solutions/places-adobe-analytics/use-places-adobe-analytics.md).
 
-* Machen Sie sich mit Mobile Services Berichte vertraut.
+* Machen Sie sich mit der Berichterstellung für Mobile Services vertraut.
 
    Weitere Informationen finden Sie unter [Berichte](https://docs.adobe.com/content/help/en/mobile-services/using/reports-ug/usage.html).
 
-## Visualisierung von Berichten
+## Berichtsvisualisierung
 
-Sie können Mobile Service-Berichte mit den an Adobe Analytics gesendeten Daten des Places Service ausführen. Im folgenden Beispiel werden Ereignis gesendet, wenn Benutzer Einträge in einem der POIs haben. In diesem Bericht wurde ein Filter des POI-Eintrags-Ereignisses über den vordefinierten Benutzerbericht hinzugefügt:
+Sie können Mobile Service-Berichte mit Places Service-Daten ausführen, die an Adobe Analytics gesendet werden. Im folgenden Beispiel werden Ereignisse gesendet, wenn Benutzer Einträge in einem der POIs haben. In diesem Bericht wurde ein Filter für das POI-Eintrittsereignis zum vordefinierten Benutzerbericht hinzugefügt:
 
 ![Berichtsvisualisierung](/help/assets/report-visualize.png)
 
-Zusätzliche Flexibilität bei der Visualisierung der Daten des Orte-Dienstes ist in den Adobe Analytics-Schnittstellen verfügbar.
-
+Zusätzliche Flexibilität bei der Visualisierung von Places Service-Daten ist über die Adobe Analytics-Schnittstellen verfügbar.

@@ -1,51 +1,30 @@
 ---
-title: SDK mit der Ortserweiterung konfigurieren
-description: 'Sie können das SDK mit der Platzierungserweiterung konfigurieren, um Standortbewusstsein in Ihrer mobilen App zu aktivieren. '
-translation-type: tm+mt
-source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
+title: Konfigurieren des SDK mit der Places-Erweiterung
+description: Sie können das SDK mit der Places-Erweiterung konfigurieren, um die Standorterkennung in Ihrer mobilen App zu aktivieren.
+source-git-commit: 010de286c25c1eeb989fb76e3c2adaa82ac9fd35
 workflow-type: tm+mt
-source-wordcount: '218'
-ht-degree: 9%
+source-wordcount: '123'
+ht-degree: 0%
 
 ---
 
 
-# SDK mit der Places-Erweiterung {#configure-sdk-places-extension} konfigurieren
+# SDK mit Places-Erweiterung konfigurieren {#configure-sdk-places-extension}
 
-Um die Ortung in Ihrer App zu aktivieren, konfigurieren Sie das SDK mit den Places-Erweiterungen und optional mit der Erweiterung „Places Monitor“. Weitere Informationen einschließlich SDK-Konfiguration finden Sie unter [Plates (Beta) Extension](/help/places-ext-aep-sdks/places-extension/places-extension.md).
+Um die Standorterkennung in Ihrer Mobile App zu aktivieren, konfigurieren Sie das SDK mit der Places-Erweiterung. Weitere Informationen einschließlich SDK-Konfiguration finden Sie unter [Places-Erweiterung](/help/places-ext-aep-sdks/places-extension/places-extension.md).
 
-## Konfigurieren der Platzierungserweiterung
+## Konfigurieren der Places-Erweiterung
 
-So konfigurieren Sie die Platzierungserweiterung:
+So konfigurieren Sie die Places-Erweiterung:
 
-1. Konfigurieren Sie die Platzierungserweiterung in Launch.
+1. Konfigurieren Sie die Erweiterung Places in Launch.
 
-   Weitere Informationen finden Sie unter *Konfigurieren der Platzierungserweiterung in Launch* in [Platzierungserweiterung](/help/places-ext-aep-sdks/places-extension/places-extension.md).
+   Weitere Informationen finden Sie unter *Konfigurieren der Places-Erweiterung in Launch* in [Places-Erweiterung](/help/places-ext-aep-sdks/places-extension/places-extension.md).
 
-1. hinzufügen Sie die Platzierungserweiterung zu Ihrer mobilen App.
+1. Fügen Sie die Places-Erweiterung zu Ihrer mobilen App hinzu.
 
-   Weitere Informationen finden Sie unter *Hinzufügen der Places-Erweiterung auf Ihre App* in [Platzierungserweiterung](/help/places-ext-aep-sdks/places-extension/places-extension.md).
+   Weitere Informationen finden Sie unter *Hinzufügen der Places-Erweiterung zu Ihrer App* in [Places-Erweiterung](/help/places-ext-aep-sdks/places-extension/places-extension.md).
 
-1. Registrieren Sie Orte mit der Erweiterung Mobile Core.
+1. Registrieren Sie Places mit der Mobile Core-Erweiterung.
 
-   Weitere Informationen finden Sie unter *Platzierungen mit dem Mobile Core* in [Platzierungserweiterung](/help/places-ext-aep-sdks/places-extension/places-extension.md) registrieren.
-
-## Konfigurieren der Platzierungsmonitor-Erweiterung
-
-Konfigurieren der Erweiterung &quot;Platzierungsmonitor&quot;beim Start:
-
-1. Konfigurieren Sie die Erweiterung &quot;Orts-Monitor&quot;beim Start.
-
-   Weitere Informationen finden Sie unter *Konfigurieren der Extension Places Monitoring in Launch*.
-
-1. hinzufügen Sie die Erweiterung &quot;Orts Monitor&quot;auf Ihre mobile App.
-
-   Weitere Informationen finden Sie unter *Hinzufügen der Erweiterung &quot;Orts Monitor&quot;auf Ihre App*.
-
-1. Registrieren Sie den Orts-Monitor mit der Erweiterung Mobile Core.
-
-   Weitere Informationen finden Sie unter Registrieren des *Platzierungsbildschirms mit dem Mobile Core*.
-
-1. Aktivieren Sie Standortaktualisierungen im Hintergrund.
-
-   Weitere Informationen finden Sie unter *Aktivieren von Ortsaktualisierungen im Hintergrund*.
+   Weitere Informationen finden Sie unter *Places mit Mobile Core registrieren* in [Places-Erweiterung](/help/places-ext-aep-sdks/places-extension/places-extension.md).
