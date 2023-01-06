@@ -1,6 +1,8 @@
 ---
-source-git-commit: acbe79b1a66cb8a439f3cb223d3006128aaca457
-translation-type: tm+mt
+source-git-commit: c79135bed83932095df42869017ed2cc20be6e22
+workflow-type: tm+mt
+source-wordcount: '294'
+ht-degree: 100%
 
 ---
 # Beitragen
@@ -15,7 +17,7 @@ Für dieses Projekt gilt der Adobe-[Verhaltenskodex](code-of-conduct.md). Durch 
 
 ## Dokumentation zum Mitarbeiter-Handbuch
 
-See the [Contributor Guide](https://docs.adobe.com/content/help/en/contributor/contributor-guide/introduction.html).
+Weiterführende Informationen finden Sie im [Mitarbeiter-Handbuch](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=de).
 
 ## Sie haben eine Frage?
 
@@ -27,7 +29,7 @@ Für alle Drittanbieterbeiträge zu diesem Projekt muss eine signierte Lizenzver
 
 ## Codeüberprüfungen
 
-Alle Übermittlungen sollten in Form von Pull-Anfragen eingehen und müssen von den Projektverantwortlichen geprüft werden. In der [GitHub-Dokumentation zu Pull-Anfragen](https://help.github.com/articles/about-pull-requests/)
+Alle Übermittlungen sollten in Form von Pull-Anfragen eingehen und müssen von den Projektverantwortlichen geprüft werden. In der [GitHub-Dokumentation zu Pull-Anfragen](https://help.github.com/de/articles/about-pull-requests/)
 finden Sie weitere Informationen zum Senden von Pull-Anfragen.
 
 <!--
@@ -41,4 +43,4 @@ Wir lieben Beiträge aus unserer Community. Wenn Sie den Schritt über die Rolle
 
 ## Sicherheitsprobleme
 
-Sicherheitsprobleme sollten in diesem Problemtracker nicht gemeldet werden. Reichen Sie [Probleme stattdessen bei unseren Sicherheitsexperten ein.](https://helpx.adobe.com/security/alertus.html)
+Sicherheitsprobleme sollten in diesem Problemtracker nicht gemeldet werden. Reichen Sie [Probleme stattdessen bei unseren Sicherheitsexperten ein.](https://helpx.adobe.com/de/security/alertus.html)
