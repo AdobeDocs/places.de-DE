@@ -1,19 +1,17 @@
 ---
 title: Bibliothek lesen
 description: Lesen Sie eine Bibliothek mithilfe der Places REST API.
-translation-type: tm+mt
-source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
+exl-id: c9c5a862-beab-42a9-8e40-abf93da592ea
+source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
 workflow-type: tm+mt
 source-wordcount: '45'
 ht-degree: 8%
 
 ---
 
+# Bibliothek lesen {#read-a-library}
 
-
-# Bibliothek {#read-a-library} lesen
-
-Eine GET, die die Details für eine Bibliothek zurückgibt.
+Eine GET-Methode, die die Details für eine Bibliothek zurückgibt.
 
 ## Anfrage
 
@@ -21,7 +19,7 @@ Eine GET, die die Details für eine Bibliothek zurückgibt.
 GET https://api-places.adobe.io/places/placesapi/v1/libraries/<LIBRARYID>
 ```
 
-## Header
+## Kopfzeilen
 
 ```text
 -H' Content-Type: application/json'  
@@ -92,5 +90,4 @@ curl -X GET 'https://api-places.adobe.io/places/placesapi/v1/libraries/<LIBRARYI
 
 >[!IMPORTANT]
 >
->Ersetzen Sie `<LIBRARYID>`, `<API KEY>`, `<TOKEN>` und `<ORGID>` durch tatsächliche Werte.
-
+>Ersetzen `<LIBRARYID>`, `<API KEY>`, `<TOKEN>`und `<ORGID>` mit tatsächlichen Werten.

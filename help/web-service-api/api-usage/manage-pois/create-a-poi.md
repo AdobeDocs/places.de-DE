@@ -1,18 +1,17 @@
 ---
-title: Erstellen eines POI
-description: Erstellen Sie einen POI mit den Places REST APIs.
-translation-type: tm+mt
-source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
+title: POI erstellen
+description: Erstellen Sie einen POI mithilfe der Places REST APIs.
+exl-id: 0f5b5b40-11f0-4122-b3d5-c3853a6e8ca5
+source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
 workflow-type: tm+mt
 source-wordcount: '47'
-ht-degree: 8%
+ht-degree: 10%
 
 ---
 
+# POI erstellen {#create-a-poi}
 
-# Erstellen eines POI {#create-a-poi}
-
-Eine POST, mit der Sie einen POI erstellen können.
+Eine POST-Methode, mit der Sie einen POI erstellen können.
 
 ## Anfrage
 
@@ -20,7 +19,7 @@ Eine POST, mit der Sie einen POI erstellen können.
 POST https://api-places.adobe.io/places/placesapi/v1/pois
 ```
 
-## Header
+## Kopfzeilen
 
 ```text
 -H' Content-Type: application/json'  
@@ -30,7 +29,7 @@ POST https://api-places.adobe.io/places/placesapi/v1/pois
 -H 'Accept-Language: en-US'
 ```
 
-## Body
+## Textkörper
 
 ```text
 {
@@ -97,4 +96,4 @@ curl -X POST 'https://api-places.adobe.io/places/placesapi/v1/pois' -H 'x-api-ke
 
 >[!IMPORTANT]
 >
->Denken Sie daran, `<API KEY>`, `<TOKEN>`, &#39;,&#39; und `<SINGLEPOIDATA>` durch tatsächliche Werte zu ersetzen.
+>Denken Sie daran, ersetzen `<API KEY>`, `<TOKEN>`, &#39;,&#39; und `<SINGLEPOIDATA>` mit tatsächlichen Werten.

@@ -1,28 +1,27 @@
 ---
-title: Platzierungs-API-Referenz
+title: Places-API-Referenz
 description: Informationen zu den API-Referenzen in Places.
-translation-type: tm+mt
-source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
+exl-id: ce1a113c-dee0-49df-8d2f-789ccc1c8322
+source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
 workflow-type: tm+mt
 source-wordcount: '583'
 ht-degree: 32%
 
 ---
 
+# Places-API-Referenz {#places-api-reference}
 
-# Platzierungs-API-Referenz {#places-api-reference}
+Im Folgenden finden Sie Informationen zu den API-Referenzen in der Places-Erweiterung:
 
-Im Folgenden finden Sie Informationen zu den API-Verweisen in der Places-Erweiterung:
+## Verarbeiten eines Region-Ereignisses
 
-## Bearbeiten eines Regions-Ereignisses
-
-Wenn ein Gerät eine der vordefinierten Orte-Dienst-Regionsgrenzen der App überschreitet, werden die Region und der Ereignistyp zur Verarbeitung an das SDK übergeben.
+Wenn ein Gerät eine der vordefinierten Places Service-Regionsgrenzen Ihrer App überschreitet, werden die Region und der Ereignistyp zur Verarbeitung an das SDK übergeben.
 
 ### ProcessGeofence (Android)
 
-Verarbeiten Sie ein `Geofence`-Regions-Ereignis für das bereitgestellte `transitionType`.
+Verarbeiten einer `Geofence` Region-Ereignis für die bereitgestellte `transitionType`.
 
-Übergeben Sie `transitionType` von `GeofencingEvent.getGeofenceTransition()`. Derzeit werden `Geofence.GEOFENCE_TRANSITION_ENTER` und `Geofence.GEOFENCE_TRANSITION_EXIT` unterstützt.
+Übergeben Sie die `transitionType` von `GeofencingEvent.getGeofenceTransition()`. Aktuell `Geofence.GEOFENCE_TRANSITION_ENTER` und `Geofence.GEOFENCE_TRANSITION_EXIT` werden unterstützt.
 
 **Syntax**
 
@@ -34,7 +33,7 @@ public static void processGeofence(final Geofence geofence, final int transition
 
 **Beispiel**
 
-Rufen Sie diese Methode in Ihrem `IntentService` auf, das für den Empfang von Android-Geofence-Ereignissen registriert ist.
+Rufen Sie diese Methode in Ihrer `IntentService` das für den Empfang von Android-Geofence-Ereignissen registriert ist.
 
 Hier finden Sie ein Code-Beispiel für diese Methode:
 
@@ -60,7 +59,7 @@ public class GeofenceTransitionsIntentService extends IntentService {
 
 ### ProcessRegionEvent (iOS)
 
-Diese Methode sollte im Delegate `CLLocationManager` aufgerufen werden, der angibt, ob der Benutzer einen bestimmten Bereich eingegeben oder verlassen hat.
+Diese Methode sollte im `CLLocationManager` delegate, der angibt, ob der Benutzer eine bestimmte Region erreicht oder verlassen hat.
 
 **Syntax**
 
@@ -87,7 +86,7 @@ Hier finden Sie ein Code-Beispiel für diese Methode:
 
 ### ProcessGeofencingEvent (Android)
 
-Verarbeiten Sie alle `Geofences` in `GeofencingEvent` gleichzeitig.
+Alle Prozesse verarbeiten `Geofences` im `GeofencingEvent` gleichzeitig.
 
 **Syntax**
 
@@ -97,7 +96,7 @@ public static void processGeofenceEvent(final GeofencingEvent geofencingEvent);
 
 **Beispiel**
 
-Rufen Sie diese Methode in Ihrer `IntentService` auf, die für den Empfang von Android-Geofenity-Ereignissen registriert ist.
+Rufen Sie diese Methode in Ihrer `IntentService` die für den Empfang von Android-Geofence-Ereignissen registriert ist
 
 ```java
 public class GeofenceTransitionsIntentService extends IntentService {
@@ -114,9 +113,9 @@ public class GeofenceTransitionsIntentService extends IntentService {
 }
 ```
 
-## Abrufen nahegelegener Zielpunkte
+## Abruf nahegelegener Zielpunkte
 
-Gibt eine geordnete Liste von nahe gelegenen POIs in einem Rückruf zurück. Eine überladene Version dieser Methode gibt einen Fehlercode zurück, wenn beim resultierenden Netzwerkaufruf ein Fehler aufgetreten ist.
+Gibt eine geordnete Liste nahegelegener Zielpunkte in einem Callback zurück. Eine überladene Version dieser Methode gibt einen Fehlercode zurück, wenn beim resultierenden Netzwerkaufruf etwas schief gelaufen ist.
 
 ### GetNeestedPointsOfInterest (Android)
 
@@ -203,9 +202,9 @@ Places.getNearbyPointsOfInterest(currentLocation, 10,
 ];
 ```
 
-## Abrufen aktueller Gerätepunkte
+## Abrufen der aktuellen Zielpunkte des Geräts
 
-Fordert eine Liste von POIs an, in denen das Gerät derzeit bekannt ist, und gibt sie in einem Rückruf zurück.
+Fordert eine Liste von POIs an, an denen sich das Gerät derzeit befindet, und gibt sie in einem Callback zurück.
 
 ### GetCurrentPointsOfInterest (Android)
 
@@ -255,11 +254,11 @@ Hier finden Sie ein Code-Beispiel für diese Methode:
 
 ## Speicherort des Geräts abrufen
 
-Fordert den Speicherort des Geräts an, wie zuvor durch die Plateausgabe bekannt.
+Fordert den Speicherort des Geräts an, wie zuvor durch die Places-Erweiterung bekannt.
 
 >[!TIP]
 >
->Die Ortserweiterung kennt nur Orte, die ihr über Aufrufe von `GetNearbyPointsOfInterest` bereitgestellt wurden.
+>Die Places-Erweiterung kennt nur Orte, die ihr über Aufrufe von zur Verfügung gestellt wurden. `GetNearbyPointsOfInterest`.
 
 
 ### GetLastKnownLocation (Android)
@@ -307,12 +306,12 @@ Hier finden Sie ein Code-Beispiel für diese Methode:
 }];
 ```
 
-## Clientseitige Daten löschen
+## Client-seitige Daten löschen
 
 
-### Clear (Android)
+### Löschen (Android)
 
-Löscht die clientseitigen Daten für die Places-Erweiterung im Freigabezustand, in der lokalen Datenspeicherung und im Arbeitsspeicher.
+Löscht die clientseitigen Daten für die Places-Erweiterung im freigegebenen Status, im lokalen Speicher und im Arbeitsspeicher.
 
 **Syntax**
 
@@ -332,7 +331,7 @@ Places.clear();
 
 ### clear (iOS)
 
-Löscht die clientseitigen Daten für die Places-Erweiterung im Freigabezustand, in der lokalen Datenspeicherung und im Arbeitsspeicher.
+Löscht die clientseitigen Daten für die Places-Erweiterung im freigegebenen Status, lokalen Speicher und Arbeitsspeicher.
 
 **Syntax**
 
@@ -350,7 +349,7 @@ Hier finden Sie ein Code-Beispiel für diese Methode:
 [ACPPlaces clear];
 ```
 
-## Status der Standortautorisierung festlegen
+## Festlegen des Autorisierungsstatus für Standorte
 
 ### setAuthorizationStatus (Android)
 
@@ -358,7 +357,7 @@ Hier finden Sie ein Code-Beispiel für diese Methode:
 
 Legt den Autorisierungsstatus in der Places-Erweiterung fest.
 
-Der angegebene Status wird im Status &quot;Orte freigegeben&quot;gespeichert und dient nur als Referenz.
+Der angegebene Status wird im Status &quot;Places shared&quot;gespeichert und dient nur als Referenz.
 Der Aufruf dieser Methode hat keine Auswirkungen auf den tatsächlichen Status der Standortautorisierung für dieses Gerät.
 
 **Syntax**
@@ -383,10 +382,10 @@ Places.setAuthorizationStatus(PlacesAuthorizationStatus.ALWAYS);
 
 Legt den Autorisierungsstatus in der Places-Erweiterung fest.
 
-Der angegebene Status wird im Status &quot;Orte freigegeben&quot;gespeichert und dient nur als Referenz.
+Der angegebene Status wird im Status &quot;Places shared&quot;gespeichert und dient nur als Referenz.
 Der Aufruf dieser Methode hat keine Auswirkungen auf den tatsächlichen Status der Standortautorisierung für dieses Gerät.
 
-Wenn sich der Status der Geräteautorisierung ändert, wird die `locationManager:didChangeAuthorizationStatus:`-Methode von `CLLocationManagerDelegate` aufgerufen. Von dieser Methode aus sollten Sie den neuen Wert `CLAuthorizationStatus` an die ACPPlaces `setAuthorizationStatus:`-API übergeben.
+Wenn sich der Status der Geräteautorisierung ändert, wird die `locationManager:didChangeAuthorizationStatus:` -Methode `CLLocationManagerDelegate` aufgerufen wird. Von dieser Methode aus sollten Sie die neue `CLAuthorizationStatus` Wert in die ACPPlaces `setAuthorizationStatus:` API.
 
 **Syntax**
 

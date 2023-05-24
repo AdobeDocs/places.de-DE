@@ -1,18 +1,17 @@
 ---
 title: API-Nutzungsübersicht
-description: Dieser Abschnitt enthält Informationen zu den REST-APIs, die für den Places Service verfügbar sind.
-translation-type: tm+mt
-source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
+description: Dieser Abschnitt enthält Informationen zu den für den Places-Dienst verfügbaren REST-APIs.
+exl-id: f2823ea5-9fbf-45b7-8206-6cb82ca22ecf
+source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
 workflow-type: tm+mt
 source-wordcount: '38'
 ht-degree: 0%
 
 ---
 
-
 # API-Nutzungsübersicht {#api-usage-overview}
 
-Informationen zum Verwalten Ihrer POIs und Bibliotheken mit der Places REST API finden Sie in den folgenden Abschnitten:
+Informationen zur Verwendung der Places REST API zur Verwaltung Ihrer POIs und Bibliotheken finden Sie in den folgenden Abschnitten:
 
 * [Bibliotheken verwalten](/help/web-service-api/api-usage/manage-libraries/manage-libraries.md)
-* [Verwalten von POIs](/help/web-service-api/api-usage/manage-pois/manage-pois.md)
+* [Verwalten von Zielpunkten](/help/web-service-api/api-usage/manage-pois/manage-pois.md)

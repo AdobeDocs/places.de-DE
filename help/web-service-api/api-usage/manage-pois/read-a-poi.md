@@ -1,18 +1,17 @@
 ---
 title: POI lesen
-description: Lesen Sie einen POI mithilfe der Places REST APIs.
-translation-type: tm+mt
-source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
+description: Lesen eines POI mithilfe der Places REST APIs.
+exl-id: 19eb73c4-5101-47a9-8c79-bc4790ecf472
+source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
 workflow-type: tm+mt
 source-wordcount: '45'
 ht-degree: 8%
 
 ---
 
+# POI lesen {#read-a-poi}
 
-# POI {#read-a-poi} lesen
-
-Eine GET, die die Details für einen POI zurückgibt.
+Eine GET-Methode, die die Details für einen POI zurückgibt.
 
 ## Anfrage
 
@@ -20,7 +19,7 @@ Eine GET, die die Details für einen POI zurückgibt.
 GET https://api-places.adobe.io/places/placesapi/v1/pois/<POIID>
 ```
 
-## Header
+## Kopfzeilen
 
 ```text
 -H' Content-Type: application/json'  
@@ -70,5 +69,4 @@ curl -X GET 'https://api-places.adobe.io/places/placesapi/v1/pois/<POIID>' -H 'x
 
 >[!IMPORTANT]
 >
->Ersetzen Sie `<POIID>`, `<API KEY>`, `<TOKEN>` und `<ORIGIN>` durch tatsächliche Werte.
-
+>Ersetzen `<POIID>`, `<API KEY>`, `<TOKEN>`und `<ORIGIN>` mit tatsächlichen Werten.

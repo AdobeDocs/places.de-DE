@@ -1,18 +1,17 @@
 ---
 title: Alle Bibliotheken in Ihrer Organisation lesen
-description: Lesen Sie alle Bibliotheken in Ihrem Unternehmen mithilfe der Places REST API.
-translation-type: tm+mt
-source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
+description: Lesen Sie alle Bibliotheken in Ihrem Unternehmen mithilfe der Places REST-API.
+exl-id: 3384e1f2-9626-498d-85f7-84569d869c2c
+source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
 workflow-type: tm+mt
 source-wordcount: '60'
 ht-degree: 6%
 
 ---
 
+# Alle Bibliotheken in Ihrer Organisation lesen {#read-all-lib-in-org}
 
-# Alle Bibliotheken in Ihrer Organisation lesen{#read-all-lib-in-org}
-
-Eine GET, die die Details zu allen Bibliotheken in Ihrem Unternehmen zurückgibt.
+Eine GET-Methode, die die Details für alle Bibliotheken in Ihrem Unternehmen zurückgibt.
 
 ## Anfrage
 
@@ -20,7 +19,7 @@ Eine GET, die die Details zu allen Bibliotheken in Ihrem Unternehmen zurückgibt
 GET https://api-places.adobe.io/places/placesapi/v1/libraries
 ```
 
-## Header
+## Kopfzeilen
 
 ```text
 -H' Content-Type: application/json'  -H 'Authorization: Bearer <TOKEN>'  -H 'x-api-key: <API KEY>'  -H 'x-gw-ims-org-id: <ORGID>'  -H 'Accept-Language: en-US'
@@ -42,4 +41,4 @@ curl -X GET 'https://api-places.adobe.io/places/placesapi/v1/libraries' -H 'x-ap
 
 >[!IMPORTANT]
 >
->Ersetzen Sie Variablen wie `<API KEY>`, `<TOKEN>,` und `<ORGID>` durch tatsächliche Werte.
+>Ersetzen Sie Variablen wie `<API KEY>`, `<TOKEN>,` und `<ORGID>` mit tatsächlichen Werten.

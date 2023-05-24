@@ -1,7 +1,6 @@
 ---
 title: Anwendungsfälle
-description: Dieses Thema enthält Details zu Anwendungsfällen für Orte.
-translation-type: tm+mt
+description: Dieses Thema enthält Details zu Anwendungsfällen für Places.
 source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 workflow-type: tm+mt
 source-wordcount: '48'
@@ -10,11 +9,11 @@ ht-degree: 0%
 ---
 
 
-# Anwendungsfälle für Orte
+# Places-Anwendungsfälle
 
-Einige Beispiele:
+Zu den Beispielen gehören:
 
-* Echtzeit-Benachrichtigung senden, wenn ein Benutzer in den Store gelangt
-* Analyse des Fußdatenverkehrs in meinen Läden im Vergleich zu Konkurrenten
-* Audience von Geschäftsreisenden erstellen
-* Zielgruppe von Benutzern mit In-Store-Erfahrung, falls relevant
+* Senden Sie eine Echtzeitbenachrichtigung, wenn ein Benutzer Ihren Store betritt
+* Analyse des Fußverkehrs meiner Geschäfte im Vergleich zu Konkurrenzgeschäften
+* Erstellen einer Audience für Geschäftsreisende
+* Benutzer mit Speichererlebnis auswählen, falls zutreffend

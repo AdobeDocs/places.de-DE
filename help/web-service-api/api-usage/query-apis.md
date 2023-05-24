@@ -1,19 +1,17 @@
 ---
 title: Übersicht
-description: Grundlegendes und Verwenden von Abfrage-APIs.
-translation-type: tm+mt
-source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
+description: Verstehen und Verwenden von Abfrage-APIs.
+exl-id: cc61a49c-1cf2-407f-b81a-3d38fcb622cc
+source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
 workflow-type: tm+mt
 source-wordcount: '217'
 ht-degree: 4%
 
 ---
 
-
-
 # Abfrage-APIs
 
-Eine GET, mit der Sie die POIs, die dem Aufrufer am nächsten sind, Abfrage werden können.
+Eine GET-Methode, mit der Sie die POIs abfragen können, die dem Aufrufer am nächsten sind.
 
 ## Anfrage
 
@@ -23,13 +21,13 @@ GET https://query.places.adobe.com/placesedgequery
 
 Mit der folgenden Eingabe gibt der Dienst eine Liste der POIs zurück, die dem Aufrufer am nächsten sind:
 
-* Die Position des Aufrufers (Breitengrad, Längengrad).
+* Position des Anrufers (Breitengrad, Längengrad).
 * Die IDs der POI-Bibliotheken, die in die Suche einbezogen werden sollen.
 * Die maximale Anzahl der zurückzugebenden POIs.  Der Standardwert lautet 100.
 
-   Der Abstand zwischen Anrufer und POI ist definiert als der Abstand vom Anrufer bis zum Rand der POI-Sequenz. In der Antwort werden POIs, die den Aufrufer enthalten, als mit dem Aufrufer gekennzeichnet.
+   Der Abstand zwischen Anrufer und POI ist definiert als der Abstand vom Anrufer zum Rand der POI-Geofence. In der Antwort werden POIs, die den Aufrufer enthalten, als mit dem Aufrufer gekennzeichnet.
 
-Argumente werden als folgende Abfragen bereitgestellt:
+Argumente werden als folgende Abfrageparameter bereitgestellt:
 
 * (**Erforderlich**) `latitude`
 
@@ -44,9 +42,9 @@ Argumente werden als folgende Abfragen bereitgestellt:
 
 * (**Erforderlich**) `library`
 
-   Die ID der zu Abfrage Bibliothek. Um mehrere Bibliotheken Abfrage, stellen Sie sicher, dass Sie mehrere Kopien des library-Parameters in die Abfrage einschließen.
+   Die ID der Bibliothek, die abgefragt werden soll. Um mehrere Bibliotheken abzufragen, stellen Sie sicher, dass Sie mehrere Kopien des Bibliotheksparameters in die Abfrage einschließen.
 
-Hier ein Beispiel für das erfolgreich zurückgegebene JSON-Format:
+Im Folgenden finden Sie ein Beispiel für das erfolgreich zurückgegebene JSON-Format:
 
 ```markup
 {
@@ -109,11 +107,11 @@ Hier ein Beispiel für das erfolgreich zurückgegebene JSON-Format:
 }
 ```
 
-POIs unter `places.pois` werden nach der Entfernung vom Anrufer bis zum Rand der POIs sortiert. POIs unter `places.userWithin` enthalten den Aufrufer, und diese POIs werden nach Rang und dann nach zunehmendem Radius sortiert.
+POIs unter `places.pois` sind nach der Entfernung vom Anrufer zum Rand der POIs sortiert. POIs unter `places.userWithin` enthält den Aufrufer, und diese POIs werden nach Rang geordnet und dann durch Erhöhung des Radius.
 
 ## Beispielaufruf
 
-Hier ein Beispiel für den Aufruf:
+Im Folgenden finden Sie ein Beispiel für den Aufruf:
 
 ```text
 GET https://query.places.adobe.com/placesedgequery?latitude=<userLatitude>&longitude=<userLongitude>&library=<libID1>&library=<libID2>&limit=20

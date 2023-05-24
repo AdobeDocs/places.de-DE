@@ -1,18 +1,17 @@
 ---
-title: Platzierungs-Ereignis
-description: 'Eine Liste der Ereignis, die von der Places-Erweiterung verarbeitet werden. '
-translation-type: tm+mt
-source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
+title: Places-Ereignisreferenz
+description: Eine Liste der Ereignisse, die von der Places-Erweiterung verarbeitet werden.
+exl-id: 98210ef4-5ff1-4792-b97b-2845ce02e78a
+source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
 workflow-type: tm+mt
 source-wordcount: '248'
-ht-degree: 25%
+ht-degree: 29%
 
 ---
 
+# Places-Ereignisreferenz {#places-event-reference}
 
-# Platziert Ereignis-Referenz {#places-event-reference}
-
-Im Folgenden finden Sie eine Liste der Ereignis, die mit der Places-Erweiterung behandelt werden.
+Im Folgenden finden Sie eine Liste der Ereignisse, die von der Places-Erweiterung verarbeitet werden.
 
 ## GetCurrentPointsOfInterest
 
@@ -20,15 +19,15 @@ Im Folgenden finden Sie eine Liste der Ereignis, die mit der Places-Erweiterung 
 
 | Typ | Quelle | Name | Gekoppelt |
 | :--- | :--- | :--- | :--- |
-| PLÄTZE | REQUEST_CONTENT | `requestgetuserwithinplaces` | True |
+| ORTE | REQUEST_CONTENT | `requestgetuserwithinplaces` | True |
 
 **Ereignisbeschreibung**
 
-Dieses Ereignis ist eine Anforderung zum Abrufen der POIs, in denen sich das Gerät derzeit befindet.
+Dieses Ereignis ist eine Anfrage zum Abrufen der POIs, an denen sich das Gerät derzeit befindet.
 
 **Datennutzlast-Definition**
 
-n/a
+Nicht zutreffend
 
 ## GetNeestedPointsOfInterest
 
@@ -36,20 +35,20 @@ n/a
 
 | Typ | Quelle | Name | Gekoppelt |
 | :--- | :--- | :--- | :--- |
-| PLÄTZE | REQUEST_CONTENT | `requestgetnearbyplaces` | true |
+| ORTE | REQUEST_CONTENT | `requestgetnearbyplaces` | True |
 
 **Ereignisbeschreibung**
 
-Dieses Ereignis stellt eine Anforderung dar, die nahe gelegenen POIs unter Berücksichtigung der aktuellen Geräteposition und der konfigurierten Orte-Bibliotheken abzurufen.
+Bei diesem Ereignis handelt es sich um eine Anfrage zum Abrufen der nahegelegenen POIs unter Berücksichtigung des aktuellen Gerätestandorts und der konfigurierten Places-Bibliotheken.
 
 **Datennutzlast-Definition**
 
 | Schlüssel | Werttyp | Erforderlich | Standardwert | Beschreibung |
 | :--- | :--- | :--- | :--- | :--- |
-| latitude | double | true | n/a | Enthält den Breitenwert für die Mitte der Suche nach nahe gelegenen POIs. |
-| longitude | Dublette | true | n/a | Gibt den Längengradwert für die Mitte der Suche nach nahe gelegenen POIs an. |
-| radius | Ganzzahl | false | n/a | Radius, in Metern, verwendet durch die Suche nach nahe gelegenen POIs. |
-| count | Ganzzahl | false | 10 | Maximale Anzahl der POIs, die in einem resultierenden Ereignis zurückgegeben werden. |
+| latitude | double | wahr | Nicht zutreffend | Enthält den Breitenwert für die Mitte der Suche nach nahe gelegenen POIs. |
+| longitude | double | wahr | Nicht zutreffend | Enthält den Längenwert für die Mitte der Suche nach nahe gelegenen POIs. |
+| radius | integer | false | Nicht zutreffend | Radius, in Metern, der für die Suche nach nahe gelegenen POIs verwendet wird. |
+| count | integer | false | 10 | Maximale Anzahl an POIs, die in dem resultierenden Antwortereignis zurückgegeben werden. |
 
 ## ProcessRegionEvent
 
@@ -57,20 +56,19 @@ Dieses Ereignis stellt eine Anforderung dar, die nahe gelegenen POIs unter Berü
 
 | Typ | Quelle | Name | Gekoppelt |
 | :--- | :--- | :--- | :--- |
-| PLÄTZE | REQUEST_CONTENT | `requestprocessregionevent` | False |
+| ORTE | REQUEST_CONTENT | `requestprocessregionevent` | False |
 
 **Ereignisbeschreibung**
 
-Dieses Ereignis führt dazu, dass die Platzierungserweiterung ein Ereignis zum Abrufen oder Beenden von Geometrien verarbeitet.
+Dieses Ereignis bewirkt, dass die Places-Erweiterung ein Geofence-Einstiegs- oder Ausstiegsereignis verarbeitet.
 
 **Datennutzlast-Definition**
 
 | Schlüssel | Werttyp | Erforderlich | Beschreibung |
 | :--- | :--- | :--- | :--- |
-| regionid | Zeichenfolge | wahr | ID des Bereichs, der das Ereignis generiert. |
-| regionereigntype | int | wahr | Typ des zu generierenden Regions-Ereignisses. 1 für die Einfahrt und 2 für die Ausfahrt. |
+| regionid | Zeichenfolge | wahr | ID der Region, die das Ereignis generiert. |
+| regioneventtype | int | wahr | Typ des zu generierenden Regions-Ereignisses. 1 für die Einreise und 2 für die Ausfahrt. |
 
-## Ereignis, die von der Places-Erweiterung gesendet werden
+## Von der Places-Erweiterung gesendete Ereignisse
 
 Diese Informationen werden derzeit bereitgestellt.
-

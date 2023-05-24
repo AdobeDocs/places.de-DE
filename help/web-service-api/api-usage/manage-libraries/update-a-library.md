@@ -1,16 +1,15 @@
 ---
 title: Bibliothek aktualisieren
-description: Aktualisieren Sie eine Bibliothek mit der Places REST API.
-translation-type: tm+mt
-source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
+description: Aktualisieren Sie eine Bibliothek mithilfe der Places REST API.
+exl-id: 37ca2be2-39e1-4f8e-87c2-ef4cb366db0d
+source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
 workflow-type: tm+mt
 source-wordcount: '48'
-ht-degree: 8%
+ht-degree: 10%
 
 ---
 
-
-# Aktualisieren einer Bibliothek {#update-a-library}
+# Bibliothek aktualisieren {#update-a-library}
 
 Eine PUT-Methode, mit der Sie eine Bibliothek aktualisieren können.
 
@@ -20,13 +19,13 @@ Eine PUT-Methode, mit der Sie eine Bibliothek aktualisieren können.
 PUT https://api-places.adobe.io/places/placesapi/v1/libraries/<lIBRARYID>
 ```
 
-## Header
+## Kopfzeilen
 
 ```text
 -H' Content-Type: application/json'  -H 'Authorization: bearer <TOKEN>'  -H 'x-api-key: <API KEY>'  -H 'x-gw-ims-org-id: <ORGID>'  -H 'Accept-Language: en-US'
 ```
 
-## Body
+## Textkörper
 
 ```text
 {"name": "<NEW_LIBRARY_NAME>"}
@@ -48,5 +47,4 @@ curl -X PUT 'https://api-places.adobe.io/places/placesapi/v1/libraries/<LIBRARYI
 
 >[!IMPORTANT]
 >
->Ersetzen Sie Variablen wie `<lIBRARYID>`, `<API KEY>`, `<TOKEN>` und `<ORGID>` durch tatsächliche Werte.
-
+>Ersetzen Sie Variablen wie `<lIBRARYID>`, `<API KEY>`, `<TOKEN>`und `<ORGID>` mit tatsächlichen Werten.

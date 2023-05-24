@@ -1,18 +1,17 @@
 ---
 title: Erstellen mehrerer POIs
 description: Verwenden Sie die Batch-APIs, um mehrere POIs zu erstellen.
-translation-type: tm+mt
-source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
+exl-id: d1d6f7de-5914-432f-9d3c-17cf3cba784a
+source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
 workflow-type: tm+mt
 source-wordcount: '56'
-ht-degree: 7%
+ht-degree: 14%
 
 ---
 
-
 # Erstellen mehrerer POIs {#create-multiple-pois}
 
-Eine POST, mit der Sie mehrere POIs erstellen können.
+Eine POST-Methode, mit der Sie mehrere POIs erstellen können.
 
 ## Anfrage
 
@@ -20,13 +19,13 @@ Eine POST, mit der Sie mehrere POIs erstellen können.
 POST https://api-places.adobe.io/places/placesapi/v1/pois/batchCreate
 ```
 
-## Header
+## Kopfzeilen
 
 ```text
 -H' Content-Type: application/json'  -H 'Authorization: Bearer <TOKEN>'  -H 'x-api-key: <API KEY>'  -H 'x-gw-ims-org-id: <ORGID>'  -H 'Accept-Language: en-US'
 ```
 
-## Body
+## Textkörper
 
 ```text
 {    "createPOIRequests": [        {            "lib_id": "<lIBRARYID>",            "name": "string",            "description": "string",            "location": {                "type": "Point",                "coordinates": [<LONGITUDE>, <LATITUDE>]            },            "radius": integer,            "country": "string",            "state": "string",            "city": "string",            "street": "string",            "category": "string",            "icon": "string",            "color": "string",            "metadata": {                "ownership": "string",                "brand": "string"            }        },        {            "lib_id": "<lIBRARYID>",            "name": "string",            "description": "string",            "location": {                "type": "Point",                "coordinates": [<LONGITUDE>, <LATITUDE>]            },            "radius": integer,            "country": "string",            "state": "string",            "city": "string",            "street": "string",            "category": "string",            "icon": "string",            "color": "string",            "metadata": {                "ownership": "string",                "brand": "string"            }        },        .        .        .        {            "lib_id": "<lIBRARYID>",            "name": "string",            "description": "string",            "location": {                "type": "Point",                "coordinates": [<LONGITUDE>, <LATITUDE>]            },            "radius": integer,            "country": "string",            "state": "string",            "city": "string",            "street": "string",            "category": "string",            "icon": "string",            "color": "string",            "metadata": {                "ownership": "string",                "brand": "string"            }        },        {            "lib_id": "<lIBRARYID>",            "name": "string",            "description": "string",            "location": {                "type": "Point",                "coordinates": [<LONGITUDE>, <LATITUDE>]            },            "radius": integer,            "country": "string",            "state": "string",            "city": "string",            "street": "string",            "category": "string",            "icon": "string",            "color": "string",            "metadata": {                "ownership": "string",                "brand": "string"            }        }    ]}
@@ -48,11 +47,11 @@ curl -X POST 'https://api-places.adobe.io/places/placesapi/v1/pois/batchCreate' 
 
 >[!IMPORTANT]
 >
->Ersetzen Sie `<API KEY>`, `<TOKEN>`, `<ORGID>` und `<PATHTOBATCHCREATEJSONFILE>` durch echte Werte.
+>Ersetzen `<API KEY>`, `<TOKEN>`, `<ORGID>`und `<PATHTOBATCHCREATEJSONFILE>` mit echten Werten.
 
 ## JSON-Beispieldatei
 
-Im Folgenden finden Sie die JSON-Beispieldatei für die API `batchCreate`:
+Hier finden Sie die JSON-Beispieldatei für die `batchCreate` API:
 
 ```text
 {    "createPOIRequests": [{            "name": "Sample POI 1",            "description": "1",            "location": {                "type": "Point",                "coordinates": [0.0, 0.0]            },            "radius": 25,            "country": "Ghana",            "state": "Ghana",            "city": "Accra",            "street": "",            "category": "cafe",            "icon": "nice",            "color": "red",            "metadata": {                "region": "Equator"            },            "lib_id" : "42b4d03c-672c-4deb-83e0-134ef070c2af"        },        {            "name": "Sample POI 2",            "description": "2",            "location": {                "type": "Point",                "coordinates": [0.025, 0.025]            },            "radius": 50,            "country": "Ghana",            "state": "Ghana",            "city": "Accra",            "street": "",            "category": "cafe",            "icon": "nice",            "color": "blue",            "metadata": {                "region": "Equator"            },            "lib_id" : "42b4d03c-672c-4deb-83e0-134ef070c2af"        },        {            "name": "Sample POI 3",            "description": "3",            "location": {                "type": "Point",                "coordinates": [0.05, 0.05]            },            "radius": 100,            "country": "Ghana",            "state": "Ghana",            "city": "Accra",            "street": "",            "category": "cafe",            "icon": "nice",            "color": "green",            "metadata": {                "region": "Equator"            },            "lib_id" : "42b4d03c-672c-4deb-83e0-134ef070c2af"        }    ]}

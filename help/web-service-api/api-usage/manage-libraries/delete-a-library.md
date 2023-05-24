@@ -1,16 +1,15 @@
 ---
 title: Bibliothek löschen
-description: Löschen Sie eine Bibliothek mithilfe der REST-APIs für Orte.
-translation-type: tm+mt
-source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
+description: Löschen Sie eine Bibliothek mithilfe der Places-REST-APIs.
+exl-id: ad45ea38-9e12-43d7-b05f-17d3e40abaf5
+source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
 workflow-type: tm+mt
 source-wordcount: '47'
 ht-degree: 8%
 
 ---
 
-
-# Bibliothek {#delete-a-library} löschen
+# Bibliothek löschen {#delete-a-library}
 
 Eine DELETE-Methode, mit der Sie eine Bibliothek löschen können.
 
@@ -20,7 +19,7 @@ Eine DELETE-Methode, mit der Sie eine Bibliothek löschen können.
 DELETE https://api-places.adobe.io/places/placesapi/v1/libraries/<lIBRARYID>
 ```
 
-## Header
+## Kopfzeilen
 
 ```text
 -H' Content-Type: application/json'  
@@ -46,5 +45,4 @@ curl -X DELETE 'https://api-places.adobe.io/places/placesapi/v1/libraries/<LIBRA
 
 >[!IMPORTANT]
 >
->Ersetzen Sie Variablen wie `<lIBRARYID>`, `<API KEY>`, `<TOKEN>` und `<ORGID>` durch tatsächliche Werte.
-
+>Ersetzen Sie Variablen wie `<lIBRARYID>`, `<API KEY>`, `<TOKEN>`und `<ORGID>`mit tatsächlichen Werten.

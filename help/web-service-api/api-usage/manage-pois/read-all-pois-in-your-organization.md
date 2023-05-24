@@ -1,18 +1,17 @@
 ---
-title: Alle POIs in Ihrer Organisation lesen
-description: Lesen Sie alle POIs in Ihrem Unternehmen mithilfe der Places REST APIs.
-translation-type: tm+mt
-source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
+title: Alle Zielpunkte in Ihrer Organisation lesen
+description: Lesen Sie alle POIs in Ihrem Unternehmen mithilfe der Places-REST-APIs.
+exl-id: 8068a2bc-ce1c-4f3b-8a0c-c38998c1c2e2
+source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
 workflow-type: tm+mt
 source-wordcount: '54'
 ht-degree: 7%
 
 ---
 
+# Alle Zielpunkte in Ihrer Organisation lesen {#read-all-pois-org}
 
-# Alle POIs in Ihrer Organisation {#read-all-pois-org} lesen
-
-Eine GET, die alle POIs in Ihrem Unternehmen zurückgibt.
+Eine GET-Methode, die alle POIs in Ihrem Unternehmen zurückgibt.
 
 ## Anfrage
 
@@ -20,7 +19,7 @@ Eine GET, die alle POIs in Ihrem Unternehmen zurückgibt.
 GET https://api-places.adobe.io/places/placesapi/v1/pois
 ```
 
-## Header
+## Kopfzeilen
 
 ```text
 -H' Content-Type: application/json'  -H 'Authorization: Bearer <TOKEN>'  -H 'x-api-key: <API KEY>'  -H 'x-gw-ims-org-id: <ORGID>'  -H 'Accept-Language: en-US'
@@ -42,4 +41,4 @@ curl -X GET 'https://api-places.adobe.io/places/placesapi/v1/pois' -H 'x-api-key
 
 >[!IMPORTANT]
 >
->Ersetzen Sie `<API KEY>`, `<TOKEN>` und `<ORGID>` durch tatsächliche Werte.
+>Ersetzen `<API KEY>`, `<TOKEN>`und `<ORGID>` mit tatsächlichen Werten.

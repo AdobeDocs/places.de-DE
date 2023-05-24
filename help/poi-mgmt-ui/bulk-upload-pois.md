@@ -1,44 +1,43 @@
 ---
 title: Massen-Upload-POIs
-description: In diesem Abschnitt erfahren Sie, wie Sie POIs als Massenupload hochladen.
-translation-type: tm+mt
-source-git-commit: 462df20bb351795dc72009cc18d390cb45e262a8
+description: Dieser Abschnitt enthält Informationen zum Massen-Upload Ihrer POIs.
+exl-id: 72704bfc-5837-4439-bdb2-e77ddf935639
+source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
 workflow-type: tm+mt
 source-wordcount: '861'
 ht-degree: 0%
 
 ---
 
+# Massen-Upload von POIs {#bulk-upload-pois}
 
-# Massenupload von POIs {#bulk-upload-pois}
-
-Mit der Schaltfläche **POIs importieren** im Orte-Dienst können neue POIs mit einer CSV-Datei als Massen-Upload hochgeladen werden. Es wird eine Beispielvorlage für Tabellen bereitgestellt, die zeigt, welche Datenspalten erforderlich sind und wie optionale benutzerdefinierte Metadaten hinzugefügt werden.
+Die **POIs importieren** im Places-Dienst können zum Massen-Upload neuer POIs mithilfe einer CSV-Datei verwendet werden. Eine Beispiel-Tabellenvorlage wird bereitgestellt, um anzuzeigen, welche Datenspalten erforderlich sind und wie optionale benutzerdefinierte Metadaten hinzugefügt werden.
 
 ![Massenimportbildschirm](/help/assets/Bulk-import.png)
 
-In diesem Video wird der Vorgang für den Massenimport und die Massenbearbeitung dargestellt:
+In diesem Video wird der Prozess für den Massenimport und die Massenbearbeitung gezeigt:
 
 <!--I changed this embed to a link to pass validation. We should not link to youtube videos, so please upload this to MCP-->
 
-[POIs für den Massenimport und die Bearbeitung von Diensten](https://www.youtube.com/watch?v=75qVtirsXhg)
+[Places Service - Massenimport und -bearbeitung von POIs](https://www.youtube.com/watch?v=75qVtirsXhg)
 
-## Python API-Skripten
+## Python-API-Skripte
 
-Eine Reihe von Python-Skripten wurden erstellt, um den Stapelimport von POIs aus einer CSV-Datei in eine POI-Datenbank mithilfe der Web Service APIs zu vereinfachen. Diese Skripten können von dieser Open Source [git repo](https://github.com/adobe/places-scripts) heruntergeladen werden.
+Es wurde eine Reihe von Python-Skripten erstellt, um den Batch-Import von POIs aus einer CSV-Datei in eine POI-Datenbank mithilfe der Web Service-APIs zu vereinfachen. Diese Skripte können von dieser Open Source heruntergeladen werden [Git Repo](https://github.com/adobe/places-scripts).
 
-Bevor Sie diese Skripten ausführen, lesen Sie *Voraussetzungen für den Benutzerzugriff* in [Integrationsübersicht und Voraussetzungen](/help/web-service-api/adobe-i-o-integration.md), um auf die Webdienst-APIs zuzugreifen.
+Bevor Sie diese Skripte ausführen, lesen Sie den Abschnitt über den Zugriff auf die Webdienst-APIs . *Voraussetzungen für den Benutzerzugriff* in [Integrationsübersicht und Voraussetzungen](/help/web-service-api/adobe-i-o-integration.md).
 
 Im Folgenden finden Sie einige Informationen zu den Skripten:
 
 >[!TIP]
 >
->Diese Informationen sind auch in einer Readme-Datei im [git repo](https://github.com/adobe/places-scripts) enthalten.
+>Diese Informationen sind auch in einer Readme-Datei im [Git Repo](https://github.com/adobe/places-scripts).
 
 ## CSV-Datei nicht funktionierte, wurde behoben
 
-Eine .csv-Beispieldatei, `places_sample.csv`, ist Teil dieses Pakets und enthält die erforderlichen Kopfzeilen und eine Reihe von Musterdaten. Diese Header sind alle Kleinbuchstaben und entsprechen den reservierten Metadatenschlüsseln, die in der Datenbank &quot;Orte&quot;verwendet werden. Spalten, die Sie der .csv-Datei hinzufügen, werden der POI-Datenbank in einem separaten Metadatenabschnitt für jeden POI als Schlüssel/Wert-Paare hinzugefügt und der Header-Wert wird als Schlüssel verwendet.
+eine .csv-Beispieldatei, `places_sample.csv`, ist Teil dieses Pakets und enthält die erforderlichen Kopfzeilen und eine Reihe von Beispieldaten. Diese Kopfzeilen sind alle in Kleinbuchstaben und entsprechen den reservierten Metadatenschlüsseln, die in der Places-Datenbank verwendet werden. Spalten, die Sie zur .csv-Datei hinzufügen, werden der POI-Datenbank in einem separaten Metadatenabschnitt für jeden POI als Schlüssel-Wert-Paare hinzugefügt und der Header-Wert wird als Schlüssel verwendet.
 
-Im Folgenden finden Sie eine Liste der Spalten und der erforderlichen Werte:
+Im Folgenden finden Sie eine Liste der Spalten und der Werte, die Sie verwenden müssen:
 
 * `lib_id`
 
@@ -46,7 +45,7 @@ Im Folgenden finden Sie eine Liste der Spalten und der erforderlichen Werte:
 
 * `type`
 
-   Point ist zurzeit der einzige gültige Wert.
+   Punkt ist derzeit der einzige gültige Wert.
 
 * `longitude`
 
@@ -58,23 +57,23 @@ Im Folgenden finden Sie eine Liste der Spalten und der erforderlichen Werte:
 
 * `radius`
 
-   Ein Wert zwischen 10 und 20.000.
+   Ein Wert zwischen 10 und 20,000.
 
 ### Spaltenwerte
 
-Die Werte der folgenden Spalten werden in der Benutzeroberfläche des Places-Dienstes verwendet:
+Die Werte der folgenden Spalten werden in der Benutzeroberfläche von Places Service verwendet:
 
-* Farbe, die als Farbe des Pins verwendet wird, der die Position des POI in der Benutzeroberfläche des Orts-Dienstes darstellt.
+* Farbe, die als Farbe des Pins verwendet wird, der den Standort des POI in der UI-Zuordnung des Places-Dienstes darstellt.
    * Die gültigen Werte sind &quot;&quot;, #3E76D0, #AA99E8, #DC2ABA, #FC685B, #FC962E, #F6C436, #BECE5D, #61B56B und #3DC8DE und &quot;&quot;.
-   * Wenn der Wert leer gelassen wird, verwendet die Benutzeroberfläche des Places-Dienstes Blau als Standardfarbe.
+   * Wenn der Wert leer gelassen wird, verwendet die Benutzeroberfläche des Places Service Blau als Standardfarbe.
 
-      Die Werte entsprechen blau (#3E76D0), violett (#AA99E8), fuschia (#DC2ABA), orange (#FC685B), hellorange (#FC962E), gelb (#F6C436), hellgrün (#BECE5D), grün (#6 1B56B) bzw. hellblau (#3DC8DE).
+      Die Werte entsprechen blau (#3E76D0), violett (#AA99E8), fuschia (#DC2ABA), orange (#FC685B), hellorange (#FC962E), gelb (#F6C436), hellgrün (#BECE5D), grün (#66 1B56B) bzw. hellblau (#3DC8DE).
 
-* -Symbol, das als Symbol auf dem Pin verwendet wird, das die Position des POI auf der Benutzeroberfläche des Places-Dienstes darstellt.
+* -Symbol, das als Symbol auf dem Pin verwendet wird, das den Standort des POI auf der UI-Karte des Places-Dienstes darstellt.
 
-   * Die gültigen Werte sind &quot;&quot;, Shop, Hotelbett, Auto, Flugzeug, Zug, Schiff, Stadion, amusementpark, Anker, Beaker, Bell, Bid, Buch, Box, Brieftasche, Broschüre, Bürste, Gebäude, Rechner, Kamera, Uhr, Bildung, Taschenlampe, folgen, Spiel, weiblich, männlich, Geschenk, Hammer, Herz, Schlüssel, Start, Glühbirne, Briefkasten, Geld, Posting, Geld, Geld, Posting, Pin Warenkorb, Warenkorb, Stern, Zielgruppe, Teekanne, Daumendown, Daumen, Trap, Trophäe, Schraubenschlüssel.
+   * Die gültigen Werte sind &quot;&quot;, shop, hotelbed, car, flieger, train, ship, ship, stadium, amusementpark, anchor, beaker, bell, bid, book, box, briefcase, browse, bürste, building, rechner, kamera, uhr, flashlight, folgen, spiel, wild, männlich, geschenk, hammer, herz, home, launch, lightbulb, geld, pin, pin, pin, pin, pin, pin, pin, pin, pin, pin, pin, pin, pin, pin, pin, posten, posten, Band, ShoppingCart, Stern, Ziel, Teekopf, DaumenDown, DaumenUp, Falle, Trophäe, Schraubenschlüssel.
 
-      Die Symbolwerte werden in der Reihenfolge aufgeführt, in der sie in der folgenden Abbildung angezeigt werden:
+      Die Symbolwerte werden in der Reihenfolge aufgelistet, in der sie in der folgenden Abbildung dargestellt werden:
 
       ![Symbole in der Benutzeroberfläche](/help/assets/UI_icons.png)
 
@@ -84,50 +83,50 @@ Die Werte der folgenden Spalten werden in der Benutzeroberfläche des Places-Die
 
 ## Ausführen des Skripts
 
-1. Laden Sie Dateien von [git repo](https://github.com/adobe/places-scripts) in Ihren lokalen Ordner herunter.
-1. Öffnen Sie in einem Texteditor die Datei `config.py` und führen Sie die folgenden Aufgaben aus:
+1. Herunterladen von Dateien aus dem [Git Repo](https://github.com/adobe/places-scripts) in das lokale Verzeichnis.
+1. Öffnen Sie in einem Texteditor die `config.py` Datei speichern und die folgenden Aufgaben ausführen:
 
    a. Bearbeiten Sie die folgenden Variablenwerte als Zeichenfolgen:
 
    * `csv_file_path`
 
-      Dies ist der Pfad zu Ihrer `.csv`-Datei.
+      Dies ist der Pfad zu Ihrem `.csv`  -Datei.
 
    * `access_code`
 
-      Dies ist Ihr Zugriffscode, der durch den Aufruf von Adobe IMS erhalten wurde. Informationen zum Abrufen dieses Zugriffscodes finden Sie unter *Voraussetzungen für den Benutzerzugriff* in [Übersicht über die Integration und Voraussetzungen](/help/web-service-api/adobe-i-o-integration.md).
+      Dies ist Ihr Zugriffscode, der über den Aufruf an Adobe IMS abgerufen wurde. Informationen zum Abrufen dieses Zugriffscodes finden Sie unter *Voraussetzungen für den Benutzerzugriff* in [Integrationsübersicht und Voraussetzungen](/help/web-service-api/adobe-i-o-integration.md).
 
    * `org_id`
 
-      Die Experience Cloud-orgID, in die die POIs importiert werden sollen. Informationen zum Abrufen der Organisations-ID finden Sie unter *Voraussetzungen für den Benutzerzugriff* in [Übersicht über die Integration und Voraussetzungen](/help/web-service-api/adobe-i-o-integration.md).
+      Die Experience Cloud-Organisations-ID, in die die POIs importiert werden sollen. Informationen zum Abrufen der Organisations-ID finden Sie unter *Voraussetzungen für den Benutzerzugriff* in [Integrationsübersicht und Voraussetzungen](/help/web-service-api/adobe-i-o-integration.md).
 
    * `api_key`
 
-      Dies ist der REST-API-Schlüssel, den Sie von der Adobe I/O Places Integration erhalten haben. Informationen zum Abrufen des API-Schlüssels finden Sie unter *Voraussetzungen für den Benutzerzugriff* in [Übersicht über die Integration und Voraussetzungen](/help/web-service-api/adobe-i-o-integration.md).
+      Dies ist Ihr Places-REST-API-Schlüssel, den Sie von Ihrer Adobe I/O Places-Integration erhalten haben. Informationen zum Abrufen des API-Schlüssels finden Sie unter *Voraussetzungen für den Benutzerzugriff* in [Integrationsübersicht und Voraussetzungen](/help/web-service-api/adobe-i-o-integration.md).
    b. Speichern Sie Ihre Änderungen.
 
-1. Navigieren Sie in einem Terminalfenster zum Ordner `…/places-scripts/import/`.
-1. Geben Sie `python ./places_import.py` ein und drücken Sie die Eingabetaste **[!UICONTROL enter]** (**[!UICONTROL return]**).
+1. Navigieren Sie in einem Terminal-Fenster zum `…/places-scripts/import/` Verzeichnis.
+1. Eingabe `python ./places_import.py` und drücken Sie die **[!UICONTROL enter]** (**[!UICONTROL return]**).
 
 
 ## CSV-Prüfungen vor dem Import
 
-Das Skript führt zunächst die folgenden Prüfungen in der .csv-Datei durch:
+Das Skript führt zunächst die folgenden Prüfungen der .csv -Datei durch:
 
-* Ob eine `.csv`-Datei angegeben wurde.
+* Ob `.csv` -Datei angegeben wurde.
 * Gibt an, ob der Dateipfad gültig ist.
 * Gibt an, ob die reservierten Metadaten-Header enthalten sind.
 
-   Die reservierten Metadaten-Header sind lib_id, name, description, type, length, latitude, radius, country, state, city, street, Kategorie, icon und color.
+   Die reservierten Metadaten-Header sind lib_id, name, description, type, longitude, Breitengrad, Radius, Land, Bundesland, Stadt, Straße, Kategorie, Symbol und Farbe.
 
    >[!TIP]
    >
-   >Die Kopfzeilen sind alle in Kleinbuchstaben und können in beliebiger Reihenfolge aufgeführt werden.
+   >Die Kopfzeilen sind alle in Kleinbuchstaben und können in beliebiger Reihenfolge aufgelistet werden.
 
-* Prüft die Werte der im Abschnitt &quot;CSV-Datei&quot;angegebenen Spalten.
+* Überprüft die Werte der im Abschnitt CSV-Datei angegebenen Spalten.
 
-Wenn Fehler gefunden werden, gibt das Skript die Fehler aus und wird abgebrochen. Wenn keine Fehler gefunden werden, versucht das Skript, die POIs in Stapeln von 1000 zu importieren. Wenn der Stapel erfolgreich importiert wurde, gibt das Skript einen Statuscode von 200 aus. Wenn der Stapel nicht erfolgreich importiert wurde, werden Fehler gemeldet.
+Wenn Fehler gefunden werden, druckt das Skript die Fehler aus und wird abgebrochen. Wenn keine Fehler gefunden werden, versucht das Skript, die POIs in Stapeln von 1000 zu importieren. Wenn der Batch erfolgreich importiert wurde, zeigt das Skript den Statuscode 200 an. Wenn der Batch nicht erfolgreich importiert wurde, werden Fehler gemeldet.
 
-## Unit-Tests
+## Komponententests
 
-Komponententests befinden sich in der Datei `tests.py`, sollten vor jeder Pull-Anforderung ausgeführt werden und alle bestehen. Zusätzliche Tests sollten mit neuem Code hinzugefügt werden. Um die Tests auszuführen, navigieren Sie zum Ordner `…/places-scripts/import/` und geben Sie `python ./places_import.py` in Terminal ein.
+Unit-Tests befinden sich im Abschnitt `tests.py` -Datei, sollte vor jeder Pull-Anforderung ausgeführt werden und sollten alle übergeben werden. Zusätzliche Tests sollten mit neuem Code hinzugefügt werden. Um die Tests auszuführen, navigieren Sie zum `…/places-scripts/import/` Verzeichnis und geben Sie `python ./places_import.py` im Terminal.

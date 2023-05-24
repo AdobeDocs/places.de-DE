@@ -1,18 +1,17 @@
 ---
 title: eine Bibliothek erstellen
-description: Erstellen Sie eine Bibliothek mit der Places REST API.
-translation-type: tm+mt
-source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
+description: Erstellen Sie eine Bibliothek mithilfe der Places REST API.
+exl-id: 155cc6e6-9254-4389-bb02-e526d15908f4
+source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
 workflow-type: tm+mt
 source-wordcount: '48'
-ht-degree: 20%
+ht-degree: 22%
 
 ---
 
+# eine Bibliothek erstellen {#create-a-library}
 
-# Erstellen einer Bibliothek {#create-a-library}
-
-Eine POST, mit der Sie eine Bibliothek erstellen können.
+Eine POST -Methode, mit der Sie eine Bibliothek erstellen können.
 
 ## Anfrage
 
@@ -20,13 +19,13 @@ Eine POST, mit der Sie eine Bibliothek erstellen können.
 POST https://api-places.adobe.io/places/placesapi/v1/libraries
 ```
 
-## Header
+## Kopfzeilen
 
 ```text
 -H' Content-Type: application/json'  -H 'Authorization: Bearer <TOKEN>'  -H 'x-api-key: <API KEY>'  -H 'x-gw-ims-org-id: <ORGID>'  -H 'Accept-Language: en-US'
 ```
 
-## Body
+## Textkörper
 
 ```text
 {"name": "<LIBRARY_NAME>"}
@@ -48,5 +47,4 @@ curl -X POST 'https://api-places.adobe.io/places/placesapi/v1/libraries' -H 'x-a
 
 >[!IMPORTANT]
 >
->Ersetzen Sie Variablen wie `<API KEY>`, `<TOKEN>` und `<ORGID>` durch tatsächliche Werte.
-
+>Ersetzen Sie Variablen wie `<API KEY>`, `<TOKEN>`und `<ORGID>` mit tatsächlichen Werten.

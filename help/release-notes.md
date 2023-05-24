@@ -5,7 +5,7 @@ exl-id: 76da9548-4e32-4b23-9a15-7012973915f3
 source-git-commit: 2b5c53887c9ed0f2a672c377121a39537ee58f01
 workflow-type: tm+mt
 source-wordcount: '1492'
-ht-degree: 4%
+ht-degree: 3%
 
 ---
 
@@ -74,7 +74,7 @@ ht-degree: 4%
 
       * Es wurde eine neue API hinzugefügt, `setAuthorizationStatus`, um den Geräteautorisierungsstatus für Places Services festzulegen. Der Wert wird gespeichert und im Status &quot;Places shared&quot;verwendet.
 
-## 4. Dezember 2019
+## 4. Dezember 2019
 
 * **PlacesMonitor 2.1.2**
 
@@ -82,7 +82,7 @@ ht-degree: 4%
 
       * Rufen Sie die Places-API auf, um den CLAuthorizationStatus von dem Gerät zu erfassen, wenn es sich ändert.
 
-## 3. Dezember 2019
+## 3. Dezember 2019
 
 * **ACPPlaces 1.3.0**
 
@@ -168,7 +168,7 @@ In dieser Version wurden die folgenden Aktualisierungen vorgenommen:
 
 * Die Verwendung der `getNearbyPointsOfInterest` API zur effektiveren Handhabung von Fehlerszenarien.
 
-## Donnerstag, 25. Juli 2019
+## 25. Juli 2019
 
 In dieser Version wurden die folgenden Aktualisierungen vorgenommen:
 
@@ -261,7 +261,7 @@ Weitere Informationen zum Places Monitor finden Sie hier.
 * Die Speicherung des letzten bekannten Speicherorts respektiert jetzt den Datenschutzstatus des Benutzers ordnungsgemäß.
 
 
-## Dienstag, 9. April 2019
+## 9. April 2019
 
 In dieser Version wurden die folgenden Aktualisierungen vorgenommen:
 

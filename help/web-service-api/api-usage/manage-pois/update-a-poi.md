@@ -1,16 +1,15 @@
 ---
 title: POI aktualisieren
-description: Aktualisieren Sie einen POI mit den Places REST APIs.
-translation-type: tm+mt
-source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
+description: Aktualisieren eines POI mithilfe der Places-REST-APIs.
+exl-id: f155d1d3-88a3-47bc-bffe-a35842a639e2
+source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
 workflow-type: tm+mt
 source-wordcount: '45'
-ht-degree: 8%
+ht-degree: 11%
 
 ---
 
-
-# Aktualisieren eines POI {#update-a-poi}
+# POI aktualisieren {#update-a-poi}
 
 Eine PUT-Methode, mit der Sie einen POI aktualisieren können.
 
@@ -20,13 +19,13 @@ Eine PUT-Methode, mit der Sie einen POI aktualisieren können.
 PUT https://api-places.adobe.io/places/placesapi/v1/pois/<POIID>
 ```
 
-## Header
+## Kopfzeilen
 
 ```text
 -H' Content-Type: application/json'  -H 'Authorization: Bearer <TOKEN>'  -H 'x-api-key: <API KEY>'  -H 'x-gw-ims-org-id: <ORGID>'  -H 'Accept-Language: en-US'
 ```
 
-## Body
+## Textkörper
 
 ```text
 {  "id": "string",  "name": "string",  "description": "string",  "location": {    "type": Point",    "coordinates": [<LONGITUDE>, <LATITUDE>]  },  "radius": 0,  "country": "string",  "state": "string",  "city": "string",  "street": "string",  "category": "string",  "icon": "string",  "color": "string",  "metadata": {          "brand": "string",          "owndership": "string"          },  "lib_id": "{libraryID}"}
@@ -48,4 +47,4 @@ curl -X PUT 'https://api-places.adobe.io/places/placesapi/v1/pois/<POIID>' -H 'x
 
 >[!IMPORTANT]
 >
->Ersetzen Sie `<POIID>`, `<API KEY>`, `<TOKEN>`, `<ORGID>` und `<SINGLEPOIDATA>` durch tatsächliche Werte.
+>Ersetzen `<POIID>`, `<API KEY>`, `<TOKEN>`, `<ORGID>`und `<SINGLEPOIDATA>` mit tatsächlichen Werten.

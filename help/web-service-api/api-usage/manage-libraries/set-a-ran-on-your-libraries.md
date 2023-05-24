@@ -1,16 +1,15 @@
 ---
-title: Rang auf Ihre Bibliotheken festlegen
-description: Legen Sie mithilfe der Places REST API einen Rang in Ihren Bibliotheken fest.
-translation-type: tm+mt
-source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
+title: Rang in Ihren Bibliotheken festlegen
+description: Legen Sie mithilfe der Places REST-API einen Rang in Ihren Bibliotheken fest.
+exl-id: c922bddc-1587-4da8-acb4-c2d69ce11808
+source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
 workflow-type: tm+mt
 source-wordcount: '56'
 ht-degree: 7%
 
 ---
 
-
-# Rang auf Ihre Bibliotheken festlegen {#set-rank-on-libraries}
+# Rang in Ihren Bibliotheken festlegen {#set-rank-on-libraries}
 
 Eine PUT-Methode, mit der Sie eine Rangreihenfolge für alle Bibliotheken festlegen können.
 
@@ -18,7 +17,7 @@ Eine PUT-Methode, mit der Sie eine Rangreihenfolge für alle Bibliotheken festle
 
 `PUT https://api-places-dev.adobe.io/places/placesapi/v1/libraries/rank`
 
-## Header
+## Kopfzeilen
 
 ```-H Content-Type: application/json'
 -H 'Authorization: Bearer <TOKEN>`  
@@ -27,7 +26,7 @@ Eine PUT-Methode, mit der Sie eine Rangreihenfolge für alle Bibliotheken festle
 -H 'Accept-Language: en-US'
 ```
 
-## PUT von Daten
+## PUT-Daten
 
 ```
 "library_rank_order": ["dfcc5270-1d6d-4bc9-9cd9-85ecd5ebc12b","ea45781f-26af-44b1-b4f8-43baf5f0fe28"]  
@@ -48,5 +47,4 @@ curl -X PUT `'https://api-places.adobe.io/places/placesapi/v1/libraries/rank'` -
 
 >[!IMPORTANT]
 >
->Ersetzen Sie Variablen wie `<API KEY>`, `<TOKEN>` und `<ORGID>` durch tatsächliche Werte.
-
+>Ersetzen Sie Variablen wie `<API KEY>`, `<TOKEN>`und `<ORGID>` mit tatsächlichen Werten.

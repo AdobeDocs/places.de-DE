@@ -1,16 +1,15 @@
 ---
-title: Verwenden von Experience Platform Launch-Regeln und Datenelementen mit Ortsdaten
-description: Informationen zu Regeln und Datenelementen und Platzierungsdaten.
-translation-type: tm+mt
+title: Verwenden von Experience Platform Launch-Regeln und Datenelementen mit Places-Daten.
+description: Informationen zu Regeln und Datenelementen sowie Places-Daten.
 source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 workflow-type: tm+mt
 source-wordcount: '267'
-ht-degree: 48%
+ht-degree: 47%
 
 ---
 
 
-# Verwenden von Experience Platform Launch-Regeln und -Datenelementen mit Ortsdaten
+# Verwenden von Experience Platform Launch-Regeln und Datenelementen mit Places-Daten
 
 ## Regeln
 
@@ -20,7 +19,7 @@ Experience Platform Launch ist ein regelbasiertes System, das nach Benutzerinter
 
 Datenelemente sind die Bausteine für Ihr Datenwörterbuch oder Ihre Datenzuordnung. Sie können Datenelemente verwenden, um Daten über Marketing- und Anzeigentechnologie hinweg zu erfassen, zu organisieren und bereitzustellen.
 
-Ein Datenelement ist eine Variable, und der Wert für diese Variable kann Abfragen, URLs, Cookie-Werten, JavaScript-Variablen usw. zugeordnet werden. In Experience Platform Launch können Sie auf diesen Wert anhand des Variablennamens verweisen. Die Datenerfassung wird zum Wörterbuch definierter Daten, die Sie zum Erstellen Ihrer Regeln (Ereignisse, Bedingungen und Aktionen) verwenden können. Das Datenwörterbuch wird über den Experience Platform Launch freigegeben und kann mit der Ortserweiterung verwendet werden.
+Ein Datenelement ist eine Variable, und der Wert für diese Variable kann Abfragezeichenfolgen, URLs, Cookie-Werten, JavaScript-Variablen usw. zugeordnet werden. In Experience Platform Launch können Sie diesen Wert anhand des Variablennamens referenzieren. Die Sammlung von Datenelementen wird zum Wörterbuch definierter Daten, die Sie zum Erstellen Ihrer Regeln (Ereignisse, Bedingungen und Aktionen) verwenden können. Das Datenwörterbuch wird über den Experience Platform Launch hinweg freigegeben und kann mit der Places-Erweiterung verwendet werden.
 
 Weitere Informationen zu Datenelementen finden Sie unter [Datenelemente](https://docs.adobe.com/content/help/de-DE/launch/using/reference/manage-resources/data-elements.html) und [Datenelemente erstellen](https://docs.adobe.com/content/help/de-DE/launch/using/reference/manage-resources/data-elements.html#create-a-data-element).
 
