@@ -2,9 +2,9 @@
 title: Places-Erweiterung
 description: Mit der Places-Erweiterung können Sie basierend auf dem Standort Ihrer Benutzer handeln.
 exl-id: 09c02753-09b3-4e07-82b2-b6c72c4e0e42
-source-git-commit: 795808b38851d5afcedc03f58e9a1d6342830934
+source-git-commit: d5c216aebd99ffef01c37c17c62576835b52438b
 workflow-type: tm+mt
-source-wordcount: '700'
+source-wordcount: '697'
 ht-degree: 5%
 
 ---
@@ -24,7 +24,7 @@ Mit der Places-Erweiterung können Sie basierend auf dem Standort Ihrer Benutzer
 
 1. Schließen Sie den Veröffentlichungsprozess ab, um die SDK-Konfiguration zu aktualisieren.
 
-   Weitere Informationen zur Veröffentlichung in Experience Platform Launch finden Sie unter [Veröffentlichung](https://docs.adobe.com/content/help/de-DE/launch/using/reference/publish/overview.html).
+   Weitere Informationen zur Veröffentlichung in Experience Platform Launch finden Sie unter [Publishing](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html?lang=de).
 
 ### Konfigurieren der Places-Erweiterung {#configure-places-extension}
 
@@ -72,7 +72,7 @@ So fügen Sie Ihrer App eine Places-Erweiterung mithilfe von Objective-C oder Sw
    pod 'ACPCore', '~> 2.0'    # minimum Core version for Places is 2.0.3
    ```
 
-   Wenn Sie Cocoapods nicht verwenden, können Sie auch die Mobile Core- und Places-Bibliotheken manuell aus unserer [Veröffentlichungsseite](https://github.com/Adobe-Marketing-Cloud/acp-sdks/releases/) auf GitHub.
+   Wenn Sie Cocoapods nicht verwenden, können Sie die Mobile Core- und Places-Bibliotheken auch manuell aus unserer [Veröffentlichungsseite](https://github.com/Adobe-Marketing-Cloud/acp-sdks/releases/) auf Github.
 
 1. Aktualisieren Sie Ihre Cocoapods:
 

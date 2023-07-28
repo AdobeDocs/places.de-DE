@@ -2,9 +2,9 @@
 title: Push-Benachrichtigungen
 description: In diesem Abschnitt erfahren Sie, wie Sie den Places-Dienst mit Push-Benachrichtigungen verwenden.
 exl-id: c094fe9c-6148-45ba-850a-f4c520d3362c
-source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
+source-git-commit: d5c216aebd99ffef01c37c17c62576835b52438b
 workflow-type: tm+mt
-source-wordcount: '233'
+source-wordcount: '225'
 ht-degree: 8%
 
 ---
@@ -17,15 +17,15 @@ Bevor Sie beginnen, stellen Sie sicher, dass Sie die folgenden Aufgaben abgeschl
 
 * Places Service -Daten wurden von Adobe Analytics verarbeitet.
 
-   Das bedeutet, dass Ihre mobile App erfolgreich Places Service-Daten an eine Report Suite gesendet hat und dass die Daten für die Segmentierung verfügbar sind.
+  Das bedeutet, dass Ihre mobile App erfolgreich Places Service-Daten an eine Report Suite gesendet hat und dass die Daten für die Segmentierung verfügbar sind.
 
 * Der Push-Benachrichtigungskanal in Mobile Services wurde eingerichtet.
 
-   Weitere Informationen finden Sie unter [Push-Nachrichten erstellen](https://docs.adobe.com/content/help/en/mobile-services/using/manage-app-settings-ug/configuring-app/prerequisites-push-messaging.html).
+  Weitere Informationen finden Sie unter [Push-Nachrichten erstellen](https://experienceleague.adobe.com/docs/discontinued/using/mobile-services.html).
 
 * Erfahren Sie, wie Sie eine Push-Benachrichtigung an ein Analytics-Segment in Mobile Services senden.
 
-   Weitere Informationen finden Sie unter [Push-Nachrichten erstellen](https://docs.adobe.com/content/help/en/mobile-services/using/messaging-ug/push-messages/t-create-push-message.html).
+  Weitere Informationen finden Sie unter [Push-Nachrichten erstellen](https://experienceleague.adobe.com/docs/discontinued/using/mobile-services.html).
 
 ## Benachrichtigung senden
 

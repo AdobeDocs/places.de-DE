@@ -2,10 +2,10 @@
 title: Bericht zu Standortdaten in Analytics Workspace
 description: Dieser Abschnitt enthält Informationen zum Reporting von Standortdaten in Analytics Workspace.
 exl-id: 45ca3c80-71b7-41de-9b00-645504061935
-source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
+source-git-commit: d5c216aebd99ffef01c37c17c62576835b52438b
 workflow-type: tm+mt
-source-wordcount: '452'
-ht-degree: 8%
+source-wordcount: '451'
+ht-degree: 5%
 
 ---
 
@@ -23,7 +23,7 @@ In diesem Dokument wird von Folgendem ausgegangen:
 
 1. Der Adobe Analytics-Benutzer ist ein Administrator und hat Zugriff auf Verarbeitungsregeln.
 
-   Weitere Informationen zu Verarbeitungsregeln finden Sie unter Übersicht über [Verarbeitungsregeln](https://docs.adobe.com/content/help/de-DE/analytics/admin/admin-tools/processing-rules/processing-rules.html).
+   Weitere Informationen zu Verarbeitungsregeln finden Sie unter Übersicht über [Verarbeitungsregeln](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules.html).
 
 1. In der Launch-Eigenschaft wurden Datenelemente für die gewünschten Places-Dienst-Variablen erstellt.
 
@@ -44,7 +44,7 @@ In diesem Beispiel hat die Aktion der Regel die folgenden Werte, die für die An
 
 ## 2. Erstellen von Analytics-Variablen
 
-Um die Kontextdaten zuzuordnen (gesendet in Schritt 1), müssen zunächst Variablen für die Analytics Report Suite erstellt werden. Weitere Informationen zum Erstellen von Variablen in Analytics finden Sie unter [Konversionsvariablen (eVars)](https://docs.adobe.com/content/help/en/analytics/implementation/analytics-basics/ref-conversion-variables-evar.html).
+Um die Kontextdaten zuzuordnen (gesendet in Schritt 1), müssen zunächst Variablen für die Analytics Report Suite erstellt werden. Weitere Informationen zum Erstellen von Variablen in Analytics finden Sie unter [Konversionsvariablen (eVars)](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/evar.html?lang=de).
 
 In diesem Beispiel wird eine Konversionsvariable **[!UICONTROL eVar2]**, erstellt und benannt wurde **[!UICONTROL Places POI Name]**. Für jede Standortvariable, die Sie in Berichten verfügbar machen möchten, müssen zusätzliche Variablen erstellt werden.
 
@@ -52,7 +52,7 @@ In diesem Beispiel wird eine Konversionsvariable **[!UICONTROL eVar2]**, erstell
 
 ## 3. Erstellen von Verarbeitungsregeln
 
-Dieser Schritt ist erforderlich, um Kontextdaten (Schritt 1) Analytics-Variablen (Schritt 2) zuzuordnen. Weitere Informationen zum Erstellen von Verarbeitungsregeln finden Sie unter [Übersicht über Verarbeitungsregeln](https://docs.adobe.com/content/help/de-DE/analytics/admin/admin-tools/processing-rules/processing-rules.html).
+Dieser Schritt ist erforderlich, um Kontextdaten (Schritt 1) Analytics-Variablen (Schritt 2) zuzuordnen. Weitere Informationen zum Erstellen von Verarbeitungsregeln finden Sie unter [Übersicht über Verarbeitungsregeln](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules.html).
 
 In diesem Beispiel wurde eine Verarbeitungsregel erstellt, um den Kontextdatenwert zuzuordnen **[!UICONTROL poi.name]** in **[!UICONTROL Places POI Name (eVar 2)]**. Für jede erstellte Ortsvariable müssen zusätzliche Verarbeitungsregeln erstellt werden.
 
@@ -60,13 +60,13 @@ In diesem Beispiel wurde eine Verarbeitungsregel erstellt, um den Kontextdatenwe
 
 ## 4. Erstellen eines Berichts in Workspace
 
-Dieser Schritt zeigt einen einfachen Bericht in Analytics Workspace, um die in den Schritten 1 bis 3 erfassten Daten anzuzeigen. Weitere Informationen zur Verwendung von Analytics Workspace finden Sie unter [Analysis Workspace - Übersicht](https://docs.adobe.com/content/help/de-DE/analytics/analyze/analysis-workspace/home.html).
+Dieser Schritt zeigt einen einfachen Bericht in Analytics Workspace, um die in den Schritten 1 bis 3 erfassten Daten anzuzeigen. Weitere Informationen zur Verwendung von Analytics Workspace finden Sie unter [Analysis Workspace - Übersicht](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=de).
 
 In diesem Beispiel hat der Bericht die folgenden Einstellungen:
 
 * Metrik - **[!UICONTROL Vorfälle]**
 
-* Dimension - **[!UICONTROL Aktionsname]**
+* DIMENSION - **[!UICONTROL Aktionsname]**
 
    * Aufschlüsselung nach Dimension - **[!UICONTROL Places POI Name]**
 

@@ -2,9 +2,9 @@
 title: Erstellen einer Regel für die Eigenschaft "Places Service"
 description: Das Places SDK verfolgt den aktuellen Speicherort, überwacht die konfigurierten POIs um den aktuellen Speicherort und verfolgt die Ein- und Ausstiegsereignisse für diese POIs.
 exl-id: dd5aa7ac-55f9-44dc-8632-e483ef3b91a0
-source-git-commit: 010de286c25c1eeb989fb76e3c2adaa82ac9fd35
+source-git-commit: d5c216aebd99ffef01c37c17c62576835b52438b
 workflow-type: tm+mt
-source-wordcount: '927'
+source-wordcount: '922'
 ht-degree: 15%
 
 ---
@@ -15,7 +15,7 @@ Mit der Places-Erweiterung und einer Region-Monitoring-Lösung, die in Ihrer Mob
 
 ## Regeln
 
-Sie können eine Regel konfigurieren, die aus einem Ereignis, einer Bedingung und einer Aktion besteht. Jede Regel besteht aus Folgendem:
+Sie können eine Regel konfigurieren, die aus einem Ereignis, einer Bedingung und einer Aktion besteht. Jede Regel setzt sich aus Folgendem zusammen:
 
 * Ein oder mehrere Ereignisse
 * (Optional) Bedingungen
@@ -50,11 +50,11 @@ Jeder POI enthält die folgenden Datenelemente:
 
 Mit Aktionen wird definiert, was die App als Reaktion auf die Bedingung für die Regel tut, die für das ausgelöste Ereignis erfüllt ist. Wenn Ihr Kunde beispielsweise Ihren POI erreicht, können Sie eine Willkommensnachricht so konfigurieren, dass sie auf seinem Mobilgerät angezeigt wird.
 
-## Erstellen Sie eine Regel: ein Beispiel
+## Erstellen einer Regel: ein Beispiel
 
 >[!CAUTION]
 >
->In diesem Beispiel wird davon ausgegangen, dass Sie eine POI-Bibliothek aller Cafés in den USA erstellt haben. Weitere Informationen zum Erstellen von POIs und Bibliotheken finden Sie unter [POI erstellen](/help/poi-mgmt-ui/create-a-poi-ui.md) und *Erstellen einer Bibliothek* in [Verwalten mehrerer Bibliotheken](https://docs.adobe.com/content/help/en/places/using/poi-mgmt-ui/manage-libraries-in-the-places-ui.html).
+>In diesem Beispiel wird davon ausgegangen, dass Sie eine POI-Bibliothek aller Cafés in den USA erstellt haben. Weitere Informationen zum Erstellen von POIs und Bibliotheken finden Sie unter [POI erstellen](/help/poi-mgmt-ui/create-a-poi-ui.md) und *Erstellen einer Bibliothek* in [Verwalten mehrerer Bibliotheken](https://experienceleague.adobe.com/docs/places/using/poi-mgmt-ui/manage-libraries-in-the-places-ui.html).
 
 Das folgende Verfahren zeigt, wie Sie eine Regel erstellen, die einen Beitrag an den Slack zurücksendet, wenn Sie in San Francisco einen Café betreten.
 
@@ -71,20 +71,20 @@ Bevor Sie eine Regel erstellen, müssen Sie in Adobe Experience Platform Launch 
 So erstellen Sie ein Datenelement in Experience Platform Launch:
 
 1. Klicken Sie auf **Datenelemente** Registerkarte.
-1. Klicken **Datenelement hinzufügen**.
-1. Geben Sie einen Namen ein, z. B. **Name des aktuellen Cafés**.
+1. Klicks **Datenelement hinzufügen**.
+1. Geben Sie einen Namen ein, beispielsweise **Name des aktuellen Cafés**.
 1. Im **Erweiterung** Dropdown-Liste auswählen **Places - Beta**.
 1. Wählen Sie unter **Datenelement** die Option **Stadt** aus.
 1. Wählen Sie im rechten Bereich **Aktueller POI**.
 1. Klicken Sie auf **Speichern**.
 
-### Erstellen einer Regel in Experience Platform Launch für den Places-Dienst
+### Erstellen einer Regel in Experience Platform Launch für Places Service
 
 ![Erstellen einer Regel](/help/assets/placesrule.png)
 
 1. Klicken Sie in Experience Platform Launch auf den Tab **[!UICONTROL Regeln]**.
 1. Klicken Sie auf **[!UICONTROL Regel hinzufügen]**.
-1. Geben Sie einen Namen für die Regel ein, z. B. **[!UICONTROL Einstieg in den Coffeeshop in SF verfolgen]**.
+1. Geben Sie einen Namen für die Regel ein, beispielsweise **[!UICONTROL Einstieg in den Coffeeshop in SF verfolgen]**.
 
 ### Erstellen Sie ein Ereignis
 
@@ -96,27 +96,27 @@ So erstellen Sie ein Datenelement in Experience Platform Launch:
 
 ### Erstellen einer Bedingung
 
-1. Klicken Sie im Abschnitt &quot;Bedingungen&quot;auf **[!UICONTROL +Hinzufügen]**. Die Bedingungen bestimmen, welche Kriterien erfüllt sein müssen, damit die Maßnahme durchgeführt wird.
+1. Klicken Sie im Abschnitt Bedingungen auf **[!UICONTROL +Hinzufügen]**. Die Bedingungen bestimmen, welche Kriterien erfüllt sein müssen, damit die Maßnahme durchgeführt wird.
 1. Wählen Sie unter **[!UICONTROL Logiktyp]** die Option „Standard“ aus, wodurch Aktionen ausgeführt werden können, wenn die Bedingung erfüllt ist.
 1. Im **[!UICONTROL Erweiterung]** Dropdown-Liste auswählen **[!UICONTROL Places - Beta]**.
 1. Wählen Sie unter **[!UICONTROL Bedingungstyp]** die Option **[!UICONTROL Stadt]** aus.
-1. Geben Sie einen Bedingungsnamen ein, z. B. **[!UICONTROL Kaffeehaus in SF]**.
+1. Geben Sie einen Bedingungsnamen ein, beispielsweise **[!UICONTROL Kaffeehaus in SF]**.
 1. Klicken Sie im rechten Bereich auf **[!UICONTROL Aktueller POI]** und wählen Sie in der Dropdown-Liste **[!UICONTROL San Francisco]** als eine Ihrer Städte aus.
 1. Klicken Sie auf **[!UICONTROL Änderungen beibehalten]**.
 
 ### Erstellen einer Aktion
 
 1. Im **[!UICONTROL Aktionen]** Abschnitt, klicken Sie auf **[!UICONTROL + Hinzufügen]**.
-1. Im **[!UICONTROL Erweiterung]** in der Dropdown-Liste beibehalten **[!UICONTROL Mobile Core]** ausgewählt.
-1. Wählen Sie einen Aktionstyp aus, z. B. **[!UICONTROL Postback senden]**.
+1. Im **[!UICONTROL Erweiterung]** in der Dropdown-Liste beibehalten **[!UICONTROL Mobile Core]** ausgewählt ist.
+1. Wählen Sie einen Aktionstyp aus, beispielsweise **[!UICONTROL Postback senden]**.
 
    a. In **[!UICONTROL URL]** Geben Sie die Postback-URL für den Slack ein, z. B. `https://hooks.slack.com/services/`.
 
    b. Um einen POST-Hauptteil zu senden, wählen Sie die **[!UICONTROL Post-Körper hinzufügen]** aktivieren.
 
-   c. in **[!UICONTROL Post-Körper]** Fügen Sie den Post-Hauptteil hinzu, z. B.: `{ "text": "A customer has entered" }`
+   c. in **[!UICONTROL Post-Körper]**, fügen Sie den Post-Hauptteil hinzu, z. B.: `{ "text": "A customer has entered" }`
 
-   c. Geben Sie einen Inhaltstyp ein, z. B. **[!UICONTROL application/json]**.
+   c. Geben Sie einen Inhaltstyp ein, beispielsweise **[!UICONTROL application/json]**.
 
    d. Wählen Sie einen Timeout-Wert aus, z. B. **[!UICONTROL 5]**.
 
@@ -124,7 +124,7 @@ So erstellen Sie ein Datenelement in Experience Platform Launch:
 
 ### Regel veröffentlichen
 
-1. Um die Regel zu aktivieren, müssen Sie sie veröffentlichen. Weitere Informationen zum Veröffentlichen der Regel in Experience Platform Launch finden Sie unter [Veröffentlichung](https://docs.adobe.com/content/help/de-DE/launch/using/reference/publish/overview.html).
+1. Um die Regel zu aktivieren, müssen Sie sie veröffentlichen. Weitere Informationen zum Veröffentlichen der Regel in Experience Platform Launch finden Sie unter [Publishing](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html?lang=de).
 
 ### Denken über Einstiege und Ausstiege hinaus
 

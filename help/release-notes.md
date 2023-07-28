@@ -2,9 +2,9 @@
 title: Versionshinweise
 description: Versionshinweise für den Places-Dienst.
 exl-id: 76da9548-4e32-4b23-9a15-7012973915f3
-source-git-commit: 2b5c53887c9ed0f2a672c377121a39537ee58f01
+source-git-commit: d5c216aebd99ffef01c37c17c62576835b52438b
 workflow-type: tm+mt
-source-wordcount: '1492'
+source-wordcount: '1490'
 ht-degree: 3%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 3%
 
    * Erweiterungen für Places und Places Monitor wurden hinzugefügt für [React Native Apps](https://aep-sdks.gitbook.io/docs/resources/upgrading-to-aep/current-sdk-versions#react-native)
    * Erweiterungen für Places und Places Monitor wurden hinzugefügt für [Cordova-Anwendungen](https://aep-sdks.gitbook.io/docs/resources/upgrading-to-aep/current-sdk-versions#cordova)
-   * Weitere Informationen finden Sie unter: [Verwenden der Places-Erweiterung](https://docs.adobe.com/content/help/de-DE/places/using/places-ext-aep-sdks/places-extension/places-extension.html)
+   * Weitere Informationen: [Verwenden der Places-Erweiterung](https://experienceleague.adobe.com/docs/places/using/places-ext-aep-sdks/places-extension/places-extension.html?lang=de)
 
 
 ## 12. Mai 2020
@@ -80,7 +80,7 @@ ht-degree: 3%
 
    * **iOS**
 
-      * Rufen Sie die Places-API auf, um den CLAuthorizationStatus von dem Gerät zu erfassen, wenn es sich ändert.
+      * Rufen Sie die Places-API auf, um den CLAuthorizationStatus beim Ändern des Geräts zu erfassen.
 
 ## 3. Dezember 2019
 
@@ -96,7 +96,7 @@ ht-degree: 3%
 
    * **iOS**
 
-      * Fehlerkorrektur - Importanweisungen für Cocoapods-Projekte mit der Option für mehrere Pod-Projekte werden nun korrekt eingefügt.
+      * Es wurden Importanweisungen für Cocoapods-Projekte behoben, die die Option für mehrere Pod-Projekte verwendet haben.
 
 ## 22. November 2019
 
@@ -114,12 +114,12 @@ ht-degree: 3%
    * **iOS**
 
       * Es wurde eine neue API hinzugefügt, `setRequestAuthorizationLevel`, um den Typ der Standortautorisierungsanforderung festzulegen, für die der Benutzer aufgefordert wird.
+
+
    * **Android**
 
       * Es wurde eine neue API hinzugefügt, `setLocationPermission`, um den Typ der Anforderung für Standortberechtigungen festzulegen, für die der Benutzer aufgefordert wird.
       * Der Places Monitor unterstützt jetzt Android 10.
-
-
 
 ## 8. August 2019
 
@@ -142,7 +142,7 @@ Im Folgenden finden Sie eine Liste der Aktualisierungen der Places-Benutzeroberf
 * Am oberen Rand der Benutzeroberfläche wurde ein neues Suchfeld hinzugefügt.
 * Wenn nur eine Bibliothek vorhanden ist, wird diese Bibliothek beim Erstellen eines POI automatisch ausgewählt.
 * Die Bibliotheksverwaltung wurde in ein Popup-Fenster verschoben.
-* Neben den Filtern wurde eine POI-Anzahl hinzugefügt.
+* Neben den Filtern wurde ein POI-Zähler hinzugefügt.
 
 ## 6. August 2019
 
@@ -162,9 +162,9 @@ In dieser Version wurden die folgenden Aktualisierungen vorgenommen:
 * Für die Verarbeitung des Rückrufs, der aus einer Anfrage zur Erteilung von Standortberechtigungen resultierte, müssen Sie PlacesActivity nicht mehr erweitern.
 * Eine vorhandene API wurde geändert, sodass Entwickler alle Places-Daten vom Gerät löschen können:
 
-   Alte API: `public static void stop();`
+  Alte API: `public static void stop();`
 
-   Neue -API: `public static void stop (final boolean clearData);`
+  Neue -API: `public static void stop (final boolean clearData);`
 
 * Die Verwendung der `getNearbyPointsOfInterest` API zur effektiveren Handhabung von Fehlerszenarien.
 
@@ -176,7 +176,7 @@ In dieser Version wurden die folgenden Aktualisierungen vorgenommen:
 
 * So löschen Sie alle Places -Daten vom Gerät:
 
-   Ersetzt in ACPPlacesMonitor eine vorhandene API `+ (void) stop;` mit`+ (void) stop: (BOOL) clearData;`.
+  Ersetzt in ACPPlacesMonitor eine vorhandene API `+ (void) stop;` mit`+ (void) stop: (BOOL) clearData;`.
 
 * Die Verwendung der ACPPlaces wurde aktualisiert. `getNearbyPointsOfInterest` API zur effektiveren Handhabung von Fehlerszenarien.
 
@@ -197,7 +197,7 @@ In dieser Version wurden die folgenden Aktualisierungen vorgenommen:
 
 **iOS Places 1.2.0**
 
-Es wurde eine neue API hinzugefügt, die alle Places-bezogenen Daten aus dem freigegebenen Status, dem In-App-Speicher und `NSUserDefaults`.
+Es wurde eine neue API hinzugefügt, mit der alle Places-bezogenen Daten aus dem freigegebenen Status, dem In-App-Speicher und `NSUserDefaults`.
 
 ## 25. Juni 2019
 
@@ -257,7 +257,7 @@ Weitere Informationen zum Places Monitor finden Sie hier.
 * Es wurde eine neue API für getNearByPlaces eingeführt, die über einen errorCallback verfügt und mit einem errorCode aufgerufen wird, der den Grund für den Fehler anzeigt.
 * Die Places-Erweiterung stellt die Ereignisse jetzt in die Warteschlange, bis eine Konfiguration abgerufen wird.
 * Unterstützung für umgebungsbasierte Konfigurationen hinzugefügt.
-* Fehlerbehebung : die Schlüssel für die Ein-/Ausstiegsereignisse der Region korrigiert
+* Fehlerbehebung : Korrektur der Schlüssel für die Ereignisse &quot;region&quot;(Einstieg/Ausstieg)
 * Die Speicherung des letzten bekannten Speicherorts respektiert jetzt den Datenschutzstatus des Benutzers ordnungsgemäß.
 
 
@@ -275,7 +275,7 @@ In dieser Version wurden die folgenden Aktualisierungen vorgenommen:
 
 iOS Places Monitor 1.0.0
 
-Erstmalige Veröffentlichung des Places Monitor for iOS.
+Erste Version von Places Monitor for iOS.
 
 Der Places Monitor verwaltet die Standort-APIs auf Betriebssystemebene und kommuniziert direkt mit der Places-Erweiterung. Wenn beide Erweiterungen installiert sind, können Kunden in ihrer Anwendung über eine native Regionsüberwachung verfügen.
 
@@ -287,11 +287,11 @@ Dies ist die erste Version von Places Service, einem Satz von Tools, mit denen K
 
 ### Wichtigste Funktionen
 
-Hier finden Sie die wichtigsten Funktionen dieser Version:
+Hier finden Sie die wichtigsten Funktionen in dieser Version:
 
 #### Places Service-Benutzeroberfläche
 
-Wir haben eine Verwaltungs-Benutzeroberfläche veröffentlicht, über die Sie Ihre Zielpunkte (POIs) anzeigen und verwalten können. Sie können Ihre POIs auch in Bibliotheken organisieren. Zusätzlich zu Standard-Metadaten wie Stadt, Bundesland und Kategorie unterstützen wir auch die Möglichkeit, Ihren Zielpunkten benutzerdefinierte Metadaten hinzuzufügen.
+Wir haben eine Verwaltungs-Benutzeroberfläche veröffentlicht, über die Sie Ihre Zielpunkte (POIs) anzeigen und verwalten können. Sie können Ihre Zielpunkte auch in Bibliotheken organisieren. Zusätzlich zu Standard-Metadaten wie Stadt, Bundesland und Kategorie unterstützen wir auch die Möglichkeit, Ihren Zielpunkten benutzerdefinierte Metadaten hinzuzufügen.
 
 * Um die Benutzeroberfläche anzuzeigen, navigieren Sie zu [https://places.adobe.com](https://places.adobe.com).
 * Informationen zu den ersten Schritten mit der Benutzeroberfläche finden Sie unter [Erste Schritte](/help/getting-started.md).
@@ -316,7 +316,7 @@ Sie können die Places-APIs wie folgt verwenden:
 * Erstellen Sie Ihre eigene Benutzeroberfläche oder integrieren Sie sie in eine vorhandene POI-Datenbank.
 * Verwenden Sie die Batch-Endpunkte der Places-API, um einen Massenimport von POIs durchzuführen.
 
-   Sie können das bereitgestellte Python-Dienstprogramm verwenden, um den Massenimport abzuschließen.
+  Sie können das bereitgestellte Python-Dienstprogramm verwenden, um den Massenimport abzuschließen.
 
 Weitere Informationen zu den Places-APIs finden Sie unter [Webdienst-API](/help/web-service-api/places-web-services.md).
 

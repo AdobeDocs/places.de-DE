@@ -1,7 +1,7 @@
 ---
-source-git-commit: c79135bed83932095df42869017ed2cc20be6e22
+source-git-commit: d5c216aebd99ffef01c37c17c62576835b52438b
 workflow-type: tm+mt
-source-wordcount: '436'
+source-wordcount: '433'
 ht-degree: 100%
 
 ---
@@ -15,7 +15,7 @@ Für dieses Projekt gilt der [Adobe Open Source-Verhaltenskodex](code-of-conduct
 
 ## Informationen zu Ihren Beiträgen zu den Adobe-Inhalten
 
-Lesen Sie das [Adobe Docs-Mitarbeiter-Handbuch](https://docs.adobe.com/help/de-DE/contributor/contributor-guide/introduction.html).
+Lesen Sie das [Adobe Docs-Mitarbeiter-Handbuch](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=de).
 
 Wie Sie Beiträge einbringen, hängt davon ab, wer Sie sind und welche Art von Änderungen Sie beitragen möchten:
 
@@ -23,7 +23,7 @@ Wie Sie Beiträge einbringen, hängt davon ab, wer Sie sind und welche Art von �
 
 Um eine Anfrage einzureichen, klicken Sie in einem Artikel auf den Link **Problem protokollieren**, wodurch ein Problem in GitHub geöffnet wird. Geben Sie einen Titel und eine Beschreibung an und klicken Sie dann auf **Neues Problem vorlegen**.
 
-Um kleinere Aktualisierungen anzufordern, klicken Sie in einem Artikel auf **Diese Seite bearbeiten**, um den Quellartikel in GitHub zu öffnen. Verwenden Sie die GitHub-Benutzeroberfläche, um Ihre Aktualisierungen vorzunehmen. Weitere Informationen finden Sie im allgemeinen [Adobe Docs-Mitarbeiter-Handbuch](https://docs.adobe.com/help/de-DE/contributor/contributor-guide/introduction.html).
+Um kleinere Aktualisierungen anzufordern, klicken Sie in einem Artikel auf **Diese Seite bearbeiten**, um den Quellartikel in GitHub zu öffnen. Verwenden Sie die GitHub-Benutzeroberfläche, um Ihre Aktualisierungen vorzunehmen. Weitere Informationen finden Sie im allgemeinen [Adobe Docs-Mitarbeiter-Handbuch](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=de).
 
 Kleinere Korrekturen oder Erläuterungen, die Sie für Dokumentation und Codebeispiele in diesem Repository senden, sind durch die Adobe-Nutzungsbedingungen abgedeckt.
 
@@ -45,7 +45,7 @@ Wenn Sie technischer Redakteur, Programmmanager oder Entwickler des Produktteams
 
 Community-Mitarbeiter können die GitHub-Benutzeroberfläche zur einfachen Bearbeitung oder zur Abspaltung des Repositorys verwenden, um umfangreiche Beiträge vorzunehmen.
 
-Weitere Informationen finden Sie im [Adobe Docs-Mitarbeiter-Handbuch](https://docs.adobe.com/help/de-DE/contributor/contributor-guide/introduction.html).
+Weitere Informationen finden Sie im [Adobe Docs-Mitarbeiter-Handbuch](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=de).
 
 ## Markdown zum Formatieren Ihres Themas verwenden
 
