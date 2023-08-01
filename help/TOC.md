@@ -2,7 +2,8 @@
 audience: end-user
 user-guide-title: Places Service-Anleitung
 user-guide-description: Places-Service ist ein Geolokations-Service, mit dem Mobile Apps mit Standorterkennung den Standortkontext verstehen können.
-source-git-commit: 010de286c25c1eeb989fb76e3c2adaa82ac9fd35
+feature: Places
+source-git-commit: 30f083087936f54c692ff5aca245a7ee6b970b3a
 workflow-type: tm+mt
 source-wordcount: '301'
 ht-degree: 21%
@@ -37,7 +38,7 @@ ht-degree: 21%
          + [Bibliothek löschen](web-service-api/api-usage/manage-libraries/delete-a-library.md)
          + [Alle Bibliotheken in Ihrer Organisation lesen](web-service-api/api-usage/manage-libraries/read-all-libraries-in-your-organization.md)
          + [Rang in Ihren Bibliotheken festlegen](web-service-api/api-usage/manage-libraries/set-a-ran-on-your-libraries.md)
-         + [Bibliotheksrang abrufen](web-service-api/api-usage/manage-libraries/get-a-librarys-rank.md)
+         + [Bibliotheksrang](web-service-api/api-usage/manage-libraries/get-a-librarys-rank.md)
       + Zielpunkte verwalten {#manage-pois}
          + [Übersicht über POIs verwalten](web-service-api/api-usage/manage-pois/manage-pois.md)
          + [POI erstellen](web-service-api/api-usage/manage-pois/create-a-poi.md)
@@ -48,7 +49,7 @@ ht-degree: 21%
          + [Alle Zielpunkte in Ihrer Organisation lesen](web-service-api/api-usage/manage-pois/read-all-pois-in-your-organization.md)
          + Batch-APIs {#batch-apis}
             + [Batch-APIs - Übersicht](web-service-api/api-usage/manage-pois/batch-apis/batch-apis.md)
-            + [Erstellen mehrerer POIs](web-service-api/api-usage/manage-pois/batch-apis/create-multiple-pois.md)
+            + [Mehrere Zielpunkte erstellen](web-service-api/api-usage/manage-pois/batch-apis/create-multiple-pois.md)
             + [Mehrere Zielpunkte aktualisieren](web-service-api/api-usage/manage-pois/batch-apis/update-multiple-pois.md)
             + [Mehrere Zielpunkte löschen](web-service-api/api-usage/manage-pois/batch-apis/delete-multiple-pois.md)
       + [Abfrage-APIs](web-service-api/api-usage/query-apis.md)
