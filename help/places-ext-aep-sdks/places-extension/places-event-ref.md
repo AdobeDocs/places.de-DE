@@ -1,8 +1,9 @@
 ---
 title: Places-Ereignisreferenz
 description: Eine Liste der Ereignisse, die von der Places-Erweiterung verarbeitet werden.
+feature: Mobile SDK
 exl-id: 98210ef4-5ff1-4792-b97b-2845ce02e78a
-source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
+source-git-commit: f521d5e3b0b69977877d88382ce41fcb7d1c54b9
 workflow-type: tm+mt
 source-wordcount: '248'
 ht-degree: 29%
@@ -45,7 +46,7 @@ Bei diesem Ereignis handelt es sich um eine Anfrage zum Abrufen der nahegelegene
 
 | Schlüssel | Werttyp | Erforderlich | Standardwert | Beschreibung |
 | :--- | :--- | :--- | :--- | :--- |
-| latitude | double | wahr | Nicht zutreffend | Enthält den Breitenwert für die Mitte der Suche nach nahe gelegenen POIs. |
+| latitude | double | wahr | Nicht zutreffend | Enthält den Breitenwert für die Mitte der Suche nach nahe gelegenen Zielpunkten. |
 | longitude | double | wahr | Nicht zutreffend | Enthält den Längenwert für die Mitte der Suche nach nahe gelegenen POIs. |
 | radius | integer | false | Nicht zutreffend | Radius, in Metern, der für die Suche nach nahe gelegenen POIs verwendet wird. |
 | count | integer | false | 10 | Maximale Anzahl an POIs, die in dem resultierenden Antwortereignis zurückgegeben werden. |

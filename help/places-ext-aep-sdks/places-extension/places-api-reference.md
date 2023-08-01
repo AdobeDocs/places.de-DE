@@ -1,8 +1,9 @@
 ---
 title: Places-API-Referenz
 description: Informationen zu den API-Referenzen in Places.
+feature: Mobile SDK
 exl-id: ce1a113c-dee0-49df-8d2f-789ccc1c8322
-source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
+source-git-commit: f521d5e3b0b69977877d88382ce41fcb7d1c54b9
 workflow-type: tm+mt
 source-wordcount: '583'
 ht-degree: 32%
@@ -86,7 +87,7 @@ Hier finden Sie ein Code-Beispiel für diese Methode:
 
 ### ProcessGeofencingEvent (Android)
 
-Alle Prozesse verarbeiten `Geofences` im `GeofencingEvent` gleichzeitig.
+Alle verarbeiten `Geofences` im `GeofencingEvent` gleichzeitig.
 
 **Syntax**
 
