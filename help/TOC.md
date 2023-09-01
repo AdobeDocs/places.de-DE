@@ -3,10 +3,10 @@ audience: end-user
 user-guide-title: Places Service-Anleitung
 user-guide-description: Places-Service ist ein Geolokations-Service, mit dem Mobile Apps mit Standorterkennung den Standortkontext verstehen können.
 feature: Places
-source-git-commit: 30f083087936f54c692ff5aca245a7ee6b970b3a
+source-git-commit: 9f2c6fee6e0d6d075b662cc0b6cbee49cf05ee55
 workflow-type: tm+mt
-source-wordcount: '301'
-ht-degree: 21%
+source-wordcount: '290'
+ht-degree: 22%
 
 ---
 
@@ -54,11 +54,7 @@ ht-degree: 21%
             + [Mehrere Zielpunkte löschen](web-service-api/api-usage/manage-pois/batch-apis/delete-multiple-pois.md)
       + [Abfrage-APIs](web-service-api/api-usage/query-apis.md)
 + Erweiterungen für die Mobile SDKs {#places-ext-aep-sdks}
-   + Places-Erweiterung {#places-extension}
-      + [Places-Erweiterung](places-ext-aep-sdks/places-extension/places-extension.md)
-      + [Places-API-Referenz](places-ext-aep-sdks/places-extension/places-api-reference.md)
-      + [Places-Ereignisreferenz](places-ext-aep-sdks/places-extension/places-event-ref.md)
-      + [Benutzerdefinierte Places-Objekte](places-ext-aep-sdks/places-extension/cust-places-objects.md)
+   + [Places-Erweiterung](places-ext-aep-sdks/places-extension/places-extension.md)
 + [Verwenden Sie den Places-Dienst mit Ihrer eigenen Überwachungslösung](using-your-own-monitor.md)
 + [Verwenden des Places-Dienstes ohne aktive Regionsüberwachung](use-places-without-active-monitoring.md)
 + Verwenden des Places-Dienstes als Teil des Experience Platform Launch-Workflows {#use-places-launch-workflow}
