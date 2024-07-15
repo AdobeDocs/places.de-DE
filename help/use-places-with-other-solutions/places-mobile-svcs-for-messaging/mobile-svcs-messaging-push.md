@@ -4,8 +4,8 @@ description: In diesem Abschnitt erfahren Sie, wie Sie den Places-Dienst mit Pus
 exl-id: c094fe9c-6148-45ba-850a-f4c520d3362c
 source-git-commit: d5c216aebd99ffef01c37c17c62576835b52438b
 workflow-type: tm+mt
-source-wordcount: '225'
-ht-degree: 8%
+source-wordcount: '216'
+ht-degree: 10%
 
 ---
 
@@ -21,18 +21,18 @@ Bevor Sie beginnen, stellen Sie sicher, dass Sie die folgenden Aufgaben abgeschl
 
 * Der Push-Benachrichtigungskanal in Mobile Services wurde eingerichtet.
 
-  Weitere Informationen finden Sie unter [Push-Nachrichten erstellen](https://experienceleague.adobe.com/docs/discontinued/using/mobile-services.html).
+  Weitere Informationen finden Sie unter [Push-Nachrichten erstellen](https://experienceleague.adobe.com/docs/discontinued/using/mobile-services.html?lang=de).
 
 * Erfahren Sie, wie Sie eine Push-Benachrichtigung an ein Analytics-Segment in Mobile Services senden.
 
-  Weitere Informationen finden Sie unter [Push-Nachrichten erstellen](https://experienceleague.adobe.com/docs/discontinued/using/mobile-services.html).
+  Weitere Informationen finden Sie unter [Push-Nachrichten erstellen](https://experienceleague.adobe.com/docs/discontinued/using/mobile-services.html?lang=de).
 
 ## Benachrichtigung senden
 
-Im **[!UICONTROL Zielgruppe]** des *Push-Benachrichtigung erstellen* um die Audience für diese Nachricht auf eine der folgenden Arten zu erstellen:
+Auf der Registerkarte **[!UICONTROL Zielgruppe]** des Workflows *Push-Benachrichtigung erstellen* können Sie die Zielgruppe für diese Nachricht auf eine der folgenden Arten erstellen:
 
-* Im **[!UICONTROL Analytics-Segmente]** ein zuvor erstelltes Adobe Analytics-Segment aus.
+* Wählen Sie in der Dropdownliste **[!UICONTROL Analytics-Segmente]** ein zuvor erstelltes Adobe Analytics-Segment aus.
 
-* Im **[!UICONTROL Benutzerdefiniertes Segment]** erstellen Sie eine Zielgruppe mithilfe der verfügbaren benutzerdefinierten Segmentparameter.
+* Erstellen Sie im Abschnitt **[!UICONTROL Benutzerdefiniertes Segment]** eine Zielgruppe mithilfe der verfügbaren benutzerdefinierten Segmentparameter.
 
-![Push-Nachrichten einrichten](/help/assets/push-set-up.png)
+![Einrichten einer Push-Nachricht](/help/assets/push-set-up.png)

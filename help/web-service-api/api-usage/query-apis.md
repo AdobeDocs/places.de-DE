@@ -4,8 +4,8 @@ description: Verstehen und Verwenden von Abfrage-APIs.
 exl-id: cc61a49c-1cf2-407f-b81a-3d38fcb622cc
 source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
 workflow-type: tm+mt
-source-wordcount: '217'
-ht-degree: 4%
+source-wordcount: '222'
+ht-degree: 3%
 
 ---
 
@@ -25,24 +25,24 @@ Mit der folgenden Eingabe gibt der Dienst eine Liste der POIs zurück, die dem A
 * Die IDs der POI-Bibliotheken, die in die Suche einbezogen werden sollen.
 * Die maximale Anzahl der zurückzugebenden POIs.  Der Standardwert lautet 100.
 
-   Der Abstand zwischen Anrufer und POI ist definiert als der Abstand vom Anrufer zum Rand der POI-Geofence. In der Antwort werden POIs, die den Aufrufer enthalten, als mit dem Aufrufer gekennzeichnet.
+  Der Abstand zwischen Anrufer und POI ist definiert als der Abstand vom Anrufer zum Rand der POI-Geofence. In der Antwort werden POIs, die den Aufrufer enthalten, als mit dem Aufrufer gekennzeichnet.
 
 Argumente werden als folgende Abfrageparameter bereitgestellt:
 
 * (**Erforderlich**) `latitude`
 
-   Der Breitengrad des Anrufers, der zwischen -85 und 85 liegen muss.
+  Der Breitengrad des Anrufers, der zwischen -85 und 85 liegen muss.
 * (**Erforderlich**) `longitude`
 
-   Der Längengrad des Anrufers, der zwischen -180 und 180 liegen muss.
+  Der Längengrad des Anrufers, der zwischen -180 und 180 liegen muss.
 
 * (**Optional**) `limit`
 
-   Die maximale Anzahl der zurückzugebenden POIs.
+  Die maximale Anzahl der zurückzugebenden POIs.
 
 * (**Erforderlich**) `library`
 
-   Die ID der Bibliothek, die abgefragt werden soll. Um mehrere Bibliotheken abzufragen, stellen Sie sicher, dass Sie mehrere Kopien des Bibliotheksparameters in die Abfrage einschließen.
+  Die ID der abzurufenden Bibliothek. Um mehrere Bibliotheken abzufragen, stellen Sie sicher, dass Sie mehrere Kopien des Bibliotheksparameters in die Abfrage einschließen.
 
 Im Folgenden finden Sie ein Beispiel für das erfolgreich zurückgegebene JSON-Format:
 
@@ -107,7 +107,7 @@ Im Folgenden finden Sie ein Beispiel für das erfolgreich zurückgegebene JSON-F
 }
 ```
 
-POIs unter `places.pois` sind nach der Entfernung vom Anrufer zum Rand der POIs sortiert. POIs unter `places.userWithin` enthält den Aufrufer, und diese POIs werden nach Rang geordnet und dann durch Erhöhung des Radius.
+POIs unter `places.pois` werden nach der Entfernung vom Anrufer zum Rand der POIs sortiert. POIs unter `places.userWithin` enthalten den Aufrufer, und diese POIs werden nach Rang und dann durch Vergrößern des Radius sortiert.
 
 ## Beispielaufruf
 

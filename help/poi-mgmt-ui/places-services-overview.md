@@ -14,4 +14,4 @@ ht-degree: 0%
 POIs werden mithilfe der Benutzeroberfläche des Places-Dienstes in der Datenbank des Places-Dienstes erstellt und verwaltet.
 
 * Informationen zum Erstellen oder Ändern einer Bibliothek finden Sie unter [Bibliotheken verwalten](/help/poi-mgmt-ui/manage-libraries-in-the-places-ui.md).
-* Informationen zum Erstellen oder Ändern eines POI finden Sie unter [POIs verwalten](/help/poi-mgmt-ui/managing-pois-in-the-places-ui.md).
+* Informationen zum Erstellen oder Ändern eines Zielpunkts finden Sie unter [Zielpunkte verwalten](/help/poi-mgmt-ui/managing-pois-in-the-places-ui.md).

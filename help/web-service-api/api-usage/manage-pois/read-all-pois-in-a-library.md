@@ -5,13 +5,13 @@ exl-id: 08544909-661c-4a14-84e0-bacd0241a844
 source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
 workflow-type: tm+mt
 source-wordcount: '54'
-ht-degree: 7%
+ht-degree: 3%
 
 ---
 
 # Alle Zielpunkte in einer Bibliothek lesen {#read-all-pois-library}
 
-Eine GET-Methode, die alle POIs in einer Bibliothek zurückgibt.
+Eine GET-Methode, die alle Zielpunkte in einer Bibliothek zurückgibt.
 
 ## Anfrage
 
@@ -167,4 +167,4 @@ curl -X GET 'https://api-places.adobe.io/places/placesapi/v1/libraries/<LIBRARYI
 
 >[!IMPORTANT]
 >
->Ersetzen Sie &quot;&quot;, `<API KEY>`, `<TOKEN>`und `<ORGID>` mit tatsächlichen Werten.
+>Ersetzen Sie &#39;&#39;, `<API KEY>`, `<TOKEN>` und `<ORGID>` durch die tatsächlichen Werte.

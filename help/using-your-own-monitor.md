@@ -11,7 +11,7 @@ ht-degree: 1%
 
 # Verwenden eines eigenen Monitors {#using-your-monitor}
 
-Sie können Ihre Überwachungsdienste auch verwenden und mit Places Service integrieren, indem Sie die APIs der Places-Erweiterung verwenden.
+Sie können Ihre Überwachungsdienste auch verwenden und mit dem Places-Dienst integrieren, indem Sie die Places-Erweiterungs-APIs verwenden.
 
 ## Registrieren von Geofences
 
@@ -23,7 +23,7 @@ Führen Sie in iOS die folgenden Schritte aus:
 
 1. Übergeben Sie die Standortaktualisierungen, die von den Core-Standortdiensten der iOS erhalten wurden, an die Places-Erweiterung.
 
-1. Verwenden Sie die `getNearbyPointsOfInterest` Places-Erweiterungs-API zum Abrufen des Arrays von `ACPPlacesPoi` Objekte um die aktuelle Position.
+1. Verwenden Sie die API für die Erweiterung `getNearbyPointsOfInterest` Places , um das Array von `ACPPlacesPoi` -Objekten um die aktuelle Position zu beziehen.
 
    ```objective-c
    - (void) locationManager: (CLLocationManager*) manager didUpdateLocations: (NSArray<CLLocation*>*) locations {
@@ -33,7 +33,7 @@ Führen Sie in iOS die folgenden Schritte aus:
    }
    ```
 
-1. Extrahieren Sie die Informationen aus dem erhaltenen `ACPPlacesPOI` Objekte erstellen und mit der Überwachung dieser Zielpunkte beginnen.
+1. Extrahieren Sie die Informationen aus den erhaltenen `ACPPlacesPOI` -Objekten und beginnen Sie mit der Überwachung dieser POIs.
 
    ```objective-c
    - (void) startMonitoringGeoFences: (NSArray*) newGeoFences {
@@ -59,7 +59,7 @@ Führen Sie in iOS die folgenden Schritte aus:
 
 1. Übergeben Sie die Standortaktualisierungen, die von den Google Play-Diensten oder den Android-Standortdiensten erhalten wurden, an die Places-Erweiterung.
 
-1. Verwenden Sie die `getNearbyPointsOfInterest` Places-Erweiterungs-API zum Abrufen der Liste von `PlacesPoi` Objekte um die aktuelle Position.
+1. Verwenden Sie die Places Extension-API `getNearbyPointsOfInterest` , um die Liste der `PlacesPoi` -Objekte um den aktuellen Speicherort zu erhalten.
 
    ```java
    LocationCallback callback = new LocationCallback() {
@@ -77,7 +77,7 @@ Führen Sie in iOS die folgenden Schritte aus:
    };
    ```
 
-1. Extrahieren Sie die Daten aus dem `PlacesPOI` Objekte erstellen und mit der Überwachung dieser Zielpunkte beginnen.
+1. Extrahieren Sie die Daten aus den erhaltenen `PlacesPOI` -Objekten und beginnen Sie mit der Überwachung dieser POIs.
 
    ```java
    private void startMonitoringFences(final List<PlacesPOI> nearByPOIs) {
@@ -102,7 +102,7 @@ Führen Sie in iOS die folgenden Schritte aus:
    ```
 
 
-Aufrufen der `getNearbyPointsOfInterest` Die API führt zu einem Netzwerkaufruf, der den Speicherort um den aktuellen Speicherort abruft.
+Der Aufruf der `getNearbyPointsOfInterest` -API führt zu einem Netzwerkaufruf, der den Speicherort um den aktuellen Speicherort abruft.
 
 >[!IMPORTANT]
 >
@@ -112,7 +112,7 @@ Aufrufen der `getNearbyPointsOfInterest` Die API führt zu einem Netzwerkaufruf,
 
 ### iOS
 
-Rufen Sie in iOS die `processGeofenceEvent` Places-API in der `CLLocationManager` delegieren. Diese API informiert Sie darüber, ob der Benutzer eine bestimmte Region aufgerufen oder beendet hat.
+Rufen Sie in iOS die API `processGeofenceEvent` Places im Delegate `CLLocationManager` auf. Diese API informiert Sie darüber, ob der Benutzer eine bestimmte Region aufgerufen oder beendet hat.
 
 ```objective-c
 - (void) locationManager:(CLLocationManager *)manager didEnterRegion:(CLRegion *)region {
@@ -126,7 +126,7 @@ Rufen Sie in iOS die `processGeofenceEvent` Places-API in der `CLLocationManager
 
 ### Android
 
-Rufen Sie in Android die `processGeofence` -Methode zusammen mit dem entsprechenden Übergangsereignis in Ihrem Geofence Broadcast-Empfänger. Sie können die Liste der empfangenen Geofences kuratieren, um doppelte Einstiege/Ausstiege zu verhindern.
+Rufen Sie in Android die Methode `processGeofence` zusammen mit dem entsprechenden Übergangsereignis in Ihrem Geofence Broadcast-Empfänger auf. Sie können die Liste der empfangenen Geofences kuratieren, um doppelte Einstiege/Ausstiege zu verhindern.
 
 ```java
 void onGeofenceReceived(final Intent intent) {

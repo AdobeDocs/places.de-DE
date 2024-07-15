@@ -27,7 +27,7 @@ Dadurch können Sie Aktionen aus Standortsignalen in Echtzeit ausführen, wann u
 
 Im Folgenden finden Sie einige Möglichkeiten zur Verwendung von Places:
 
-* Senden Sie eine Echtzeitbenachrichtigung, wenn ein Benutzer einen POI aufruft. *&quot;Hey.Willkommen im Stadion.&quot;*
+* Senden Sie eine Echtzeitbenachrichtigung, wenn jemand einen POI betritt, *&quot;He..Willkommen im Stadion.&quot;*
 * Analysieren Sie den Fußverkehr Ihrer eigenen Stores im Vergleich zu Ihren Konkurrenzgeschäften.
 * Segmentieren Sie eine Zielgruppe basierend auf dem Offline-Verhalten, indem Sie Zielgruppenprofile mit dem Standortkontext verwenden.
 * Targeting eines Benutzers mit einem In-Store-Erlebnis, falls relevant.
@@ -56,21 +56,21 @@ Places Service umfasst die folgenden Komponenten:
 
 Im Folgenden finden Sie einige häufig verwendete Begriffe, die in dieser Dokumentation verwendet werden:
 
-* A **Point of Interest (POI)** ist ein Geostandort, der für Ihre Organisation von Interesse ist.
+* Ein **Zielpunkt (POI)** ist ein Geostandort, der für Ihre Organisation von Interesse ist.
 
   Sie können POIs mit Attributen wie Namen, Radius, Adresse, Kategorie und Metadaten-Tags definieren.
 
-* A **Geofence** ist eine Art POI.
+* Ein **geofence** ist ein POI-Typ.
 
   Dieser POI-Typ ist eine virtuelle geografische Grenze, die durch Längen- und Breitenkoordinaten definiert wird.
 
-* A **Beacon** ist eine Art POI.
+* Ein **Beacon** ist ein POI-Typ.
 
   Dieser POI-Typ ist ein physisches Gerät, das einen Standort darstellt, indem ein Bluetooth-Signal mit geringer Leistung ausgegeben wird. Unterstützung für Beacons wird in einer zukünftigen Version verfügbar sein.
 
 * Eine **Bibliothek** ist eine Sammlung von POIs, die gruppiert sind, um Regeln einfach an mehrere statt nur an einen POI anzuhängen.
 
-* Ein **Erweiterung** ist die Experience Platform Launch-Erweiterung, die zur Integration des Places SDK in Ihre mobilen Apps erforderlich ist.
+* Eine **Erweiterung** ist die Experience Platform Launch-Erweiterung, die zur Integration des Places SDK in Ihre mobilen Apps erforderlich ist.
 
   Die Erweiterung, die mit den anderen mobilen SDKs verwendet wird, um Ihren Erlebnissen Ortskontext hinzuzufügen.
 
@@ -80,9 +80,9 @@ Im Folgenden finden Sie einige häufig verwendete Begriffe, die in dieser Dokume
 
 * Die **orgID** ist die ID für Ihr Unternehmen auf der gesamten Adobe Experience Platform.
 
-  Weitere Informationen finden Sie unter [Suchen Ihrer Organisations-ID](https://forums.adobe.com/thread/2339895).
+  Weitere Informationen finden Sie unter [Suchen Ihrer orgID](https://forums.adobe.com/thread/2339895).
 
-* Die **Experience Cloud-ID** -Dienst bietet eine universelle, beständige ID, mit der Ihre Besucher lösungsübergreifend in der Experience Cloud identifiziert werden können.
+* Der Dienst **Experience Cloud ID** bietet eine universelle, beständige ID zum Identifizieren Ihrer Besucher über alle Experience Cloud-Lösungen hinweg.
 
   Weitere Informationen finden Sie unter [Übersicht](https://experienceleague.adobe.com/docs/id-service/using/intro/overview.html?lang=de).
 

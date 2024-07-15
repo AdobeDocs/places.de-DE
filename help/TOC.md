@@ -6,7 +6,7 @@ feature: Places
 source-git-commit: 9f2c6fee6e0d6d075b662cc0b6cbee49cf05ee55
 workflow-type: tm+mt
 source-wordcount: '290'
-ht-degree: 22%
+ht-degree: 19%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 22%
    + [Strategien zur Verwendung von Metadaten mit POIs](poi-mgmt-ui/metadata-with-pois.md)
    + [Massen-Upload von POIs](poi-mgmt-ui/bulk-upload-pois.md)
    + [Verwalten mehrerer Bibliotheken](poi-mgmt-ui/manage-libraries-in-the-places-ui.md)
-+ Webservice-API {#web-service-api}
++ Webdienst-API {#web-service-api}
    + [Übersicht über die Webdienst-API](web-service-api/places-web-services.md)
    + [Voraussetzungen für die Integration](web-service-api/adobe-i-o-integration.md)
    + API-Nutzung {#api-usage}
@@ -53,7 +53,7 @@ ht-degree: 22%
             + [Mehrere Zielpunkte aktualisieren](web-service-api/api-usage/manage-pois/batch-apis/update-multiple-pois.md)
             + [Mehrere Zielpunkte löschen](web-service-api/api-usage/manage-pois/batch-apis/delete-multiple-pois.md)
       + [Abfrage-APIs](web-service-api/api-usage/query-apis.md)
-+ Erweiterungen für die Mobile SDKs {#places-ext-aep-sdks}
++ Erweiterungen für die Mobile SDK {#places-ext-aep-sdks}
    + [Places-Erweiterung](places-ext-aep-sdks/places-extension/places-extension.md)
 + [Verwenden Sie den Places-Dienst mit Ihrer eigenen Überwachungslösung](using-your-own-monitor.md)
 + [Verwenden des Places-Dienstes ohne aktive Regionsüberwachung](use-places-without-active-monitoring.md)

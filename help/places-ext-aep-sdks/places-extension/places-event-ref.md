@@ -5,8 +5,8 @@ feature: Mobile SDK
 exl-id: 98210ef4-5ff1-4792-b97b-2845ce02e78a
 source-git-commit: f521d5e3b0b69977877d88382ce41fcb7d1c54b9
 workflow-type: tm+mt
-source-wordcount: '248'
-ht-degree: 29%
+source-wordcount: '247'
+ht-degree: 17%
 
 ---
 
@@ -18,7 +18,7 @@ Im Folgenden finden Sie eine Liste der Ereignisse, die von der Places-Erweiterun
 
 **Ereignisdetails**
 
-| Typ | Quelle | Name | Gekoppelt |
+| Typ | Quelle | Name | gepaart |
 | :--- | :--- | :--- | :--- |
 | ORTE | REQUEST_CONTENT | `requestgetuserwithinplaces` | True |
 
@@ -26,15 +26,15 @@ Im Folgenden finden Sie eine Liste der Ereignisse, die von der Places-Erweiterun
 
 Dieses Ereignis ist eine Anfrage zum Abrufen der POIs, an denen sich das Gerät derzeit befindet.
 
-**Datennutzlast-Definition**
+**Datennutzlastdefinition**
 
-Nicht zutreffend
+n. z.
 
 ## GetNeestedPointsOfInterest
 
 **Ereignisdetails**
 
-| Typ | Quelle | Name | Gekoppelt |
+| Typ | Quelle | Name | gepaart |
 | :--- | :--- | :--- | :--- |
 | ORTE | REQUEST_CONTENT | `requestgetnearbyplaces` | True |
 
@@ -42,20 +42,20 @@ Nicht zutreffend
 
 Bei diesem Ereignis handelt es sich um eine Anfrage zum Abrufen der nahegelegenen POIs unter Berücksichtigung des aktuellen Gerätestandorts und der konfigurierten Places-Bibliotheken.
 
-**Datennutzlast-Definition**
+**Datennutzlastdefinition**
 
 | Schlüssel | Werttyp | Erforderlich | Standardwert | Beschreibung |
 | :--- | :--- | :--- | :--- | :--- |
-| latitude | double | wahr | Nicht zutreffend | Enthält den Breitenwert für die Mitte der Suche nach nahe gelegenen Zielpunkten. |
-| longitude | double | wahr | Nicht zutreffend | Enthält den Längenwert für die Mitte der Suche nach nahe gelegenen POIs. |
-| radius | integer | false | Nicht zutreffend | Radius, in Metern, der für die Suche nach nahe gelegenen POIs verwendet wird. |
+| latitude | double | wahr | n. z. | Enthält den Breitenwert für die Mitte der Suche nach nahe gelegenen Zielpunkten. |
+| longitude | double | wahr | n. z. | Enthält den Längenwert für die Mitte der Suche nach nahe gelegenen POIs. |
+| radius | integer | false | n. z. | Radius, in Metern, der für die Suche nach nahe gelegenen POIs verwendet wird. |
 | count | integer | false | 10 | Maximale Anzahl an POIs, die in dem resultierenden Antwortereignis zurückgegeben werden. |
 
 ## ProcessRegionEvent
 
 **Ereignisdetails**
 
-| Typ | Quelle | Name | Gekoppelt |
+| Typ | Quelle | Name | gepaart |
 | :--- | :--- | :--- | :--- |
 | ORTE | REQUEST_CONTENT | `requestprocessregionevent` | False |
 
@@ -63,7 +63,7 @@ Bei diesem Ereignis handelt es sich um eine Anfrage zum Abrufen der nahegelegene
 
 Dieses Ereignis bewirkt, dass die Places-Erweiterung ein Geofence-Einstiegs- oder Ausstiegsereignis verarbeitet.
 
-**Datennutzlast-Definition**
+**Datennutzlastdefinition**
 
 | Schlüssel | Werttyp | Erforderlich | Beschreibung |
 | :--- | :--- | :--- | :--- |

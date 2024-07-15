@@ -4,7 +4,7 @@ description: Dieses Thema enthält zusätzliche Informationen zu einigen häufig
 exl-id: cee9f447-5e50-4ed8-b37b-baecbc0e9b7b
 source-git-commit: 010de286c25c1eeb989fb76e3c2adaa82ac9fd35
 workflow-type: tm+mt
-source-wordcount: '554'
+source-wordcount: '541'
 ht-degree: 1%
 
 ---
@@ -15,13 +15,13 @@ Im Folgenden finden Sie einige Informationen und häufig gestellte Fragen zu Pla
 
 ## Migration von trackLocation im v4-SDK
 
-Wenn Sie vom v4-SDK migrieren und nach einem Ersatz für die Variable `trackLocation` API, siehe Thema [Verwenden des Places-Dienstes ohne aktive Regionsüberwachung](use-places-without-active-monitoring.md).
+Wenn Sie vom v4-SDK migrieren und nach einem Ersatz für die `trackLocation`-API suchen, finden Sie weitere Informationen im Abschnitt [Places-Dienst ohne aktive Regionsüberwachung verwenden](use-places-without-active-monitoring.md).
 
 ## Größe und Zuverlässigkeit
 
 Wichtig: Beachten Sie, dass alle Geofences in der Regionsüberwachung von einer mobilen App aus verwendet werden, unabhängig von der Verwendung von Adobe oder einem anderen Dienst. Die Betriebssysteme empfehlen einige Parameter, die bei der Erstellung von Geofences zu beachten sind. Für maximale Zuverlässigkeit sollten Geofences einen Radius von mindestens 100 Metern haben. Es ist in Ordnung, kleinere Geofences zu erstellen, aber Einstiegs- und Ausstiegsereignisse können nicht generiert oder generiert werden, nachdem der Benutzer die Bewegung für einen bestimmten Zeitraum beendet hat.
 
-Darüber hinaus können Genauigkeit und Zuverlässigkeit auf der Grundlage von Hardware-Bedingungen wie ausgeschaltetem oder nicht verfügbarem WLAN und auch auf der Grundlage des Standorts des Geräts in Bezug auf die Behinderung von GPS-Signalen reduziert werden. Beispielsweise können Bergregionen, städtische Einstellungen und Innenbereiche die Standortgenauigkeit von den iOS- und Android-Betriebssystemen verringern.
+Darüber hinaus können Genauigkeit und Zuverlässigkeit auf der Grundlage von Hardware-Bedingungen wie ausgeschaltetem oder nicht verfügbarem WLAN und auch auf der Grundlage des Standorts des Geräts in Bezug auf die Behinderung von GPS-Signalen reduziert werden. Bergregionen, städtische Einstellungen und Innenbereiche können beispielsweise die Standortgenauigkeit von den iOS- und Android-Betriebssystemen verringern.
 
 ## Wie wird ein Exitereignis Trigger?
 
@@ -39,4 +39,4 @@ Die Überwachung einer geografischen Region beginnt unmittelbar nach der Registr
 
 Achten Sie bei der Angabe der zu überwachenden Regionen auf Bedacht. Regionen sind eine gemeinsame Systemressource, und die Gesamtzahl der systemweit verfügbaren Regionen ist begrenzt. Aus diesem Grund ist die Anzahl der Regionen, die gleichzeitig von einer einzelnen App überwacht werden können, vom Kernstandort auf 20 begrenzt. Um diese Grenze zu umgehen, sollten Sie nur die Regionen in der unmittelbaren Umgebung des Benutzers registrieren.
 
-[Weitere Informationen finden Sie auf der Entwickler-Site von Apple .] (https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/LocationAwarenessPG/RegionMonitoring/RegionMonitoring.html#//apple_ref/doc/uid/TP40009497-CH9-SW11)
+[Siehe zusätzliche Informationen auf der Apple-Entwickler-Site] (https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/LocationAwarenessPG/RegionMonitoring/RegionMonitoring.html#//apple_ref/doc/uid/TP40009497-CH9-SW11)

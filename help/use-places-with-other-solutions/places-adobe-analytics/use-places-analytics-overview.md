@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Verwenden des Places-Dienstes mit Adobe Analytics {#places-with-aa}
 
-Mithilfe des Places-Dienstes mit Adobe Analytics können Sie die folgenden Aufgaben ausführen:
+Durch die Verwendung von Places Service mit Adobe Analytics können Sie die folgenden Aufgaben ausführen:
 
 * [POI-Einstiegs- und -Ausstiegsdaten über Analytics senden](/help/use-places-with-other-solutions/places-adobe-analytics/use-places-adobe-analytics.md)
 * [Hinzufügen von Standortkontext zu Analytics-Anforderungen](/help/use-places-with-other-solutions/places-adobe-analytics/run-reports-aa-places-data.md)

@@ -1,17 +1,17 @@
 ---
-title: Erstellen mehrerer POIs
+title: Mehrere Zielpunkte erstellen
 description: Verwenden Sie die Batch-APIs, um mehrere POIs zu erstellen.
 exl-id: d1d6f7de-5914-432f-9d3c-17cf3cba784a
 source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
 workflow-type: tm+mt
 source-wordcount: '56'
-ht-degree: 14%
+ht-degree: 5%
 
 ---
 
-# Erstellen mehrerer POIs {#create-multiple-pois}
+# Mehrere Zielpunkte erstellen {#create-multiple-pois}
 
-Eine POST-Methode, mit der Sie mehrere POIs erstellen können.
+Eine POST-Methode, mit der Sie mehrere Zielpunkte erstellen können.
 
 ## Anfrage
 
@@ -47,11 +47,11 @@ curl -X POST 'https://api-places.adobe.io/places/placesapi/v1/pois/batchCreate' 
 
 >[!IMPORTANT]
 >
->Ersetzen `<API KEY>`, `<TOKEN>`, `<ORGID>`und `<PATHTOBATCHCREATEJSONFILE>` mit echten Werten.
+>Ersetzen Sie `<API KEY>`, `<TOKEN>`, `<ORGID>` und `<PATHTOBATCHCREATEJSONFILE>` durch reale Werte.
 
 ## JSON-Beispieldatei
 
-Hier finden Sie die JSON-Beispieldatei für die `batchCreate` API:
+Hier finden Sie die JSON-Beispieldatei für die `batchCreate`-API:
 
 ```text
 {    "createPOIRequests": [{            "name": "Sample POI 1",            "description": "1",            "location": {                "type": "Point",                "coordinates": [0.0, 0.0]            },            "radius": 25,            "country": "Ghana",            "state": "Ghana",            "city": "Accra",            "street": "",            "category": "cafe",            "icon": "nice",            "color": "red",            "metadata": {                "region": "Equator"            },            "lib_id" : "42b4d03c-672c-4deb-83e0-134ef070c2af"        },        {            "name": "Sample POI 2",            "description": "2",            "location": {                "type": "Point",                "coordinates": [0.025, 0.025]            },            "radius": 50,            "country": "Ghana",            "state": "Ghana",            "city": "Accra",            "street": "",            "category": "cafe",            "icon": "nice",            "color": "blue",            "metadata": {                "region": "Equator"            },            "lib_id" : "42b4d03c-672c-4deb-83e0-134ef070c2af"        },        {            "name": "Sample POI 3",            "description": "3",            "location": {                "type": "Point",                "coordinates": [0.05, 0.05]            },            "radius": 100,            "country": "Ghana",            "state": "Ghana",            "city": "Accra",            "street": "",            "category": "cafe",            "icon": "nice",            "color": "green",            "metadata": {                "region": "Equator"            },            "lib_id" : "42b4d03c-672c-4deb-83e0-134ef070c2af"        }    ]}

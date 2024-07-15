@@ -1,6 +1,6 @@
 ---
 title: Übersicht über die Web-Services-API
-description: Places Service ist eine Reihe von Diensten, die es Adobe-Kunden erleichtern, die Adobe Experience Cloud- und Adobe Experience Platform-Lösungen mit Standortdaten und dem richtigen Erlebnis zum richtigen Zeitpunkt und an der richtigen Stelle zu kombinieren.
+description: Places Service ist ein Service-Set, das es Adobe-Kunden erleichtert, die Adobe Experience Cloud- und Adobe Experience Platform-Lösungen mit Standortdaten und dem richtigen Erlebnis zum richtigen Zeitpunkt und am richtigen Ort zu versorgen.
 exl-id: 9e7358d1-3ba0-4304-aeb2-fed7162afb57
 source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
 workflow-type: tm+mt
@@ -11,7 +11,7 @@ ht-degree: 1%
 
 # Übersicht über die Web-Services-API {#places-web-services-api}
 
-Places Service ist eine Reihe von Diensten, die es Adobe-Kunden erleichtern, die Adobe Cloud Platform- und Adobe Experience Platform-Lösungen mit Standortdaten und dem richtigen Erlebnis zum richtigen Zeitpunkt und an der richtigen Stelle zu kombinieren.
+Places Service ist ein Service-Set, das es Adobe-Kunden erleichtert, die Adobe Cloud Platform- und Adobe Experience Platform-Lösungen mit Standortdaten und dem richtigen Erlebnis zum richtigen Zeitpunkt und am richtigen Ort zu versorgen.
 
 Mit den Webservices-APIs können Sie Folgendes tun:
 
@@ -23,17 +23,17 @@ Dieser Abschnitt enthält Informationen zur Verwendung der REST-APIs und der POI
 
 ## REST-APIs
 
-Mit der Places Service REST API können Sie programmatisch mit den POIs Ihres Unternehmens arbeiten. Mit diesen APIs können Sie Ihre Bibliotheken und POIs in diesen Bibliotheken erstellen, aktualisieren und löschen. Diese APIs verwenden JSON-Standards (JavaScript Object Notation), um die gesendeten und empfangenen Daten zu formatieren. Ein Hauptvorteil von JSON besteht darin, dass API-Abfragen von Entwicklern und Computern einfach geschrieben, gelesen und analysiert werden können.
+Mit der Places Service REST API können Sie programmatisch mit den POIs Ihres Unternehmens arbeiten. Mit diesen APIs können Sie Ihre Bibliotheken und POIs in diesen Bibliotheken erstellen, aktualisieren und löschen. Diese APIs verwenden JSON-Standards (JavaScript Object Notation), um die gesendeten und empfangenen Daten zu formatieren. Ein Hauptvorteil von JSON besteht darin, dass API-Abfragen von Entwicklern und Computern einfach zu schreiben, zu lesen und zu analysieren sind.
 
 Bevor Sie die Web-Services-API verwenden können, stellen Sie sicher, dass die folgenden Anforderungen erfüllt sind:
 
 * Der Places Service ist in Ihrer Organisation bereitgestellt und Sie haben als Benutzer entsprechenden Zugriff.
 
-   Weitere Informationen finden Sie unter *Voraussetzungen für den Benutzerzugriff* in [Integrationsübersicht und Voraussetzungen](/help/web-service-api/adobe-i-o-integration.md).
+  Weitere Informationen finden Sie unter *Voraussetzungen für den Benutzerzugriff* in der [Integrationsübersicht und Voraussetzungen](/help/web-service-api/adobe-i-o-integration.md).
 
 * Nachdem der Places-Dienst in Ihrem Unternehmen bereitgestellt wurde und Sie Zugriff haben, erstellen Sie eine Adobe-Integration für den Places-Dienst.
 
-   Weitere Informationen finden Sie unter *Erstellen einer Places Service-Integration* in [Integrationsübersicht und Voraussetzungen](/help/web-service-api/adobe-i-o-integration.md).
+  Weitere Informationen finden Sie unter *Erstellen einer Places Service-Integration* in der [Integrationsübersicht und Voraussetzungen](/help/web-service-api/adobe-i-o-integration.md).
 
 Weitere Informationen:
 

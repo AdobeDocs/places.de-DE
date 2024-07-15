@@ -11,7 +11,7 @@ ht-degree: 7%
 
 # Rang in Ihren Bibliotheken festlegen {#set-rank-on-libraries}
 
-Eine PUT-Methode, mit der Sie eine Rangreihenfolge für alle Bibliotheken festlegen können.
+Eine PUT-Methode, mit der Sie eine Rangfolge für alle Bibliotheken festlegen können.
 
 ## Anfrage
 
@@ -47,4 +47,4 @@ curl -X PUT `'https://api-places.adobe.io/places/placesapi/v1/libraries/rank'` -
 
 >[!IMPORTANT]
 >
->Ersetzen Sie Variablen wie `<API KEY>`, `<TOKEN>`und `<ORGID>` mit tatsächlichen Werten.
+>Ersetzen Sie Variablen wie `<API KEY>`, `<TOKEN>` und `<ORGID>` durch tatsächliche Werte.

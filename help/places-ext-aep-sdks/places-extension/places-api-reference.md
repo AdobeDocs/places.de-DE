@@ -20,9 +20,9 @@ Wenn ein Gerät eine der vordefinierten Places Service-Regionsgrenzen Ihrer App 
 
 ### ProcessGeofence (Android)
 
-Verarbeiten einer `Geofence` Region-Ereignis für die bereitgestellte `transitionType`.
+Verarbeiten Sie ein `Geofence` region -Ereignis für die bereitgestellte `transitionType`.
 
-Übergeben Sie die `transitionType` von `GeofencingEvent.getGeofenceTransition()`. Aktuell `Geofence.GEOFENCE_TRANSITION_ENTER` und `Geofence.GEOFENCE_TRANSITION_EXIT` werden unterstützt.
+Übergeben Sie die `transitionType` von `GeofencingEvent.getGeofenceTransition()`. Derzeit werden `Geofence.GEOFENCE_TRANSITION_ENTER` und `Geofence.GEOFENCE_TRANSITION_EXIT` unterstützt.
 
 **Syntax**
 
@@ -34,7 +34,7 @@ public static void processGeofence(final Geofence geofence, final int transition
 
 **Beispiel**
 
-Rufen Sie diese Methode in Ihrer `IntentService` das für den Empfang von Android-Geofence-Ereignissen registriert ist.
+Rufen Sie diese Methode in Ihrem `IntentService` auf, das für den Empfang von Android-Geofence-Ereignissen registriert ist.
 
 Hier finden Sie ein Code-Beispiel für diese Methode:
 
@@ -60,7 +60,7 @@ public class GeofenceTransitionsIntentService extends IntentService {
 
 ### ProcessRegionEvent (iOS)
 
-Diese Methode sollte im `CLLocationManager` delegate, der angibt, ob der Benutzer eine bestimmte Region erreicht oder verlassen hat.
+Diese Methode sollte im `CLLocationManager` -Delegat aufgerufen werden, der angibt, ob der Benutzer einen bestimmten Bereich erreicht oder verlassen hat.
 
 **Syntax**
 
@@ -87,7 +87,7 @@ Hier finden Sie ein Code-Beispiel für diese Methode:
 
 ### ProcessGeofencingEvent (Android)
 
-Alle verarbeiten `Geofences` im `GeofencingEvent` gleichzeitig.
+Verarbeiten Sie alle `Geofences` in der `GeofencingEvent` gleichzeitig.
 
 **Syntax**
 
@@ -97,7 +97,7 @@ public static void processGeofenceEvent(final GeofencingEvent geofencingEvent);
 
 **Beispiel**
 
-Rufen Sie diese Methode in Ihrer `IntentService` die für den Empfang von Android-Geofence-Ereignissen registriert ist
+Rufen Sie diese Methode in Ihrem `IntentService` auf, das für den Empfang von Android-Geofence-Ereignissen registriert ist.
 
 ```java
 public class GeofenceTransitionsIntentService extends IntentService {
@@ -259,7 +259,7 @@ Fordert den Speicherort des Geräts an, wie zuvor durch die Places-Erweiterung b
 
 >[!TIP]
 >
->Die Places-Erweiterung kennt nur Orte, die ihr über Aufrufe von zur Verfügung gestellt wurden. `GetNearbyPointsOfInterest`.
+>Die Places-Erweiterung kennt nur Orte, die ihr über Aufrufe von `GetNearbyPointsOfInterest` bereitgestellt wurden.
 
 
 ### GetLastKnownLocation (Android)
@@ -386,7 +386,7 @@ Legt den Autorisierungsstatus in der Places-Erweiterung fest.
 Der angegebene Status wird im Status &quot;Places shared&quot;gespeichert und dient nur als Referenz.
 Der Aufruf dieser Methode hat keine Auswirkungen auf den tatsächlichen Status der Standortautorisierung für dieses Gerät.
 
-Wenn sich der Status der Geräteautorisierung ändert, wird die `locationManager:didChangeAuthorizationStatus:` -Methode `CLLocationManagerDelegate` aufgerufen wird. Von dieser Methode aus sollten Sie die neue `CLAuthorizationStatus` Wert in die ACPPlaces `setAuthorizationStatus:` API.
+Wenn sich der Geräteautorisierungsstatus ändert, wird die `locationManager:didChangeAuthorizationStatus:` -Methode Ihres `CLLocationManagerDelegate` aufgerufen. Von dieser Methode aus sollten Sie den neuen `CLAuthorizationStatus` -Wert an die ACPPlaces `setAuthorizationStatus:` -API übergeben.
 
 **Syntax**
 

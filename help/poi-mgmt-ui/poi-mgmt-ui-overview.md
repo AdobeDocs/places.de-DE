@@ -14,6 +14,6 @@ ht-degree: 0%
 POIs und Bibliotheken werden mithilfe der Benutzeroberfläche des Places-Dienstes in der Datenbank des Places-Dienstes erstellt und verwaltet.
 
 * Informationen zum Erstellen einer Bibliothek oder Verwalten mehrerer Bibliotheken finden Sie unter [Bibliotheken verwalten](/help/poi-mgmt-ui/manage-libraries-in-the-places-ui.md).
-* Informationen zum Erstellen eines POI finden Sie unter [POI erstellen](/help/poi-mgmt-ui/create-a-poi-ui.md).
-* Informationen zum Verwalten mehrerer POIs finden Sie unter [Zuvor erstellte Zielpunkte verwalten](/help/poi-mgmt-ui/managing-pois-in-the-places-ui.md).
-* Informationen zum Durchführen eines Massenimports von POIs finden Sie unter [Massenimport von Zielpunkten](/help/poi-mgmt-ui/bulk-upload-pois.md).
+* Informationen zum Erstellen eines POI finden Sie unter [Erstellen eines POI](/help/poi-mgmt-ui/create-a-poi-ui.md).
+* Informationen zum Verwalten mehrerer Zielpunkte finden Sie unter [Verwalten zuvor erstellter Zielpunkte](/help/poi-mgmt-ui/managing-pois-in-the-places-ui.md).
+* Informationen zum Durchführen eines Massenimports von POIs finden Sie unter [Massenimport von POIs](/help/poi-mgmt-ui/bulk-upload-pois.md).

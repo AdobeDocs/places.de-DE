@@ -4,7 +4,7 @@ description: Dieser Abschnitt enthält Informationen zum Senden von POI-Einstieg
 exl-id: 69e96261-4902-47dd-a930-a8f3d19c179c
 source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
 workflow-type: tm+mt
-source-wordcount: '432'
+source-wordcount: '437'
 ht-degree: 4%
 
 ---
@@ -20,24 +20,24 @@ Nachdem der Places-Dienst die Ein- und Ausstiegsereignisse sendet, können Sie i
 
 ## 1. Regel erstellen
 
-1. Im **[!UICONTROL Regeln]** Registerkarte, klicken Sie auf **[!UICONTROL Neue Regel erstellen]**.
+1. Klicken Sie auf der Registerkarte **[!UICONTROL Regeln]** auf **[!UICONTROL Neue Regel erstellen]**.
 
    Berücksichtigen Sie folgende Informationen:
 
-   * Wenn Sie keine Regeln für diese Eigenschaft haben, wird die **[!UICONTROL Neue Regel erstellen]** -Schaltfläche in der Mitte des Bildschirms angezeigt.
-   * Wenn Ihre Eigenschaft über Regeln verfügt, wird die **[!UICONTROL Neue Regel erstellen]** oben rechts im Bildschirm.
+   * Wenn Sie keine Regeln für diese Eigenschaft haben, befindet sich die Schaltfläche **[!UICONTROL Neue Regel erstellen]** in der Mitte des Bildschirms.
+   * Wenn Ihre Eigenschaft über Regeln verfügt, befindet sich die Schaltfläche **[!UICONTROL Neue Regel erstellen]** oben rechts im Bildschirm.
 
 ## 2. Ereignis auswählen
 
 1. Geben Sie einen aussagekräftigen Namen für Ihre Regel ein.
 
-   Auf diese Weise kann die Regel in Ihrer Regelliste leicht erkennbar sein. In diesem Beispiel erhält die Regel den Namen **[!UICONTROL Daten an Analytics senden]**.
+   Auf diese Weise kann die Regel in Ihrer Regelliste leicht erkennbar sein. In diesem Beispiel trägt die Regel den Namen **[!UICONTROL Daten an Analytics senden]**.
 
 1. Klicken Sie im Bereich **[!UICONTROL Ereignisse]** auf **[!UICONTROL Hinzufügen]**.
 
-1. Aus dem **[!UICONTROL Erweiterung]** Dropdown-Liste auswählen **[!UICONTROL Places Service]**.
+1. Wählen Sie aus der Dropdownliste **[!UICONTROL Erweiterung]** die Option **[!UICONTROL Places Service]** aus.
 
-1. Aus dem **[!UICONTROL Ereignistyp]** Dropdown-Liste auswählen **[!UICONTROL POI eingeben]**.
+1. Wählen Sie aus der Dropdownliste **[!UICONTROL Ereignistyp]** die Option **[!UICONTROL POI eingeben]** aus.
 
 1. Klicken Sie auf **[!UICONTROL Änderungen beibehalten]**.
 
@@ -48,17 +48,17 @@ Nachdem der Places-Dienst die Ein- und Ausstiegsereignisse sendet, können Sie i
 
 >[!IMPORTANT]
 >
->Führen Sie diesen Schritt aus, um Ihrer Regel Bedingungen hinzuzufügen. Überspringen Sie andernfalls zu *Definieren der Aktion* unten.
+>Führen Sie diesen Schritt aus, um Ihrer Regel Bedingungen hinzuzufügen. Überspringen Sie andernfalls &quot;*Aktion definieren*&quot;unten.
 
-In diesem Beispiel wird eine Bedingung erstellt, durch die die Regel nur dann Trigger wird, wenn der Name des aktuellen POI gleich **[!UICONTROL Mein POI]**.
+In diesem Beispiel wird eine Bedingung erstellt, durch die die Regel nur dann Trigger wird, wenn der Name des aktuellen POI gleich **[!UICONTROL Mein POI]** ist.
 
-1. Unter dem **[!UICONTROL Bedingungen]** Abschnitt, klicken Sie auf **[!UICONTROL Hinzufügen]**.
+1. Klicken Sie unter dem Abschnitt **[!UICONTROL Bedingungen]** auf **[!UICONTROL Hinzufügen]**.
 
-1. Aus dem **[!UICONTROL Erweiterung]** Dropdown-Liste auswählen **[!UICONTROL Places Service]**.
+1. Wählen Sie aus der Dropdownliste **[!UICONTROL Erweiterung]** die Option **[!UICONTROL Places Service]** aus.
 
-1. Aus dem **[!UICONTROL Bedingungstyp]** Dropdown-Liste auswählen **[!UICONTROL Name]**.
+1. Wählen Sie aus der Dropdownliste **[!UICONTROL Bedingungstyp]** die Option **[!UICONTROL Name]** aus.
 
-1. Geben Sie im rechten Bereich im Textfeld ein. **[!UICONTROL Mein POI]**.
+1. Geben Sie im rechten Bereich im Textfeld **[!UICONTROL Mein POI]** ein.
 
 1. Klicken Sie auf **[!UICONTROL Änderungen beibehalten]**.
 
@@ -67,11 +67,11 @@ In diesem Beispiel wird eine Bedingung erstellt, durch die die Regel nur dann Tr
 
 ## 4. Definieren Sie die Aktion
 
-1. Unter dem **[!UICONTROL Aktionen]** Abschnitt, klicken Sie auf **[!UICONTROL Hinzufügen]**.
+1. Klicken Sie unter dem Abschnitt **[!UICONTROL Aktionen]** auf **[!UICONTROL Hinzufügen]**.
 
-1. Aus dem **[!UICONTROL Erweiterung]** Dropdown-Liste auswählen **[!UICONTROL Adobe Analytics]**.
+1. Wählen Sie aus der Dropdownliste **[!UICONTROL Erweiterung]** die Option **[!UICONTROL Adobe Analytics]** aus.
 
-1. Aus dem **[!UICONTROL Aktionstyp]** Dropdown-Liste auswählen **[!UICONTROL Verfolgen]**.
+1. Wählen Sie aus der Dropdownliste **[!UICONTROL Aktionstyp]** die Option **[!UICONTROL Track]** aus.
 
 1. Fügen Sie im rechten Bereich die Aktion oder den Status hinzu, die/den Sie an Analytics senden möchten.
 
@@ -79,15 +79,15 @@ In diesem Beispiel wird eine Bedingung erstellt, durch die die Regel nur dann Tr
 
 1. Klicken Sie auf **[!UICONTROL Änderungen beibehalten]**.
 
-   Im folgenden Beispiel wird eine `TrackAction` wird mit zusätzlichen Kontextdaten von `poi.name` entspricht dem Namen des POI, der dieses Eintrittsereignis ausgelöst hat:
+   Im folgenden Beispiel wird ein `TrackAction` -Aufruf an Analytics mit zusätzlichen Kontextdaten von `poi.name` gesendet, die dem Namen des POI entsprechen, der dieses Eintrittsereignis ausgelöst hat:
 
-   ![&quot;Aktion festlegen&quot;](/help/assets/pt-setAction.png)
+   ![&quot;set an action&quot;](/help/assets/pt-setAction.png)
 
 ## 5. Speichern Sie die Regel und erstellen Sie die Eigenschaft neu
 
 Überprüfen Sie nach Abschluss der Konfiguration, ob Ihre Regel wie folgt aussieht:
 
-![&quot;Regel wird erstellt&quot;](/help/assets/pt-ruleComplete.png)
+![&quot;rule is created&quot;](/help/assets/pt-ruleComplete.png)
 
 1. Klicken Sie auf **[!UICONTROL Speichern]**.
 

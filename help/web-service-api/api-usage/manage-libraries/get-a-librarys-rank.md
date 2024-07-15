@@ -1,5 +1,5 @@
 ---
-title: Bibliotheksrang abrufen
+title: Bibliotheksrang
 description: Rufen Sie mit der Places REST-API den Rang einer Bibliothek ab.
 exl-id: c0abedd0-5ff4-4a01-9f8d-e3d17ea53a97
 source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
@@ -9,7 +9,7 @@ ht-degree: 9%
 
 ---
 
-# Bibliotheksrang abrufen {#get-library-rank}
+# Bibliotheksrang {#get-library-rank}
 
 Eine GET-Methode, mit der Sie Bibliotheken nach Rang ordnen können.
 
@@ -41,4 +41,4 @@ curl -X GET 'https://api-places.adobe.io/places/placesapi/v1/libraries/rank ' -H
 
 >[!IMPORTANT]
 >
->Ersetzen Sie Variablen wie `<API KEY>`, `<TOKEN>`und `<ORGID>` mit tatsächlichen Werten.
+>Ersetzen Sie Variablen wie `<API KEY>`, `<TOKEN>` und `<ORGID>` durch tatsächliche Werte.

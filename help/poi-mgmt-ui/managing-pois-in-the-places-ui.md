@@ -19,7 +19,7 @@ POIs und Bibliotheken werden mithilfe der Places-Benutzeroberfläche in der Plac
 1. Melden Sie sich mit Ihrer Adobe ID beim Places-Dienst an.
 1. Klicken Sie oben rechts auf das Symbol, das wie eine Liste mit Aufzählungszeichen aussieht.
 1. Suchen Sie den POI, den Sie bearbeiten möchten.
-1. Klicken **[!UICONTROL ...]** und wählen Sie **[!UICONTROL Details anzeigen]**.
+1. Klicken Sie auf &quot;**[!UICONTROL ..]**&quot;und wählen Sie &quot;**[!UICONTROL Details anzeigen]**&quot;.
 1. Aktualisieren Sie die Informationen und klicken Sie auf **[!UICONTROL Speichern]**.
 
 ## Einen POI löschen
@@ -28,11 +28,11 @@ POIs und Bibliotheken werden mithilfe der Places-Benutzeroberfläche in der Plac
 1. Melden Sie sich mit Ihrer Adobe ID beim Places-Dienst an.
 1. Klicken Sie oben rechts auf das Symbol, das wie eine Liste mit Aufzählungszeichen aussieht.
 1. Suchen Sie den POI, den Sie löschen möchten.
-1. Klicken **[!UICONTROL ...]** und wählen Sie **[!UICONTROL Löschen]**.
+1. Klicken Sie auf &quot;**[!UICONTROL ..]**&quot;und wählen Sie &quot;**[!UICONTROL Löschen]**&quot;.
 
 ## POIs nach Stadt, Bundesland, Land oder Metadaten filtern
 
-![POI filtern](/help/assets/filter_poi.png)
+![ POI filtern](/help/assets/filter_poi.png)
 
 1. Melden Sie sich mit Ihrer Adobe ID bei der Places Service-Benutzeroberfläche an.
 1. Klicken Sie oben rechts auf das Filtersymbol.
@@ -40,19 +40,19 @@ POIs und Bibliotheken werden mithilfe der Places-Benutzeroberfläche in der Plac
 
    * Nach Bibliothek:
 
-      a. Wählen Sie eine Bibliothek aus.
+     a. Wählen Sie eine Bibliothek aus.
 
    * Nach Eigenschaft:
 
-      a. Wählen Sie in der Dropdownliste Eigenschaft die Option **[!UICONTROL Land]**, **[!UICONTROL state]** oder **[!UICONTROL Ort]**.
+     a. Wählen Sie in der Dropdownliste Eigenschaft die Option **[!UICONTROL Land]**, **[!UICONTROL Bundesland]** oder **[!UICONTROL Stadt]** aus.
 
-      b. Geben Sie in der nächsten Zeile einen Wert ein.
+     b. Geben Sie in der nächsten Zeile einen Wert ein.
 
-      Sie können beispielsweise **[!UICONTROL state]** und Typ **[!UICONTROL Kalifornien]**.
+     Sie können beispielsweise &quot;**[!UICONTROL Bundesstaat]**&quot;auswählen und &quot;**[!UICONTROL Kalifornien]**&quot;eingeben.
 
    * Mit Metadaten:
 
-      a. Geben Sie einen Schlüssel und einen Wert ein.
+     a. Geben Sie einen Schlüssel und einen Wert ein.
 
 ## Definieren eines Geofence-POI
 
@@ -70,7 +70,7 @@ Geofences sind ein POI-Typ und werden in der Datenbank anhand der folgenden Schl
 | Adresse | Straße. | Nein |
 | Stadt | Stadt des POI. | Nein |
 | Bundesland/Region | Bundesland oder Region des POI. | Nein |
-| Country | Land des POI. | Nein |
+| Land | Land des POI. | Nein |
 | Breitengrad | Breitengrad der Koordinate für die Mitte des POI. | Ja |
 | Längengrad | Längenkoordinate für die Mitte des POI. | Ja |
 | Metadaten | Benutzerdefinierte Schlüssel-Wert-Paare, die POIs zugewiesen werden können. Diese Metadaten optimieren zukünftige Workflows, indem sie es Ihnen ermöglichen, POIs über Bibliotheken hinweg zu gruppieren, damit Sie Regeln und Filter in nachgelagerten Workflows verwenden können, z. B. eine Push-Benachrichtigung senden, wenn ein Benutzer einen POI mit dem Typ = Konkurrent eingibt. | Nein |

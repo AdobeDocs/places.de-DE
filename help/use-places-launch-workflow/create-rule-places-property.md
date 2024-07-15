@@ -4,8 +4,8 @@ description: Das Places SDK verfolgt den aktuellen Speicherort, überwacht die k
 exl-id: dd5aa7ac-55f9-44dc-8632-e483ef3b91a0
 source-git-commit: d5c216aebd99ffef01c37c17c62576835b52438b
 workflow-type: tm+mt
-source-wordcount: '922'
-ht-degree: 15%
+source-wordcount: '911'
+ht-degree: 14%
 
 ---
 
@@ -25,8 +25,8 @@ Sie können eine Regel konfigurieren, die aus einem Ereignis, einer Bedingung un
 
 Places Service bietet die folgenden Ereignisse, für die Sie eine Regel ausführen können:
 
-* **POI eingeben**, der vom Places-SDK ausgelöst wird, wenn Ihr Kunde den von Ihnen konfigurierten POI aufruft.
-* **Ausstiegspunkt**, der vom Places-SDK ausgelöst wird, wenn Ihr Kunde den von Ihnen konfigurierten POI beendet.
+* **Geben Sie POI** ein, der vom Places-SDK ausgelöst wird, wenn Ihr Kunde den von Ihnen konfigurierten POI betritt.
+* **POI beenden**, der vom Places-SDK ausgelöst wird, wenn Ihr Kunde den von Ihnen konfigurierten POI beendet.
 
 ### Places-Dienstbedingungen
 
@@ -54,80 +54,80 @@ Mit Aktionen wird definiert, was die App als Reaktion auf die Bedingung für die
 
 >[!CAUTION]
 >
->In diesem Beispiel wird davon ausgegangen, dass Sie eine POI-Bibliothek aller Cafés in den USA erstellt haben. Weitere Informationen zum Erstellen von POIs und Bibliotheken finden Sie unter [POI erstellen](/help/poi-mgmt-ui/create-a-poi-ui.md) und *Erstellen einer Bibliothek* in [Verwalten mehrerer Bibliotheken](https://experienceleague.adobe.com/docs/places/using/poi-mgmt-ui/manage-libraries-in-the-places-ui.html).
+>In diesem Beispiel wird davon ausgegangen, dass Sie eine POI-Bibliothek aller Cafés in den USA erstellt haben. Weitere Informationen zum Erstellen von POIs und Bibliotheken finden Sie unter [Erstellen eines POI](/help/poi-mgmt-ui/create-a-poi-ui.md) und *Erstellen einer Bibliothek* in [Verwalten mehrerer Bibliotheken](https://experienceleague.adobe.com/docs/places/using/poi-mgmt-ui/manage-libraries-in-the-places-ui.html).
 
-Das folgende Verfahren zeigt, wie Sie eine Regel erstellen, die einen Beitrag an den Slack zurücksendet, wenn Sie in San Francisco einen Café betreten.
+Das folgende Verfahren ist ein Beispiel dafür, wie eine Regel erstellt wird, die einen Beitrag an die Slack sendet, wenn Sie in einem Café in San Francisco einsteigen.
 
 Das Ereignis, die Bedingung und die Aktion werden wie folgt definiert:
 
 * **Ereignis**: Places entry event.
 * **Bedingung**: Die Stadt für den **aktuellen POI** ist San Francisco.
-* **Aktion**: Senden Sie einen Postback an den Slack mit dem Namen des Cafés, den Ihr Kunde eingegeben hat.
+* **Aktion**: Senden Sie einen Postback an die Slack mit dem Namen des Cafés, den Ihr Kunde eingegeben hat.
 
 ### Voraussetzung
 
 Bevor Sie eine Regel erstellen, müssen Sie in Adobe Experience Platform Launch ein Datenelement erstellen. Datenelemente füllen automatisch die erforderlichen Informationen zu Ihrem POI in der Postback-Nachricht aus.
 
-So erstellen Sie ein Datenelement in Experience Platform Launch:
+So erstellen Sie ein Datenelement unter Experience Platform Launch:
 
-1. Klicken Sie auf **Datenelemente** Registerkarte.
-1. Klicks **Datenelement hinzufügen**.
-1. Geben Sie einen Namen ein, beispielsweise **Name des aktuellen Cafés**.
-1. Im **Erweiterung** Dropdown-Liste auswählen **Places - Beta**.
+1. Klicken Sie auf die Registerkarte **Datenelemente**.
+1. Klicken Sie auf **Datenelement hinzufügen**.
+1. Geben Sie einen Namen ein, z. B. **Name des aktuellen Cafés**.
+1. Wählen Sie in der Dropdownliste **Erweiterung** die Option **Orte - Beta** aus.
 1. Wählen Sie unter **Datenelement** die Option **Stadt** aus.
-1. Wählen Sie im rechten Bereich **Aktueller POI**.
+1. Wählen Sie im rechten Bereich **Aktueller POI** aus.
 1. Klicken Sie auf **Speichern**.
 
-### Erstellen einer Regel in Experience Platform Launch für Places Service
+### Erstellen einer Regel im Experience Platform Launch für den Places-Dienst
 
-![Erstellen einer Regel](/help/assets/placesrule.png)
+![ Erstellen einer Regel](/help/assets/placesrule.png)
 
 1. Klicken Sie in Experience Platform Launch auf den Tab **[!UICONTROL Regeln]**.
 1. Klicken Sie auf **[!UICONTROL Regel hinzufügen]**.
-1. Geben Sie einen Namen für die Regel ein, beispielsweise **[!UICONTROL Einstieg in den Coffeeshop in SF verfolgen]**.
+1. Geben Sie einen Namen für die Regel ein, z. B. **[!UICONTROL Eintrag für den Coffeeshop in SF]**.
 
-### Erstellen Sie ein Ereignis
+### Erstellen eines Ereignisses
 
-1. Klicken Sie im Abschnitt Ereignisse auf **[!UICONTROL + Hinzufügen]**. Ereignisse bestimmen, wann die Regel ausgelöst werden soll.
-1. Im **[!UICONTROL Erweiterung]** Dropdown-Liste auswählen **[!UICONTROL Places - Beta]**.
+1. Klicken Sie im Abschnitt &quot;Ereignisse&quot;auf **[!UICONTROL + Hinzufügen]**. Ereignisse bestimmen, wann die Regel ausgelöst werden soll.
+1. Wählen Sie in der Dropdownliste **[!UICONTROL Erweiterung]** die Option **[!UICONTROL Orte - Beta]** aus.
 1. Wählen Sie in der Dropdown-Liste **[!UICONTROL Ereignistyp]** die Option **[!UICONTROL POI eingeben]** aus.
 1. Geben Sie unter **[!UICONTROL Name]** einen Namen für das Ereignis ein, z. B. **[!UICONTROL Betreten eines Cafés]**.
 1. Klicken Sie auf **[!UICONTROL Änderungen beibehalten]**.
 
 ### Erstellen einer Bedingung
 
-1. Klicken Sie im Abschnitt Bedingungen auf **[!UICONTROL +Hinzufügen]**. Die Bedingungen bestimmen, welche Kriterien erfüllt sein müssen, damit die Maßnahme durchgeführt wird.
+1. Klicken Sie im Abschnitt &quot;Bedingungen&quot;auf **[!UICONTROL +Add]**. Die Bedingungen bestimmen, welche Kriterien erfüllt sein müssen, damit die Maßnahme durchgeführt wird.
 1. Wählen Sie unter **[!UICONTROL Logiktyp]** die Option „Standard“ aus, wodurch Aktionen ausgeführt werden können, wenn die Bedingung erfüllt ist.
-1. Im **[!UICONTROL Erweiterung]** Dropdown-Liste auswählen **[!UICONTROL Places - Beta]**.
+1. Wählen Sie in der Dropdownliste **[!UICONTROL Erweiterung]** die Option **[!UICONTROL Orte - Beta]** aus.
 1. Wählen Sie unter **[!UICONTROL Bedingungstyp]** die Option **[!UICONTROL Stadt]** aus.
-1. Geben Sie einen Bedingungsnamen ein, beispielsweise **[!UICONTROL Kaffeehaus in SF]**.
+1. Geben Sie einen Bedingungsnamen ein, z. B. **[!UICONTROL Café in SF]**.
 1. Klicken Sie im rechten Bereich auf **[!UICONTROL Aktueller POI]** und wählen Sie in der Dropdown-Liste **[!UICONTROL San Francisco]** als eine Ihrer Städte aus.
 1. Klicken Sie auf **[!UICONTROL Änderungen beibehalten]**.
 
 ### Erstellen einer Aktion
 
-1. Im **[!UICONTROL Aktionen]** Abschnitt, klicken Sie auf **[!UICONTROL + Hinzufügen]**.
-1. Im **[!UICONTROL Erweiterung]** in der Dropdown-Liste beibehalten **[!UICONTROL Mobile Core]** ausgewählt ist.
-1. Wählen Sie einen Aktionstyp aus, beispielsweise **[!UICONTROL Postback senden]**.
+1. Klicken Sie im Abschnitt **[!UICONTROL Aktionen]** auf **[!UICONTROL + Hinzufügen]**.
+1. Behalten Sie in der Dropdownliste **[!UICONTROL Erweiterung]** die Standardoption **[!UICONTROL Mobile Core]** bei.
+1. Wählen Sie einen Aktionstyp aus, z. B. **[!UICONTROL Postback senden]**.
 
-   a. In **[!UICONTROL URL]** Geben Sie die Postback-URL für den Slack ein, z. B. `https://hooks.slack.com/services/`.
+   a. Geben Sie in **[!UICONTROL URL]** die Postback-URL für Slack ein, z. B. `https://hooks.slack.com/services/`.
 
-   b. Um einen POST-Hauptteil zu senden, wählen Sie die **[!UICONTROL Post-Körper hinzufügen]** aktivieren.
+   b. Um einen POST-Hauptteil zu senden, aktivieren Sie das Kontrollkästchen **[!UICONTROL Post-Hauptteil hinzufügen]** .
 
-   c. in **[!UICONTROL Post-Körper]**, fügen Sie den Post-Hauptteil hinzu, z. B.: `{ "text": "A customer has entered" }`
+   c. Fügen Sie in **[!UICONTROL Post-Hauptteil]** den POST-Hauptteil hinzu, z. B.: `{ "text": "A customer has entered" }`
 
-   c. Geben Sie einen Inhaltstyp ein, beispielsweise **[!UICONTROL application/json]**.
+   c. Geben Sie einen Inhaltstyp ein, z. B. **[!UICONTROL application/json]**.
 
    d. Wählen Sie einen Timeout-Wert aus, z. B. **[!UICONTROL 5]**.
 
 1. Klicken Sie auf **[!UICONTROL Änderungen beibehalten]**.
 
-### Regel veröffentlichen
+### Publish the rule
 
-1. Um die Regel zu aktivieren, müssen Sie sie veröffentlichen. Weitere Informationen zum Veröffentlichen der Regel in Experience Platform Launch finden Sie unter [Publishing](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html?lang=de).
+1. Um die Regel zu aktivieren, müssen Sie sie veröffentlichen. Weitere Informationen zum Veröffentlichen der Regel auf Experience Platform Launch finden Sie unter [Veröffentlichen](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html).
 
 ### Denken über Einstiege und Ausstiege hinaus
 
-Die Verwendung von Places Service-Geo-Fence-Einträgen und -Ausstiegen zu Trigger-Regeln in Experience Platform Launch ist unglaublich leistungsstark, Sie können aber auch Standortdaten als Bedingung für andere Ereignisse verwenden. Sie könnten beispielsweise einen Mobile Core-Verfolgungsaktion-Trigger für die Auslösung auf Grundlage eines bestimmten trackAction -Aufruferereignisses in Ihrer App einrichten. Basierend auf diesem Ereignis können Sie dem Ereignis zusätzliche Standortbedingungen zuweisen, bevor eine Aktion ausgeführt wird. Öffnen Sie beispielsweise bei einem Kauf eine In-App-Umfrage `trackAction` -Ereignis eintritt, aber **only** wenn der aktuelle Standort des Benutzers bestimmte Places Service-Metadaten enthält.
+Die Verwendung von Places Service Geo-Fence-Einträgen und -Ausstiegen zu Trigger-Regeln in Experience Platform Launch ist unglaublich leistungsstark, aber Sie können auch Standortdaten als Bedingung für andere Ereignisse verwenden. Sie könnten beispielsweise einen Mobile Core-Verfolgungsaktion-Trigger für die Auslösung auf Grundlage eines bestimmten trackAction -Aufruferereignisses in Ihrer App einrichten. Basierend auf diesem Ereignis können Sie dem Ereignis zusätzliche Standortbedingungen zuweisen, bevor eine Aktion ausgeführt wird. Öffnen Sie beispielsweise eine In-App-Umfrage, wenn ein Kauf- `trackAction` -Ereignis auftritt, aber **nur**, wenn der aktuelle Standort des Benutzers bestimmte Places Service-Metadaten enthält.
 
 ![Erstellen einer Bedingung](/help/assets/places-condition.png)

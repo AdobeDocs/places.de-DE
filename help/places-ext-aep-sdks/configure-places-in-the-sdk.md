@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # SDK mit Places-Erweiterung konfigurieren {#configure-sdk-places-extension}
 
-Um die Standorterkennung in Ihrer Mobile App zu aktivieren, konfigurieren Sie das SDK mit der Places-Erweiterung. Weitere Informationen einschließlich SDK-Konfiguration finden Sie unter [Places-Erweiterung](/help/places-ext-aep-sdks/places-extension/places-extension.md).
+Um die Standorterkennung in Ihrer Mobile App zu aktivieren, konfigurieren Sie das SDK mit der Places-Erweiterung. Weitere Informationen einschließlich der SDK-Konfiguration finden Sie unter [Places-Erweiterung](/help/places-ext-aep-sdks/places-extension/places-extension.md).
 
 ## Konfigurieren der Places-Erweiterung
 
@@ -19,7 +19,7 @@ So konfigurieren Sie die Places-Erweiterung:
 
 1. Konfigurieren Sie die Erweiterung Places in Launch.
 
-   Weitere Informationen finden Sie unter *Konfigurieren der Places-Erweiterung in Launch* in [Places-Erweiterung](/help/places-ext-aep-sdks/places-extension/places-extension.md).
+   Weitere Informationen finden Sie unter *Konfigurieren der Places-Erweiterung in Launch* in der Erweiterung [Places ](/help/places-ext-aep-sdks/places-extension/places-extension.md).
 
 1. Fügen Sie die Places-Erweiterung zu Ihrer mobilen App hinzu.
 
@@ -27,4 +27,4 @@ So konfigurieren Sie die Places-Erweiterung:
 
 1. Registrieren Sie Places mit der Mobile Core-Erweiterung.
 
-   Weitere Informationen finden Sie unter *Places mit Mobile Core registrieren* in [Places-Erweiterung](/help/places-ext-aep-sdks/places-extension/places-extension.md).
+   Weitere Informationen finden Sie unter *Places mit Mobile Core registrieren* in der [Places-Erweiterung](/help/places-ext-aep-sdks/places-extension/places-extension.md).

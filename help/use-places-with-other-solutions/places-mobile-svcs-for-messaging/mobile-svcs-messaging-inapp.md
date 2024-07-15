@@ -4,8 +4,8 @@ description: In diesem Abschnitt erfahren Sie, wie Sie den Places-Dienst mit In-
 exl-id: c655e64b-0737-44d5-b453-2ac02fb9cbcc
 source-git-commit: d5c216aebd99ffef01c37c17c62576835b52438b
 workflow-type: tm+mt
-source-wordcount: '659'
-ht-degree: 4%
+source-wordcount: '644'
+ht-degree: 2%
 
 ---
 
@@ -33,11 +33,11 @@ Diese Typen sind In-App-Nachrichten, da sie vom SDK ausgelöst werden. Lokale Be
 
 ### Voraussetzungen
 
-Bevor Sie beginnen, wissen Sie, wie Sie eine In-App-Nachricht in Mobile Services senden und erstellen und wie Trigger funktionieren. Weitere Informationen finden Sie unter [In-App-Nachrichten erstellen.](https://experienceleague.adobe.com/docs/discontinued/using/mobile-services.html)
+Bevor Sie beginnen, wissen Sie, wie Sie eine In-App-Nachricht in Mobile Services senden und erstellen und wie Trigger funktionieren. Weitere Informationen finden Sie unter [In-App-Nachricht erstellen.](https://experienceleague.adobe.com/docs/discontinued/using/mobile-services.html?lang=de)
 
 ## Regeln in Experience Platform Launch
 
-Sie können Experience Platform Launch-Regeln erstellen, die die Daten senden, die Sie als Teil Ihrer Regeln für den Trigger von In-App-Nachrichten verwenden möchten, an Analytics senden. Je nach Anwendungsfall können Sie Daten aus den Places-Erweiterungen in Ihren Experience Platform Launch-Regeln entweder als Ereignisse und/oder als Bedingungen verwenden.
+Sie können Experience Platform Launch-Regeln erstellen, die die Daten senden, die Sie als Teil Ihrer In-App-Nachrichten-Trigger-Regeln verwenden möchten, an Analytics senden. Je nach Anwendungsfall können Sie Daten aus den Places-Erweiterungen in Ihren Experience Platform Launch-Regeln entweder als Ereignisse und/oder als Bedingungen verwenden.
 
 * Verwendung von Standortdaten als Auslöserereignis.
 
@@ -53,22 +53,22 @@ Nachdem die Regel mit den richtigen Ereignis- und Bedingungsparametern eingerich
 
 So erstellen Sie eine Aktion:
 
-1. Wählen Sie die **[!UICONTROL Adobe Analytics]** -Erweiterung.
-1. Im **[!UICONTROL Aktionstyp]** Dropdown-Liste auswählen **[!UICONTROL Verfolgen Sie.]**
+1. Wählen Sie die Erweiterung **[!UICONTROL Adobe Analytics]** aus.
+1. Wählen Sie in der Dropdownliste **[!UICONTROL Aktionstyp]** die Option **[!UICONTROL Verfolgen.]** aus.
 1. Geben Sie einen Namen für Ihre Aktion ein.
-1. Im rechten Bereich, in **[!UICONTROL Kontextdaten]** wählen Sie das Schlüssel-Wert-Paar aus, um die Kontextdaten festzulegen, die an Analytics gesendet werden.
+1. Wählen Sie im rechten Bereich in **[!UICONTROL Kontextdaten]** das Schlüssel-Wert-Paar aus, um die Kontextdaten festzulegen, die an Analytics gesendet werden.
 
-Sie können beispielsweise `poiname` als Schlüssel und `{%%Last Entered POI Name}` als Wert.
+Sie können beispielsweise `poiname` als Schlüssel und `{%%Last Entered POI Name}` als Wert auswählen.
 
 >[!TIP]
 >
->Analytics-Verarbeitungsregeln können so eingestellt werden, dass sie diese Kontextdaten abrufen. Weitere Informationen finden Sie unter [Regeln](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules.html). Im Beispiel in *Erstellen einer Aktion*, sendet die Aktion `poiname` als Kontext zur Beschreibung des POI-Eintrittsereignisses, das an Analytics gesendet wird.
+>Analytics-Verarbeitungsregeln können so eingestellt werden, dass sie diese Kontextdaten abrufen. Weitere Informationen finden Sie unter [Verarbeitungsregeln](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules.html). Im Beispiel in *Erstellen einer Aktion* sendet die Aktion den `poiname` als Kontext, um das POI-Eintrittsereignis zu beschreiben, das an Analytics gesendet wird.
 
-![Erstellen einer Aktion](/help/assets/configure-action.png)
+![ Erstellen einer Aktion](/help/assets/configure-action.png)
 
 Im Folgenden finden Sie ein Beispiel für die vollständige Regel:
 
-![abgeschlossene Regel](/help/assets/create-a-rule.png)
+![fertige Regel](/help/assets/create-a-rule.png)
 
 ## In-App-Nachricht in Mobile Services erstellen
 
@@ -79,10 +79,10 @@ Im Rahmen Ihrer Trigger-Parameter können Sie die Zielgruppe für die Nachricht 
 
   Diese Option kann mit einer standortspezifischen Aktion wie &quot;Eintrag&quot;verwendet werden oder als Kontext zu einem anderen Ereignis wie einem Launch oder einem Schaltflächenklick.
 
-  Im Folgenden finden Sie ein Beispiel für die Konfiguration einer In-App-Nachricht, um Benutzer willkommen zu heißen, die einen POI mit **[!UICONTROL Adobe]** im Namen:
+  Im Folgenden finden Sie ein Beispiel für die Konfiguration einer In-App-Nachricht, um Benutzer willkommen zu heißen, die einen POI eingeben, der **[!UICONTROL Adobe]** im Namen enthält:
 
-  ![Trigger-Parameter](/help/assets/trigger-parameters.png)
+  ![Trigger parameters](/help/assets/trigger-parameters.png)
 
-* Parameter in den Überschriften der Places Service im *Trigger und Eigenschaften* -Seite in Mobile Services funktionieren nicht mit Daten aus dem Places-Dienst.
+* Parameter in den Places-Dienst-Überschriften auf der Seite *Trigger und Eigenschaften* in Mobile Services funktionieren nicht mit Daten aus dem Places-Dienst.
 
   Diese Parameter gelten nur für die alte Places Service-Datenbank, die in Mobile Services erstellt wurde.

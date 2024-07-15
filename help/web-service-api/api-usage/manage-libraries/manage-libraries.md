@@ -1,6 +1,6 @@
 ---
 title: Bibliotheken verwalten
-description: Verwalten der Places Service-REST-API-Bibliotheken.
+description: Verwalten der REST-API-Bibliotheken des Places-Dienstes.
 exl-id: fe637239-7137-4d22-b8b5-5695d8222ffe
 source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
 workflow-type: tm+mt
@@ -19,4 +19,4 @@ Sie können die REST-APIs des Places Service verwenden, um die folgenden Aufgabe
 * [Bibliothek löschen](/help/web-service-api/api-usage/manage-libraries/delete-a-library.md)
 * [Alle Bibliotheken in Ihrer Organisation lesen](/help/web-service-api/api-usage/manage-libraries/read-all-libraries-in-your-organization.md)
 * [Rang in Ihren Bibliotheken festlegen](/help/web-service-api/api-usage/manage-libraries/set-a-ran-on-your-libraries.md)
-* [Bibliotheksrang abrufen](/help/web-service-api/api-usage/manage-libraries/delete-a-library.md)
+* [Bibliotheksrang](/help/web-service-api/api-usage/manage-libraries/delete-a-library.md)
