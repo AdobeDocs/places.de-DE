@@ -11,32 +11,32 @@ ht-degree: 1%
 
 # Häufig gestellte Fragen
 
-Im Folgenden finden Sie einige Informationen und häufig gestellte Fragen zu Places Service.
+Im Folgenden finden Sie einige Informationen und häufig gestellte Fragen zum Places Service.
 
-## Migration von trackLocation im v4-SDK
+## Migration von trackLocation in der v4-SDK
 
-Wenn Sie vom v4-SDK migrieren und nach einem Ersatz für die `trackLocation`-API suchen, finden Sie weitere Informationen im Abschnitt [Places-Dienst ohne aktive Regionsüberwachung verwenden](use-places-without-active-monitoring.md).
+Wenn Sie von SDK v4 migrieren und nach einem Ersatz für die `trackLocation`-API suchen, lesen Sie bitte den Abschnitt [Verwenden von Orten ohne Active Region Monitoring](use-places-without-active-monitoring.md).
 
 ## Größe und Zuverlässigkeit
 
-Wichtig: Beachten Sie, dass alle Geofences in der Regionsüberwachung von einer mobilen App aus verwendet werden, unabhängig von der Verwendung von Adobe oder einem anderen Dienst. Die Betriebssysteme empfehlen einige Parameter, die bei der Erstellung von Geofences zu beachten sind. Für maximale Zuverlässigkeit sollten Geofences einen Radius von mindestens 100 Metern haben. Es ist in Ordnung, kleinere Geofences zu erstellen, aber Einstiegs- und Ausstiegsereignisse können nicht generiert oder generiert werden, nachdem der Benutzer die Bewegung für einen bestimmten Zeitraum beendet hat.
+Beachten Sie Folgendes für alle Geofences, die bei der Regionsüberwachung von einer Mobile App aus verwendet werden, unabhängig von der Verwendung von Adobe oder einem anderen Service. Die Betriebssysteme empfehlen einige Parameter, die beim Erstellen von Geofences zu beachten sind. Für maximale Zuverlässigkeit sollten Geofences einen Radius von mindestens 100 Metern haben. Es ist in Ordnung, kleinere Geofences zu erstellen, aber Ein- und Ausstiegsereignisse werden möglicherweise nicht oder erst generiert, nachdem der Benutzer für einen bestimmten Zeitraum aufgehört hat, sich zu bewegen.
 
-Darüber hinaus können Genauigkeit und Zuverlässigkeit auf der Grundlage von Hardware-Bedingungen wie ausgeschaltetem oder nicht verfügbarem WLAN und auch auf der Grundlage des Standorts des Geräts in Bezug auf die Behinderung von GPS-Signalen reduziert werden. Bergregionen, städtische Einstellungen und Innenbereiche können beispielsweise die Standortgenauigkeit von den iOS- und Android-Betriebssystemen verringern.
+Darüber hinaus kann die Genauigkeit und Zuverlässigkeit aufgrund von Hardware-Bedingungen wie ausgeschaltetem oder nicht verfügbarem Wi-Fi sowie aufgrund der Position des Geräts in Bezug auf die Behinderung von GPS-Signalen verringert werden. Beispielsweise können Berggebiete, städtische Umgebungen und Innenbereiche die Standortgenauigkeit der iOS- und Android-Betriebssysteme verringern.
 
-## Wie wird ein Exitereignis Trigger?
+## Wie funktioniert ein Exit-Ereignis-Trigger?
 
-Der implementierte Regionsmonitor sollte eine Liste nahegelegener Zielpunkte anfordern. Nach dem Erhalt sollte eine Region für jeden POI beim Betriebssystem registriert werden. Das Betriebssystem ist jetzt für die Benachrichtigung des SDK verantwortlich, wenn das Gerät eine Grenze (Ein- oder Ausstieg) für eine der überwachten Regionen überschreitet. Das SDK Trigger nur dann ein exit -Ereignis, wenn das Betriebssystem das SDK darüber informiert, dass das Ereignis aufgetreten ist. Der Hauptgrund für diese Benachrichtigung ist die Zeitempfindlichkeit der Standortdaten.
+Der implementierte Regionsmonitor sollte eine Liste der nahegelegenen POIs anfordern. Nach Erhalt sollte für jeden POI eine Region beim Betriebssystem registriert werden. Das Betriebssystem ist nun für die Benachrichtigung der SDK verantwortlich, wenn das Gerät eine Grenze (Ein- oder Ausstieg) für eine der überwachten Regionen überschreitet. Die SDK Trigger nur dann ein Beendigungsereignis, wenn das Betriebssystem die SDK darüber informiert, dass das Ereignis aufgetreten ist. Der Hauptgrund für diese Benachrichtigung ist die zeitliche Sensitivität der Standortdaten.
 
-Wenn das Betriebssystem kein exit -Ereignis bereitstellen kann, wenn das Gerät eine Region verlässt, ist es sicherer, dass das SDK das exit -Ereignis einfach weglässt. Wenn das SDK ein exit -Ereignis erstellt, ohne dass das Ereignis vom Betriebssystem ausgelöst wird, besteht das Risiko, dass das exit -Ereignis weit außerhalb des Zeitraums verarbeitet wird, in dem sich das Gerät in der Nähe des POI befunden hat.
+Wenn das Betriebssystem kein Exit-Ereignis bereitstellen kann, wenn das Gerät eine Region verlässt, ist es sicherer, wenn der SDK das Exit-Ereignis einfach auslässt. Wenn der SDK ein Exitereignis erstellt, ohne dass das Ereignis vom Betriebssystem ausgelöst wird, besteht das Risiko, dass das Exitereignis deutlich außerhalb des Zeitraums verarbeitet wird, in dem sich das Gerät in der Nähe des POI befand.
 
-## Anzahl der Zielpunkte
+## Anzahl der POIs
 
-In der Verwaltungsoberfläche für POI des Places-Dienstes können Kunden bis zu 150.000 Zielpunkte in einer bestimmten Bibliothek zusammenfassen. Kunden können bei Bedarf mehrere Bibliotheken definieren, um POIs zu segmentieren.
+In der Verwaltungsoberfläche des Places Service-POI können Kunden bis zu 150.000 Punkte von Interesse zu einer bestimmten Bibliothek hinzufügen. Kunden können bei Bedarf mehrere Bibliotheken definieren, um Gruppierungen von POIs zu segmentieren.
 
-## Einige Hinweise zu Standortänderung und aktiver Regionsüberwachung
+## Einige Hinweise zu Standortänderungen und zur Überwachung aktiver Regionen
 
-Die Überwachung einer geografischen Region beginnt unmittelbar nach der Registrierung für zugelassene Apps. Erwarten Sie jedoch nicht, dass Sie sofort ein Ereignis erhalten, da nur Grenzübergänge ein Ereignis generieren. Insbesondere wenn sich der Standort des Benutzers zum Zeitpunkt der Registrierung bereits in der Region befindet, generiert der Standortmanager nicht automatisch ein Ereignis. Stattdessen muss Ihre App warten, bis der Benutzer die Regionsgrenze überschreitet, bevor ein Ereignis generiert und an den Delegaten gesendet wird.
+Die Überwachung einer geografischen Region beginnt unmittelbar nach der Registrierung für autorisierte Apps. Erwarten Sie jedoch nicht, sofort ein Ereignis zu erhalten, da nur Grenzüberschreitungen ein Ereignis erzeugen. Insbesondere wenn sich der Standort des Benutzers zur Registrierungszeit bereits innerhalb der Region befindet, generiert der Standort-Manager nicht automatisch ein Ereignis. Stattdessen muss die App warten, bis der Benutzer die Regionsgrenze überschreitet, bevor ein Ereignis generiert und an den Delegaten gesendet wird.
 
-Achten Sie bei der Angabe der zu überwachenden Regionen auf Bedacht. Regionen sind eine gemeinsame Systemressource, und die Gesamtzahl der systemweit verfügbaren Regionen ist begrenzt. Aus diesem Grund ist die Anzahl der Regionen, die gleichzeitig von einer einzelnen App überwacht werden können, vom Kernstandort auf 20 begrenzt. Um diese Grenze zu umgehen, sollten Sie nur die Regionen in der unmittelbaren Umgebung des Benutzers registrieren.
+Seien Sie beim Festlegen der zu überwachenden Regionen vorsichtig. Regionen sind eine gemeinsam genutzte Systemressource, und die Gesamtzahl der systemweit verfügbaren Regionen ist begrenzt. Aus diesem Grund beschränkt Core Location die Anzahl der Regionen, die von einer einzigen App gleichzeitig überwacht werden können, auf 20. Um diese Grenze zu umgehen, sollten Sie nur die Regionen in der unmittelbaren Umgebung des Benutzers registrieren.
 
-[Siehe zusätzliche Informationen auf der Apple-Entwickler-Site] (https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/LocationAwarenessPG/RegionMonitoring/RegionMonitoring.html#//apple_ref/doc/uid/TP40009497-CH9-SW11)
+[Weitere Informationen finden Sie auf der Apple Developer Site] (https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/LocationAwarenessPG/RegionMonitoring/RegionMonitoring.html#//apple_ref/doc/uid/TP40009497-CH9-SW11)

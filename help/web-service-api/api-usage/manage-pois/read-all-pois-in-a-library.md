@@ -1,6 +1,6 @@
 ---
-title: Alle Zielpunkte in einer Bibliothek lesen
-description: Lesen Sie alle POIs in einer Bibliothek mithilfe der Places-REST-APIs.
+title: Alle POIs in einer Bibliothek lesen
+description: Lesen Sie alle POIs in einer Bibliothek mithilfe der Places REST-APIs.
 exl-id: 08544909-661c-4a14-84e0-bacd0241a844
 source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
 workflow-type: tm+mt
@@ -9,9 +9,9 @@ ht-degree: 3%
 
 ---
 
-# Alle Zielpunkte in einer Bibliothek lesen {#read-all-pois-library}
+# Alle POIs in einer Bibliothek lesen {#read-all-pois-library}
 
-Eine GET-Methode, die alle Zielpunkte in einer Bibliothek zurückgibt.
+Eine GET-Methode, die alle POIs in einer Bibliothek zurückgibt.
 
 ## Anfrage
 
@@ -157,7 +157,7 @@ GET https://api-places.adobe.io/places/placesapi/v1/libraries/<LIBRARYID>/pois
 }
 ```
 
-## CURL, Befehl
+## CURL-Befehl
 
 Verwenden Sie den folgenden CURL-Befehl, um die API zu testen:
 
@@ -167,4 +167,4 @@ curl -X GET 'https://api-places.adobe.io/places/placesapi/v1/libraries/<LIBRARYI
 
 >[!IMPORTANT]
 >
->Ersetzen Sie &#39;&#39;, `<API KEY>`, `<TOKEN>` und `<ORGID>` durch die tatsächlichen Werte.
+>Ersetzen Sie &quot;&quot;, &quot;`<API KEY>`&quot;, &quot;`<TOKEN>`&quot; und &quot;`<ORGID>`&quot; durch tatsächliche Werte.

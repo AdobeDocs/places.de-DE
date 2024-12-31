@@ -1,5 +1,5 @@
 ---
-title: Benutzerdefinierte Places-Objekte
+title: Benutzerdefinierte Orte - Objekte
 description: Informationen zu benutzerdefinierten nativen Klassen, die mit den Places-APIs verwendet werden.
 feature: Mobile SDK
 exl-id: deb16ba3-bd59-42b1-85ec-0f7de17f91f8
@@ -10,15 +10,15 @@ ht-degree: 5%
 
 ---
 
-# Benutzerdefinierte Places-Objekte {#places-objects}
+# Benutzerdefinierte Orte - Objekte {#places-objects}
 
 Im Folgenden finden Sie die benutzerdefinierten nativen Klassen, die mit den Places-APIs verwendet werden:
 
 ## iOS
 
-### ACPPlacesPoi
+### ACPlacesPoi
 
-Die Definition lautet:
+Im Folgenden finden Sie die Definition:
 
 ```text
 /**

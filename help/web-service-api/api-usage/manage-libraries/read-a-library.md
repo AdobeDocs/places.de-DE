@@ -1,6 +1,6 @@
 ---
-title: Bibliothek lesen
-description: Lesen Sie eine Bibliothek mithilfe der Places REST API.
+title: Lesen einer Bibliothek
+description: Lesen einer Bibliothek mithilfe der Places REST-API.
 exl-id: c9c5a862-beab-42a9-8e40-abf93da592ea
 source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
 workflow-type: tm+mt
@@ -9,7 +9,7 @@ ht-degree: 4%
 
 ---
 
-# Bibliothek lesen {#read-a-library}
+# Lesen einer Bibliothek {#read-a-library}
 
 Eine GET-Methode, die die Details für eine Bibliothek zurückgibt.
 
@@ -80,7 +80,7 @@ GET https://api-places.adobe.io/places/placesapi/v1/libraries/<LIBRARYID>
 }
 ```
 
-## CURL, Befehl
+## CURL-Befehl
 
 Verwenden Sie den folgenden CURL-Befehl, um die API zu testen:
 
@@ -90,4 +90,4 @@ curl -X GET 'https://api-places.adobe.io/places/placesapi/v1/libraries/<LIBRARYI
 
 >[!IMPORTANT]
 >
->Ersetzen Sie `<LIBRARYID>`, `<API KEY>`, `<TOKEN>` und `<ORGID>` durch die tatsächlichen Werte.
+>Ersetzen Sie `<LIBRARYID>`, `<API KEY>`, `<TOKEN>` und `<ORGID>` durch tatsächliche Werte.

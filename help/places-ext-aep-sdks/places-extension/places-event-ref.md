@@ -18,58 +18,58 @@ Im Folgenden finden Sie eine Liste der Ereignisse, die von der Places-Erweiterun
 
 **Ereignisdetails**
 
-| Typ | Quelle | Name | gepaart |
+| Typ | Quelle | Name | Gepaart |
 | :--- | :--- | :--- | :--- |
-| ORTE | REQUEST_CONTENT | `requestgetuserwithinplaces` | True |
+| PLACES | REQUEST_CONTENT | `requestgetuserwithinplaces` | True |
 
 **Ereignisbeschreibung**
 
-Dieses Ereignis ist eine Anfrage zum Abrufen der POIs, an denen sich das Gerät derzeit befindet.
+Dieses Ereignis ist eine Anfrage zum Abrufen der POIs, in denen sich das Gerät derzeit befindet.
 
-**Datennutzlastdefinition**
+**Daten-Payload-Definition**
 
 n. z.
 
-## GetNeestedPointsOfInterest
+## GetNearPointsOfInterest
 
 **Ereignisdetails**
 
-| Typ | Quelle | Name | gepaart |
+| Typ | Quelle | Name | Gepaart |
 | :--- | :--- | :--- | :--- |
-| ORTE | REQUEST_CONTENT | `requestgetnearbyplaces` | True |
+| PLACES | REQUEST_CONTENT | `requestgetnearbyplaces` | True |
 
 **Ereignisbeschreibung**
 
-Bei diesem Ereignis handelt es sich um eine Anfrage zum Abrufen der nahegelegenen POIs unter Berücksichtigung des aktuellen Gerätestandorts und der konfigurierten Places-Bibliotheken.
+Dieses Ereignis ist eine Anfrage zum Abrufen der nahegelegenen POIs unter Berücksichtigung des aktuellen Gerätestandorts und der konfigurierten Places-Bibliotheken.
 
-**Datennutzlastdefinition**
+**Daten-Payload-Definition**
 
 | Schlüssel | Werttyp | Erforderlich | Standardwert | Beschreibung |
 | :--- | :--- | :--- | :--- | :--- |
-| latitude | double | wahr | n. z. | Enthält den Breitenwert für die Mitte der Suche nach nahe gelegenen Zielpunkten. |
-| longitude | double | wahr | n. z. | Enthält den Längenwert für die Mitte der Suche nach nahe gelegenen POIs. |
-| radius | integer | false | n. z. | Radius, in Metern, der für die Suche nach nahe gelegenen POIs verwendet wird. |
-| count | integer | false | 10 | Maximale Anzahl an POIs, die in dem resultierenden Antwortereignis zurückgegeben werden. |
+| Breitengrad | double | wahr | n. z. | Enthält den Breitengrad für die Mitte der Suche nach nahegelegenen POIs. |
+| Längengrad | double | wahr | n. z. | Enthält den Längengrad für die Mitte der Suche nach nahegelegenen POIs. |
+| Radius | integer | false | n. z. | Radius (in Metern), der von der Suche nach nahegelegenen POIs verwendet wird. |
+| count | integer | false | 10 | Maximale Anzahl an POIs, die im resultierenden Antwortereignis zurückgegeben werden sollen. |
 
 ## ProcessRegionEvent
 
 **Ereignisdetails**
 
-| Typ | Quelle | Name | gepaart |
+| Typ | Quelle | Name | Gepaart |
 | :--- | :--- | :--- | :--- |
-| ORTE | REQUEST_CONTENT | `requestprocessregionevent` | False |
+| PLACES | REQUEST_CONTENT | `requestprocessregionevent` | False |
 
 **Ereignisbeschreibung**
 
-Dieses Ereignis bewirkt, dass die Places-Erweiterung ein Geofence-Einstiegs- oder Ausstiegsereignis verarbeitet.
+Dieses Ereignis veranlasst die Places -Erweiterung, ein Geofence-Eintritts- oder -Austrittsereignis zu verarbeiten.
 
-**Datennutzlastdefinition**
+**Daten-Payload-Definition**
 
 | Schlüssel | Werttyp | Erforderlich | Beschreibung |
 | :--- | :--- | :--- | :--- |
-| regionid | Zeichenfolge | wahr | ID der Region, die das Ereignis generiert. |
-| regioneventtype | int | wahr | Typ des zu generierenden Regions-Ereignisses. 1 für die Einreise und 2 für die Ausfahrt. |
+| regionId | Zeichenfolge | wahr | ID der Region, die das Ereignis generiert. |
+| regionEventType | int | wahr | Typ des zu erzeugenden Regionsereignisses. 1 für die Einfahrt und 2 für die Ausfahrt. |
 
 ## Von der Places-Erweiterung gesendete Ereignisse
 
-Diese Informationen werden derzeit bereitgestellt.
+Diese Informationen sind derzeit in Bearbeitung.

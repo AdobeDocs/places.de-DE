@@ -1,6 +1,6 @@
 ---
 title: Places-Erweiterung
-description: Mit der Places-Erweiterung können Sie basierend auf dem Standort Ihrer Benutzer handeln.
+description: Mit der Places -Erweiterung können Sie basierend auf dem Standort Ihrer Benutzer agieren.
 feature: Mobile SDK
 exl-id: 09c02753-09b3-4e07-82b2-b6c72c4e0e42
 source-git-commit: 9f2c6fee6e0d6d075b662cc0b6cbee49cf05ee55
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Places-Erweiterung {#places-extension}
 
-Navigieren Sie zum Adobe-Entwicklerportal, um die Dokumentation für die [Places SDK-Erweiterungen](https://developer.adobe.com/client-sdks/documentation/places/) anzuzeigen.
+Navigieren Sie zum Adobe-Entwicklerportal, um die Dokumentation für die [Places SDK Extensions“ ](https://developer.adobe.com/client-sdks/documentation/places/).
 
 <!-- 
 

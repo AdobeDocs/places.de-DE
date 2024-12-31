@@ -1,6 +1,6 @@
 ---
-title: Einen POI löschen
-description: Löschen Sie einen POI mithilfe der Places REST APIs.
+title: Löschen eines POI
+description: Löschen eines POI mithilfe der Places REST-APIs.
 exl-id: 0325eb3b-f9b2-4b21-bed8-e318e8072a69
 source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
 workflow-type: tm+mt
@@ -9,7 +9,7 @@ ht-degree: 4%
 
 ---
 
-# Einen POI löschen {#delete-a-poi}
+# Löschen eines POI {#delete-a-poi}
 
 Eine DELETE-Methode zum Löschen eines POI.
 
@@ -35,7 +35,7 @@ DELETE https://api-places.adobe.io/places/placesapi/v1/pois/<POIID>
 If successful a Status of "204 No Content" is returned.
 ```
 
-## CURL, Befehl
+## CURL-Befehl
 
 Verwenden Sie den folgenden CURL-Befehl, um die API zu testen:
 
@@ -45,4 +45,4 @@ curl -X DELETE 'https://api-places.adobe.io/places/placesapi/v1/pois/<POIID>' -H
 
 >[!IMPORTANT]
 >
->Ersetzen Sie `<POIID>`, `<API KEY>`, `<TOKEN>` und `<ORGID>` durch die tatsächlichen Werte.
+>Ersetzen Sie `<POIID>`, `<API KEY>`, `<TOKEN>` und `<ORGID>` durch tatsächliche Werte.

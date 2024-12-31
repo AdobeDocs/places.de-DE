@@ -1,5 +1,5 @@
 ---
-title: Mehrere Zielpunkte löschen
+title: Mehrere POIs löschen
 description: Verwenden Sie die Batch-APIs, um mehrere POIs zu löschen.
 exl-id: f170b722-e6f4-42a2-b3a6-1bf56965eb17
 source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
@@ -9,9 +9,9 @@ ht-degree: 5%
 
 ---
 
-# Mehrere Zielpunkte löschen {#delete-multiple-pois}
+# Mehrere POIs löschen {#delete-multiple-pois}
 
-Eine POST-Methode, mit der Sie mehrere Zielpunkte löschen können.
+Eine POST-Methode, mit der Sie mehrere POIs löschen können.
 
 ## Anfrage
 
@@ -37,7 +37,7 @@ POST https://api-places.adobe.io/places/placesapi/v1/pois/batchDelete
 If successful a Status of "204 No Content" is returned.
 ```
 
-## CURL, Befehl
+## CURL-Befehl
 
 Verwenden Sie den folgenden CURL-Befehl, um diese API zu testen:
 

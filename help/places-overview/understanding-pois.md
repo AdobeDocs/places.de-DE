@@ -7,5 +7,5 @@ ht-degree: 0%
 ---
 # POIs verstehen
 
-Nicht im ursprünglichen Entwurf von William, sondern wir brauchen einen Einblick in die POIs, was sie tun und wie nützlich sie sind.
+Nicht in Williams ursprünglichem Entwurf, aber wir brauchen einen Einblick in das, was POIs sind, was sie tun und wie sie nützlich sind.
 

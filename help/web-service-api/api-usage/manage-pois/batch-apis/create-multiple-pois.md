@@ -1,5 +1,5 @@
 ---
-title: Mehrere Zielpunkte erstellen
+title: Erstellen mehrerer POIs
 description: Verwenden Sie die Batch-APIs, um mehrere POIs zu erstellen.
 exl-id: d1d6f7de-5914-432f-9d3c-17cf3cba784a
 source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
@@ -9,9 +9,9 @@ ht-degree: 5%
 
 ---
 
-# Mehrere Zielpunkte erstellen {#create-multiple-pois}
+# Erstellen mehrerer POIs {#create-multiple-pois}
 
-Eine POST-Methode, mit der Sie mehrere Zielpunkte erstellen können.
+Eine POST-Methode, mit der Sie mehrere POIs erstellen können.
 
 ## Anfrage
 
@@ -37,7 +37,7 @@ POST https://api-places.adobe.io/places/placesapi/v1/pois/batchCreate
 {    "ids": [        "558360b5-5b4b-4c8a-777f-5e3f4b60e4cb",        "ac01c21c-6274-4922-86d5-7777b59dc9b0",        .        .        .        "acf0fde0-22ee-470a-bfa9-b760777cefdc",        "d3cf8338-520f-49a5-8ee7-3777df69be91"    ],    "_links": {        "pois": {            "href": "https://api-places-dev.adobe.io/places/placesapi/v1/pois/{poi_id}",            "templated": true        }    }}
 ```
 
-## CURL, Befehl
+## CURL-Befehl
 
 Verwenden Sie den folgenden CURL-Befehl, um diese API zu testen:
 

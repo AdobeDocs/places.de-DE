@@ -1,8 +1,8 @@
 ---
 source-git-commit: d5c216aebd99ffef01c37c17c62576835b52438b
 workflow-type: tm+mt
-source-wordcount: '433'
-ht-degree: 100%
+source-wordcount: '405'
+ht-degree: 99%
 
 ---
 # Artikel beitragen

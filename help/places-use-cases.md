@@ -11,9 +11,9 @@ ht-degree: 0%
 
 # Places-Anwendungsfälle
 
-Zu den Beispielen gehören:
+Einige Beispiele:
 
-* Senden Sie eine Echtzeitbenachrichtigung, wenn ein Benutzer Ihren Store betritt
-* Analyse des Fußverkehrs meiner Geschäfte im Vergleich zu Konkurrenzgeschäften
-* Erstellen einer Audience für Geschäftsreisende
-* Benutzer mit Speichererlebnis auswählen, falls zutreffend
+* Eine Benachrichtigung in Echtzeit senden, wenn jemand Ihren Store betritt
+* Analyse des Traffics in meinen Läden im Vergleich zu Läden anderer Anbieter
+* Business-Traveller-Zielgruppe erstellen
+* Targeting von Benutzenden mit In-Store-Erlebnis, falls relevant

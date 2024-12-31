@@ -19,30 +19,30 @@ Eine GET-Methode, mit der Sie die POIs abfragen können, die dem Aufrufer am nä
 GET https://query.places.adobe.com/placesedgequery
 ```
 
-Mit der folgenden Eingabe gibt der Dienst eine Liste der POIs zurück, die dem Aufrufer am nächsten sind:
+Mit der folgenden Eingabe gibt der Service eine Liste der POIs zurück, die den Aufrufern am nächsten sind:
 
-* Position des Anrufers (Breitengrad, Längengrad).
+* Die Position des Anrufers (Breitengrad, Längengrad).
 * Die IDs der POI-Bibliotheken, die in die Suche einbezogen werden sollen.
-* Die maximale Anzahl der zurückzugebenden POIs.  Der Standardwert lautet 100.
+* Die maximale Anzahl an zurückzugebenden POIs.  Der Standardwert lautet 100.
 
-  Der Abstand zwischen Anrufer und POI ist definiert als der Abstand vom Anrufer zum Rand der POI-Geofence. In der Antwort werden POIs, die den Aufrufer enthalten, als mit dem Aufrufer gekennzeichnet.
+  Der Abstand zwischen dem Anrufer und dem POI wird als der Abstand zwischen dem Anrufer und dem Rand des Geofence des POI definiert. In der Antwort werden POIs, die den Aufrufer enthalten, als mit dem Aufrufer gekennzeichnet.
 
-Argumente werden als folgende Abfrageparameter bereitgestellt:
+Argumente werden als die folgenden Abfrageparameter bereitgestellt:
 
 * (**Erforderlich**) `latitude`
 
   Der Breitengrad des Anrufers, der zwischen -85 und 85 liegen muss.
 * (**Erforderlich**) `longitude`
 
-  Der Längengrad des Anrufers, der zwischen -180 und 180 liegen muss.
+  Der Längengrad des Aufrufers, der zwischen -180 und 180 liegen muss.
 
 * (**Optional**) `limit`
 
-  Die maximale Anzahl der zurückzugebenden POIs.
+  Die maximale Anzahl an zurückzugebenden POIs.
 
 * (**Erforderlich**) `library`
 
-  Die ID der abzurufenden Bibliothek. Um mehrere Bibliotheken abzufragen, stellen Sie sicher, dass Sie mehrere Kopien des Bibliotheksparameters in die Abfrage einschließen.
+  Die ID der abzufragenden Bibliothek. Um mehrere Bibliotheken abzufragen, stellen Sie sicher, dass Sie mehrere Kopien des Bibliotheksparameters in die Abfrage einbeziehen.
 
 Im Folgenden finden Sie ein Beispiel für das erfolgreich zurückgegebene JSON-Format:
 
@@ -107,7 +107,7 @@ Im Folgenden finden Sie ein Beispiel für das erfolgreich zurückgegebene JSON-F
 }
 ```
 
-POIs unter `places.pois` werden nach der Entfernung vom Anrufer zum Rand der POIs sortiert. POIs unter `places.userWithin` enthalten den Aufrufer, und diese POIs werden nach Rang und dann durch Vergrößern des Radius sortiert.
+POIs unter `places.pois` werden nach Entfernung vom Anrufer zum Rand der POIs sortiert. POIs unter `places.userWithin` enthalten die Aufrufenden. Diese POIs werden nach Rang und dann nach wachsendem Radius sortiert.
 
 ## Beispielaufruf
 

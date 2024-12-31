@@ -1,6 +1,6 @@
 ---
-title: POI erstellen
-description: Erstellen Sie einen POI mithilfe der Places REST APIs.
+title: Erstellen eines POI
+description: Erstellen Sie einen POI mithilfe der Places REST-APIs.
 exl-id: 0f5b5b40-11f0-4122-b3d5-c3853a6e8ca5
 source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
 workflow-type: tm+mt
@@ -9,7 +9,7 @@ ht-degree: 6%
 
 ---
 
-# POI erstellen {#create-a-poi}
+# Erstellen eines POI {#create-a-poi}
 
 Eine POST-Methode, mit der Sie einen POI erstellen können.
 
@@ -86,7 +86,7 @@ POST https://api-places.adobe.io/places/placesapi/v1/pois
 }
 ```
 
-## CURL, Befehl
+## CURL-Befehl
 
 Verwenden Sie den folgenden CURL-Befehl, um diese API zu testen:
 
@@ -96,4 +96,4 @@ curl -X POST 'https://api-places.adobe.io/places/placesapi/v1/pois' -H 'x-api-ke
 
 >[!IMPORTANT]
 >
->Denken Sie daran, `<API KEY>`, `<TOKEN>`, &#39;,&#39; und `<SINGLEPOIDATA>` durch tatsächliche Werte zu ersetzen.
+>Denken Sie daran, `<API KEY>`, `<TOKEN>`, &quot;,“ und `<SINGLEPOIDATA>` durch tatsächliche Werte zu ersetzen.

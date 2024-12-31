@@ -11,12 +11,12 @@ ht-degree: 0%
 
 # Batch-APIs {#batch-apis}
 
-Mit den Batch-APIs können Sie mehrere Zielpunkte gleichzeitig erstellen, aktualisieren oder löschen.
+Mit den Batch-APIs können Sie mehrere POIs gleichzeitig erstellen, aktualisieren oder löschen.
 
-Verwenden Sie die Python-Skripte, um einen Batch-Import Ihrer POIs aus einer `.csv` -Datei in die Places-Datenbank Ihres Unternehmens abzuschließen. Sie können die ZIP-Datei dieser Skripte [hier](https://github.com/adobe/places-scripts) herunterladen. Anweisungen zur Verwendung der Skripte finden Sie in der README-Datei im Repository.
+Verwenden Sie den Satz von Python-Skripten, um einen Batch-Import Ihrer POIs aus einer `.csv`-Datei in die Places-Datenbank Ihres Unternehmens durchzuführen. Sie können die ZIP-Datei dieser Skripte ([) ](https://github.com/adobe/places-scripts). Anweisungen zur Verwendung der Skripte finden Sie in der README-Datei im Repository.
 
-Sie können die Batch-APIs verwenden, um die folgenden Aufgaben durchzuführen:
+Sie können die Batch-APIs verwenden, um die folgenden Aufgaben auszuführen:
 
-* [Mehrere Zielpunkte erstellen](/help/web-service-api/api-usage/manage-pois/batch-apis/create-multiple-pois.md)
-* [Mehrere Zielpunkte aktualisieren](/help/web-service-api/api-usage/manage-pois/batch-apis/update-multiple-pois.md)
-* [Mehrere Zielpunkte löschen](/help/web-service-api/api-usage/manage-pois/batch-apis/delete-multiple-pois.md)
+* [Erstellen mehrerer POIs](/help/web-service-api/api-usage/manage-pois/batch-apis/create-multiple-pois.md)
+* [Mehrere POIs aktualisieren](/help/web-service-api/api-usage/manage-pois/batch-apis/update-multiple-pois.md)
+* [Mehrere POIs löschen](/help/web-service-api/api-usage/manage-pois/batch-apis/delete-multiple-pois.md)

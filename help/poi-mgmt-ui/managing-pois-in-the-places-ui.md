@@ -1,6 +1,6 @@
 ---
-title: Vorhandene Zielpunkte verwalten
-description: In der Benutzeroberfläche von Places Service können Sie vorhandene POIs bearbeiten, löschen oder filtern.
+title: Verwalten vorhandener POIs
+description: In der Places Service-Benutzeroberfläche können Sie vorhandene POIs bearbeiten, löschen oder filtern.
 exl-id: a4cf28ae-1e3c-4724-bca3-ac1d0cd6da09
 source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
 workflow-type: tm+mt
@@ -9,30 +9,30 @@ ht-degree: 6%
 
 ---
 
-# Vorhandene Zielpunkte verwalten {#managing-existing-pois}
+# Verwalten vorhandener POIs {#managing-existing-pois}
 
-POIs und Bibliotheken werden mithilfe der Places-Benutzeroberfläche in der Places-Datenbank erstellt und verwaltet.
+POIs und Bibliotheken werden in der Places-Datenbank mithilfe der Places-Benutzeroberfläche erstellt und verwaltet.
 
 ## POI bearbeiten
 
-1. Melden Sie sich mit Ihrer Adobe ID an Orten an.
-1. Melden Sie sich mit Ihrer Adobe ID beim Places-Dienst an.
-1. Klicken Sie oben rechts auf das Symbol, das wie eine Liste mit Aufzählungszeichen aussieht.
+1. Melden Sie sich mit Ihrer Adobe ID bei Places an.
+1. Melden Sie sich mit Ihrer Adobe ID beim Places Service an.
+1. Klicken Sie oben rechts auf das Symbol, das wie eine Aufzählungsliste aussieht.
 1. Suchen Sie den POI, den Sie bearbeiten möchten.
-1. Klicken Sie auf &quot;**[!UICONTROL ..]**&quot;und wählen Sie &quot;**[!UICONTROL Details anzeigen]**&quot;.
+1. Klicken Sie auf **[!UICONTROL …]** und wählen Sie **[!UICONTROL Details anzeigen]**.
 1. Aktualisieren Sie die Informationen und klicken Sie auf **[!UICONTROL Speichern]**.
 
-## Einen POI löschen
+## Löschen eines POI
 
-1. Melden Sie sich mit Ihrer Adobe ID an Orten an.
-1. Melden Sie sich mit Ihrer Adobe ID beim Places-Dienst an.
-1. Klicken Sie oben rechts auf das Symbol, das wie eine Liste mit Aufzählungszeichen aussieht.
+1. Melden Sie sich mit Ihrer Adobe ID bei Places an.
+1. Melden Sie sich mit Ihrer Adobe ID beim Places Service an.
+1. Klicken Sie oben rechts auf das Symbol, das wie eine Aufzählungsliste aussieht.
 1. Suchen Sie den POI, den Sie löschen möchten.
-1. Klicken Sie auf &quot;**[!UICONTROL ..]**&quot;und wählen Sie &quot;**[!UICONTROL Löschen]**&quot;.
+1. Klicken Sie auf **[!UICONTROL …]** und wählen Sie **[!UICONTROL Löschen]**.
 
 ## POIs nach Stadt, Bundesland, Land oder Metadaten filtern
 
-![ POI filtern](/help/assets/filter_poi.png)
+![Filtern eines POI](/help/assets/filter_poi.png)
 
 1. Melden Sie sich mit Ihrer Adobe ID bei der Places Service-Benutzeroberfläche an.
 1. Klicken Sie oben rechts auf das Filtersymbol.
@@ -40,15 +40,15 @@ POIs und Bibliotheken werden mithilfe der Places-Benutzeroberfläche in der Plac
 
    * Nach Bibliothek:
 
-     a. Wählen Sie eine Bibliothek aus.
+     a. Bibliothek auswählen.
 
    * Nach Eigenschaft:
 
-     a. Wählen Sie in der Dropdownliste Eigenschaft die Option **[!UICONTROL Land]**, **[!UICONTROL Bundesland]** oder **[!UICONTROL Stadt]** aus.
+     a. Wählen Sie in der Dropdown-Liste „Eigenschaft **[!UICONTROL „Land]**, **[!UICONTROL Bundesland]** oder **[!UICONTROL Stadt]**.
 
      b. Geben Sie in der nächsten Zeile einen Wert ein.
 
-     Sie können beispielsweise &quot;**[!UICONTROL Bundesstaat]**&quot;auswählen und &quot;**[!UICONTROL Kalifornien]**&quot;eingeben.
+     Sie können beispielsweise „Bundesland **[!UICONTROL auswählen]** &quot;**[!UICONTROL &quot;]**.
 
    * Mit Metadaten:
 
@@ -61,16 +61,16 @@ Geofences sind ein POI-Typ und werden in der Datenbank anhand der folgenden Schl
 | Schlüssel | Beschreibung | Erforderlich? |
 | :--- | :--- | :--- |
 | ID | Jedem POI zugewiesene eindeutige Kennung | Ja |
-| Name | Der Anzeigename des POI. | Ja |
+| Name | Der POI erhält einen Anzeigenamen. | Ja |
 | Bibliothek | Jedem POI muss eine Bibliothek für die Organisation zugewiesen werden. | Ja |
 | Radius | Der Radius für Ihren POI in Metern. | Ja |
-| Symbol | Hilfe bei Visualisierungen der POIs. | Ja (zugewiesene Standardeinstellung) |
-| Farbe | Hilfe bei Visualisierungen der POIs. | Ja (zugewiesene Standardeinstellung) |
-| Kategorie | Weisen Sie einen gemeinsamen Rahmen von Kategorien zu, die für alle Zielpunkte in allen Bibliotheken gelten. | Nein |
+| Symbol | Unterstützung bei Visualisierungen der POIs. | Ja (Standardeinstellung zugewiesen) |
+| Farbe | Unterstützung bei Visualisierungen der POIs. | Ja (Standardeinstellung zugewiesen) |
+| Kategorie | Weisen Sie ein gemeinsames Framework mit Kategorien zu, die für alle POIs in allen Bibliotheken gleich sind. | Nein |
 | Adresse | Straße. | Nein |
 | Stadt | Stadt des POI. | Nein |
-| Bundesland/Region | Bundesland oder Region des POI. | Nein |
+| Land/Region | Bundesland oder Region des POI. | Nein |
 | Land | Land des POI. | Nein |
-| Breitengrad | Breitengrad der Koordinate für die Mitte des POI. | Ja |
+| Breitengrad | Breitenkoordinate für die Mitte des POI. | Ja |
 | Längengrad | Längenkoordinate für die Mitte des POI. | Ja |
-| Metadaten | Benutzerdefinierte Schlüssel-Wert-Paare, die POIs zugewiesen werden können. Diese Metadaten optimieren zukünftige Workflows, indem sie es Ihnen ermöglichen, POIs über Bibliotheken hinweg zu gruppieren, damit Sie Regeln und Filter in nachgelagerten Workflows verwenden können, z. B. eine Push-Benachrichtigung senden, wenn ein Benutzer einen POI mit dem Typ = Konkurrent eingibt. | Nein |
+| Metadaten | Benutzerdefinierte Schlüssel- und Wertpaare, die POIs zugewiesen werden können. Diese Metadaten optimieren zukünftige Workflows, indem Sie POIs bibliotheksübergreifend gruppieren können, um in nachgelagerten Workflows Regeln und Filter zu verwenden. So können Sie beispielsweise eine Push-Benachrichtigung senden, wenn jemand einen POI mit dem Typ Konkurrent betritt. | Nein |

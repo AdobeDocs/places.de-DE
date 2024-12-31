@@ -1,6 +1,6 @@
 ---
-title: POI lesen
-description: Lesen eines POI mithilfe der Places REST APIs.
+title: Lesen eines POI
+description: Lesen eines POI mithilfe der Places REST-APIs.
 exl-id: 19eb73c4-5101-47a9-8c79-bc4790ecf472
 source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
 workflow-type: tm+mt
@@ -9,7 +9,7 @@ ht-degree: 4%
 
 ---
 
-# POI lesen {#read-a-poi}
+# Lesen eines POI {#read-a-poi}
 
 Eine GET-Methode, die die Details für einen POI zurückgibt.
 
@@ -59,7 +59,7 @@ GET https://api-places.adobe.io/places/placesapi/v1/pois/<POIID>
 }
 ```
 
-## CURL, Befehl
+## CURL-Befehl
 
 Verwenden Sie den folgenden CURL-Befehl, um die API zu testen:
 
@@ -69,4 +69,4 @@ curl -X GET 'https://api-places.adobe.io/places/placesapi/v1/pois/<POIID>' -H 'x
 
 >[!IMPORTANT]
 >
->Ersetzen Sie `<POIID>`, `<API KEY>`, `<TOKEN>` und `<ORIGIN>` durch die tatsächlichen Werte.
+>Ersetzen Sie `<POIID>`, `<API KEY>`, `<TOKEN>` und `<ORIGIN>` durch tatsächliche Werte.

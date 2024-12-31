@@ -1,6 +1,6 @@
 ---
-title: Verwenden von Experience Platform Launch-Regeln und Datenelementen mit Places-Daten.
-description: Informationen zu Regeln und Datenelementen sowie Places-Daten.
+title: Verwenden von Experience Platform Launch-Regeln und Datenelementen mit Daten vom Typ Orte .
+description: Informationen zu Regeln und Datenelementen und Daten zu Orten.
 source-git-commit: d5c216aebd99ffef01c37c17c62576835b52438b
 workflow-type: tm+mt
 source-wordcount: '229'
@@ -9,7 +9,7 @@ ht-degree: 37%
 ---
 
 
-# Verwenden von Experience Platform Launch-Regeln und Datenelementen mit Places-Daten
+# Verwenden von Experience Platform Launch-Regeln und Datenelementen mit Daten vom Typ Orte
 
 ## Regeln
 
@@ -17,9 +17,9 @@ Experience Platform Launch ist ein regelbasiertes System, das nach Benutzerinter
 
 ## Datenelemente
 
-Datenelemente sind die Bausteine für Ihr Datenwörterbuch oder Ihre Datenzuordnung. Sie können Datenelemente verwenden, um Daten über Marketing- und Anzeigentechnologie hinweg zu erfassen, zu organisieren und bereitzustellen.
+Datenelemente sind die Bausteine für Ihr Datenwörterbuch oder Ihre Datenzuordnung. Sie können Datenelemente verwenden, um Daten über Marketing- und Werbetechnologien hinweg zu erfassen, zu organisieren und bereitzustellen.
 
-Ein Datenelement ist eine Variable, und der Wert für diese Variable kann Abfragezeichenfolgen, URLs, Cookie-Werten, JavaScript-Variablen usw. zugeordnet werden. Auf Experience Platform Launch können Sie diesen Wert anhand des Variablennamens referenzieren. Die Sammlung von Datenelementen wird zum Wörterbuch definierter Daten, die Sie zum Erstellen Ihrer Regeln (Ereignisse, Bedingungen und Aktionen) verwenden können. Das Datenwörterbuch wird über das Experience Platform Launch hinweg freigegeben und kann mit der Places-Erweiterung verwendet werden.
+Ein Datenelement ist eine Variable. Der Wert für diese Variable kann Abfragezeichenfolgen, URLs, Cookie-Werten, JavaScript-Variablen usw. zugeordnet werden. In Experience Platform Launch können Sie diesen Wert anhand des Variablennamens referenzieren. Die Sammlung von Datenelementen wird zum Wörterbuch definierter Daten, mit denen Sie Ihre Regeln erstellen können (Ereignisse, Bedingungen und Aktionen). Das Datenwörterbuch wird auf allen Experience Platform Launch gemeinsam genutzt und kann mit der Places -Erweiterung verwendet werden.
 
 Weitere Informationen zu Datenelementen finden Sie unter [Datenelemente](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/data-elements.html?lang=de) und [Datenelemente erstellen](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/data-elements.html#create-a-data-element).
 
