@@ -66,7 +66,7 @@ Wenn nach dem Erstellen eines Datenelements eine Datenelementauswahl vorhanden i
 ![Verwenden des Datenelements](/help/assets/use-de-v2.png)
 
 Wenn in der Regelkomponente keine Datenelementauswahl vorhanden ist, können Sie das Datenelement verwenden, indem Sie den Datenelementnamen in die **[!UICONTROL %%]**-Token einschließen.
-Wenn der Datenelementname beispielsweise „Letzte POI-Stadt**[!UICONTROL lautet]** können Sie **[!UICONTROL LETZTE POI-Stadt]** zu einer Texteingabe hinzufügen.
+Wenn der Datenelementname beispielsweise „Letzte POI-Stadt&#x200B;**[!UICONTROL lautet]** können Sie **[!UICONTROL LETZTE POI-Stadt]** zu einer Texteingabe hinzufügen.
 
 
 ## Publish-Datenelemente

@@ -51,7 +51,7 @@ Wenn Sie zum ersten Mal einen Benutzer hinzufügen, führen Sie die folgenden Sc
 
    ![Shell-Umschalter](/help/assets/places_shell_switcher1.png)
 
-1. Klicken Sie unten in der Liste auf **[!UICONTROL Admin Console]**. (Ein Link zur Admin Console **** finden Sie auch im Abschnitt Schnellzugriff .)
+1. Klicken Sie unten in der Liste auf **[!UICONTROL Admin Console]**. (Ein Link zur Admin Console **&#x200B;**&#x200B;finden Sie auch im Abschnitt Schnellzugriff .)
 
    Wenn **[!UICONTROL Admin Console]** in der Liste nicht angezeigt wird, sind Sie kein Administrator. Sie müssen sich an den Administrator Ihrer Organisation wenden, um dieses Verfahren abzuschließen.
 

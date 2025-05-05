@@ -43,7 +43,7 @@ Ein Projekt mit der [Adobe Developer-Konsole](https://developer.adobe.com/consol
 
 Um ein Projekt für die Places Service-API zu erstellen, führen Sie die folgenden Schritte aus:
 
-1. Melden Sie sich mit Ihrer Adobe ID bei ](https://developer.adobe.com) Adobe Developer-Website an.[
+1. Melden Sie sich mit Ihrer Adobe ID bei [&#128279;](https://developer.adobe.com) Adobe Developer-Website an.
 2. Klicken **[!UICONTROL oben]** der Seite auf „Konsole“.
 3. Wenn Sie mehreren Adobe-Organisationen zugewiesen sind, wählen Sie die richtige Organisation aus der Dropdown-Liste oben rechts auf der Seite aus.
 4. Klicken Sie auf die **[!UICONTROL Neues Projekt erstellen]**.
@@ -56,12 +56,12 @@ Um ein Projekt für die Places Service-API zu erstellen, führen Sie die folgend
 11. Klicken Sie auf **[!UICONTROL API speichern und konfigurieren]**.
 12. Klicken Sie im linken Bedienfeld unter **[!UICONTROL auf den Link OAuth Server-]**-Server .
 13. Diese Seite bietet Folgendes:
-   * Eine Methode zum Generieren eines Zugriffstokens, das in den Places Service-REST-API-Anfragen verwendet wird.
-   * Sehen Sie sich einen curl-Befehl an, um ein Beispiel dafür zu sehen, wie Sie ein Zugriffstoken aus Ihrem eigenen Code generieren können.
-   * Anzeigen der Client-ID (auch als API-Schlüssel bezeichnet)
-   * Anzeigen des Client-Geheimnisses
-   * Organisations-ID anzeigen
-   * Diese sind alle in den Anfragen an die Places Service-REST-API erforderlich.
+    * Eine Methode zum Generieren eines Zugriffstokens, das in den Places Service-REST-API-Anfragen verwendet wird.
+    * Sehen Sie sich einen curl-Befehl an, um ein Beispiel dafür zu sehen, wie Sie ein Zugriffstoken aus Ihrem eigenen Code generieren können.
+    * Anzeigen der Client-ID (auch als API-Schlüssel bezeichnet)
+    * Anzeigen des Client-Geheimnisses
+    * Organisations-ID anzeigen
+    * Diese sind alle in den Anfragen an die Places Service-REST-API erforderlich.
 14. Sie können das Projekt umbenennen, indem Sie auf den Projektnamen im Pfad oben links im Fenster klicken
 15. Klicken Sie dann oben **[!UICONTROL auf]** Seite auf „Projekt bearbeiten“.
 
