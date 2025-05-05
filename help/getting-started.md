@@ -17,7 +17,7 @@ In diesem Video erhalten Sie einen Überblick über Places Services:
 Test of different youtube link for exl
 -->
 
->[!VIDEO](https://video.tv.adobe.com/v/41647)
+>[!VIDEO](https://video.tv.adobe.com/v/3455122?captions=ger)
 
 ## Verwenden des Places Service
 
