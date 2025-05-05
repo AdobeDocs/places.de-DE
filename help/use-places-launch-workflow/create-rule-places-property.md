@@ -54,7 +54,7 @@ Aktionen definieren, was die App als Reaktion auf die Bedingung tun wird, dass d
 
 >[!CAUTION]
 >
->In diesem Beispiel wird davon ausgegangen, dass Sie eine POI-Bibliothek aller Cafés in den USA erstellt haben. Weitere Informationen zum Erstellen von POIs und Bibliotheken finden Sie unter [Erstellen eines POI](/help/poi-mgmt-ui/create-a-poi-ui.md) und *Erstellen einer Bibliothek* in [Verwalten mehrerer Bibliotheken](https://experienceleague.adobe.com/docs/places/using/poi-mgmt-ui/manage-libraries-in-the-places-ui.html).
+>In diesem Beispiel wird davon ausgegangen, dass Sie eine POI-Bibliothek aller Cafés in den USA erstellt haben. Weitere Informationen zum Erstellen von POIs und Bibliotheken finden Sie unter [Erstellen eines POI](/help/poi-mgmt-ui/create-a-poi-ui.md) und *Erstellen einer Bibliothek* in [Verwalten mehrerer Bibliotheken](https://experienceleague.adobe.com/docs/places/using/poi-mgmt-ui/manage-libraries-in-the-places-ui.html?lang=de).
 
 Das folgende Verfahren ist ein Beispiel für die Erstellung einer Regel, die einen Beitrag zurück an Slack sendet, wenn Sie ein Café in San Francisco betreten.
 
@@ -124,7 +124,7 @@ So erstellen Sie ein Datenelement im Experience Platform Launch:
 
 ### Publish - die Regel
 
-1. Um die Regel zu aktivieren, müssen Sie sie veröffentlichen. Weitere Informationen zum Veröffentlichen der Regel auf Experience Platform Launch finden Sie unter [Veröffentlichen](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html).
+1. Um die Regel zu aktivieren, müssen Sie sie veröffentlichen. Weitere Informationen zum Veröffentlichen der Regel auf Experience Platform Launch finden Sie unter [Veröffentlichen](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html?lang=de).
 
 ### Über Ein- und Austritte hinaus denken
 

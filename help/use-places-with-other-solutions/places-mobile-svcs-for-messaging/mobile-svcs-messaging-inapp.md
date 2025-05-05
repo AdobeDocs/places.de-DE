@@ -62,7 +62,7 @@ Sie können beispielsweise `poiname` als Schlüssel und `{%%Last Entered POI Nam
 
 >[!TIP]
 >
->Es können Analytics-Verarbeitungsregeln festgelegt werden, um diese Kontextdaten aufzunehmen. Weitere Informationen finden Sie unter [Verarbeitungsregeln](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules.html). Im Beispiel in *Aktion erstellen* sendet die Aktion die `poiname` als Kontext, um das POI-Eintrittsereignis zu beschreiben, das an Analytics gesendet wird.
+>Es können Analytics-Verarbeitungsregeln festgelegt werden, um diese Kontextdaten aufzunehmen. Weitere Informationen finden Sie unter [Verarbeitungsregeln](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules.html?lang=de). Im Beispiel in *Aktion erstellen* sendet die Aktion die `poiname` als Kontext, um das POI-Eintrittsereignis zu beschreiben, das an Analytics gesendet wird.
 
 ![Erstellen einer Aktion](/help/assets/configure-action.png)
 

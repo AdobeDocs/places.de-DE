@@ -23,7 +23,7 @@ Dieses Dokument setzt Folgendes voraus:
 
 1. Der Adobe Analytics-Benutzer ist Administrator und hat Zugriff auf Verarbeitungsregeln.
 
-   Weitere Informationen zu Verarbeitungsregeln finden Sie unter Übersicht über [Verarbeitungsregeln](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules.html).
+   Weitere Informationen zu Verarbeitungsregeln finden Sie unter Übersicht über [Verarbeitungsregeln](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules.html?lang=de).
 
 1. In der Launch-Eigenschaft wurden Datenelemente für die gewünschten Places Service-Variablen erstellt.
 
@@ -52,7 +52,7 @@ In diesem Beispiel wurde eine Konversionsvariable mit dem Namen **[!UICONTROL eV
 
 ## 3. Erstellen von Verarbeitungsregeln
 
-Dieser Schritt ist erforderlich, um Kontextdaten (Schritt 1) Analytics-Variablen zuzuordnen (Schritt 2). Weitere Informationen zum Erstellen von Verarbeitungsregeln finden Sie unter [Übersicht über Verarbeitungsregeln](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules.html).
+Dieser Schritt ist erforderlich, um Kontextdaten (Schritt 1) Analytics-Variablen zuzuordnen (Schritt 2). Weitere Informationen zum Erstellen von Verarbeitungsregeln finden Sie unter [Übersicht über Verarbeitungsregeln](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules.html?lang=de).
 
 In diesem Beispiel wurde eine Verarbeitungsregel erstellt, um den Kontextdatenwert **[!UICONTROL poi.name)]** Places POI Name (eVar2 **[!UICONTROL zuzuordnen]**. Für jede erstellte Standortvariable müssen zusätzliche Verarbeitungsregeln erstellt werden.
 
