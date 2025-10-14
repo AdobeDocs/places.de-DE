@@ -69,11 +69,11 @@ ht-degree: 19%
       + [Bericht zu Standortdaten in Analytics Workspace](use-places-with-other-solutions/places-adobe-analytics/places-in-workspace.md)
    + Adobe Mobile Services {#places-mobile-svcs-messaging}
       + [Adobe Mobile Services](use-places-with-other-solutions/places-mobile-svcs-for-messaging/use-places-mobie-svcs-messaging.md)
-      + [Push-Benachrichtigungen ](use-places-with-other-solutions/places-mobile-svcs-for-messaging/mobile-svcs-messaging-push.md)
+      + [Push-Benachrichtigungen &#x200B;](use-places-with-other-solutions/places-mobile-svcs-for-messaging/mobile-svcs-messaging-push.md)
       + [In-App-Benachrichtigungen](use-places-with-other-solutions/places-mobile-svcs-for-messaging/mobile-svcs-messaging-inapp.md)
    + Adobe Campaign Standard {#places-acs}
       + [Verwenden des Places Service mit Adobe Campaign Standard](use-places-with-other-solutions/places-acs/places-acs-overview.md)
-      + [Push-Benachrichtigungen ](use-places-with-other-solutions/places-acs/places-acs-push-notifications.md)
+      + [Push-Benachrichtigungen &#x200B;](use-places-with-other-solutions/places-acs/places-acs-push-notifications.md)
       + [In-App-Nachrichten](use-places-with-other-solutions/places-acs/places-acs-in-app-messages.md)
    + Adobe Target {#places-target}
       + [Verwenden des Places Service mit Adobe Target](use-places-with-other-solutions/places-target/places-target.md)

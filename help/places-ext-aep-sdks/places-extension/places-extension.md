@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Places-Erweiterung {#places-extension}
 
-Navigieren Sie zum Adobe-Entwicklerportal, um die Dokumentation für die [Places SDK Extensions“ ](https://developer.adobe.com/client-sdks/documentation/places/).
+Navigieren Sie zum Adobe-Entwicklerportal, um die Dokumentation für die [Places SDK Extensions“ &#x200B;](https://developer.adobe.com/client-sdks/documentation/places/).
 
 <!-- 
 

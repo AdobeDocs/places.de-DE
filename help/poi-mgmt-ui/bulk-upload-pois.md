@@ -23,7 +23,7 @@ In diesem Video wird der Prozess für den Massenimport und die Massenbearbeitung
 
 ## Python-API-Skripte
 
-Es wurde ein Satz von Python-Skripten erstellt, um den Batch-Import von POIs aus einer CSV-Datei in eine POI-Datenbank mithilfe der Webservice-APIs zu vereinfachen. Diese Skripte können aus diesem Open-Source-Repository [Git-Repository) ](https://github.com/adobe/places-scripts) werden.
+Es wurde ein Satz von Python-Skripten erstellt, um den Batch-Import von POIs aus einer CSV-Datei in eine POI-Datenbank mithilfe der Webservice-APIs zu vereinfachen. Diese Skripte können aus diesem Open-Source-Repository [Git-Repository) &#x200B;](https://github.com/adobe/places-scripts) werden.
 
 Informationen zum Zugriff auf die Webservice-APIs vor der Ausführung dieser Skripte finden Sie unter *Voraussetzungen für den Benutzerzugriff* in [Übersicht über die Integration und Voraussetzungen](/help/web-service-api/adobe-i-o-integration.md).
 

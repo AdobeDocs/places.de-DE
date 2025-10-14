@@ -16,7 +16,7 @@ ht-degree: 2%
 * **Places and Places Monitor-Erweiterungen**
 
    * Die Erweiterungen Places und Places Monitor wurden für [React Native-Programme hinzugefügt](https://aep-sdks.gitbook.io/docs/resources/upgrading-to-aep/current-sdk-versions#react-native)
-   * Die Erweiterungen Places und Places Monitor wurden für [Cordova-Anwendungen“ ](https://aep-sdks.gitbook.io/docs/resources/upgrading-to-aep/current-sdk-versions#cordova)
+   * Die Erweiterungen Places und Places Monitor wurden für [Cordova-Anwendungen“ &#x200B;](https://aep-sdks.gitbook.io/docs/resources/upgrading-to-aep/current-sdk-versions#cordova)
    * Weitere Informationen finden Sie unter [Verwenden der Places-Erweiterung](https://experienceleague.adobe.com/docs/places/using/places-ext-aep-sdks/places-extension/places-extension.html?lang=de)
 
 
@@ -294,7 +294,7 @@ Im Folgenden finden Sie die wichtigsten Funktionen dieser Version:
 Wir haben eine Management-Benutzeroberfläche veröffentlicht, in der Sie Ihre POIs (Points of Interest) anzeigen und verwalten können. Sie können Ihre POIs auch in Bibliotheken organisieren. Zusätzlich zu Standard-Metadaten wie Stadt, Bundesland und Kategorie unterstützen wir auch die Möglichkeit, Ihren POIs benutzerdefinierte Metadaten hinzuzufügen.
 
 * Die Benutzeroberfläche finden Sie unter [https://places.adobe.com](https://places.adobe.com).
-* Informationen zu den ersten Schritten mit der Benutzeroberfläche finden [ unter „Erste Schritte](/help/getting-started.md).
+* Informationen zu den ersten Schritten mit der Benutzeroberfläche finden [&#x200B; unter „Erste Schritte](/help/getting-started.md).
 
 #### Places-Erweiterung
 

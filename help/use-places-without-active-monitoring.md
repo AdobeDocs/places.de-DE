@@ -118,15 +118,15 @@ func locationManager(_ manager: CLLocationManager, didUpdateLocations locations:
 
 Durch den Aufruf der `getNearbyPointsOfInterest`-API stellt die Places SDK alle für das Gerät relevanten POI-Daten über Datenelemente in Launch zur Verfügung. Durch Verwendung einer [Daten anhängen](https://aep-sdks.gitbook.io/docs/resources/user-guides/attach-data)-Regel können Platzierungsdaten automatisch zu zukünftigen Anfragen an Analytics hinzugefügt werden. Dadurch entfällt die Notwendigkeit eines einmaligen Aufrufs an Analytics zum Zeitpunkt der Erfassung des Standorts des Geräts.
 
-Weitere Informationen [ diesem Thema finden Sie unter „Hinzufügen ](use-places-with-other-solutions/places-adobe-analytics/run-reports-aa-places-data.md) Standortkontext zu Analytics-Anfragen“.
+Weitere Informationen [&#x200B; diesem Thema finden Sie unter „Hinzufügen &#x200B;](use-places-with-other-solutions/places-adobe-analytics/run-reports-aa-places-data.md) Standortkontext zu Analytics-Anfragen“.
 
 ## Optional - Benutzereintrittsereignisse, wenn sich der Trigger in einem POI befindet
 
 >[!TIP]
 >
->Die empfohlene Methode zur Erfassung von Daten zu Orten besteht darin[ „Places-Daten an Ihre Analytics-Anfragen anzuhängen](#attach-places-data-to-your-analytics-requests).
+>Die empfohlene Methode zur Erfassung von Daten zu Orten besteht darin[&#x200B; „Places-Daten an Ihre Analytics-Anfragen anzuhängen](#attach-places-data-to-your-analytics-requests).
 >
->Wenn der Anwendungsfall erfordert, dass [ SDK ein &quot;](https://developer.adobe.com/client-sdks/documentation/places/api-reference/#processregionevent)&quot; auslöst, muss dies manuell geschehen, wie unten beschrieben.
+>Wenn der Anwendungsfall erfordert, dass [&#x200B; SDK ein &quot;](https://developer.adobe.com/client-sdks/documentation/places/api-reference/#processregionevent)&quot; auslöst, muss dies manuell geschehen, wie unten beschrieben.
 
 Die von der `getNearbyPointsOfInterest`-API zurückgegebene Liste enthält [benutzerdefinierte Objekte](https://developer.adobe.com/client-sdks/documentation/places/api-reference/#additional-classes-and-enums) die angeben, ob sich der Benutzer derzeit in einem POI befindet. Wenn sich der Benutzer in einem POI befindet, kann der SDK-Trigger ein Eintrittsereignis für diese Region erhalten.
 
