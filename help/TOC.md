@@ -6,7 +6,7 @@ feature: Places
 source-git-commit: 9f2c6fee6e0d6d075b662cc0b6cbee49cf05ee55
 workflow-type: tm+mt
 source-wordcount: '290'
-ht-degree: 19%
+ht-degree: 18%
 
 ---
 
@@ -17,17 +17,17 @@ ht-degree: 19%
 + [Versionshinweise](release-notes.md)
 + [Erste Schritte](getting-started.md)
 + [Zugriff auf Places Service erhalten](places-gain-access.md)
-+ Places Service-Benutzeroberfläche - {#poi-mgmt-ui}
++ Places Service-Benutzeroberfläche {#poi-mgmt-ui}
    + [Übersicht über die Places Service-Benutzeroberfläche](poi-mgmt-ui/poi-mgmt-ui-overview.md)
    + [Erstellen eines POI](poi-mgmt-ui/create-a-poi-ui.md)
    + [Verwalten zuvor erstellter POIs](poi-mgmt-ui/managing-pois-in-the-places-ui.md)
    + [Strategien für die Verwendung von Metadaten mit POIs](poi-mgmt-ui/metadata-with-pois.md)
    + [Massen-Upload von POIs](poi-mgmt-ui/bulk-upload-pois.md)
    + [Mehrere Bibliotheken verwalten](poi-mgmt-ui/manage-libraries-in-the-places-ui.md)
-+ Webservice-API-{#web-service-api}
++ Webservice-API {#web-service-api}
    + [Übersicht über die Webservice-API](web-service-api/places-web-services.md)
    + [Voraussetzungen für die Integration](web-service-api/adobe-i-o-integration.md)
-   + API-{#api-usage}
+   + API-Nutzung {#api-usage}
       + [Übersicht über die API-Nutzung](web-service-api/api-usage/api-usage-overview.md)
       + [Kopfzeilen und Parameter](web-service-api/api-usage/headers-and-parameters.md)
       + Bibliotheken verwalten {#manage-libraries}
@@ -39,7 +39,7 @@ ht-degree: 19%
          + [Alle Bibliotheken in Ihrer Organisation lesen](web-service-api/api-usage/manage-libraries/read-all-libraries-in-your-organization.md)
          + [Festlegen eines Rangs in Ihren Bibliotheken](web-service-api/api-usage/manage-libraries/set-a-ran-on-your-libraries.md)
          + [Erhalte den Rang einer Bibliothek](web-service-api/api-usage/manage-libraries/get-a-librarys-rank.md)
-      + Zielpunkte verwalten {#manage-pois}
+      + Verwalten von Points of Interest {#manage-pois}
          + [POI verwalten - Übersicht](web-service-api/api-usage/manage-pois/manage-pois.md)
          + [Erstellen eines POI](web-service-api/api-usage/manage-pois/create-a-poi.md)
          + [Lesen eines POI](web-service-api/api-usage/manage-pois/read-a-poi.md)
@@ -57,7 +57,7 @@ ht-degree: 19%
    + [Places-Erweiterung](places-ext-aep-sdks/places-extension/places-extension.md)
 + [Verwenden des Places Service mit einer eigenen Überwachungslösung](using-your-own-monitor.md)
 + [Places Service ohne Überwachung der aktiven Region verwenden](use-places-without-active-monitoring.md)
-+ Verwenden des Places Service als Teil der Experience Platform Launch-Workflow-{#use-places-launch-workflow}
++ Verwenden des Places Service als Teil des Experience Platform Launch-Workflows {#use-places-launch-workflow}
    + [Verwenden des Places Service als Teil des Experience Platform Launch-Workflows](use-places-launch-workflow/places-launch-workflow.md)
    + [Definieren von Datenelementen](use-places-launch-workflow/define-data-elements.md)
    + [Erstellen von Ein- und Ausstiegsregeln](use-places-launch-workflow/create-rule-places-property.md)
@@ -69,11 +69,11 @@ ht-degree: 19%
       + [Bericht zu Standortdaten in Analytics Workspace](use-places-with-other-solutions/places-adobe-analytics/places-in-workspace.md)
    + Adobe Mobile Services {#places-mobile-svcs-messaging}
       + [Adobe Mobile Services](use-places-with-other-solutions/places-mobile-svcs-for-messaging/use-places-mobie-svcs-messaging.md)
-      + [Push-Benachrichtigungen &#x200B;](use-places-with-other-solutions/places-mobile-svcs-for-messaging/mobile-svcs-messaging-push.md)
+      + [Push-Benachrichtigungen ](use-places-with-other-solutions/places-mobile-svcs-for-messaging/mobile-svcs-messaging-push.md)
       + [In-App-Benachrichtigungen](use-places-with-other-solutions/places-mobile-svcs-for-messaging/mobile-svcs-messaging-inapp.md)
    + Adobe Campaign Standard {#places-acs}
       + [Verwenden des Places Service mit Adobe Campaign Standard](use-places-with-other-solutions/places-acs/places-acs-overview.md)
-      + [Push-Benachrichtigungen &#x200B;](use-places-with-other-solutions/places-acs/places-acs-push-notifications.md)
+      + [Push-Benachrichtigungen ](use-places-with-other-solutions/places-acs/places-acs-push-notifications.md)
       + [In-App-Nachrichten](use-places-with-other-solutions/places-acs/places-acs-in-app-messages.md)
    + Adobe Target {#places-target}
       + [Verwenden des Places Service mit Adobe Target](use-places-with-other-solutions/places-target/places-target.md)
