@@ -1,18 +1,20 @@
 ---
 cloud: Experience Cloud
 product: places service
-solution: Data Collection
+solution: Data Collection, Experience Platform
+landing-page-name: mobile
+landing-page-breadcrumb-title: Mobile SDK
 feature-set: Experience Platform
 type: Documentation
 solution-title: Learn & Support
-solution-hub-url: https://helpx.adobe.com/de/support/experience-cloud.html
+solution-hub-url: https://helpx.adobe.com/support/experience-cloud.html
 getting-started-title: Getting Started
-getting-started-url: https://experienceleague.adobe.com/docs/places/using/getting-started.html?lang=de
+getting-started-url: https://experienceleague.adobe.com/docs/places/using/getting-started.html
 tutorials-title: Tutorials
-tutorials-url: https://experienceleague.adobe.com/de#recommended/solutions/experience-platform
+tutorials-url: https://experienceleague.adobe.com/#recommended/solutions/experience-platform
 git-repo: https://github.com/AdobeDocs/places.de-DE
 index: true
-source-git-commit: b63808d2a3fc8d25a6a3db3048c2bf059ea0bdaa
+source-git-commit: 896a596bfbfb8c97c55263fc3596d957e4ac52c7
 workflow-type: tm+mt
 source-wordcount: '142'
 ht-degree: 98%
@@ -36,8 +38,8 @@ Die Datei metadata.md enthält Metadaten auf Repo-Ebene, die an die TOC.md-Datei
 | tutorials-title | Wird selten verwendet, wenn Übungen nicht geeignet sind |
 | tutorials-url | Link zu Video-Übungen – entweder Helpx-Übungen oder KT-Übungen |
 | mini-toc-levels | Legt fest, wie viele Überschriftenebenen in der rechten Leiste angezeigt werden. Standardwert ist „2“ |
-| git-repo | https://github.com/AdobeDocs/places.de-DE |
-| Index | set index=no for soft launch |
+| git-repo | https://github.com/AdobeDocs/places.en |
+| index | set index=no for soft launch |
 
 In der Datei TOC.md
 
