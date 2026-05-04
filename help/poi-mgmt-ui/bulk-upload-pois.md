@@ -2,9 +2,23 @@
 title: Massen-Upload-POIs
 description: Dieser Abschnitt enthält Informationen zum Massen-Upload Ihrer POIs.
 exl-id: 72704bfc-5837-4439-bdb2-e77ddf935639
-source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
+TQID: https://experienceleague.adobe.com/FVZzn3FwSAFgnRBjkiFwHG8Zl2I-I4fPrqax-zGNclk
+product_v2:
+  - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
+  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+feature_v2:
+  - id: bef6f891-2e8a-425e-8f99-7ddf22070daa
+  - id: e08599ea-8888-4294-ba74-3ba0a7762a46
+subfeature_v2:
+  - id: d2a6cbf4-df32-480f-909e-b42f66dcb9f0
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: f962cef761f006c8e7d45b76ba24746e36bdaba6
 workflow-type: tm+mt
-source-wordcount: '837'
+source-wordcount: 854
 ht-degree: 0%
 
 ---
@@ -19,7 +33,7 @@ In diesem Video wird der Prozess für den Massenimport und die Massenbearbeitung
 
 <!--I changed this embed to a link to pass validation. We should not link to youtube videos, so please upload this to MCP-->
 
-[Places Service - Massenimport und -bearbeitung von POIs](https://www.youtube.com/watch?v=75qVtirsXhg)
+[Places Service-POIs für Massenimport und -bearbeitung](https://www.youtube.com/watch?v=75qVtirsXhg)
 
 ## Python-API-Skripte
 
@@ -102,9 +116,9 @@ Die Werte der folgenden Spalten werden in der Places Service-Benutzeroberfläche
 
    * `api_key`
 
-     Dies ist Ihr Places REST API-Schlüssel, der von Ihrer Adobe I/O Places-Integration bezogen wurde. Informationen zum Abrufen des API-Schlüssels finden Sie unter *Voraussetzungen für den Benutzerzugriff* in [Übersicht über die Integration und Voraussetzungen](/help/web-service-api/adobe-i-o-integration.md).
+     Dies ist Ihr Places REST-API-Schlüssel, der Sie von Ihrer Adobe I/O Places-Integration erhalten haben. Informationen zum Abrufen des API-Schlüssels finden Sie unter *Voraussetzungen für den Benutzerzugriff* in [Übersicht über die Integration und Voraussetzungen](/help/web-service-api/adobe-i-o-integration.md).
 
-   b. Speichern Sie Ihre Änderungen.
+   B. Speichern Sie Ihre Änderungen.
 
 1. Navigieren Sie in einem Terminal-Fenster zum `…/places-scripts/import/`.
 1. Geben Sie `python ./places_import.py` ein, und drücken Sie **[!UICONTROL Taste]** Eingabetaste **[!UICONTROL (]**).

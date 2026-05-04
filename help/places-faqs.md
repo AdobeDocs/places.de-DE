@@ -2,9 +2,20 @@
 title: Häufig gestellte Fragen
 description: Dieses Thema enthält zusätzliche Informationen zu einigen häufig gestellten Fragen.
 exl-id: cee9f447-5e50-4ed8-b37b-baecbc0e9b7b
-source-git-commit: 010de286c25c1eeb989fb76e3c2adaa82ac9fd35
+TQID: https://experienceleague.adobe.com/LL9eLMDJaq8ZmeiZxv28QZoqXL1A0QKZ-DvTDUx4Gnw
+product_v2:
+  - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
+  - id: dc5cf79d-43c4-4731-bffa-1df5d7549cb1
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+feature_v2:
+  - id: e08599ea-8888-4294-ba74-3ba0a7762a46
+subfeature_v2:
+  - id: d2a6cbf4-df32-480f-909e-b42f66dcb9f0
+topic_v2:
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: f962cef761f006c8e7d45b76ba24746e36bdaba6
 workflow-type: tm+mt
-source-wordcount: '541'
+source-wordcount: 557
 ht-degree: 1%
 
 ---
@@ -19,7 +30,7 @@ Wenn Sie von SDK v4 migrieren und nach einem Ersatz für die `trackLocation`-API
 
 ## Größe und Zuverlässigkeit
 
-Beachten Sie Folgendes für alle Geofences, die bei der Regionsüberwachung von einer Mobile App aus verwendet werden, unabhängig von der Verwendung von Adobe oder einem anderen Service. Die Betriebssysteme empfehlen einige Parameter, die beim Erstellen von Geofences zu beachten sind. Für maximale Zuverlässigkeit sollten Geofences einen Radius von mindestens 100 Metern haben. Es ist in Ordnung, kleinere Geofences zu erstellen, aber Ein- und Ausstiegsereignisse werden möglicherweise nicht oder erst generiert, nachdem der Benutzer für einen bestimmten Zeitraum aufgehört hat, sich zu bewegen.
+Beachten Sie Folgendes für alle Geofences, die bei der Regionsüberwachung von einer Mobile App aus verwendet werden, unabhängig davon, ob Adobe oder ein anderer Service verwendet wird. Die Betriebssysteme empfehlen einige Parameter, die beim Erstellen von Geofences zu beachten sind. Für maximale Zuverlässigkeit sollten Geofences einen Radius von mindestens 100 Metern haben. Es ist in Ordnung, kleinere Geofences zu erstellen, aber Ein- und Ausstiegsereignisse werden möglicherweise nicht oder erst generiert, nachdem der Benutzer für einen bestimmten Zeitraum aufgehört hat, sich zu bewegen.
 
 Darüber hinaus kann die Genauigkeit und Zuverlässigkeit aufgrund von Hardware-Bedingungen wie ausgeschaltetem oder nicht verfügbarem Wi-Fi sowie aufgrund der Position des Geräts in Bezug auf die Behinderung von GPS-Signalen verringert werden. Beispielsweise können Berggebiete, städtische Umgebungen und Innenbereiche die Standortgenauigkeit der iOS- und Android-Betriebssysteme verringern.
 

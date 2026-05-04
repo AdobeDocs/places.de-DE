@@ -2,10 +2,21 @@
 title: Erste Schritte
 description: Erste Schritte mit Places Service.
 exl-id: 1f0ac226-4993-495b-9d07-1e0ada7f19a7
-source-git-commit: 010de286c25c1eeb989fb76e3c2adaa82ac9fd35
+TQID: https://experienceleague.adobe.com/NjssmuGH8672GGroi6sil5e0INPIDAcJl7Uz623-Vts
+product_v2:
+  - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+  - id: f7bdf6be-dd3b-4d2d-ac52-0e62ed0d3102
+feature_v2:
+  - id: e08599ea-8888-4294-ba74-3ba0a7762a46
+subfeature_v2:
+  - id: d2a6cbf4-df32-480f-909e-b42f66dcb9f0
+topic_v2:
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: f962cef761f006c8e7d45b76ba24746e36bdaba6
 workflow-type: tm+mt
-source-wordcount: '207'
-ht-degree: 1%
+source-wordcount: 216
+ht-degree: 3%
 
 ---
 
@@ -23,16 +34,16 @@ Test of different youtube link for exl
 
 Um den Places Service zu verwenden, führen Sie die folgenden Aufgaben aus:
 
-### 1. Stellen Sie sicher, dass Ihr Benutzer Places Service nutzen kann
+### &#x200B;1. Stellen Sie sicher, dass Ihre Benutzerin bzw. Ihr Benutzer für die Verwendung des Places Service bereitgestellt ist.
 
 Der Places Service-Produktkontext ist für alle Experience Cloud-Organisationen verfügbar.
 
-* Stellen Sie sicher, dass Sie als Benutzende unter Places Service und Experience Platform Launch-Produktkontexte in der Admin Console aufgeführt sind.
+* Stellen Sie sicher, dass Sie als Benutzer unter den Produktkontexten Places Service und Experience Platform Launch in der Admin Console aufgeführt sind.
 
-  Weitere Informationen finden Sie unter *Hinzufügen von Benutzenden zu Experience Platform Launch und Places Service* in [Häufig gestellte Fragen](/help/places-gain-access.md).
+  Weitere Informationen finden Sie unter *Hinzufügen eines Benutzers zu Experience Platform Launch und Places Service* in [Häufig gestellte Fragen](/help/places-gain-access.md).
 
 
-### 2. POIs erstellen
+### &#x200B;2. POIs erstellen
 
 POI (Points of Interest) sind Geofences, die Sie für Ihre Organisationen erstellen. POIs können auf eine der folgenden Arten erstellt werden:
 
@@ -45,13 +56,13 @@ POI (Points of Interest) sind Geofences, die Sie für Ihre Organisationen erstel
   Weitere Informationen finden Sie unter [Webservice-API](/help/web-service-api/places-web-services.md).
 
 
-### 3. Konfigurieren der Places-Erweiterung
+### &#x200B;3. Konfigurieren der Places-Erweiterung
 
 Weitere Informationen zum Konfigurieren der Places-Erweiterung finden Sie in den folgenden Informationen:
 
 * [Places-Erweiterung](/help/places-ext-aep-sdks/places-extension/places-extension.md)
 
-### 4. (Optional) Implementieren einer Lösung zur regionalen Überwachung
+### &#x200B;4. (Optional) Implementieren einer Lösung zur regionalen Überwachung
 
 Wenn Sie eine aktive Regionsüberwachung planen, müssen Sie die Implementierung direkt mit dem Betriebssystem durchführen. Weitere Informationen finden Sie in den folgenden Dokumenten:
 

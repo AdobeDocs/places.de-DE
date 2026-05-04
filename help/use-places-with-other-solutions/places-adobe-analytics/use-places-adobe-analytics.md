@@ -2,10 +2,22 @@
 title: POI-Ein- und Ausstiegsdaten an Analytics senden
 description: In diesem Abschnitt finden Sie Informationen zum Senden von POI-Eintritts- und -Austrittsdaten an Analytics.
 exl-id: 69e96261-4902-47dd-a930-a8f3d19c179c
-source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
+TQID: https://experienceleague.adobe.com/H-NkwK7KNSGPjEKYuWNc8F0f3MIu3wBr5FGjypxnqng
+product_v2:
+  - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+feature_v2:
+  - id: b069d60e-95f3-44d6-95a8-ddc862a4bc38
+  - id: e08599ea-8888-4294-ba74-3ba0a7762a46
+subfeature_v2:
+  - id: d2a6cbf4-df32-480f-909e-b42f66dcb9f0
+topic_v2:
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: f962cef761f006c8e7d45b76ba24746e36bdaba6
 workflow-type: tm+mt
-source-wordcount: '437'
-ht-degree: 4%
+source-wordcount: 443
+ht-degree: 6%
 
 ---
 
@@ -16,9 +28,9 @@ ht-degree: 4%
 >
 >In diesem Abschnitt wird davon ausgegangen, dass Places Service in Ihrem Programm implementiert wurde. Weitere Informationen zur Implementierung des Places-Service finden Sie unter [Places-Erweiterungen](/help/places-ext-aep-sdks/places-extension/places-extension.md).
 
-Nachdem der Places Service die Ein- und Ausstiegsereignisse gesendet hat, können Sie in Experience Platform Launch Regeln erstellen, um Daten des Places Service an Adobe Analytics zu senden. Um diesen Regeltyp zu erstellen, wählen Sie Ihre Eigenschaft in Launch aus und führen Sie die folgenden Schritte aus:
+Nachdem der Places Service die Ein- und Ausstiegsereignisse gesendet hat, können Sie in Experience Platform Launch Regeln erstellen, um Places Service-Daten an Adobe Analytics zu senden. Um diesen Regeltyp zu erstellen, wählen Sie Ihre Eigenschaft in Launch aus und führen Sie die folgenden Schritte aus:
 
-## 1. Erstellen einer Regel
+## &#x200B;1. Erstellen einer Regel
 
 1. Klicken Sie auf der **[!UICONTROL Regeln]** auf **[!UICONTROL Neue Regel erstellen]**.
 
@@ -27,7 +39,7 @@ Nachdem der Places Service die Ein- und Ausstiegsereignisse gesendet hat, könne
    * Wenn für diese Eigenschaft keine Regeln vorhanden sind **[!UICONTROL wird die Schaltfläche]** Neue Regel erstellen“ in der Mitte des Bildschirms angezeigt.
    * Wenn Ihre Eigenschaft über Regeln **[!UICONTROL , befindet]** Schaltfläche „Neue Regel erstellen“ oben rechts im Bildschirm.
 
-## 2. Ereignis auswählen
+## &#x200B;2. Ereignis auswählen
 
 1. Geben Sie einen aussagekräftigen Namen für Ihre Regel ein.
 
@@ -44,7 +56,7 @@ Nachdem der Places Service die Ein- und Ausstiegsereignisse gesendet hat, könne
    ![„Ereignis auswählen“](/help/assets/pt-selectEvent.png)
 
 
-## 3. Bedingungen hinzufügen
+## &#x200B;3. Hinzufügen von Bedingungen
 
 >[!IMPORTANT]
 >
@@ -65,7 +77,7 @@ In diesem Beispiel wird eine Bedingung erstellt, die dazu führt, dass die Regel
    ![„Bedingung festlegen“](/help/assets/pt-setCondition.png)
 
 
-## 4. Definieren der Aktion
+## &#x200B;4. Definieren der Aktion
 
 1. Klicken Sie **[!UICONTROL Abschnitt]** Aktionen“ auf **[!UICONTROL Hinzufügen]**.
 
@@ -83,7 +95,7 @@ In diesem Beispiel wird eine Bedingung erstellt, die dazu führt, dass die Regel
 
    ![„Aktion festlegen“](/help/assets/pt-setAction.png)
 
-## 5. Speichern Sie die Regel und erstellen Sie Ihre Eigenschaft neu
+## &#x200B;5. Speichern Sie die Regel und erstellen Sie Ihre Eigenschaft neu
 
 Stellen Sie nach Abschluss der Konfiguration sicher, dass die Regel wie folgt aussieht:
 
