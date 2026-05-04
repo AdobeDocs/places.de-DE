@@ -3,10 +3,29 @@ title: Places Service testen und validieren
 description: Dieser Abschnitt enthält Informationen dazu, wie Sie Places Service testen und validieren können.
 exl-id: 8dad6619-566b-4aea-b29c-a89192a66441
 TQID: https://experienceleague.adobe.com/nO4tOQW9rp3zjkHT6aJ5IcXHcD9heOaRAJiEchiz1Fk
-product_v2: id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87id: dc5cf79d-43c4-4731-bffa-1df5d7549cb1id: dfc56824-e8b9-499e-85d4-21aedb507314id: e43347a8-f2c5-4aa4-8623-6f13875d7e3aid: e55547f1-a1ff-40c6-8978-026e40ab7fa4id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
-feature_v2: id: c93393a4-e558-47e1-992e-c91ed4d480ceid: d5ef99fa-df0c-4153-bf94-105ad0724167id: daec7ead-f475-492a-a3b3-02ae08565d6fid: e08599ea-8888-4294-ba74-3ba0a7762a46id: eb9732ab-8232-4b21-bc4c-89de86dbe4d7id: ed0d8d0e-04b9-4326-be72-a0fbca265377id: f7c7de77-382f-4f48-8b36-61a170f06d3did: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
-subfeature_v2: id: c3bf7e1e-1db5-4c72-9293-e2f0b1ab73d0id: d2a6cbf4-df32-480f-909e-b42f66dcb9f0
-topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d3cdead0-685a-4489-9250-4bb709942f66
+product_v2:
+  - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
+  - id: dc5cf79d-43c4-4731-bffa-1df5d7549cb1
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+feature_v2:
+  - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+  - id: d5ef99fa-df0c-4153-bf94-105ad0724167
+  - id: daec7ead-f475-492a-a3b3-02ae08565d6f
+  - id: e08599ea-8888-4294-ba74-3ba0a7762a46
+  - id: eb9732ab-8232-4b21-bc4c-89de86dbe4d7
+  - id: ed0d8d0e-04b9-4326-be72-a0fbca265377
+  - id: f7c7de77-382f-4f48-8b36-61a170f06d3d
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2:
+  - id: c3bf7e1e-1db5-4c72-9293-e2f0b1ab73d0
+  - id: d2a6cbf4-df32-480f-909e-b42f66dcb9f0
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
 source-git-commit: f962cef761f006c8e7d45b76ba24746e36bdaba6
 workflow-type: tm+mt
 source-wordcount: 1748
@@ -48,7 +67,7 @@ Da Umgebungsvariablen ein Faktor für Standortsignal und -genauigkeit sein könn
 |  | **Testen von In-App-Nachrichten in Adobe Campaign Standard mit dem Places-Service.** |  |
 | 12 | Konfigurieren Sie im Hauptdashboard der Kampagne eine neue In-App-Nachricht (Typ = Broadcast) |  |
 | 12a | Wählen Sie in Trigger **Ereignistyp Orte - Eintrag als Trigger**. |  |
-| 12b | Wählen Sie **[!UICONTROL Orte benutzerdefinierte Metadaten]** als zusätzlichen Filter aus - verwenden Sie den POI-Typ = Zuletzt eingegebener POI.<br>Wir verwenden **[!UICONTROL Zuletzt eingegeben]** als POI-Typ, da in den meisten Fällen **[!UICONTROL Zuletzt eingegeben]** mit **[!UICONTROL Aktueller POI]** übereinstimmt. <br><br>**[!UICONTROL Aktueller POI ]**sollte nur in Fällen verwendet werden, in denen sich POI-Geofences überschneiden. In diesem Fall müssen diese POIs EINEN RANG erhalten. Anschließend zeigt der**[!UICONTROL  Aktuelle POI ]**den POI an, der aus den 2 oder 3 Geofences, in denen sich ein Benutzer derzeit befindet, den höchsten Rang einnimmt. |  |
+| 12b | Wählen Sie **[!UICONTROL Orte benutzerdefinierte Metadaten]** als zusätzlichen Filter aus - verwenden Sie den POI-Typ = Zuletzt eingegebener POI.<br>Wir verwenden **[!UICONTROL Zuletzt eingegeben]** als POI-Typ, da in den meisten Fällen **[!UICONTROL Zuletzt eingegeben]** mit **[!UICONTROL Aktueller POI]** übereinstimmt. <br><br>**[!UICONTROL Aktueller POI &#x200B;]**&#x200B;sollte nur in Fällen verwendet werden, in denen sich POI-Geofences überschneiden. In diesem Fall müssen diese POIs EINEN RANG erhalten. Anschließend zeigt der&#x200B;**[!UICONTROL &#x200B; Aktuelle POI &#x200B;]**&#x200B;den POI an, der aus den 2 oder 3 Geofences, in denen sich ein Benutzer derzeit befindet, den höchsten Rang einnimmt. |  |
 | 12c | Wählen Sie einen benutzerdefinierten Metadatenschlüssel aus, mit dem Sie einschränken können, welche POIs eine Nachricht erhalten sollen. |  |
 | 12 T | Behalten Sie für Häufigkeit und Dauer nur ein oder zwei Tage bei, damit Sie den Trigger in einem kürzeren Zeitraum ablaufen lassen können, wenn Sie die Kriterien nicht mögen. |  |
 | 12e | Wählen Sie für Immer/Einmal oder Bis zum Durchklicken die Option *IMMER* aus, damit Sie über mehrere Standorte hinweg testen können. | Eine In-App-Nachricht wird IMMER angezeigt, wenn Sie eine Ortsänderung simulieren, die den entsprechenden Metadatenkriterien entspricht. |
