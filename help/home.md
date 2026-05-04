@@ -2,9 +2,14 @@
 title: Places Service
 description: Places Service ist ein wichtiger Kontext, um die Interaktion von Mobile-Benutzern zu verstehen. Mithilfe dieses Kontexts können Entwickler von Mobile Apps das Design der App verbessern und sie zu einem personalisierteren und ansprechenderen Erlebnis machen.
 exl-id: 7369176f-c072-437a-9ee3-b463c5ff1d12
-source-git-commit: e78e3c5ee6623d6cdf2a33c0582667a70283fdc6
+TQID: https://experienceleague.adobe.com/4kI1AuV2l-qfC3mOrcsoG9NDRcOPJBdkWPmKkQuDIJk
+product_v2: id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87id: dc5cf79d-43c4-4731-bffa-1df5d7549cb1id: e43347a8-f2c5-4aa4-8623-6f13875d7e3aid: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+feature_v2: id: c132d929-fa62-4271-803e-b823be07b914id: e08599ea-8888-4294-ba74-3ba0a7762a46
+subfeature_v2: id: d2a6cbf4-df32-480f-909e-b42f66dcb9f0
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: f962cef761f006c8e7d45b76ba24746e36bdaba6
 workflow-type: tm+mt
-source-wordcount: '663'
+source-wordcount: 684
 ht-degree: 9%
 
 ---
@@ -27,7 +32,7 @@ So können Sie Aktionen aus Standortsignalen in Echtzeit durchführen, wenn und 
 
 Im Folgenden finden Sie einige Möglichkeiten, wie Sie Places verwenden können:
 
-* Eine Echtzeitbenachrichtigung senden, wenn jemand einen POI eingibt, *„Hey…Willkommen im Stadion.*
+* Senden Sie eine Benachrichtigung in Echtzeit, wenn jemand einen POI betritt, *„Hey… Willkommen im Stadion.“*
 * Analysieren Sie den Fußgängerverkehr Ihrer eigenen Geschäfte im Vergleich zu Ihren Konkurrenzgeschäften.
 * Segmentieren Sie eine Zielgruppe basierend auf dem Offline-Verhalten, indem Sie Zielgruppenprofile mit dem Standortkontext verwenden.
 * Targeting von Benutzenden mit einem In-Store-Erlebnis, sofern relevant.
@@ -82,7 +87,7 @@ Im Folgenden finden Sie einige allgemeine Begriffe, die in dieser Dokumentation 
 
   Weitere Informationen finden Sie unter [Ermitteln der Organisations-ID](https://forums.adobe.com/thread/2339895).
 
-* Der Service **Experience Cloud-ID** bietet eine universelle, beständige ID zum Identifizieren Ihrer Besucher über alle Lösungen hinweg in der Experience Cloud hinweg.
+* Der Service **Experience Cloud ID** bietet eine universelle, beständige ID zum Identifizieren Ihrer Besucher über alle Experience Cloud-Lösungen hinweg.
 
   Weitere Informationen finden Sie unter [Übersicht](https://experienceleague.adobe.com/docs/id-service/using/intro/overview.html?lang=de).
 

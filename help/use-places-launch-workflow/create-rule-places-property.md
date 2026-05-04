@@ -2,10 +2,15 @@
 title: Erstellen einer Regel für Ihre Places Service-Eigenschaft
 description: Die Places SDK verfolgt den aktuellen Speicherort, überwacht die konfigurierten POIs um den aktuellen Speicherort und verfolgt die Ein- und Ausstiegsereignisse für diese POIs.
 exl-id: dd5aa7ac-55f9-44dc-8632-e483ef3b91a0
-source-git-commit: d5c216aebd99ffef01c37c17c62576835b52438b
+TQID: https://experienceleague.adobe.com/jyGVmk-oKX6-5vxZBx6Mz-QF8SBYxAWssvAxJ0QLYWQ
+product_v2: id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87id: e55547f1-a1ff-40c6-8978-026e40ab7fa4id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+feature_v2: id: e08599ea-8888-4294-ba74-3ba0a7762a46
+subfeature_v2: id: d2a6cbf4-df32-480f-909e-b42f66dcb9f0id: f9a2105e-7a47-4e85-9193-31a519a2cb83
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: f962cef761f006c8e7d45b76ba24746e36bdaba6
 workflow-type: tm+mt
-source-wordcount: '911'
-ht-degree: 14%
+source-wordcount: 939
+ht-degree: 13%
 
 ---
 
@@ -54,21 +59,21 @@ Aktionen definieren, was die App als Reaktion auf die Bedingung tun wird, dass d
 
 >[!CAUTION]
 >
->In diesem Beispiel wird davon ausgegangen, dass Sie eine POI-Bibliothek aller Cafés in den USA erstellt haben. Weitere Informationen zum Erstellen von POIs und Bibliotheken finden Sie unter [Erstellen eines POI](/help/poi-mgmt-ui/create-a-poi-ui.md) und *Erstellen einer Bibliothek* in [Verwalten mehrerer Bibliotheken](https://experienceleague.adobe.com/docs/places/using/poi-mgmt-ui/manage-libraries-in-the-places-ui.html?lang=de).
+>In diesem Beispiel wird davon ausgegangen, dass Sie eine POI-Bibliothek aller Cafés in den USA erstellt haben. Weitere Informationen zum Erstellen von POIs und Bibliotheken finden Sie unter [Erstellen eines POI](/help/poi-mgmt-ui/create-a-poi-ui.md) und *Erstellen einer Bibliothek* in [Verwalten mehrerer Bibliotheken](https://experienceleague.adobe.com/docs/places/using/poi-mgmt-ui/manage-libraries-in-the-places-ui.html).
 
-Das folgende Verfahren ist ein Beispiel für die Erstellung einer Regel, die einen Beitrag zurück an Slack sendet, wenn Sie ein Café in San Francisco betreten.
+Das folgende Verfahren ist ein Beispiel dafür, wie eine Regel erstellt wird, die einen Beitrag zurück an Slack sendet, wenn Sie ein Café in San Francisco betreten.
 
 Ereignis, Bedingung und Aktion werden wie folgt definiert:
 
 * **Event**: Platziert Eintrittsereignis.
 * **Bedingung**: Die Stadt für den **aktuellen POI** ist San Francisco.
-* **Action**: Senden Sie ein Postback an Slack, um den Namen des Coffee Shops zu erhalten, den Ihr Kunde betreten hat.
+* **Aktion**: Senden Sie ein Postback an Slack unter dem Namen des Coffee Shops, den Ihr Kunde betreten hat.
 
 ### Voraussetzung
 
 Bevor Sie eine Regel erstellen, müssen Sie ein Datenelement in Adobe Experience Platform Launch erstellen. Datenelemente füllen automatisch die erforderlichen Informationen zu Ihrem POI in der Postback-Nachricht aus.
 
-So erstellen Sie ein Datenelement im Experience Platform Launch:
+So erstellen Sie ein Datenelement in Experience Platform Launch:
 
 1. Klicken Sie auf **Registerkarte** Datenelemente“.
 1. Klicken Sie **Datenelement hinzufügen**.
@@ -78,7 +83,7 @@ So erstellen Sie ein Datenelement im Experience Platform Launch:
 1. Wählen Sie im rechten Bereich die Option **Aktueller POI**.
 1. Klicken Sie auf **Speichern**.
 
-### Erstellen einer Regel auf Experience Platform Launch für Places Service
+### Erstellen einer Regel in Experience Platform Launch for Places Service
 
 ![Erstellen einer Regel](/help/assets/placesrule.png)
 
@@ -110,24 +115,24 @@ So erstellen Sie ein Datenelement im Experience Platform Launch:
 1. Lassen Sie in **[!UICONTROL Dropdown-Liste]** Erweiterung“ die Standardoption **[!UICONTROL Mobile Core]** ausgewählt.
 1. Wählen Sie einen Aktionstyp aus, z. B **[!UICONTROL „Postback senden]**.
 
-   a. **[!UICONTROL Sie unter „URL]** die Postback-URL für das Slack ein, z. B. `https://hooks.slack.com/services/`.
+   a. Geben **[!UICONTROL unter]** die Postback-URL für Slack ein, z. B. `https://hooks.slack.com/services/`.
 
-   b. Um einen Beitragstext zu senden, aktivieren Sie das **[!UICONTROL Beitragstext hinzufügen]**.
+   B. Um einen Beitragstext zu senden, aktivieren Sie das **[!UICONTROL Beitragstext hinzufügen]**.
 
-   c. Fügen Sie **[!UICONTROL POST-]**) den POST-Textkörper hinzu, z. B.: `{ "text": "A customer has entered" }`
+   C. Fügen Sie **[!UICONTROL POST-]**) den POST-Textkörper hinzu, z. B.: `{ "text": "A customer has entered" }`
 
-   c. Geben Sie einen Inhaltstyp ein, z. B **[!UICONTROL „application/json]**.
+   C. Geben Sie einen Inhaltstyp ein, z. B **[!UICONTROL „application/json]**.
 
-   d. Wählen Sie einen Zeitüberschreitungswert, z. B. **[!UICONTROL 5]**.
+   d. Wählen Sie einen Wert für die maximale Wartezeit aus, z. B. **[!UICONTROL 5]**.
 
 1. Klicken Sie auf **[!UICONTROL Änderungen beibehalten]**.
 
-### Publish - die Regel
+### Regel veröffentlichen
 
-1. Um die Regel zu aktivieren, müssen Sie sie veröffentlichen. Weitere Informationen zum Veröffentlichen der Regel auf Experience Platform Launch finden Sie unter [Veröffentlichen](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html?lang=de).
+1. Um die Regel zu aktivieren, müssen Sie sie veröffentlichen. Weitere Informationen zum Veröffentlichen Ihrer Regel in Experience Platform Launch finden Sie unter [Veröffentlichen](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html).
 
 ### Über Ein- und Austritte hinaus denken
 
-Die Verwendung von Places Service-Geofencing-Einträgen und -Ausgängen für Ereignisregeln in Experience Platform Launch ist unglaublich leistungsstark, aber Sie können auch Standortdaten als Bedingung verwenden, damit andere Trigger ausgelöst werden. Sie könnten beispielsweise einen Mobile Core Track Action-Ereignisereignis-Trigger bereit haben, der basierend auf einem bestimmten trackAction-Aufrufereignis in Ihrer App ausgelöst wird. Basierend auf diesem Ereignis können Sie zusätzliche Standortbedingungen für das Ereignis platzieren, bevor eine Aktion ausgeführt wird. Öffnen Sie beispielsweise eine In-App-Umfrage, wenn ein Kaufereignis `trackAction`, aber **nur** wenn der aktuelle Standort des Benutzers bestimmte Places Service-Metadaten enthält.
+Die Verwendung von Places Service-Geofencing-Einträgen und -Ausgängen für Ereignisregeln in Experience Platform Launch ist unglaublich leistungsstark, aber Sie können Standortdaten auch als Bedingung verwenden, damit andere Trigger ausgelöst werden. Sie könnten beispielsweise einen Mobile Core Track Action-Ereignisereignis-Trigger bereit haben, der basierend auf einem bestimmten trackAction-Aufrufereignis in Ihrer App ausgelöst wird. Basierend auf diesem Ereignis können Sie zusätzliche Standortbedingungen für das Ereignis platzieren, bevor eine Aktion ausgeführt wird. Öffnen Sie beispielsweise eine In-App-Umfrage, wenn ein Kaufereignis `trackAction`, aber **nur** wenn der aktuelle Standort des Benutzers bestimmte Places Service-Metadaten enthält.
 
 ![Bedingung erstellen](/help/assets/places-condition.png)

@@ -2,32 +2,37 @@
 title: Versionshinweise
 description: Versionshinweise für Places Service.
 exl-id: 76da9548-4e32-4b23-9a15-7012973915f3
-source-git-commit: d5c216aebd99ffef01c37c17c62576835b52438b
+TQID: https://experienceleague.adobe.com/yo1eXPl9cKbp-EVWQT8gZHcAbSDoIFJVD6xKbdoysMc
+product_v2: id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87id: e55547f1-a1ff-40c6-8978-026e40ab7fa4id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+feature_v2: id: b069d60e-95f3-44d6-95a8-ddc862a4bc38id: bef6f891-2e8a-425e-8f99-7ddf22070daaid: d833d0ef-8ed5-4cff-a5e7-9f12abd02a31id: e08599ea-8888-4294-ba74-3ba0a7762a46id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2: id: d2a6cbf4-df32-480f-909e-b42f66dcb9f0
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: d3cdead0-685a-4489-9250-4bb709942f66id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: f962cef761f006c8e7d45b76ba24746e36bdaba6
 workflow-type: tm+mt
-source-wordcount: '1525'
-ht-degree: 2%
+source-wordcount: 1612
+ht-degree: 5%
 
 ---
 
 # Versionshinweise {#release-notes}
 
-## 8. Juli 2020
+## &#x200B;8. Juli 2020
 
 * **Places and Places Monitor-Erweiterungen**
 
    * Die Erweiterungen Places und Places Monitor wurden für [React Native-Programme hinzugefügt](https://aep-sdks.gitbook.io/docs/resources/upgrading-to-aep/current-sdk-versions#react-native)
-   * Die Erweiterungen Places und Places Monitor wurden für [Cordova-Anwendungen“ &#x200B;](https://aep-sdks.gitbook.io/docs/resources/upgrading-to-aep/current-sdk-versions#cordova)
+   * Die Erweiterungen Places und Places Monitor wurden für [Cordova-Anwendungen“ ](https://aep-sdks.gitbook.io/docs/resources/upgrading-to-aep/current-sdk-versions#cordova)
    * Weitere Informationen finden Sie unter [Verwenden der Places-Erweiterung](https://experienceleague.adobe.com/docs/places/using/places-ext-aep-sdks/places-extension/places-extension.html?lang=de)
 
 
-## 12. Mai 2020
+## &#x200B;12. Mai 2020
 
 * **Places Service**
 
    * POIs mithilfe der Schaltfläche „POIs importieren“ aus einer CSV-Datei stapelweise importieren
    * Auswählen mehrerer POIs und Massenbearbeitung oder Hinzufügen von Metadatenwerten
 
-## 6. Mai 2020
+## &#x200B;6. Mai 2020
 
 * **PlacesMonitor 2.2.1**
 
@@ -35,7 +40,7 @@ ht-degree: 2%
 
       * Verbesserte Protokollierung
 
-## 5. Mai 2020
+## &#x200B;5. Mai 2020
 
 
 * **PlacesMonitor 2.1.3**
@@ -44,7 +49,7 @@ ht-degree: 2%
 
       * Verbesserte Protokollierung
 
-## 20. Februar 2020
+## &#x200B;20. Februar 2020
 
 * **ACPPlaces 1.3.1 (iOS)**
 
@@ -66,7 +71,7 @@ ht-degree: 2%
       * Rufen Sie die New Places-API auf, um den Autorisierungsstatus des Standorts beim Start der App und bei Änderungen der Autorisierung während der Ausführung der App zu erfassen.
       * Die setRequestLocationPermission-API und die veraltete setLocationPermission-API wurden hinzugefügt.
 
-## 9. Januar 2020
+## &#x200B;9. Januar 2020
 
 * **Orte 1.4.0**
 
@@ -74,7 +79,7 @@ ht-degree: 2%
 
       * Eine neue API `setAuthorizationStatus` wurde hinzugefügt, um den Geräteautorisierungsstatus für Places Services festzulegen. Der Wert wird gespeichert und im Status Freigegebene Orte verwendet.
 
-## 4. Dezember 2019
+## Donnerstag, 4. Dezember 2019
 
 * **PlacesMonitor 2.1.2**
 
@@ -82,7 +87,7 @@ ht-degree: 2%
 
       * Rufen Sie die Places-API auf, um den CLAuthorizationStatus von einem Gerät zu erfassen, wenn es sich ändert.
 
-## 3. Dezember 2019
+## Mittwoch, 3. Dezember 2019
 
 * **ACPPlaces 1.3.0**
 
@@ -90,7 +95,7 @@ ht-degree: 2%
 
       * Eine neue API `setAuthorizationStatus` wurde hinzugefügt, um den Geräteautorisierungsstatus für Places Services festzulegen. Der Wert wird gespeichert und im Status Freigegebene Orte verwendet.
 
-## 25. November 2019
+## Dienstag, 25. November 2019
 
 * **PlacesMonitor 2.1.1**
 
@@ -107,7 +112,7 @@ ht-degree: 2%
       * Der Monitor erkennt jetzt den Start eines Android-Geräts und registriert bei Bedarf die Geofences basierend auf dem aktuellen Speicherort des Geräts erneut beim Betriebssystem.
       * Es wurde eine Racebedingung behoben, die manchmal dazu führte, dass Eintritts-/Austrittsereignisse verworfen wurden.
 
-## 9. Oktober 2019
+## Donnerstag, 9. Oktober 2019
 
 * **PlacesMonitor 2.1.0**
 
@@ -121,7 +126,7 @@ ht-degree: 2%
       * Es wurde eine neue API `setLocationPermission` hinzugefügt, um den Typ der Standortberechtigungsanfrage festzulegen, für die der Benutzer aufgefordert wird.
       * Der Orte-Monitor unterstützt jetzt Android 10.
 
-## 8. August 2019
+## &#x200B;8. August 2019
 
 In dieser Version wurden die folgenden Aktualisierungen vorgenommen:
 
@@ -144,7 +149,7 @@ Hier finden Sie eine Liste der Aktualisierungen der Places-Benutzeroberfläche:
 * Die Bibliotheksverwaltung wurde in ein Popup-Fenster verschoben.
 * POI-Anzahl neben den Filtern hinzugefügt.
 
-## 6. August 2019
+## &#x200B;6. August 2019
 
 In dieser Version wurden die folgenden Aktualisierungen vorgenommen:
 
@@ -152,7 +157,7 @@ In dieser Version wurden die folgenden Aktualisierungen vorgenommen:
 
 * Die Installationsanweisungen für Android und iOS für Places Monitor 2.0 wurden aktualisiert.
 
-## 31. Juli 2019
+## &#x200B;31. Juli 2019
 
 In dieser Version wurden die folgenden Aktualisierungen vorgenommen:
 
@@ -168,7 +173,7 @@ In dieser Version wurden die folgenden Aktualisierungen vorgenommen:
 
 * Die Verwendung der `getNearbyPointsOfInterest`-API zur effektiveren Handhabung von Fehlerszenarien wurde aktualisiert.
 
-## 25. Juli 2019
+## &#x200B;25. Juli 2019
 
 In dieser Version wurden die folgenden Aktualisierungen vorgenommen:
 
@@ -180,7 +185,7 @@ In dieser Version wurden die folgenden Aktualisierungen vorgenommen:
 
 * Die Verwendung der ACPPlaces-`getNearbyPointsOfInterest`-API wurde aktualisiert, um Fehlerszenarien effektiver zu handhaben.
 
-## 22. Juli 2019
+## Dienstag, 22. Juli 2019
 
 In dieser Version wurden die folgenden Aktualisierungen vorgenommen:
 
@@ -191,7 +196,7 @@ In dieser Version wurden die folgenden Aktualisierungen vorgenommen:
 * Es wurde ein Fehler behoben, durch den `getNearbyPointsOfInterest` Callback in keinem Internet Fehlercode `SERVER_RESPONSE_ERROR instead of CONNECTIVITY_ERROR` zurückgab.
 * `getNearbyPointsOfInterest` API (ohne errorCallback) wird die `successCallback` mit leerer POI-Liste aufgerufen, falls ein Fehler beim Abrufen der nahegelegenen Points of Interest auftritt.
 
-## 19. Juli 2019
+## Samstag, 19. Juli 2019
 
 In dieser Version wurden die folgenden Aktualisierungen vorgenommen:
 
@@ -199,7 +204,7 @@ In dieser Version wurden die folgenden Aktualisierungen vorgenommen:
 
 Es wurde eine neue API hinzugefügt, die alle mit Places zusammenhängenden Daten aus dem freigegebenen Status, dem In-App-Speicher und `NSUserDefaults` löscht.
 
-## 25. Juni 2019
+## &#x200B;25. Juni 2019
 
 In dieser Version wurden die folgenden Aktualisierungen vorgenommen:
 
@@ -207,7 +212,7 @@ In dieser Version wurden die folgenden Aktualisierungen vorgenommen:
 
 * Verbesserungen der Lebensqualität, einschließlich besserer Dokumentation und Protokollierung im Code.
 
-## 17. Juni 2019
+## &#x200B;17. Juni 2019
 
 In dieser Version wurden die folgenden Aktualisierungen vorgenommen:
 
@@ -218,22 +223,22 @@ In dieser Version wurden die folgenden Aktualisierungen vorgenommen:
 * Fehlerkorrektur - Nach dem ersten Start gehen jetzt nicht mehr Places-Ereignisse aufgrund schlechter Netzwerkbedingungen verloren.
 * Es wurde ein Problem behoben, bei dem bei der Verarbeitung von POI-Eintrittsereignissen in schneller Folge die Token-Ersetzung über die Regel-Engine manchmal auf den falschen POI verweist.
 
-## 30. Mai 2019
+## &#x200B;30. Mai 2019
 
 **Android Places Monitor 1.0.1**
 
 * Es wurde ein Problem behoben, das beim Starten der Orte-Überwachung ein Eintrittsereignis für POIs verhinderte.
 
-## 28. Mai 2019
+## &#x200B;28. Mai 2019
 
 Die folgenden Probleme in der Places-Benutzeroberfläche wurden behoben:
 
-* Der Lösungsschalter wurde stellenweise so aktualisiert, dass er mit dem Rest der Experience Cloud übereinstimmt.
+* Der Lösungsschalter wurde stellenweise so aktualisiert, dass er mit dem übrigen Experience Cloud übereinstimmt.
 * Es wurde ein Problem behoben, bei dem der Rang in Instanzen gespeichert wurde, in denen keine Rang-Änderungen vorgenommen wurden.
 * Der minimal zulässige Radius in der Benutzeroberfläche wurde auf 10 Meter erhöht.
 * Es wurde ein Problem behoben, bei dem das Feld Radius auf 20 Meter zurückgesetzt wurde, wenn alle Zahlen im Feld gelöscht wurden.
 
-## 17. Mai 2019
+## &#x200B;17. Mai 2019
 
 In dieser Version wurden die folgenden Aktualisierungen vorgenommen:
 
@@ -250,7 +255,7 @@ Der Places Monitor verwaltet die Location APIs auf Betriebssystemebene und kommu
 Weitere Informationen zum Places Monitor finden Sie hier.
 
 
-## 2. Mai 2019
+## &#x200B;2. Mai 2019
 
 **Android Places 1.1.0**
 
@@ -261,7 +266,7 @@ Weitere Informationen zum Places Monitor finden Sie hier.
 * Beim Speichern des letzten bekannten Speicherorts wird nun der Datenschutzstatus des Benutzers ordnungsgemäß berücksichtigt.
 
 
-## 9. April 2019
+## &#x200B;9. April 2019
 
 In dieser Version wurden die folgenden Aktualisierungen vorgenommen:
 
@@ -271,7 +276,7 @@ In dieser Version wurden die folgenden Aktualisierungen vorgenommen:
 * CI-Integration (CircleCI)
 * Integration der Codeabdeckung (CodeCov)
 
-## 25. März 2019
+## Dienstag, 25. März 2019
 
 iOS Places Monitor 1.0.0
 
@@ -279,7 +284,7 @@ Erste Veröffentlichung des Places Monitor für iOS.
 
 Der Places Monitor verwaltet die Location APIs auf Betriebssystemebene und kommuniziert direkt mit der Places-Erweiterung. Wenn beide Erweiterungen installiert sind, können Kunden in ihrer Anwendung eine vorkonfigurierte Regionsüberwachung verwenden.
 
-## 28. Februar 2019
+## &#x200B;28. Februar 2019
 
 ### Beta-Version
 
@@ -294,11 +299,11 @@ Im Folgenden finden Sie die wichtigsten Funktionen dieser Version:
 Wir haben eine Management-Benutzeroberfläche veröffentlicht, in der Sie Ihre POIs (Points of Interest) anzeigen und verwalten können. Sie können Ihre POIs auch in Bibliotheken organisieren. Zusätzlich zu Standard-Metadaten wie Stadt, Bundesland und Kategorie unterstützen wir auch die Möglichkeit, Ihren POIs benutzerdefinierte Metadaten hinzuzufügen.
 
 * Die Benutzeroberfläche finden Sie unter [https://places.adobe.com](https://places.adobe.com).
-* Informationen zu den ersten Schritten mit der Benutzeroberfläche finden [&#x200B; unter „Erste Schritte](/help/getting-started.md).
+* Informationen zu den ersten Schritten mit der Benutzeroberfläche finden [ unter „Erste Schritte](/help/getting-started.md).
 
 #### Places-Erweiterung
 
-Mit der Places-Erweiterung können Sie Ihre Places Service-Bibliotheken zu Ihrer Mobile App hinzufügen und auf ihre POIs reagieren. Mit dem Regel-Builder in Experience Platform Launch können Sie Benutzeraktionen festlegen, die ausgelöst werden, wenn Trigger POIs eingeben und beenden.
+Mit der Places-Erweiterung können Sie Ihre Places Service-Bibliotheken zu Ihrer Mobile App hinzufügen und auf ihre POIs reagieren. Mit dem Regel-Builder in Experience Platform Launch können Sie Benutzeraktionen festlegen, die ausgelöst werden, wenn Trigger POIs eingeben und verlassen.
 
 In der Places -Erweiterung:
 

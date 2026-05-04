@@ -1,11 +1,16 @@
 ---
 title: Push-Benachrichtigungen mit Places Service
-description: In diesem Abschnitt finden Sie Informationen zur Verwendung des Places Service mit Push-Benachrichtigungen im Campaign Standard.
+description: In diesem Abschnitt finden Sie Informationen zur Verwendung des Places Service mit Push-Benachrichtigungen in Campaign Standard.
 exl-id: 4b50f552-deb8-49cd-9221-fbbf33aaa5f9
-source-git-commit: 010de286c25c1eeb989fb76e3c2adaa82ac9fd35
+TQID: https://experienceleague.adobe.com/tjJD7Qn27sp8wnNcNdjnANIveyzjG1PZ--3C3rCjrMQ
+product_v2: id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87id: dfc56824-e8b9-499e-85d4-21aedb507314id: e43347a8-f2c5-4aa4-8623-6f13875d7e3aid: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+feature_v2: id: c132d929-fa62-4271-803e-b823be07b914id: e08599ea-8888-4294-ba74-3ba0a7762a46
+subfeature_v2: id: d2a6cbf4-df32-480f-909e-b42f66dcb9f0
+topic_v2: id: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: f962cef761f006c8e7d45b76ba24746e36bdaba6
 workflow-type: tm+mt
-source-wordcount: '981'
-ht-degree: 2%
+source-wordcount: 1026
+ht-degree: 4%
 
 ---
 
@@ -27,20 +32,20 @@ Bevor Sie beginnen, führen Sie die folgenden Aufgaben aus:
 * Aktivieren und installieren Sie die [Places-Erweiterung](/help/places-ext-aep-sdks/places-extension/places-extension.md).
 
 
-## Erstellen von Datenelementen im Experience Platform Launch
+## Erstellen von Datenelementen in Experience Platform Launch
 
-Nachdem Sie überprüft haben, ob die Places-Erweiterung und eine Lösung zur Regionsüberwachung ([CoreLocation-](https://developer.apple.com/documentation/corelocation/monitoring_the_user_s_proximity_to_geographic_regions) für iOS oder [Android-Standortdokumentation](https://developer.android.com/training/location/geofencing)) in Ihrer Anwendung ordnungsgemäß funktionieren, müssen Sie Datenelemente im Experience Platform Launch erstellen. Datenelemente ermöglichen es Ihnen, die Informationen zu lesen, die von den Erweiterungen bereitgestellt wurden, die über den mobilen SDK Event Hub eingehen, und dienen als Alias zum Abrufen von Daten aus der Client-Anwendung. Um Daten aus den Places-Erweiterungen abzurufen und die Places Service-Informationen an Campaign zu senden, müssen Sie einige Datenelemente erstellen.
+Nachdem Sie überprüft haben, ob die Places-Erweiterung und eine Lösung zur Regionsüberwachung ([CoreLocation-](https://developer.apple.com/documentation/corelocation/monitoring_the_user_s_proximity_to_geographic_regions) für iOS oder [Android-Standortdokumentation](https://developer.android.com/training/location/geofencing)) in Ihrer Anwendung ordnungsgemäß funktionieren, müssen Sie Datenelemente in Experience Platform Launch erstellen. Datenelemente ermöglichen es Ihnen, die Informationen zu lesen, die von den Erweiterungen bereitgestellt wurden, die über den mobilen SDK Event Hub eingehen, und dienen als Alias zum Abrufen von Daten aus der Client-Anwendung. Um Daten aus den Places-Erweiterungen abzurufen und die Places Service-Informationen an Campaign zu senden, müssen Sie einige Datenelemente erstellen.
 
 So erstellen Sie ein Datenelement:
 
-1. Klicken Sie in der Eigenschaft für mobiles Experience Platform Launch auf die Registerkarte **[!UICONTROL Datenelemente]** und dann auf **[!UICONTROL Datenelement hinzufügen]**.
+1. Klicken Sie in der Mobile-Eigenschaft von Experience Platform Launch auf die Registerkarte **[!UICONTROL Datenelemente]** und dann auf **[!UICONTROL Datenelement hinzufügen]**.
 1. Wählen Sie in **[!UICONTROL Dropdown]** Liste Erweiterung die Option **[!UICONTROL Places Service]** aus.
 1. Wählen Sie in **[!UICONTROL Dropdown-Liste]** Datenelementtyp“ **[!UICONTROL Name]** aus.
 1. Im rechten Bereich können Sie „Aktueller POI“ auswählen **[!UICONTROL wodurch der Name des POI abgerufen]**, in dem sich der Benutzer derzeit befindet.
 
    **[!UICONTROL Zuletzt eingegeben]** ruft den Namen des POI ab, den der Benutzer zuletzt eingegeben hat, und **[!UICONTROL Zuletzt beendet]** gibt den Namen des POI an, den der Benutzer zuletzt verlassen hat. In diesem Beispiel haben wir **[!UICONTROL Zuletzt eingegeben]** einen Namen für das Datenelement eingegeben, z. B. **[!UICONTROL Zuletzt eingegebener POI-Name]** und auf **[!UICONTROL Speichern]** geklickt.
 
-   ![„Push-Messaging im Campaign Standard&quot;](/help/assets/ACS_Push1.png)
+   ![„Push-Messaging in Campaign Standard&quot;](/help/assets/ACS_Push1.png)
 
 1. Wiederholen Sie die Schritte 1-4 oben und erstellen Sie Datenelemente für *Zuletzt eingegeben POI-Breitengrad*, *Zuletzt eingegeben POI-* und *Zuletzt eingegeben POI-Radius*.
 
@@ -48,9 +53,9 @@ Stellen Sie sicher, dass Sie zusätzlich zu den Datenelementen für den Places-S
 
 ## Erstellen einer Regel zum Senden von Standortdaten an Adobe Campaign Standard
 
-Regeln in Experience Platform Launch ermöglichen es Ihnen, komplexe Workflows mit mehreren Lösungen basierend auf Ereignis-Triggern zu erstellen. Mit Regeln können Sie neue Regeln erstellen oder vorhandene ändern und die Aktualisierungen dynamisch für Ihre Mobile Apps bereitstellen lassen. Im folgenden Beispiel wird die Regel ausgelöst, wenn ein Benutzer einen Geofencing-POI eingibt. Nachdem die Regel ausgelöst wurde, wird eine Aktualisierung an den Campaign Standard gesendet, um einen Eintrag für einen bestimmten Benutzer basierend auf der Experience Cloud-ID in einem bestimmten POI aufzuzeichnen.
+Mit den Regeln in Experience Platform Launch können Sie komplexe Workflows mit mehreren Lösungen erstellen, die auf Ereignis-Triggern basieren. Mit Regeln können Sie neue Regeln erstellen oder vorhandene ändern und die Aktualisierungen dynamisch für Ihre Mobile Apps bereitstellen lassen. Im folgenden Beispiel wird die Regel ausgelöst, wenn ein Benutzer einen Geofencing-POI eingibt. Nachdem die Regel ausgelöst wurde, wird eine Aktualisierung an Campaign Standard gesendet, um einen Eintrag zu einem bestimmten POI für einen bestimmten Benutzer basierend auf der Experience Cloud-ID aufzuzeichnen.
 
-1. Klicken Sie in der Eigenschaft für mobiles Experience Platform Launch auf der Registerkarte **[!UICONTROL Regeln]** auf **[!UICONTROL Regel hinzufügen]**.
+1. Klicken Sie in der Experience Platform Launch-Eigenschaft auf der Registerkarte **[!UICONTROL Regeln]** auf **[!UICONTROL Regel hinzufügen]**.
 1. Klicken Sie **[!UICONTROL Abschnitt]** Ereignisse“ auf **[!UICONTROL +]** und wählen Sie **[!UICONTROL Places Service]** als Erweiterung aus.
 1. Wählen Sie für **[!UICONTROL Ereignistyp]** die Option **[!UICONTROL POI eingeben]** aus.
 1. Benennen Sie die Regel, z. B. **Benutzer hat POI eingegeben**.

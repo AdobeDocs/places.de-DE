@@ -2,9 +2,14 @@
 title: Definieren von Datenelementen
 description: In diesem Abschnitt finden Sie Informationen zum Erstellen, Verwenden und Veröffentlichen von Datenelementen in Experience Platform Launch for Places.
 exl-id: 57e88a37-0b0b-4064-ab72-382a36a0d01d
-source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
+TQID: https://experienceleague.adobe.com/NQ83uUZJtNglAcxD6HNl4Gw1Y8-0-uqfu-hH8H0EITg
+product_v2: id: a829a185-511f-4bf8-8dcf-9e684f8011cfid: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87id: e43347a8-f2c5-4aa4-8623-6f13875d7e3aid: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+feature_v2: id: e08599ea-8888-4294-ba74-3ba0a7762a46
+subfeature_v2: id: d2a6cbf4-df32-480f-909e-b42f66dcb9f0id: f9a2105e-7a47-4e85-9193-31a519a2cb83
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: f962cef761f006c8e7d45b76ba24746e36bdaba6
 workflow-type: tm+mt
-source-wordcount: '485'
+source-wordcount: 486
 ht-degree: 1%
 
 ---
@@ -17,7 +22,7 @@ Die folgenden Informationen helfen Ihnen, Datenelemente zu verstehen und sie zu 
 
 Datenelemente sind die Bausteine für das Datenwörterbuch der Anwendung und werden zum Erfassen, Organisieren und Bereitstellen von Daten in Marketing- und Werbetechnologien verwendet.
 
-Ein Datenelement ist eine Variable, bei der der Wert einer Besucher-ID, einem Provider-Namen, einer Advertising-ID, einer Push-ID usw. zugeordnet werden kann. In Experience Platform Launch können Sie diesen Wert anhand des Variablennamens referenzieren. Diese Sammlung von Datenelementen wird zum Wörterbuch definierter Daten, die Sie zum Erstellen Ihrer Regeln (Ereignisse, Bedingungen und Aktionen) verwenden können. Dieses Wörterbuch wird auf allen Experience Platform Launch-Instanzen gemeinsam genutzt, wo es mit jeder Erweiterung in Ihrer Eigenschaft verwendet werden kann.
+Ein Datenelement ist eine Variable, bei der der Wert einer Besucher-ID, einem Provider-Namen, einer Advertising-ID, einer Push-ID usw. zugeordnet werden kann. In Experience Platform Launch können Sie diesen Wert anhand des Variablennamens referenzieren. Diese Sammlung von Datenelementen wird zum Wörterbuch definierter Daten, die Sie zum Erstellen Ihrer Regeln (Ereignisse, Bedingungen und Aktionen) verwenden können. Dieses Wörterbuch ist in Experience Platform Launch gemeinsam, wo es mit jeder Erweiterung in Ihrer Eigenschaft verwendet werden kann.
 
 Mit der Places -Erweiterung können Sie auf Werte aus den folgenden Zielen verweisen:
 
@@ -66,9 +71,9 @@ Wenn nach dem Erstellen eines Datenelements eine Datenelementauswahl vorhanden i
 ![Verwenden des Datenelements](/help/assets/use-de-v2.png)
 
 Wenn in der Regelkomponente keine Datenelementauswahl vorhanden ist, können Sie das Datenelement verwenden, indem Sie den Datenelementnamen in die **[!UICONTROL %%]**-Token einschließen.
-Wenn der Datenelementname beispielsweise „Letzte POI-Stadt&#x200B;**[!UICONTROL lautet]** können Sie **[!UICONTROL LETZTE POI-Stadt]** zu einer Texteingabe hinzufügen.
+Wenn der Datenelementname beispielsweise „Letzte POI-Stadt**[!UICONTROL lautet]** können Sie **[!UICONTROL LETZTE POI-Stadt]** zu einer Texteingabe hinzufügen.
 
 
-## Publish-Datenelemente
+## Veröffentlichen von Datenelementen
 
 Wenn Datenelemente in einer der Regelkomponenten verwendet werden, müssen diese Datenelemente auch in die Bibliothek aufgenommen und veröffentlicht werden.

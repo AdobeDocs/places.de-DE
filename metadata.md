@@ -2,22 +2,23 @@
 cloud: Experience Cloud
 product: places service
 solution: Data Collection, Experience Platform
+product_v2: id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
 landing-page-name: mobile
 landing-page-breadcrumb-title: Mobile SDK
 feature-set: Experience Platform
 type: Documentation
 solution-title: Learn & Support
-solution-hub-url: https://helpx.adobe.com/de/support/experience-cloud.html
+solution-hub-url: https://helpx.adobe.com/support/experience-cloud.html
 getting-started-title: Getting Started
-getting-started-url: https://experienceleague.adobe.com/docs/places/using/getting-started.html?lang=de
+getting-started-url: https://experienceleague.adobe.com/docs/places/using/getting-started.html
 tutorials-title: Tutorials
-tutorials-url: https://experienceleague.adobe.com/de#recommended/solutions/experience-platform
-git-repo: https://github.com/AdobeDocs/places.de-DE
+tutorials-url: https://experienceleague.adobe.com/#recommended/solutions/experience-platform
+git-repo: https://github.com/AdobeDocs/places.en
 index: true
-source-git-commit: 4fb4fa8bbf060afaf6a42a31c2936f42ec1044f2
+source-git-commit: c34560100defb53b29dc8121405bfa51058c69a4
 workflow-type: tm+mt
-source-wordcount: '142'
-ht-degree: 98%
+source-wordcount: 167
+ht-degree: 80%
 
 ---
 
@@ -26,24 +27,24 @@ ht-degree: 98%
 
 # Metadaten für die interne Verwendung
 
-Die Datei metadata.md enthält Metadaten auf Repo-Ebene, die an die TOC.md-Dateien des Benutzerhandbuchs im Repo weitergegeben werden. Wenn Sie den Inhalt von metadata.md für ein Benutzerhandbuch ändern möchten, tun Sie dies in einer beliebigen TOC.md-Datei.
+Die Datei „metadata.md“ enthält Metadaten auf Repository-Ebene, die an die im Repository enthaltenen Dateien „TOC.md“ des Benutzerhandbuchs weitergegeben werden. Wenn Sie den Inhalt von „metadata.md“ für ein Benutzerhandbuch ändern möchten, verwenden Sie dazu eine beliebige Datei „TOC.md“.
 
-| metadata | was es macht |
+| Metadaten | Zweck |
 |--- |--- |
 | solution-title | Wird in der Artikelkopfzeile als Link verwendet |
-| solution-hub-url | Öffnet die helpx-Hub-Seite |
-| solution-icon | Zeigt Lösungssymbol neben dem Titel der Lösung an. Noch nicht implementiert |
-| getting-started-title | Wird selten verwendet, wenn Übungen nicht geeignet sind |
-| getting-started-url | Link zur Startseite Erste Schritte von helpx |
-| tutorials-title | Wird selten verwendet, wenn Übungen nicht geeignet sind |
-| tutorials-url | Link zu Video-Übungen – entweder Helpx-Übungen oder KT-Übungen |
-| mini-toc-levels | Legt fest, wie viele Überschriftenebenen in der rechten Leiste angezeigt werden. Standardwert ist „2“ |
-| git-repo | https://github.com/AdobeDocs/places.de-DE |
-| index | set index=no for soft launch |
+| solution-hub-url | Öffnet die Helpx-Hub-Seite |
+| solution-icon | Zeigt das Lösungssymbol neben dem Lösungstitel an. Noch nicht implementiert |
+| getting-started-title | Wird selten verwendet, wenn Tutorials nicht geeignet sind |
+| getting-started-url | Link zur Helpx-Seite „Erste Schritte“ |
+| tutorials-title | Wird selten verwendet, wenn Tutorials nicht geeignet sind |
+| tutorials-url | Link zu Video-Tutorials – entweder Helpx-Tutorials oder KT-Tutorials |
+| mini-toc-levels | Legt die Anzahl der Überschriftenebenen fest, die in der rechten Leiste angezeigt werden. Standard ist 2 |
+| git-repo | https://github.com/AdobeDocs/places.en |
+| index | set index=no für Soft Launch |
 
-In der Datei TOC.md
+In der Datei „TOC.md“
 
-| metadata | was es macht |
+| Metadaten | Zweck |
 |--- |--- |
 | user-guide-title | Wird in der Artikelkopfzeile als Link verwendet |
-| user-guide-url | Öffnet die helpx-Hub-Seite |
+| user-guide-url | Öffnet die Helpx-Hub-Seite |

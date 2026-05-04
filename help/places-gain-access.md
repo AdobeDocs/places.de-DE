@@ -1,11 +1,16 @@
 ---
 title: Zugriff auf Places Service erhalten
-description: In diesem Abschnitt finden Sie Informationen darüber, wie Sie einen Benutzer zu Places Service und Experience Platform Launch hinzufügen, damit der Benutzer auf Places Service zugreifen kann.
+description: In diesem Abschnitt finden Sie Informationen dazu, wie Sie einen Benutzer zu Places Service und Experience Platform Launch hinzufügen, damit der Benutzer auf Places Service zugreifen kann.
 exl-id: f388945e-cf26-4694-9697-9fe564ae4b69
-source-git-commit: c9058e9b70c2ef97151078f43913963471730bd2
+TQID: https://experienceleague.adobe.com/EYg1wjQJZeHqX7vPnJ1VUZzojqG6ANjS8-VBXV3y51c
+product_v2: id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9id: f7bdf6be-dd3b-4d2d-ac52-0e62ed0d3102
+feature_v2: id: c132d929-fa62-4271-803e-b823be07b914id: e08599ea-8888-4294-ba74-3ba0a7762a46
+subfeature_v2: id: b64298cc-90cc-46b7-8917-ee391f1c7516id: d2a6cbf4-df32-480f-909e-b42f66dcb9f0id: f5efb499-54f9-432b-ac5c-599dbac103afid: f6ff4d13-7b5c-4533-8556-95e76673d4cb
+topic_v2: id: d3cdead0-685a-4489-9250-4bb709942f66id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+source-git-commit: f962cef761f006c8e7d45b76ba24746e36bdaba6
 workflow-type: tm+mt
-source-wordcount: '907'
-ht-degree: 1%
+source-wordcount: 919
+ht-degree: 2%
 
 ---
 
@@ -17,7 +22,7 @@ Places Service ist jetzt in der Datenerfassungs-Benutzeroberfläche verfügbar. 
 
 Sie können auf die Datenerfassung auch über das Menü &quot;Adobe Experience Platform&quot; zugreifen:
 
-Menü ![Experience Platform](/help/assets/solutionaccessmenu.png)
+![Experience Platform-Menü](/help/assets/solutionaccessmenu.png)
 
 Wenn Ihre Benutzer-ID Zugriff hat, wird das Symbol Places Service im linken Bereich unter Daten-Management in der Datenerfassung angezeigt, wie unten angegeben:
 
@@ -27,7 +32,7 @@ Wenn der Places Service nicht an diesem Ort angezeigt wird, wenden Sie sich an e
 
 ## Hinzufügen von Benutzenden für den Zugriff auf Places Service und die Datenerfassung in Experience Adobe Experience Platform
 
-Places ist jetzt in Adobe Experience Platform enthalten. Damit Benutzerinnen und Benutzer auf den [Places-Service](https://experience.adobe.com/#/data-collection/places) zugreifen können, müssen sie in der Admin Console als Benutzerin bzw. Benutzer zu Adobe Experience Platform hinzugefügt werden. Damit Benutzerinnen und Benutzer auf die Experience Platform-Datenerfassung zugreifen können, die über die erforderlichen Berechtigungen zum Konfigurieren von Mobile-Eigenschaften und zum Verwenden von Places mit Adobe Experience Platform SDK verfügt, müssen sie auch zur Adobe Experience Platform-Datenerfassung in der Admin Console hinzugefügt werden und die folgenden Berechtigungen für die Adobe Experience Platform-Datenerfassung erhalten:
+Places ist jetzt in Adobe Experience Platform enthalten. Damit Benutzerinnen und Benutzer auf den [Places-Service](https://experience.adobe.com/#/data-collection/places) zugreifen können, müssen sie in der Admin Console als Benutzerin bzw. Benutzer zu Adobe Experience Platform hinzugefügt werden. Damit Benutzende Zugriff auf die Experience Platform-Datenerfassung mit den erforderlichen Berechtigungen zum Konfigurieren von Mobile-Eigenschaften und zum Verwenden von Places mit der Adobe Experience Platform-SDK haben, müssen sie auch zur Adobe Experience Platform-Datenerfassung in der Admin Console hinzugefügt werden und die folgenden Berechtigungen für die Adobe Experience Platform-Datenerfassung erhalten:
 
 * Alle Berechtigungen unter Eigenschaftsrechten:
    * Genehmigen
@@ -35,25 +40,25 @@ Places ist jetzt in Adobe Experience Platform enthalten. Damit Benutzerinnen und
    * Eigenschaft bearbeiten
    * Umgebungen verwalten
    * Erweiterungen verwalten
-   * Veröffentlichen Sie
+   * Veröffentlichen
 * Berechtigung zum Verwalten von Eigenschaften unter Unternehmensrechten
 
 Wenn Sie zum ersten Mal einen Benutzer hinzufügen, führen Sie die folgenden Schritte aus, um Benutzer zur Adobe Experience Platform-Datenerfassung und Adobe Experience Platform hinzuzufügen. Wenn Sie bereits Benutzer hinzugefügt haben, werden möglicherweise mehrere Profile angezeigt. Stellen Sie daher sicher, dass Sie das richtige Profil auswählen.
 
 >[!IMPORTANT]
 >
->Nur Organisationsadministratoren können auf die Admin Console zugreifen und Benutzende hinzufügen.
+>Nur Organisationsadministratoren können auf die Admin Console zugreifen und Benutzer hinzufügen.
 
-### 1. Überprüfen, ob die Datenerfassung von Adobe Experience Platform und Adobe Experience Platform bereitgestellt wird
+### &#x200B;1. Stellen Sie sicher, dass die Datenerfassung von Adobe Experience Platform und Adobe Experience Platform bereitgestellt wird
 
-1. Melden Sie sich bei Ihrem Experience Cloud-Unternehmen an, [Adobe Experience Cloud-Startseite](https://experience.adobe.com).
-1. Klicken Sie oben rechts auf den Experience Cloud-Shell-Umschalter, um ein Dropdown-Menü anzuzeigen.
+1. Melden Sie sich bei Ihrer Experience Cloud-Organisation an, [Adobe Experience Cloud-Startseite](https://experience.adobe.com).
+1. Klicken Sie oben rechts auf den Experience Cloud Shell-Umschalter, um ein Dropdown-Menü anzuzeigen.
 
    ![Shell-Umschalter](/help/assets/places_shell_switcher1.png)
 
-1. Klicken Sie unten in der Liste auf **[!UICONTROL Admin Console]**. (Ein Link zur Admin Console **&#x200B;**&#x200B;finden Sie auch im Abschnitt Schnellzugriff .)
+1. Klicken Sie unten in der Liste auf **[!UICONTROL Admin Console]**. (Ein Link zur **[!UICONTROL Admin Console]** finden Sie auch im Abschnitt Schnellzugriff .)
 
-   Wenn **[!UICONTROL Admin Console]** in der Liste nicht angezeigt wird, sind Sie kein Administrator. Sie müssen sich an den Administrator Ihrer Organisation wenden, um dieses Verfahren abzuschließen.
+   Wenn **[!UICONTROL Admin Console]** nicht in der Liste angezeigt wird, sind Sie kein Administrator. Sie müssen sich an den Administrator Ihrer Organisation wenden, um dieses Verfahren abzuschließen.
 
 1. Wenn Sie in der Admin Console Zugriff auf mehrere Organisationen haben, überprüfen Sie, ob oben rechts auf der Seite die richtige Organisation ausgewählt ist.
 
@@ -70,7 +75,7 @@ Wenn Sie zum ersten Mal einen Benutzer hinzufügen, führen Sie die folgenden Sc
    Diese beiden Produkte werden automatisch allen Organisationen bereitgestellt. Daher sollten sie vorhanden sein.
 
 
-### 2. Benutzer zu diesen Produkten hinzufügen
+### &#x200B;2. Benutzer zu diesen Produkten hinzufügen
 
 #### Benutzer hinzufügen, um Zugriff auf die Places Service-Benutzeroberfläche zu gewähren
 
@@ -94,4 +99,4 @@ Für Benutzer, die auch Zugriff auf die Places Service-REST-API benötigen, müs
 3. Klicken Sie im Profil auf die Registerkarte **Entwickler**
 4. Klicken Sie auf die blaue Schaltfläche **Entwickler hinzufügen**, geben Sie die Adobe ID und den Namen der Benutzenden ein und klicken Sie dann auf Speichern , um das Hinzufügen abzuschließen.
 
-Nach Abschluss der oben genannten Schritte erhält der Benutzer eine E-Mail, in der er über den Zugriff auf die Datenerfassung von **[!UICONTROL Adobe Experience Platform]** und **[!UICONTROL Adobe Experience Platform informiert]**. Sie können sich dann bei der [Adobe Experience Cloud](https://experience.adobe.com) für dieses Unternehmen anmelden und auf den Places-Service und die Datenerfassung zugreifen. Wenn Sie auch die Schritte **[!UICONTROL Entwickler hinzufügen]** ausführen, können sich Benutzende auch bei der [Adobe Developer Console anmelden, &#x200B;](https://developer.adobe.com/console/home) ein Projekt zu erstellen, das Zugriff auf die Places Service-REST-API bietet.
+Nach Abschluss der oben genannten Schritte erhält der Benutzer eine E-Mail, in der er über den Zugriff auf die Datenerfassung von **[!UICONTROL Adobe Experience Platform]** und **[!UICONTROL Adobe Experience Platform informiert]**. Sie können sich dann bei der [Adobe Experience Cloud](https://experience.adobe.com) für dieses Unternehmen anmelden und auf den Places-Service und die Datenerfassung zugreifen. Wenn Sie auch die Schritte **[!UICONTROL Entwickler hinzufügen]** ausführen, können sich Benutzende auch bei der [Adobe Developer Console anmelden, ](https://developer.adobe.com/console/home) ein Projekt zu erstellen, das Zugriff auf die Places Service-REST-API bietet.

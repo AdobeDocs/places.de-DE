@@ -2,10 +2,15 @@
 title: Adobe Target
 description: In diesem Abschnitt finden Sie Informationen zur Verwendung des Places Service mit Adobe Target.
 exl-id: 6ee91fca-ea48-4de2-8dcf-87981813c678
-source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
+TQID: https://experienceleague.adobe.com/WsfkEJD0mN5aYKETjcnqiC13dVe5NPYeKfOCTOK82uE
+product_v2: id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87id: e43347a8-f2c5-4aa4-8623-6f13875d7e3aid: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+feature_v2: id: e08599ea-8888-4294-ba74-3ba0a7762a46
+subfeature_v2: id: d2a6cbf4-df32-480f-909e-b42f66dcb9f0
+topic_v2: id: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: f962cef761f006c8e7d45b76ba24746e36bdaba6
 workflow-type: tm+mt
-source-wordcount: '542'
-ht-degree: 3%
+source-wordcount: 549
+ht-degree: 4%
 
 ---
 
@@ -15,7 +20,7 @@ In diesem Dokument wird davon ausgegangen, dass die Places-Erweiterung in Ihrem 
 
 Nachdem die Places-Erweiterung Ereignisse für Ein- und Ausstiege gesendet hat, können Sie in Launch Regeln nutzen, um Ihre Places Service-Daten an Ihre Adobe Target SDK-Ereignisse anzuhängen. Wenn Ihre gewünschte Eigenschaft in Launch ausgewählt ist, können Sie diesen Regeltyp erstellen, indem Sie die folgenden Aufgaben ausführen:
 
-## 1. Regel erstellen
+## &#x200B;1. Erstellen einer Regel
 
 1. Klicken Sie auf der **[!UICONTROL Regeln]** auf **[!UICONTROL Neue Regel erstellen]**.
 
@@ -24,7 +29,7 @@ Nachdem die Places-Erweiterung Ereignisse für Ein- und Ausstiege gesendet hat, 
    * Wenn für diese Eigenschaft keine Regeln vorhanden sind, befindet sich die Schaltfläche in der Mitte des Bildschirms.
    * Wenn Ihre Eigenschaft über Regeln verfügt, befindet sich die Schaltfläche oben rechts im Bildschirm.
 
-## 2. Ereignis auswählen
+## &#x200B;2. Ereignis auswählen
 
 1. Geben Sie Ihrer Regel einen aussagekräftigen Namen, damit sie in Ihrer Regelliste leicht erkennbar ist.
 
@@ -37,7 +42,7 @@ Nachdem die Places-Erweiterung Ereignisse für Ein- und Ausstiege gesendet hat, 
 
 ![Ereignis hinzufügen](/help/assets/ad-setEvent_target.png)
 
-## 3. Bedingungen hinzufügen
+## &#x200B;3. Hinzufügen von Bedingungen
 
 >[!IMPORTANT]
 >
@@ -53,7 +58,7 @@ Im folgenden Beispiel wird eine Bedingung erstellt, die dazu führt, dass die Re
 
 ![Bedingung hinzufügen](/help/assets/ad-setCondition_target.png)
 
-## 4. Definieren der Aktion
+## &#x200B;4. Definieren der Aktion
 
 1. Klicken Sie **[!UICONTROL Abschnitt]** Aktionen“ auf **[!UICONTROL Hinzufügen]**.
 1. Wählen Sie in **[!UICONTROL Dropdown]** Liste Erweiterung die Option **[!UICONTROL Mobile Core]** aus.
@@ -73,7 +78,7 @@ Im folgenden Beispiel werden `poiCity`- und `poiName`-Werte zu den **[!UICONTROL
 
 ![Definieren Sie die Aktion](/help/assets/ad-setAction-target.png)
 
-## 5. Speichern Sie die Regel und erstellen Sie die Eigenschaft neu
+## &#x200B;5. Speichern Sie die Regel und erstellen Sie Ihre Eigenschaft neu
 
 Stellen Sie nach Abschluss der Konfiguration sicher, dass die Regel wie folgt aussieht:
 
