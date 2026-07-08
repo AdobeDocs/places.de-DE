@@ -1,5 +1,5 @@
 ---
-title: Übersicht
+title: Überblick
 description: Verstehen und Verwenden von Abfrage-APIs.
 exl-id: cc61a49c-1cf2-407f-b81a-3d38fcb622cc
 source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
