@@ -44,7 +44,7 @@ Ein Projekt mit der [Adobe Developer-Konsole](https://developer.adobe.com/consol
 
 Um ein Projekt für die Places Service-API zu erstellen, führen Sie die folgenden Schritte aus:
 
-1. Melden Sie sich mit Ihrer Adobe ID bei ](https://developer.adobe.com) Adobe Developer-Website an.[
+1. Melden Sie sich mit Ihrer Adobe ID bei [&#128279;](https://developer.adobe.com) Adobe Developer-Website an.
 2. Klicken **[!UICONTROL oben]** der Seite auf „Konsole“.
 3. Wenn Sie mehreren Adobe-Organisationen zugewiesen sind, wählen Sie die richtige Organisation aus der Dropdown-Liste oben rechts auf der Seite aus.
 4. Klicken Sie auf die **[!UICONTROL Neues Projekt erstellen]**.

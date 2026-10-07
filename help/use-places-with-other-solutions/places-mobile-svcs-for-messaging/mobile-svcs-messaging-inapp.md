@@ -100,7 +100,7 @@ Als Teil Ihrer Trigger-Parameter können Sie die Zielgruppe für die Nachricht m
 
   Diese Option kann mit einer ortsspezifischen Aktion wie einem Eintrag verwendet werden oder als Kontext zu einem anderen Ereignis wie einem Launch oder einem Schaltflächen-Klick.
 
-  Im Folgenden finden Sie ein Beispiel für die Konfiguration einer In-App-Nachricht, um Benutzer willkommen zu heißen, die einen POI eingeben, dessen Name {]**}Adobe&quot; enthält:**[!UICONTROL 
+  Im Folgenden finden Sie ein Beispiel für die Konfiguration einer In-App-Nachricht, um Benutzer willkommen zu heißen, die einen POI eingeben, dessen Name {**}Adobe&quot; enthält:**
 
   ![Trigger-Parameter](/help/assets/trigger-parameters.png)
 
