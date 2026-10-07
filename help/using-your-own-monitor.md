@@ -2,13 +2,14 @@
 title: Verwenden eines eigenen Monitors
 description: Sie können Ihre Monitoring-Services auch verwenden und die Integration mit dem Places-Service über die Places Service-Erweiterungs-APIs durchführen.
 exl-id: 8ca4d19b-0f23-4291-b335-af47f03179fa
-source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+source-git-commit: d8704da9c84a066f72471421290d4b46c65f41e1
 workflow-type: tm+mt
 source-wordcount: '264'
 ht-degree: 1%
-
 ---
-
 # Verwenden eines eigenen Monitors {#using-your-monitor}
 
 Sie können auch Ihre Monitoring-Services verwenden und die Integration mit dem Places-Service mithilfe der Places-Erweiterungs-APIs durchführen.

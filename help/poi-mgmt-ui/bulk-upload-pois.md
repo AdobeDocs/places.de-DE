@@ -5,24 +5,31 @@ exl-id: 72704bfc-5837-4439-bdb2-e77ddf935639
 TQID: https://experienceleague.adobe.com/FVZzn3FwSAFgnRBjkiFwHG8Zl2I-I4fPrqax-zGNclk
 product_v2:
   - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
+    internal-label: CX Enterprise
   - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: Target
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
   - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 feature_v2:
   - id: bef6f891-2e8a-425e-8f99-7ddf22070daa
+    internal-label: APIs
   - id: e08599ea-8888-4294-ba74-3ba0a7762a46
+    internal-label: Data collection
 subfeature_v2:
   - id: d2a6cbf4-df32-480f-909e-b42f66dcb9f0
+    internal-label: Places
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: f962cef761f006c8e7d45b76ba24746e36bdaba6
+    internal-label: Data collection
+source-git-commit: d8704da9c84a066f72471421290d4b46c65f41e1
 workflow-type: tm+mt
-source-wordcount: 854
+source-wordcount: '854'
 ht-degree: 0%
-
 ---
-
 # Massen-Upload von POIs {#bulk-upload-pois}
 
 Die Schaltfläche **POIs importieren** im Places-Service kann verwendet werden, um neue POIs mithilfe einer CSV-Datei stapelweise hochzuladen. Eine Beispiel-Tabellenvorlage wird bereitgestellt, um zu zeigen, welche Datenspalten erforderlich sind und wie optionale benutzerdefinierte Metadaten hinzugefügt werden.
@@ -37,7 +44,7 @@ In diesem Video wird der Prozess für den Massenimport und die Massenbearbeitung
 
 ## Python-API-Skripte
 
-Es wurde ein Satz von Python-Skripten erstellt, um den Batch-Import von POIs aus einer CSV-Datei in eine POI-Datenbank mithilfe der Webservice-APIs zu vereinfachen. Diese Skripte können aus diesem Open-Source-Repository [Git-Repository) &#x200B;](https://github.com/adobe/places-scripts) werden.
+Es wurde ein Satz von Python-Skripten erstellt, um den Batch-Import von POIs aus einer CSV-Datei in eine POI-Datenbank mithilfe der Webservice-APIs zu vereinfachen. Diese Skripte können aus diesem Open-Source-Repository [Git-Repository) ](https://github.com/adobe/places-scripts) werden.
 
 Informationen zum Zugriff auf die Webservice-APIs vor der Ausführung dieser Skripte finden Sie unter *Voraussetzungen für den Benutzerzugriff* in [Übersicht über die Integration und Voraussetzungen](/help/web-service-api/adobe-i-o-integration.md).
 
@@ -78,20 +85,20 @@ Im Folgenden finden Sie eine Liste der Spalten und Werte, die Sie verwenden müs
 Die Werte der folgenden Spalten werden in der Places Service-Benutzeroberfläche verwendet:
 
 * Farbe, die als Farbe des Pins verwendet wird, der den Standort des POI in der Karte der Places Service-Benutzeroberfläche darstellt.
-   * Die gültigen Werte sind &quot;&quot;, #3E76D0, #AA99E8, #DC2ABA, #FC685B, #FC962E, #F6C436, #BECE5D, #61B56B und #3DC8DE sowie &quot;&quot;.
-   * Wenn der Wert leer gelassen wird, verwendet die Places Service-Benutzeroberfläche Blau als Standardfarbe.
+  * Die gültigen Werte sind &quot;&quot;, #3E76D0, #AA99E8, #DC2ABA, #FC685B, #FC962E, #F6C436, #BECE5D, #61B56B und #3DC8DE sowie &quot;&quot;.
+  * Wenn der Wert leer gelassen wird, verwendet die Places Service-Benutzeroberfläche Blau als Standardfarbe.
 
-     Die Werte entsprechen Blau (#3E76D0), Lila (#AA99E8), Fuschia (#DC2ABA), Orange (#FC685B), Hellorange (#FC962E), Gelb (#F6C436), Hellgrün (#BECE5D), Grün (#61B56B) und Hellblau (#3DC8DE).
+    Die Werte entsprechen Blau (#3E76D0), Lila (#AA99E8), Fuschia (#DC2ABA), Orange (#FC685B), Hellorange (#FC962E), Gelb (#F6C436), Hellgrün (#BECE5D), Grün (#61B56B) und Hellblau (#3DC8DE).
 
 * icon, das als Symbol auf dem Pin verwendet wird, der die Position des POI auf der Karte der Places-Service-Benutzeroberfläche darstellt.
 
-   * Die gültigen Werte sind &quot;&quot;, Shop, Hotelbett, Auto, Flugzeug, Zug, Schiff, Stadion, Freizeitpark, Anker, Becher, Glocke, Bid, Buch, Box, Aktenkoffer, Durchsuchen, Pinsel, Gebäude, Rechner, Kamera, Uhr, Erziehung, Taschenlampe, Folgen, Spiel, weiblich, männlich, Geschenk, Hammer, Herz, Heimat, Schlüssel, Start, Glühbirne, Postfach, Pin, Werbung, Band, ShoppingCart, Stern, Ziel, Teekanne, ThumbDown, ThumbUp, Falle, Trophäe, Schraubenschlüssel.
+  * Die gültigen Werte sind &quot;&quot;, Shop, Hotelbett, Auto, Flugzeug, Zug, Schiff, Stadion, Freizeitpark, Anker, Becher, Glocke, Bid, Buch, Box, Aktenkoffer, Durchsuchen, Pinsel, Gebäude, Rechner, Kamera, Uhr, Erziehung, Taschenlampe, Folgen, Spiel, weiblich, männlich, Geschenk, Hammer, Herz, Heimat, Schlüssel, Start, Glühbirne, Postfach, Pin, Werbung, Band, ShoppingCart, Stern, Ziel, Teekanne, ThumbDown, ThumbUp, Falle, Trophäe, Schraubenschlüssel.
 
-     Die Symbolwerte werden in der Reihenfolge aufgelistet, in der sie in der folgenden Abbildung angezeigt werden:
+    Die Symbolwerte werden in der Reihenfolge aufgelistet, in der sie in der folgenden Abbildung angezeigt werden:
 
-     ![Symbole in der Benutzeroberfläche](/help/assets/UI_icons.png)
+    ![Symbole in der Benutzeroberfläche](/help/assets/UI_icons.png)
 
-   * Wenn der Wert leer gelassen wird, verwendet die Benutzeroberfläche einen Stern als Standardsymbol.
+  * Wenn der Wert leer gelassen wird, verwendet die Benutzeroberfläche einen Stern als Standardsymbol.
 
 * Nicht erwähnte Spalten können leer gelassen werden.
 

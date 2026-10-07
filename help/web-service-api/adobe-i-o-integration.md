@@ -2,13 +2,14 @@
 title: Übersicht über Adobe Developer-Projekte
 description: Informationen zum Erstellen eines Adobe Developer-API-Projekts.
 exl-id: d7d31938-6c0e-40f8-a9d3-30af96043119
-source-git-commit: 3d477c6133b74a7e6380d0db1af5125aaa844035
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+source-git-commit: d8704da9c84a066f72471421290d4b46c65f41e1
 workflow-type: tm+mt
-source-wordcount: '494'
-ht-degree: 1%
-
+source-wordcount: '504'
+ht-degree: 2%
 ---
-
 # Übersicht über den Places API-Zugriff und Voraussetzungen {#developer-prereqs}
 
 Diese Informationen zeigen Ihnen, wie Sie ein Projekt in der Adobe Developer Console erstellen und ein Zugriffstoken generieren, das in Places-API-Anfragen verwendet werden kann.
@@ -20,7 +21,7 @@ Diese Informationen zeigen Ihnen, wie Sie ein Projekt in der Adobe Developer Con
 * Sie wurden der Organisation hinzugefügt.
 * Die Benutzerin bzw. der Benutzer wurde in der Adobe Experience Platform zu einem Profil hinzugefügt.
 
-  Weitere Informationen finden Sie unter *Hinzufügen eines Benutzers oder Entwicklers zu Ihren Places Service- und Experience Platform Launch-Profilen* in [Zugriff auf Places Service erhalten](/help/places-gain-access.md).
+  Weitere Informationen finden Sie unter *Hinzufügen eines Benutzers oder Entwicklers zu Ihren Places Service- und Experience Platform Launch* in [Zugriff auf Places Service erhalten](/help/places-gain-access.md).
 
 ### REST-API-Anfragen
 
@@ -43,7 +44,7 @@ Ein Projekt mit der [Adobe Developer-Konsole](https://developer.adobe.com/consol
 
 Um ein Projekt für die Places Service-API zu erstellen, führen Sie die folgenden Schritte aus:
 
-1. Melden Sie sich mit Ihrer Adobe ID bei [&#128279;](https://developer.adobe.com) Adobe Developer-Website an.
+1. Melden Sie sich mit Ihrer Adobe ID bei ](https://developer.adobe.com) Adobe Developer-Website an.[
 2. Klicken **[!UICONTROL oben]** der Seite auf „Konsole“.
 3. Wenn Sie mehreren Adobe-Organisationen zugewiesen sind, wählen Sie die richtige Organisation aus der Dropdown-Liste oben rechts auf der Seite aus.
 4. Klicken Sie auf die **[!UICONTROL Neues Projekt erstellen]**.
@@ -67,4 +68,4 @@ Um ein Projekt für die Places Service-API zu erstellen, führen Sie die folgend
 
 >[!IMPORTANT]
 >
->Adobe-Zugriffs-Token sind **nur** 24 Stunden lang gültig. Speichern Sie daher den CURL-Beispielbefehl (Schritt 5). Wenn das Zugriffs-Token nicht mehr gültig ist, müssen Sie das Token neu generieren.
+>Adobe-Zugriffstoken sind **24** gültig. Speichern Sie daher den CURL-Beispielbefehl (Schritt 5). Wenn das Zugriffs-Token nicht mehr gültig ist, müssen Sie das Token neu generieren.

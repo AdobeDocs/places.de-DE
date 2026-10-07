@@ -2,13 +2,14 @@
 title: Erhalte den Rang einer Bibliothek
 description: Erhalten Sie den Rang einer Bibliothek mithilfe der Places REST-API.
 exl-id: c0abedd0-5ff4-4a01-9f8d-e3d17ea53a97
-source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+source-git-commit: d8704da9c84a066f72471421290d4b46c65f41e1
 workflow-type: tm+mt
 source-wordcount: '41'
 ht-degree: 9%
-
 ---
-
 # Erhalte den Rang einer Bibliothek {#get-library-rank}
 
 Eine GET-Methode, mit der Sie Bibliotheken nach Rang ordnen können.

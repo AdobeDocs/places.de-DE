@@ -1,21 +1,22 @@
 ---
-title: Experience Platform Launch von Datenelementen mit Ortsdaten
-description: Datenelemente sind die Bausteine Ihres Datenwörterbuchs (oder Ihrer Datenzuordnung).
-source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
+title: Experience Platform Launch-Datenelemente mit Ortsdaten
+description: Datenelemente sind Bausteine für Ihr Datenwörterbuch (oder Ihre Datenkarte).
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+source-git-commit: d8704da9c84a066f72471421290d4b46c65f41e1
 workflow-type: tm+mt
-source-wordcount: '146'
-ht-degree: 2%
-
+source-wordcount: '153'
+ht-degree: 15%
 ---
 
-
-# Experience Platform Launch von Datenelementen mit Daten zu Orten {#launch-data-places}
+# Datenelemente von Experience Platform Launch mit Daten zu Orten {#launch-data-places}
 
 ## Datenelemente
 
 Datenelemente sind die Bausteine für Ihr Datenwörterbuch oder Ihre Datenzuordnung. Sie können Datenelemente verwenden, um Daten über Marketing- und Werbetechnologien hinweg zu erfassen, zu organisieren und bereitzustellen.
 
-Ein Datenelement ist eine Variable, deren Wert Abfragezeichenfolgen, URLs, Cookie-Werten, JavaScript-Variablen usw. zugeordnet werden kann. In Experience Platform Launch können Sie diesen Wert anhand des Variablennamens referenzieren. Die Sammlung von Datenelementen wird zum Wörterbuch definierter Daten, mit denen Sie Ihre Regeln erstellen können (Ereignisse, Bedingungen und Aktionen). Das Datenwörterbuch wird auf allen Experience Platform Launch gemeinsam genutzt und kann mit der Places -Erweiterung verwendet werden.
+Ein Datenelement ist eine Variable, deren Wert Abfragezeichenfolgen, URLs, Cookie-Werten, JavaScript-Variablen usw. zugeordnet werden kann. In Experience Platform Launch können Sie diesen Wert anhand des Variablennamens referenzieren. Die Sammlung von Datenelementen wird zum Wörterbuch definierter Daten, die Sie zum Erstellen Ihrer Regeln (Ereignisse, Bedingungen und Aktionen) verwenden können. Das Datenwörterbuch wird in Experience Platform Launch gemeinsam genutzt und kann mit der Places-Erweiterung verwendet werden.
 
 Weitere Informationen zu Datenelementen finden Sie unter [Datenelemente](https://docs.adobelaunch.com/launch-reference/managing-resources/data-elements) .
 

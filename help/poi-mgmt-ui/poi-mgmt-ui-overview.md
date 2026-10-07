@@ -2,13 +2,14 @@
 title: Übersicht über die Verwaltungsoberfläche für Point-of-Interest
 description: In diesem Abschnitt finden Sie Informationen zum Erstellen und Verwalten von Bibliotheken und POIs über die Places Service-Benutzeroberfläche.
 exl-id: ec636e08-c4a3-420d-8d23-72ab155db69f
-source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+source-git-commit: d8704da9c84a066f72471421290d4b46c65f41e1
 workflow-type: tm+mt
 source-wordcount: '86'
 ht-degree: 0%
-
 ---
-
 # Übersicht über die Places Service-Benutzeroberfläche {#management-ui-overview}
 
 POIs und Bibliotheken werden in der Places Service-Datenbank mithilfe der Places Service-Benutzeroberfläche erstellt und verwaltet.
