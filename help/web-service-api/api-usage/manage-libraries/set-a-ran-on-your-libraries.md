@@ -2,13 +2,14 @@
 title: Festlegen eines Rangs in Ihren Bibliotheken
 description: Legen Sie mithilfe der Places REST-API einen Rang in Ihren Bibliotheken fest.
 exl-id: c922bddc-1587-4da8-acb4-c2d69ce11808
-source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+source-git-commit: d8704da9c84a066f72471421290d4b46c65f41e1
 workflow-type: tm+mt
 source-wordcount: '56'
 ht-degree: 7%
-
 ---
-
 # Festlegen eines Rangs in Ihren Bibliotheken {#set-rank-on-libraries}
 
 Eine PUT-Methode, mit der Sie eine Rangfolge für alle Ihre Bibliotheken festlegen können.
