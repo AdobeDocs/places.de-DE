@@ -2,7 +2,7 @@
 title: Zugriff auf Places Service erhalten
 description: In diesem Abschnitt finden Sie Informationen dazu, wie Sie einen Benutzer zu Places Service und Experience Platform Launch hinzufügen, damit der Benutzer auf Places Service zugreifen kann.
 exl-id: f388945e-cf26-4694-9697-9fe564ae4b69
-TQID: https://experienceleague.adobe.com/EYg1wjQJZeHqX7vPnJ1VUZzojqG6ANjS8-VBXV3y51c
+TQID: 'https://experienceleague.adobe.com/EYg1wjQJZeHqX7vPnJ1VUZzojqG6ANjS8-VBXV3y51c'
 product_v2:
   - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
     internal-label: CX Enterprise
@@ -11,17 +11,11 @@ product_v2:
   - id: f7bdf6be-dd3b-4d2d-ac52-0e62ed0d3102
     internal-label: Admin Console
 feature_v2:
-  - id: c132d929-fa62-4271-803e-b823be07b914
-    internal-label: Profile
   - id: e08599ea-8888-4294-ba74-3ba0a7762a46
-    internal-label: Data collection
-subfeature_v2:
-  - id: b64298cc-90cc-46b7-8917-ee391f1c7516
-    internal-label: Data collection UI
+    internal-label: Data collection tags
   - id: d2a6cbf4-df32-480f-909e-b42f66dcb9f0
     internal-label: Places
-  - id: f5efb499-54f9-432b-ac5c-599dbac103af
-    internal-label: Data management
+subfeature_v2:
   - id: f6ff4d13-7b5c-4533-8556-95e76673d4cb
     internal-label: Properties
 topic_v2:
@@ -29,7 +23,7 @@ topic_v2:
     internal-label: Data collection
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: d8704da9c84a066f72471421290d4b46c65f41e1
+source-git-commit: 1b8be32cf474f0f65c484158870ece14f7c75ecd
 workflow-type: tm+mt
 source-wordcount: '919'
 ht-degree: 2%
@@ -71,7 +65,7 @@ Wenn Sie zum ersten Mal einen Benutzer hinzufügen, führen Sie die folgenden Sc
 
 ### &#x200B;1. Stellen Sie sicher, dass die Datenerfassung von Adobe Experience Platform und Adobe Experience Platform bereitgestellt wird
 
-1. Melden Sie sich bei Ihrer Experience Cloud-Organisation an ([&#x200B; Experience Cloud-Startseite](https://experience.adobe.com).
+1. Melden Sie sich bei Ihrer Experience Cloud-Organisation an ([ Experience Cloud-Startseite](https://experience.adobe.com).
 1. Klicken Sie oben rechts auf den Shell-Umschalter von Experience Cloud, um ein Dropdown-Menü anzuzeigen.
 
    ![Shell-Umschalter](/help/assets/places_shell_switcher1.png)
@@ -119,4 +113,4 @@ Für Benutzer, die auch Zugriff auf die Places Service-REST-API benötigen, müs
 3. Klicken Sie im Profil auf die Registerkarte **Entwickler**
 4. Klicken Sie auf die blaue Schaltfläche **Entwickler hinzufügen**, geben Sie die Adobe ID und den Namen der Benutzenden ein und klicken Sie dann auf Speichern , um das Hinzufügen abzuschließen.
 
-Nach Abschluss der oben genannten Schritte erhält der Benutzer eine E-Mail, in der er über den Zugriff auf die Datenerfassung von **[!UICONTROL Adobe Experience Platform]** und **[!UICONTROL Adobe Experience Platform informiert]**. Sie können sich dann für diese Organisation bei [Adobe Experience Cloud](https://experience.adobe.com) anmelden und auf den Places-Service und die Datenerfassung zugreifen. Wenn Sie auch die Schritte **[!UICONTROL Entwickler hinzufügen]** ausführen, können sich Benutzende auch bei der [Adobe Developer Console anmelden, &#x200B;](https://developer.adobe.com/console/home) ein Projekt zu erstellen, das Zugriff auf die Places Service-REST-API bietet.
+Nach Abschluss der oben genannten Schritte erhält der Benutzer eine E-Mail, in der er über den Zugriff auf die Datenerfassung von **[!UICONTROL Adobe Experience Platform]** und **[!UICONTROL Adobe Experience Platform informiert]**. Sie können sich dann für diese Organisation bei [Adobe Experience Cloud](https://experience.adobe.com) anmelden und auf den Places-Service und die Datenerfassung zugreifen. Wenn Sie auch die Schritte **[!UICONTROL Entwickler hinzufügen]** ausführen, können sich Benutzende auch bei der [Adobe Developer Console anmelden, ](https://developer.adobe.com/console/home) ein Projekt zu erstellen, das Zugriff auf die Places Service-REST-API bietet.
