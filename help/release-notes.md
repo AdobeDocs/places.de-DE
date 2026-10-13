@@ -2,7 +2,7 @@
 title: Versionshinweise
 description: Versionshinweise für Places Service.
 exl-id: 76da9548-4e32-4b23-9a15-7012973915f3
-TQID: https://experienceleague.adobe.com/yo1eXPl9cKbp-EVWQT8gZHcAbSDoIFJVD6xKbdoysMc
+TQID: 'https://experienceleague.adobe.com/yo1eXPl9cKbp-EVWQT8gZHcAbSDoIFJVD6xKbdoysMc'
 product_v2:
   - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
     internal-label: CX Enterprise
@@ -20,10 +20,9 @@ feature_v2:
   - id: d833d0ef-8ed5-4cff-a5e7-9f12abd02a31
     internal-label: SDKs
   - id: e08599ea-8888-4294-ba74-3ba0a7762a46
-    internal-label: Data collection
+    internal-label: Data collection tags
   - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
     internal-label: API
-subfeature_v2:
   - id: d2a6cbf4-df32-480f-909e-b42f66dcb9f0
     internal-label: Places
 topic_v2:
@@ -33,7 +32,7 @@ topic_v2:
     internal-label: Data collection
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: d8704da9c84a066f72471421290d4b46c65f41e1
+source-git-commit: 1b8be32cf474f0f65c484158870ece14f7c75ecd
 workflow-type: tm+mt
 source-wordcount: '1612'
 ht-degree: 5%
@@ -86,7 +85,7 @@ ht-degree: 5%
   * Die Places-Erweiterung meldet jetzt Versionsinformationen an den Event Hub in der Core SDK.
   * Informationen zur Geräte-POI-Mitgliedschaft haben jetzt standardmäßig eine Lebensdauer von einer Stunde ab dem Zeitpunkt, zu dem sie erfasst werden. Weitere Informationen finden Sie unter [Ändern der Time-to-Live für Mitgliedschaften in Orten](places-ext-aep-sdks/places-extension/places-extension.md#places-ttl)
 
-## Dienstag, 27. Januar 2020
+## &#x200B;27. Januar 2020
 
 * **PlacesMonitor 2.2.0**
 
@@ -103,7 +102,7 @@ ht-degree: 5%
 
     * Eine neue API `setAuthorizationStatus` wurde hinzugefügt, um den Geräteautorisierungsstatus für Places Services festzulegen. Der Wert wird gespeichert und im Status Freigegebene Orte verwendet.
 
-## Donnerstag, 4. Dezember 2019
+## &#x200B;4. Dezember 2019
 
 * **PlacesMonitor 2.1.2**
 
@@ -111,7 +110,7 @@ ht-degree: 5%
 
     * Rufen Sie die Places-API auf, um den CLAuthorizationStatus von einem Gerät zu erfassen, wenn es sich ändert.
 
-## Mittwoch, 3. Dezember 2019
+## &#x200B;3. Dezember 2019
 
 * **ACPPlaces 1.3.0**
 
@@ -119,7 +118,7 @@ ht-degree: 5%
 
     * Eine neue API `setAuthorizationStatus` wurde hinzugefügt, um den Geräteautorisierungsstatus für Places Services festzulegen. Der Wert wird gespeichert und im Status Freigegebene Orte verwendet.
 
-## Dienstag, 25. November 2019
+## &#x200B;25. November 2019
 
 * **PlacesMonitor 2.1.1**
 
@@ -127,7 +126,7 @@ ht-degree: 5%
 
     * Importanweisungen für CocoaPods-Projekte mit der Option Mehrere Pod-Projekte wurden korrigiert.
 
-## Samstag, 22. November 2019
+## &#x200B;22. November 2019
 
 * **PlacesMonitor 2.1.1**
 
@@ -136,7 +135,7 @@ ht-degree: 5%
     * Der Monitor erkennt jetzt den Start eines Android-Geräts und registriert bei Bedarf die Geofences basierend auf dem aktuellen Speicherort des Geräts erneut beim Betriebssystem.
     * Es wurde eine Racebedingung behoben, die manchmal dazu führte, dass Eintritts-/Austrittsereignisse verworfen wurden.
 
-## Donnerstag, 9. Oktober 2019
+## &#x200B;9. Oktober 2019
 
 * **PlacesMonitor 2.1.0**
 
@@ -209,7 +208,7 @@ In dieser Version wurden die folgenden Aktualisierungen vorgenommen:
 
 * Die Verwendung der ACPPlaces-`getNearbyPointsOfInterest`-API wurde aktualisiert, um Fehlerszenarien effektiver zu handhaben.
 
-## Dienstag, 22. Juli 2019
+## &#x200B;22. Juli 2019
 
 In dieser Version wurden die folgenden Aktualisierungen vorgenommen:
 
@@ -220,7 +219,7 @@ In dieser Version wurden die folgenden Aktualisierungen vorgenommen:
 * Es wurde ein Fehler behoben, durch den `getNearbyPointsOfInterest` Callback in keinem Internet Fehlercode `SERVER_RESPONSE_ERROR instead of CONNECTIVITY_ERROR` zurückgab.
 * `getNearbyPointsOfInterest` API (ohne errorCallback) wird die `successCallback` mit leerer POI-Liste aufgerufen, falls ein Fehler beim Abrufen der nahegelegenen Points of Interest auftritt.
 
-## Samstag, 19. Juli 2019
+## &#x200B;19. Juli 2019
 
 In dieser Version wurden die folgenden Aktualisierungen vorgenommen:
 
@@ -300,7 +299,7 @@ In dieser Version wurden die folgenden Aktualisierungen vorgenommen:
 * CI-Integration (CircleCI)
 * Integration der Codeabdeckung (CodeCov)
 
-## Dienstag, 25. März 2019
+## &#x200B;25. März 2019
 
 iOS Places Monitor 1.0.0
 
